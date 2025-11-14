@@ -1,6 +1,6 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  country: 🇺RU
+  country: 🇷🇺RU
   name: 17,24,378,440,489,537,538,543,553|yandex-5031
   password: 17ZDORWIliQHuO6WRGHChXYMzdRtAYVP
   port: 443
@@ -172,7 +172,7 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
+  country: 🇷🇺 RU
   name: 378,435,537,538|🇷🇺RU-45.159.250.190-0289 | 0.1...
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
@@ -233,9 +233,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,553|yandex-4541
+  name: 378,508,509,536,537,553,636|🇷🇺 俄罗斯 079
   network: ws
-  port: 50826
+  port: '50826'
   server: 45.67.32.147
   servername: ''
   skip-cert-verify: true
@@ -488,7 +488,7 @@ proxies:
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 435,437,559|🇷🇺 RU_145
+  name: '435,437,559|🇷🇺 RU_145 #1'
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -857,20 +857,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '508,509|俄罗斯 066 #1'
+  name: 508,509,636|🇷🇺 俄罗斯 066
   network: tcp
-  port: 47555
+  port: '47555'
   server: 46.29.166.237
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - alterId: 0
   cipher: auto
-  name: '508,509|俄罗斯 073 #1'
+  name: 508,509,636|🇷🇺 俄罗斯 073
   network: tcp
-  port: 2098
+  port: '2098'
   server: 147.45.51.16
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 83876222-64a4-4912-aa18-b7d9d34959de
 - alterId: 0
@@ -970,7 +972,7 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Ftw'
-- name: 559|🇷🇺RU_146
+- name: '559|🇷🇺RU_146 #1'
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
@@ -1000,3 +1002,10 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 636|🇷🇺 俄罗斯 039
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: trojan
