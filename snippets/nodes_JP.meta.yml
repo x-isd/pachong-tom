@@ -560,16 +560,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: '128,430|日本NO.2 #1'
-  port: 45057
-  server: hxb.dashuai.help
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d5d0e464-fada-4878-a59a-cb03ea08360e
-- alterId: 0
-  cipher: auto
   name: '128,430|日本NO.1 #1'
   port: 45056
   server: hxa.dashuai.help
@@ -577,7 +567,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: d5d0e464-fada-4878-a59a-cb03ea08360e
+  uuid: 0f8c87b1-da8b-45cd-aabb-7710e49ad2b0
+- alterId: 0
+  cipher: auto
+  name: '128,430|日本NO.2 #1'
+  port: 45057
+  server: hxb.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0f8c87b1-da8b-45cd-aabb-7710e49ad2b0
 - alterId: 0
   cipher: auto
   name: '131,378,434,536,537|🇺🇸US-76.223.54.146-0969 #2'
@@ -1193,7 +1193,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 193,194,553|yandex-936
+  name: 193,194,553|yandex-669
   network: tcp
   port: 20230
   reality-opts:
@@ -1293,14 +1293,14 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|JP
-  network: tcp
+- name: 255|🇯🇵 JP
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
+  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
-- name: '306,494,502,514,515,516,544,551,556,557|日本|@ripaojiedian #2'
+- name: '306,340,502,514,515,516,544,551,556,557|日本|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 41017
@@ -1308,8 +1308,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- country: 🇯🇵JP
-  name: '306,494,502,514,515,516,523,524,544,548,551,556,557|日本2|@ripaojiedian #2'
+- name: '306,340,502,514,515,516,523,524,544,551,556,557|日本2|@ripaojiedian #2'
   network: tcp
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 1331
@@ -1318,9 +1317,7 @@ proxies:
   sni: www.nintendogames.net
   tls: true
   type: trojan
-  udp: true
-- country: 🇯🇵JP
-  name: '306,494,502,503,504,506,507,514,515,516,523,524,544,548,551,556,557|日本3|@ripaojiedian
+- name: '306,340,502,503,504,506,507,514,515,516,523,524,544,551,556,557|日本3|@ripaojiedian
     #2'
   network: tcp
   password: 76d630f2af6619c4a5de0ef953df3c6a
@@ -1330,8 +1327,7 @@ proxies:
   sni: www.nintendogames.net
   tls: true
   type: trojan
-  udp: true
-- name: '306,494,502,514,515,516,523,524,544,551,556,557|新加坡|@ripaojiedian #2'
+- name: '306,340,502,514,515,516,523,524,544,551,556,557|新加坡|@ripaojiedian #2'
   network: tcp
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 507
@@ -1340,7 +1336,7 @@ proxies:
   sni: www.nintendogames.net
   tls: true
   type: trojan
-- name: '306,494,502,503,504,506,507,514,515,516,523,524,544,551,556,557|新加坡2|@ripaojiedian
+- name: '306,340,502,503,504,506,507,514,515,516,523,524,544,551,556,557|新加坡2|@ripaojiedian
     #2'
   network: tcp
   password: 76d630f2af6619c4a5de0ef953df3c6a
@@ -1350,8 +1346,7 @@ proxies:
   sni: www.nintendogames.net
   tls: true
   type: trojan
-- country: 🇯🇵JP
-  name: '306,494,502,503,504,506,507,514,515,516,523,524,544,548,551,556,557|美国|@ripaojiedian
+- name: '306,340,502,503,504,506,507,514,515,516,523,524,544,551,556,557|美国|@ripaojiedian
     #2'
   network: tcp
   password: 76d630f2af6619c4a5de0ef953df3c6a
@@ -1361,11 +1356,8 @@ proxies:
   sni: www.nintendogames.net
   tls: true
   type: trojan
-  udp: true
 - alterId: 0
-  country: 🇯🇵JP
-  name: 306,494,502,503,504,506,507,514,515,516,523,524,544,548,551,556,557,574|未知43
-    3.2MB/s
+  name: 306,340,502,503,504,506,507,514,515,516,523,524,544,551,556,557,574|未知43 3.2MB/s
   network: tcp
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 2890
@@ -1506,33 +1498,6 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: 340,494,502,503,504,506,507,559,580|🇯🇵 日本|@stairnode
-  network: tcp
-  password: BxceQaOe
-  port: 4492
-  server: 52.195.216.100
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- country: 🇵JP
-  name: '340,378,440,494,502,503,504,506,507,536,537,538,559,580|🇯🇵 日本2|@stairnode
-    #1'
-  network: tcp
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  port: 3093
-  server: 160.16.229.223
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- name: '340,378,494,502,503,504,506,507,536,537,559,580|🇯🇵 日本3|@stairnode #1'
-  network: tcp
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  port: 3093
-  server: 52.193.180.87
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - name: 356|🇯🇵1 |  34.4MB/s
   network: ws
   password: bpb-trojan
@@ -1564,8 +1529,7 @@ proxies:
   server: 149.22.87.241
   type: ss
 - cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 356,357,378,537,538,548|🇬🇧GB_118
+  name: 356,357,378,537,538|🇯🇵JP-149.22.87.204-0256 | 29.1...
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2614,9 +2578,8 @@ proxies:
   server: 185.160.24.217
   type: ss
 - alterId: 0
-  country: 🇯🇵JP
-  name: '378,494,502,503,504,506,507,536,537,538,548,559,574,580|未知 TROJAN-1019 |
-    free-nodes #4'
+  name: '378,502,503,504,506,507,536,537,538,559,574,580|未知 TROJAN-1019 | free-nodes
+    #4'
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 3093
   server: 160.16.117.182
@@ -2625,7 +2588,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-274 | free-nodes #5'
+- name: '378,502,503,504,506,507,536,537,559,580|未知 TROJAN-274 | free-nodes #5'
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 1331
   server: 153.121.73.102
@@ -2633,9 +2596,8 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  country: 🇯🇵JP
-  name: '378,440,494,502,503,504,506,507,536,537,538,548,559,574,580|未知 TROJAN-1273
-    | free-nodes #5'
+  name: '378,502,503,504,506,507,536,537,538,559,574,580|未知 TROJAN-1273 | free-nodes
+    #5'
   network: tcp
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 3145
@@ -2645,42 +2607,58 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- country: 🇯🇵JP
-  name: '378,479,484,494,502,503,504,506,507,536,537,538,548,559,580|未知 TROJAN-1684
-    | free-nodes #4'
+- name: '378,502,503,504,506,507,536,537,538,559,580|🇯🇵 日本2|@stairnode #1'
   network: tcp
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 3093
+  server: 160.16.229.223
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '378,502,503,504,506,507,536,537,538,559,580|🇺🇸 美国|@stairnode #1'
+  network: tcp
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 2890
+  server: 160.16.214.6
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '378,479,484,502,503,504,506,507,536,537,538,559,580|未知 TROJAN-1684 | free-nodes
+    #4'
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 2890
   server: 160.16.196.59
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-  udp: true
+- name: '378,502,503,504,506,507,536,537,538,559,580|🇺🇸 美国2|@stairnode #1'
+  network: tcp
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 2890
+  server: 202.181.103.235
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '378,537,538,548|_02 #1'
+  name: 378,537,538|🇯🇵JP-103.75.118.125-0328 | 5.9...
   password: XLOrvLWkCBBBxLqSEe9S8lnC5PLsNfRh
   port: 443
   server: 103.75.118.125
   type: ss
-  udp: true
-- country: 🇯🇵JP
-  name: 378,440,494,502,503,504,506,507,536,537,548,559|日本_121104010
+- name: 378,502,503,504,506,507,536,537,559|日本_121104010
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 4054
   server: 160.16.106.144
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
-- country: 🇯🇵JP
-  name: 378,479,484,536,537,548,559|日本_121104011
+- name: 378,479,484,536,537,559|日本_121104011
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 4054
   server: 160.16.136.130
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - cipher: aes-256-cfb
   name: '378,537|🇵JP-172.104.123.158-0531 #1'
   password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
@@ -2744,7 +2722,7 @@ proxies:
   sni: www.baidu.com
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,503,504,506,507,536,537,559,574,580|未知 TROJAN-1869 |
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1869 |
     free-nodes #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 316
@@ -2768,16 +2746,15 @@ proxies:
   skip-cert-verify: false
   sni: www.baidu.com
   type: trojan
-- name: '378,456,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1037 | free-nodes
-    #5'
+- name: '378,456,502,503,504,506,507,536,537,559,580|未知 TROJAN-1037 | free-nodes #5'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2381
   server: 160.16.132.158
   skip-cert-verify: false
   sni: www.baidu.com
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1902 |
-    free-nodes #3'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1902 | free-nodes
+    #3'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2467
   server: 160.16.132.158
@@ -2785,8 +2762,8 @@ proxies:
   sni: www.baidu.com
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1787
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1787 |
+    free-nodes #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 1331
   server: 160.16.131.243
@@ -2796,7 +2773,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,479,484,494,502,503,504,506,507,536,537,559,574|未知51 #1'
+  name: '378,479,484,502,503,504,506,507,536,537,559,574|未知51 #1'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 316
   server: 160.16.131.243
@@ -2805,15 +2782,15 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1390 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1390 | free-nodes
+    #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 5041
   server: 153.121.41.97
   skip-cert-verify: false
   sni: www.baidu.com
   type: trojan
-- name: '378,456,479,484,494,502,536,537,559|未知 TROJAN-457 | free-nodes #4'
+- name: '378,456,479,484,536,537,559|未知 TROJAN-457 | free-nodes #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 5321
   server: 160.16.131.243
@@ -2821,8 +2798,8 @@ proxies:
   sni: www.baidu.com
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1863
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1863 |
+    free-nodes #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2381
   server: 153.121.41.97
@@ -2832,8 +2809,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1888
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1888 |
+    free-nodes #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2467
   server: 153.121.41.97
@@ -2842,8 +2819,8 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1304 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1304 | free-nodes
+    #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 316
   server: 160.16.106.144
@@ -2851,8 +2828,8 @@ proxies:
   sni: www.baidu.com
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,503,504,506,507,536,537,559,574,580|未知 TROJAN-1810 |
-    free-nodes #3'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1810 |
+    free-nodes #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 1331
   server: 160.16.106.144
@@ -2862,7 +2839,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,456,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1116 | free-nodes
+  name: '378,456,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1116 | free-nodes
     #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 5041
@@ -2873,8 +2850,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1760
-    | free-nodes #3'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1760 |
+    free-nodes #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 5321
   server: 153.121.56.122
@@ -2884,7 +2861,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-719 | free-nodes
+  name: '378,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-719 | free-nodes
     #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2381
@@ -2894,8 +2871,8 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1754 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1754 | free-nodes
+    #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2467
   server: 160.16.106.144
@@ -2903,8 +2880,8 @@ proxies:
   sni: www.baidu.com
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1589
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1589 |
+    free-nodes #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 316
   server: 160.16.144.208
@@ -2913,15 +2890,15 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1219 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1219 | free-nodes
+    #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 1331
   server: 160.16.144.208
   skip-cert-verify: false
   sni: www.baidu.com
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-922 | free-nodes
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-922 | free-nodes
     #5'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2283
@@ -2936,37 +2913,37 @@ proxies:
   skip-cert-verify: false
   sni: www.baidu.com
   type: trojan
-- name: '378,456,479,484,494,502,536,537,559,580|未知 TROJAN-796 | free-nodes #4'
+- name: '378,456,479,484,536,537,559,580|未知 TROJAN-796 | free-nodes #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2381
   server: 160.16.144.208
   skip-cert-verify: false
   sni: www.baidu.com
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1469 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1469 | free-nodes
+    #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 24673
   server: 160.16.124.55
   skip-cert-verify: false
   sni: www.baidu.com
   type: trojan
-- name: '378,456,494,502,503,504,506,507,536,537,559|未知 TROJAN-857 | free-nodes #4'
+- name: '378,456,502,503,504,506,507,536,537,559|未知 TROJAN-857 | free-nodes #4'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 443
   server: 60.82.70.104
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,453,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1688 |
-    free-nodes #4'
+- name: '378,453,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1688 | free-nodes
+    #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 126.47.92.160
   skip-cert-verify: false
   sni: fe2.update.microsoft.com
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-566 | free-nodes
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-566 | free-nodes
     #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 4451
@@ -2974,7 +2951,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-669 | free-nodes
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-669 | free-nodes
     #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 1331
@@ -2982,7 +2959,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,479,484,494,502,503,504,506,507,536,537,559|未知35
+- name: 378,479,484,502,503,504,506,507,536,537,559|未知35
   password: 253bc477d4e43c209f2d427272968280
   port: 2283
   server: 160.16.116.227
@@ -2990,7 +2967,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: 378,456,479,484,494,502,503,504,506,507,536,537,559,574|未知30
+  name: 378,456,479,484,502,503,504,506,507,536,537,559,574|未知30
   password: 253bc477d4e43c209f2d427272968280
   port: 5041
   server: 160.16.116.227
@@ -2999,7 +2976,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 378,456,479,484,494,502,503,504,506,507,536,537,559|未知156
+- name: 378,456,479,484,502,503,504,506,507,536,537,559|未知156
   password: 253bc477d4e43c209f2d427272968280
   port: 2381
   server: 160.16.68.250
@@ -3007,7 +2984,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: '378,456,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-815 | free-nodes
+  name: '378,456,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-815 | free-nodes
     #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 1572
@@ -3017,15 +2994,15 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1330 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1330 | free-nodes
+    #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 4451
   server: 153.121.70.134
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1903 | free-nodes
+- name: '378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1903 | free-nodes
     #3'
   password: 253bc477d4e43c209f2d427272968280
   port: 5041
@@ -3033,7 +3010,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,479,484,494,502,536,537,559,580|未知 TROJAN-1422 | free-nodes #4'
+- name: '378,479,484,536,537,559,580|未知 TROJAN-1422 | free-nodes #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 1536
   server: 160.16.81.84
@@ -3041,7 +3018,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: '378,479,484,494,502,503,504,506,507,536,537,559,574|未知44 #1'
+  name: '378,479,484,502,503,504,506,507,536,537,559,574|未知44 #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 1085
   server: 153.121.39.240
@@ -3051,8 +3028,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-981
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-981 | free-nodes
+    #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 4234
   server: 153.121.39.240
@@ -3062,8 +3039,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-825
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-825 | free-nodes
+    #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 160.16.63.16
@@ -3072,8 +3049,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1309 | free-nodes
-    #4'
+- name: '378,456,502,503,504,506,507,536,537,559,580|未知 TROJAN-1309 | free-nodes #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 1331
   server: 160.16.124.55
@@ -3081,8 +3057,8 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,503,504,506,507,536,537,559,574,580|未知 TROJAN-1463 | free-nodes
-    #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1463 |
+    free-nodes #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 2283
   server: 160.16.138.24
@@ -3091,23 +3067,22 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,479,484,494,502,536,537,559,580|未知 TROJAN-1592 | free-nodes #4'
+- name: '378,479,484,536,537,559,580|未知 TROJAN-1592 | free-nodes #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 1572
   server: 160.16.124.55
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1376 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1376 | free-nodes
+    #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 3160
   server: 160.16.124.55
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-353 | free-nodes
-    #5'
+- name: '378,456,502,503,504,506,507,536,537,559,580|未知 TROJAN-353 | free-nodes #5'
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
   server: 160.16.72.33
@@ -3115,8 +3090,8 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: '378,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1329 |
-    free-nodes #2'
+  name: '378,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1329 | free-nodes
+    #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 6752
   server: 160.16.124.55
@@ -3125,38 +3100,38 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,479,484,494,502,536,537,559,580|未知 TROJAN-1793 | free-nodes #4'
+- name: '378,456,479,484,536,537,559,580|未知 TROJAN-1793 | free-nodes #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 126.116.225.149
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1568 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1568 | free-nodes
+    #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 1331
   server: 160.16.138.24
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1790 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1790 | free-nodes
+    #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 409
   server: 153.121.51.29
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1083 |
-    free-nodes #3'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1083 | free-nodes
+    #3'
   password: 253bc477d4e43c209f2d427272968280
   port: 1331
   server: 153.121.51.29
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559|未知 TROJAN-1096 | free-nodes
+- name: '378,456,479,484,502,503,504,506,507,536,537,559|未知 TROJAN-1096 | free-nodes
     #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 449
@@ -3165,8 +3140,8 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1663
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1663 |
+    free-nodes #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 3296
   server: 160.16.130.66
@@ -3176,8 +3151,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1744
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1744 |
+    free-nodes #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 4729
   server: 160.16.130.66
@@ -3187,8 +3162,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1052
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1052 |
+    free-nodes #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 3160
   server: 160.16.231.103
@@ -3198,7 +3173,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,456,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1028 | free-nodes
+  name: '378,456,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1028 | free-nodes
     #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 1802
@@ -3208,7 +3183,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,479,484,494,502,536,537,559,580|未知 TROJAN-1400 | free-nodes #4'
+- name: '378,479,484,536,537,559,580|未知 TROJAN-1400 | free-nodes #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 2045
   server: 160.16.130.66
@@ -3216,7 +3191,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: '378,456,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1436 | free-nodes
+  name: '378,456,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1436 | free-nodes
     #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 3957
@@ -3226,7 +3201,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1510 | free-nodes
+- name: '378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1510 | free-nodes
     #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 4317
@@ -3234,7 +3209,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1844 | free-nodes
+- name: '378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1844 | free-nodes
     #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 3296
@@ -3243,8 +3218,8 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-718
-    | free-nodes #3'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-718 | free-nodes
+    #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 449
   server: 160.16.57.238
@@ -3253,23 +3228,22 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1490 | free-nodes
-    #4'
+- name: '378,456,502,503,504,506,507,536,537,559,580|未知 TROJAN-1490 | free-nodes #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 1700
   server: 160.16.87.174
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1058 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1058 | free-nodes
+    #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 1331
   server: 160.16.231.103
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559|未知 TROJAN-231 | free-nodes
+- name: '378,456,479,484,502,503,504,506,507,536,537,559|未知 TROJAN-231 | free-nodes
     #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 4397
@@ -3277,7 +3251,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,503,504,506,507,536,537,559,580|未知 TROJAN-741 | free-nodes
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-741 | free-nodes
     #5'
   password: 253bc477d4e43c209f2d427272968280
   port: 443
@@ -3286,7 +3260,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574|未知8 #1'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574|未知8 #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 160.16.236.32
@@ -3295,7 +3269,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1824 | free-nodes
+- name: '378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1824 | free-nodes
     #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 3160
@@ -3303,8 +3277,8 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1342 |
-    free-nodes #6'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1342 | free-nodes
+    #6'
   password: 253bc477d4e43c209f2d427272968280
   port: 1700
   server: 153.121.45.139
@@ -3318,8 +3292,8 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1777 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1777 | free-nodes
+    #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 1924
   server: 160.16.72.33
@@ -3327,8 +3301,8 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: '378,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1645 |
-    free-nodes #4'
+  name: '378,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1645 | free-nodes
+    #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 3294
   server: 160.16.72.33
@@ -3337,7 +3311,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,503,504,506,507,536,537,580|未知 TROJAN-807 | free-nodes #4'
+- name: '378,456,502,503,504,506,507,536,537,580|未知 TROJAN-807 | free-nodes #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 447
   server: 160.16.63.16
@@ -3345,7 +3319,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: '378,494,502,503,504,506,507,536,537,559,574|未知169 #1'
+  name: '378,502,503,504,506,507,536,537,559,574|未知169 #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 3294
   server: 153.121.73.102
@@ -3354,7 +3328,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,479,484,503,504,506,507,536,537,559|未知 TROJAN-821 | free-nodes #4'
+- name: '378,479,484,502,503,504,506,507,536,537,559|未知 TROJAN-821 | free-nodes #4'
   password: 253bc477d4e43c209f2d427272968280
   port: 3296
   server: 153.121.73.102
@@ -3406,16 +3380,14 @@ proxies:
     headers:
       Host: tls.07.node-for-bigairport.win
     path: /
-- country: 🇯🇵JP
-  name: '378,479,484,494,502,503,504,506,507,536,537,538,548,559,580|未知 TROJAN-1493
-    | free-nodes #4'
+- name: '378,479,484,502,503,504,506,507,536,537,538,559,580|未知 TROJAN-1493 | free-nodes
+    #4'
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 507
   server: 160.16.233.76
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - name: '378,456,479,484,536,537,580|未知 TROJAN-1700 | free-nodes #4'
   password: BxceQaOe
   port: 2145
@@ -3424,8 +3396,8 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1714
-    | free-nodes #2'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1714 |
+    free-nodes #1'
   password: 8d2d5953-d649-4034-94f2-72f2df2623da
   port: 443
   server: 168.138.44.176
@@ -3433,7 +3405,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,479,484,494,503,504,506,507,536,537,559,580|未知 TROJAN-746 | free-nodes
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-746 | free-nodes
     #4'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 2760
@@ -3442,8 +3414,8 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1889
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1889 |
+    free-nodes #4'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 4054
   server: 160.16.124.55
@@ -3452,15 +3424,15 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,479,484,494,502,536,537,559,580|未知 TROJAN-1242 | free-nodes #4'
+- name: '378,456,479,484,536,537,559,580|未知 TROJAN-1242 | free-nodes #5'
   password: 7a566d21dfcd0f12490275fd3dd3cfc4
   port: 443
   server: trs09.bolab.net
   skip-cert-verify: false
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1865
-    | free-nodes #2'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1865 |
+    free-nodes #1'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 2890
   server: 160.16.131.243
@@ -3469,29 +3441,29 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,494,502,503,504,506,507,536,537|🇵JP-52.195.216.100-1331 #1'
+- name: '378,502,503,504,506,507,536,537|🇵JP-52.195.216.100-1331 #1'
   password: BxceQaOe
   port: 4492
   server: 52.195.216.100
   skip-cert-verify: false
   sni: t.me/ripaojiedian
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1457 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1457 | free-nodes
+    #4'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: 153.121.74.146
   skip-cert-verify: false
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1906 |
-    free-nodes #3'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1906 | free-nodes
+    #3'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 4054
   server: 160.16.236.32
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-768 | free-nodes
+- name: '378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-768 | free-nodes
     #4'
   password: BxceQaOe
   port: 4012
@@ -3499,61 +3471,73 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '378,456,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1826 | free-nodes
-    #3'
+- name: '378,456,502,503,504,506,507,536,537,559,580|未知 TROJAN-1826 | free-nodes #4'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65011
   server: jp01a.roc-taiwan.net.ua
   skip-cert-verify: false
   type: trojan
-- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-774 | free-nodes #4'
+- name: '378,502,503,504,506,507,536,537,559,580|未知 TROJAN-774 | free-nodes #4'
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 3145
   server: 54.178.25.255
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1892 |
-    free-nodes #3'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1892 | free-nodes
+    #3'
   password: c09eb137-bf68-4658-84e0-102d94b74168
   port: 443
   server: 150.230.217.213
   skip-cert-verify: false
   type: trojan
-- country: 🇯🇵JP
-  name: '378,479,484,494,502,503,504,506,507,536,537,548,559,580|未知 TROJAN-1550 |
-    free-nodes #4'
+- name: '378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1550 | free-nodes
+    #4'
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 2760
   server: 202.181.103.246
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1873 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1873 | free-nodes
+    #4'
   password: 7x42LetRa0
   port: 1443
   server: 106.180.225.69
   skip-cert-verify: false
   type: trojan
-- name: '378,479,484,494,502,503,504,506,507,536,537,559|未知 TROJAN-1413 | free-nodes
-    #4'
+- name: '378,479,484,502,503,504,506,507,536,537,559|未知 TROJAN-1413 | free-nodes #4'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 507
   server: 160.16.212.152
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,479,484,494,502,503,504,506,507,536,537,559|未知124
+- name: 378,479,484,502,503,504,506,507,536,537,559|未知124
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: 219.94.250.108
   skip-cert-verify: false
   type: trojan
+- name: 378,502,503,504,506,507,536,537,559,580|🇸🇬 新加坡3|@stairnode
+  network: tcp
+  password: BxceQaOe
+  port: 3579
+  server: 43.206.220.221
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '378,502,503,504,506,507,536,537,559,580|🇺🇸 美国3|@stairnode #1'
+  network: tcp
+  password: BxceQaOe
+  port: 4569
+  server: 13.231.220.185
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - alterId: 0
-  name: '378,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1789 |
-    free-nodes #4'
+  name: '378,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1789 | free-nodes
+    #4'
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 1331
   server: 13.231.156.35
@@ -3563,7 +3547,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-401 | free-nodes
+  name: '378,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-401 | free-nodes
     #5'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 1331
@@ -3573,7 +3557,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 378,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1920 | free-nodes
+- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1920 | free-nodes
   password: BxceQaOe
   port: 968
   server: 13.231.156.35
@@ -3581,8 +3565,8 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1827
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1827 |
+    free-nodes #4'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 4054
   server: 160.16.81.84
@@ -3591,13 +3575,24 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 378,456,494,502,503,504,506,507,536,537,559|未知66
+- alterId: 0
+  name: '378,502,503,504,506,507,536,537,559,574,580|🇸🇬 新加坡2|@stairnode #1'
+  network: tcp
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 3145
+  server: 13.231.220.185
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- name: 378,456,502,503,504,506,507,536,537,559|未知66
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: de01.trojanyyds.xyz
   skip-cert-verify: false
   type: trojan
-- name: '378,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1140 | free-nodes
+- name: '378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1140 | free-nodes
     #4'
   password: 6d64570c-81d4-30fa-b2e2-dce73e1a2702
   port: 44301
@@ -3606,7 +3601,7 @@ proxies:
   sni: osav101.jd0001.top
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574|未知115 #1'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574|未知115 #1'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 3093
   server: 160.16.130.66
@@ -3615,14 +3610,14 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1682 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1682 | free-nodes
+    #4'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: 133.167.100.203
   skip-cert-verify: false
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559|未知 TROJAN-428 | free-nodes
+- name: '378,456,479,484,502,503,504,506,507,536,537,559|未知 TROJAN-428 | free-nodes
     #4'
   password: BxceQaOe
   port: 3579
@@ -3630,8 +3625,7 @@ proxies:
   skip-cert-verify: false
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '378,479,484,494,502,503,504,506,507,536,537,580|未知 TROJAN-1206 | free-nodes
-    #3'
+- name: '378,479,484,502,503,504,506,507,536,537,580|未知 TROJAN-1206 | free-nodes #3'
   password: BxceQaOe
   port: 804
   server: 3.112.225.115
@@ -3639,8 +3633,8 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1893
-    | free-nodes #3'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1893 |
+    free-nodes #3'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 2890
   server: 160.16.116.227
@@ -3650,7 +3644,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,494,502,503,504,506,507,536,537,574,580|未知 TROJAN-245 | free-nodes #5'
+  name: '378,502,503,504,506,507,536,537,574,580|未知 TROJAN-245 | free-nodes #5'
   password: da777aae-defb-41d0-a183-2c27da2b4677
   port: 443
   server: 150.230.96.103
@@ -3658,15 +3652,14 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1281 | free-nodes
+- name: '378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1281 | free-nodes
     #4'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65017
   server: jp07a.roc-taiwan.org.ua
   skip-cert-verify: false
   type: trojan
-- name: '378,456,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1674 | free-nodes
-    #4'
+- name: '378,456,502,503,504,506,507,536,537,559,580|未知 TROJAN-1674 | free-nodes #4'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 3169
   server: 153.121.65.107
@@ -3674,8 +3667,8 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1621
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1621 |
+    free-nodes #4'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65012
   server: jp02a.roc-taiwan.net.ua
@@ -3683,23 +3676,23 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1352 |
-    free-nodes #3'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1352 | free-nodes
+    #3'
   password: BxceQaOe
   port: 5156
   server: 54.65.86.145
   skip-cert-verify: false
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1695 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1695 | free-nodes
+    #4'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 4054
   server: 160.16.63.16
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,503,504,506,507,536,537,559,580|未知 TROJAN-1685 | free-nodes
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1685 | free-nodes
     #4'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 3093
@@ -3707,15 +3700,15 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1811 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1811 | free-nodes
+    #4'
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: sg02.trojanyyds.xyz
   skip-cert-verify: false
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1752 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1752 | free-nodes
+    #4'
   network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
   port: 3145
@@ -3723,22 +3716,32 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1729 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1729 | free-nodes
+    #4'
   password: 0c6a3341e8d5ab17
   port: 3389
   server: f5465c4.pg.gladns.com
   skip-cert-verify: false
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1646 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1646 | free-nodes
+    #4'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65016
   server: jp06a.roc-taiwan.org.ua
   skip-cert-verify: false
   type: trojan
-- name: '378,494,502,503,504,506,507,536,537,538,559,580|未知 TROJAN-988 | free-nodes
-    #4'
+- alterId: 0
+  name: '378,502,503,504,506,507,536,537,559,574,580|🇸🇬 新加坡|@stairnode #1'
+  network: tcp
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 507
+  server: 13.231.220.185
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- name: '378,502,503,504,506,507,536,537,538,559,580|未知 TROJAN-988 | free-nodes #4'
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 1331
   server: 160.16.242.183
@@ -3746,9 +3749,8 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  name: '378,456,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1403 | free-nodes
+  name: '378,456,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1403 | free-nodes
     #4'
-  network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
   port: 1596
   server: 160.16.150.76
@@ -3757,8 +3759,8 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1795 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1795 | free-nodes
+    #4'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 507
   server: 153.121.44.99
@@ -3772,7 +3774,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,494,502,503,504,506,507,536,537,559|未知 TROJAN-432 | free-nodes #4'
+- name: '378,502,503,504,506,507,536,537,559|未知 TROJAN-432 | free-nodes #4'
   password: 40c89b10235c40321e7a3cef82b53a03
   port: 22
   server: trs17.bolab.net
@@ -3785,17 +3787,24 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,456,479,484,494,502,503,504,506,507,536,537,559,580|US TROJAN-1106 | free-nodes
-  network: tcp
+- name: 378,456,479,484,502,503,504,506,507,536,537,559,580|US TROJAN-1106 | free-nodes
   password: FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D
   port: 443
   server: kuame.missionsec.us
   skip-cert-verify: false
   sni: kuame.missionsec.us
   type: trojan
+- name: '378,502,503,504,506,507,536,537,559,580|🇯🇵 日本3|@stairnode #1'
+  network: tcp
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 3093
+  server: 52.193.180.87
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - alterId: 0
-  name: '378,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1353 |
-    free-nodes #5'
+  name: '378,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1353 | free-nodes
+    #5'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 1331
   server: 153.121.38.213
@@ -3804,7 +3813,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-306 | free-nodes
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-306 | free-nodes
     #4'
   password: 2cf6d686799e6fa95316394064f26c0a
   port: 2760
@@ -3818,42 +3827,42 @@ proxies:
   server: zzjp01.fuqiangren.com
   skip-cert-verify: false
   type: trojan
-- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1848 | free-nodes #4'
+- name: '378,502,503,504,506,507,536,537,559,580|未知 TROJAN-1848 | free-nodes #4'
   password: BxceQaOe
   port: 2145
   server: 54.95.4.90
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '378,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1306 | free-nodes
+- name: '378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1306 | free-nodes
     #4'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: 49.212.221.47
   skip-cert-verify: false
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1012 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1012 | free-nodes
+    #4'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 4054
   server: 160.16.214.6
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,456,479,484,494,502,536,537,559,580|未知 TROJAN-1243 | free-nodes #4'
+- name: '378,456,479,484,536,537,559,580|未知 TROJAN-1243 | free-nodes #4'
   password: 40c89b10235c40321e7a3cef82b53a03
   port: 22
   server: trs16.bolab.net
   skip-cert-verify: false
   type: trojan
-- name: '378,479,484,494,503,504,506,507,536,537,559,580|未知 TROJAN-885 | free-nodes
+- name: '378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-885 | free-nodes
     #5'
   password: 14bdba6dede262387ebdebaa706e1c90
   port: 443
   server: trs12.bolab.net
   skip-cert-verify: false
   type: trojan
-- name: '378,456,479,484,494,502,536,537,559,580|未知 TROJAN-1854 | free-nodes #4'
+- name: '378,456,479,484,536,537,559,580|未知 TROJAN-1854 | free-nodes #4'
   password: BxceQaOe
   port: 5156
   server: 13.115.187.38
@@ -3861,8 +3870,8 @@ proxies:
   sni: t.me/ripaojiedian
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1382
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1382 |
+    free-nodes #4'
   password: 40c89b10235c40321e7a3cef82b53a03
   port: 22
   server: trs12.bolab.net
@@ -3870,23 +3879,21 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1776 | free-nodes
-    #4'
+- name: '378,456,502,503,504,506,507,536,537,559,580|未知 TROJAN-1776 | free-nodes #4'
   password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2
   port: 443
   server: 168.138.43.89
   skip-cert-verify: false
   type: trojan
-- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-776 | free-nodes #4'
+- name: '378,502,503,504,506,507,536,537,559,580|未知 TROJAN-776 | free-nodes #4'
   password: BxceQaOe
   port: 4569
   server: 54.95.80.83
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '378,456,479,484,494,503,504,506,507,536,537,559,580|未知 TROJAN-1398 | free-nodes
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1398 | free-nodes
     #4'
-  network: tcp
   password: BxceQaOe
   port: 1821
   server: 153.121.51.221
@@ -3894,8 +3901,8 @@ proxies:
   sni: t.me/ripaojiedian
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,503,504,506,507,536,537,559,574,580|未知 TROJAN-1433 | free-nodes
-    #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1433 |
+    free-nodes #4'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65014
   server: jp04a.roc-taiwan.net.ua
@@ -3904,8 +3911,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1452
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1452 |
+    free-nodes #4'
   password: c51d3975-a40c-4a5b-929b-c8595ed87850
   port: 443
   server: 15.168.28.231
@@ -4046,7 +4053,7 @@ proxies:
   port: 443
   server: 175.41.205.247
   type: ss
-- name: '378,456,494,502,503,504,506,507,536,537|🇵JP-23.145.24.30-3958 #1'
+- name: '378,456,502,503,504,506,507,536,537|🇵JP-23.145.24.30-3958 #1'
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
   port: 443
   server: 23.145.24.30
@@ -4184,8 +4191,8 @@ proxies:
   server: 43.206.221.164
   type: ss
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1727
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1727 |
+    free-nodes #4'
   password: c19d1432-8b3e-4818-8837-3d160cf65908
   port: 443
   server: 138.2.45.243
@@ -4206,7 +4213,7 @@ proxies:
   uuid: 26c5fdc7-b3be-3482-9a45-d97b958a889a
   ws-opts:
     path: /v2ray
-- name: '378,456,494,502,536,537,580|未知 TROJAN-1860 | free-nodes #4'
+- name: '378,456,536,537,580|未知 TROJAN-1860 | free-nodes #4'
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 155.248.172.87
@@ -4231,7 +4238,7 @@ proxies:
   uuid: ec736482-173e-3eff-9114-b49df8056e7d
   ws-opts:
     path: /
-- name: '378,456,494,502,536,537|🇵JP-160.16.145.107-4925 #1'
+- name: '378,456,536,537|🇵JP-160.16.145.107-4925 #1'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: 160.16.145.107
@@ -4243,8 +4250,8 @@ proxies:
   port: 1664
   server: 185.160.26.91
   type: ss
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-1765 |
-    free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1765 | free-nodes
+    #4'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65015
   server: jp05a.roc-taiwan.org.ua
@@ -4269,22 +4276,22 @@ proxies:
   server: jp08a.roc-taiwan.org.ua
   skip-cert-verify: false
   type: trojan
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-394 | free-nodes
-    #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-394 | free-nodes
+    #5'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65013
   server: jp03a.roc-taiwan.net.ua
   skip-cert-verify: false
   type: trojan
-- name: '378,456,503,504,506,507,536,537|🇯🇵JP-141.147.191.85-5245 #2'
+- name: '378,456,502,503,504,506,507,536,537|🇯🇵JP-141.147.191.85-5245 #2'
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 141.147.191.85
   skip-cert-verify: false
   type: trojan
 - alterId: 0
-  name: '378,456,479,484,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1720
-    | free-nodes #4'
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1720 |
+    free-nodes #4'
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: jp01.trojanyyds.xyz
@@ -4313,7 +4320,8 @@ proxies:
     headers:
       Host: www.microsoft.com
     path: /
-- name: '378,456,479,484,503,504,506,507,536,537,559|未知 TROJAN-898 | free-nodes #4'
+- name: '378,456,479,484,502,503,504,506,507,536,537,559|未知 TROJAN-898 | free-nodes
+    #4'
   password: 4f7dc540-d244-4e64-af21-4b5bb300add3
   port: 443
   server: 132.226.5.246
@@ -4335,7 +4343,7 @@ proxies:
     headers:
       Host: f1f3227.v1.glados-config.net
     path: /s/f1f3227.fm.apple.com:111548
-- name: '378,456,479,484,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-179 | free-nodes
+- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-179 | free-nodes
     #4'
   password: 1b5eff5a-f36b-4149-8001-7c8c0c4ed2eb
   port: 36306
@@ -4430,18 +4438,13 @@ proxies:
   port: 15099
   server: ss.026.node-for-bigairport.win
   type: ss
-- country: 🇯🇵JP
-  name: 378,440,494,502,503,504,506,507,536,537,548,559|日本_121104014+L0
-  network: tcp
+- name: 378,502,503,504,506,507,536,537,559|日本_121104014+L0
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 4054
   server: 160.16.89.176
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
-  ws-opts:
-    path: /
 - cipher: aes-256-gcm
   name: '378,537|🇵JP-52.69.63.209-7447 #1'
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
@@ -4752,19 +4755,12 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- cipher: aes-256-gcm
-  country: 🇵 JP
-  name: 435| JP_94
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 10079
-  server: ss.027.node-for-bigairport.win
-  type: ss
 - alterId: 0
   cipher: auto
   country: 🇵 JP
   h2-opts: {}
   http-opts: {}
-  name: 435|🇵 JP_95
+  name: 435| JP_90
   network: ws
   port: 443
   server: seoul03.zgjok.com
@@ -4785,7 +4781,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '456,494,502,503,504,506,507|JP VLESS-87 | free-nodes #1'
+  name: '456,502,503,504,506,507|JP VLESS-87 | free-nodes #2'
   network: tcp
   port: 1443
   reality-opts:
@@ -4799,7 +4795,7 @@ proxies:
   uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 456,479,484,494,502,503,504,506,507,559,580|JP VLESS-84 | free-nodes
+  name: 456,479,484,502,503,504,506,507,559,580|JP VLESS-84 | free-nodes
   network: tcp
   port: 38487
   reality-opts:
@@ -5989,32 +5985,6 @@ proxies:
   sni: jp01.xxxxyyyysbs.sbs
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 548|Relay_-🇯🇵JP_15
-  port: 55919
-  server: xray.kk37005.tk
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 2e7548bb-7c5b-4d97-d64d-1b2fe4050089
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 548|🇯🇵JP_259
-  network: ws
-  port: 80
-  server: 172.111.146.64
-  skip-cert-verify: true
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  ws-opts:
-    path: /vmess/
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -6245,7 +6215,7 @@ proxies:
     headers:
       Host: vless3.datatestvless.click
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: '559,580|US美国(mibei77.com 米贝节点分享) #59'
+- name: '559,580|US美国(mibei77.com 米贝节点分享) #58'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -6258,7 +6228,7 @@ proxies:
     headers:
       Host: kk66.tc6666.netlib.re
     path: '%2Fproxyip%3Dsjc.o00o.ooo'
-- name: '559,580|HK香港(mibei77.com 米贝节点分享) #11'
+- name: '559,580|HK香港(mibei77.com 米贝节点分享) #10'
   network: ws
   port: 44388
   server: 176.119.150.38
@@ -6326,31 +6296,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 566|🇯🇵 日本 | JPN
-  port: 45057
-  server: hxb.dashuai.help
-  tls: false
+  name: 559|🇯🇵 JP_125
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: ''
+  tls: true
   type: vmess
-  udp: true
-  uuid: 9df626d6-14f2-4e56-8808-8f1488583f74
-- alterId: 0
-  cipher: auto
-  name: 566|🇯🇵 日本 | JPN 2
-  port: 45056
-  server: hxa.dashuai.help
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c83d8500-33ca-425a-b86f-0910deefbd56
-- alterId: 0
-  cipher: auto
-  name: 566|🇯🇵 日本 | JPN 3
-  port: 45056
-  server: hxa.dashuai.help
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 866c64cf-9787-434e-a76c-dd15d12c3a71
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #2'
