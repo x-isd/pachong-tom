@@ -25,7 +25,7 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,559|13|RU_speednode_0016 #1'
+  name: '340,559|13|RU_speednode_0016 #1'
   port: 4443
   server: 212.60.21.104
   servername: github.com
@@ -256,19 +256,22 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,479,484,537,538|🇷🇺RU-5.182.37.87-0290 | 21.273...
+  country: 🇷🇺RU
+  name: 378,479,484,537,538,548|🇷🇺RU_307
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇷🇺RU-45.138.157.162-0340 | 20....
+  country: 🇷🇺RU
+  name: 378,537,538,548|🇷🇺RU_309
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇷🇺RU-45.89.55.173-0366 | 20.52...
+  country: 🇷🇺RU
+  name: 378,537,538,548|🇷🇺RU_308
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
@@ -458,11 +461,12 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: aes-256-cfb
-  name: '378,537|RU-38.60.223.8-5119 #1'
+  name: '378,537,548|_06 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.60.223.8
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇺RU-185.174.138.209-7529 #1'
@@ -630,8 +634,9 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: '455,457,458,559,580,581|🇷🇺_RU_俄罗斯 #21'
+  name: '455,457,458,548,559,580,581|🇷🇺_RU_俄罗斯 #22'
   network: tcp
   port: 443
   reality-opts:
@@ -642,7 +647,7 @@ proxies:
   type: vless
   uuid: eb162ab1-a006-4931-b1b3-8fc88a22b10e
 - client-fingerprint: chrome
-  name: '455,457,458,559,580,581|🇷🇺_RU_俄罗斯 #22'
+  name: '455,457,458,548,559,580,581|🇷🇺_RU_俄罗斯 #23'
   network: tcp
   port: 35728
   reality-opts:
@@ -654,8 +659,9 @@ proxies:
   type: vless
   uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: '455,457,458,559,580,581|🇷🇺_RU_俄罗斯 #23'
+  name: '455,457,458,548,559,580,581|🇷🇺_RU_俄罗斯 #24'
   network: tcp
   port: 4443
   reality-opts:
@@ -1457,36 +1463,6 @@ proxies:
       Host: ''
     path: /
 - client-fingerprint: chrome
-  fingerprint: ''
-  name: 470|07a49d2b990f438f99a09d6b709f8a...
-  network: ws
-  port: 2053
-  server: 172.67.155.231
-  servername: INDEX.Arcane509.Workers.DEV
-  tls: true
-  type: vless
-  udp: false
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  ws-opts:
-    headers:
-      host: INDEX.Arcane509.Workers.DEV
-    path: /assets?ed=2048
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 470|68ae5f951b014ddcb0ea583de0a2e3...
-  network: ws
-  port: 443
-  server: 172.67.145.21
-  servername: INDEX.Arcane509.Workers.DEV
-  tls: true
-  type: vless
-  udp: false
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  ws-opts:
-    headers:
-      host: INDEX.Arcane509.Workers.DEV
-    path: /assets?ed=2048
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '479,484|[Vless] 🇷🇺 RU VLESS-17 | free-... #1'
   network: tcp
@@ -1590,6 +1566,19 @@ proxies:
   tls: true
   type: vless
   uuid: 90c9c25c-df6c-4438-83d3-ef97166a9184
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507|RU VLESS-02 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: PfxP7-Pvot9Y8z5boZwuG3Afyb_zdm0C2HCZezNMTiQ
+    short-id: 85225c27630d023f
+  server: 109.248.203.71
+  servername: www.google.com
+  tls: false
+  type: vless
+  uuid: 6142e134-346a-4ffe-bf5b-c3fb7e3c9dfb
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: 7034vless
@@ -1833,7 +1822,7 @@ proxies:
   uuid: c69ccf0c-02e4-4325-8687-3a622a9f9fcf
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '559|🇷🇺_RU_俄罗斯 #12'
+  name: '559|🇷🇺_RU_俄罗斯 #13'
   network: tcp
   port: 4443
   reality-opts:
@@ -1860,7 +1849,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '559|🇷🇺_RU_俄罗斯 #13'
+  name: '559|🇷🇺_RU_俄罗斯 #14'
   network: tcp
   port: 443
   server: jrghxqxyoy-518237151-direct.bahame.co
