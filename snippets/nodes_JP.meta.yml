@@ -534,15 +534,14 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: 127,426,566|🇺🇸 美国 | USA 32
+- name: '127,426|🇯🇵 JP_1|7.0MB/s|GPT|YT-JP|NF|D... #1'
   network: ws
   password: 5a2c16f9
   port: 443
   server: 172.64.229.5
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
-  udp: true
   ws-opts:
     headers:
       Host: snippets.kkii.eu.org
@@ -1417,7 +1416,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,378,537,538,548|🇬🇧GB_138
+  name: 356,357,378,537,538,548|🇬🇧GB_136
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2495,7 +2494,7 @@ proxies:
   server: 185.160.24.217
   type: ss
 - cipher: rc4-md5
-  name: 378,537,538,548|_21
+  name: 378,537,538,548|_22
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 172.105.199.111
@@ -2543,7 +2542,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '378,537,538,548|_11 #2'
+  name: '378,537,538,548|_13 #2'
   password: XLOrvLWkCBBBxLqSEe9S8lnC5PLsNfRh
   port: 443
   server: 103.75.118.125
@@ -2661,8 +2660,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- country: 🇵JP
-  name: '378,440,454,536,537,548,559,580|🇯🇵 日本3|@stairnode #7'
+- name: '378,454,536,537,559,580|🇯🇵 日本3|@stairnode #7'
   network: tcp
   password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 3169
@@ -2670,8 +2668,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
-- country: 🇯🇵JP
+- country: 🇵JP
   name: '378,440,454,536,537,548,559,580|🇸🇬 新加坡|@stairnode #7'
   network: tcp
   password: f36f4495b4b26cc2fe346cfa23e05b1b
@@ -2689,7 +2686,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,454,537,559,566,580|🇺🇸 美国3|@stairnode #7'
+- name: '378,454,537,559,580|🇺🇸 美国3|@stairnode #7'
   network: tcp
   password: BxceQaOe
   port: 1112
@@ -2697,7 +2694,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|JP-140.83.84.209-1321 #1'
@@ -3700,8 +3696,25 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 435| JP_75
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
+  ws-path: /
 - country: 🇵JP
-  name: 440|Relay_🇯🇵JP-🇯🇵JP_15
+  name: 440|Relay_🇵JP-🇯🇵JP_13
   password: BxceQaOe
   port: 11945
   server: 52.194.193.12
@@ -5026,26 +5039,21 @@ proxies:
   server: 13.231.208.147
   sni: t.me%25252Fripaojiedian
   type: trojan
-- alterId: 0
+- alterId: 1
   cipher: auto
   country: 🇯🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_🇯🇵JP-🇯🇵JP_167
-  network: ws
-  port: 443
-  server: n1753598452.wpg27.xyz
-  servername: n1753598452.wpg27.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
-  ws-opts:
-    headers:
-      HOST: n1753598452.wpg27.xyz
-    path: /
-- country: 🇯🇵JP
   name: 548|Relay_🇯🇵JP-🇯🇵JP_171
+  network: tcp
+  port: 11776
+  server: qu9di-g04.jp02-e3-vm0.entry.fr0528.art
+  servername: qu9di-g04.jp02-e3-vm0.entry.fr0528.art
+  skip-cert-verify: true
+  type: vmess
+  uuid: c18c4112-fb51-3167-bb76-515d7a2b512d
+- country: 🇯🇵JP
+  name: 548|Relay_🇯🇵JP-🇯🇵JP_174
   password: BxceQaOe
   port: 11945
   server: 52.194.193.12
@@ -5390,121 +5398,143 @@ proxies:
       Host: n1753598446.wpg27.xyz
     path: /
 - name: 566|🇯🇵 日本 | JPN
-  password: c0ba698e-32a7-4c0e-a038-375209df9b89
+  network: ws
   port: 443
-  server: jp4.3f770769-74b9-c6b9-315d-4507cf42dd90.69408ae5.the-best-airport.com
-  skip-cert-verify: true
-  sni: new.download.the-best-airport.com
-  type: trojan
-  udp: true
-- auth: 34755bf3-5038-4ee7-9ae7-78c3369b6aaa
-  name: '566|🇯🇵 日本 | JPN 2 #1'
-  password: 34755bf3-5038-4ee7-9ae7-78c3369b6aaa
-  port: 25200
-  ports: 25200-26200
-  server: rb.kaixincloud.top
-  skip-cert-verify: false
-  sni: rb.kaixincloud.top
-  type: hysteria2
-  udp: true
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 566|🇯🇵 日本 | JPN 3
-  network: tcp
-  port: 60236
-  reality-opts:
-    public-key: 48en8jCV_izmHiSaW5wTmRjN-V4BYadWjO-pBgxCX3E
-    short-id: ce1ab303
-  server: 47.79.84.104
-  servername: tesla.com
+  server: wangcai.24av.top
+  servername: snippets.kkii.eu.org
   tls: true
   type: vless
   udp: true
-  uuid: 9d908563-4ba6-4eed-bc1e-d49c2640c7a9
-- client-fingerprint: chrome
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳 @WangCai2
+- alpn:
+  - h3
+  congestion-controller: bbr
+  disable-sni: false
+  name: '566|🇯🇵 日本 | JPN 2 #1'
+  password: 5936c09e-b309-4946-966e-4245afd04a6a
+  port: 57946
+  reduce-rtt: false
+  request-timeout: 0
+  server: 115.187.16.7
+  skip-cert-verify: true
+  sni: www.python.org
+  type: tuic
+  udp-relay-mode: native
+  uuid: 5936c09e-b309-4946-966e-4245afd04a6a
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 566|🇯🇵 日本 | JPN 4
   network: tcp
-  port: 443
+  port: 30303
   reality-opts:
-    public-key: Qj72gbWEZOJshMegmLtOrLUf4bIAQFpJPtCy_pBfcRU
-  server: 139.162.82.185
-  servername: www.cisco.com
+    public-key: RuNAMARjcI4VNAkqWazbFm4sa3Kc-uViiruuByx2TiM
+    short-id: 4d77021d
+  server: freea.glyphara.com
+  servername: mensura.cdn-apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 0ab02f6d-3304-44f1-915b-7ed8fc5751fa
-- auth: 21db6b55-0f88-436e-9bd7-0e3c006de096
+  uuid: 60406894-df8f-4000-9d00-3bde28bad603
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
   name: 566|🇯🇵 日本 | JPN 5
-  password: 21db6b55-0f88-436e-9bd7-0e3c006de096
-  port: 25200
-  ports: 25200-26200
-  server: rb.kaixincloud.top
-  skip-cert-verify: false
-  sni: rb.kaixincloud.top
+  network: tcp
+  port: 30301
+  reality-opts:
+    public-key: IoW1RqD-BzW9oxaM4KtHx5ap6haIENhYyZt_oMZqlCM
+    short-id: 950cee8a
+  server: freea.glyphara.com
+  servername: lol.secure.dyn.riotcdn.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4e34b83c-d76a-4ed2-bbca-2b5f31158b51
+- auth: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+  name: 566|🇯🇵 日本 | JPN 6
+  password: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+  port: 35000
+  ports: 35000-39000
+  server: 103.62.49.76
+  skip-cert-verify: true
+  sni: www.apple.com
   type: hysteria2
   udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 566|🇯🇵 日本 | JPN 6
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: L0eogWDjwYi7UJehqnfcNDvBRIlWHtGmRWZTeUKqeks
-  server: 172.104.89.165
-  servername: www.honda.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0ab02f6d-3304-44f1-915b-7ed8fc5751fa
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: violet
   name: 566|🇯🇵 日本 | JPN 7
-  network: tcp
-  port: 63994
-  reality-opts:
-    public-key: j3uEPzEcOET7XWDykVWgvOEflrH1Z7R-MdMGCXuHtBs
-    short-id: e3815d7b
-  server: 47.79.89.28
-  servername: tesla.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9d908563-4ba6-4eed-bc1e-d49c2640c7a9
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 566|🇯🇵 日本 | JPN 9
-  network: tcp
-  port: 55794
-  reality-opts:
-    public-key: rhmzAwWbh2JyK_t3YMqoMXI9hvmbM543lbJtJ1FnFg0
-    short-id: a40e7740
-  server: 141.147.170.17
-  servername: tesla.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9d908563-4ba6-4eed-bc1e-d49c2640c7a9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 566|🇯🇵 日本 | JPN 10
-  network: tcp
+  network: grpc
   port: 443
-  reality-opts:
-    public-key: H9QizYU21RV7iGn0sIkCrG90BQ7XA1mPW6wgiSUkq00
-  server: 139.162.119.92
-  servername: rjsdemolitiondisposal.powerdealer.honda.com
+  server: jpjua.osaip.net
   tls: true
   type: vless
   udp: true
-  uuid: 0ab02f6d-3304-44f1-915b-7ed8fc5751fa
+  uuid: 03b809b1-b3f9-47ee-b864-db05e9f37e95
+- name: 566|🇯🇵 日本 | JPN 8
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.82
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: 566|🇯🇵 日本 | JPN 10
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.3
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 566|🇯🇵 日本 | JPN 11
-  password: 30223f43-d423-4af7-ba19-297245835a82
+  password: c558248a-67f9-4276-81ba-43d8d841e6e8
   port: 7111
   server: bp7x2a.641sjc.cn
   type: ss
   udp: true
+- name: 566|🇯🇵 日本 | JPN 12
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.135
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: '568|🇯🇵 日本 | JPN #3'
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.7
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+- name: '568|🇯🇵 日本 | JPN #7'
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.169
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'
