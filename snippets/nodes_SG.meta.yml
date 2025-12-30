@@ -824,11 +824,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|🇸🇬 SG
+- name: 255|SG
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
-  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - client-fingerprint: firefox
@@ -938,7 +938,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇸🇬SG
-  name: 356,378,537,538,548|🇸🇬SG_317
+  name: 356,378,537,538,548|🇸🇬SG_323
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -2220,13 +2220,13 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇨🇿CZ
-  name: 378,537,538,548|🇨🇿CZ_120
+  name: 378,537,538,548|🇨🇿CZ_111
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 95.173.218.203
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537,538,548|_10 #1'
+  name: '378,537,538,548|_16 #2'
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
@@ -3426,6 +3426,37 @@ proxies:
   country: 🇬 SG
   h2-opts: {}
   http-opts: {}
+  name: 435,437,548,559|🇸🇬 SG_149
+  network: none
+  port: 52752
+  server: 8.218.105.196
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸🇬 SG
+  delay: 2937
+  h2-opts: {}
+  http-opts: {}
+  name: 435,437,464,489,502,528,548,559|🇸🇬 SG_150
+  network: none
+  port: 43425
+  server: 8.210.248.133
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
   name: '435,476,481|HK香港(mibei77.com 米贝节点分享) 7 #1'
   network: ws
   port: 443
@@ -3439,18 +3470,6 @@ proxies:
   ws-headers:
     Host: n1761214911.74qxv.top
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇬SG
-  h2-opts: {}
-  http-opts: {}
-  name: 440,548|_38
-  network: none
-  port: 51000
-  server: 8.217.90.175
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6c82a994-b6ba-48ca-f2ed-11288fe4913b
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -4672,8 +4691,23 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: trojan
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 470|a9eb969eefdd410e821067324bdc89...
+  network: ws
+  port: 2096
+  server: 104.17.70.206
+  servername: free-server.techsonic.cloud
+  tls: true
+  type: vless
+  udp: false
+  uuid: 7ec108c5-5c08-4a9f-ad1b-bf60328792d4
+  ws-opts:
+    headers:
+      host: free-server.techsonic.cloud
+    path: /free-server.techsonic.cloud
 - cipher: auto
-  name: 489,553|yandex-34
+  name: 489,553|yandex-2871
   network: ws
   port: 18757
   server: 158.178.234.153
@@ -4840,7 +4874,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 523,524,559|新加坡_122918021
+  name: 523,524,559|新加坡_123004143
   network: ws
   port: '443'
   server: n1747624280.lie5d.cyou
@@ -4892,7 +4926,7 @@ proxies:
       Host: mot.morisi.ggff.net
     path: /@Marisa_kristi
 - delay: 2434
-  name: 528,553|yandex-2984
+  name: 528,553|yandex-76
   network: ws
   password: 5a2c16f9
   port: 443
@@ -5212,7 +5246,7 @@ proxies:
   uuid: 602b380a-9fdf-4425-bc07-aae9a95cfc4b
   ws-opts:
     path: '%2F'
-- name: '559,580|SG VLESS-58 | free-nodes #1'
+- name: 559,580|SG VLESS-64 | free-nodes
   network: ws
   port: 23675
   server: 152.42.185.230
@@ -5235,7 +5269,7 @@ proxies:
   uuid: fb5a4283-dbfb-458b-8619-c4a53739f781
 - alterId: 0
   cipher: auto
-  name: 559|新加坡_122918144
+  name: 559|新加坡_123004144
   network: ws
   port: '443'
   server: n1747624267.4u9ma.icu
@@ -5360,20 +5394,6 @@ proxies:
     headers:
       Host: gw.alicdn.com
     path: /CAT
-- client-fingerprint: chrome
-  name: '580|美国节点 #21'
-  network: ws
-  port: 443
-  server: 172.64.53.226
-  servername: snippets.kkii.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: '%2F'
 - client-fingerprint: randomized
   name: 583|TS-13-02-SG
   network: ws
