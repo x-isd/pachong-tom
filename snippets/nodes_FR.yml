@@ -1,21 +1,14 @@
 proxies:
 - alterId: 2
   cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: '17,24,455,457,458,489,522,543,544,548,559,580,581|🇫🇷 法国 09 #13'
+  name: '17,24,455,457,458,522,544,548,559,580,581|🇫🇷 法国 09 #13'
   network: tcp
   port: '30835'
   server: v35.hdacd.com
   servername: v35.hdacd.com
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: v35.hdacd.com
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 78|🇫🇷 法国1
@@ -194,7 +187,7 @@ proxies:
   server: 195.154.185.174
   type: ss
 - cipher: aes-256-gcm
-  name: '356,378,537|🇷FR-149.202.82.172-1636 #1'
+  name: '356,378,537|🇷FR-149.202.82.172-1623 #1'
   password: Y6R9pAtvxxzmGC
   port: 5600
   server: 149.202.82.172
@@ -372,7 +365,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 378,536,537,538,559|🇫🇷 FR_46
+  name: 378,536,537,538|🇫🇷FR-91.134.8.101-4820 | 17.07...
   network: ws
   port: 443
   server: 91.134.8.101
@@ -382,12 +375,10 @@ proxies:
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537,538,559|🇧🇪 BE_18 #1'
+  name: '378,536,537,538,559|🇧🇪 BE_22 #2'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -468,7 +459,7 @@ proxies:
       Host: 162.19.224.175
     path: /vmess
 - cipher: aes-256-cfb
-  name: '378,536,537|🇷FR-35.181.68.204-1223 #1'
+  name: '378,536,537|🇷FR-35.181.68.204-1210 #1'
   obfs: http_simple
   obfs-param: ''
   password: YpX2opBbrfqJzzMs
@@ -477,7 +468,7 @@ proxies:
   protocol-param: ''
   server: z0111.security-cloudfront-cdn.com
   type: ssr
-- name: '378,536,537|🇫FR-51.38.99.96-1308 #1'
+- name: '378,536,537|🇫FR-51.38.99.96-1295 #1'
   password: b8808043-6566-4923-9195-e66bfb553d57
   port: 443
   server: 51.38.99.96
@@ -486,7 +477,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-5.135.43.119-1429 #1'
+  name: '378,536,537|🇷FR-5.135.43.119-1416 #1'
   network: ws
   port: 58732
   server: 5.135.43.119
@@ -739,7 +730,7 @@ proxies:
   country: 🇫🇷FR
   h2-opts: {}
   http-opts: {}
-  name: 378,536,537,548|🇫🇷FR_125
+  name: 378,437,536,537,548|🇫🇷FR_125
   network: ws
   port: 443
   server: 91.134.8.101
@@ -750,18 +741,22 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- name: '378,436,536,537|🇷FR-51.195.202.129-4822 #1'
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇷FR-51.195.202.129-4822 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇷FR-51.178.42.187-4823 #1'
+  udp: true
+- country: 🇷FR
+  name: '378,435,436,536,537|🇷FR-51.178.42.187-4823 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   country: 🇳🇴 NO
@@ -1541,9 +1536,23 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 435| FR_43
+  network: ws
+  port: 443
+  server: 91.134.8.101
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
 - alpn:
   - http/1.1
-  name: '456,559|FR TROJAN-08 | free-nodes #1'
+  name: 456|FR TROJAN-08 | free-nodes
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -1666,13 +1675,23 @@ proxies:
   server: 15.237.171.88
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 507|FR TROJAN-07 | free-nodes
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.236.181.101
+  type: trojan
+- name: '507|FR TROJAN-08 | free-nodes #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.188.37.49
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_3 #1'
+  name: '523,524,559|🇫🇷_法国 #3'
   network: ws
-  port: 443
+  port: '443'
   server: 146.59.85.226
-  servername: pelang.org
+  servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1682,7 +1701,7 @@ proxies:
     path: linkvws
 - country: 🇫🇷FR
   delay: 1393
-  name: 528,553|yandex-12
+  name: 528,553|yandex-2791
   password: telegram-id-privatevpns
   port: 22222
   server: 52.47.154.136
@@ -2055,13 +2074,13 @@ proxies:
     headers:
       HOST: yichueng.org
     path: linkvws
-- name: 559|🇫🇷FR_48
+- name: '559|🇫🇷FR_44 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 559|法国_123004231
+- name: 559|法国_123018233
   network: tcp
   password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
   port: 25075
@@ -2069,7 +2088,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 559|法国_123004229
+- name: 559|法国_123018231
   network: tcp
   password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
   port: 25075
@@ -2077,7 +2096,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 559|法国_123004230
+- name: 559|法国_123018232
   network: tcp
   password: BmVsa+yhb-QwGYXD7t.LKPNnRMqeI
   port: 25075
@@ -2085,29 +2104,23 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 559|🇫🇷FR_47
+- name: '559|🇫🇷FR_45 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: 559|🇫🇷FR_50
+- name: 559|🇫🇷FR_42
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 559|🇫🇷FR_49
+- name: 559|🇫🇷FR_43
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   sni: de-full.privateip.net
-  type: trojan
-- name: 559|法国 - 奧奈叢林 - 4
-  password: trojan
-  port: 2055
-  server: 188.255.199.1
-  sni: doufeng.pages.dev
   type: trojan
 - name: 559|法国 - 奧奈叢林 - 2
   password: trojan
@@ -2115,12 +2128,18 @@ proxies:
   server: 188.255.199.2
   sni: doufeng.pages.dev
   type: trojan
+- name: 559|法国 - 奧奈叢林 - 1
+  password: trojan
+  port: 50000
+  server: 212.47.245.217
+  sni: doufeng.pages.dev
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 559|法国 141
+  name: 559|法国 140
   network: ws
   port: 443
-  server: 146.59.85.226
+  server: 91.134.8.93
   servername: pelang.org
   tls: true
   type: vmess
