@@ -809,11 +809,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|🇸🇬 SG
+- name: 255|SG
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
-  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - client-fingerprint: firefox
@@ -923,7 +923,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇸🇬SG
-  name: 356,378,537,538,548|🇸🇬SG_341
+  name: 356,378,537,538,548|🇸🇬SG_309
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -2189,7 +2189,7 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538,548|_02
+  name: 378,537,538,548|_03
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
@@ -2197,7 +2197,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇨🇿CZ
-  name: 378,537,538,548|🇨🇿CZ_117
+  name: 378,537,538,548|🇨🇿CZ_104
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 95.173.218.203
@@ -3405,10 +3405,10 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
+  country: 🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 437,440,559|🇸🇬 SG_153
+  name: 437,440,548,559|🇸🇬 SG_153
   network: none
   port: 43425
   server: 8.210.248.133
@@ -3417,16 +3417,6 @@ proxies:
   tls: false
   type: vmess
   uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
-- alterId: 0
-  cipher: auto
-  name: 437,559|🇸🇬 SG_152
-  network: none
-  port: 52752
-  server: 8.218.105.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -4715,6 +4705,24 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: trojan
+- cipher: aes-256-gcm
+  name: '479,484|🇸🇬 SG SS-01 | free-nodes #1'
+  password: 792e0bdb-01db-450c-94c4-925151eb396e
+  port: 16688
+  server: ss.036.node-for-bigairport.win
+  type: ss
+- cipher: aes-256-gcm
+  name: '479,484|🇸🇬 SG SS-22 | free-nodes #1'
+  password: Dk0XrU/n+SB84g0k+mX4zdy5HVVhuAUP6pCaldJxQjY=
+  port: 443
+  server: 172.237.74.36
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '479,484|🇸🇬 SG SS-69 | free-nodes #1'
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.247.64.176
+  type: ss
 - alpn:
   - ''
   client-fingerprint: random
@@ -5103,6 +5111,17 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 548|disney_SG
+  port: 35034
+  server: 165.154.195.38
+  skip-cert-verify: true
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5246,6 +5265,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 559|🇸🇬 SG_152
+  network: none
+  port: 52752
+  server: 8.218.105.196
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
+- alterId: 0
+  cipher: auto
   name: 559|新加坡_123104143
   network: ws
   port: '443'
@@ -5272,55 +5301,23 @@ proxies:
     headers:
       Host: n1747624280.lie5d.cyou
     path: /
-- cipher: chacha20-ietf-poly1305
+- alpn:
+  - h3
+  congestion-controller: bbr
+  disable-sni: false
   name: 566|🇸🇬 新加坡 | SGP
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10033
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 566|🇸🇬 新加坡 | SGP 2
-  password: c8962740-02d1-4d3f-ba03-cad8e801c600
-  port: 20132
-  server: co-8cc863-20.9966663.xyz
+  password: f19c7009-7630-4bb4-b26d-09eec0b1b769
+  port: 47859
+  reduce-rtt: false
+  request-timeout: 0
+  server: 64.56.71.108
   skip-cert-verify: true
-  type: anytls
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 566|🇸🇬 新加坡 | SGP 3
-  password: c8962740-02d1-4d3f-ba03-cad8e801c600
-  port: 20133
-  server: sgzz.9966663.xyz
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- name: 566|🇸🇬 新加坡 | SGP 4
-  password: 6576cd44-bc33-3209-ab73-05af53158f2c
-  port: 30701
-  server: bbuanca.com
-  sni: static.kiuhapor.com
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 566|🇸🇬 新加坡 | SGP 5
-  password: c8962740-02d1-4d3f-ba03-cad8e801c600
-  port: 20134
-  server: sgzz.9966663.xyz
-  skip-cert-verify: true
-  type: anytls
-  udp: true
+  sni: www.python.org
+  type: tuic
+  udp-relay-mode: native
+  uuid: f19c7009-7630-4bb4-b26d-09eec0b1b769
 - alterId: 0
-  name: 574|SG
+  name: '574|SG #1'
   password: BxceQaOe
   port: 3127
   server: 54.238.137.20
