@@ -3441,36 +3441,14 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 435,437,559|🇸🇬 SG_172
+  name: 437,559|🇸🇬 SG_172
   network: none
   port: 43425
   server: 8.210.248.133
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 435|🇬 SG_175
-  network: ws
-  port: 443
-  server: n1761214911.74qxv.top
-  servername: n1761214911.74qxv.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
-  ws-headers:
-    HOST: n1761214911.74qxv.top
-  ws-path: /
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -4774,7 +4752,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 470|7999b96e36854c4a881dc0d5c581a6...
+  name: 470|f50a41c5ae954d75be8ec7f7a9543b...
   network: ws
   port: 2096
   server: 104.17.70.206
@@ -4789,7 +4767,7 @@ proxies:
     path: /free-server.techsonic.cloud
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 470|33fce76094444233b520973767fd33...
+  name: 470|e02a718ef586498f8131a5f92de455...
   network: ws
   port: 2096
   server: 141.193.213.21
@@ -4804,7 +4782,7 @@ proxies:
     path: /free-server.techsonic.cloud
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 470|87b2854d50a44d53883382ac6f8426...
+  name: 470|7a3ee56025b44c28a1b331687a4008...
   network: ws
   port: 2096
   server: 141.193.213.20
@@ -5383,60 +5361,47 @@ proxies:
   tls: false
   type: vmess
   uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '566|🇸🇬 新加坡 | SGP #1'
+  network: tcp
+  port: 30401
+  reality-opts:
+    public-key: ZeXA8rcM3TV466jK83J157gY7U2JTI9KP9nmn_Nbawk
+    short-id: 105a652c
+  server: freea.glyphara.com
+  servername: learn.microsoft.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1baafb0f-e4b7-4597-b621-a64c380524f7
+- auth: db2909f7-fc12-49f3-aa6c-8430ae6e33eb
   name: 566|🇸🇬 新加坡 | SGP 2
-  password: c8962740-02d1-4d3f-ba03-cad8e801c600
-  port: 20132
-  server: co-8cc863-20.9966663.xyz
+  password: db2909f7-fc12-49f3-aa6c-8430ae6e33eb
+  port: 48634
+  server: linsg1.jueduibupao.top
   skip-cert-verify: true
-  type: anytls
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 566|🇸🇬 新加坡 | SGP 3
-  password: c8962740-02d1-4d3f-ba03-cad8e801c600
-  port: 20133
-  server: sgzz.9966663.xyz
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- name: 566|🇸🇬 新加坡 | SGP 4
-  password: 6576cd44-bc33-3209-ab73-05af53158f2c
-  port: 30701
-  server: bbuanca.com
-  sni: static.kiuhapor.com
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 566|🇸🇬 新加坡 | SGP 5
-  password: c8962740-02d1-4d3f-ba03-cad8e801c600
-  port: 20134
-  server: sgzz.9966663.xyz
-  skip-cert-verify: true
-  type: anytls
+  sni: linsg1.jueduibupao.top
+  type: hysteria2
   udp: true
 - name: '568|🇸🇬 新加坡 | SGP #2'
-  password: f3942399-424b-493a-a045-a362098c6080
-  port: 18489
-  server: hxsz59ubq1zm.ymccmmi.cn
+  password: 4e575956-2f96-4cd1-b871-8257262b972a
+  port: 46127
+  server: linsg1.jueduibupao.top
   skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
-- name: '568|🇸🇬 新加坡 | SGP #4'
-  password: f3942399-424b-493a-a045-a362098c6080
-  port: 48291
-  server: hxfzibzdlxqd.ymccmmi.cn
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
+  sni: linsg1.jueduibupao.top
+  tls: false
+  type: hysteria2
+- name: '568|🇸🇬 新加坡 | SGP #3'
+  obfs: salamander
+  obfs-password: salamander
+  password: A8069A5B-E992-44E8-917E-7246CFD19F61
+  port: 443
+  server: sg4.dexlos.com
+  skip-cert-verify: false
+  sni: sg4.dexlos.com
+  tls: false
+  type: hysteria2
 - alterId: 0
   name: 574|🇬SG新加坡4
   password: BxceQaOe

@@ -18,7 +18,7 @@ proxies:
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   down: '55'
-  name: 17,24,478,483,489,522,553,566,606|62.210.127.217_Claude2
+  name: 17,24,478,483,489,522,553,606|62.210.127.217_Claude2
   port: 35511
   protocol: udp
   server: 62.210.10.186
@@ -32,7 +32,7 @@ proxies:
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   down: 55 Mbps
-  name: 17,24,478,483,489,522,553,566,606|62.210.127.217_Claude1
+  name: 17,24,478,483,489,522,553,606|62.210.127.217_Claude1
   port: 50011
   protocol: udp
   server: 62.210.10.186
@@ -499,7 +499,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 378,536,537,538,559|🇫🇷 FR_44
+  name: '378,536,537,538,559|🇫🇷 FR_44 #1'
   network: ws
   port: 443
   server: 91.134.8.101
@@ -861,22 +861,18 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- country: 🇫🇷FR
-  name: '378,435,436,536,537|🇫🇷FR-51.195.202.129-4926 #2'
+- name: '378,436,536,537|🇫🇷FR-51.195.202.129-4926 #2'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: '378,435,436,536,537|🇷FR-51.178.42.187-4927 #1'
+- name: '378,436,536,537|🇷FR-51.178.42.187-4927 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇷FR-146.59.55.50-4992 #1'
@@ -1651,20 +1647,6 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  country: 🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 435| FR_45
-  network: ws
-  port: 443
-  server: 91.134.8.101
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: /linkvws
 - client-fingerprint: firefox
   name: 456|FR VLESS-21 | free-nodes
   network: tcp
@@ -1868,7 +1850,7 @@ proxies:
     path: /xrenvws
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 470|eba22deb76b04123901be691626b6a...
+  name: 470|ac69777605b1471684b38b0f1b88a7...
   network: ws
   port: 2053
   server: convera.com
@@ -1883,7 +1865,7 @@ proxies:
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 470|a953fbd11dfc4561b3d9b34640adf2...
+  name: 470|0c855bce17e74a70affd1274bfad59...
   network: ws
   port: 2053
   server: convera.com
@@ -1898,7 +1880,7 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 470|136f7edfcdd9491989e2c139cc9032...
+  name: 470|1f1fd5828617479b9ab8ceb12644a6...
   network: ws
   port: 443
   server: digitalocean.com
@@ -2185,7 +2167,7 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 559|🇫🇷FR_45
+- name: '559|🇫🇷FR_45 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -2197,7 +2179,7 @@ proxies:
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: '559|🇫🇷FR_48 #2'
+- name: '559|🇫🇷FR_48 #1'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -2245,13 +2227,16 @@ proxies:
     headers:
       Host: pelang.org
     path: /linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 566|🇫🇷 法国 | FRA 3
-  password: 36b4db9a-5a6d-4c8a-950d-e377d3a69760
-  port: 50556
-  server: hbdx.miloli.cn
-  type: ss
-  udp: true
+- name: 568|🇫🇷 法国 | FRA
+  obfs: salamander
+  obfs-password: salamander
+  password: f19c7009-7630-4bb4-b26d-09eec0b1b769
+  port: 50005
+  server: 31.56.48.133
+  skip-cert-verify: true
+  sni: www.python.org
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
