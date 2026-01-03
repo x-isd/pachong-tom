@@ -731,11 +731,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|SG
-  network: tcp
+- name: 255|🇸🇬 SG
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
+  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - name: '306,502,551,559|#059 JP10 CF3 #2'
@@ -816,7 +816,8 @@ proxies:
   server: 128.199.172.224
   type: ss
 - cipher: rc4-md5
-  name: 356,378,537,538|🇸🇬SG-68.183.227.4-0364 | 18.95...
+  country: 🇸🇬SG
+  name: 356,378,537,538,548|🇸🇬SG_501
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -1947,13 +1948,15 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇸🇬SG-167.150.100.115-0396 | 7....
+  name: 378,537,538,548|_20
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇸🇬SG-95.173.218.203-0457 | 20....
+  country: 🇨🇿CZ
+  name: 378,537,538,548|🇨🇿CZ_100
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 95.173.218.203
@@ -3113,7 +3116,9 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 437,559|🇸🇬 SG_166
+  h2-opts: {}
+  http-opts: {}
+  name: 437,548,559|🇸🇬 SG_166
   network: none
   port: 43425
   server: 8.210.248.133
@@ -3436,7 +3441,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 476,481,489,553|yandex-490
+  name: 476,481,489,553|yandex-279
   port: 30812
   server: v12.hdacd.com
   skip-cert-verify: true
@@ -3624,6 +3629,13 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
+- cipher: aes-256-gcm
+  country: 🇸🇬SG
+  name: 548|Relay_🇸🇬SG-🇸🇬SG_503
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 11688
+  server: ss.037.node-for-bigairport.win
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3683,14 +3695,14 @@ proxies:
   server: gg21.hangfengjiasu.com
   tfo: false
   type: ss
-- name: '559|🇸🇬 新加坡3|@stairnode #3'
+- name: '559|🇸🇬 新加坡3|@stairnode #4'
   password: BxceQaOe
   port: 2673
   server: 43.207.71.183
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '559|🇸🇬 新加坡|@stairnode #4'
+- name: '559|🇸🇬 新加坡|@stairnode #5'
   password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 3901
   server: 54.238.137.20
