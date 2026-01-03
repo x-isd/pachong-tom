@@ -1067,11 +1067,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|🇯🇵 JP
+- name: 255|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - name: '306,340,378,454,502,514,515,516,536,537,544,551,556,557,559,579,580,582|🇯🇵
@@ -1102,8 +1102,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  country: 🇳IN
-  name: '306,378,440,515,516,537,556,579,582|🇯🇵 日本4|@stairnode #4'
+  name: '306,378,515,516,537,556,579,582|🇯🇵 日本4|@stairnode #4'
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 103.106.228.247
@@ -1162,7 +1161,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '306,502,559|#011 JP2 CF2 #1'
+- name: 306,559|#011 JP2 CF2
   network: ws
   password: 5a2c16f9
   port: 50090
@@ -1172,7 +1171,7 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
-- name: 306,502|#090 JP11 CF6
+- name: 306|Japan_Shirakawa_trojan_1156
   network: ws
   password: 5a2c16f9
   port: 50090
@@ -1184,7 +1183,7 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
-- name: '306,502,559|#097 JP12 CF13 #1'
+- name: 306,559|#097 JP12 CF13
   network: ws
   password: 5a2c16f9
   port: 10129
@@ -1196,7 +1195,7 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
-- name: 306,502|#148 JP17 CF37
+- name: 306|Japan_Osaka_trojan_1191
   network: ws
   password: 5a2c16f9
   port: 10129
@@ -2966,15 +2965,13 @@ proxies:
     headers:
       Host: n1753598452.wpg27.xyz
     path: /
-- country: 🇵JP
-  name: '378,440,537|🇵JP-54.238.144.17-4910 #1'
+- name: '378,537|🇵JP-54.238.144.17-4910 #1'
   password: BxceQaOe
   port: 3194
   server: 54.238.144.17
   skip-cert-verify: false
   sni: t.me%2Fripaojiedian
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|JP-138.2.52.244-7096 #1'
@@ -3526,15 +3523,16 @@ proxies:
   server: hd.yuyan.vin
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 502|日本 V2CROSS.COM
-  network: tcp
-  port: 53113
-  server: cgroup.node2.v.nodelist-airport.com
-  tls: false
-  type: vmess
-  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+- name: '502,551|#179 JP10 #1'
+  network: ws
+  password: aff9928f-7ba3-45fb-b56d-4dec45653ca9
+  port: 443
+  server: 23.227.38.33
+  skip-cert-verify: true
+  sni: z9mifq7ujufk56im.jptimecsgo.xyz
+  type: trojan
+  ws-opts:
+    path: '%2Fimages'
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 513|15|🇯🇵 日本|@ripaojiedian
@@ -3622,7 +3620,7 @@ proxies:
       Host: ''
     path: /vmess/
 - delay: 2052
-  name: 528,553|yandex-2879
+  name: 528,553|yandex-203
   network: ws
   password: 5a2c16f9
   port: 443
@@ -3636,7 +3634,7 @@ proxies:
       Host: snippets.kkii.eu.org
     path: '%2F'
 - delay: 2052
-  name: 528,553|yandex-2880
+  name: 528,553|yandex-204
   network: ws
   password: 5a2c16f9
   port: 443
@@ -3661,16 +3659,6 @@ proxies:
   server: 160.16.150.76
   sni: www.nintendogames.net
   type: trojan
-- name: 551|#179 JP10
-  network: ws
-  password: aff9928f-7ba3-45fb-b56d-4dec45653ca9
-  port: 443
-  server: 23.227.38.33
-  skip-cert-verify: true
-  sni: z9mifq7ujufk56im.jptimecsgo.xyz
-  type: trojan
-  ws-opts:
-    path: '%2Fimages'
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
