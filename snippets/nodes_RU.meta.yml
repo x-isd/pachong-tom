@@ -1,11 +1,10 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 17,24,378,478,483,522,537,538,548,606|194.246.114.101_Gemini
+  name: 17,24,378,478,483,522,537,538,606|194.246.114.101_Gemini
   password: HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk
   port: 443
   server: 194.246.114.101
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 78|🇷🇺 莫斯科专线
@@ -345,15 +344,13 @@ proxies:
   sni: eu-east-ruo.openssl3.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: 378,537,538,548|🇷🇺RU_296
+  name: 378,537,538|🇷🇺RU-45.89.55.173-0283 | 3.021...
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: 378,537,538,548|🇷🇺RU_294
+  name: 378,537,538|🇷🇺RU-45.138.157.162-0290 | 1.7...
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
@@ -683,7 +680,7 @@ proxies:
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 435,437,548,559|🇷🇺 RU_164
+  name: 435,437,559|🇷🇺 RU_164
   network: none
   port: 34895
   server: 2.56.242.210
@@ -693,6 +690,18 @@ proxies:
   type: vmess
   uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺RU
+  h2-opts: {}
+  http-opts: {}
+  name: 440|🇺RU_22
+  network: tcp
+  port: 34895
+  server: 2.56.242.210
+  skip-cert-verify: true
+  type: vmess
+  uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
@@ -1561,7 +1570,26 @@ proxies:
   uuid: e9dbc178-3656-40f8-8833-5023f306ef1d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507|RU VLESS-01 | free-nodes
+  name: 507|RU VLESS-12 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
+    short-id: 0f917152a871e9c0
+  server: a.ru.maviks.ru
+  servername: maviks.ru
+  tls: false
+  type: vless
+  uuid: 6a9319d5-2e5b-4ca6-91b8-d90e062ab0a7
+- name: 507|RU VLESS-08 | free-nodes
+  port: 443
+  server: nl1vless.krasivovpn.ru
+  tls: false
+  type: vless
+  uuid: 854eea7a-c834-4f62-9e17-ae63d1086f36
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507|RU VLESS-13 | free-nodes
   network: tcp
   port: 4443
   reality-opts:
@@ -1574,7 +1602,7 @@ proxies:
   uuid: ff03e357-b531-4f30-9f47-ba9b57dd384f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507|RU VLESS-27 | free-nodes
+  name: 507|RU VLESS-30 | free-nodes
   network: tcp
   port: 4443
   reality-opts:
@@ -1585,15 +1613,9 @@ proxies:
   tls: false
   type: vless
   uuid: ff03e357-b531-4f30-9f47-ba9b57dd384f
-- name: 507|RU VLESS-42 | free-nodes
-  port: 4241
-  server: yt-noads.sbrf-cdn342.ru
-  tls: false
-  type: vless
-  uuid: 8619e4c1-0984-4dce-83e3-419e2d7f5079
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507|RU VLESS-31 | free-nodes
+  name: 507|RU VLESS-34 | free-nodes
   network: tcp
   port: 4443
   reality-opts:
@@ -1604,15 +1626,21 @@ proxies:
   tls: false
   type: vless
   uuid: ff03e357-b531-4f30-9f47-ba9b57dd384f
-- name: 507|RU VLESS-41 | free-nodes
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507|RU VLESS-46 | free-nodes
+  network: tcp
   port: 8443
+  reality-opts:
+    public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
   server: ru-node.skytunnel.pw
+  servername: bunny.net
   tls: false
   type: vless
   uuid: 51c89ac3-ea33-4832-9a59-2505d33f4c84
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507|RU VLESS-46 | free-nodes
+  name: 507|RU VLESS-49 | free-nodes
   network: tcp
   port: 4443
   reality-opts:
@@ -1623,31 +1651,25 @@ proxies:
   tls: false
   type: vless
   uuid: ff03e357-b531-4f30-9f47-ba9b57dd384f
-- name: 507|RU VLESS-51 | free-nodes
+- name: 507|RU VLESS-54 | free-nodes
   port: 443
   server: 176.108.242.76
   tls: false
   type: vless
   uuid: 4371ad14-b981-4699-bedf-83fb79bde3e6
-- name: 507|RU VLESS-53 | free-nodes
-  port: 443
-  server: ro1.instavpn.ru
-  tls: false
-  type: vless
-  uuid: 854eea7a-c834-4f62-9e17-ae63d1086f36
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 507|RU VLESS-54 | free-nodes
+- client-fingerprint: chrome
+  name: 507|RU VLESS-56 | free-nodes
   network: tcp
   port: 443
   reality-opts:
-    public-key: ux7dvaHVn6eJ0d8zFNkWlB97ZmfLozzH7R_8qL0873A
-  server: 185.72.144.43
-  servername: www.google.com
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  server: ro1.instavpn.ru
+  servername: tradingview.com
   tls: false
   type: vless
-  uuid: 88f2c5cc-a287-4be9-be28-56c2729d3782
-- name: 507|RU VLESS-60 | free-nodes
+  uuid: 854eea7a-c834-4f62-9e17-ae63d1086f36
+- name: 507|RU VLESS-62 | free-nodes
   port: 443
   server: sw1.krasivovpn.ru
   tls: false
@@ -1655,68 +1677,42 @@ proxies:
   uuid: 854eea7a-c834-4f62-9e17-ae63d1086f36
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507|RU VLESS-63 | free-nodes
+  name: 507|RU VLESS-95 | free-nodes
   network: tcp
-  port: 443
+  port: 4241
   reality-opts:
-    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
-    short-id: 0f917152a871e9c0
-  server: a.ru.maviks.ru
-  servername: maviks.ru
+    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
+    short-id: '111111'
+  server: educated-3.sbrf-cdn342.ru
+  servername: ads.x5.ru
   tls: false
   type: vless
-  uuid: 6a9319d5-2e5b-4ca6-91b8-d90e062ab0a7
+  uuid: 8619e4c1-0984-4dce-83e3-419e2d7f5079
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507,559,580|RU VLESS-49 | free-nodes
+  name: 507,559,580|TR VLESS-48 | free-nodes
   network: tcp
   port: 443
   reality-opts:
-    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-    short-id: 1ed136481e0ede74
-  server: 109.248.222.151
-  servername: nsk.geodema.network
+    public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
+  server: mailru.ookcdn.ru
+  servername: mailru.ookcdn.ru
   tls: false
   type: vless
-  uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
-- client-fingerprint: chrome
-  name: 507,559,580|RU VLESS-72 | free-nodes
-  network: tcp
-  port: 2040
-  reality-opts:
-    public-key: 1RJ2ulM9UyAC8PFy194dV0RTZI6xF6U4CGClhNz9fTg
-    short-id: 50ed6f6007515d63
-  server: spb-node.genadata.online
-  servername: tradingview.com
-  tls: false
-  type: vless
-  uuid: 89f99086-e244-41dc-ab20-c1d8763399d0
+  uuid: eb162ab1-a006-4931-b1b3-8fc88a22b10e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507,559,580|RU VLESS-112 | free-nodes
+  name: 507,559|RU VLESS-113 | free-nodes
   network: tcp
   port: 443
   reality-opts:
-    public-key: gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY
-    short-id: 7cad5040
-  server: 185.130.114.253
-  servername: www.cloudflare.com
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: 17802e8ff84f12df
+  server: 51.250.65.209
+  servername: ads.x5.ru
   tls: false
   type: vless
-  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '507,559,580|RU VLESS-113 | free-nodes #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY
-    short-id: 7cad5040
-  server: 185.130.114.219
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+  uuid: 4371ad14-b981-4699-bedf-83fb79bde3e6
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
@@ -1842,13 +1838,6 @@ proxies:
       Host: gaosir.unfeeling.sbs
     path: X%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
 - cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: 548|🇷🇺RU_295
-  password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
-  port: 443
-  server: 5.182.37.87
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31511
@@ -1931,19 +1920,30 @@ proxies:
     headers:
       Host: sni.111000.de5.net
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|RU VLESS-113 | free-nodes
-  network: tcp
+- name: '559,580|RU VLESS-113 | free-nodes #1'
   port: 443
-  reality-opts:
-    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
-    short-id: 17802e8ff84f12df
-  server: 51.250.65.209
-  servername: ads.x5.ru
+  server: 185.130.114.219
   tls: false
   type: vless
-  uuid: 4371ad14-b981-4699-bedf-83fb79bde3e6
+  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+- name: 559,580|RU VLESS-112 | free-nodes
+  port: 443
+  server: 185.130.114.253
+  tls: false
+  type: vless
+  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+- client-fingerprint: chrome
+  name: 559,580|RU VLESS-72 | free-nodes
+  network: tcp
+  port: 2040
+  reality-opts:
+    public-key: 1RJ2ulM9UyAC8PFy194dV0RTZI6xF6U4CGClhNz9fTg
+    short-id: 50ed6f6007515d63
+  server: spb-node.genadata.online
+  servername: tradingview.com
+  tls: false
+  type: vless
+  uuid: 89f99086-e244-41dc-ab20-c1d8763399d0
 - name: 559|RU VLESS-81 | free-nodes
   port: 443
   server: 217.16.20.134
