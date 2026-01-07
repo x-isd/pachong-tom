@@ -109,12 +109,15 @@ proxies:
   port: 80
   server: ca225.vpnbook.com
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   country: 🇨 CZ
-  name: 356,378,435,537,538,543,553,575|SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
+  name: 356,378,435,537,538,543,553,574,575|SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 361|SPECAIL|1.5X WIFI
@@ -221,13 +224,17 @@ proxies:
   skip-cert-verify: false
   sni: diningtable.electricbanana.click
   type: trojan
-- name: 378,536,537,538,559|加拿大_010704003
+- alterId: 0
+  country: 🇸US
+  name: 378,440,502,536,537,538,559,574|🇺🇸US美国9 6.0MB/s
   password: .ie4rghJuMkcf0oF
   port: 18509
   server: 38.96.254.102
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: shoppingmall.electricbanana.click
+  tls: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 378,537,538,543,553,575|SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
@@ -271,7 +278,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '378,536,537,538,559|🏁 ZZ_225 #1'
+  name: 378,536,537,538,559|🏁 ZZ_225
   network: ws
   port: 443
   server: 134.195.198.147
@@ -331,11 +338,14 @@ proxies:
   protocol-param: ''
   server: z0115.security-cloudfront-cdn.com
   type: ssr
-- cipher: aes-256-gcm
-  name: 378,537,543,553,575|SS->-NF英国-ChatGPT-144.217.164....
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 378,537,543,553,574,575|SS->-NF英国-ChatGPT-144.217.164....
   password: 8JCsPssfgS8tiRwiMlhARg==
   port: 12000
   server: 144.217.164.29
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -1470,7 +1480,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇦CA-15.235.83.227-7143 #1'
+  name: '378,437,536,537|🇦CA-15.235.83.227-7143 #1'
   network: ws
   port: 443
   server: 15.235.83.227
@@ -1629,6 +1639,15 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- country: 🇨🇦CA
+  name: 440|CA_02
+  password: 6pRjKQJ0CWyFtG.9
+  port: 12990
+  server: 198.57.27.27
+  skip-cert-verify: true
+  sni: 198.57.27.27
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '455,456,457,458,559,580,581|🇨🇦_CA_加拿大 #10'
@@ -6003,13 +6022,6 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- name: 472,473,474,502,543,544,553|yandex-192
-  password: 6pRjKQJ0CWyFtG.9
-  port: 12990
-  server: 198.57.27.27
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - name: 489|🔴_🇨🇦_💻_github.com/Ruk1ng001_63...
   network: ws
   password: aff9928f-7ba3-45fb-b56d-4dec45653ca9
@@ -6020,6 +6032,15 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fimages'
+- alterId: 0
+  name: 502,543,544,574|🇦CA加拿大2
+  password: 6pRjKQJ0CWyFtG.9
+  port: 12990
+  server: 198.57.27.27
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 513|15|🇨🇦 加拿大|@ripaojiedian
@@ -6054,7 +6075,7 @@ proxies:
     path: Telegram🇨🇳@WangCai2/?ed=2560
 - client-fingerprint: randomized
   delay: 877
-  name: 528,553|yandex-244
+  name: 528,553|yandex-516
   network: ws
   port: 2095
   server: developers.cloudflare.com
@@ -6069,7 +6090,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   delay: 1517
-  name: 528,553|yandex-245
+  name: 528,553|yandex-517
   network: ws
   port: 2053
   server: china.embassy.gov.au
@@ -6084,7 +6105,7 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
 - client-fingerprint: randomized
   delay: 2222
-  name: 528,553|yandex-246
+  name: 528,553|yandex-518
   network: ws
   port: 2095
   server: www.temu.com
@@ -6099,7 +6120,7 @@ proxies:
     path: /
 - client-fingerprint: randomized
   delay: 1579
-  name: 528,553|yandex-247
+  name: 528,553|yandex-519
   network: ws
   port: 2095
   server: docs.cloudflare.com
@@ -6114,7 +6135,7 @@ proxies:
     path: /
 - client-fingerprint: randomized
   delay: 1927
-  name: 528,553|yandex-248
+  name: 528,553|yandex-520
   network: ws
   port: 2095
   server: www.udemy.com
