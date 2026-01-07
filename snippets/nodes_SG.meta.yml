@@ -809,27 +809,13 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|SG
-  network: tcp
+- name: 255|🇸🇬 SG
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
+  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
-- delay: 605
-  name: '306,340,502,514,515,516,528,551,553,567,585,586|SG_speednode_0024 #3'
-  network: ws
-  password: 97e79a62-f686-4b91-87a7-be39c9e57658
-  port: 443
-  server: 34.143.159.175
-  skip-cert-verify: false
-  sni: page.anjue39.qzz.io
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: page.anjue39.qzz.io
-    path: /
 - client-fingerprint: firefox
   flow: ''
   grpc-opts:
@@ -917,7 +903,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 340,502,559|9|新加坡
+- name: 340,559|9|新加坡
   password: 16461a78-363c-457a-92f9-83b0a68edc37
   port: 2056
   server: sg3.eyucdn.xyz
@@ -925,7 +911,7 @@ proxies:
   sni: sg3.eyucdn.xyz
   tls: false
   type: hysteria2
-- name: 340,502,559|9|SG
+- name: 340,559|9|SG
   password: 3hszBhqVsUhqOOFWJlev6k6Tkc
   port: 22509
   server: 47.129.217.4
@@ -933,7 +919,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: '340,502,559|9|SG #1'
+- name: '340,559|9|SG #1'
   password: 3hszBhqVsUhqOOFWJlev6k6Tkc
   port: 22509
   server: 47.129.224.62
@@ -941,7 +927,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: '340,502,559|9|SG #2'
+- name: '340,559|9|SG #2'
   password: 5OiuCsPmULZ0lJwts89fegLJE
   port: 17193
   server: 47.129.100.149
@@ -949,7 +935,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: '340,502,559|9|SG #3'
+- name: '340,559|9|SG #3'
   password: 5OiuCsPmULZ0lJwts89fegLJE
   port: 17193
   server: 52.221.210.182
@@ -957,7 +943,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: 340,502,559|9|新加坡1
+- name: 340,559|9|新加坡1
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2055
   server: xjp1.mangshe.xyz
@@ -965,7 +951,7 @@ proxies:
   sni: xjp1.mangshe.xyz
   tls: false
   type: hysteria2
-- name: '340,502,559|9|新加坡 #1'
+- name: '340,559|9|新加坡 #1'
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2060
   server: xjp2.mangshe.xyz
@@ -973,7 +959,7 @@ proxies:
   sni: xjp2.mangshe.xyz
   tls: false
   type: hysteria2
-- name: '340,502,559|9|SG #5'
+- name: '340,559|9|SG #5'
   password: KYIFgW1don6L8TaDBJHynafxZ0
   port: 4763
   server: 47.237.23.83
@@ -981,7 +967,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: '340,502,559|9|SG #6'
+- name: '340,559|9|SG #6'
   password: XON4wZ0sXe1YaqFY2FeM7uZY4
   port: 15221
   server: 122.248.205.111
@@ -997,7 +983,7 @@ proxies:
   sni: www.apple.com
   tls: false
   type: hysteria2
-- name: '340,502,559|9|SG #7'
+- name: '340,559|9|SG #7'
   password: e7965e64-e001-4e8c-8273-39c61ff4a094
   port: 30000
   server: sg3.oomz.ru
@@ -1005,7 +991,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: '340,502,559|9|SG #8'
+- name: '340,559|9|SG #8'
   password: fWydUhyG3woKe4a0kcKKKdx78
   port: 6467
   server: 8.219.232.60
@@ -1013,6 +999,20 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
+- delay: 605
+  name: 340,502,528,553|yandex-566
+  network: ws
+  password: 97e79a62-f686-4b91-87a7-be39c9e57658
+  port: 443
+  server: 34.143.159.175
+  skip-cert-verify: false
+  sni: page.anjue39.qzz.io
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: page.anjue39.qzz.io
+    path: /
 - name: 356|🇸🇬1 |  9.0MB/s
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -2846,7 +2846,10 @@ proxies:
     path: /anti13.zingfast.vn
 - alterId: 0
   cipher: auto
-  name: 378,536,537,559|新加坡_010704020
+  country: 🇬SG
+  h2-opts: {}
+  http-opts: {}
+  name: 378,440,536,537,559|新加坡_010704020
   network: ws
   port: '80'
   server: 150.109.11.193
@@ -3484,21 +3487,6 @@ proxies:
 - alterId: 0
   cipher: auto
   country: 🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 435,437,559|🇸🇬 SG_164
-  network: none
-  port: 52752
-  server: 8.218.105.196
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇸🇬 SG
   h2-opts: {}
   http-opts: {}
   name: 435,437,559|🇸🇬 SG_165
@@ -4805,37 +4793,318 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '476,481,523,524|🇭🇰_香港_3 #1'
-  port: 30812
-  server: v12.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-gcm
-  name: '479,484|🇸🇬 SG SS-01 | free-nodes #1'
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-  port: 16688
-  server: ss.036.node-for-bigairport.win
-  type: ss
-- name: '479,484|🇸🇬 SG TROJAN-18 | free-nodes #1'
-  password: f36f4495b4b26cc2fe346cfa23e05b1b
-  port: 3901
-  server: 160.16.153.13
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- cipher: aes-256-gcm
-  name: '479,484|🇸🇬 SG SS-22 | free-nodes #1'
-  password: Dk0XrU/n+SB84g0k+mX4zdy5HVVhuAUP6pCaldJxQjY=
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_1 #1'
+  network: ws
+  password: 5a2c16f9
   port: 443
-  server: 172.237.74.36
-  type: ss
+  server: 167.88.172.224
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_2 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 8900
+  server: 47.74.254.191
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_3 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 53435
+  server: 129.150.36.188
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_5 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 53702
+  server: 168.138.170.211
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- encryption: none
+  name: '475,480|新加坡(yudou789.top 玉豆免费节点)_6 #1'
+  network: ws
+  port: 443
+  server: 52.230.146.177
+  servername: snippets.kkii.eu.org
+  tls: true
+  type: vless
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_7 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 164.52.2.99
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_8 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 17465
+  server: 138.2.95.33
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_9 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 167.99.73.22
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- encryption: none
+  name: '475,480|新加坡(yudou789.top 玉豆免费节点)_10 #1'
+  network: ws
+  port: 443
+  server: 167.88.172.224
+  servername: snippets.kkii.eu.org
+  tls: true
+  type: vless
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_11 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 8443
+  server: 66.42.51.60
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_12 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 2053
+  server: 31.192.238.71
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- encryption: none
+  name: 475,480,523,524,553|yandex-565
+  network: ws
+  port: 443
+  server: 34.143.159.175
+  servername: tw.aniusnippets.qzz.io
+  tls: true
+  type: vless
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: tw.aniusnippets.qzz.io
+    path: /?ed=2560
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_14 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 20.247.137.183
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_15 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 38.180.249.123
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_16 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 160.22.79.155
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_17 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 81
+  server: 5.34.176.119
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- encryption: none
+  name: '475,480|新加坡(yudou789.top 玉豆免费节点)_18 #1'
+  network: ws
+  port: 443
+  server: 20.17.98.97
+  servername: ww1.allxniu.qzz.io
+  tls: true
+  type: vless
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: ww1.allxniu.qzz.io
+    path: /?ed=2560
+- encryption: none
+  name: '475,480|新加坡(yudou789.top 玉豆免费节点)_19 #1'
+  network: ws
+  port: 443
+  server: 20.17.98.97
+  servername: jp.xaniusg2.qzz.io
+  tls: true
+  type: vless
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: jp.xaniusg2.qzz.io
+    path: /?ed=2560
+- encryption: none
+  name: '475,480|新加坡(yudou789.top 玉豆免费节点)_20 #1'
+  network: ws
+  port: 443
+  server: 43.218.77.16
+  servername: snippets.kkii.eu.org
+  tls: true
+  type: vless
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_21 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 209.97.173.243
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_22 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 128.199.134.152
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: '475,480|新加坡(yudou789.top 玉豆免费节点)_23 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 143.42.66.91
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- encryption: none
+  name: 475,480,523,524,553|yandex-564
+  network: ws
+  port: 443
+  server: 34.143.159.175
+  servername: ww1.allxniu.qzz.io
+  tls: true
+  type: vless
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: ww1.allxniu.qzz.io
+    path: /?ed=2560
+- encryption: none
+  name: '475,480|新加坡(yudou789.top 玉豆免费节点)_25 #1'
+  network: ws
+  port: 443
+  server: 34.143.159.175
+  servername: x-hk.xaniusnippets.qzz.io
+  tls: true
+  type: vless
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: x-hk.xaniusnippets.qzz.io
+    path: /?ed=2560
+- name: '476,481|SG新加坡(mibei77.com 米贝节点分享) #1'
+  password: 5a2c16f9
+  port: 8443
+  server: 104.234.151.10
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: '476,481|SG新加坡(mibei77.com 米贝节点分享) 2 #1'
+  password: 381f2e86233720eacda26d50e9aa26da
+  port: 443
+  server: 58.152.110.104
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '479,484|🇸🇬 SG SS-69 | free-nodes #1'
+  name: '479,484|🇸🇬 SG SS-125 | free-nodes #1'
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.247.64.176
@@ -4930,70 +5199,6 @@ proxies:
     headers:
       Host: spdf.qzz.io
     path: Telegram🇨🇳@WangCai2/?ed=2560
-- name: '523,524|🇸🇬_新加坡_1 #1'
-  network: ws
-  port: 443
-  server: 8.223.63.150
-  servername: www.sgxaniu.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    headers:
-      Host: www.sgxaniu.qzz.io
-    path: /?ed=2560
-- name: '523,524,553,567,585,586|SG_speednode_0023 #1'
-  network: ws
-  port: 443
-  server: 34.143.159.175
-  servername: tw.aniusnippets.qzz.io
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    headers:
-      Host: tw.aniusnippets.qzz.io
-    path: /?ed=2560
-- name: '523,524|🇸🇬_新加坡_3 #1'
-  network: ws
-  port: 42841
-  server: 43.165.190.11
-  servername: mot.luyuju.dpdns.org
-  tls: true
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    headers:
-      Host: mot.luyuju.dpdns.org
-    path: /@Marisa_kristi
-- name: '523,524|🇸🇬_新加坡_4 #1'
-  network: ws
-  port: 42841
-  server: 43.165.190.11
-  servername: mot.morisi.ggff.net
-  tls: true
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    headers:
-      Host: mot.morisi.ggff.net
-    path: /@Marisa_kristi
-- name: '523,524,553,567,585,586|SG_speednode_0022 #1'
-  network: ws
-  port: 443
-  server: 34.143.159.175
-  servername: ww1.allxniu.qzz.io
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    headers:
-      Host: ww1.allxniu.qzz.io
-    path: /?ed=2560
 - name: '523,524|🇸🇬_新加坡_6 #1'
   network: ws
   port: 443
@@ -5018,18 +5223,6 @@ proxies:
     headers:
       Host: jp.xaniusg2.qzz.io
     path: /?ed=2560
-- name: '523,524|🇸🇬_新加坡_8 #1'
-  network: ws
-  port: 443
-  server: 8.223.63.150
-  servername: jp.xaniusg2.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    headers:
-      Host: jp.xaniusg2.qzz.io
-    path: /?ed=2560
 - client-fingerprint: chrome
   delay: 444
   name: 528|新加坡 - 新加坡 - Amazon Technologie...
@@ -5042,7 +5235,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   delay: 725
-  name: 528,553|yandex-547
+  name: 528,553|yandex-72
   password: 177446dd-9d98-472a-a656-0375facea6e8
   port: 43461
   server: sgp.fastcokeasdasd.com
@@ -5050,7 +5243,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 976
-  name: 528,553|yandex-548
+  name: 528,553|yandex-73
   password: 177446dd-9d98-472a-a656-0375facea6e8
   port: 29631
   server: sgp.fastcokeasdasd.com
@@ -5058,7 +5251,7 @@ proxies:
   udp: true
 - client-fingerprint: randomized
   delay: 660
-  name: 528,553|yandex-549
+  name: 528,553|yandex-74
   network: ws
   port: 2095
   server: www.shopify.com
@@ -5073,7 +5266,7 @@ proxies:
     path: /
 - client-fingerprint: randomized
   delay: 830
-  name: 528,553|yandex-550
+  name: 528,553|yandex-75
   network: ws
   port: 2095
   server: www.wto.org
@@ -5088,7 +5281,7 @@ proxies:
     path: /
 - client-fingerprint: randomized
   delay: 826
-  name: 528,553|yandex-551
+  name: 528,553|yandex-76
   network: ws
   port: 2095
   server: ns.cloudflare.com
@@ -5103,7 +5296,7 @@ proxies:
     path: /
 - client-fingerprint: randomized
   delay: 842
-  name: 528,553|yandex-552
+  name: 528,553|yandex-77
   network: ws
   port: 2095
   server: openai.com
@@ -5117,7 +5310,7 @@ proxies:
       Host: fuckingfangbinxing.cnm-fangbinxing-wcnm.workers.dev
     path: /
 - delay: 635
-  name: 528,553|yandex-553
+  name: 528,553|yandex-78
   network: ws
   port: 443
   server: cucc.cloudflare.seeck.cn
@@ -5132,7 +5325,7 @@ proxies:
     path: /
 - client-fingerprint: randomized
   delay: 809
-  name: 528,553|yandex-555
+  name: 528,553|yandex-80
   network: ws
   port: 2095
   server: cf.090227.xyz
@@ -5169,7 +5362,7 @@ proxies:
   cipher: auto
   client-fingerprint: ''
   delay: 1547
-  name: 528,553|yandex-556
+  name: 528,553|yandex-81
   network: ws
   port: 12901
   server: gtm1.ktmwan.net
@@ -5185,7 +5378,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   delay: 845
-  name: 528,553|yandex-557
+  name: 528,553|yandex-82
   port: 19229
   server: 103.181.165.238
   skip-cert-verify: true
@@ -5198,7 +5391,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   delay: 1218
-  name: 528,553|yandex-558
+  name: 528,553|yandex-83
   port: 19232
   server: 103.181.165.238
   skip-cert-verify: true
@@ -5486,6 +5679,16 @@ proxies:
   uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
 - alterId: 0
   cipher: auto
+  name: 559|🇸🇬 SG_164
+  network: none
+  port: 52752
+  server: 8.218.105.196
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
+- alterId: 0
+  cipher: auto
   name: 559|新加坡_010704164
   network: ws
   port: '443'
@@ -5585,12 +5788,19 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- name: '568|🇸🇬 新加坡 | SGP #1'
-  password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
+- name: '568|🇸🇬 新加坡 | SGP #2'
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
   port: 443
-  server: 168.138.189.91
+  server: 164.52.2.99
   skip-cert-verify: true
   sni: snippets.kkii.eu.org
+  type: trojan
+- name: '568|🇸🇬 新加坡 | SGP #3'
+  password: 97e79a62-f686-4b91-87a7-be39c9e57658
+  port: 443
+  server: 34.143.159.175
+  skip-cert-verify: false
+  sni: page.anjue39.qzz.io
   type: trojan
 - alterId: 0
   cipher: auto
