@@ -1501,7 +1501,7 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 435| FR_44
+  name: 435| FR_48
   network: ws
   port: 443
   server: 91.134.8.101
@@ -1510,6 +1510,18 @@ proxies:
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
+- name: '456,479,484,494,559,580|FR TROJAN-119 | free-nodes #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: www.calmlunch.com
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
 - alterId: 0
   cipher: auto
   name: 461|法国_马赛
@@ -1645,33 +1657,9 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '523,524|🇫🇷_法国_4 #1'
-  password: iwangjie
-  port: 2053
-  server: 135.125.232.253
-  skip-cert-verify: false
-  sni: nodes.830901.xyz
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: nodes.830901.xyz
-    path: /?ed=2560
-- name: '523,524|🇫🇷_法国_8 #1'
-  password: iwangjie
-  port: 2053
-  server: 141.94.68.216
-  skip-cert-verify: false
-  sni: nodes.830901.xyz
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: nodes.830901.xyz
-    path: /?ed=2560
 - country: 🇺🇸US
   delay: 1012
-  name: 528,553|yandex-2750
+  name: 528,553|yandex-2910
   password: telegram-id-directvpn
   port: 22223
   server: 15.224.1.8
@@ -1748,7 +1736,7 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '559|🇫🇷FR_46 #1'
+- name: 559|🇫🇷FR_46
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -1760,6 +1748,30 @@ proxies:
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
+- name: '559|🇫🇷_法国 #2'
+  network: ws
+  password: iwangjie
+  port: 2053
+  server: 135.125.232.253
+  skip-cert-verify: false
+  sni: nodes.830901.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nodes.830901.xyz
+    path: '%2F%3Fed%3D2560'
+- name: '559|🇫🇷_法国 #3'
+  network: ws
+  password: iwangjie
+  port: 2053
+  server: 141.94.68.216
+  skip-cert-verify: false
+  sni: nodes.830901.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nodes.830901.xyz
+    path: '%2F%3Fed%3D2560'
 - name: 559|法国 - 奧奈叢林 - 1
   password: trojan
   port: 50000
