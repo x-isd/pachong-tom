@@ -66,20 +66,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- alterId: 0
-  cipher: auto
-  name: 255|🇫🇷 法国
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-8467 #1'
   password: f8f7aCzcPKbsF8p3
@@ -401,13 +387,15 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 378,537,538|🇫🇷FR-51.159.106.175-0323 | 25....
+  country: 🇫🇷FR
+  name: 378,537,538,548|🇫🇷FR_61
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.106.175
   type: ss
 - cipher: aes-256-cfb
-  name: 378,537,538|🇫🇷FR-195.154.119.77-0444 | 24....
+  country: 🇫🇷FR
+  name: 378,537,538,548|🇫🇷FR_62
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -574,7 +562,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-51.77.158.169-3859 #1'
+  name: '378,494,536,537|🇷FR-51.77.158.169-3859 #1'
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -663,7 +651,10 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 378,437,536,537,574|未知16
+  country: 🇧🇪BE
+  h2-opts: {}
+  http-opts: {}
+  name: 378,437,494,536,537,548,574|未知16
   network: ws
   port: 443
   server: 57.128.189.240
@@ -676,16 +667,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-57.128.189.253-4892 #1'
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|🇧🇪 BE_41
   network: ws
   port: 443
   server: 57.128.189.253
   servername: kapelleng.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: kapelleng.com
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -715,18 +711,21 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,437,536,537|🇫🇷FR-91.134.8.101-4911 #1'
+  country: 🇫🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 378,437,494,536,537,548|🇫🇷 FR_60
   network: ws
   port: 443
   server: 91.134.8.101
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- country: 🇫🇷FR
+- country: 🇷FR
   name: '378,435,436,536,537|🇫🇷FR-51.195.202.129-4913 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
@@ -851,7 +850,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,437,536,537|🇷FR-57.128.189.253-7301 #1'
+  name: '378,437,494,536,537|🇷FR-57.128.189.253-7301 #1'
   network: ws
   port: 443
   server: 57.128.189.253
@@ -1016,7 +1015,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,437,536,537|🇷FR-146.59.55.50-7359 #1'
+  name: '378,437,494,536,537|🇷FR-146.59.55.50-7359 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1538,19 +1537,6 @@ proxies:
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 458,489|github.com/Ruk1ng001_386337666...
-  network: tcp
-  port: 30835
-  server: v35.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: 461|法国_马赛
@@ -1680,17 +1666,6 @@ proxies:
   port: 11201
   server: 51.68.83.117
   type: ss
-- name: 507|FR TROJAN-125 | free-nodes
-  network: ws
-  password: humanity
-  port: 443
-  server: www.calmlunch.com
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
 - name: 534|PC端如无法使用请点-TUN-视频体验-1B
   password: 78aac8b6-6aa6-4a70-9a63-a965783078e9
   port: 443
@@ -1770,28 +1745,6 @@ proxies:
     headers:
       Host: pelang.org
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 559,574|未知10 6.6MB/s
-  network: tcp
-  port: 550
-  server: 162.19.248.238
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ede27a79-b039-490b-932c-495de4b68880
-- alterId: 0
-  cipher: auto
-  name: 559,574|未知4 7.7MB/s
-  network: tcp
-  port: 443
-  server: 217.69.5.32
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ec4c349c-b3c6-4cff-be63-01eaad1dc098
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
