@@ -24,7 +24,7 @@ proxies:
     headers:
       Host: zula.ir
     path: /nasnet/cdn?ed=2560
-- name: 96,343,553|yandex-53
+- name: 96,343,553|yandex-3164
   password: 8jJVmFbM7qKnR3bSXX
   port: 5221
   server: pro-fw-de1.eisbeinhock.com
@@ -32,7 +32,7 @@ proxies:
   sni: pro-fw-de1.eisbeinhock.com
   type: trojan
   udp: true
-- name: 96,343,553|yandex-54
+- name: 96,343,553|yandex-3165
   password: 8jJVmFbM7qKnR3bSXX
   port: 465
   server: pro-de1.eisbeinhock.com
@@ -85,7 +85,7 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: '340,495,502,514,551,559|9|DE #1'
+- name: '340,495,502,514,551,559|9|DE #2'
   password: a084933d-0b41-4571-ae0c-7163b8c71ed1
   port: 2056
   server: de.eyucdn.xyz
@@ -1731,19 +1731,23 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: linkvws
-- name: 378,436,536,537,559|🇩🇪DE_44
+- country: 🇪DE
+  name: 378,435,436,536,537,559|🇩🇪DE_44
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
   skip-cert-verify: false
   sni: de2-full.privateip.net
   type: trojan
-- name: '378,436,536,537|🇩🇪DE-51.75.69.164-4912 #1'
+  udp: true
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇩🇪DE-51.75.69.164-4912 #1'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: '378,537|DE-193.108.117.75-5642 #1'
   password: PCnnH6SQSnfoS27
@@ -2891,13 +2895,52 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 437|🇩🇪 DE_38
+  country: 🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 435| DE_35
+  network: ws
+  port: 443
+  server: 141.95.126.134
+  servername: jamekk.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: jamekk.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 435,437|🇩🇪 DE_36
   network: none
   port: 18355
   server: 92.246.87.170
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇪 DE_37
+  network: ws
+  port: 443
+  server: 141.94.155.224
+  servername: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: fapeng.org
+  ws-path: linkvws
 - alterId: 0
   cipher: auto
   country: 🇩🇪DE
@@ -2963,7 +3006,7 @@ proxies:
   port: 2087
   server: api.dark-coffe.com
   servername: 5JxGp6VrFh.SmArTtEcHzAaL.InFo
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
@@ -3039,7 +3082,7 @@ proxies:
     headers:
       Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
     path: '%2F%3Fed%3D2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN'
-- name: '459,494,580|DE德国(mibei77.com 米贝节点分享) #34'
+- name: '459,580|DE德国(mibei77.com 米贝节点分享) #34'
   network: ws
   port: 2087
   server: api.dark-coffe.com
@@ -3477,33 +3520,6 @@ proxies:
   sni: awaited-chicken.adder289.quest
   type: trojan
 - client-fingerprint: chrome
-  fingerprint: ''
-  name: 470|98b67d9386d54761a7c43bba7e77a4...
-  network: ws
-  port: 2082
-  server: 45.131.4.246
-  tls: false
-  type: vless
-  udp: false
-  uuid: 65a1e22c-d37e-4b92-b6ca-1d09dcd1d441
-  ws-opts:
-    path: /
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 470|a66304dc62cb46449d34d0450c28bb...
-  network: ws
-  port: 22224
-  server: 18.193.207.240
-  servername: trojan.burgerip.co.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: trojan.burgerip.co.uk
-    path: /telegram-channel-vlessconfig
-- client-fingerprint: chrome
   name: '475,480,523,524|🇩🇪_德国_26 #1'
   network: ws
   port: 2087
@@ -3872,6 +3888,54 @@ proxies:
   tls: false
   type: socks5
   username: T2dAMTkzLjIzMy4yNTQuNzpAMTkzLjIzMy4yNTQuNzo%3D
+- name: '502,559|DE63｜机房｜低风险 #1'
+  network: ws
+  password: af37ba63-6b2e-4e24-b17d-bd75a3160680
+  port: 2087
+  server: bestcdn2.868863.xyz
+  skip-cert-verify: true
+  sni: 17683099008736.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17683099008452.206353.xyz
+    path: '%2Fagrbniuh'
+- name: '502,559|DE64｜机房｜低风险 #1'
+  network: ws
+  password: af37ba63-6b2e-4e24-b17d-bd75a3160680
+  port: 2083
+  server: bestcdn3.868863.xyz
+  skip-cert-verify: true
+  sni: 17683099006186.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17683099004938.206353.xyz
+    path: '%2Fagrbniuh'
+- name: '502,559|DE65｜机房｜低风险 #1'
+  network: ws
+  password: af37ba63-6b2e-4e24-b17d-bd75a3160680
+  port: 8443
+  server: bestcdn4.868863.xyz
+  skip-cert-verify: true
+  sni: 17683099009008.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17683099009483.206353.xyz
+    path: '%2Fagrbniuh'
+- name: '502,559|DE66｜机房｜低风险 #1'
+  network: ws
+  password: af37ba63-6b2e-4e24-b17d-bd75a3160680
+  port: 2053
+  server: bestcdn5.868863.xyz
+  skip-cert-verify: true
+  sni: 17683099002673.206353.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17683099006519.206353.xyz
+    path: '%2Fagrbniuh'
 - name: 507,559,580|DE VLESS-10 | free-nodes
   network: ws
   port: 443
@@ -3949,7 +4013,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   delay: 1239
-  name: 523,524,528,553|yandex-59
+  name: 523,524,528,553|yandex-3170
   network: ws
   port: 80
   server: 146.75.119.82
@@ -3965,7 +4029,7 @@ proxies:
 - client-fingerprint: chrome
   delay: 1968
   encryption: none
-  name: 523,524,528,553|yandex-50
+  name: 523,524,528,553|yandex-3161
   network: ws
   port: 2087
   server: 5.10.214.5
@@ -3990,13 +4054,14 @@ proxies:
       Host: welcomtofreeboarders.com
     path: /ws/?ed=2048
 - client-fingerprint: chrome
-  name: '523,524|🇩🇪_德国_53 #1'
+  name: 523,524,566|🇩🇪 德国 | DEU 6
   network: ws
   port: 8443
   server: 5.10.214.0
   servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
   tls: true
   type: vless
+  udp: true
   uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
   ws-opts:
     headers:
@@ -4004,7 +4069,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   delay: 1918
-  name: 523,524,528,553|yandex-49
+  name: 523,524,528,553|yandex-3160
   network: ws
   port: 8443
   server: api.dark-coffe.com
@@ -4018,13 +4083,14 @@ proxies:
       Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
     path: /
 - client-fingerprint: chrome
-  name: '523,524|🇩🇪_德国_50 #1'
+  name: 523,524,566|🇩🇪 德国 | DEU 4
   network: ws
   port: 2087
   server: api.dark-coffe.com
   servername: 5JxGp6VrFh.SmArTtEcHzAaL.InFo
   tls: true
   type: vless
+  udp: true
   uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
   ws-opts:
     headers:
@@ -4097,13 +4163,14 @@ proxies:
     path: /
 - client-fingerprint: chrome
   delay: 2133
-  name: 523,524,528,553|yandex-51
+  name: 523,524,528,553,566|🇩🇪 德国 | DEU 3
   network: ws
   port: 443
   server: 5.10.214.5
   servername: GfV5t2331T.sMaRtTeChZaAl.InFo
   tls: true
   type: vless
+  udp: true
   uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
   ws-opts:
     headers:
@@ -4111,7 +4178,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   delay: 2117
-  name: 523,524,528,553|yandex-48
+  name: 523,524,528,553|yandex-3159
   network: ws
   port: 2087
   server: 5.10.214.0
@@ -4125,13 +4192,14 @@ proxies:
       Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
     path: /
 - client-fingerprint: chrome
-  name: '523,524|🇩🇪_德国_61 #1'
+  name: 523,524,566|🇩🇪 德国 | DEU 13
   network: ws
   port: 8443
   server: 5.10.214.5
   servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
   tls: true
   type: vless
+  udp: true
   uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
   ws-opts:
     headers:
@@ -4153,7 +4221,7 @@ proxies:
 - auth: 69a7d063-dde7-4468-91b0-0168bb4c3c93
   delay: 1889
   down: 2
-  name: 528,553|yandex-41
+  name: 528,553|yandex-3152
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
   password: 69a7d063-dde7-4468-91b0-0168bb4c3c93
@@ -4165,8 +4233,8 @@ proxies:
   up: 2
 - auth: f486202c-b3e9-4522-a1b6-b4ac2df9506d
   delay: 2117
-  down: 100
-  name: 528,553,566|🇩🇪 德国 | DEU 5
+  down: 2
+  name: 528,553|yandex-3153
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
   password: f486202c-b3e9-4522-a1b6-b4ac2df9506d
@@ -4175,11 +4243,11 @@ proxies:
   skip-cert-verify: true
   type: hysteria2
   udp: true
-  up: 100
+  up: 2
 - auth: 101eee86-a780-4c45-86f2-675a13381c34
   delay: 2027
   down: 100
-  name: 528,553,566|🇩🇪 德国 | DEU
+  name: 528,553|yandex-3154
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
   password: 101eee86-a780-4c45-86f2-675a13381c34
@@ -4192,7 +4260,7 @@ proxies:
 - auth: 2efbc986-c28e-46ae-bddb-30355677a531
   delay: 1219
   down: 100
-  name: 528,553|yandex-44
+  name: 528,553|yandex-3155
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
   password: 2efbc986-c28e-46ae-bddb-30355677a531
@@ -4205,7 +4273,7 @@ proxies:
 - auth: 8f70f59d-0f46-4c18-9abd-bcb3dac566cc
   delay: 1628
   down: 2
-  name: 528,553|yandex-45
+  name: 528,553|yandex-3156
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
   password: 8f70f59d-0f46-4c18-9abd-bcb3dac566cc
@@ -4218,7 +4286,7 @@ proxies:
 - auth: 9a2f3f83-d3a2-4310-8c2c-7a2563f1a006
   delay: 2253
   down: 100
-  name: 528,553|yandex-46
+  name: 528,553|yandex-3157
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
   password: 9a2f3f83-d3a2-4310-8c2c-7a2563f1a006
@@ -4231,7 +4299,7 @@ proxies:
 - auth: 78424afc-4b66-44dd-8eb5-2689bc5c549d
   delay: 1226
   down: 2
-  name: 528,553|yandex-47
+  name: 528,553|yandex-3158
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
   password: 78424afc-4b66-44dd-8eb5-2689bc5c549d
@@ -4337,6 +4405,13 @@ proxies:
   sni: bts.com
   tls: false
   type: hysteria2
+- name: 559|🇩🇪 DE德国(mibei77.com 米贝节点分享)
+  password: '!!str 123456'
+  port: 443
+  server: bpbg.anguswen.top
+  skip-cert-verify: false
+  sni: bPbg.aNGUSWeN.Top
+  type: trojan
 - name: 559|德国 - 德赖艾希 - 3-01
   password: trojan
   port: 4444
@@ -4975,119 +5050,58 @@ proxies:
   tls: false
   type: vmess
   uuid: 42e25353-b1ae-59f3-bd59-d86d2737b814
-- auth: ff502500-a4a2-4a96-920b-689c56018e07
-  down: 100
-  name: 566|🇩🇪 德国 | DEU 3
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: ff502500-a4a2-4a96-920b-689c56018e07
-  port: 8443
-  server: 194.36.88.188
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 93c426c5-a686-4e2b-b321-25998f606ea2
-  down: 2
-  name: 566|🇩🇪 德国 | DEU 4
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 93c426c5-a686-4e2b-b321-25998f606ea2
-  port: 8080
-  server: 185.181.10.186
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 2
-- auth: 19b39fb3-5465-4d6e-8a7d-cafc5eb46747
-  down: 2
-  name: 566|🇩🇪 德国 | DEU 6
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 19b39fb3-5465-4d6e-8a7d-cafc5eb46747
-  port: 8443
-  server: 194.36.88.188
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 2
-- auth: adf05193-be02-4c6e-85e5-1f8683302bdb
-  down: 1000
+- cipher: aes-128-gcm
   name: 566|🇩🇪 德国 | DEU 7
-  password: adf05193-be02-4c6e-85e5-1f8683302bdb
-  port: 20301
-  server: dg.kunlun01.com
-  skip-cert-verify: true
-  sni: dg.kunlun01.com
-  type: hysteria2
+  password: 65d1855d-bc51-4465-aa34-162a71cef891
+  port: 29909
+  server: shrimp-door-9527.gym0boy.com
+  type: ss
   udp: true
-  up: 1000
-- auth: cff6159d-ebbe-4d7a-a210-7ecfea6cd1dd
-  down: 100
-  name: '566|🇩🇪 德国 | DEU 8 #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: cff6159d-ebbe-4d7a-a210-7ecfea6cd1dd
-  port: 8443
-  server: 194.36.88.188
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 4ac5c987-5e4c-4b2b-b118-01bc4e8e6774
-  down: 2
-  name: 566|🇩🇪 德国 | DEU 9
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 4ac5c987-5e4c-4b2b-b118-01bc4e8e6774
-  port: 8443
-  server: 194.36.88.188
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 2
 - client-fingerprint: chrome
-  name: 566|🇩🇪 德国 | DEU 10
+  name: 566|🇩🇪 德国 | DEU 11
   network: ws
   port: 2053
   server: platform.wise.com
-  servername: ss.sooos.eu.cc
+  servername: sss.ifree.int.yt
   tls: true
   type: vless
   udp: true
-  uuid: 6968b310-0a49-7c2e-3dc4-7a972340114a
+  uuid: 69699799-6abc-b931-6c1d-b5008b031e1c
   ws-opts:
     headers:
-      Host: ss.sooos.eu.cc
+      Host: sss.ifree.int.yt
     path: /proxyip=sjc.o00o.ooo
-- auth: 2993a754-faaa-4d41-88c0-30d42adab379
-  down: 2
-  name: '566|🇩🇪 德国 | DEU 12 #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 2993a754-faaa-4d41-88c0-30d42adab379
-  port: 8443
-  server: 194.36.88.188
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 2
 - name: '568|🇩🇪 德国 | DEU #1'
+  password: 70223341-1c5a-4ea5-b88a-b4fc1e2f5b35
+  port: 44968
+  server: de1.jueduibupao.top
+  skip-cert-verify: true
+  sni: de1.jueduibupao.top
+  tls: false
+  type: hysteria2
+- name: '568|🇩🇪 德国 | DEU #2'
+  password: 0639982f-22d4-44d9-baa8-a4a7e761a5d3
+  port: 41393
+  server: de1.jueduibupao.top
+  skip-cert-verify: true
+  sni: de1.jueduibupao.top
+  tls: false
+  type: hysteria2
+- name: '568|🇩🇪 德国 | DEU #3'
   obfs: salamander
   obfs-password: salamander
-  password: 19b39fb3-5465-4d6e-8a7d-cafc5eb46747
+  password: 13a8f3ec-08d5-4734-a912-f80fea40cdc4
   port: 8443
   server: 83.229.86.174
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '568|🇩🇪 德国 | DEU #2'
-  obfs: salamander
-  obfs-password: salamander
-  password: 220b8ac7-b807-4e28-8ba3-c3cf95af8905
-  port: 8443
-  server: 83.229.86.174
+- name: '568|🇩🇪 德国 | DEU #4'
+  password: 8b4c179c-d028-4e67-ba31-0ecd16062425
+  port: 47597
+  server: de1.jueduibupao.top
   skip-cert-verify: true
+  sni: de1.jueduibupao.top
   tls: false
   type: hysteria2
 - alterId: 2
