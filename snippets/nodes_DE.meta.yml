@@ -64,7 +64,7 @@ proxies:
       Host: download.windowsupdate.com
     path: /download
 - client-fingerprint: chrome
-  name: '127,426,494,507,523,524,566|🇩🇪 德国 | DEU 2 #1'
+  name: '127,426,494,523,524,566|🇩🇪 德国 | DEU 2 #1'
   network: ws
   port: 2053
   server: xhero.kharabetam.de
@@ -1636,16 +1636,21 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.59.199-4625 #1'
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: '378,536,537,548|🇧🇪 BE_24 #2'
   network: ws
   port: 443
   server: 57.129.59.199
   servername: kampong.org
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: kampong.org
     path: linkvws
 - alterId: 0
   cipher: auto
@@ -1675,16 +1680,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇪DE-57.129.28.64-4629 #1'
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: '378,536,537,548|🇧🇪 BE_25 #2'
   network: ws
   port: 443
   server: 57.129.28.64
   servername: serkat.org
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: serkat.org
     path: linkvws
 - alterId: 0
   cipher: auto
@@ -1751,20 +1761,25 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: linkvws
-- name: 378,436,536,537,559|🇩🇪DE_30
+- country: 🇪DE
+  name: 378,435,436,536,537,559|🇩🇪DE_30
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
   skip-cert-verify: false
   sni: de2-full.privateip.net
   type: trojan
-- name: '378,436,536,537|🇪DE-51.75.69.164-4646 #1'
+  udp: true
+- country: 🇷FR
+  name: '378,435,436,536,537|🇪DE-51.75.69.164-4646 #1'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '378,479,484,494,536,537,543,544,559,580|DE TROJAN-42 | free-nodes #1'
+  udp: true
+- country: 🇪DE
+  name: '378,440,479,484,494,536,537,559,580|DE TROJAN-42 | free-nodes #1'
   network: tcp
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
@@ -1772,8 +1787,10 @@ proxies:
   skip-cert-verify: false
   sni: ads.x5.ru
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇪DE-38.60.250.107-4925 #1'
+  country: 🇺🇸US
+  name: 378,537,548|disney_DE
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.60.250.107
@@ -2925,10 +2942,44 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  country: 🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇪 DE_30
+  network: ws
+  port: 443
+  server: 141.95.126.134
+  servername: jamekk.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: jamekk.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇪 DE_31
+  network: ws
+  port: 443
+  server: 141.94.155.224
+  servername: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: fapeng.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
   country: 🇩🇪DE
   h2-opts: {}
   http-opts: {}
-  name: 437,548,559|🇩🇪 DE_29
+  name: 435,437,548,559|🇩🇪 DE_29
   network: none
   port: 18355
   server: 92.246.87.170
@@ -2937,6 +2988,7 @@ proxies:
   tls: false
   type: vmess
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
+  ws-path: /
 - client-fingerprint: chrome
   name: '455,457,458,459,559|德國_5 #2'
   network: ws
@@ -2966,7 +3018,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc
-  name: 456,475,480,489,494,507,559,580|DE VLESS-69 | free-nodes
+  name: '456,475,480,489,494,507,559,580|DE VLESS-69 | free-nodes #1'
   network: grpc
   port: 22955
   reality-opts:
@@ -3501,21 +3553,6 @@ proxies:
   sni: awaited-chicken.adder289.quest
   type: trojan
 - client-fingerprint: chrome
-  fingerprint: ''
-  name: 470|76cc4a7af813452fa900744a49dd03...
-  network: ws
-  port: 443
-  server: 104.18.32.47
-  servername: freuddd.info
-  tls: true
-  type: vless
-  udp: false
-  uuid: c9b0932d-8d1c-43c5-b64b-e9a74719c76d
-  ws-opts:
-    headers:
-      host: freuddd.info
-    path: /hsdgsws
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '475,480,494,523,524,548,559|🇩🇰_丹麦 #2'
   network: tcp
@@ -3533,7 +3570,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: grpc
-  name: '475,480,489,494|🔥Join+Telegram:@Farah_VPN🟣 #467'
+  name: '475,480,489,494|🔥Join+Telegram:@Farah_VPN🟣 #2758'
   network: grpc
   port: 22955
   reality-opts:
@@ -3577,7 +3614,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc
-  name: '475,480,494|🔥Join+Telegram:@Farah_VPN🟣 #844'
+  name: '475,480,494|🔥Join+Telegram:@Farah_VPN🟣 #1479'
   network: grpc
   port: 22955
   reality-opts:
@@ -3849,7 +3886,7 @@ proxies:
   tls: false
   type: socks5
   username: T2dAMTkzLjIzMy4yNTQuODpAMTkzLjIzMy4yNTQuODo%3D
-- name: 489,553|yandex-3562
+- name: 489,553|yandex-3026
   network: ws
   port: 2087
   server: api.dark-coffe.com
@@ -3901,7 +3938,7 @@ proxies:
     path: /nasnet/cdn
 - alterId: 0
   cipher: auto
-  name: 489,494,559|未知2
+  name: 489,494,502,559|未知2
   network: ws
   port: '8080'
   server: 172.67.204.84
@@ -3916,7 +3953,7 @@ proxies:
     headers:
       Host: nasnet-511952424.mcitel.co
     path: /nasnet/cdn
-- name: 489,553|yandex-3581
+- name: 489,553|yandex-3045
   network: ws
   packet-encoding: xudp
   port: 443
@@ -3935,7 +3972,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 489,553|yandex-3609
+  name: 489,553|yandex-3073
   network: ws
   port: 2096
   server: api.dark-coffe.com
@@ -3953,7 +3990,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 489,553|yandex-3598
+  name: 489,553|yandex-3062
   network: ws
   port: 443
   server: api.dark-coffe.com
@@ -3975,7 +4012,7 @@ proxies:
   udp: true
   username: T2dAMTkzLjIzMy4yNTQuNzpAMTkzLjIzMy4yNTQuNw%3D%3D
 - client-fingerprint: chrome
-  name: 489,553|yandex-3601
+  name: 489,553|yandex-3065
   network: ws
   port: 2096
   server: 5.10.214.5
@@ -3990,7 +4027,7 @@ proxies:
     path: /
   xudp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3602
+  name: 489,553|yandex-3066
   network: ws
   port: 2087
   server: 5.10.214.5
@@ -4005,7 +4042,7 @@ proxies:
     path: /
   xudp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3603
+  name: 489,553|yandex-3067
   network: ws
   port: 2096
   server: 5.10.214.0
@@ -4041,7 +4078,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 489,553|yandex-3607
+  name: 489,553|yandex-3071
   network: ws
   port: 2087
   server: api.dark-coffe.com
@@ -4056,7 +4093,7 @@ proxies:
       Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
     path: /
 - client-fingerprint: chrome
-  name: 489,553|yandex-3612
+  name: 489,553|yandex-3076
   network: ws
   port: 443
   server: 5.10.214.0
@@ -4071,7 +4108,7 @@ proxies:
     path: /
   xudp: true
 - client-fingerprint: chrome
-  name: 489,523,524,553|yandex-3621
+  name: 489,523,524,553|yandex-3085
   network: ws
   port: 2096
   server: 25.129.197.138
@@ -4100,22 +4137,25 @@ proxies:
   udp: true
   uuid: b64ff004-ec17-4cbb-9f32-c4eb7f4660e8
   xudp: true
-- name: 507|DE VLESS-04 | free-nodes
+- name: 507|DE VLESS-10 | free-nodes
   network: tcp
-  port: 40938
-  server: 89.40.117.189
+  port: 8443
+  server: ititan.murix.me
   tls: false
   type: vless
-  uuid: 41477c12-82d0-4809-935d-137bd448d823
+  uuid: b3aea537-5661-43fb-b753-00aba09275cd
+  ws-opts:
+    headers:
+      Host: skyroom.online%2Cigap.net%2Cgharar.ir
+    path: '%2F'
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: 507|DE VLESS-17 | free-nodes
+  name: 507|DE VLESS-22 | free-nodes
   network: ws
   port: 443
   server: 104.18.32.47
   servername: freuddd.info
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: c9b0932d-8d1c-43c5-b64b-e9a74719c76d
@@ -4138,7 +4178,7 @@ proxies:
       Host: ab.nationalldt.com
     path: /CVD
 - client-fingerprint: chrome
-  name: 507|DE VLESS-61 | free-nodes
+  name: 507|DE VLESS-57 | free-nodes
   network: ws
   port: 443
   server: 8.6.112.0
@@ -4150,32 +4190,27 @@ proxies:
     headers:
       Host: korahey.xyz
     path: /
-- name: 507|DE VLESS-63 | free-nodes
+- name: 507|DE VLESS-59 | free-nodes
   port: 443
   server: prime.dissertationhelpspecialist.com
   tls: false
   type: vless
   uuid: 68cd081c-6ae1-47a6-b00d-6d8e83e911af
-- client-fingerprint: chrome
-  name: '507,559,580|DE VLESS-29 | free-nodes #1'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '507,559,580|DE VLESS-27 | free-nodes #1'
   network: ws
   port: 443
-  server: chatgpt.com
-  servername: kosmos.darkmod.sbs
+  server: 8.6.112.0
+  servername: cdn.vpsmee.ir
   tls: true
   type: vless
-  uuid: 1fd1a427-ed60-4713-fbc1-ae9244d9790c
+  uuid: 3a4ddfac-e7da-48c9-9648-4a366109fc3a
   ws-opts:
     headers:
-      Host: kosmos.darkmod.sbs
-    path: '%2F'
-- name: 507|DE TROJAN-72 | free-nodes
-  password: TurbooServer
-  port: 80
-  server: cdn.turbooserver.com
-  type: trojan
-  ws-opts:
-    path: /ed%3D25
+      Host: mtn.vpsmee.ir
+    path: '%2FX0PX5Vup1qlVVzhxp6ic50a'
 - alpn:
   - ''
   client-fingerprint: ios
@@ -4352,6 +4387,19 @@ proxies:
     headers:
       Host: mianfeijiedianscp.buzz
     path: '%2F'
+- client-fingerprint: chrome
+  name: '559,580|DE VLESS-29 | free-nodes #1'
+  network: ws
+  port: 443
+  server: chatgpt.com
+  servername: kosmos.darkmod.sbs
+  tls: true
+  type: vless
+  uuid: 1fd1a427-ed60-4713-fbc1-ae9244d9790c
+  ws-opts:
+    headers:
+      Host: kosmos.darkmod.sbs
+    path: '%2F'
 - name: 559|🇩🇪DE_19 | ⬇️ 4.5MB/s
   network: ws
   port: 443
@@ -4364,21 +4412,6 @@ proxies:
     headers:
       Host: korahey.xyz
     path: '%2F'
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '559,580|DE VLESS-27 | free-nodes #1'
-  network: ws
-  port: 443
-  server: 8.6.112.0
-  servername: cdn.vpsmee.ir
-  tls: true
-  type: vless
-  uuid: 3a4ddfac-e7da-48c9-9648-4a366109fc3a
-  ws-opts:
-    headers:
-      Host: mtn.vpsmee.ir
-    path: '%2FX0PX5Vup1qlVVzhxp6ic50a'
 - name: 559|德國 25
   network: grpc
   port: 22955
@@ -4447,7 +4480,7 @@ proxies:
     headers:
       Host: de.mrtech.com.tr
     path: /
-- name: '559|DE VLESS-68 | free-nodes #1'
+- name: 559|DE VLESS-68 | free-nodes
   network: ws
   port: 443
   server: rohin.ns.cloudflare.com
