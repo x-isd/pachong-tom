@@ -113,6 +113,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 255|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - client-fingerprint: random
   name: '340,494,502,514,551,559,567,585,586|FR_speednode_0018 #3'
   network: tcp
@@ -180,7 +194,7 @@ proxies:
   country: 🇫🇷FR
   h2-opts: {}
   http-opts: {}
-  name: 356,548|🇫🇷FR_42
+  name: 356,548|🇫🇷FR_40
   network: ws
   port: 2082
   server: 5.196.29.123
@@ -441,7 +455,7 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - alterId: 0
   cipher: auto
-  name: 378,536,537,538|🇫🇷FR-129.151.234.26-0029 | 0.0...
+  name: 378,494,536,537,538|🇫🇷FR-129.151.234.26-0029 | 0.0...
   network: ws
   port: 38701
   server: 129.151.234.26
@@ -490,7 +504,7 @@ proxies:
   server: 176.31.83.90
   skip-cert-verify: false
   type: trojan
-- name: '378,494,507,537,544,559|🇺🇸 北美地区 V2CROSS.COM #1'
+- name: 378,494,507,537,559|🇺🇸 北美地区 V2CROSS.COM
   password: nodes-b211f28a
   port: 2083
   server: node-fr-1.v2sv.top
@@ -713,7 +727,7 @@ proxies:
   country: 🇧🇪BE
   h2-opts: {}
   http-opts: {}
-  name: 378,437,536,537,548|🇧🇪BE_27
+  name: 378,437,536,537,548|🇧🇪BE_29
   network: ws
   port: 443
   server: 57.128.189.240
@@ -765,15 +779,12 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  country: 🇫🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 378,437,536,537,548|🇫🇷 FR_39
+  name: '378,437,536,537|🇷FR-91.134.8.101-4627 #1'
   network: ws
   port: 443
   server: 91.134.8.101
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -824,7 +835,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇫🇷FR
-  name: 378,537,548|🇫🇷FR_41
+  name: 378,537,548|🇫🇷FR_39
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.106.175
@@ -1610,7 +1621,7 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 435| FR_33
+  name: 435| FR_34
   network: ws
   port: 443
   server: 91.134.8.101
@@ -1786,18 +1797,22 @@ proxies:
       Host: lax1.ibgfw.top
     path: /xrenvws
 - client-fingerprint: chrome
-  fingerprint: ''
-  name: 470,494,507|FR VLESS-21 | free-nodes
-  network: tcp
-  port: 25178
-  server: 46.8.225.78
+  grpc-opts:
+    grpc-service-name: UpdateService
+  name: '475,480,489,507,559,580|🇨🇳_CN_中国 #5'
+  network: grpc
+  port: 2083
+  reality-opts:
+    public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
+    short-id: 6da16b1335651b38
+  server: 213.176.73.206
+  servername: apple.com
+  skip-cert-verify: true
   tls: false
   type: vless
-  udp: false
-  uuid: 7bd19c7d-8e36-4c85-9757-3066cf65046e
-  ws-opts:
-    headers:
-      Host: excoino.com
+  udp: true
+  uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+  xudp: true
 - name: '479,484|🇫🇷 FR TROJAN-02 | free-nodes #1'
   password: telegram-id-directvpn
   port: 22223
@@ -1827,12 +1842,11 @@ proxies:
   country: 🇭🇰 HK
   delay: 2616
   http-opts: {}
-  name: '528,568|🇫🇷 法国 | FRA #1'
+  name: 528|法国 - 斯特拉斯堡 - velia.net Interne...
   network: tcp
-  port: '30835'
+  port: 30835
   server: 202.85.53.205
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
@@ -1890,13 +1904,13 @@ proxies:
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: '559|🇫🇷FR_36 #2'
+- name: '559|🇫🇷FR_36 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 559|🇫🇷FR_38
+- name: '559|🇫🇷FR_38 #3'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -1934,7 +1948,7 @@ proxies:
   tls: false
   type: vless
   uuid: 5695e906-fd40-45e7-b261-7bc605af614c
-- name: '559,580|FR VLESS-34 | free-nodes #2'
+- name: '559,580|FR VLESS-34 | free-nodes #1'
   network: ws
   port: 443
   server: chatgpt.com
@@ -1976,7 +1990,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 559|🇫🇷 FR_34
+  name: '559|🇫🇷 FR_34 #1'
   network: ws
   port: 443
   server: 91.134.8.101
