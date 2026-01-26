@@ -1074,11 +1074,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|🇯🇵 JP
+- name: 255|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - name: '306,494,502,514,515,516,543,544,551,556,557|香港4|@ripaojiedian #2'
@@ -1163,29 +1163,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- client-fingerprint: chrome
-  name: '306,378,489,494,502,507,523,524,536,537,543,544,549,551,553,559,580|JP日本(mibei77.com
-    米贝节点分享) #13'
-  network: tcp
-  password: 30077070-596e-48ea-9400-14c8ed07bd97
-  port: 443
-  server: tuntro003.instconn.com
-  skip-cert-verify: false
-  sni: login-staticjpc.jasmine-douyin.top
-  tls: true
-  type: trojan
-  udp: true
-- name: 306,378,494,502,523,524,536,537,543,544,549,551,559,580|HK香港(mibei77.com 米贝节点分享)-clone
-  network: tcp
-  password: 30077070-596e-48ea-9400-14c8ed07bd97
-  port: 443
-  server: tuntro000.instconn.com
-  skip-cert-verify: false
-  sni: hkip5.686911.xyz
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /
 - name: '321,322,323|日本05 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -1281,7 +1258,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,378,537,548|netflix_JP
+  name: 356,357,378,537,548|🇬🇧GB_51
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2897,14 +2874,15 @@ proxies:
   server: 54.199.83.239
   type: ss
 - cipher: aes-256-gcm
-  name: '378,537|🇵JP-54.238.25.168-4690 #1'
+  country: 🇸 US
+  name: '378,435,537|🇵JP-54.238.25.168-4690 #1'
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 36885
   server: ss.031.node-for-bigairport.win
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,437,537|🇯🇵JP-47.245.42.92-4700 #1'
+  name: '378,537|🇯🇵JP-47.245.42.92-4700 #1'
   network: ws
   port: 443
   server: n1753598452.wpg27.xyz
@@ -2997,21 +2975,21 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇳IN
-  name: 378,537,548|🇮🇳IN_68
+  name: 378,537,548|🇮🇳IN_72
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 103.106.228.247
   type: ss
 - cipher: rc4-md5
   country: 🇯🇵JP
-  name: '378,537,548|netflix_JP #1'
+  name: 378,537,548|🇯🇵JP_86
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 172.105.199.111
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇯🇵JP
-  name: 378,537,548|🇯🇵JP_78
+  name: 378,537,548|🇯🇵JP_85
   password: XLOrvLWkCBBBxLqSEe9S8lnC5PLsNfRh
   port: 443
   server: 103.75.118.125
@@ -3252,6 +3230,23 @@ proxies:
     headers:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 435| JP_62
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
   ws-path: /
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
@@ -3553,7 +3548,7 @@ proxies:
   server: 154.205.139.9
   type: ss
 - cipher: chacha20-ietf
-  name: 489,553|yandex-423
+  name: 489,553|yandex-3340
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -3564,7 +3559,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-428
+  name: 489,553|yandex-3345
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -3575,7 +3570,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-430
+  name: 489,553|yandex-3347
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -3586,7 +3581,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-442
+  name: 489,553|yandex-3359
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -3597,7 +3592,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-446
+  name: 489,553|yandex-3363
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -3720,37 +3715,21 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_-🇯🇵JP_06
+  name: 548|Relay_🏁ZZ-🇯🇵JP_216
   network: ws
-  port: 443
-  server: n1753598451.74qxv.top
-  servername: n1753598451.74qxv.top
-  tls: true
-  type: vmess
-  uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
-  ws-opts:
-    headers:
-      Host: n1753598451.74qxv.top
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 548,559|🇯🇵 JP_63
-  network: ws
-  port: 443
-  server: seoul03.zgjok.com
-  servername: ''
+  port: 8443
+  server: t1.620720.xyz
+  servername: t1.620720.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
   ws-opts:
     headers:
-      Host: ''
+      HOST: t1.620720.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
@@ -3940,6 +3919,20 @@ proxies:
   ws-opts:
     headers:
       Host: v6.583181.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 559|🇯🇵 JP_63
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
