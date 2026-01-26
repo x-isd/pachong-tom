@@ -578,7 +578,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-51.77.158.169-3673 #1'
+  name: '378,536,537|🇷FR-51.77.158.169-3673 #1'
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -730,22 +730,18 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- country: 🇷FR
-  name: '378,435,436,536,537|🇫🇷FR-51.254.142.162-4716 #1'
+- name: '378,436,536,537|🇫🇷FR-51.254.142.162-4716 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: '378,435,436,536,537|🇫🇷FR-57.128.174.124-4718 #1'
+- name: '378,436,536,537|🇫🇷FR-57.128.174.124-4718 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇫🇷FR-146.59.55.50-4782 #1'
@@ -759,14 +755,12 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- country: 🇦UA
-  name: '378,435,436,536,537|🇷FR-57.131.38.150-4787 #1'
+- name: '378,436,536,537|🇷FR-57.131.38.150-4787 #1'
   password: 8d16a256-42d7-4431-8039-da1eb06cafbc
   port: 443
   server: it-full.privateip.net
   skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: aes-256-cfb
   country: 🇷FR
   name: '378,440,537|🇫🇷FR-195.154.119.77-4842 #1'
@@ -958,7 +952,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537,559|🇧🇪 BE_16 #2'
+  name: '378,536,537,559|🇧🇪 BE_16 #1'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -1048,7 +1042,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,437,494,536,537|🇷FR-146.59.55.50-7174 #1'
+  name: '378,437,536,537|🇷FR-146.59.55.50-7174 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1556,20 +1550,6 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  country: 🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 435| FR_34
-  network: ws
-  port: 443
-  server: 91.134.8.101
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: /linkvws
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1738,7 +1718,7 @@ proxies:
     path: /xrenvws
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 470|75987699a9d7468990afee78acca07...
+  name: 470|45902fb4bb854c46a3319920965ec2...
   network: ws
   port: 443
   server: 104.18.32.47
@@ -1794,7 +1774,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 489,553|yandex-383
+  name: 489,553|yandex-725
   port: 30835
   server: 202.85.53.205
   skip-cert-verify: true
@@ -1803,8 +1783,51 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 507,559|未知11
+  network: ws
+  password: humanity
+  port: 443
+  server: www.calmlunch.com
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: 507|FR TROJAN-58 | free-nodes
+  network: ws
+  password: humanity
+  port: 443
+  server: www.gossipglove.com
+  skip-cert-verify: true
+  sni: www.gossipglove.com
+  type: trojan
+  ws-opts:
+    path: /assignment
+- name: 507,559|🇺🇸 北美地区 V2CROSS.COM
+  network: tcp
+  password: nodes-b211f28a
+  port: 2083
+  server: node-fr-1.v2sv.top
+  skip-cert-verify: true
+  sni: node-fr-1.v2sv.top
+  type: trojan
 - client-fingerprint: chrome
-  name: 507|FR VLESS-65 | free-nodes
+  grpc-opts:
+    grpc-service-name: xyz
+  name: 507|FR VLESS-69 | free-nodes
+  network: grpc
+  port: 19702
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: sktr.berkeart.ir
+  servername: check-host.net
+  tls: false
+  type: vless
+  uuid: 1f3b130d-7d29-45d1-b5aa-adc5cd94a885
+- client-fingerprint: chrome
+  name: 507|FR VLESS-76 | free-nodes
   network: tcp
   port: 50511
   reality-opts:
@@ -1815,6 +1838,46 @@ proxies:
   tls: false
   type: vless
   uuid: 3bc9c90e-dd6c-400d-bfb0-1d06b13fe46c
+- name: 507|FR VLESS-99 | free-nodes
+  network: ws
+  port: 2087
+  server: 188.114.98.224
+  servername: vds.rahedarro.com
+  tls: true
+  type: vless
+  uuid: 8443822d-6b68-4af2-d096-c03207ed880d
+  ws-opts:
+    headers:
+      Host: vds.rahedarro.com
+    path: '%2Frahh'
+- client-fingerprint: chrome
+  name: '507,523,524|🇺🇸_美国_9 #1'
+  network: ws
+  port: 443
+  server: 69.84.182.20
+  servername: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: eee3e4b0-0dfc-46af-8c6e-cb4241e9258e
+  ws-opts:
+    headers:
+      Host: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
+    path: /ws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '523,524,559|🇫🇷_法国 #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 138.124.79.3
+  servername: sun6-21.userapi.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
 - client-fingerprint: chrome
   name: '523,524|🇫🇷_法国_1 #1'
   network: ws
@@ -1870,19 +1933,19 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '559|🇫🇷FR_37 #2'
+- name: '559|🇫🇷FR_37 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: '559|🇫🇷FR_35 #1'
+- name: 559|🇫🇷FR_35
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: '559|🇫🇷FR_38 #2'
+- name: '559|🇫🇷FR_38 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -1893,6 +1956,26 @@ proxies:
   port: 443
   server: de-full.privateip.net
   sni: de-full.privateip.net
+  type: trojan
+- name: '559,580|FR TROJAN-63 | free-nodes #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: chatgpt.com
+  sni: www.gossipglove.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.gossipglove.com
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  name: '559,580|FR TROJAN-03 | free-nodes #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.39.197.201
+  sni: trojan.burgerip.co.uk
   type: trojan
 - client-fingerprint: chrome
   name: '559|🇫🇷_法国 #2'
@@ -1908,6 +1991,12 @@ proxies:
     headers:
       Host: mot.saghv.filegear-sg.me
     path: '%2F%40Marisa_kristi'
+- name: '559,580|FR VLESS-24 | free-nodes #1'
+  port: 19702
+  server: sktr.berkeart.ir
+  tls: false
+  type: vless
+  uuid: 1f3b130d-7d29-45d1-b5aa-adc5cd94a885
 - name: 559|🇫🇷 France, Paris [BL]-02
   network: tcp
   port: 443
@@ -1940,6 +2029,51 @@ proxies:
   tls: false
   type: vless
   uuid: 5695e906-fd40-45e7-b261-7bc605af614c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '559,580|FR VLESS-41 | free-nodes #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: hbtt7X9RxXWayUR5Yvff3kzLYQui7uB0KlliIjx68Xw
+    short-id: 857cf4b3
+  server: 185.10.18.130
+  servername: www.google.com
+  tls: false
+  type: vless
+  uuid: 7e496ad4-bcbf-46e3-a1d7-f75778968a75
+- name: '559,580|FR VLESS-99 | free-nodes #2'
+  port: 2087
+  server: 188.114.98.224
+  tls: false
+  type: vless
+  uuid: 8443822d-6b68-4af2-d096-c03207ed880d
+  ws-opts:
+    path: '%2Frahh'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: '559,580|FR VLESS-50 | free-nodes #1'
+  network: tcp
+  port: 2222
+  server: 45.154.96.51
+  servername: tcp1.speedx3net.ir
+  tls: true
+  type: vless
+  uuid: a37f349e-04b0-4967-a9e5-fb35083fa353
+- name: '559,580|FR VLESS-62 | free-nodes #1'
+  network: ws
+  port: 443
+  server: zzula.ir
+  servername: zitel.digikala-aparat-zula.com
+  tls: true
+  type: vless
+  uuid: c249ca6f-1bde-479b-af96-da0e948a3800
+  ws-opts:
+    headers:
+      Host: zitel.digikala-aparat-zula.com
+    path: /admin
 - alterId: 0
   cipher: auto
   name: 559|法国 141
@@ -1956,7 +2090,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '559|🇫🇷 FR_34 #1'
+  name: 559|🇫🇷 FR_34
   network: ws
   port: 443
   server: 91.134.8.101
