@@ -8,7 +8,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
-- name: 340,502,507,514,523,524,553,559,567|SE_260cc_0009
+- name: '340,507,523,524,553,559|14|SE_speednode_0009 #1'
   network: tcp
   port: 443
   server: secdn13.suio.me
@@ -16,9 +16,10 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
   uuid: ba9ddd0d-5ffd-4d40-b76d-df32ecb092a1
-- name: 340,502,507,514,523,524,553,559,567|SE_260cc_0010
+  ws-opts:
+    path: /
+- name: '340,507,523,524,553,559|14|SE_speednode_0010 #1'
   network: tcp
   port: 443
   server: secdn11.suio.me
@@ -26,8 +27,9 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
   uuid: a7a9f670-44c0-45a9-8047-69db0203c142
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: '362,363|🇸🇪 SE 057 |  20.8MB/s #1'
@@ -82,8 +84,7 @@ proxies:
   server: 13.49.241.14
   type: ss
 - cipher: aes-256-cfb
-  country: 🇦🇫AF
-  name: 378,537,548|🇦🇫AF_19
+  name: '378,537|🇸SE-121.127.46.147-4815 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 121.127.46.147
@@ -199,7 +200,7 @@ proxies:
     headers:
       Host: apple.com
 - cipher: aes-256-cfb
-  name: 489,553|yandex-117
+  name: 489,553|yandex-353
   password: amazonskr05
   port: 443
   server: 16.170.155.107
@@ -211,7 +212,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 489,553|yandex-156
+  name: 489,553|yandex-392
   network: tcp
   port: 443
   reality-opts:
@@ -246,7 +247,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 489,553|yandex-274
+  name: 489,553,566|🇸🇪 瑞典 | SWE
   network: tcp
   port: 443
   reality-opts:
@@ -296,3 +297,31 @@ proxies:
   tls: false
   type: vless
   uuid: 34e01c8f-673f-43a3-b4dc-45f7f3121c16
+- client-fingerprint: chrome
+  name: 566|🇸🇪 瑞典 | SWE 2
+  network: ws
+  port: 2053
+  server: 5.144.179.95
+  servername: snippets.sosoco.ggff.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
+  ws-opts:
+    headers:
+      Host: snippets.sosoco.ggff.net
+    path: /proxyip=sjc.o00o.ooo
+- cipher: aes-256-cfb
+  name: 566|🇸🇪 瑞典 | SWE 3
+  password: amazonskr05
+  port: 443
+  server: 51.20.81.17
+  type: ss
+  udp: true
+- name: '568|🇸🇪 瑞典 | SWE #1'
+  password: T9BpZIVMNv
+  port: 8443
+  server: vip2.kaixincloud.top
+  skip-cert-verify: true
+  sni: sweden.vmaxpanel.com
+  type: trojan
