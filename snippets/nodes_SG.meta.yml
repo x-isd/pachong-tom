@@ -76,7 +76,7 @@ proxies:
   udp: true
 - country: 🇨🇳CN
   delay: 2883
-  name: 96,343,528,553|yandex-2822
+  name: 96,343,528,553|yandex-114
   password: a69cad04-a100-4bbf-9928-f9b82f015adf
   port: 41277
   server: xiaozhu1.kkieo555.cn
@@ -819,11 +819,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|SG
-  network: tcp
+- name: 255|🇸🇬 SG
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
+  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - alterId: 0
@@ -922,7 +922,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,495,502,514,551,559|9|SG #1'
+- name: '340,495,502,514,551,559|9|SG #2'
   password: e7965e64-e001-4e8c-8273-39c61ff4a094
   port: 30000
   server: sg3.oomz.ru
@@ -930,24 +930,6 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- country: 🇬SG
-  name: '340,378,440,494,536,537,538,559,580|🇸🇬 新加坡2|@stairnode #5'
-  network: tcp
-  password: c1d83c0c7d57cead4379ba14a82df69b
-  port: 443
-  server: 178.128.114.70
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- name: '340,378,536,537,559,580|🇸🇬 新加坡3|@stairnode #5'
-  network: tcp
-  password: BxceQaOe
-  port: 1196
-  server: 57.181.26.149
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - client-fingerprint: chrome
   name: '340,502,514,551,559,567,585,586|SG_speednode_0035 #3'
   port: 443
@@ -980,8 +962,7 @@ proxies:
   server: 128.199.172.224
   type: ss
 - cipher: rc4-md5
-  country: 🇸🇬SG
-  name: 356,378,537,538,548|🇸🇬SG_168
+  name: 356,378,537,538|🇸🇬SG-68.183.227.4-0326 | 22.50...
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -2261,17 +2242,26 @@ proxies:
     headers:
       Host: 180.215.130.123
     path: /
+- country: 🇬SG
+  name: '378,440,494,536,537,538,559,580|🇸🇬 新加坡2|@stairnode #4'
+  network: tcp
+  password: c1d83c0c7d57cead4379ba14a82df69b
+  port: 443
+  server: 178.128.114.70
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538,548|_03
+  country: 🇸 US
+  name: 378,435,537,538|🇸🇬SG-38.89.142.56-0350 | 15.23...
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.89.142.56
   type: ss
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 378,494,536,537,538,548|Relay_-🇸🇬SG_11
+  name: 378,494,536,537,538|🇸🇬SG-158.178.230.34-0359 | 10....
   network: ws
   port: 443
   server: singapore02.zgjok.com
@@ -3490,10 +3480,10 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
+  country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 437,548,559|🇸🇬 SG_177
+  name: 435,437,559|🇸🇬 SG_177
   network: none
   port: 43425
   server: 8.210.248.133
@@ -3502,12 +3492,30 @@ proxies:
   tls: false
   type: vmess
   uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇬 SG_152
+  network: ws
+  port: 443
+  server: n1761214911.74qxv.top
+  servername: n1761214911.74qxv.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-headers:
+    HOST: n1761214911.74qxv.top
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇬SG
   h2-opts: {}
   http-opts: {}
-  name: 440|🇬SG_59
+  name: 440|🇬SG_62
   network: none
   port: 31769
   server: 8.217.13.74
@@ -3568,7 +3576,7 @@ proxies:
     path: '%2Fwelcome'
 - alterId: 32
   cipher: auto
-  name: '459,476,481,494,536,559,580|US美国(mibei77.com 米贝节点分享) #48'
+  name: '459,476,481,494,536,559,580|US美国(mibei77.com 米贝节点分享) #47'
   network: ws
   port: '443'
   server: vc.fly.dev
@@ -4777,7 +4785,7 @@ proxies:
   sni: ''
   type: trojan
 - client-fingerprint: chrome
-  name: 470,494,507|SG TROJAN-29 | free-nodes
+  name: 470,507|SG TROJAN-29 | free-nodes
   password: a9570330-769d-11ef-90dc-1577c1651679
   port: 443
   server: v1.dabache.top
@@ -5054,7 +5062,7 @@ proxies:
   type: http
   username: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-3005
+  name: 489,553|yandex-717
   password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
   port: 19842
   server: 183.240.138.168
@@ -5116,7 +5124,7 @@ proxies:
   uuid: 28a21e2a-5e79-4b0f-bfb8-ebd2b7e2103e
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-3046
+  name: 489,553|yandex-758
   password: c4dc1e7d-916f-4b6d-b578-09afad8be7fa
   port: 10237
   server: c.cdn-bilibili.cn
@@ -5219,7 +5227,7 @@ proxies:
   type: http
   username: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
 - client-fingerprint: chrome
-  name: 489,553|yandex-3077
+  name: 489,553|yandex-789
   network: ws
   password: a9570330-769d-11ef-90dc-1577c1651679
   port: 443
@@ -5264,7 +5272,7 @@ proxies:
   tls: true
   type: http
   username: ba7a37e3-033a-e1ab-06f6-9027aa4630f5
-- name: 489,566|🇸🇬 新加坡 | SGP 7
+- name: '489|🟡🇸🇬[🤖📺🎭🎪]_github.com/Ruk1ng001... #1'
   password: 1469e09e-027c-11ec-a0fc-f23c913c8d2b
   port: 443
   server: 2f0586a3-t9zts0-to8xn3-l4nv.sg.oshuawei.com
@@ -5296,7 +5304,7 @@ proxies:
   tls: true
   type: http
   username: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
-- name: '489|🟡🇸🇬[🤖📺🎭]_github.com/Ruk1ng001_... #1'
+- name: 489,566|🇸🇬 新加坡 | SGP 17
   password: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
   port: 443
   server: 42fa06e0-t9zts0-tb4whp-zn8y.sg.oshuawei.com
@@ -5448,7 +5456,7 @@ proxies:
   tls: true
   type: http
   username: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
-- name: '489|🟡🇸🇬[🤖📺🎭🎪]_github.com/Ruk1ng001... #2'
+- name: 489,566|🇸🇬 新加坡 | SGP 7
   password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
   port: 443
   server: 358848c5-t9zts0-tnkuks-wujn.sg.oshuawei.com
@@ -5801,18 +5809,6 @@ proxies:
   type: http
   username: ea93064c-176c-11f0-885d-f23c91cfbbc9
 - alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '502,559|SG【机场推荐：https://a0a.xyz】9 #1'
-  network: raw
-  port: 443
-  server: vkehifree.cyberghostvpn.shop
-  servername: zoom.com
-  tls: true
-  type: vless
-  uuid: cf43566e-d258-4992-9ca3-72c06c994a7d
-- alpn:
   - ''
   client-fingerprint: random
   flow: xtls-rprx-vision
@@ -5999,17 +5995,6 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 548|disney_SG
-  port: 35034
-  server: 165.154.195.38
-  skip-cert-verify: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -6069,7 +6054,7 @@ proxies:
   server: gg21.hangfengjiasu.com
   tfo: false
   type: ss
-- name: '559|🇸🇬 新加坡3|@stairnode #3'
+- name: '559|🇸🇬 新加坡3|@stairnode #2'
   password: BxceQaOe
   port: 1691
   server: 13.113.82.107
@@ -6111,7 +6096,7 @@ proxies:
     headers:
       Host: 4efd71de.lfree.ccwu.cc
     path: '%2F2026'
-- name: '559,580|GB英国(mibei77.com 米贝节点分享) #21'
+- name: '559,580|GB英国(mibei77.com 米贝节点分享) #20'
   network: ws
   port: 8443
   server: 35.185.190.189
@@ -6124,7 +6109,7 @@ proxies:
     headers:
       Host: 4efd71de.lfree.ccwu.cc
     path: '%2F2026'
-- name: '559,580|GB英国(mibei77.com 米贝节点分享) #14'
+- name: '559,580|GB英国(mibei77.com 米贝节点分享) #13'
   network: ws
   port: 12365
   server: 8.222.154.58
@@ -6349,123 +6334,140 @@ proxies:
     headers:
       Host: snippet.gfw.hidns.co
     path: '%2Fdanfeng'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 559|SG【机场推荐：https://a0a.xyz】9
+  network: raw
+  port: 443
+  server: vkehifree.cyberghostvpn.shop
+  servername: zoom.com
+  tls: true
+  type: vless
+  uuid: cf43566e-d258-4992-9ca3-72c06c994a7d
+- alterId: 0
+  cipher: auto
+  name: 559|🇸🇬 SG_176
+  network: ws
+  port: 443
+  server: n1761214911.74qxv.top
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: '566|🇸🇬 新加坡 | SGP #1'
-  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
-  port: 443
-  server: ec3f9e3d-t9zts0-tbao5v-gacy.sg.oshuawei.com
+  password: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  port: 17235
+  server: c22f2180-ta1og0-tcop2n-tl32.cm4.oshuawei.com
   tls: true
   type: http
-  username: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  username: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
 - name: 566|🇸🇬 新加坡 | SGP 2
-  password: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
+  password: 8da5616c-8566-11ee-9a21-f23c9164ca5d
   port: 17235
-  server: 82e812e6-t9zts0-taxf6m-ieln.cm4.oshuawei.com
+  server: da9f630d-t9zts0-tqo482-1ppvf.cm4.oshuawei.com
   tls: true
   type: http
-  username: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
+  username: 8da5616c-8566-11ee-9a21-f23c9164ca5d
 - name: '566|🇸🇬 新加坡 | SGP 3 #1'
-  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
   port: 443
-  server: c3881b24-t9zts0-tb5rbt-1kcpe.sg.oshuawei.com
+  server: cfeece6f-ta1og0-tds6bp-1hzyr.sg.oshuawei.com
   tls: true
   type: http
-  username: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  username: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
 - name: '566|🇸🇬 新加坡 | SGP 4 #1'
-  password: e3fdbd22-8c17-11ee-ace4-f23c913c8d2b
-  port: 17235
-  server: da1cc206-t9zts0-tphxte-1h5u7.cm4.oshuawei.com
+  password: 3fed19ea-1671-11f0-bd2e-f23c9164ca5d
+  port: 443
+  server: c21a7769-t9zts0-tdfzix-fm2v.sg.oshuawei.com
   tls: true
   type: http
-  username: e3fdbd22-8c17-11ee-ace4-f23c913c8d2b
+  username: 3fed19ea-1671-11f0-bd2e-f23c9164ca5d
 - name: 566|🇸🇬 新加坡 | SGP 5
-  password: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
+  password: ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9
   port: 443
-  server: ab662e9f-t9zts0-tee612-2r82.sg.oshuawei.com
+  server: 113e40e5-t9zts0-taklwz-12bd.sg.oshuawei.com
   tls: true
   type: http
-  username: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
+  username: ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9
 - name: 566|🇸🇬 新加坡 | SGP 6
-  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  password: de629d50-1711-11ed-bd7c-f23c913c8d2b
   port: 17235
-  server: 8bea89f7-t9zts0-tlvq5w-1jcwu.cm4.oshuawei.com
+  server: c4c796bb-t9zts0-tlpfci-1jdha.cm4.oshuawei.com
   tls: true
   type: http
-  username: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  username: de629d50-1711-11ed-bd7c-f23c913c8d2b
 - name: 566|🇸🇬 新加坡 | SGP 8
-  password: 167db97c-ee01-11ef-b737-f23c91cfbbc9
-  port: 17235
-  server: cca08505-t9zts0-tasors-1tdqt.cm4.oshuawei.com
-  tls: true
-  type: http
-  username: 167db97c-ee01-11ef-b737-f23c91cfbbc9
-- name: 566|🇸🇬 新加坡 | SGP 9
-  password: a6cf58d6-14d1-11eb-a8bf-f23c91cfbbc9
-  port: 17235
-  server: 546bad73-t9zts0-tozbjw-1462e.cm4.oshuawei.com
-  tls: true
-  type: http
-  username: a6cf58d6-14d1-11eb-a8bf-f23c91cfbbc9
-- name: 566|🇸🇬 新加坡 | SGP 10
-  password: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
+  password: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
   port: 443
-  server: 30f47acd-t9zts0-tatrrz-yjq0.sg.oshuawei.com
+  server: 0aa12a39-ta1og0-tc61cs-1tja8.sg.oshuawei.com
+  tls: true
+  type: http
+  username: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
+- name: 566|🇸🇬 新加坡 | SGP 10
+  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
+  port: 443
+  server: cb3b2541-t9zts0-tcc9uq-1rnrp.sg.oshuawei.com
+  tls: true
+  type: http
+  username: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
+- name: 566|🇸🇬 新加坡 | SGP 11
+  password: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
+  port: 17235
+  server: db4de559-ta1og0-tcmken-19les.cm4.oshuawei.com
+  tls: true
+  type: http
+  username: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
+- name: '566|🇸🇬 新加坡 | SGP 12 #1'
+  password: 8bb68d04-6973-11ee-b518-f23c9164ca5d
+  port: 17235
+  server: 413d07f3-t9zts0-ta00rd-1o8ak.cm4.oshuawei.com
+  tls: true
+  type: http
+  username: 8bb68d04-6973-11ee-b518-f23c9164ca5d
+- name: '566|🇸🇬 新加坡 | SGP 13 #1'
+  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
+  port: 443
+  server: 76ee807a-ta1og0-tcc9uq-1rnrp.sg.oshuawei.com
+  tls: true
+  type: http
+  username: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: 566|🇸🇬 新加坡 | SGP 14
+  port: 35217
+  server: dzgz.tcity8.monster
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 349cb74e-c3e9-4eee-9f15-ffdf05aa68c0
+- name: 566|🇸🇬 新加坡 | SGP 15
+  password: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
+  port: 17235
+  server: 99a1a0f4-ta1og0-tatrrz-yjq0.cm4.oshuawei.com
   tls: true
   type: http
   username: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
-- name: 566|🇸🇬 新加坡 | SGP 11
-  password: 87b31a02-172e-11ee-a11f-f23c913c8d2b
+- name: 566|🇸🇬 新加坡 | SGP 16
+  password: a6cf58d6-14d1-11eb-a8bf-f23c91cfbbc9
   port: 443
-  server: 53bb5e7e-t9zts0-thvc3p-1o4kv.sg.oshuawei.com
+  server: 50c01df4-ta1og0-tozbjw-1462e.sg.oshuawei.com
   tls: true
   type: http
-  username: 87b31a02-172e-11ee-a11f-f23c913c8d2b
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '566|🇸🇬 新加坡 | SGP 12 #1'
-  network: tcp
-  port: 30402
-  reality-opts:
-    public-key: uTOYAGREMpfEr3cQFcLwgMAWwwxjS3e2Yw32kCdN3Ew
-    short-id: f5f6e6f4
-  server: freea.glyphara.com
-  servername: itunes.apple.com
+  username: a6cf58d6-14d1-11eb-a8bf-f23c91cfbbc9
+- name: 566|🇸🇬 新加坡 | SGP 18
+  password: 847c03b2-0a9d-11eb-a8bf-f23c91cfbbc9
+  port: 17235
+  server: 0f8fc820-ta1og0-tgr32b-wj6v.cm4.oshuawei.com
   tls: true
-  type: vless
-  udp: true
-  uuid: 83b9a577-2987-4431-b1c8-ad2a140036a6
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '566|🇸🇬 新加坡 | SGP 13 #1'
-  network: tcp
-  port: 30402
-  reality-opts:
-    public-key: uTOYAGREMpfEr3cQFcLwgMAWwwxjS3e2Yw32kCdN3Ew
-    short-id: f5f6e6f4
-  server: freea.glyphara.com
-  servername: itunes.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0cd452f7-1a3f-4bbc-97f7-c5ebbfcc3ed8
-- alterId: 0
-  cipher: auto
-  name: '568|🇸🇬 新加坡 | SGP #3'
-  network: tcp
-  port: '35217'
-  server: dzgz.tcity8.monster
-  tls: false
-  type: vmess
-  uuid: 30b3c679-c1d2-4e4e-8965-b6426368be53
-- alterId: 0
-  name: '574|SG #4'
-  password: BxceQaOe
-  port: 3579
-  server: 18.182.62.89
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: true
-  type: trojan
-  udp: true
+  type: http
+  username: 847c03b2-0a9d-11eb-a8bf-f23c91cfbbc9
 - alterId: 0
   cipher: auto
   name: '577|新加坡NO.1 #4'
@@ -6521,6 +6523,18 @@ proxies:
     headers:
       Host: gw.alicdn.com
     path: /CAT
+- client-fingerprint: chrome
+  name: 580|SG VLESS-127 | free-nodes
+  network: tcp
+  port: 45989
+  reality-opts:
+    public-key: YmPBYhQjKnaKKGDHQb6xxjvPw3nenm59T1ssG0KFcj0
+    short-id: 1f13df2cb7
+  server: 146.190.85.213
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: fa7ea4ac-1ed6-467a-ae18-2099ed2bb4ae
 - client-fingerprint: randomized
   name: 583|TS-13-02-SG
   network: ws
