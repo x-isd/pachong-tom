@@ -109,7 +109,7 @@ proxies:
   uuid: d4d031ec-0ba6-486a-aa0c-dce2b7cb8933
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,522,548,551,559,567,580,585,586|RU_speednode_0032 #3'
+  name: '340,478,483,502,514,522,551,559,567,580,585,586|RU_speednode_0032 #3'
   port: 8443
   reality-opts:
     public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
@@ -123,7 +123,7 @@ proxies:
   uuid: 2ad6bd90-51fd-41d2-985b-b7aab5cd77c8
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,522,548,551,553,559,567,580,585,586|RU_speednode_0033 #3'
+  name: '340,478,483,502,514,522,551,553,559,567,580,585,586|RU_speednode_0033 #3'
   network: tcp
   port: 443
   reality-opts:
@@ -373,15 +373,15 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,489,537,538,553|yandex-502
+  country: 🇺 RU
+  name: 378,435,489,537,538,553,566|🇷🇺 俄罗斯 | RUS
   password: nKohne07VrxB-nq43cxzs7Vu9Nnp4JXY
   port: 504
   server: ru1.clear-vpn.org
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 378,537,538,548|🇺🇸US_193
+  name: 378,537,538|🇷🇺RU-38.60.223.8-0351 | 0.957M...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.60.223.8
@@ -751,12 +751,19 @@ proxies:
   tls: false
   type: vless
   uuid: 329bd550-a8f8-4157-b2df-dc4503097a27
-- name: '456,523,524,559,580|RU VLESS-53 | free-nodes #1'
+- client-fingerprint: chrome
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: '456,523,524,559,566,580|RU VLESS-53 | free-nodes #1'
   network: tcp
   port: 10468
   server: 185.113.10.198
+  servername: Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
   tls: false
   type: vless
+  udp: true
   uuid: 3b12e953-96f0-40da-ac32-3038dadf20f7
   ws-opts:
     headers:
@@ -1540,67 +1547,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- flow: xtls-rprx-vision
-  name: '475,480|🇷🇺RU_3|⬇️2.9MB/s #1'
-  network: tcp
-  port: 443
-  server: 185.234.59.173
-  servername: hls-svod.itunes.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
-- flow: xtls-rprx-vision
-  name: '475,480|🇷🇺RU_2|⬇️3.8MB/s #1'
-  network: tcp
-  port: 443
-  server: 185.234.59.174
-  servername: hls-svod.itunes.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
-- name: '475,480|俄羅斯_2 #1'
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 8443
-  server: 176.109.106.61
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: '475,480|俄羅斯_3 #1'
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 443
-  server: 45.89.52.247
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: '475,480|俄羅斯_4 #1'
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 443
-  server: 89.169.13.12
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
 - client-fingerprint: chrome
   http-opts:
     headers: {}
@@ -1619,15 +1565,6 @@ proxies:
   udp: true
   uuid: 148fcfad-46d5-40c1-8045-52c4f626fc8a
   xudp: true
-- name: '502,559|RU【机场推荐：https://a0a.xyz】15 #1'
-  network: httpupgrade
-  port: 443
-  server: ru.cheburnetnastalgia1998.com
-  servername: ru.cheburnetnastalgia1998.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: d42a623b-4dbd-4523-ab4e-adedf7b95a6f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 507|RU VLESS-39 | free-nodes
@@ -1917,15 +1854,6 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: '559|🇷🇺_俄罗斯 #2'
-  network: ws
-  port: 80
-  server: nl-78w-c.southnetworks.cloud
-  tls: false
-  type: vless
-  uuid: 094e66a9-8d92-41fe-85ad-8e7bf9b5fcaa
-  ws-opts:
-    path: '%2FgetWorkerUpdates'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '559|🇷🇺_俄罗斯 #4'
@@ -1968,17 +1896,6 @@ proxies:
   tls: true
   type: vless
   uuid: 62770d79-dc4d-07d0-b01c-ea30399725aa
-- name: '559|RU俄罗斯(mibei77.com 米贝节点分享) #8'
-  network: ws
-  port: 80
-  server: 172.66.128.70
-  tls: false
-  type: vless
-  uuid: 6abc2840-25fd-4dd7-b1aa-0892fe98f2d9
-  ws-opts:
-    headers:
-      Host: MySterIOUS-chECk94Bl5oXQ6C.eCoTOUriSs.cO.uK.
-    path: '%2F%3Fed'
 - client-fingerprint: chrome
   name: '559|🇷🇺_俄罗斯 #7'
   network: tcp
@@ -2083,19 +2000,6 @@ proxies:
     headers:
       Host: rAyAn-cOnFiG-it-1.pAriSa.dPdNs.oRg
     path: '%2Fws'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|RU VLESS-78 | free-nodes
-  network: tcp
-  port: 59984
-  reality-opts:
-    public-key: LDMOxwtivbGTx-vhAhrT66N_oaEt_ScqXj9QhbQxHDc
-    short-id: 5acf
-  server: 146.185.196.25
-  servername: eh.vk.com
-  tls: false
-  type: vless
-  uuid: 881268a6-b20d-46de-bb8a-f6b00deb1cc7
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '559|🇷🇺_俄罗斯 #15'
@@ -2228,6 +2132,15 @@ proxies:
   tls: true
   type: vless
   uuid: cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f
+- name: 559|RU【机场推荐：https://a0a.xyz】15
+  network: httpupgrade
+  port: 443
+  server: ru.cheburnetnastalgia1998.com
+  servername: ru.cheburnetnastalgia1998.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: d42a623b-4dbd-4523-ab4e-adedf7b95a6f
 - client-fingerprint: qq
   flow: xtls-rprx-vision
   name: '559|🇷🇺_俄罗斯 #23'
