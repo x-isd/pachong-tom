@@ -262,34 +262,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- client-fingerprint: chrome
-  name: '127,456,580|🇭🇰HK #12'
-  network: ws
-  port: 7000
-  server: 202.85.53.54
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- client-fingerprint: chrome
-  name: '127,559,580|DE德国(mibei77.com 米贝节点分享) #29'
-  network: ws
-  port: 2096
-  server: 190.93.244.238
-  servername: sni.jpmj.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - alterId: 0
   cipher: auto
   name: '128,430|香港NO.2 #1'
@@ -842,30 +814,48 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- name: 255|HK
+- name: 255|🇭🇰 HK
   network: ws
   port: 65056
   server: 202.181.24.70
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: c9d0ddb5-f2c1-4111-a92d-9798a2348a56
   ws-opts:
-    path: '%2Fyz'
+    path: /yz
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '255|HK #1'
+  name: 255|🇭🇰 HK 2
   network: tcp
   port: 46716
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: agaungzhou01.bumbleshrimp.com
   servername: www.nvidia.com
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: none
+  name: 255|🇭🇰 HK-Eons_Data_Communications
+  network: ws
+  port: 443
+  server: www.visa.com.tw
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: df7a96e2-c663-48ed-9713-1c144705f79e
+  ws-opts:
+    headers:
+      Host: ee-boston-therapist-cleaning.trycloudflare.com
+    path: /vmess-argo?ed=2048
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '255|HK #2'
+  name: 255|🇭🇰 HK 3
   network: tcp
   port: 25791
   reality-opts:
@@ -873,7 +863,9 @@ proxies:
     short-id: 57d9de10de16538d
   server: 34.92.65.82
   servername: cloudreve.mnm.pp.ua
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 711007f1-9cdf-4fd9-b5d4-d67aee173281
 - alterId: 2
@@ -885,17 +877,40 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '306,378,454,502,514,515,516,537,544,548,551,556,557,579,580,582|🇸🇬 新加坡3|@stairnode
+    #7'
+  network: tcp
+  password: BxceQaOe
+  port: 8041
+  server: 43.199.59.14
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: '306,378,454,502,514,515,516,537,544,548,551,556,557,579,580,582|🇺🇸 美国3|@stairnode
+    #8'
+  network: tcp
+  password: BxceQaOe
+  port: 1221
+  server: 18.166.210.2
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: '306,340,502,514,515,516,544,551,557,559|11|🇭🇰 香港|@ripaojiedian #1'
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '306,340,440,502,514,515,516,544,551,557,559|11|🇭🇰 香港|@ripaojiedian #1'
   network: tcp
   port: 30807
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '306,340,378,502,514,515,516,523,524,537,551,553,559,566,567,568,585,586|HK_speednode_0030
+- country: 🇭🇰HK
+  name: '306,340,378,440,502,514,515,516,523,524,537,551,553,559,566,567,568,585,586|HK_speednode_0030
     #3'
   password: BxceQaOe
   port: 443
@@ -905,14 +920,14 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '306,340,502,507,514,515,516,536,551,553,567,585,586|HK_speednode_0031 #3'
+- name: '306,340,502,514,515,516,536,551,553,567,585,586|HK_speednode_0031 #3'
   password: BxceQaOe
   port: 443
   server: 112.120.31.36
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '306,340,378,502,514,515,516,536,537,551,553,567,580,585,586|HK_speednode_0034
+- name: '306,340,378,502,507,514,515,516,536,537,544,551,553,567,580,585,586|HK_speednode_0034
     #3'
   password: BxceQaOe
   port: 443
@@ -978,22 +993,6 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: '306,378,502,514,515,516,537,551,556,557,579,582|🇸🇬 新加坡3|@stairnode #6'
-  network: tcp
-  password: BxceQaOe
-  port: 8041
-  server: 43.199.59.14
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: '306,378,502,514,515,516,537,551,556,557,579,582|🇺🇸 美国3|@stairnode #7'
-  network: tcp
-  password: BxceQaOe
-  port: 1221
-  server: 18.166.210.2
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - name: '340,495,502,514,551,559|8| HK #1'
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
@@ -1001,6 +1000,33 @@ proxies:
   sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   tls: false
   type: hysteria2
+- alterId: 0
+  name: '340,378,536,537,559,574,580|🇭🇰 香港3|@stairnode #5'
+  network: tcp
+  password: 5fb072e0ddd631cf66cf752b09210480
+  port: 3373
+  server: 43.207.108.97
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- name: '340,378,536,537,559,580|🇭🇰 香港4|@stairnode #6'
+  network: tcp
+  password: BxceQaOe
+  port: 4183
+  server: 43.206.227.236
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '340,378,536,537,559,580|🇭🇰 香港5|@stairnode #4'
+  network: tcp
+  password: BxceQaOe
+  port: 3292
+  server: 52.68.254.155
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - client-fingerprint: safari
   flow: xtls-rprx-vision
   name: '340,502,514,551,553,559,567,585,586|HK_speednode_0032 #3'
@@ -1913,7 +1939,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '374|🇭🇰 香港 #1'
+  name: '374|🇭🇰 香港 #2'
   port: 19901
   server: xg.dashuai.cyou
   tls: false
@@ -2043,7 +2069,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 378,536,537,538,548|Relay_-🇭🇰HK_26
+  name: 378,536,537,538,548|Relay_-🇭🇰HK_24
   network: ws
   port: 443
   server: n1761214908.wpg27.xyz
@@ -2784,7 +2810,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,437,537|🇰HK-47.243.63.35-4789 #1'
+  name: '378,537|🇰HK-47.243.63.35-4789 #1'
   network: ws
   port: 443
   server: n1761214919.mv7wh.tech
@@ -2815,7 +2841,10 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇭🇰HK-47.243.135.74-4833 #1'
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '378,440,536,537|🇭🇰HK-47.243.135.74-4833 #1'
   network: ws
   port: 55185
   server: 47.243.135.74
@@ -5242,10 +5271,10 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
+  country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 435,437,548,559|🇭🇰 HK_74
+  name: 435,437,559|🇭🇰 HK_74
   network: none
   port: 13852
   server: 45.207.157.29
@@ -5286,6 +5315,48 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 440|🇭🇰HK_11
+  network: tcp
+  port: 13852
+  server: 45.207.157.29
+  skip-cert-verify: true
+  type: vmess
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 440|🇰HK_12
+  network: tcp
+  port: 52190
+  server: 47.242.192.233
+  skip-cert-verify: true
+  type: vmess
+  uuid: 98689724-deb2-4a3d-b83b-602221995baf
+- country: 🇭🇰HK
+  name: 440|🇭🇰HK_15
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.45
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
+- country: 🇭🇰HK
+  name: 440|🇭🇰HK_16
+  password: BxceQaOe
+  port: 443
+  server: 219.76.135.98
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
 - name: 453|🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -5313,44 +5384,6 @@ proxies:
     headers:
       Host: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
     path: /
-- name: '456,580|🇭🇰HK #6'
-  network: ws
-  port: 443
-  server: 8.223.63.150
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- name: '456,559,580|🇭🇰HK #13'
-  network: ws
-  port: 29876
-  server: 103.251.89.149
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- name: '456,559|香港节点 #1'
-  network: ws
-  password: 19877587-ed94-4033-88cd-4ac50a5e8718
-  port: 443
-  server: wangcai.cf.877774.xyz
-  skip-cert-verify: true
-  sni: dimskiee.biz.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: dimskiee.biz.id
-    path: '%2FWangCai-8'
 - name: 459|香港(yudou789.top 玉豆免费节点)
   network: tcp
   password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
@@ -5852,7 +5885,7 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
-- name: '475,477,480,482|HK #6'
+- name: '475,477,480,482|HK #3'
   network: ws
   port: 443
   server: 8.212.27.131
@@ -5895,7 +5928,7 @@ proxies:
       Host: sni.jpmj.dev
     path: /?ed=2560&Telegram🇨🇳 @WangCai2
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-3385
+  name: 489,553|yandex-3277
   password: 5273f4fc-86d1-46cd-91bb-5dfe3b1169d3
   port: 10201
   server: c.cdn-bilibili.cn
@@ -5903,7 +5936,7 @@ proxies:
   type: ss
   udp: false
 - client-fingerprint: chrome
-  name: 489,553|yandex-3390
+  name: 489,553|yandex-3282
   network: tcp
   password: bacb661b-0054-4c20-923c-f4abe8bb7eb3
   port: 26002
@@ -5913,7 +5946,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-3398
+  name: 489,553|yandex-3290
   password: 05d1a3ab-2ca8-42b2-8f21-527695250017
   port: 29000
   server: 18.163.77.224
@@ -5921,7 +5954,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3400
+  name: 489,553|yandex-3292
   network: tcp
   password: e150dee0-e7e7-4f77-afa7-3b3df5dbb018
   port: 26002
@@ -5931,7 +5964,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3403
+  name: 489,553|yandex-3295
   network: tcp
   password: e150dee0-e7e7-4f77-afa7-3b3df5dbb018
   port: 26003
@@ -5941,7 +5974,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3405
+  name: 489,553|yandex-3297
   network: tcp
   password: dc09a397-6293-49ee-8778-c20cb3ed3a13
   port: 26003
@@ -5959,7 +5992,7 @@ proxies:
   type: http
   username: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
 - cipher: aes-256-gcm
-  name: 489,553|yandex-3409
+  name: 489,553|yandex-3301
   password: a9a37b54-e95a-4bc4-9637-7fd00a03dd2e
   port: 50000
   server: 18.163.190.53
@@ -5983,7 +6016,7 @@ proxies:
   type: http
   username: d70a9508-5477-11ef-bf61-f23c913c8d2b
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-3411
+  name: 489,553|yandex-3303
   password: 05d1a3ab-2ca8-42b2-8f21-527695250017
   port: 29001
   server: 18.162.143.218
@@ -6007,7 +6040,7 @@ proxies:
   type: http
   username: 5a4c13ae-6673-11ee-a149-f23c9164ca5d
 - client-fingerprint: chrome
-  name: 489,553|yandex-3413
+  name: 489,553|yandex-3305
   network: tcp
   password: dc09a397-6293-49ee-8778-c20cb3ed3a13
   port: 26002
@@ -6025,7 +6058,7 @@ proxies:
   type: http
   username: 1b13e20c-e778-11ef-907f-f23c913c8d2b
 - client-fingerprint: chrome
-  name: 489,553|yandex-3418
+  name: 489,553|yandex-3310
   network: tcp
   password: dc09a397-6293-49ee-8778-c20cb3ed3a13
   port: 26001
@@ -6075,7 +6108,7 @@ proxies:
   type: http
   username: 520b9126-9870-11ef-81b0-f23c9164ca5d
 - client-fingerprint: chrome
-  name: 489,553|yandex-3425
+  name: 489,553|yandex-3317
   network: tcp
   password: cfefe406-4e99-4a49-8137-4e137c85c42e
   port: 31101
@@ -6101,7 +6134,7 @@ proxies:
   type: http
   username: ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-3428
+  name: 489,553|yandex-3320
   password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
   port: 19812
   server: 183.240.138.168
@@ -6197,7 +6230,7 @@ proxies:
   type: http
   username: ca9c0c54-1513-11f0-8a7b-f23c913c8d2b
 - client-fingerprint: chrome
-  name: 489,553|yandex-3441
+  name: 489,553|yandex-3333
   network: tcp
   password: 63dbd122-6932-43ea-9c0e-06ed91f0d3d3
   port: 31103
@@ -6207,7 +6240,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3442
+  name: 489,553|yandex-3334
   network: tcp
   password: e150dee0-e7e7-4f77-afa7-3b3df5dbb018
   port: 26004
@@ -6233,7 +6266,7 @@ proxies:
   type: http
   username: 225d1cca-d744-11ef-b790-f23c91cfbbc9
 - client-fingerprint: chrome
-  name: 489,553|yandex-3452
+  name: 489,553|yandex-3344
   network: tcp
   password: adb1ceb1-e1c0-497d-98e3-2484f8815a53
   port: 31101
@@ -6242,7 +6275,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3457
+  name: 489,553|yandex-3349
   network: tcp
   password: 8c33d20a-317b-4780-b1dc-4a5d221c53e9
   port: 31101
@@ -6260,7 +6293,7 @@ proxies:
   type: http
   username: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
 - client-fingerprint: chrome
-  name: 489,553|yandex-3462
+  name: 489,553|yandex-3354
   network: tcp
   password: e57f3d5b-d708-4997-aee2-d7c05ba0ff3e
   port: 31103
@@ -6286,7 +6319,7 @@ proxies:
   type: http
   username: bdf3e15e-c64c-11ea-82ef-f23c9164ca5d
 - client-fingerprint: chrome
-  name: 489,553|yandex-3464
+  name: 489,553|yandex-3356
   network: tcp
   password: e150dee0-e7e7-4f77-afa7-3b3df5dbb018
   port: 26001
@@ -6296,7 +6329,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3465
+  name: 489,553|yandex-3357
   network: tcp
   password: dc09a397-6293-49ee-8778-c20cb3ed3a13
   port: 26004
@@ -6330,7 +6363,7 @@ proxies:
   type: http
   username: 3952a514-eaa7-11ef-97da-f23c91cfbbc9
 - client-fingerprint: chrome
-  name: 489,553|yandex-3470
+  name: 489,553|yandex-3362
   network: ws
   port: 443
   server: s1.db-link.in
@@ -6362,7 +6395,7 @@ proxies:
   username: 4f4c6876-fcf6-11ef-94aa-f23c913c8d2b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 489,553|yandex-3484
+  name: 489,553|yandex-3376
   network: tcp
   port: 7111
   reality-opts:
@@ -6385,7 +6418,7 @@ proxies:
   type: http
   username: 22308988-8548-11ea-a22e-f23c91cfbbc9
 - client-fingerprint: chrome
-  name: 489,553|yandex-3492
+  name: 489,553|yandex-3384
   network: tcp
   password: b99fe842-c1e9-40a8-b871-557a8ee2267e
   port: 31103
@@ -6459,7 +6492,7 @@ proxies:
   type: http
   username: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
 - client-fingerprint: chrome
-  name: 489,553|yandex-3508
+  name: 489,553|yandex-3400
   network: tcp
   password: bacb661b-0054-4c20-923c-f4abe8bb7eb3
   port: 26001
@@ -6469,7 +6502,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3512
+  name: 489,553|yandex-3404
   network: tcp
   password: fe04888f-970d-44c8-8b56-26a74ea26d3c
   port: 31102
@@ -7009,12 +7042,34 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- cipher: chacha20-ietf
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts:
+    method: GET
+    path:
+    - /
   name: 548|disney_HK
-  password: asd123456
-  port: 8388
-  server: 103.149.182.158
-  type: ss
+  network: http
+  port: 80
+  server: 45.196.235.171
+  type: vmess
+  uuid: 47eefac2-9767-49e1-c8e6-524e39d8765f
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 548|Relay_-🇭🇰HK_19
+  network: ws
+  port: 443
+  server: n1761214905.wpg27.xyz
+  tls: true
+  type: vmess
+  uuid: b1d3007c-441a-42d5-84b5-20301c46fa2c
+  ws-opts:
+    headers:
+      Host: n1761214905.wpg27.xyz
+    path: /
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -7028,32 +7083,36 @@ proxies:
   server: 45.196.235.171
   type: vmess
   uuid: ac6e19f8-4852-41e1-c120-c7261ee8f6e5
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: '548|disney_HK #2'
-  network: http
-  port: 80
-  server: 45.196.235.171
-  type: vmess
-  uuid: 47eefac2-9767-49e1-c8e6-524e39d8765f
 - cipher: chacha20-ietf
   country: 🇭🇰HK
-  name: 548|🇭🇰HK_101
+  name: 548|🇭🇰HK_97
   password: asd123456
   port: 8388
-  server: 103.141.221.88
+  server: 103.149.183.200
   type: ss
 - alterId: 2
   cipher: auto
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_🇭🇰HK-🇭🇰HK_109
+  name: '548|disney_HK #2'
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: ee1b9e94-9b95-11ef-8967-f23c91cfbbc9
+  ws-opts:
+    headers:
+      HOST: hkt.gotochinatown.net
+    path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '548|disney_HK #3'
   network: ws
   port: 80
   server: e6744b60-t70f40-t83wx3-19xg1.hkt.gotochinatown.net
@@ -7202,6 +7261,18 @@ proxies:
   sni: www.apple.com
   tls: false
   type: hysteria2
+- name: 559|香港节点
+  network: ws
+  password: 19877587-ed94-4033-88cd-4ac50a5e8718
+  port: 443
+  server: wangcai.cf.877774.xyz
+  skip-cert-verify: true
+  sni: dimskiee.biz.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dimskiee.biz.id
+    path: '%2FWangCai-8'
 - name: '559|🇭🇰 香港3|@stairnode #3'
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3373
@@ -7301,6 +7372,19 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '559,580|🇭🇰HK #9'
+  network: ws
+  port: 29876
+  server: 103.251.89.149
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
 - name: '559,580|US美国(mibei77.com 米贝节点分享) #126'
   network: ws
   port: 443
@@ -7363,6 +7447,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: '559,580|HK香港(mibei77.com 米贝节点分享) #21'
+  network: ws
+  port: 443
+  server: 164.52.2.99
+  servername: sni.jpmj.dev
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: '559|HK香港(mibei77.com 米贝节点分享) #14'
   network: ws
   port: 2096
@@ -7412,6 +7508,19 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
+- name: '559|🇭🇰HK #1'
+  network: ws
+  port: 35951
+  server: 36.50.90.241
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
 - name: '559|HK香港(mibei77.com 米贝节点分享) #16'
   network: ws
   port: 443
@@ -7522,6 +7631,24 @@ proxies:
   type: hysteria
   udp: true
   up: 1000 Mbps
+- alterId: 2
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG
+  port: 30809
+  server: v9.hdacd.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 2
+  port: 30808
+  server: v8.hdacd.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   name: 574|🇰HK香港2
   password: BxceQaOe
@@ -7742,7 +7869,20 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
-- name: '580|🇭🇰HK #7'
+- name: '580|🇭🇰HK #2'
+  network: ws
+  port: 443
+  server: 8.223.63.150
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
+- name: '580|🇭🇰HK #3'
   network: ws
   port: 443
   server: 83.229.122.72
@@ -7755,7 +7895,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '580|🇭🇰HK #8'
+- name: '580|🇭🇰HK #4'
   network: ws
   port: 443
   server: 149.104.30.110
@@ -7768,7 +7908,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '580|🇭🇰HK #9'
+- name: '580|🇭🇰HK #5'
   network: ws
   port: 443
   server: 149.104.30.91
@@ -7781,7 +7921,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '580|🇭🇰HK #10'
+- name: '580|🇭🇰HK #6'
   network: ws
   port: 443
   server: 68.64.179.96
@@ -7794,7 +7934,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '580|🇭🇰HK #11'
+- name: '580|🇭🇰HK #7'
   network: ws
   port: 443
   server: 103.194.107.166
@@ -7807,6 +7947,19 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
+- name: '580|🇭🇰HK #8'
+  network: ws
+  port: 7000
+  server: 202.85.53.54
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
 - name: '580|HK香港(mibei77.com 米贝节点分享) #26'
   network: ws
   port: 80
@@ -7962,7 +8115,7 @@ proxies:
     headers:
       Host: yf.xhya.nyc.mn
     path: /
-- name: '605|HK #8'
+- name: '605|HK #5'
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 41288
