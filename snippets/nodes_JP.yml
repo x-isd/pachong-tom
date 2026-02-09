@@ -63,14 +63,14 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 801
-  name: 96,343,528,553|yandex-815
+  name: 96,343,528,553|yandex-589
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 8989
   server: 57.180.244.229
   type: ss
   udp: true
 - delay: 995
-  name: 96,343,528,553|yandex-816
+  name: 96,343,528,553|yandex-590
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6688
   server: 57.180.244.229
@@ -1087,15 +1087,15 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|🇯🇵 JP
+- name: 255|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - alterId: 0
-  name: '306,454,502,514,515,516,544,548,551,556,557,574,579,580,582|🇭🇰 香港3|@stairnode
+  name: '306,454,502,514,515,516,544,548,551,556,557,566,568,574,579,580,582|🇭🇰 香港3|@stairnode
     #7'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
@@ -1128,7 +1128,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '306,454,502,514,515,516,544,548,551,556,557,574,579,580,582|🇯🇵 日本3|@stairnode
+  name: '306,454,502,514,515,516,544,548,551,556,557,566,568,574,579,580,582|🇯🇵 日本3|@stairnode
     #7'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
@@ -1140,7 +1140,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '306,454,502,514,515,516,544,548,551,556,557,574,579,580,582|🇸🇬 新加坡|@stairnode
+  name: '306,454,502,514,515,516,544,548,551,556,557,566,568,574,579,580,582|🇸🇬 新加坡|@stairnode
     #8'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
@@ -1152,8 +1152,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '306,454,502,514,515,516,544,548,551,556,557,574,579,580,582|🇸🇬 新加坡2|@stairnode
-    #7'
+  name: '306,454,502,514,515,516,544,548,551,553,556,557,566,568,574,579,580,582|🇸🇬
+    新加坡2|@stairnode #7'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3901
@@ -1164,7 +1164,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '306,454,502,514,515,516,544,548,551,556,557,574,579,580,582|🇺🇸 美国|@stairnode
+  name: '306,454,502,514,515,516,544,548,551,556,557,566,568,574,579,580,582|🇺🇸 美国|@stairnode
     #8'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
@@ -1176,7 +1176,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '306,454,502,514,515,516,544,548,551,556,557,574,579,580,582|🇺🇸 美国2|@stairnode
+  name: '306,454,502,514,515,516,544,548,551,556,557,566,568,574,579,580,582|🇺🇸 美国2|@stairnode
     #8'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
@@ -1279,7 +1279,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,378,537,538,548|netflix_JP
+  name: 356,357,378,537,538,548|🇬🇧GB_81
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2168,7 +2168,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇯🇵JP
-  name: '378,537,538,548|netflix_JP #1'
+  name: 378,537,538,548|🇯🇵JP_107
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 172.105.199.111
@@ -2187,13 +2187,15 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,536,537,538,559|日本_020904006+L0
+- country: 🇵JP
+  name: 378,440,536,537,538,559|日本_020904006+L0
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3901
   server: 160.16.70.180
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: 378,536,537,538,559|日本_020904007
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
@@ -2201,13 +2203,15 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,536,537,538,559|日本_020904008
+- country: 🇯🇵JP
+  name: 378,440,536,537,538,559|日本_020904008
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
   server: 160.16.214.104
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: 378,536,537,538,559|日本_020904009+L0
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3076
@@ -2216,33 +2220,38 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇯🇵JP-3.112.130.53-4839 | 2.963...
+  country: 🇯🇵JP
+  name: 378,440,537,538|🇯🇵JP-3.112.130.53-4839 | 2.963...
   password: ljqdalu13..
   port: 8313
   server: 3.112.130.53
   type: ss
-- name: 378,536,537,538,559|日本_020904010+L0
+- country: 🇯🇵JP
+  name: 378,440,536,537,538,559|日本_020904010+L0
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3901
   server: 160.16.236.32
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇯🇵JP-3.112.130.53-0325 | 1.74M...
+  country: 🇯🇵JP
+  name: 378,440,537,538|🇯🇵JP-3.112.130.53-0325 | 1.74M...
   password: ljqdalu13..
   port: 8316
   server: 3.112.130.53
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇯🇵JP-3.112.130.53-0326 | 1.65M...
+  country: 🇵JP
+  name: 378,440,537,538|🇯🇵JP-3.112.130.53-0326 | 1.65M...
   password: ljqdalu13..
   port: 8319
   server: 3.112.130.53
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,536,537,538|🇯🇵JP-47.74.52.195-4747 | 0.478...
+  name: 378,437,536,537,538|🇯🇵JP-47.74.52.195-4747 | 0.478...
   network: ws
   port: 443
   server: n1753598448.74qxv.top
@@ -2257,7 +2266,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇳IN
-  name: 378,537,538,548|🇮🇳IN_96
+  name: 378,537,538,548|🇮🇳IN_105
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 103.106.228.247
@@ -2557,6 +2566,13 @@ proxies:
   port: 443
   server: 43.207.82.53
   type: ss
+- name: '378,502,536,537,559|JP21｜机房｜低风险 #1'
+  password: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05
+  port: 25010
+  server: 37.202.200.19
+  skip-cert-verify: true
+  sni: 37.202.200.19
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇵JP-161.129.34.102-1767 #1'
@@ -2929,20 +2945,24 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
-- name: 378,536,537,559|日本_020904191+L0
+- country: 🇯🇵JP
+  name: 378,440,536,537,559|日本_020904191+L0
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
   server: 202.181.103.246
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,536,537,559|日本_020904190
+  udp: true
+- country: 🇯🇵JP
+  name: 378,440,536,537,559|日本_020904190
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
   server: 160.16.63.16
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|JP-138.2.52.244-6993 #1'
@@ -3179,40 +3199,6 @@ proxies:
     headers:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 435| JP_65
-  network: ws
-  port: 443
-  server: seoul03.zgjok.com
-  servername: seoul03.zgjok.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
-  ws-headers:
-    HOST: seoul03.zgjok.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 435|🇵 JP_66
-  network: ws
-  port: 443
-  server: seoul02.zgjok.com
-  servername: seoul02.zgjok.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
-  ws-headers:
-    HOST: seoul02.zgjok.com
   ws-path: /
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
@@ -3501,7 +3487,7 @@ proxies:
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-295
+  name: 489,553|yandex-337
   password: 66f89621-49f0-4788-85ce-f9a62537a8e4
   port: 48802
   server: 120.233.41.70
@@ -3509,7 +3495,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 489,553|yandex-297
+  name: 489,553|yandex-339
   password: 05d1a3ab-2ca8-42b2-8f21-527695250017
   port: 19886
   server: 54.248.128.5
@@ -3517,7 +3503,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 489,553|yandex-300
+  name: 489,553|yandex-342
   password: 05d1a3ab-2ca8-42b2-8f21-527695250017
   port: 13882
   server: 18.181.229.240
@@ -3525,7 +3511,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-302
+  name: 489,553|yandex-344
   password: c4dc1e7d-916f-4b6d-b578-09afad8be7fa
   port: 12125
   server: c.cdn-bilibili.cn
@@ -3533,7 +3519,7 @@ proxies:
   type: ss
   udp: false
 - client-fingerprint: chrome
-  name: 489,553|yandex-306
+  name: 489,553|yandex-348
   network: tcp
   password: bacb661b-0054-4c20-923c-f4abe8bb7eb3
   port: 27004
@@ -3543,7 +3529,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-308
+  name: 489,553|yandex-350
   password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
   port: 19832
   server: 183.240.138.168
@@ -3551,7 +3537,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-319
+  name: 489,553|yandex-361
   network: tcp
   password: e150dee0-e7e7-4f77-afa7-3b3df5dbb018
   port: 27005
@@ -3561,7 +3547,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-324
+  name: 489,553|yandex-366
   network: tcp
   password: bacb661b-0054-4c20-923c-f4abe8bb7eb3
   port: 27003
@@ -3571,7 +3557,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-340
+  name: 489,553|yandex-382
   network: tcp
   password: dc09a397-6293-49ee-8778-c20cb3ed3a13
   port: 27006
@@ -3581,7 +3567,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-347
+  name: 489,553|yandex-389
   network: tcp
   password: dc09a397-6293-49ee-8778-c20cb3ed3a13
   port: 27005
@@ -3591,7 +3577,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-369
+  name: 489,553|yandex-411
   network: tcp
   password: e150dee0-e7e7-4f77-afa7-3b3df5dbb018
   port: 27003
@@ -3601,7 +3587,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-370
+  name: 489,553|yandex-412
   network: tcp
   password: dc09a397-6293-49ee-8778-c20cb3ed3a13
   port: 27003
@@ -3611,7 +3597,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-375
+  name: 489,553|yandex-417
   network: tcp
   password: dc09a397-6293-49ee-8778-c20cb3ed3a13
   port: 27004
@@ -3621,7 +3607,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-383
+  name: 489,553|yandex-425
   network: tcp
   password: bacb661b-0054-4c20-923c-f4abe8bb7eb3
   port: 27006
@@ -3631,7 +3617,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-386
+  name: 489,553|yandex-428
   password: c1d83c0c7d57cead4379ba14a82df69b
   port: 443
   server: 116.80.60.36
@@ -3640,7 +3626,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-397
+  name: 489,553|yandex-439
   network: tcp
   password: bacb661b-0054-4c20-923c-f4abe8bb7eb3
   port: 27005
@@ -3650,7 +3636,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-406
+  name: 489,553|yandex-448
   network: tcp
   password: e150dee0-e7e7-4f77-afa7-3b3df5dbb018
   port: 27006
@@ -3814,18 +3800,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '544,717|节点日期：2026-02-09 #1'
-  network: tcp
-  port: '58623'
-  server: 160.191.245.48
-  tls: false
-  type: vmess
-  uuid: 8d74803e-aa74-47ef-e3ae-23eeaa96f89d
-- alterId: 0
-  cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_-🇯🇵JP_13
+  name: 548|Relay_-🇯🇵JP_23
   network: ws
   port: 443
   server: n1753598451.74qxv.top
@@ -3836,24 +3813,6 @@ proxies:
   ws-opts:
     headers:
       Host: n1753598451.74qxv.top
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 548|Relay_🏁ZZ-🇯🇵JP_183
-  network: ws
-  port: 8443
-  server: t1.620720.xyz
-  servername: t1.620720.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      HOST: t1.620720.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
