@@ -122,7 +122,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   delay: 1302
-  name: 96,343,528,553|yandex-649
+  name: 96,343,528,553|yandex-363
   password: qwerREWQ@@
   port: 4469
   server: 168.126.234.247
@@ -132,7 +132,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   delay: 718
-  name: 96,343,528,553|yandex-650
+  name: 96,343,528,553|yandex-364
   password: qwerREWQ@@
   port: 50852
   server: 168.126.234.252
@@ -730,7 +730,8 @@ proxies:
       Host: seoul03.zgjok.com
     path: /
 - cipher: aes-256-cfb
-  name: 378,537,553|yandex-3272
+  country: 🇰🇷KR
+  name: 378,537,548,553|yandex-3161
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -738,20 +739,20 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: 378,537,538,548|disney_KR
+  name: 378,537,538,548|🇰🇷KR_112
   password: qwerREWQ@@
   port: 13979
   server: 221.139.79.57
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: 378,435,537,538,548|🇺🇸US_157
+  name: 378,537,538,548|🇺🇸US_162
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  name: 378,537,553|yandex-3140
+  name: 378,537,553|yandex-3029
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
@@ -1121,7 +1122,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: 378,537,538,548,553,606|218.237.185.230_Claude
+  name: 378,435,537,538,548,553,606|218.237.185.230_Claude
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -1129,7 +1130,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '378,537,559|日本 V2CROSS.COM #1'
+  name: 378,537,559|日本 V2CROSS.COM
   network: ws
   port: 2087
   server: lv4.789900.xyz
@@ -1144,7 +1145,7 @@ proxies:
     path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
 - cipher: aes-256-gcm
   country: 🇰🇷KR
-  name: 378,537,538,548|🇰🇷KR_112
+  name: 378,537,538,548|🇰🇷KR_111
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 141.164.45.187
@@ -1153,7 +1154,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 378,537,548|Relay_-🇰🇷KR_24
+  name: 378,537,548|Relay_-🇰🇷KR_21
   network: ws
   port: 2096
   server: dv4.789900.xyz
@@ -1958,6 +1959,20 @@ proxies:
   skip-cert-verify: true
   sni: humble-rodent.treefrog761.one
   type: trojan
+- name: 489,606|121.169.46.116_Gemini_Claude
+  port: 1090
+  server: 121.169.46.116
+  tls: false
+  type: socks5
+  udp: true
+  username: Og%3D%3D
+- cipher: chacha20-ietf-poly1305
+  name: 489,553|yandex-181
+  password: cd1cb3a1-e894-4fa8-ad98-59482ba368dd
+  port: 21017
+  server: ft-qt-xygh-by.51feitu.com
+  type: ss
+  udp: true
 - name: '502,551,559|KR8｜商宽｜非常安全 #2'
   password: 850d5445-c320-4be9-a7a7-20feca039164
   port: 30000
@@ -2729,8 +2744,23 @@ proxies:
   cipher: auto
   country: 🇰🇷KR
   h2-opts: {}
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 548|🇰🇷KR_115
+  network: http
+  port: 80
+  server: 152.70.92.69
+  skip-cert-verify: true
+  type: vmess
+  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+- alterId: 0
+  cipher: auto
+  country: 🇰🇷KR
+  h2-opts: {}
   http-opts: {}
-  name: 548|🇰🇷KR_117
+  name: '548|netflix_KR #1'
   network: tcp
   port: 8888
   server: 146.56.112.110
@@ -2741,17 +2771,20 @@ proxies:
   cipher: auto
   country: 🇰🇷KR
   h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 548|🇰🇷KR_118
-  network: http
-  port: 80
-  server: 152.70.92.69
+  http-opts: {}
+  name: '548|netflix_KR #2'
+  network: ws
+  port: 2087
+  server: lv4.789900.xyz
+  servername: lv4.789900.xyz
   skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+  uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
+  ws-opts:
+    headers:
+      HOST: lv4.789900.xyz
+    path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3085,15 +3118,6 @@ proxies:
   tls: false
   type: vmess
   uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
-- name: 567,585,586,606|152.67.192.242_Claude
-  password: test.+
-  port: 30446
-  server: testkr3.ssv.vc
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: test
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 578|26|🇰🇷 韩国特殊|@ripaojiedian
