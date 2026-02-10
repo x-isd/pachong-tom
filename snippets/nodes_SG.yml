@@ -731,11 +731,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|🇸🇬 SG
+- name: 255|SG
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
-  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - name: '321,322,323|tg群组: https://t.me/tjiajc1 #3'
@@ -774,7 +774,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,378,536,537,538,559,580|🇸🇬 新加坡|@stairnode #5'
+- name: '340,378,536,537,538,559,580|🇸🇬 新加坡|@stairnode #6'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3901
@@ -782,7 +782,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '340,378,523,524,536,537,538,559,580|🇸🇬 新加坡2|@stairnode #5'
+- name: '340,378,523,524,536,537,538,559,580|🇸🇬 新加坡2|@stairnode #6'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3901
@@ -791,7 +791,7 @@ proxies:
   sni: www.nintendogames.net
   tls: true
   type: trojan
-- name: '340,378,536,537,559,580|🇸🇬 新加坡3|@stairnode #4'
+- name: '340,378,536,537,559,580|🇸🇬 新加坡3|@stairnode #5'
   network: tcp
   password: BxceQaOe
   port: 381
@@ -818,7 +818,8 @@ proxies:
   server: 128.199.172.224
   type: ss
 - cipher: rc4-md5
-  name: 356,378,537,538|🇸🇬SG-68.183.227.4-0435 | 16.54...
+  country: 🇸🇬SG
+  name: 356,378,537,538,548|🇸🇬SG_148
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -1960,7 +1961,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸 US
-  name: 378,435,537,538|🇸🇬SG-38.89.142.56-0312 | 8.324...
+  name: '378,435,537,538,548|_13 #2'
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.89.142.56
@@ -3177,12 +3178,19 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: aes-256-gcm
+  country: 🇬 SG
+  name: 435| SG_92
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 16688
+  server: ss.036.node-for-bigairport.win
+  type: ss
 - alterId: 0
   cipher: auto
-  country: 🇬 SG
+  country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 435,437,559|🇸🇬 SG_97
+  name: 435,437,548,559|🇸🇬 SG_97
   network: none
   port: 43425
   server: 8.210.248.133
@@ -3192,6 +3200,36 @@ proxies:
   type: vmess
   uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇬 SG_94
+  network: ws
+  port: 443
+  server: n1761214911.74qxv.top
+  servername: n1761214911.74qxv.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-headers:
+    HOST: n1761214911.74qxv.top
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 437|🇸🇬 SG_94
+  network: ws
+  port: 443
+  server: n1761214911.74qxv.top
+  tls: true
+  type: vmess
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-opts:
+    headers:
+      Host: n1761214911.74qxv.top
+    path: /
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -3651,6 +3689,41 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '548|🇸🇬_SG_新加坡 #1'
+  network: ws
+  port: 443
+  server: 128.199.128.117
+  servername: sg.dalxy.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: a88a71fa-ed7c-48d3-89e0-74a00d605d88
+  ws-opts:
+    headers:
+      Host: sg.dalxy.eu.org
+    path: a88a71fa-ed7c-48d3-89e0-74a00d605d88-vm
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '548|disney_SG #1'
+  port: 35034
+  server: 165.154.195.38
+  skip-cert-verify: true
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+- alterId: 0
+  cipher: auto
+  name: 551|SG4｜机房｜低风险
+  network: tcp
+  port: '19231'
+  server: jy-sg.kunlun07dns.com
+  tls: false
+  type: vmess
+  uuid: 48d361a8-e9a1-3c28-9b51-47775d62077e
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3710,7 +3783,7 @@ proxies:
   server: gg21.hangfengjiasu.com
   tfo: false
   type: ss
-- name: '559|🇸🇬 新加坡3|@stairnode #2'
+- name: '559|🇸🇬 新加坡3|@stairnode #3'
   password: BxceQaOe
   port: 8041
   server: 43.199.59.14
@@ -3723,20 +3796,6 @@ proxies:
   server: sg-full.privateip.net
   sni: sg-full.privateip.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 559|🇸🇬 SG_98
-  network: ws
-  port: 443
-  server: n1761214911.74qxv.top
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: 559|新加坡_021004299
