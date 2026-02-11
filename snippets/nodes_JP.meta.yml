@@ -131,14 +131,14 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 801
-  name: 96,343,528,553|yandex-296
+  name: 96,343,528,553|yandex-3857
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 8989
   server: 57.180.244.229
   type: ss
   udp: true
 - delay: 995
-  name: 96,343,528,553|yandex-297
+  name: 96,343,528,553|yandex-3858
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6688
   server: 57.180.244.229
@@ -1237,11 +1237,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|JP
-  network: tcp
+- name: 255|🇯🇵 JP
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
+  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - alterId: 0
@@ -1453,7 +1453,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,495,502,514,551,559|8|JP #1'
+- name: '340,495,502,514,551,559|8|JP #2'
   password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
   port: 13778
   server: jp7.dexlos.com
@@ -1476,7 +1476,8 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '340,378,536,537,538,559,580|🇯🇵 日本3|@stairnode #5'
+- country: 🇯🇵JP
+  name: '340,378,440,536,537,538,559,580|🇯🇵 日本3|@stairnode #5'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 1933
@@ -1484,6 +1485,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: 356|🇯🇵1 |  34.4MB/s
   network: ws
   password: bpb-trojan
@@ -1516,7 +1518,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,378,537,538,548|netflix_JP
+  name: 356,357,378,537,538,548|🇬🇧GB_75
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2566,12 +2568,12 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇯🇵JP
-  name: 378,537,538,548|🇯🇵JP_98
+  name: 378,537,538,548|🇯🇵JP_101
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 172.105.199.111
   type: ss
-- country: 🇵JP
+- country: 🇯🇵JP
   name: 378,440,536,537,538,559|日本_021104002
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
@@ -2580,7 +2582,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- country: 🇯🇵JP
+- country: 🇵JP
   name: 378,440,536,537,538,559|日本_021104003+L0
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3901
@@ -2598,13 +2600,15 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: 378,536,537,538|🇯🇵JP-202.181.103.246-0251 | 9....
+- country: 🇯🇵JP
+  name: 378,440,536,537,538|🇯🇵JP-202.181.103.246-0251 | 9....
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
   server: 202.181.103.246
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - country: 🇯🇵JP
   name: 378,440,536,537,538,559|日本_021104006
   password: 5fb072e0ddd631cf66cf752b09210480
@@ -2643,20 +2647,21 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇳IN
-  name: 378,537,538,548|🇮🇳IN_95
+  name: 378,537,538,548|🇮🇳IN_99
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 103.106.228.247
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇵JP
+  country: 🇯🇵JP
   name: '378,440,537|🇯🇵JP-3.112.130.53-0283 #2'
   password: ljqdalu13..
   port: 8316
   server: 3.112.130.53
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇯🇵JP-3.112.130.53-0285 | 0.659...
+  country: 🇯🇵JP
+  name: 378,440,537,538|🇯🇵JP-3.112.130.53-0285 | 0.659...
   password: ljqdalu13..
   port: 8313
   server: 3.112.130.53
@@ -2671,7 +2676,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇯🇵JP
+  country: 🇵JP
   name: 378,440,537,538|🇯🇵JP-3.112.130.53-0299 | 0.447...
   password: ljqdalu13..
   port: 8319
@@ -3368,15 +3373,13 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- country: 🇯🇵JP
-  name: 378,440,536,537,538,559|日本_021104198
+- name: 378,536,537,538,559|日本_021104198
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
   server: 160.16.214.104
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|JP-138.2.52.244-6964 #1'
@@ -3685,7 +3688,24 @@ proxies:
   country: 🇵 JP
   h2-opts: {}
   http-opts: {}
-  name: 435| JP_74
+  name: 435| JP_73
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇵 JP_74
   network: ws
   port: 443
   server: n1753598448.74qxv.top
@@ -4308,7 +4328,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- name: '475,477,480,482|JP #4'
+- name: '475,477,480,482|JP #3'
   network: ws
   port: 2443
   server: 47.74.8.30
@@ -4345,7 +4365,7 @@ proxies:
       Host: sni.jpmj.dev
     path: /?ed=2560&Telegram🇨🇳 @WangCai2
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-3087
+  name: 489,553|yandex-625
   password: 05d1a3ab-2ca8-42b2-8f21-527695250017
   port: 29001
   server: 13.115.252.146
@@ -4353,7 +4373,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-3088
+  name: 489,553|yandex-626
   password: 05d1a3ab-2ca8-42b2-8f21-527695250017
   port: 29000
   server: 35.77.227.150
@@ -4373,7 +4393,7 @@ proxies:
   uuid: 48d361a8-e9a1-3c28-9b51-47775d62077e
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-3095
+  name: 489,553|yandex-633
   password: 05d1a3ab-2ca8-42b2-8f21-527695250017
   port: 29000
   server: 52.199.11.142
@@ -4381,7 +4401,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 489,553|yandex-3098
+  name: 489,553|yandex-636
   password: 05d1a3ab-2ca8-42b2-8f21-527695250017
   port: 13882
   server: 35.78.202.216
@@ -4419,7 +4439,7 @@ proxies:
   skip-cert-verify: true
   tfo: true
   type: anytls
-- name: 489,553|yandex-3121
+- name: 489,553|yandex-659
   password: ec8a5fb8-3a94-48a6-890a-4a80aa70b501
   port: 34146
   server: 120.233.205.225
@@ -4456,13 +4476,14 @@ proxies:
   skip-cert-verify: true
   tfo: true
   type: anytls
-- name: '489|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #9'
+- name: 489,566|🇯🇵 日本 | JPN 19
   password: 437bd464-b524-3812-ac02-85483bcf7407
   port: 9999
   server: 8.209.233.175
   skip-cert-verify: true
   tfo: true
   type: anytls
+  udp: true
 - name: '489|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #11'
   password: cce70a49-2fe1-4e29-bccb-62e514fa6f48
   port: 25223
@@ -4504,7 +4525,7 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   host: buylite.tv.apple.com
-  name: 489,553|yandex-3209
+  name: 489,553|yandex-747
   network: tcp
   port: 36786
   reality-opts:
@@ -4537,7 +4558,7 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   host: buylite.tv.apple.com
-  name: 489,553|yandex-3228
+  name: 489,553|yandex-766
   network: tcp
   port: 36786
   reality-opts:
@@ -4560,7 +4581,7 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   host: buylite.tv.apple.com
-  name: 489,553|yandex-3343
+  name: 489,553|yandex-881
   network: tcp
   port: 27636
   reality-opts:
@@ -4576,7 +4597,7 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   host: buylite.tv.apple.com
-  name: 489,553|yandex-3408
+  name: 489,553|yandex-946
   network: tcp
   port: 35346
   reality-opts:
@@ -4606,18 +4627,6 @@ proxies:
         Gecko) Chrome/48.0.2564.109 Safari/537.36
     path: /?ed=2560&Telegram🇨🇳+@WangCai2
   xudp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: '489,502,551,559|JP7｜机房｜低风险 #2'
-  network: tcp
-  port: '30806'
-  server: v6.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '489|🔴🇯🇵[🤖📺🎭🎪]_github.com/Ruk1ng001... #2'
   password: dd7519c3-b4c6-4f24-80d9-434ae26675ed
   port: 25223
@@ -5061,22 +5070,6 @@ proxies:
   sni: cdnfire.xiaomispeed.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '548,559|🇯🇵_日本 #4'
-  network: ws
-  port: '443'
-  server: n1753598451.74qxv.top
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
-  ws-opts:
-    headers:
-      Host: n1753598451.74qxv.top
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5897,6 +5890,20 @@ proxies:
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
 - alterId: 0
   cipher: auto
+  name: '559|🇯🇵_日本 #4'
+  network: ws
+  port: '443'
+  server: n1753598451.74qxv.top
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
+  ws-opts:
+    headers:
+      Host: n1753598451.74qxv.top
+    path: /
+- alterId: 0
+  cipher: auto
   name: 559|github.com/freefq - 日本东京Linode...
   network: ws
   port: '80'
@@ -5924,132 +5931,47 @@ proxies:
     headers:
       HOST: n1753598448.74qxv.top
     path: /
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN
-  network: ws
-  port: 12231
-  server: 125.143.129.208
-  servername: mc2-1rw.pages.dev
-  tls: true
-  type: vless
+- auth: eee2cdc2-aac7-49f6-a3bf-ef5eb707cb37
+  name: '566,568|🇯🇵 日本 | JPN #1'
+  password: eee2cdc2-aac7-49f6-a3bf-ef5eb707cb37
+  port: 8463
+  server: hmjp.my169vip.top
+  skip-cert-verify: false
+  sni: hmjp.my169vip.top
+  tls: false
+  type: hysteria2
   udp: true
-  uuid: 5566ef21-b44d-4f2f-9356-6664a7c611ee
-  ws-opts:
-    headers:
-      Host: mc2-1rw.pages.dev
-    path: /proxyip=sjc.o00o.ooo
-- auth: e66130e4-95df-4e8f-9a8f-2c3e144f3f4a
+- auth: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
+  name: 566|🇯🇵 日本 | JPN 2
+  password: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
+  port: 21131
+  ports: 21001-21999
+  server: kjp.sanmaojichang.com
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
   name: 566|🇯🇵 日本 | JPN 3
-  password: e66130e4-95df-4e8f-9a8f-2c3e144f3f4a
-  port: 21999
-  ports: 21001-21999
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
-  type: hysteria2
+  port: 62231
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
   udp: true
-- auth: e66130e4-95df-4e8f-9a8f-2c3e144f3f4a
+  uuid: f08f0555-679b-4d33-b1dc-7601b4e1e76a
+- alterId: 0
+  cipher: auto
   name: 566|🇯🇵 日本 | JPN 4
-  password: e66130e4-95df-4e8f-9a8f-2c3e144f3f4a
-  port: 21853
-  ports: 21001-21999
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: f7a279b7-fe93-4410-b071-861682f7fc0e
-  name: 566|🇯🇵 日本 | JPN 6
-  password: f7a279b7-fe93-4410-b071-861682f7fc0e
-  port: 20000
-  ports: 20000-55000
-  server: 203.10.99.51
+  port: 62231
+  server: gdcn.coloss.cn
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- name: 566|🇯🇵 日本 | JPN 7
-  password: c870fe5a-0729-11f0-8cf9-f23c93136cb3
-  port: 3443
-  server: 81b7694a-tacsg0-tgp57k-ddgs.tky02.east.189ti.com
-  tls: true
-  type: http
-  username: c870fe5a-0729-11f0-8cf9-f23c93136cb3
-- auth: 4d6c5184-42db-4166-afa8-678079d84115
-  name: 566|🇯🇵 日本 | JPN 8
-  password: 4d6c5184-42db-4166-afa8-678079d84115
-  port: 21863
-  ports: 21001-21999
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: 4d6c5184-42db-4166-afa8-678079d84115
-  name: 566|🇯🇵 日本 | JPN 9
-  password: 4d6c5184-42db-4166-afa8-678079d84115
-  port: 21102
-  ports: 21001-21999
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: f7a279b7-fe93-4410-b071-861682f7fc0e
-  name: 566|🇯🇵 日本 | JPN 10
-  password: f7a279b7-fe93-4410-b071-861682f7fc0e
-  port: 20000
-  ports: 20000-55000
-  server: 203.10.99.59
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- auth: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
-  name: 566|🇯🇵 日本 | JPN 11
-  password: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
-  port: 21660
-  ports: 21001-21999
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
-  name: '566,568|🇯🇵 日本 | JPN #2'
-  password: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
-  port: 21926
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
   tls: false
-  type: hysteria2
+  type: vmess
   udp: true
-- auth: b8282c32-7e90-4367-b8bc-5dcf8e1e3da1
-  name: '566,568|🇯🇵 日本 | JPN #3'
-  password: b8282c32-7e90-4367-b8bc-5dcf8e1e3da1
-  port: 8461
-  server: hmjp.my169vip.top
-  skip-cert-verify: false
-  sni: hmjp.my169vip.top
-  tls: false
-  type: hysteria2
-  udp: true
-- auth: 4d6c5184-42db-4166-afa8-678079d84115
-  name: 566|🇯🇵 日本 | JPN 14
-  password: 4d6c5184-42db-4166-afa8-678079d84115
-  port: 21386
-  ports: 21001-21999
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
-  name: 566|🇯🇵 日本 | JPN 15
-  password: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
-  port: 21478
-  ports: 21001-21999
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: 68cbf964-cd44-4399-a2bd-8b6a12582459
+  uuid: 86fd1e39-95c5-4309-aff2-ff877f480ad7
+- auth: b82db024-28ab-49f5-9d0e-df919e38e153
   name: '566,568|🇯🇵 日本 | JPN #4'
-  password: 68cbf964-cd44-4399-a2bd-8b6a12582459
+  password: b82db024-28ab-49f5-9d0e-df919e38e153
   port: 8463
   server: hmjp.my169vip.top
   skip-cert-verify: false
@@ -6057,56 +5979,19 @@ proxies:
   tls: false
   type: hysteria2
   udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 566|🇯🇵 日本 | JPN 17
-  network: tcp
-  port: 30301
-  reality-opts:
-    public-key: IoW1RqD-BzW9oxaM4KtHx5ap6haIENhYyZt_oMZqlCM
-    short-id: 950cee8a
-  server: freea.glyphara.com
-  servername: lol.secure.dyn.riotcdn.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0288669a-3c40-4081-9e03-83967e3d2023
-- auth: 846a1633-f4be-4e9c-b6a9-1f0a82393ef9
+- auth: 4639e8fb-a1ce-4346-8727-c1529fe48487
   name: '566,568|🇯🇵 日本 | JPN #5'
-  password: 846a1633-f4be-4e9c-b6a9-1f0a82393ef9
-  port: 8461
+  password: 4639e8fb-a1ce-4346-8727-c1529fe48487
+  port: 8463
   server: hmjp.my169vip.top
   skip-cert-verify: false
   sni: hmjp.my169vip.top
   tls: false
   type: hysteria2
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 566|🇯🇵 日本 | JPN 19
-  network: tcp
-  port: 20234
-  reality-opts:
-    public-key: DXQDAGxccP5NiuFoqBVTZwd-IJ1bspO---aSVBiujRo
-    short-id: 3a0d5d97
-  server: 112.119.56.207
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: c8d88af0-3329-4ea6-9ab7-1a82724f0579
-- auth: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
-  name: 566|🇯🇵 日本 | JPN 20
-  password: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
-  port: 21971
-  ports: 21001-21999
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: 61b1430b-5195-495d-ae48-9199ec6ca654
+- auth: a8f3a996-cf27-4bfc-bed4-098549c08376
   name: '566,568|🇯🇵 日本 | JPN #6'
-  password: 61b1430b-5195-495d-ae48-9199ec6ca654
+  password: a8f3a996-cf27-4bfc-bed4-098549c08376
   port: 8463
   server: hmjp.my169vip.top
   skip-cert-verify: false
@@ -6114,108 +5999,50 @@ proxies:
   tls: false
   type: hysteria2
   udp: true
-- auth: 68cbf964-cd44-4399-a2bd-8b6a12582459
-  name: '566,568|🇯🇵 日本 | JPN #7'
-  password: 68cbf964-cd44-4399-a2bd-8b6a12582459
-  port: 8461
-  server: hmjp.my169vip.top
-  skip-cert-verify: false
-  sni: hmjp.my169vip.top
-  tls: false
-  type: hysteria2
-  udp: true
-- auth: e66130e4-95df-4e8f-9a8f-2c3e144f3f4a
-  name: 566|🇯🇵 日本 | JPN 23
-  password: e66130e4-95df-4e8f-9a8f-2c3e144f3f4a
-  port: 21436
-  ports: 21001-21999
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: 5cf528c4-2358-4f0f-9d24-d0efe9dda315
-  name: '566,568|🇯🇵 日本 | JPN #8'
-  password: 5cf528c4-2358-4f0f-9d24-d0efe9dda315
-  port: 8463
-  server: hmjp.my169vip.top
-  skip-cert-verify: false
-  sni: hmjp.my169vip.top
-  tls: false
-  type: hysteria2
-  udp: true
-- auth: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
-  name: 566|🇯🇵 日本 | JPN 25
-  password: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
-  port: 21405
-  ports: 21001-21999
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: 69b26999-a007-4dda-a5ac-4f6bd4c19ec5
-  name: '566,568|🇯🇵 日本 | JPN #9'
-  password: 69b26999-a007-4dda-a5ac-4f6bd4c19ec5
-  port: 8463
-  server: hmjp.my169vip.top
-  skip-cert-verify: false
-  sni: hmjp.my169vip.top
-  tls: false
-  type: hysteria2
-  udp: true
-- auth: b8282c32-7e90-4367-b8bc-5dcf8e1e3da1
-  name: '566,568|🇯🇵 日本 | JPN #10'
-  password: b8282c32-7e90-4367-b8bc-5dcf8e1e3da1
-  port: 8463
-  server: hmjp.my169vip.top
-  skip-cert-verify: false
-  sni: hmjp.my169vip.top
-  tls: false
-  type: hysteria2
-  udp: true
-- auth: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
-  name: 566|🇯🇵 日本 | JPN 28
-  password: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
-  port: 21159
-  ports: 21001-21999
-  server: kjp.sanmaojichang.com
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: f7a279b7-fe93-4410-b071-861682f7fc0e
-  name: 566|🇯🇵 日本 | JPN 29
-  password: f7a279b7-fe93-4410-b071-861682f7fc0e
-  port: 20000
-  ports: 20000-55000
-  server: 138.2.2.120
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 8
+  port: 62231
+  server: gdcn.coloss.cn
   skip-cert-verify: true
-  sni: www.bing.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d244d501-565c-420b-800a-3c00f17d624a
+- auth: a8f3a996-cf27-4bfc-bed4-098549c08376
+  name: '566,568|🇯🇵 日本 | JPN #8'
+  password: a8f3a996-cf27-4bfc-bed4-098549c08376
+  port: 8461
+  server: hmjp.my169vip.top
+  skip-cert-verify: false
+  sni: hmjp.my169vip.top
+  tls: false
   type: hysteria2
   udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 566|🇯🇵 日本 | JPN 30
-  network: tcp
-  port: 30301
-  reality-opts:
-    public-key: IoW1RqD-BzW9oxaM4KtHx5ap6haIENhYyZt_oMZqlCM
-    short-id: 950cee8a
-  server: freea.glyphara.com
-  servername: lol.secure.dyn.riotcdn.net
-  tls: true
-  type: vless
+- auth: fcd36cae-c45a-4d79-a9fd-5554a94bf4e5
+  name: '566,568|🇯🇵 日本 | JPN #9'
+  password: fcd36cae-c45a-4d79-a9fd-5554a94bf4e5
+  port: 8463
+  server: hmjp.my169vip.top
+  skip-cert-verify: false
+  sni: hmjp.my169vip.top
+  tls: false
+  type: hysteria2
   udp: true
-  uuid: fca72411-26cb-4afe-a9fb-b789736d3688
-- name: 566|🇯🇵 日本 | JPN 31
-  password: c870fe5a-0729-11f0-8cf9-f23c93136cb3
-  port: 3443
-  server: 63923377-tadeo0-tgprfk-ddgs.tkydc3.cdnbytescm.com
-  tls: true
-  type: http
-  username: c870fe5a-0729-11f0-8cf9-f23c93136cb3
-- auth: fc32fb1b-da18-4ea6-b9d7-607e86d98399
-  name: '566,568|🇯🇵 日本 | JPN #11'
-  password: fc32fb1b-da18-4ea6-b9d7-607e86d98399
+- auth: 7062d220-e9e6-465e-a771-3388814548de
+  name: '566,568|🇯🇵 日本 | JPN #10'
+  password: 7062d220-e9e6-465e-a771-3388814548de
   port: 8461
+  server: hmjp.my169vip.top
+  skip-cert-verify: false
+  sni: hmjp.my169vip.top
+  tls: false
+  type: hysteria2
+  udp: true
+- auth: 136ad289-ee56-42b2-b76d-8211c57c0a15
+  name: '566,568|🇯🇵 日本 | JPN #11'
+  password: 136ad289-ee56-42b2-b76d-8211c57c0a15
+  port: 8463
   server: hmjp.my169vip.top
   skip-cert-verify: false
   sni: hmjp.my169vip.top
@@ -6225,53 +6052,147 @@ proxies:
 - auth: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
   name: '566,568|🇯🇵 日本 | JPN #12'
   password: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
-  port: 21025
+  port: 21764
   server: kjp.sanmaojichang.com
   skip-cert-verify: false
   tls: false
   type: hysteria2
   udp: true
-- auth: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
+- auth: 36ed4318-f589-4338-a168-65e0be6a4e54
   name: '566,568|🇯🇵 日本 | JPN #13'
-  password: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
-  port: 21732
-  server: kjp.sanmaojichang.com
+  password: 36ed4318-f589-4338-a168-65e0be6a4e54
+  port: 8463
+  server: hmjp.my169vip.top
   skip-cert-verify: false
+  sni: hmjp.my169vip.top
   tls: false
   type: hysteria2
   udp: true
-- name: 566|🇯🇵 日本 | JPN 35
-  password: c870fe5a-0729-11f0-8cf9-f23c93136cb3
-  port: 3236
-  server: 271ed96c-tacsg0-tgp57k-ddgs.h2tkydc1.cdnbytescm.com
-  tls: true
-  type: http
-  username: c870fe5a-0729-11f0-8cf9-f23c93136cb3
-- name: 566|🇯🇵 日本 | JPN 36
-  password: c870fe5a-0729-11f0-8cf9-f23c93136cb3
-  port: 3235
-  server: da8e3c02-tadeo0-tgprfk-ddgs.h2tkydc2.cdnbytescm.com
-  tls: true
-  type: http
-  username: c870fe5a-0729-11f0-8cf9-f23c93136cb3
-- auth: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
+- auth: b9d85c0f-bcf8-4d0f-9f71-ef4da3023aed
   name: '566,568|🇯🇵 日本 | JPN #14'
+  password: b9d85c0f-bcf8-4d0f-9f71-ef4da3023aed
+  port: 8461
+  server: hmjp.my169vip.top
+  skip-cert-verify: false
+  sni: hmjp.my169vip.top
+  tls: false
+  type: hysteria2
+  udp: true
+- auth: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
+  name: '566,568|🇯🇵 日本 | JPN #15'
   password: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
-  port: 21454
+  port: 21200
+  server: kjp.sanmaojichang.com
+  skip-cert-verify: false
+  sni: kjp.sanmaojichang.com
+  tls: false
+  type: hysteria2
+  udp: true
+- auth: f0b5b1ff-3e49-44ad-9154-8934511004e0
+  name: '566,568|🇯🇵 日本 | JPN #16'
+  password: f0b5b1ff-3e49-44ad-9154-8934511004e0
+  port: 8463
+  server: hmjp.my169vip.top
+  skip-cert-verify: false
+  sni: hmjp.my169vip.top
+  tls: false
+  type: hysteria2
+  udp: true
+- auth: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
+  name: '566,568|🇯🇵 日本 | JPN #17'
+  password: d1360777-ae8a-4c15-93ed-5bcd4bbbeb23
+  port: 21383
   server: kjp.sanmaojichang.com
   skip-cert-verify: false
   tls: false
   type: hysteria2
   udp: true
-- auth: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
-  name: 566|🇯🇵 日本 | JPN 38
-  password: 9d7d1318-09f5-49ea-92a4-e7f4274f4c8b
-  port: 21936
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 566|🇯🇵 日本 | JPN 20
+  network: tcp
+  port: 30301
+  reality-opts:
+    public-key: IoW1RqD-BzW9oxaM4KtHx5ap6haIENhYyZt_oMZqlCM
+    short-id: 950cee8a
+  server: freea.glyphara.com
+  servername: lol.secure.dyn.riotcdn.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 885d5e29-a7d4-40c0-b4e6-70ca651b8d11
+- cipher: chacha20-ietf-poly1305
+  name: 566|🇯🇵 日本 | JPN 21
+  password: cb878677-010a-4342-970d-62fe02ce1805
+  port: 29571
+  server: jry.izenny.com
+  type: ss
+  udp: true
+- auth: b9d85c0f-bcf8-4d0f-9f71-ef4da3023aed
+  name: '566,568|🇯🇵 日本 | JPN #19'
+  password: b9d85c0f-bcf8-4d0f-9f71-ef4da3023aed
+  port: 8463
+  server: hmjp.my169vip.top
+  skip-cert-verify: false
+  sni: hmjp.my169vip.top
+  tls: false
+  type: hysteria2
+  udp: true
+- auth: 4d6c5184-42db-4166-afa8-678079d84115
+  name: 566|🇯🇵 日本 | JPN 23
+  password: 4d6c5184-42db-4166-afa8-678079d84115
+  port: 21504
   ports: 21001-21999
   server: kjp.sanmaojichang.com
   skip-cert-verify: false
+  sni: kjp.sanmaojichang.com
   type: hysteria2
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 24
+  port: 62235
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f08f0555-679b-4d33-b1dc-7601b4e1e76a
+- alterId: 0
+  cipher: auto
+  name: '568|🇯🇵 日本 | JPN #2'
+  network: tcp
+  port: '62231'
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  uuid: f08f0555-679b-4d33-b1dc-7601b4e1e76a
+- alterId: 0
+  cipher: auto
+  name: '568|🇯🇵 日本 | JPN #3'
+  network: tcp
+  port: '62231'
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  uuid: 86fd1e39-95c5-4309-aff2-ff877f480ad7
+- alterId: 0
+  cipher: auto
+  name: '568|🇯🇵 日本 | JPN #7'
+  network: tcp
+  port: '62231'
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  uuid: d244d501-565c-420b-800a-3c00f17d624a
+- alterId: 0
+  cipher: auto
+  name: '568|🇯🇵 日本 | JPN #20'
+  network: tcp
+  port: '62235'
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  uuid: f08f0555-679b-4d33-b1dc-7601b4e1e76a
 - alterId: 0
   name: 574|🇵JP日本3
   password: BxceQaOe

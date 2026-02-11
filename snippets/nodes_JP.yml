@@ -63,14 +63,14 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 801
-  name: 96,343,528,553|yandex-296
+  name: 96,343,528,553|yandex-3857
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 8989
   server: 57.180.244.229
   type: ss
   udp: true
 - delay: 995
-  name: 96,343,528,553|yandex-297
+  name: 96,343,528,553|yandex-3858
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6688
   server: 57.180.244.229
@@ -1087,11 +1087,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|JP
-  network: tcp
+- name: 255|🇯🇵 JP
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
+  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - alterId: 0
@@ -1251,7 +1251,8 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '340,378,536,537,538,559,580|🇯🇵 日本3|@stairnode #5'
+- country: 🇯🇵JP
+  name: '340,378,440,536,537,538,559,580|🇯🇵 日本3|@stairnode #5'
   network: tcp
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 1933
@@ -1259,6 +1260,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: 356|🇯🇵1 |  34.4MB/s
   network: ws
   password: bpb-trojan
@@ -1291,7 +1293,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,378,537,538,548|netflix_JP
+  name: 356,357,378,537,538,548|🇬🇧GB_75
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2174,12 +2176,12 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇯🇵JP
-  name: 378,537,538,548|🇯🇵JP_98
+  name: 378,537,538,548|🇯🇵JP_101
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 172.105.199.111
   type: ss
-- country: 🇵JP
+- country: 🇯🇵JP
   name: 378,440,536,537,538,559|日本_021104002
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
@@ -2188,7 +2190,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- country: 🇯🇵JP
+- country: 🇵JP
   name: 378,440,536,537,538,559|日本_021104003+L0
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3901
@@ -2206,13 +2208,15 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: 378,536,537,538|🇯🇵JP-202.181.103.246-0251 | 9....
+- country: 🇯🇵JP
+  name: 378,440,536,537,538|🇯🇵JP-202.181.103.246-0251 | 9....
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
   server: 202.181.103.246
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - country: 🇯🇵JP
   name: 378,440,536,537,538,559|日本_021104006
   password: 5fb072e0ddd631cf66cf752b09210480
@@ -2251,20 +2255,21 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇳IN
-  name: 378,537,538,548|🇮🇳IN_95
+  name: 378,537,538,548|🇮🇳IN_99
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 103.106.228.247
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇵JP
+  country: 🇯🇵JP
   name: '378,440,537|🇯🇵JP-3.112.130.53-0283 #2'
   password: ljqdalu13..
   port: 8316
   server: 3.112.130.53
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇯🇵JP-3.112.130.53-0285 | 0.659...
+  country: 🇯🇵JP
+  name: 378,440,537,538|🇯🇵JP-3.112.130.53-0285 | 0.659...
   password: ljqdalu13..
   port: 8313
   server: 3.112.130.53
@@ -2279,7 +2284,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇯🇵JP
+  country: 🇵JP
   name: 378,440,537,538|🇯🇵JP-3.112.130.53-0299 | 0.447...
   password: ljqdalu13..
   port: 8319
@@ -2976,15 +2981,13 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- country: 🇯🇵JP
-  name: 378,440,536,537,538,559|日本_021104198
+- name: 378,536,537,538,559|日本_021104198
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
   server: 160.16.214.104
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|JP-138.2.52.244-6964 #1'
@@ -3227,7 +3230,24 @@ proxies:
   country: 🇵 JP
   h2-opts: {}
   http-opts: {}
-  name: 435| JP_74
+  name: 435| JP_73
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇵 JP_74
   network: ws
   port: 443
   server: n1753598448.74qxv.top
@@ -3526,7 +3546,7 @@ proxies:
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-3087
+  name: 489,553|yandex-625
   password: 05d1a3ab-2ca8-42b2-8f21-527695250017
   port: 29001
   server: 13.115.252.146
@@ -3534,7 +3554,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-3088
+  name: 489,553|yandex-626
   password: 05d1a3ab-2ca8-42b2-8f21-527695250017
   port: 29000
   server: 35.77.227.150
@@ -3554,7 +3574,7 @@ proxies:
   uuid: 48d361a8-e9a1-3c28-9b51-47775d62077e
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-3095
+  name: 489,553|yandex-633
   password: 05d1a3ab-2ca8-42b2-8f21-527695250017
   port: 29000
   server: 52.199.11.142
@@ -3562,7 +3582,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 489,553|yandex-3098
+  name: 489,553|yandex-636
   password: 05d1a3ab-2ca8-42b2-8f21-527695250017
   port: 13882
   server: 35.78.202.216
@@ -3593,7 +3613,7 @@ proxies:
   udp: true
   uuid: 48d361a8-e9a1-3c28-9b51-47775d62077e
   xudp: true
-- name: 489,553|yandex-3121
+- name: 489,553|yandex-659
   password: ec8a5fb8-3a94-48a6-890a-4a80aa70b501
   port: 34146
   server: 120.233.205.225
@@ -3602,18 +3622,6 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: '489,502,551,559|JP7｜机房｜低风险 #2'
-  network: tcp
-  port: '30806'
-  server: v6.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 513|15|🇯🇵 日本|@ripaojiedian
@@ -3767,22 +3775,6 @@ proxies:
   sni: cdnfire.xiaomispeed.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '548,559|🇯🇵_日本 #4'
-  network: ws
-  port: '443'
-  server: n1753598451.74qxv.top
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
-  ws-opts:
-    headers:
-      Host: n1753598451.74qxv.top
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3953,6 +3945,20 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: '559|🇯🇵_日本 #4'
+  network: ws
+  port: '443'
+  server: n1753598451.74qxv.top
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
+  ws-opts:
+    headers:
+      Host: n1753598451.74qxv.top
+    path: /
+- alterId: 0
+  cipher: auto
   name: 559|github.com/freefq - 日本东京Linode...
   network: ws
   port: '80'
@@ -3980,6 +3986,87 @@ proxies:
     headers:
       HOST: n1753598448.74qxv.top
     path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 3
+  port: 62231
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f08f0555-679b-4d33-b1dc-7601b4e1e76a
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 4
+  port: 62231
+  server: gdcn.coloss.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 86fd1e39-95c5-4309-aff2-ff877f480ad7
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 8
+  port: 62231
+  server: gdcn.coloss.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d244d501-565c-420b-800a-3c00f17d624a
+- cipher: chacha20-ietf-poly1305
+  name: 566|🇯🇵 日本 | JPN 21
+  password: cb878677-010a-4342-970d-62fe02ce1805
+  port: 29571
+  server: jry.izenny.com
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 24
+  port: 62235
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f08f0555-679b-4d33-b1dc-7601b4e1e76a
+- alterId: 0
+  cipher: auto
+  name: '568|🇯🇵 日本 | JPN #2'
+  network: tcp
+  port: '62231'
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  uuid: f08f0555-679b-4d33-b1dc-7601b4e1e76a
+- alterId: 0
+  cipher: auto
+  name: '568|🇯🇵 日本 | JPN #3'
+  network: tcp
+  port: '62231'
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  uuid: 86fd1e39-95c5-4309-aff2-ff877f480ad7
+- alterId: 0
+  cipher: auto
+  name: '568|🇯🇵 日本 | JPN #7'
+  network: tcp
+  port: '62231'
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  uuid: d244d501-565c-420b-800a-3c00f17d624a
+- alterId: 0
+  cipher: auto
+  name: '568|🇯🇵 日本 | JPN #20'
+  network: tcp
+  port: '62235'
+  server: gdcn.coloss.cn
+  tls: false
+  type: vmess
+  uuid: f08f0555-679b-4d33-b1dc-7601b4e1e76a
 - alterId: 0
   name: 574|🇵JP日本3
   password: BxceQaOe
