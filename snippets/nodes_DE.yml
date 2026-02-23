@@ -8,51 +8,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
-- alterId: 0
-  cipher: auto
-  name: 119|No.941_DE_x0.50_natseek@我为*人_联...
-  network: ws
-  port: 17511
-  server: 5.180.253.31
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
-  ws-opts:
-    headers:
-      Host: download.windowsupdate.com
-    path: /download
-- alterId: 1
-  cipher: auto
-  name: 119|🇩🇪 No.260_DE_x0.50_Oracle_德国@l...
-  network: ws
-  port: 8080
-  server: 130.61.253.111
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
-  ws-opts:
-    headers:
-      Host: download.windowsupdate.com
-    path: /download
-- alterId: 0
-  cipher: auto
-  name: 119|No.392_DE_x0.50_Unesty_DE@5431...
-  network: ws
-  port: 8080
-  server: 181.214.99.228
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
-  ws-opts:
-    headers:
-      Host: download.windowsupdate.com
-    path: /download
 - cipher: chacha20-ietf-poly1305
   name: 356|🇩🇪1 |  1.6MB/s
   password: oXGp1+ihlfKg826H
@@ -486,12 +441,13 @@ proxies:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇩🇪DE-38.60.250.107-0319 | 0.94...
+  country: 🇺🇸US
+  name: '378,537,538,548|disney_US #1'
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.60.250.107
   type: ss
-- name: '378,502,507,523,524,536,537,538,544,553,559|🇩🇪_德国 #2'
+- name: '378,507,523,524,536,537,538,544,559,568|🇩🇪 德国 | DEU #2'
   network: tcp
   password: pYIoKUPGpWeTYXEx3HjR7s97B
   port: 443
@@ -500,7 +456,6 @@ proxies:
   sni: free-de-2.undef.network
   tls: true
   type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 378,537,538|🇩🇪DE-178.17.61.67-0273 | 0.575...
   password: qS3skwmolrQ70q842irQD0
@@ -728,7 +683,7 @@ proxies:
   server: 3.67.113.118
   type: ss
 - cipher: aes-256-cfb
-  name: '378,515,516,537,556,579,582|8元老牌专线机场：cczzuu.top #2'
+  name: '378,515,516,537,548,556,579,582|8元老牌专线机场：cczzuu.top #3'
   password: amazonskr05
   port: 443
   server: 63.180.254.10
@@ -1219,16 +1174,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇪DE-57.129.25.25-4665 #1'
+  country: 🇧🇪BE
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|🇧🇪BE_38
   network: ws
   port: 443
   server: 57.129.25.25
   servername: f.khilei.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: f.khilei.com
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -1245,58 +1205,81 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.64.199-4667 #2'
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: '378,536,537,548|🇧🇪 BE_20 #1'
   network: ws
   port: 443
   server: 57.129.64.199
   servername: pelang.org
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: pelang.org
     path: linkvws
 - alterId: 1
   cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: '378,470,536,537|🇩🇪DE-57.129.24.131-4668 #2'
+  country: 🇧🇪BE
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|🇧🇪BE_44
   network: ws
   port: 443
   server: 57.129.24.131
   servername: kampong.org
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🇧🇪 BE
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: '378,470,536,537,548|🇧🇪 BE_28 #1'
+  network: ws
+  port: 443
+  server: 57.129.25.23
+  servername: yichueng.org
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: false
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: yichueng.org
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.25.23-4669 #2'
-  network: ws
-  port: 443
-  server: 57.129.25.23
-  servername: yichueng.org
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.28.64-4670 #2'
+  client-fingerprint: chrome
+  country: 🇧🇪 BE
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: '378,470,536,537,548|🇧🇪 BE_27 #1'
   network: ws
   port: 443
   server: 57.129.28.64
   servername: serkat.org
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: false
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: serkat.org
     path: linkvws
 - alterId: 0
   cipher: auto
@@ -1313,80 +1296,114 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.59.199-4672 #2'
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: '378,536,537,548|🇧🇪 BE_26 #1'
   network: ws
   port: 443
   server: 57.129.59.199
   servername: kampong.org
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: kampong.org
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.59.195-4674 #2'
+  client-fingerprint: chrome
+  country: 🇧🇪BE
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: 378,470,536,537,548|🇧🇪BE_31
   network: ws
   port: 443
   server: 57.129.59.195
   servername: kampong.org
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.64.157-4675 #2'
-  network: ws
-  port: 443
-  server: 57.129.64.157
-  servername: lammaland.org
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.28.69-4676 #2'
-  network: ws
-  port: 443
-  server: 57.129.28.69
-  servername: baradiha.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
-- alterId: 1
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: '378,470,536,537|🇩🇪DE-57.129.25.20-4677 #2'
-  network: ws
-  port: 443
-  server: 57.129.25.20
-  servername: 57.129.25.20
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: false
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: kampong.org
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.24.124-4679 #2'
+  client-fingerprint: chrome
+  country: 🇧🇪 BE
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: '378,470,536,537,548|🇧🇪 BE_24 #1'
+  network: ws
+  port: 443
+  server: 57.129.64.157
+  servername: lammaland.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: '378,536,537,548|🇧🇪 BE_21 #1'
+  network: ws
+  port: 443
+  server: 57.129.28.69
+  servername: baradiha.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: baradiha.com
+    path: /linkvws
+- alterId: 1
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🇧🇪BE
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: 378,470,536,537,548|🇧🇪BE_42
+  network: ws
+  port: 443
+  server: 57.129.25.20
+  servername: 57.129.25.20
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: 57.129.25.20
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪BE
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|🇧🇪BE_41
   network: ws
   port: 443
   server: 57.129.24.124
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1394,42 +1411,57 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.24.130-4680 #2'
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: '378,536,537,548|🇧🇪 BE_23 #1'
   network: ws
   port: 443
   server: 57.129.24.130
   servername: serkat.org
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: serkat.org
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.25.22-4681 #2'
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: '378,536,537,548|🇧🇪 BE_25 #1'
   network: ws
   port: 443
   server: 57.129.25.22
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.64.238-4682 #2'
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: '378,536,537,548|🇧🇪 BE_19 #1'
   network: ws
   port: 443
   server: 57.129.64.238
   servername: kapelleng.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: kapelleng.com
     path: /linkvws
 - name: '378,436,536,537,559|🇩🇪DE_36 #1'
   password: 665c944d-047d-4659-80d5-3eaac70241a9
@@ -2554,11 +2586,15 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '437,559|🇩🇪 DE_34 #1'
+  country: 🇩🇪DE
+  h2-opts: {}
+  http-opts: {}
+  name: '437,548,559|🇩🇪 DE_34 #1'
   network: none
   port: 18355
   server: 92.246.87.170
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
@@ -2823,11 +2859,10 @@ proxies:
   ws-path: /Iu415Fpf5REYxWLpTGA5AqzZ2Mj
 - alterId: 2
   cipher: auto
-  name: 489,523,524,553,566|🇩🇪 德国 | DEU 3
+  name: 489,523,524,553|yandex-2786
   port: 30833
   server: v33.hdacd.com
-  servername: v33.hdacd.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
@@ -2927,13 +2962,35 @@ proxies:
   server: 91.107.219.5
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  delay: 2092
-  name: 528,553|yandex-02
-  password: RFK38Cg7APneSB5cWDcpbm
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
+- country: 🇩🇪DE
+  delay: 649
+  name: 528,553|yandex-3269
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.196.6.7
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇩🇪DE
+  delay: 652
+  name: 528,553|yandex-3270
+  password: telegram-id-directvpn
+  port: 22223
+  server: 18.196.6.7
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  delay: 653
+  name: 528,553|yandex-3271
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.181.24.193
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
   udp: true
 - cipher: chacha20-ietf
   name: '536|8J%2BHrfCfh7BISy00My4yNTUuMTE5... #23'
