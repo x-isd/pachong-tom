@@ -427,14 +427,16 @@ proxies:
   tls: false
   type: vmess
   uuid: f6406b6d-5487-46da-f793-46611269a306
-- name: 378,523,524,537,559|🇹🇼TW台湾
+- name: 378,502,523,524,537,548,559|🇹🇼TW台湾
+  network: tcp
   password: 0a169d7d-a30f-4d90-af1b-55f6ef6afcb7
   port: 31101
   server: green2.cdntencentmusic.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537,559|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #19'
@@ -837,12 +839,14 @@ proxies:
     headers:
       Host: tw3.594888.xyz
     path: /v2ray
-- name: '378,436,536,537|TW-60.250.152.209-4631 #1'
+- country: 🇼 TW
+  name: '378,435,436,536,537|TW-60.250.152.209-4631 #1'
   password: 736cd94d-7b94-3e44-8106-3419f64eaf09
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|TW-103.229.127.212-7098 #1'
@@ -1071,7 +1075,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 489,574|🇨🇳广东4
+  name: 489,548,574|🇨🇳广东4
   password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
   port: 18148
   server: ldu.izenny.com
@@ -1081,24 +1085,13 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '489,574|未命名 #12'
+  name: '489,543,548,574|未命名 #12'
   password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
   port: 43076
   server: ldu.izenny.com
   skip-cert-verify: true
   tls: true
   type: ss
-  udp: true
-- alterId: 0
-  name: '502,523,524,536,559,574|TW #4'
-  network: tcp
-  password: 6790a94c-4ea8-4a1e-979e-31716839427a
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
@@ -1199,7 +1192,21 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 9b66996e-d7d7-3780-858a-3f71f3d9bf4d
+  uuid: 90409c3c-dc7a-3cf5-8ba0-ebf825318c9b
+- name: 548|TW台湾(mibei77.com 米贝节点分享) 2
+  password: 47d9af53-24a8-4593-a439-a73b88ad53ae
+  port: 35501
+  server: 220.130.58.136
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 548|TW台湾(mibei77.com 米贝节点分享) 5
+  password: 11cfbea5-eae4-4654-8aa9-a9481f38dc42
+  port: 31101
+  server: 220.130.58.136
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
