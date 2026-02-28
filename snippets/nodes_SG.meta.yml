@@ -3409,21 +3409,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 437,559|香港_022818371
-  network: ws
-  port: '443'
-  server: n1761214910.74qxv.top
-  servername: n1761214910.74qxv.top
-  tls: true
-  type: vmess
-  uuid: 011c4670-cdde-44fb-b9be-8a1e27af26c9
-  ws-opts:
-    headers:
-      Host: n1761214910.74qxv.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 437|🇸🇬 SG_86
+  name: 437|🇸🇬 SG_112
   network: ws
   port: 443
   server: 8.218.52.5
@@ -4683,18 +4669,11 @@ proxies:
   tls: false
   type: socks5
   username: Og%3D%3D
-- name: '507,559|SG TROJAN-23 | free-nodes #1'
+- name: 507,559|SG TROJAN-23 | free-nodes
   password: 984c7793-1447-4af5-9200-d514ad6fe329
   port: 45005
   server: sg05.stimaysmhy8.com
   type: trojan
-- name: '507,559|SG VLESS-41 | free-nodes #1'
-  network: tcp
-  port: 26403
-  server: 209.17.118.131
-  tls: false
-  type: vless
-  uuid: 2ab6258a-6670-4875-ab65-60999b764f87
 - cipher: aes-256-cfb
   name: '513,517,578|1|_SG_ #2'
   password: amazonskr05
@@ -4890,7 +4869,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2e17fd9d-e571-3c75-a2cc-abf60a4ebcc1
+  uuid: 9b66996e-d7d7-3780-858a-3f71f3d9bf4d
 - name: '545,546|新加坡[02] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -5346,6 +5325,13 @@ proxies:
     headers:
       Host: cyuxj212pnq.chinat.indevs.in
     path: '%2Fdanfeng'
+- name: 559|SG VLESS-41 | free-nodes
+  network: tcp
+  port: 26403
+  server: 209.17.118.131
+  tls: false
+  type: vless
+  uuid: 2ab6258a-6670-4875-ab65-60999b764f87
 - name: '559,580|🇸🇬SG #12'
   network: ws
   port: 8443
@@ -5702,64 +5688,46 @@ proxies:
     headers:
       Host: sg.dalxy.eu.org
     path: a88a71fa-ed7c-48d3-89e0-74a00d605d88-vm
-- client-fingerprint: chrome
-  name: 566|🇸🇬 新加坡 | SGP
+- cipher: chacha20-ietf-poly1305
+  name: '566|🇸🇬 新加坡 | SGP 2 #1'
+  password: b4b78f5d-f4ec-4eae-8f83-9e4ed9e16326
+  port: 46614
+  server: hd117-xjp-jd.huidu51.com
+  type: ss
+  udp: true
+- client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 3
   network: ws
-  port: 2087
-  server: www.shopify.com
-  servername: zqqfxrv1z.fx01.ccwu.cc
+  port: 443
+  server: 168.138.165.174
+  servername: _acme-challenge.443888.xyz
   tls: true
   type: vless
   udp: true
-  uuid: 77777777-6663-4ef2-b26b-ed2d70642678
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
   ws-opts:
     headers:
-      Host: zqqfxrv1z.fx01.ccwu.cc
-    path: /?ed=2560
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '566|🇸🇬 新加坡 | SGP 2 #1'
-  network: tcp
-  port: 30402
-  reality-opts:
-    public-key: uTOYAGREMpfEr3cQFcLwgMAWwwxjS3e2Yw32kCdN3Ew
-    short-id: f5f6e6f4
-  server: freea.glyphara.com
-  servername: itunes.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5f32f0b8-fbf4-47cf-a328-94ff11e4483c
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 566|🇸🇬 新加坡 | SGP 3
-  network: tcp
-  port: 30401
-  reality-opts:
-    public-key: ZeXA8rcM3TV466jK83J157gY7U2JTI9KP9nmn_Nbawk
-    short-id: 105a652c
-  server: freea.glyphara.com
-  servername: learn.microsoft.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5f32f0b8-fbf4-47cf-a328-94ff11e4483c
-- alterId: 2
-  cipher: auto
+      Host: _acme-challenge.443888.xyz
+    path: /danfeng
+- auth: 767ed51d-2358-4981-9447-a807c1419e93
   name: 566|🇸🇬 新加坡 | SGP 4
-  port: 30845
-  server: v45.hdacd.com
+  password: 767ed51d-2358-4981-9447-a807c1419e93
+  port: 50000
+  ports: 50000-53000
+  server: 140.245.48.123
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: www.microsoft.com
+  type: hysteria2
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 566|🇸🇬 新加坡 | SGP 5
-  port: 20005
-  server: 43.160.195.20
-  type: socks5
+  password: d720a490-d56b-11ef-a1cb-f23c9313b177
+  port: 3233
+  server: a0573efd-tbaqo0-tcr5bw-64gc.sub.cdnbytescm.com
+  tls: true
+  type: http
+  username: d720a490-d56b-11ef-a1cb-f23c9313b177
 - alterId: 0
-  name: 574|🇬SG新加坡3
+  name: 574|🇬SG新加坡2
   password: BxceQaOe
   port: 15363
   server: 18.166.236.73
