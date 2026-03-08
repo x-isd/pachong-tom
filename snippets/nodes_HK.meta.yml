@@ -263,7 +263,7 @@ proxies:
       Host: download.windowsupdate.com
     path: /download
 - client-fingerprint: chrome
-  name: 127,426,566|🇺🇸 美国 | USA 2
+  name: '127,426|🇭🇰 HK_1|4.2MB/s|GPT⁺|YT-HK|NF|... #1'
   network: ws
   port: 2053
   server: bestcf.030101.xyz
@@ -272,7 +272,6 @@ proxies:
   tfo: false
   tls: true
   type: vless
-  udp: true
   uuid: 26524cce-d514-4014-a426-365fb266a14d
   ws-opts:
     headers:
@@ -845,30 +844,48 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- name: 255|HK
+- name: 255|🇭🇰 HK
   network: ws
   port: 65056
   server: 202.181.24.70
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: c9d0ddb5-f2c1-4111-a92d-9798a2348a56
   ws-opts:
-    path: '%2Fyz'
+    path: /yz
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '255|HK #1'
+  name: 255|🇭🇰 HK 2
   network: tcp
   port: 46716
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: agaungzhou01.bumbleshrimp.com
   servername: www.nvidia.com
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: none
+  name: 255|🇭🇰 HK-Eons_Data_Communications
+  network: ws
+  port: 443
+  server: www.visa.com.tw
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: df7a96e2-c663-48ed-9713-1c144705f79e
+  ws-opts:
+    headers:
+      Host: ee-boston-therapist-cleaning.trycloudflare.com
+    path: /vmess-argo?ed=2048
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '255|HK #2'
+  name: 255|🇭🇰 HK 3
   network: tcp
   port: 25791
   reality-opts:
@@ -876,20 +893,22 @@ proxies:
     short-id: 57d9de10de16538d
   server: 34.92.65.82
   servername: cloudreve.mnm.pp.ua
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 711007f1-9cdf-4fd9-b5d4-d67aee173281
 - alterId: 2
   cipher: auto
-  name: '306,515,516,548,556,579,582|🇭🇰 香港|@stairnode #6'
+  name: '306,515,516,548,556|🇭🇰 香港|@ripaojiedian #3'
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '306,340,378,454,502,514,515,516,536,537,544,548,551,556,557,559,579,580,582|🇺🇸
-    美国3|@stairnode #8'
+- name: '306,340,378,454,494,502,514,515,516,536,537,544,548,551,559,580|🇺🇸 美国3|@stairnode
+    #5'
   network: tcp
   password: BxceQaOe
   port: 2960
@@ -899,7 +918,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '306,340,454,502,514,515,516,544,551,557,559,580|🇭🇰 香港|@stairnode #5'
+  name: '306,340,454,494,502,514,515,516,544,551,557,559,580|🇭🇰 香港|@stairnode #3'
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -911,8 +930,9 @@ proxies:
   cipher: auto
   name: '306,378,502,537,551,559|HK29｜家宽｜非常安全 #2'
   network: ws
-  port: '80'
+  port: 80
   server: d7d6992d-t5bb40-tdvaex-1ixuf.hkt.gotochinatown.net
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -933,33 +953,13 @@ proxies:
   tls: true
   type: vmess
   uuid: d5359b9e-4f4f-49e4-ab8b-f6a0d19bce28
-- name: '340,495,502,514,551,559|9| HK #1'
+- name: '340,495,502,514,551,559|9| HK #2'
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
   server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: '340,489,523,524,559|14|HK_speednode_0018 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: JEH14p4YvGvmDdBct-yekywfh8xcbbHjTBoBteh_qSs
-    short-id: 7538ac
-  server: hk1.miyazono-kaori.com
-  servername: www.microsoft.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
-  xudp: true
 - cipher: chacha20-ietf-poly1305
   name: 356|🇭🇰1 |  3.5MB/s
   password: WfmxKX2FBJRU0Ie9VLIYDL
@@ -1844,7 +1844,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '374|🇭🇰 香港 #1'
+  name: '374|🇭🇰 香港 #2'
   port: 19901
   server: xg.dashuai.cyou
   tls: false
@@ -1915,7 +1915,7 @@ proxies:
     headers:
       Host: 13.70.21.135
     path: /
-- name: '378,507,536,537,538,559,580|🇭🇰 香港3|@stairnode #4'
+- name: '378,494,507,536,537,538,559,580|HK TROJAN-32 | free-nodes #1'
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 443
   server: 58.152.18.189
@@ -1924,11 +1924,11 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 378,536,537,538,559|香港_030718002
+  name: 378,536,537,538|🇭🇰HK-47.76.254.70-0318 | 7.428...
   network: ws
-  port: '443'
+  port: 443
   server: n1753101277.4u9ma.icu
-  servername: n1753101277.4u9ma.icu
+  servername: 🇭🇰HK-47.76.254.70-0318 | 7.428MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1980,7 +1980,8 @@ proxies:
       Host: n1761214904.wpg27.xyz
     path: /
 - cipher: chacha20-ietf
-  name: 378,489,537,538,553|yandex-470
+  country: 🇭🇰HK
+  name: 378,489,537,538,548,553|yandex-198
   password: asd123456
   port: 8388
   server: 103.149.183.80
@@ -1994,9 +1995,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,536,537,538,559|香港_030718003
+  name: 378,494,536,537,538|🇭🇰HK-47.238.151.43-0303 | 0.14...
   network: ws
-  port: '443'
+  port: 443
   server: n1752248951.lie5d.cyou
   servername: ''
   skip-cert-verify: false
@@ -2011,9 +2012,9 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 378,536,537,538,548|Relay_-🇭🇰HK_12
+  name: 378,494,536,537,538,548,559|香港_030804003
   network: ws
-  port: 443
+  port: '443'
   server: n1761214905.wpg27.xyz
   servername: ''
   skip-cert-verify: false
@@ -2064,12 +2065,11 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-gcm
-  name: 378,537,553|yandex-342
+  name: '378,537|🇭🇰HK-8.210.182.238-0532 #2'
   password: a338A9
   port: 8888
   server: 8.210.182.238
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇭🇰HK-20.239.145.115-0537 #2'
@@ -2399,7 +2399,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: 12306
-  name: '378,537|🇭🇰HK-219.79.18.202-1690 #1'
+  name: '378,494,537|🇭🇰HK-219.79.18.202-1690 #1'
   network: grpc
   port: 443
   server: hk02.653ebeeb-5f60-4be5-958d-7bf4839cdccd.ef6616fd-5b06-482f-9d64-183745659cbf.byteprivatelink.com
@@ -2408,6 +2408,10 @@ proxies:
   tls: true
   type: vmess
   uuid: d5359b9e-4f4f-49e4-ab8b-f6a0d19bce28
+  ws-opts:
+    headers:
+      Host: null
+    path: /
 - name: 378,536,537,559|🇭🇰[openproxylist.com] trojan-H...
   network: tcp
   password: BxceQaOe
@@ -2819,7 +2823,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 378,536,537,553,566|🇭🇰 香港 | HKG 2
+  name: 378,536,537,553|yandex-243
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -2835,9 +2839,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇰HK-8.218.8.135-4647 #1'
+  name: 378,494,536,537,559|香港_030804012
   network: ws
-  port: 443
+  port: '443'
   server: n1761214910.74qxv.top
   servername: n1761214910.74qxv.top
   skip-cert-verify: false
@@ -2850,7 +2854,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇭🇰HK-8.210.166.22-4648 #1'
+  name: '378,437,536,537|🇭🇰HK-8.210.166.22-4648 #1'
   network: ws
   port: 443
   server: n1761214911.74qxv.top
@@ -2882,7 +2886,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 378,536,537,548|Relay_-🇭🇰HK_16
+  name: 378,494,536,537,548|Relay_-🇭🇰HK_13
   network: ws
   port: 443
   server: n1761214908.wpg27.xyz
@@ -2897,7 +2901,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,536,537,559|🇺🇸 US_97
+  name: '378,536,537,559|🇺🇸 US_114 #2'
   network: ws
   port: 443
   server: 47.243.95.187
@@ -2932,17 +2936,16 @@ proxies:
   server: ss.058.node-for-bigairport.win
   type: ss
 - cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: 378,537,548|🇭🇰HK_87
+  name: '378,537|🇰HK-103.149.182.79-4771 #1'
   password: asd123456
   port: 8388
   server: 103.149.182.79
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇭🇰HK-47.242.138.141-4774 #1'
+  name: 378,494,536,537,559|香港_030804004
   network: ws
-  port: 443
+  port: '443'
   server: n1761296880.lie5d.cyou
   servername: n1761296880.lie5d.cyou
   skip-cert-verify: false
@@ -2955,15 +2958,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 378,536,537,548|🇭🇰HK_92
+  name: '378,494,536,537|🇭🇰HK-47.244.120.197-4776 #1'
   network: ws
   port: 44867
   server: 47.244.120.197
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
@@ -2971,7 +2971,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇰HK-47.243.135.74-4777 #1'
+  name: '378,494,536,537|🇰HK-47.243.135.74-4777 #1'
   network: ws
   port: 55185
   server: 47.243.135.74
@@ -2984,15 +2984,12 @@ proxies:
     path: /Notif_Chat
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 378,536,537,548|🇭🇰HK_91
+  name: '378,494,536,537|🇭🇰HK-47.244.120.197-4778 #1'
   network: ws
   port: 36703
   server: 47.244.120.197
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
@@ -3336,7 +3333,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇰HK-8.210.79.212-6963 #1'
+  name: '378,494,536,537|🇰HK-8.210.79.212-6963 #1'
   network: ws
   port: 55185
   server: 8.210.79.212
@@ -4905,6 +4902,13 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: aes-256-cfb
+  country: 🇭🇰HK
+  name: 435,548|🇭🇰HK_92
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
 - name: 453|🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -4919,7 +4923,7 @@ proxies:
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
   type: trojan
-- name: '459,559,580|HK香港(mibei77.com 米贝节点分享) #44'
+- name: '459,559|HK香港(mibei77.com 米贝节点分享) #9'
   network: ws
   port: 10002
   server: 223.16.138.113
@@ -4931,7 +4935,7 @@ proxies:
     headers:
       Host: 6f221d78.mfree.ccwu.cc
     path: '%2Fsocks5%3D4b2c7676%3A6f0f4cbba5bb%4038.111.30.111%3A26433'
-- name: '459,559,580|HK香港(mibei77.com 米贝节点分享) #45'
+- name: '459,559|HK香港(mibei77.com 米贝节点分享) #13'
   network: ws
   port: 443
   server: 34.150.58.144
@@ -4943,7 +4947,7 @@ proxies:
     headers:
       Host: 6f221d78.mfree.ccwu.cc
     path: '%2Fsocks5%3D4b2c7676%3A6f0f4cbba5bb%4038.111.30.111%3A26433'
-- name: '459,559,580|TW台湾(mibei77.com 米贝节点分享) #14'
+- name: '459,559|TW台湾(mibei77.com 米贝节点分享) #2'
   network: ws
   port: 443
   server: video.livecuts.de
@@ -4967,7 +4971,7 @@ proxies:
     headers:
       Host: 002.ljk-clouflare.dns.army
     path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2'
-- name: '459,559,580|HK香港(mibei77.com 米贝节点分享) #31'
+- name: '459,559|HK香港(mibei77.com 米贝节点分享) #12'
   network: ws
   port: 443
   server: 103.56.114.25
@@ -5481,7 +5485,7 @@ proxies:
   uuid: 161ad227-d462-46c0-b4d2-44a6cd225f5d
 - alterId: 0
   cipher: auto
-  name: 476,481,523,524,553|yandex-344
+  name: 476,481,523,524,553|yandex-3884
   port: 30830
   server: v30.hdacd.com
   skip-cert-verify: false
@@ -5510,8 +5514,21 @@ proxies:
   ws-headers:
     Host: ous3.dean52.top
   ws-path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
+- alterId: 0
+  cipher: auto
+  name: 489,559|🇭🇰 HK_68
+  network: tcp
+  port: 30003
+  server: a.cdn-bilibili.cn
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 69de9a52-36b0-4265-a3cf-d06bcefe713d
+  xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-422
+  name: 489,553|yandex-150
   password: 623787ef-7786-4572-abf5-0180892558aa
   port: 19212
   server: ncgddx.gdsxrk.com
@@ -5519,7 +5536,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 489,553|yandex-423
+  name: 489,553|yandex-151
   network: ws
   port: 5103
   server: v1.cdn.b0dhnd0s6j.ewddns.net
@@ -5535,7 +5552,7 @@ proxies:
   xudp: true
 - alterId: 0
   cipher: auto
-  name: 489,553|yandex-424
+  name: 489,553|yandex-152
   network: ws
   port: 5102
   server: v1.cdn.b0dhnd0s6j.ewddns.net
@@ -5550,7 +5567,7 @@ proxies:
     path: /
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-428
+  name: 489,553|yandex-156
   password: 623787ef-7786-4572-abf5-0180892558aa
   port: 21312
   server: ncgdyd.gdsxrk.com
@@ -5569,14 +5586,14 @@ proxies:
   uuid: 623787ef-7786-4572-abf5-0180892558aa
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-430
+  name: 489,553|yandex-158
   password: de158a17-cb18-47ad-8c4d-1c8499d82dd8
   port: 20269
   server: aaa.whtjdasha.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-431
+  name: 489,553|yandex-159
   password: de158a17-cb18-47ad-8c4d-1c8499d82dd8
   port: 40574
   server: aaa.whtjdasha.com
@@ -5595,7 +5612,7 @@ proxies:
   uuid: 623787ef-7786-4572-abf5-0180892558aa
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-435
+  name: 489,553|yandex-163
   password: 623787ef-7786-4572-abf5-0180892558aa
   port: 19211
   server: ncgddx.gdsxrk.com
@@ -5603,7 +5620,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 489,553|yandex-438
+  name: 489,553|yandex-166
   network: ws
   port: 5101
   server: v1.cdn.b0dhnd0s6j.ewddns.net
@@ -5618,7 +5635,8 @@ proxies:
     path: /
   xudp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-476
+  country: 🇭🇰HK
+  name: 489,548,553|yandex-204
   password: asd123456
   port: 8388
   server: 103.149.182.105
@@ -5626,7 +5644,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '489|🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001... #2'
+  name: '489,502,559|香港 V2CROSS.COM #1'
   network: none
   port: 36678
   server: 154.219.119.183
@@ -5690,7 +5708,7 @@ proxies:
   tls: true
   type: http
   username: 28213b50-7ed5-11ee-add6-f23c91369f2d
-- name: 489|🔴🇭🇰[📺🎞️📦]_github.com/Ruk1ng001...
+- name: 489,566|🇭🇰 香港 | HKG 4
   password: <password>
   port: 8443
   server: cd345171-t9zts0-tahh2s-tng5.hkt.cdnhuawei.com
@@ -5767,7 +5785,7 @@ proxies:
   username: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
 - alterId: 0
   cipher: auto
-  name: 489,553|yandex-487
+  name: 489,553|yandex-215
   network: ws
   port: 5104
   server: v1.cdn.b0dhnd0s6j.ewddns.net
@@ -5782,7 +5800,8 @@ proxies:
     path: /
   xudp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-488
+  country: 🇭🇰HK
+  name: 489,548,553|yandex-216
   password: asd123456
   port: 8388
   server: 103.149.183.12
@@ -5837,7 +5856,7 @@ proxies:
   type: http
   username: 0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b
 - client-fingerprint: random
-  name: 489,553|yandex-505
+  name: 489,553|yandex-233
   network: ws
   port: 26688
   server: 45.121.138.23
@@ -5851,7 +5870,7 @@ proxies:
       Host: 6f221d78.mfree.ccwu.cc
     path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433
   xudp: true
-- name: '489,536,553,559,580|🇭🇰 香港5|@stairnode #5'
+- name: '489,536,553,559|🇭🇰 香港5|@stairnode #3'
   password: BxceQaOe
   port: 38301
   server: 43.199.159.207
@@ -5869,7 +5888,7 @@ proxies:
   username: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
 - client-fingerprint: chrome
   encryption: none
-  name: 489,553|yandex-527
+  name: 489,553|yandex-255
   network: ws
   port: 443
   server: 20.255.49.160
@@ -5883,6 +5902,26 @@ proxies:
       Host: lirpeuijr.chinav.indevs.in
     path: /danfeng
   xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: '489,523,524,559|每天更新，请加电报群防止失联 #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: JEH14p4YvGvmDdBct-yekywfh8xcbbHjTBoBteh_qSs
+    short-id: 7538ac
+  server: hk1.miyazono-kaori.com
+  servername: www.microsoft.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
+  xudp: true
 - name: 489|🟡🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001...
   password: <password>
   port: 8443
@@ -5893,7 +5932,7 @@ proxies:
   username: c1785de0-212f-11ef-92aa-f23c9164ca5d
 - client-fingerprint: chrome
   encryption: none
-  name: 489,553|yandex-534
+  name: 489,553|yandex-262
   network: ws
   port: 443
   server: video.livecuts.de
@@ -5958,7 +5997,7 @@ proxies:
   username: 3fed19ea-1671-11f0-bd2e-f23c9164ca5d
 - client-fingerprint: chrome
   encryption: none
-  name: 489,553|yandex-595
+  name: 489,553|yandex-323
   network: ws
   port: 443
   server: 83.229.126.199
@@ -5989,7 +6028,7 @@ proxies:
   type: http
   username: 12a81f5a-fa9e-11ef-8400-f23c9164ca5d
 - client-fingerprint: random
-  name: 489,553|yandex-614
+  name: 489,553|yandex-342
   network: ws
   port: 1443
   server: 43.161.217.205
@@ -6045,7 +6084,7 @@ proxies:
   username: fcd39788-ca23-11ed-86e2-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: 489,553|yandex-709
+  name: 489,553|yandex-437
   network: ws
   port: 52511
   server: aflzzul.meiquankongjian.com
@@ -6090,7 +6129,7 @@ proxies:
   tls: true
   type: http
   username: 336501b6-51d2-11ee-a993-f23c9164ca5d
-- name: 489,566|🇭🇰 香港 | HKG 7
+- name: 489|🔴🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng00...
   password: <password>
   port: 8443
   server: d1c1e5d3-t9zts0-tct1rd-1o0ch.hkt.cdnhuawei.com
@@ -6101,7 +6140,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: 489,566|🇸🇬 新加坡 | SGP 2
+  name: '489|🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001... #9'
   network: ws
   port: 443
   server: 172.64.152.23
@@ -6113,11 +6152,13 @@ proxies:
   ws-opts:
     headers:
       Host: ai.narton.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.89 Safari/537.36
     path: /---@MiTiVPN/---@MiTiVPN
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 489,553|yandex-741
+  name: 489,553|yandex-469
   network: ws
   port: 443
   server: 58.176.95.46
@@ -6150,7 +6191,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 489,553|yandex-759
+  name: 489,553|yandex-487
   network: ws
   port: 26688
   server: 45.121.138.23
@@ -6173,7 +6214,7 @@ proxies:
   type: http
   username: ba7a37e3-033a-e1ab-06f6-9027aa4630f5
 - client-fingerprint: chrome
-  name: 489,553|yandex-765
+  name: 489,553|yandex-493
   network: ws
   port: 443
   server: 104.17.182.11
@@ -6188,7 +6229,7 @@ proxies:
     path: /products/proxyip=ProxyIP.SG.CMLiussss.net/proxyip=ProxyIP.SG.CMLiussss.net
   xudp: true
 - client-fingerprint: random
-  name: 489,553|yandex-773
+  name: 489,553|yandex-501
   network: ws
   port: 443
   server: 34.150.58.144
@@ -6279,7 +6320,7 @@ proxies:
   username: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
 - alterId: 0
   cipher: auto
-  name: 489,553|yandex-924
+  name: 489,553|yandex-561
   network: ws
   port: 12890
   server: gtm1.ktmwan.net
@@ -6295,7 +6336,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 489,553|yandex-839
+  name: 489,553|yandex-567
   network: ws
   port: 443
   server: cdn.262832.xyz
@@ -6364,7 +6405,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '513,558|12|🇭🇰 香港|@ripaojiedian #1'
+  name: '513,558|12|🇭🇰 香港|@ripaojiedian #2'
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
   server: hk02.x.quickcht3.club
@@ -6470,16 +6511,6 @@ proxies:
     headers:
       Host: apk.arises.dynv6.net
     path: /?ed=2560&Telegram🇨🇳+@WangCai2
-- alterId: 0
-  name: 523,524,574|🇺🇸US美国12
-  password: BxceQaOe
-  port: 2960
-  server: 43.198.86.230
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
 - name: '533|HK香港(mibei77.com 米贝节点分享) #2'
   network: ws
   port: 18622
@@ -6578,20 +6609,6 @@ proxies:
     path: '%2FX%40freecodes%2F%3Fed%3D2560'
 - alterId: 0
   cipher: auto
-  name: 536|🇭🇰HK-47.238.82.7-0387
-  network: ws
-  port: 443
-  server: n1753356378.4u9ma.icu
-  servername: n1753356378.4u9ma.icu
-  tls: true
-  type: vmess
-  uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
-  ws-opts:
-    headers:
-      Host: n1753356378.4u9ma.icu
-    path: /
-- alterId: 0
-  cipher: auto
   name: 536|🇭🇰HK-8.210.79.212-0282
   network: ws
   port: 55185
@@ -6604,14 +6621,14 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '536,559,580|🇭🇰 香港4|@stairnode #6'
+- name: '536,559|🇭🇰 香港4|@stairnode #4'
   password: BxceQaOe
   port: 38301
   server: 43.198.203.251
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '536,559,580|🇸🇬 新加坡3|@stairnode #5'
+- name: '536,559|🇸🇬 新加坡3|@stairnode #3'
   password: BxceQaOe
   port: 1717
   server: 95.40.10.51
@@ -6620,7 +6637,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 542,553|yandex-1038
+  name: 542,553|yandex-3628
   port: 19811
   server: xgcma.dx002.top
   skip-cert-verify: true
@@ -6630,7 +6647,7 @@ proxies:
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
 - alterId: 0
   cipher: auto
-  name: 542,553|yandex-1039
+  name: 542,553|yandex-3629
   port: 19812
   server: xgcta.dx002.top
   skip-cert-verify: true
@@ -6640,7 +6657,7 @@ proxies:
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
 - alterId: 0
   cipher: auto
-  name: 542,553|yandex-1049
+  name: 542,553|yandex-3639
   network: ws
   port: 20011
   server: htsub-2024.899696998.xyz
@@ -6653,7 +6670,7 @@ proxies:
     headers:
       Host: yyyt-hk-2024.mofaxw.top
     path: /2024
-- name: 542,553|yandex-1079
+- name: 542,553|yandex-3669
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20309
   server: gyl.58n.net
@@ -6662,7 +6679,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542,553|yandex-1082
+- name: 542,553|yandex-3672
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 28678
   server: gy.58n.net
@@ -6671,7 +6688,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542,553|yandex-1083
+- name: 542,553|yandex-3673
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 24603
   server: gy.58n.net
@@ -6680,7 +6697,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542,553|yandex-1084
+- name: 542,553|yandex-3674
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 22741
   server: gy.58n.net
@@ -6689,7 +6706,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542,553|yandex-1085
+- name: 542,553|yandex-3675
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20278
   server: gy.58n.net
@@ -6698,7 +6715,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542,553|yandex-1086
+- name: 542,553|yandex-3676
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20279
   server: gy.58n.net
@@ -6707,7 +6724,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542,553|yandex-1087
+- name: 542,553|yandex-3677
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20294
   server: gy.58n.net
@@ -6718,7 +6735,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip101
-  name: 542,553|yandex-1110
+  name: 542,553|yandex-3700
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 12249
@@ -6729,7 +6746,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip101
-  name: 542,553|yandex-1111
+  name: 542,553|yandex-3701
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 22249
@@ -6740,7 +6757,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip102
-  name: 542,553|yandex-1112
+  name: 542,553|yandex-3702
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 32249
@@ -6751,7 +6768,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip102
-  name: 542,553|yandex-1113
+  name: 542,553|yandex-3703
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 42249
@@ -6762,7 +6779,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip103
-  name: 542,553|yandex-1114
+  name: 542,553|yandex-3704
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 52249
@@ -6773,7 +6790,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip103
-  name: 542,553|yandex-1115
+  name: 542,553|yandex-3705
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 11116
@@ -6784,7 +6801,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip104
-  name: 542,553|yandex-1116
+  name: 542,553|yandex-3706
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 45136
@@ -6795,7 +6812,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip104
-  name: 542,553|yandex-1117
+  name: 542,553|yandex-3707
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 46216
@@ -6806,7 +6823,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip105
-  name: 542,553|yandex-1118
+  name: 542,553|yandex-3708
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 41116
@@ -6817,7 +6834,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip105
-  name: 542,553|yandex-1119
+  name: 542,553|yandex-3709
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 51116
@@ -6828,14 +6845,14 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 542,553|yandex-1145
+  name: 542,553|yandex-3735
   port: 23612
   server: traffic.a1.szx.gfw250.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 13555e08-4234-3b54-bb26-08a15d970b1d
+  uuid: af1a867a-ee92-35d2-95c8-bd497f873c4c
 - name: '545,546|香港[01] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -6848,11 +6865,17 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
+- cipher: chacha20-ietf
+  name: 548|disney_HK
+  password: asd123456
+  port: 8388
+  server: 103.141.221.124
+  type: ss
 - alterId: 2
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_-🇭🇰HK_15
+  name: 548|Relay_-🇭🇰HK_14
   network: ws
   port: 80
   server: 4b5ef466-t8pj40-tbicd9-1go3q.hkt.gotochinatown.net
@@ -6862,58 +6885,37 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 548|disney_HK
-  network: none
-  port: 40741
-  server: 149.88.95.94
+- cipher: chacha20-ietf
+  country: 🇭🇰HK
+  name: '548|disney_HK #2'
+  password: asd123456
+  port: 8388
+  server: 103.141.221.101
+  type: ss
+- name: '556,557|香港3|@ripaojiedian #2'
+  network: tcp
+  password: f7dbed8b1ca85124e793ba6c0bcfd0db
+  port: 443
+  server: 58.152.18.2
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '556,557|香港4|@ripaojiedian #2'
+  network: tcp
+  password: BxceQaOe
+  port: 1792
+  server: 18.162.54.136
   skip-cert-verify: true
-  type: vmess
-  uuid: 1b8a751b-4909-4fec-f019-907d92e6c47f
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 548,559|🇮🇱 IL_64
-  network: none
-  port: 18937
-  server: 149.88.95.94
-  servername: ''
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '556,557|香港5|@ripaojiedian #2'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.253
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ebaa1ae1-fa4d-40d8-958f-d4524d551218
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 548,559|🇮🇱 IL_63
-  network: none
-  port: 18937
-  server: 149.88.95.217
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ebaa1ae1-fa4d-40d8-958f-d4524d551218
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: '548|disney_HK #5'
-  network: none
-  port: 40741
-  server: 149.88.95.217
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1b8a751b-4909-4fec-f019-907d92e6c47f
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇭 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -7043,7 +7045,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 559|香港_030718466
+- name: 559|香港_030804464
   password: 407b6b2e-59e5-4466-9911-08f6f1263bc9
   port: 20000
   server: hk01.poke-mon.xyz
@@ -7051,13 +7053,45 @@ proxies:
   sni: www.apple.com
   tls: false
   type: hysteria2
-- name: '559,580|HK TROJAN-32 | free-nodes #1'
+- name: 559|🇭🇰 香港 | HKG 5
+  obfs: salamander
+  obfs-password: Sv8OhESVUYqC7KrI
+  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
+  port: 2056
+  server: hk1.shiyuandian.shop
+  skip-cert-verify: true
+  sni: hk1.shiyuandian.shop
+  tls: false
+  type: hysteria2
+- name: 559|🇭🇰 香港 | HKG 6
+  obfs: salamander
+  obfs-password: vzbsyah3Y%255%252fPz
+  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
+  port: 30000
+  server: hk2.shiyuandian.shop
+  skip-cert-verify: true
+  sni: hk2.shiyuandian.shop
+  tls: false
+  type: hysteria2
+- name: 559|HK TROJAN-32 | free-nodes
   password: BxceQaOe
   port: 17255
   server: 16.162.45.33
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: 559|HK_922f4_0019
+  network: ws
+  port: 443
+  server: 103.177.249.122
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: k7ryegiaeu.chinam.eu.org
+    path: '%2Fdanfeng'
 - name: '559|🇭🇰_香港 #2'
   network: ws
   port: 7000
@@ -7071,6 +7105,18 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.dpdns.org
     path: '%2F%3Fed%3D2560'
+- name: 559|🇭🇰HK_2-1
+  network: ws
+  port: 10201
+  server: 223.16.138.113
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: '559|🇭🇰_香港 #3'
   network: ws
   port: 443
@@ -7124,7 +7170,7 @@ proxies:
       Host: apk.arises.dynv6.net
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
 - client-fingerprint: chrome
-  name: '559,580|HK VLESS-91 | free-nodes #1'
+  name: 559|HK VLESS-91 | free-nodes
   network: tcp
   port: 62520
   reality-opts:
@@ -7135,23 +7181,9 @@ proxies:
   tls: false
   type: vless
   uuid: be69896f-e641-41d9-bfc8-1e30885263d2
-- alterId: 2
-  cipher: auto
-  name: 559|香港_030718008
-  network: ws
-  port: '80'
-  server: 4179ad58-t8ysg0-t8w16f-1j6h0.hkt.gotochinatown.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dcccacba-fa44-11ef-8400-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 0
   cipher: auto
-  name: 559|香港_030718462
+  name: 559|香港_030804460
   network: ws
   port: '443'
   server: n1753348736.lie5d.cyou
@@ -7165,7 +7197,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 559|香港_030718461
+  name: 559|香港_030804459
   network: ws
   port: '443'
   server: n1761296877.lie5d.cyou
@@ -7179,7 +7211,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 559|香港_030718460
+  name: 559|香港_030804458
   network: ws
   port: '443'
   server: n1761214918.74qxv.top
@@ -7203,104 +7235,56 @@ proxies:
   type: hysteria
   udp: true
   up: 1000 Mbps
-- alterId: 2
-  cipher: auto
+- auth: ae845cbd-08fb-4346-929a-e28a6f3960a8
   name: 566|🇭🇰 香港 | HKG
-  network: ws
-  port: 80
-  server: 1a8d3916-tbn340-td23wa-1j6h0.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: dcccacba-fa44-11ef-8400-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: 566|🇭🇰 香港 | HKG 3
-  password: <password>
-  port: 8443
-  server: 0cdf0a0d-tbn340-td23wa-1j6h0.hkt.cdnhuawei.com
-  tls: true
-  type: http
-  username: dcccacba-fa44-11ef-8400-f23c9164ca5d
-- name: 566|🇭🇰 香港 | HKG 4
-  password: dcccacba-fa44-11ef-8400-f23c9164ca5d
-  port: 5228
-  server: 5d482d35-tbn340-td23wa-1j6h0.cm4.oshuawei.com
-  tls: true
-  type: http
-  username: dcccacba-fa44-11ef-8400-f23c9164ca5d
-- auth: ae845cbd-08fb-4346-929a-e28a6f3960a8
-  down: 50
-  name: 566|🇭🇰 香港 | HKG 5
   obfs: salamander
-  obfs-password: Sv8OhESVUYqC7KrI
-  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
-  port: 2056
-  server: hk1.shiyuandian.shop
-  skip-cert-verify: true
-  sni: hk1.shiyuandian.shop
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: ae845cbd-08fb-4346-929a-e28a6f3960a8
-  name: 566|🇭🇰 香港 | HKG 6
-  obfs: salamander
-  obfs-password: vzbsyah3Y%5%2fPz
-  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
-  port: 30000
-  server: hk2.shiyuandian.shop
-  skip-cert-verify: true
-  sni: hk2.shiyuandian.shop
-  type: hysteria2
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 9
-  network: ws
-  port: 80
-  server: d7d6992d-t5bb40-tdvaex-1ixuf.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: dcbaee4d-2204-11ed-b659-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: d7d6992d-t5bb40-tdvaex-1ixuf.hkt.gotochinatown.net
-    path: /
-- name: '568|🇭🇰 香港 | HKG #1'
-  obfs: salamander
-  obfs-password: salamander
+  obfs-password: '&XufEjrzgh36%MAU'
   password: ae845cbd-08fb-4346-929a-e28a6f3960a8
   port: 30000
   server: hk4.shiyuandian.shop
   skip-cert-verify: true
   sni: hk4.shiyuandian.shop
+  type: hysteria2
+  udp: true
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 566|🇭🇰 香港 | HKG 2
+  network: ws
+  port: 10002
+  server: 223.16.138.113
+  servername: 6745d1ce.cloudorg.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 69ab6d73-6db3-1c80-4eb6-2b91420c3944
+  ws-opts:
+    headers:
+      Host: 6745d1ce.cloudorg.ccwu.cc
+    path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 566|🇭🇰 香港 | HKG 3
+  network: ws
+  port: 443
+  server: 43.161.222.233
+  servername: 6745d1ce.cloudorg.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 69ab6d73-6db3-1c80-4eb6-2b91420c3944
+  ws-opts:
+    headers:
+      Host: 6745d1ce.cloudorg.ccwu.cc
+    path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433
+- name: '568|🇭🇰 香港 | HKG #1'
+  password: f81b6c87-113f-4346-9836-631f49b4aaf3
+  port: 21737
+  server: hk.xn--ehqa22b.site
+  skip-cert-verify: false
   tls: false
   type: hysteria2
-- alterId: 0
-  name: 574|🇰HK香港2
-  password: BxceQaOe
-  port: 388
-  server: 57.180.10.241
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 574|🇭🇰HK香港3
-  password: BxceQaOe
-  port: 6313
-  server: 13.112.192.191
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 577|澳门NO.2
@@ -7501,18 +7485,18 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
-- name: 580|HK TROJAN-30 | free-nodes
-  network: ws
-  password: 0zmdDXd0Qt5ff_7Qg67R-Rtq4Tmt4c
-  port: 2083
-  server: 188.116.22.217
-  skip-cert-verify: false
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: '%2Ftrojan-ws'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 580|HK VLESS-83 | free-nodes
+  network: tcp
+  port: 59750
+  reality-opts:
+    public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg
+  server: 47.83.153.19
+  servername: www.amd.com
+  tls: false
+  type: vless
+  uuid: 9e76cfb8-b7a6-40f6-c2aa-9905aa19f31b
 - client-fingerprint: randomized
   name: 583|eooce-04-HK
   network: ws
@@ -7621,7 +7605,7 @@ proxies:
     headers:
       Host: yf.xhya.nyc.mn
     path: /
-- name: '605|HK #6'
+- name: '605|HK #3'
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 41288
