@@ -837,11 +837,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|🇸🇬 SG
+- name: 255|SG
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
-  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - client-fingerprint: firefox
@@ -931,7 +931,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 340,495,502,514,551,559|9|SG
+- name: '340,495,502,514,551,559|9|SG #1'
   password: e7965e64-e001-4e8c-8273-39c61ff4a094
   port: 30000
   server: sg3.oomz.ru
@@ -939,7 +939,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: '340,378,536,537,538,559,580|🇸🇬 新加坡|@stairnode #5'
+- name: '340,378,536,537,538,559,580|🇸🇬 新加坡|@stairnode #6'
   network: tcp
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 4674
@@ -947,7 +947,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '340,378,536,537,538,559,580|🇸🇬 新加坡2|@stairnode #5'
+- name: '340,378,536,537,538,559,580|🇸🇬 新加坡2|@stairnode #6'
   network: tcp
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 3419
@@ -955,7 +955,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '340,378,536,537,559,580|🇸🇬 新加坡3|@stairnode #5'
+- name: '340,378,536,537,559,580|🇸🇬 新加坡3|@stairnode #6'
   network: tcp
   password: BxceQaOe
   port: 25343
@@ -982,7 +982,8 @@ proxies:
   server: 128.199.172.224
   type: ss
 - cipher: rc4-md5
-  name: 356,378,537,538|🇸🇬SG-68.183.227.4-0224 | 29.35...
+  country: 🇸🇬SG
+  name: 356,378,537,538,548|🇸🇬SG_84
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -2825,7 +2826,7 @@ proxies:
     path: /anti13.zingfast.vn
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸 US
-  name: '378,435,537|🇬SG-38.89.142.56-4569 #1'
+  name: '378,435,537,548|_06 #1'
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.89.142.56
@@ -3424,7 +3425,7 @@ proxies:
   country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 435| SG_69
+  name: 435| SG_72
   network: ws
   port: 443
   server: n1761214905.wpg27.xyz
@@ -3435,7 +3436,24 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 437|🇸🇬 SG_69
+  country: 🇸🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇬 SG_73
+  network: ws
+  port: 443
+  server: 8.218.52.5
+  servername: n1761214915.mv7wh.tech
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1f2daf43-ff90-4df9-9276-dfb8486d72bc
+  ws-headers:
+    HOST: n1761214915.mv7wh.tech
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 437|🇸🇬 SG_72
   network: ws
   port: 443
   server: n1761214905.wpg27.xyz
@@ -3445,6 +3463,19 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 437|🇸🇬 SG_73
+  network: ws
+  port: 443
+  server: 8.218.52.5
+  tls: true
+  type: vmess
+  uuid: 1f2daf43-ff90-4df9-9276-dfb8486d72bc
+  ws-opts:
+    headers:
+      Host: n1761214915.mv7wh.tech
     path: /
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
@@ -3460,7 +3491,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '456,559|🇸🇬 新加坡3|@stairnode #3'
+- name: '456,559|🇸🇬 新加坡3|@stairnode #4'
   password: BxceQaOe
   port: 41973
   server: 18.162.54.136
@@ -4751,7 +4782,7 @@ proxies:
   type: anytls
   udp: true
 - cipher: aes-256-gcm
-  name: 489,553|yandex-34
+  name: 489,553|yandex-3180
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 41402
   server: ss.039.node-for-bigairport.win
@@ -4915,7 +4946,7 @@ proxies:
     path: /danfeng
 - alterId: 0
   cipher: auto
-  name: 542,553|yandex-678
+  name: 542,553|yandex-2985
   port: 19841
   server: xgcma.dx002.top
   skip-cert-verify: true
@@ -4925,7 +4956,7 @@ proxies:
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
 - alterId: 0
   cipher: auto
-  name: 542,553|yandex-679
+  name: 542,553|yandex-2986
   port: 19842
   server: xgcta.dx002.top
   skip-cert-verify: true
@@ -4935,7 +4966,7 @@ proxies:
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
 - alterId: 0
   cipher: auto
-  name: 542,553|yandex-689
+  name: 542,553|yandex-2996
   network: ws
   port: 20011
   server: htsub-2024.899696998.xyz
@@ -4948,7 +4979,7 @@ proxies:
     headers:
       Host: yyyt-sg-2024.mofaxw.top
     path: /2024
-- name: 542,553|yandex-719
+- name: 542,553|yandex-3026
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20129
   server: gy.58n.net
@@ -4957,7 +4988,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542,553|yandex-720
+- name: 542,553|yandex-3027
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20130
   server: gy.58n.net
@@ -4968,7 +4999,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: sgvip101
-  name: 542,553|yandex-747
+  name: 542,553|yandex-3054
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 11223
@@ -4979,7 +5010,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: sgvip101
-  name: 542,553|yandex-748
+  name: 542,553|yandex-3055
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 21223
@@ -4990,7 +5021,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: sgvip101
-  name: 542,553|yandex-749
+  name: 542,553|yandex-3056
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 31223
@@ -5001,7 +5032,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: sgvip101
-  name: 542,553|yandex-750
+  name: 542,553|yandex-3057
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 41223
@@ -5012,7 +5043,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: sgvip101
-  name: 542,553|yandex-751
+  name: 542,553|yandex-3058
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 51223
@@ -5023,20 +5054,31 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 542,553|yandex-786
+  name: 542,553|yandex-3093
   port: 23613
   server: traffic.a1.szx.gfw250.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: c0bcd793-1dd5-3a07-b23b-1f39cecacee7
+  uuid: c859afb7-e6ac-38b9-87a6-66208f082455
 - name: '545,546|新加坡[02] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 548|disney_SG
+  port: 35034
+  server: 165.154.195.38
+  skip-cert-verify: true
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5859,7 +5901,7 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: '559|SG新加坡(mibei77.com 米贝节点分享) #2'
+- name: '559|SG新加坡(mibei77.com 米贝节点分享) #3'
   network: ws
   port: 12110
   server: 222.113.18.207
@@ -5871,7 +5913,7 @@ proxies:
     headers:
       Host: 6745d1ce.cloudorg.ccwu.cc
     path: '%2Fsocks5%3D4b2c7676%3A6f0f4cbba5bb%4038.111.30.111%3A26433'
-- name: '559|SG新加坡(mibei77.com 米贝节点分享) #3'
+- name: '559|SG新加坡(mibei77.com 米贝节点分享) #4'
   network: ws
   port: 443
   server: cdns.doon.eu.org
@@ -6411,7 +6453,7 @@ proxies:
     headers:
       Host: snippet.sheilabelinda.ndjp.net
     path: '%2Fdanfeng'
-- name: '559,580|US美国(mibei77.com 米贝节点分享) #68'
+- name: '559,580|US美国(mibei77.com 米贝节点分享) #69'
   network: ws
   port: 54785
   server: 154.36.130.63
@@ -7890,86 +7932,168 @@ proxies:
     headers:
       Host: mn1ray.jagoanvip.xyz
     path: /vvip
-- client-fingerprint: random
+- alpn:
+  - http/1.1
+  client-fingerprint: random
   name: 566|🇸🇬 新加坡 | SGP
   network: ws
-  port: 443
-  server: 57.128.181.91
-  servername: snippet.fgfw.ye.gs
+  port: 11310
+  server: 222.113.157.240
+  servername: snippet.fgfw.ccwu.cc
   tls: true
   type: vless
   udp: true
   uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
   ws-opts:
     headers:
-      Host: snippet.fgfw.ye.gs
+      Host: snippet.fgfw.ccwu.cc
     path: /danfeng
 - alpn:
   - http/1.1
   client-fingerprint: random
   name: '566|🇸🇬 新加坡 | SGP 2 #1'
   network: ws
-  port: 443
-  server: 45.144.234.53
-  servername: snippet.gfw.nn.kg
+  port: 491
+  server: 143.20.175.10
+  servername: snippet.fgfw.ccwu.cc
   tls: true
   type: vless
   udp: true
   uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
   ws-opts:
     headers:
-      Host: snippet.gfw.nn.kg
+      Host: snippet.fgfw.ccwu.cc
     path: /danfeng
 - alpn:
   - http/1.1
   client-fingerprint: random
   name: '566|🇸🇬 新加坡 | SGP 3 #1'
   network: ws
-  port: 443
-  server: 192.0.63.112
-  servername: snippet.gfw.nn.kg
+  port: 2087
+  server: 107.174.183.178
+  servername: snippet.fgfw.ccwu.cc
   tls: true
   type: vless
   udp: true
   uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
   ws-opts:
     headers:
-      Host: snippet.gfw.nn.kg
+      Host: snippet.fgfw.ccwu.cc
     path: /danfeng
 - alpn:
   - http/1.1
   client-fingerprint: random
   name: 566|🇸🇬 新加坡 | SGP 4
   network: ws
-  port: 30000
-  server: 64.110.98.1
-  servername: snippet.fgfw.ndjp.net
+  port: 443
+  server: 192.0.63.188
+  servername: snippet.fgfw.de5.net
   tls: true
   type: vless
   udp: true
   uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
   ws-opts:
     headers:
-      Host: snippet.fgfw.ndjp.net
+      Host: snippet.fgfw.de5.net
     path: /danfeng
-- client-fingerprint: random
+- alpn:
+  - http/1.1
+  client-fingerprint: random
   name: 566|🇸🇬 新加坡 | SGP 5
   network: ws
-  port: 443
-  server: 93.187.64.59
-  servername: snippet.fgfw.ye.gs
+  port: 8443
+  server: 167.99.140.246
+  servername: snippet.fgfw.indevs.in
   tls: true
   type: vless
   udp: true
   uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
   ws-opts:
     headers:
-      Host: snippet.fgfw.ye.gs
+      Host: snippet.fgfw.indevs.in
     path: /danfeng
 - alpn:
   - http/1.1
   client-fingerprint: random
   name: 566|🇸🇬 新加坡 | SGP 6
+  network: ws
+  port: 18987
+  server: 124.111.208.233
+  servername: snippet.fgfw.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 7
+  network: ws
+  port: 27015
+  server: 154.64.246.165
+  servername: snippet.fgfw.de5.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.de5.net
+    path: /danfeng
+- client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 8
+  network: ws
+  port: 443
+  server: 64.110.104.30
+  servername: snippet.fgfw.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 9
+  network: ws
+  port: 39738
+  server: 38.244.5.230
+  servername: snippet.fgfw.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+    path: /danfeng
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 10 #1'
+  network: ws
+  port: 443
+  server: 66.63.187.46
+  servername: snippet.fgfw.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.indevs.in
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 11
   network: ws
   port: 2096
   server: 45.202.113.137
@@ -7985,574 +8109,72 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 7
-  network: ws
-  port: 50008
-  server: 103.137.63.78
-  servername: snippet.fgfw.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.indevs.in
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 8
-  network: ws
-  port: 22085
-  server: 116.44.147.152
-  servername: snippet.sheilabelinda.ndjp.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.sheilabelinda.ndjp.net
-    path: /danfeng
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 9
-  network: ws
-  port: 2006
-  server: 89.58.44.18
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 10 #1'
-  network: ws
-  port: 444
-  server: 143.20.175.10
-  servername: snippet.fgfw.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.indevs.in
-    path: /danfeng
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 11
-  network: ws
-  port: 443
-  server: 91.107.148.154
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: random
   name: '566|🇸🇬 新加坡 | SGP 12 #1'
   network: ws
-  port: 8443
-  server: 37.27.176.223
-  servername: snippet.fgfw.ye.gs
+  port: 449
+  server: 5.161.20.169
+  servername: snippet.gfw.nn.kg
   tls: true
   type: vless
   udp: true
   uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
   ws-opts:
     headers:
-      Host: snippet.fgfw.ye.gs
+      Host: snippet.gfw.nn.kg
     path: /danfeng
 - client-fingerprint: random
   name: 566|🇸🇬 新加坡 | SGP 13
   network: ws
-  port: 18622
-  server: 210.6.207.42
-  servername: snippet.fgfw.ye.gs
+  port: 2053
+  server: 94.23.153.168
+  servername: snippet.fgfw.ccwu.cc
   tls: true
   type: vless
   udp: true
   uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
   ws-opts:
     headers:
-      Host: snippet.fgfw.ye.gs
+      Host: snippet.fgfw.ccwu.cc
     path: /danfeng
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
+- alpn:
+  - http/1.1
+  client-fingerprint: random
   name: 566|🇸🇬 新加坡 | SGP 14
-  network: tcp
-  port: 30401
-  reality-opts:
-    public-key: ZeXA8rcM3TV466jK83J157gY7U2JTI9KP9nmn_Nbawk
-    short-id: 105a652c
-  server: freea.glyphara.com
-  servername: learn.microsoft.com
+  network: ws
+  port: 443
+  server: 107.173.147.235
+  servername: snippet.fgfw.ccwu.cc
   tls: true
   type: vless
   udp: true
-  uuid: 00e92111-4129-4298-9c47-5c4ac6f694f0
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+    path: /danfeng
 - alpn:
   - http/1.1
   client-fingerprint: random
   name: 566|🇸🇬 新加坡 | SGP 15
   network: ws
-  port: 10088
-  server: 61.83.8.8
-  servername: snippet.fgfw.ye.gs
+  port: 443
+  server: 192.0.54.217
+  servername: snippet.gfw.nn.kg
   tls: true
   type: vless
   udp: true
   uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
   ws-opts:
     headers:
-      Host: snippet.fgfw.ye.gs
+      Host: snippet.gfw.nn.kg
     path: /danfeng
-- client-fingerprint: random
+- alpn:
+  - http/1.1
+  client-fingerprint: random
   name: '566|🇸🇬 新加坡 | SGP 16 #1'
   network: ws
   port: 443
-  server: 162.159.39.253
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 17
-  network: ws
-  port: 3023
-  server: 95.179.252.192
-  servername: snippet.gfw.nn.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.gfw.nn.kg
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 18 #1'
-  network: ws
-  port: 443
-  server: 192.0.54.244
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 19
-  network: ws
-  port: 443
-  server: 162.159.153.194
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 20
-  network: ws
-  port: 18888
-  server: 218.38.36.6
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 21 #1'
-  network: ws
-  port: 2053
-  server: 103.231.72.6
-  servername: snippet.fgfw.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.indevs.in
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 22
-  network: ws
-  port: 443
-  server: 192.0.54.154
-  servername: snippet.gfw.nn.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.gfw.nn.kg
-    path: /danfeng
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 23
-  network: ws
-  port: 17750
-  server: 173.249.210.53
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 24
-  network: ws
-  port: 443
-  server: 18.153.83.62
-  servername: snippet.gfw.nn.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.gfw.nn.kg
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 25 #1'
-  network: ws
-  port: 19014
-  server: 203.170.125.48
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 26 #1'
-  network: ws
-  port: 2053
-  server: 65.109.185.214
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 27 #1'
-  network: ws
-  port: 443
-  server: 91.99.159.214
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 28 #1'
-  network: ws
-  port: 443
-  server: 51.91.249.37
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 29
-  network: ws
-  port: 8443
-  server: 65.109.240.190
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 30 #1'
-  network: ws
-  port: 443
-  server: 198.41.214.105
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 31
-  network: ws
-  port: 443
-  server: 65.21.224.102
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 32
-  network: ws
-  port: 443
-  server: 91.107.155.13
-  servername: snippet.sheilabelinda.ndjp.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.sheilabelinda.ndjp.net
-    path: /danfeng
-- client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 33 #1'
-  network: ws
-  port: 8443
-  server: 51.38.227.155
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 34
-  network: ws
-  port: 443
-  server: 57.128.182.234
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 35 #1'
-  network: ws
-  port: 2053
-  server: 154.92.9.31
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 36
-  network: ws
-  port: 2053
-  server: 45.142.115.186
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 37 #1'
-  network: ws
-  port: 10001
-  server: 115.20.195.214
-  servername: snippet.fgfw.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.indevs.in
-    path: /danfeng
-- client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 38 #1'
-  network: ws
-  port: 8443
-  server: 143.20.213.184
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 39 #1'
-  network: ws
-  port: 2053
-  server: 37.1.201.53
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 40
-  network: ws
-  port: 28017
-  server: 38.83.41.89
-  servername: snippet.gfw.nn.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.gfw.nn.kg
-    path: /danfeng
-- client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 41 #1'
-  network: ws
-  port: 8443
-  server: 162.19.243.106
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: chrome
-  name: 566|🇸🇬 新加坡 | SGP 42
-  network: ws
-  port: 443
-  server: www.investec.com
-  servername: sd1lznov9.chinam.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: sd1lznov9.chinam.indevs.in
-    path: /danfeng?ed=2560
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 43
-  network: ws
-  port: 4443
-  server: 23.94.217.14
-  servername: snippet.gfw.nn.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.gfw.nn.kg
-    path: /danfeng
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 44
-  network: ws
-  port: 443
-  server: 5.255.118.176
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 45
-  network: ws
-  port: 2087
-  server: 154.92.9.9
+  server: 149.28.8.119
   servername: snippet.fgfw.ndjp.net
   tls: true
   type: vless
@@ -8565,10 +8187,58 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 46 #1'
+  name: 566|🇸🇬 新加坡 | SGP 17
+  network: ws
+  port: 587
+  server: 142.171.233.93
+  servername: snippet.fgfw.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ndjp.net
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 18 #1'
   network: ws
   port: 443
-  server: 34.143.159.175
+  server: 38.180.218.80
+  servername: snippet.fgfw.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ndjp.net
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 19
+  network: ws
+  port: 39738
+  server: 35.94.126.150
+  servername: snippet.gfw.nn.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.gfw.nn.kg
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 20
+  network: ws
+  port: 443
+  server: 192.0.54.24
   servername: snippet.fgfw.indevs.in
   tls: true
   type: vless
@@ -8577,118 +8247,420 @@ proxies:
   ws-opts:
     headers:
       Host: snippet.fgfw.indevs.in
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 21 #1'
+  network: ws
+  port: 443
+  server: 166.1.221.169
+  servername: snippet.fgfw.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ndjp.net
+    path: /danfeng
+- client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 22
+  network: ws
+  port: 28425
+  server: 192.210.143.111
+  servername: snippet.fgfw.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+    path: /danfeng
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 566|🇸🇬 新加坡 | SGP 23
+  network: tcp
+  port: 30403
+  reality-opts:
+    public-key: avy1Z524LLGhXuHyCYV_k_hqi_fnHPCNSdNE85Z4qDo
+    short-id: 1b3f5a2e
+  server: freea.glyphara.com
+  servername: www.samsung.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f8d91e61-01c4-4aa8-bcb6-b274e9f74266
+- client-fingerprint: chrome
+  name: 566|🇸🇬 新加坡 | SGP 24
+  network: ws
+  port: 443
+  server: cf.cloudflare.182682.xyz
+  servername: xei0vyob6y0o.chinat.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: xei0vyob6y0o.chinat.indevs.in
+    path: /danfeng?ed=2560
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 25 #1'
+  network: ws
+  port: 443
+  server: 193.32.176.44
+  servername: snippet.fgfw.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ndjp.net
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 26 #1'
+  network: ws
+  port: 11965
+  server: 61.83.8.8
+  servername: snippet.fgfw.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.indevs.in
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 27 #1'
+  network: ws
+  port: 39738
+  server: 38.75.220.66
+  servername: snippet.fgfw.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 28 #1'
+  network: ws
+  port: 8443
+  server: 143.20.213.237
+  servername: snippet.fgfw.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+    path: /danfeng
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 29
+  network: ws
+  port: 29090
+  server: 121.181.223.216
+  servername: snippet.fgfw.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ndjp.net
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 30 #1'
+  network: ws
+  port: 443
+  server: 142.111.77.179
+  servername: snippet.gfw.nn.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.gfw.nn.kg
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 31
+  network: ws
+  port: 39738
+  server: 103.214.168.247
+  servername: snippet.fgfw.de5.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.de5.net
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 32
+  network: ws
+  port: 443
+  server: 192.0.63.24
+  servername: snippet.fgfw.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+    path: /danfeng
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 33 #1'
+  network: ws
+  port: 2096
+  server: 45.202.113.79
+  servername: snippet.fgfw.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ndjp.net
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 34
+  network: ws
+  port: 443
+  server: 192.0.54.156
+  servername: snippet.fgfw.de5.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.de5.net
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 35 #1'
+  network: ws
+  port: 39738
+  server: 152.69.201.80
+  servername: snippet.fgfw.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 36
+  network: ws
+  port: 443
+  server: 38.180.113.22
+  servername: snippet.fgfw.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.indevs.in
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 37 #1'
+  network: ws
+  port: 443
+  server: 194.113.37.213
+  servername: snippet.fgfw.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.indevs.in
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 38 #1'
+  network: ws
+  port: 443
+  server: 192.210.133.140
+  servername: snippet.fgfw.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ndjp.net
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 39 #1'
+  network: ws
+  port: 443
+  server: 104.238.180.123
+  servername: snippet.fgfw.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.indevs.in
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 40
+  network: ws
+  port: 20205
+  server: 192.46.234.80
+  servername: snippet.fgfw.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 41 #1'
+  network: ws
+  port: 35342
+  server: 121.146.206.172
+  servername: snippet.fgfw.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ndjp.net
+    path: /danfeng
+- client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 42
+  network: ws
+  port: 8443
+  server: 51.79.158.58
+  servername: snippet.fgfw.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 43
+  network: ws
+  port: 443
+  server: 192.0.63.208
+  servername: snippet.fgfw.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.indevs.in
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 44
+  network: ws
+  port: 8443
+  server: 62.60.216.29
+  servername: snippet.fgfw.de5.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.de5.net
+    path: /danfeng
+- client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 45
+  network: ws
+  port: 2053
+  server: 45.153.187.209
+  servername: snippet.fgfw.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '566|🇸🇬 新加坡 | SGP 46 #1'
+  network: ws
+  port: 8443
+  server: 143.20.207.149
+  servername: snippet.fgfw.de5.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.de5.net
     path: /danfeng
 - alpn:
   - http/1.1
   client-fingerprint: random
   name: '566|🇸🇬 新加坡 | SGP 47 #1'
   network: ws
-  port: 2053
-  server: 23.95.215.205
-  servername: snippet.gfw.nn.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.gfw.nn.kg
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 48
-  network: ws
   port: 443
-  server: 192.0.54.165
-  servername: snippet.gfw.nn.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.gfw.nn.kg
-    path: /danfeng
-- client-fingerprint: random
-  name: '566|🇸🇬 新加坡 | SGP 49 #1'
-  network: ws
-  port: 8443
-  server: 143.20.213.22
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 50
-  network: ws
-  port: 8443
-  server: 95.164.2.113
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 51
-  network: ws
-  port: 26470
-  server: 59.187.74.76
-  servername: snippet.sheilabelinda.ndjp.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.sheilabelinda.ndjp.net
-    path: /danfeng
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 52
-  network: ws
-  port: 8443
-  server: 87.98.235.90
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 53
-  network: ws
-  port: 443
-  server: 88.198.82.146
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 54
-  network: ws
-  port: 443
-  server: 192.0.54.136
+  server: 163.192.47.170
   servername: snippet.fgfw.indevs.in
   tls: true
   type: vless
@@ -8698,59 +8670,123 @@ proxies:
     headers:
       Host: snippet.fgfw.indevs.in
     path: /danfeng
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 55
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 48
   network: ws
   port: 8443
-  server: 45.137.64.10
-  servername: snippet.fgfw.ye.gs
+  server: 143.20.213.206
+  servername: snippet.fgfw.indevs.in
   tls: true
   type: vless
   udp: true
   uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
   ws-opts:
     headers:
-      Host: snippet.fgfw.ye.gs
+      Host: snippet.fgfw.indevs.in
     path: /danfeng
 - alpn:
-  - http/1.1
+  - http%2F1.1
   client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 56
-  network: ws
-  port: 2053
-  server: 5.187.6.30
-  servername: snippet.sheilabelinda.ndjp.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.sheilabelinda.ndjp.net
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 57
-  network: ws
-  port: 4433
-  server: 45.76.68.224
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 58
+  name: '566|🇸🇬 新加坡 | SGP 49 #1'
   network: ws
   port: 443
-  server: 195.20.208.72
+  server: 204.44.125.34
+  servername: snippet.gfw.nn.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.gfw.nn.kg
+    path: /danfeng
+- client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 50
+  network: ws
+  port: 14444
+  server: 116.202.1.107
+  servername: snippet.fgfw.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 51
+  network: ws
+  port: 51198
+  server: 103.69.129.71
+  servername: snippet.fgfw.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ndjp.net
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 52
+  network: ws
+  port: 20475
+  server: 64.49.44.104
+  servername: snippet.fgfw.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.indevs.in
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 53
+  network: ws
+  port: 443
+  server: 172.245.232.173
+  servername: snippet.fgfw.de5.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.de5.net
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 54
+  network: ws
+  port: 8005
+  server: 35.212.188.55
+  servername: snippet.fgfw.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ndjp.net
+    path: /danfeng
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: 566|🇸🇬 新加坡 | SGP 55
+  network: ws
+  port: 443
+  server: 192.0.54.251
   servername: snippet.fgfw.ndjp.net
   tls: true
   type: vless
@@ -8762,17 +8798,17 @@ proxies:
     path: /danfeng
 - alterId: 0
   cipher: auto
-  name: '568|🇸🇬 新加坡 | SGP #3'
+  name: '568|🇸🇬 新加坡 | SGP #2'
   network: ws
-  port: '51515'
-  server: sd78sf2kdpx5s.e7mbqhx.com
-  tls: false
+  port: '20911'
+  server: abc.gaogroup.bid
+  tls: true
   type: vmess
-  uuid: 468adffb-301b-3df5-8a12-69dbb4ec750e
+  uuid: ddd57817-cc09-44da-a29a-efbbd8ffa0d4
   ws-opts:
     headers:
-      Host: sd78sf2kdpx5s.e7mbqhx.com
-    path: /564dfa20/
+      Host: abc.gaogroup.bid
+    path: /yefq
 - alterId: 0
   name: 574|🇸🇬SG新加坡2
   password: BxceQaOe
