@@ -596,7 +596,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-51.77.158.169-3525 #1'
+  name: '378,536,537|🇷FR-51.77.158.169-3525 #1'
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -843,7 +843,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-146.59.55.50-6922 #1'
+  name: '378,536,537|🇷FR-146.59.55.50-6922 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1727,7 +1727,7 @@ proxies:
       Host: lax1.ibgfw.top
     path: /xrenvws
 - cipher: rc4-md5
-  name: 489,553|yandex-367
+  name: 489,553|yandex-774
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -1738,7 +1738,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 489,553|yandex-374
+  name: 489,553|yandex-781
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -1748,6 +1748,42 @@ proxies:
   server: efan9863.dns8656815.com
   type: ss
   udp: true
+- name: 507|FR VLESS-43 | free-nodes
+  network: ws
+  port: 80
+  server: fsdns.ectunnelvpn.me
+  tls: false
+  type: vless
+  uuid: 15cbab96-197e-46a5-9042-073b3980c798
+  ws-opts:
+    headers:
+      Host: fsdns.ectunnelvpn.me
+    path: /vless
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507,559,580|FR VLESS-52 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
+    short-id: 9c2378562188c3cb
+  server: fr.denditop.site
+  servername: fr.denditop.site
+  tls: false
+  type: vless
+  uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
+- client-fingerprint: chrome
+  name: 507,559,580|FR VLESS-76 | free-nodes
+  network: tcp
+  port: 61873
+  reality-opts:
+    public-key: wEU32qHhiQq-FDYUvuEl7_HAM6r5nDh6M4F8WGnEhjE
+    short-id: 34d8e80d8fa40501
+  server: 45.95.233.85
+  servername: yandex.ru
+  tls: false
+  type: vless
+  uuid: 8b8f4dfb-cd48-4dab-bb75-b304971176cd
 - alterId: 2
   cipher: auto
   country: 🇨🇳CN
@@ -1852,6 +1888,15 @@ proxies:
     headers:
       Host: sub.mot.ip-ddns.com
     path: '%2F'
+- name: '559|🇫🇷_法国 #2'
+  network: ws
+  port: 80
+  server: ov-france1.09vpn.com
+  tls: false
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  ws-opts:
+    path: '%2Fvless%2F'
 - name: 559|🇫🇷 法国 | FRA-2
   network: ws
   port: 2053
@@ -2072,6 +2117,15 @@ proxies:
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     path: '%2F'
+- name: '559|🇫🇷_法国 #8'
+  network: ws
+  port: 80
+  server: ov-germany1.09vpn.com
+  tls: false
+  type: vless
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  ws-opts:
+    path: '%2Fvless%2F'
 - client-fingerprint: chrome
   name: 559|FR VLESS-104 | free-nodes
   network: tcp
@@ -2095,27 +2149,31 @@ proxies:
   uuid: de73ea62-68e4-45e2-8cc3-87c6d4b23aa0
 - alterId: 0
   cipher: auto
-  name: 566|🇫🇷 法国 | FRA
-  port: 64092
-  server: pub.ap20260228.com
+  name: 559|法国_031404765
+  network: tcp
+  port: '550'
+  server: 162.19.248.238
+  servername: ''
   tls: false
   type: vmess
-  udp: true
-  uuid: a739e782-1682-38a5-9153-aad09d779ae9
-- client-fingerprint: chrome
-  name: 566|🇫🇷 法国 | FRA 2
-  network: ws
-  port: 2096
-  server: 185.16.110.238
-  servername: sni.jpmj.dev
+  uuid: ede27a79-b039-490b-932c-495de4b68880
+- name: 566|🇫🇷 法国 | FRA
+  password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+  port: 3246
+  server: 82699266-tbytc0-tdeulp-b4pt.h2frdc1.cdnbytescm.com
   tls: true
+  type: http
+  username: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+- name: 566|🇫🇷 法国 | FRA 2
+  network: ws
+  port: 443
+  server: 155.117.5.181
+  tls: false
   type: vless
   udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: f62095b5-6e82-43b1-8d79-1358bbeffc62
   ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: /?ed
+    path: /@FeriVP/@FeriVP/@FeriVP
 - alterId: 2
   cipher: auto
   name: 566|🇫🇷 法国 | FRA 3
@@ -2126,13 +2184,6 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 566|🇫🇷 法国 | FRA 4
-  password: e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9
-  port: 443
-  server: 285879b4-tby740-tdd7ea-19xg1.fr.oshuawei.com
-  tls: true
-  type: http
-  username: e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
@@ -2179,6 +2230,30 @@ proxies:
   tls: false
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
+- name: 580|FR VLESS-42 | free-nodes
+  network: ws
+  port: 80
+  server: fsdns.ectunnelvpn.me
+  tls: false
+  type: vless
+  uuid: 15cbab96-197e-46a5-9042-073b3980c798
+  ws-opts:
+    headers:
+      Host: fsdns.ectunnelvpn.me
+    path: '%2Fvless'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 580|FR VLESS-61 | free-nodes
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: fuck.rkn
+  tls: false
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - alpn:
   - h3
   auth-str: dongtaiwang.com
