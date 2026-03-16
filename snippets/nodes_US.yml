@@ -236,7 +236,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '255,558|12,13|美国|@ripaojiedian #1'
+  name: 255,558|12,13|美国|@ripaojiedian
   network: ws
   port: 30808
   server: v8.heduian.link
@@ -251,7 +251,7 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: aes-256-cfb
-  name: '306,378,515,516,537,556,579,582|8元老牌专线机场：cczzuu.top #4'
+  name: '306,378,515,516,537,548,556,579,582|8元老牌专线机场：cczzuu.top #6'
   password: amazonskr05
   port: 443
   server: 63.180.254.10
@@ -295,28 +295,6 @@ proxies:
     headers:
       Host: epge.muarua.filegear-sg.me
     path: /?ed=2560
-- alpn:
-  - h3%2Ch2%2Chttp%2F1.1
-  name: '306,502,559|US80｜机房｜低风险 #1'
-  network: ws
-  password: 823cbccd-3a71-4248-ac3c-3c460de1552d
-  port: 443
-  server: 172.64.53.190
-  skip-cert-verify: true
-  sni: snll667.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: snll667.pages.dev
-    path: '%2F'
-- name: '306,378,502,536,537,559|US146｜机房｜低风险 #1'
-  network: tcp
-  password: af4b064a9c39472fb34ad8b113acdc6b
-  port: 443
-  server: 194.33.45.157
-  skip-cert-verify: true
-  sni: 194.33.45.157
-  type: trojan
 - name: '321,322,323|美国03 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -333,6 +311,28 @@ proxies:
   server: us004.421421.xyz
   skip-cert-verify: true
   sni: www.alibaba.com
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '340,378,536,537,538,559,574,580|🇺🇸 美国|@stairnode #6'
+  network: tcp
+  password: f389ed926e512e15f382dc3804029474
+  port: 4019
+  server: 153.121.65.107
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '340,378,536,537,538,559,574,580|🇺🇸 美国2|@stairnode #6'
+  network: tcp
+  password: f389ed926e512e15f382dc3804029474
+  port: 4019
+  server: 160.16.130.21
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tls: true
   type: trojan
   udp: true
 - cipher: aes-128-gcm
@@ -417,8 +417,8 @@ proxies:
   server: 139.64.165.101
   type: ss
 - cipher: aes-128-gcm
-  country: 🇸 US
-  name: 356,357,378,435,537,538|🇺🇸US-156.146.38.167-0196 | 117...
+  country: 🇺🇸US
+  name: 356,357,378,537,538,548|🇺🇸US_105
   password: shadowsocks
   port: 443
   server: 156.146.38.167
@@ -671,11 +671,12 @@ proxies:
   server: 169.197.142.187
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538|🇺🇸US-37.19.198.236-0193 | 108....
+  name: 356,357,378,537,538,548|_08
   password: shadowsocks
   port: 443
   server: 37.19.198.236
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 356|🇺🇸49 |  1.1MB/s
   password: cdBIDV42DCwnfIN
@@ -984,14 +985,15 @@ proxies:
   server: 38.121.43.71
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538|🇺🇸US-156.146.38.169-0197 | 175...
+  country: 🇺🇸US
+  name: 356,357,378,537,538,548|🇺🇸US_111
   password: shadowsocks
   port: 443
   server: 156.146.38.169
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 356,357,378,435,537,538|🇺🇸US-156.146.38.170-0195 | 220...
+  country: 🇺🇸US
+  name: 356,357,378,537,538,548|🇺🇸US_109
   password: shadowsocks
   port: 443
   server: 156.146.38.170
@@ -1048,7 +1050,8 @@ proxies:
   server: 169.197.142.187
   type: ss
 - cipher: aes-128-gcm
-  name: 356,378,537,538|🇺🇸US-173.244.56.6-0199 | 62.33...
+  country: 🇺🇸US
+  name: '356,378,537,538,548|disney_netflix_US #3'
   password: shadowsocks
   port: 443
   server: 173.244.56.6
@@ -1144,7 +1147,8 @@ proxies:
   server: 107.151.182.253
   type: ss
 - cipher: chacha20-ietf
-  name: 356|🇺🇸119 |  8.9MB/s
+  country: 🇭🇰HK
+  name: 356,548|🇭🇰HK_46
   password: asd123456
   port: 8388
   server: 103.36.91.23
@@ -2381,13 +2385,15 @@ proxies:
       Host: 68.183.129.197
     path: /cctv13/hd.m3u8
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇺🇸US-173.234.29.2-0201 | 75.18...
+  country: 🇺🇸US
+  name: '378,537,538,548|disney_netflix_US #2'
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 173.234.29.2
   type: ss
 - cipher: aes-256-cfb
-  name: 378,537,538|🇺🇸US-104.192.226.106-0198 | 55...
+  country: 🇺🇸US
+  name: '378,537,538,548|disney_netflix_US #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 104.192.226.106
@@ -2439,7 +2445,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   country: 🏁 ZZ
   delay: 1530
-  name: 378,435,475,476,480,481,528,537,538,574|🇺🇸US美国4 92.8KB/s
+  name: 378,475,476,480,481,528,537,538,548,574|🇺🇸US美国4 92.8KB/s
   password: hbGrpfvNrJsUmKmPbR3iY2
   port: 443
   server: tinkered-pennies-puppies.freesocks.work
@@ -2905,7 +2911,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: '378,536,537,544,559,575|VMESS-美国-NF解锁自制剧-ChatGPT-TikTo... #4'
+  name: '378,536,537,544,548,559,575|VMESS-美国-NF解锁自制剧-ChatGPT-TikTo... #4'
   network: ws
   port: 443
   server: 209.126.84.189
@@ -4038,6 +4044,58 @@ proxies:
   server: 20.163.90.12
   skip-cert-verify: false
   sni: paydiu.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 378,536,537,559|ID16｜家宽｜非常安全
+  network: ws
+  port: '443'
+  server: 38.55.194.138
+  servername: mn1ray.jagoanvip.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 462d9694-62b5-4781-a287-61a422b920e8
+  ws-opts:
+    headers:
+      Host: mn1ray.jagoanvip.xyz
+    path: /vvip
+- alterId: 0
+  cipher: auto
+  name: 378,536,537,559|ID22｜家宽｜非常安全
+  network: ws
+  port: '443'
+  server: 38.55.193.19
+  servername: mn1ray.jagoanvip.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 462d9694-62b5-4781-a287-61a422b920e8
+  ws-opts:
+    headers:
+      Host: mn1ray.jagoanvip.xyz
+    path: /vvip
+- alterId: 0
+  cipher: auto
+  name: 378,536,537,559|ID23｜家宽｜非常安全
+  network: ws
+  port: '443'
+  server: 38.55.193.78
+  servername: mn1ray.jagoanvip.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 462d9694-62b5-4781-a287-61a422b920e8
+  ws-opts:
+    headers:
+      Host: mn1ray.jagoanvip.xyz
+    path: /vvip
+- name: 378,536,537,559|US146｜机房｜低风险
+  password: af4b064a9c39472fb34ad8b113acdc6b
+  port: 443
+  server: 194.33.45.157
+  skip-cert-verify: true
+  sni: 194.33.45.157
   type: trojan
 - name: '378,536,537|🇸US-158.101.11.204-1749 #1'
   password: iwangjie
@@ -5553,22 +5611,18 @@ proxies:
   uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
   ws-opts:
     path: /
-- country: 🇺🇸 US
-  name: '378,435,436,536,537|🇺🇸US-143.198.100.3-4702 #1'
+- name: '378,436,536,537|🇺🇸US-143.198.100.3-4702 #1'
   password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
   port: 443
   server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.9d8f269f96b25232-759cbb36d6548597.kaufen
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇸 US
-  name: '378,435,436,536,537|🇸US-154.17.24.29-4703 #1'
+- name: '378,436,536,537|🇸US-154.17.24.29-4703 #1'
   password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
   port: 443
   server: 154.17.24.29
   skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: aes-192-ctr
   name: '378,536,537|🇸US-45.56.82.63-4894 #1'
   obfs: tls1.2_ticket_auth
@@ -5615,13 +5669,15 @@ proxies:
   uuid: 2c1807ce-6a63-4451-9add-a778d2507160
   ws-opts:
     path: /arki?ed=2048
-- name: '378,537|🇸US-64.94.95.118-4907 #1'
+- country: 🇺🇸US
+  name: 378,537,548|Pool_🇺🇸US_119
   password: kkzh2prsyr2ik47as615
   port: 57142
   server: 64.94.95.118
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: 64.94.95.118
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: '378,537|🇸US-172.96.160.250-4908 #1'
   obfs: http_simple
@@ -10619,7 +10675,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,536,537,558|12,13|美国3|@ripaojiedian #3'
+  name: 378,536,537,558|12,13|美国3|@ripaojiedian
   network: ws
   port: 30807
   server: v7.heduian.link
@@ -14517,112 +14573,17 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 435|🇸 US_85
+  name: 437,559|🇺🇸 US_96
   network: ws
   port: 443
-  server: n1753101272.lie5d.cyou
-  servername: n1753101272.lie5d.cyou
-  skip-cert-verify: true
+  server: n1761214908.wpg27.xyz
+  servername: ''
   tls: true
   type: vmess
-  uuid: 568a3e7a-c13e-4205-af30-e75ec3e5c778
-  ws-headers:
-    HOST: n1753101272.lie5d.cyou
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 435|🇸 US_86
-  network: ws
-  port: 443
-  server: cf.090227.xyz
-  servername: sgal.dagrate.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
-  ws-headers:
-    HOST: sgal.dagrate.eu.org
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 435|🇺🇸 US_87
-  network: ws
-  port: 443
-  server: n1753598452.wpg27.xyz
-  servername: n1753598452.wpg27.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
-  ws-headers:
-    HOST: n1753598452.wpg27.xyz
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 435|🇺🇸 US_88
-  network: ws
-  port: 443
-  server: n1761214912.wpg27.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4f86a909-836d-4643-b650-d812144a1fa9
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 435|🇸 US_89
-  network: ws
-  port: 443
-  server: 47.243.95.187
-  servername: n1761214906.wpg27.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
-  ws-headers:
-    HOST: n1761214906.wpg27.xyz
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: '435,437|🇺🇸 US_90 #1'
-  network: none
-  port: 27502
-  server: 216.238.87.47
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b8155ce4-7e08-4c40-800f-8671312b7124
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '437|🇺🇸 US_87 #1'
-  network: ws
-  port: 443
-  server: n1753598452.wpg27.xyz
-  tls: true
-  type: vmess
-  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
+  uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a
   ws-opts:
     headers:
-      Host: n1753598452.wpg27.xyz
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -14640,20 +14601,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 437|🇺🇸 US_89
-  network: ws
-  port: 443
-  server: 47.243.95.187
-  tls: true
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 437,548|🇺🇸 US_94
+  network: none
+  port: 27502
+  server: 216.238.87.47
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
-  ws-opts:
-    headers:
-      Host: n1761214906.wpg27.xyz
-    path: /
+  uuid: b8155ce4-7e08-4c40-800f-8671312b7124
 - alterId: 0
   cipher: auto
-  name: '438,459,472,473,474,502,544,559,580,717|US【机场推荐：https://a9a.xyz】3 #1'
+  name: '438,459,502,559,580,717|US【机场推荐：https://a9a.xyz】3 #1'
   network: tcp
   port: '6005'
   server: cn02.365cloud5878.com
@@ -14677,7 +14638,10 @@ proxies:
     path: /usavm
 - alterId: 0
   cipher: auto
-  name: 438,559,574|未知16 39.3MB/s
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 438,548,559,574|未知16 39.3MB/s
   network: tcp
   port: 443
   server: 165.140.216.141
@@ -14700,23 +14664,6 @@ proxies:
     headers:
       Host: tg.apocalypse.cc.cd
     path: /YsmRouA9ZbxgW4
-- cipher: aes-256-gcm
-  country: 🇸US
-  name: 440,566|🇨🇱 智利 | CHL
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 38.54.20.59
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 440|Relay_🇸US-🇺🇸US_09
-  obfs: http_simple
-  password: Uk92CS
-  port: 13000
-  protocol: auth_aes128_sha1
-  server: nm3.boom.party
-  type: ssr
 - name: 453|🇺🇸 美国|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 24673
@@ -14738,210 +14685,16 @@ proxies:
   skip-cert-verify: false
   sni: hsdgbuys.pages.dev
   type: trojan
+- name: 456,536,538,559|日本_031604016
+  password: f389ed926e512e15f382dc3804029474
+  port: 3057
+  server: 160.16.214.104
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '456,459,502,544,559,580,717|CN【机场推荐：https://a9a.xyz】4 #1'
-  network: tcp
-  port: '30812'
-  server: v12.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 64
-  cipher: auto
-  name: '456,459,472,473,474,502,544,559,580,717|HK【机场推荐：https://a9a.xyz】28 #1'
-  network: tcp
-  port: '52283'
-  server: 103.181.164.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '456,459,502,559,580,717|HK【机场推荐：https://a9a.xyz】46 #1'
-  network: tcp
-  port: '54022'
-  server: 103.181.164.145
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  name: '456,459,544,559,580|US美国(mibei77.com 米贝节点分享) #235'
-  network: tcp
-  port: '30808'
-  server: v8.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】33 #1'
-  network: tcp
-  port: '6032'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,574,580,717|US【机场推荐：https://a9a.xyz】1 #1'
-  network: tcp
-  port: '6012'
-  server: cn02.365cloud5878.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】31 #1'
-  network: tcp
-  port: '6044'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】38 #1'
-  network: tcp
-  port: '6047'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】7 #1'
-  network: tcp
-  port: '6030'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|CN【机场推荐：https://a9a.xyz】6 #1'
-  network: tcp
-  port: '30830'
-  server: v30.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: '459,472,473,474,502,544,559,580,717|US【机场推荐：https://a9a.xyz】30 #1'
-  network: tcp
-  port: '6034'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】34 #1'
-  network: tcp
-  port: '6026'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,472,473,474,502,544,559,580,717|US【机场推荐：https://a9a.xyz】44 #1'
-  network: tcp
-  port: '6022'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】36 #1'
-  network: tcp
-  port: '6016'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】37 #1'
-  network: tcp
-  port: '6014'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,472,473,474,502,544,559,580,717|US【机场推荐：https://a9a.xyz】11 #1'
-  network: tcp
-  port: '6050'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】40 #1'
-  network: tcp
-  port: '6042'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】41 #1'
-  network: tcp
-  port: '6020'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,472,473,474,544,559,580|AU澳大利亚(mibei77.com 米贝节点分享) #34'
-  network: tcp
-  port: '6024'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,472,473,474,502,544,559,580,717|US【机场推荐：https://a9a.xyz】35 #1'
-  network: tcp
-  port: '6049'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】12 #1'
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】12 #1'
   network: tcp
   port: '6035'
   server: cn02.365cloud5878.com
@@ -14951,9 +14704,9 @@ proxies:
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 0
   cipher: auto
-  name: '459,472,473,474,502,544,559,580,717|US【机场推荐：https://a9a.xyz】42 #1'
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】35 #1'
   network: tcp
-  port: '6037'
+  port: '6049'
   server: cn02.365cloud5878.com
   servername: ''
   tls: false
@@ -14961,9 +14714,9 @@ proxies:
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 0
   cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】8 #1'
+  name: '459,472,473,474,502,544,559,580,717|US【机场推荐：https://a9a.xyz】13 #1'
   network: tcp
-  port: '6009'
+  port: '6052'
   server: cn02.365cloud5878.com
   servername: ''
   tls: false
@@ -14971,9 +14724,19 @@ proxies:
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 0
   cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】29 #1'
+  name: '459,502,559,580,717|CN【机场推荐：https://a9a.xyz】4 #1'
   network: tcp
-  port: '6039'
+  port: '30812'
+  server: v12.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】23 #1'
+  network: tcp
+  port: '6046'
   server: cn02.365cloud5878.com
   servername: ''
   tls: false
@@ -14981,29 +14744,9 @@ proxies:
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 0
   cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】17 #1'
+  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】11 #1'
   network: tcp
-  port: '6021'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】19 #1'
-  network: tcp
-  port: '6028'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】39 #1'
-  network: tcp
-  port: '6010'
+  port: '6050'
   server: cn02.365cloud5878.com
   servername: ''
   tls: false
@@ -15011,7 +14754,7 @@ proxies:
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 2
   cipher: auto
-  name: '459,544,559,580|US美国(mibei77.com 米贝节点分享) #228'
+  name: '459,559,580|US美国(mibei77.com 米贝节点分享) #77'
   network: tcp
   port: '30836'
   server: v36.hdacd.com
@@ -15019,21 +14762,11 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: '459,544,559,580|US美国(mibei77.com 米贝节点分享) #248'
-  network: tcp
-  port: '30809'
-  server: v9.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: '459,502,717|US【机场推荐：https://a9a.xyz】47 #1'
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】31 #1'
   network: tcp
-  port: '6023'
+  port: '6044'
   server: cn02.365cloud5878.com
   servername: ''
   tls: false
@@ -15041,9 +14774,9 @@ proxies:
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 0
   cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】14 #1'
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】44 #1'
   network: tcp
-  port: '6007'
+  port: '6022'
   server: cn02.365cloud5878.com
   servername: ''
   tls: false
@@ -15051,39 +14784,9 @@ proxies:
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 0
   cipher: auto
-  name: '459,502,717|US【机场推荐：https://a9a.xyz】49 #1'
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】26 #1'
   network: tcp
-  port: '6038'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,717|US【机场推荐：https://a9a.xyz】48 #1'
-  network: tcp
-  port: '6019'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,472,473,474,502,544,559,717|US【机场推荐：https://a9a.xyz】2 #1'
-  network: tcp
-  port: '6043'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】10 #1'
-  network: tcp
-  port: '6040'
+  port: '6027'
   server: cn02.365cloud5878.com
   servername: ''
   tls: false
@@ -15101,9 +14804,9 @@ proxies:
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 0
   cipher: auto
-  name: '459,472,473,474,502,544,559,568,580,717|US【机场推荐：https://a9a.xyz】15 #1'
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】38 #1'
   network: tcp
-  port: '6029'
+  port: '6047'
   server: cn02.365cloud5878.com
   servername: ''
   tls: false
@@ -15111,9 +14814,9 @@ proxies:
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 0
   cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】26 #1'
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】21 #1'
   network: tcp
-  port: '6027'
+  port: '6031'
   server: cn02.365cloud5878.com
   servername: ''
   tls: false
@@ -15121,17 +14824,7 @@ proxies:
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 0
   cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】20 #1'
-  network: tcp
-  port: '6045'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】16 #1'
+  name: '459,472,473,474,502,559,580,717|US【机场推荐：https://a9a.xyz】16 #1'
   network: tcp
   port: '6017'
   server: cn02.365cloud5878.com
@@ -15141,29 +14834,9 @@ proxies:
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 0
   cipher: auto
-  name: '459,502,717|US【机场推荐：https://a9a.xyz】51 #1'
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】29 #1'
   network: tcp
-  port: '6015'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】32 #1'
-  network: tcp
-  port: '6033'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】23 #1'
-  network: tcp
-  port: '6046'
+  port: '6039'
   server: cn02.365cloud5878.com
   servername: ''
   tls: false
@@ -15182,9 +14855,59 @@ proxies:
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 0
   cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】21 #1'
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】39 #1'
   network: tcp
-  port: '6031'
+  port: '6010'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】40 #1'
+  network: tcp
+  port: '6042'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】42 #1'
+  network: tcp
+  port: '6037'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 2
+  cipher: auto
+  name: '459,559|🇨🇳_中国 #9'
+  network: tcp
+  port: '30824'
+  server: v24.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: '459,472,473,474,502,544,559,717|US【机场推荐：https://a9a.xyz】2 #1'
+  network: tcp
+  port: '6043'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】37 #1'
+  network: tcp
+  port: '6014'
   server: cn02.365cloud5878.com
   servername: ''
   tls: false
@@ -15201,26 +14924,270 @@ proxies:
   tls: false
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 2
+  cipher: auto
+  name: '459,559,580|US美国(mibei77.com 米贝节点分享) #84'
+  network: tcp
+  port: '30808'
+  server: v8.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】13 #1'
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】32 #1'
   network: tcp
-  port: '6052'
+  port: '6033'
   server: cn02.365cloud5878.com
   servername: ''
   tls: false
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,472,473,474,502,559,580,717|US【机场推荐：https://a9a.xyz】30 #1'
+  network: tcp
+  port: '6034'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】17 #1'
+  network: tcp
+  port: '6021'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】15 #1'
+  network: tcp
+  port: '6029'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,574,580,717|US【机场推荐：https://a9a.xyz】1 #1'
+  network: tcp
+  port: '6012'
+  server: cn02.365cloud5878.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 64
+  cipher: auto
+  name: '459,502,559,580,717|HK【机场推荐：https://a9a.xyz】46 #1'
+  network: tcp
+  port: '54022'
+  server: 103.181.164.145
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】8 #1'
+  network: tcp
+  port: '6009'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】19 #1'
+  network: tcp
+  port: '6028'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】36 #1'
+  network: tcp
+  port: '6016'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】7 #1'
+  network: tcp
+  port: '6030'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,717|US【机场推荐：https://a9a.xyz】48 #1'
+  network: tcp
+  port: '6019'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】14 #1'
+  network: tcp
+  port: '6007'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,472,473,474,502,544,559,580,717|US【机场推荐：https://a9a.xyz】33 #1'
+  network: tcp
+  port: '6032'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,717|US【机场推荐：https://a9a.xyz】47 #1'
+  network: tcp
+  port: '6023'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】10 #1'
+  network: tcp
+  port: '6040'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- name: '459|美国(yudou789.top 玉豆免费节点) #162'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  sni: epge.muarua.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epge.muarua.filegear-sg.me
+    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】20 #1'
+  network: tcp
+  port: '6045'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,717|US【机场推荐：https://a9a.xyz】51 #1'
+  network: tcp
+  port: '6015'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- name: '459|美国(yudou789.top 玉豆免费节点) #173'
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: russia.com
+  sni: vless4.vlessvless.top
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vless4.vlessvless.top
+    path: '%2Ftr%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,568,574,580,717|US【机场推荐：https://a9a.xyz】9 #1'
+  network: tcp
+  port: '6001'
+  server: cn02.365cloud5878.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 2
   cipher: auto
-  name: '459,559|🇨🇳_中国 #9'
+  name: '459,559,580|US美国(mibei77.com 米贝节点分享) #97'
   network: tcp
-  port: '30824'
-  server: v24.hdacd.com
+  port: '30809'
+  server: v9.hdacd.com
   servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: '459,502,717|US【机场推荐：https://a9a.xyz】49 #1'
+  network: tcp
+  port: '6038'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,559,580,717|US【机场推荐：https://a9a.xyz】34 #1'
+  network: tcp
+  port: '6026'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,502,544,559,580,717|US【机场推荐：https://a9a.xyz】41 #1'
+  network: tcp
+  port: '6020'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '459,472,473,474,502,544,559,580|AU澳大利亚(mibei77.com 米贝节点分享) #35'
+  network: tcp
+  port: '6024'
+  server: cn02.365cloud5878.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - name: 460|美国_洛杉矶
   network: ws
   password: NISHIKUITAN222
@@ -16718,8 +16685,22 @@ proxies:
     path: /dyajvws
 - alterId: 0
   cipher: auto
+  name: 472,473,474,559|未知_0316048308
+  network: ws
+  port: '80'
+  server: fbnhu.0wu.ccwu.cc
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
+  ws-opts:
+    headers:
+      Host: fbnhu.0wu.ccwu.cc
+    path: /y3ME81hpTJWwd4RJBAQ5Ah
+- alterId: 0
+  cipher: auto
   delay: 1713
-  name: 475,476,480,481,523,524,528,567,585|GB_speednode_0013
+  name: 475,476,480,481,523,524,528,548,567,585|GB_speednode_0013
   port: 180
   server: 82.198.246.97
   skip-cert-verify: true
@@ -16740,7 +16721,7 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
     path: /tro8sFW1S91B6sZrM1?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 475,476,480,481,538|🇳🇱NL-92.112.126.90-0330 | 0.02...
+  name: '475,476,480,481,538,548|US美国(mibei77.com 米贝节点分享) 32 #2'
   password: wwzVn2ZnHfqYa6l8EWh3eY
   port: 443
   server: switcher-nick-croquet.freesocks.work
@@ -16749,7 +16730,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🏁 ZZ
   delay: 2136
-  name: 475,476,480,481,528|荷兰 - 阿姆斯特丹 - 2
+  name: 475,476,480,481,528,548|FR法国(mibei77.com 米贝节点分享) 7
   password: RFK38Cg7APneSB5cWDcpbm
   port: 443
   server: switcher-nick-croquet.freesocks.work
@@ -16772,15 +16753,15 @@ proxies:
     path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
 - alterId: 0
   cipher: auto
-  name: '476,481,489,523,524|🇨🇳_中国_8 #1'
+  name: 476,481,489,523,524,548|US美国(mibei77.com 米贝节点分享) 80
   port: 30812
   server: v12.hdacd.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '476,481|US美国(mibei77.com 米贝节点分享) 4 #1'
+- name: 476,481,548|US美国(mibei77.com 米贝节点分享) 67
   password: trojan
   port: 8444
   server: 152.53.200.167
@@ -16963,15 +16944,17 @@ proxies:
   udp: true
   udp-over-tcp: true
 - cipher: chacha20-ietf-poly1305
-  name: '489|🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
+  name: 489,548|disney_netflix_US
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
     host: e7b7ab7:102816
     mode: tls
+    tls: false
   port: 2377
   server: 95.174.71.98
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '489|🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001... #10'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -17101,7 +17084,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 498|美国 CloudFlare节点
+  name: '498|美国 CloudFlare节点 #3'
   network: ws
   port: 2095
   server: 172.64.194.234
@@ -17114,7 +17097,7 @@ proxies:
     path: /hgcefomn
 - alterId: 0
   cipher: auto
-  name: '498|美国 CloudFlare节点 #1'
+  name: '498|美国 CloudFlare节点 #4'
   network: ws
   port: 8880
   server: 141.101.123.18
@@ -17127,7 +17110,7 @@ proxies:
     path: /qwer
 - alterId: 0
   cipher: auto
-  name: '498|美国 CloudFlare节点 #2'
+  name: '498|美国 CloudFlare节点 #5'
   network: ws
   port: 8080
   server: 198.41.218.144
@@ -17141,7 +17124,7 @@ proxies:
     path: /qwer01
 - alterId: 0
   cipher: auto
-  name: '498|美国 CloudFlare节点 #3'
+  name: '498|美国 CloudFlare节点 #6'
   network: ws
   port: 8080
   server: 162.159.241.157
@@ -17152,23 +17135,6 @@ proxies:
     headers:
       Host: ecc.vtcss.top
     path: /qwer01
-- alterId: 0
-  cipher: auto
-  name: '502,559,717|US【机场推荐：https://a9a.xyz】53 #1'
-  network: tcp
-  port: '6051'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- name: 507,536,538,559|日本_031604016
-  password: f389ed926e512e15f382dc3804029474
-  port: 3057
-  server: 160.16.214.104
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '513,517,578|1,6|🇺🇸_US_美国 #7 #2'
@@ -17714,17 +17680,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: ff58957a-1e66-3aab-92fc-ead2a1d66586
-- alterId: 0
-  name: '544,559,574|🇺🇸US美国10 #1'
-  password: trojan
-  port: 8443
-  server: 109.234.211.66
-  skip-cert-verify: true
-  sni: store.timimi.dpdns.org
-  tls: true
-  type: trojan
-  udp: true
+  uuid: a870d5d1-8778-3f06-b9e9-4232252c9d22
 - alterId: 0
   name: 544,559,574|🇺🇸US美国11
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
@@ -17747,6 +17703,391 @@ proxies:
   server: 45.83.140.22
   skip-cert-verify: true
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) #11'
+  port: 6027
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 2 #2'
+  port: 6020
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 8 #2'
+  port: 6009
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 11 #2'
+  port: 6007
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 12 #2'
+  port: 6022
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 16 #2'
+  port: 6030
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 17 #2'
+  port: 6024
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 18 #2'
+  port: 6026
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- name: '548|US美国(mibei77.com 米贝节点分享) 39 #2'
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 20 #2'
+  port: 6039
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 21 #2'
+  port: 6018
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548,567,585|CN_speednode_0010
+  port: 6029
+  server: cn02.365cloud5878.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 25 #2'
+  port: 6012
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 26 #2'
+  port: 6042
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 2
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 27 #2'
+  port: 30836
+  server: v36.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 28 #2'
+  port: 6045
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 35 #2'
+  port: 6041
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 37 #2'
+  port: 6036
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 40 #2'
+  port: 6035
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: '548|US美国(mibei77.com 米贝节点分享) 41 #2'
+  port: 6017
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 42
+  port: 6050
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 43
+  port: 6044
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 44
+  port: 6034
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 46
+  port: 6040
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 48
+  port: 6047
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 53
+  port: 6021
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 54
+  port: 6031
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 64
+  port: 6028
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 65
+  port: 6032
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 66
+  port: 6014
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 68
+  port: 6037
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 70
+  port: 6046
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- cipher: aes-256-gcm
+  name: 548|US美国(mibei77.com 米贝节点分享) 71
+  password: UcbtKq1aPi88
+  port: 8388
+  server: 192.124.176.95
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 74
+  port: 6010
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 76
+  port: 6033
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  name: 548|US美国(mibei77.com 米贝节点分享) 79
+  port: 6016
+  server: cn02.365cloud5878.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 548,559,574|未知9 34.0MB/s
+  network: tcp
+  port: 14102
+  server: 172.233.229.91
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 27ba87fc-583f-4763-9060-83cf0b9264db
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 548|Relay_🇺🇸US-🇺🇸US_118
+  network: ws
+  port: 443
+  server: v2ray.codefyinc.com
+  servername: v2ray.codefyinc.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  ws-opts:
+    headers:
+      HOST: v2ray.codefyinc.com
+    path: /vmessws
 - cipher: chacha20-ietf-poly1305
   name: 558|🇸_US_美国
   password: DLW8QqdfAvfUHSeucMIF4E
@@ -17918,6 +18259,20 @@ proxies:
   server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.9d8f269f96b25232-759cbb36d6548597.kaufen
   sni: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.9d8f269f96b25232-759cbb36d6548597.kaufen
   type: trojan
+- alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  name: 559|US80｜机房｜低风险
+  network: ws
+  password: 823cbccd-3a71-4248-ac3c-3c460de1552d
+  port: 443
+  server: 172.64.53.190
+  skip-cert-verify: true
+  sni: snll667.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snll667.pages.dev
+    path: '%2F'
 - name: '559,580|美國 #4'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -17936,7 +18291,7 @@ proxies:
   server: hinet.mjt000.com
   sni: hinet.mjt000.com
   type: trojan
-- name: '559|🇺🇸 美国3|@stairnode #3'
+- name: '559|🇺🇸 美国3|@stairnode #4'
   password: BxceQaOe
   port: 45947
   server: 95.40.28.8
@@ -17963,20 +18318,40 @@ proxies:
   server: usla.mjt000.com
   sni: usla.mjt000.com
   type: trojan
-- name: '559|🇺🇸 美国2|@stairnode #3'
+- name: '559|🇺🇸 美国2|@stairnode #4'
   password: f389ed926e512e15f382dc3804029474
   port: 4920
   server: 18.181.152.121
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '559|🇺🇸 美国|@stairnode #3'
+- name: '559|🇺🇸 美国|@stairnode #4'
   password: f389ed926e512e15f382dc3804029474
   port: 4019
   server: 52.68.61.114
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- alterId: 0
+  name: 559,574|🇸ES
+  password: trojan
+  port: 2087
+  server: 109.234.211.66
+  skip-cert-verify: true
+  sni: store.timimi.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '559,574|🇺🇸US美国10 #1'
+  password: trojan
+  port: 8443
+  server: 109.234.211.66
+  skip-cert-verify: true
+  sni: store.timimi.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
 - name: 559|美国 - 东洛杉矶 - 3
   password: trojan
   port: 54321
@@ -17997,7 +18372,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '559|美国 CloudFlare节点 #4'
+  name: '559|美国 CloudFlare节点 #7'
   network: ws
   port: '8443'
   server: hwtqcp.uhomdex.shop
@@ -18010,7 +18385,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '559|🇺🇸_US_美国 #16'
+  name: '559|🇺🇸_US_美国 #18'
   network: ws
   port: 8080
   server: 104.19.58.60
@@ -18023,7 +18398,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '559|🇺🇸_US_美国 #17'
+  name: '559|🇺🇸_US_美国 #19'
   network: ws
   port: 80
   server: 104.21.75.246
@@ -18036,7 +18411,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '559|🇺🇸_US_美国 #18'
+  name: '559|🇺🇸_US_美国 #20'
   network: ws
   port: 2082
   server: 206.168.190.219
@@ -18047,7 +18422,7 @@ proxies:
     path: /vmws
 - alterId: 64
   cipher: auto
-  name: '559|🇺🇸_US_美国 #19'
+  name: '559|🇺🇸_US_美国 #21'
   network: ws
   port: 30000
   server: 45.199.138.186
@@ -18060,7 +18435,7 @@ proxies:
     path: /path/1696682720138
 - alterId: 0
   cipher: auto
-  name: '559|🇺🇸_US_美国 #20'
+  name: '559|🇺🇸_US_美国 #22'
   network: ws
   port: 2052
   server: cfcdn1.sanfencdn9.com
@@ -18073,7 +18448,7 @@ proxies:
     path: /video/GQ2qE5Us9g
 - alterId: 0
   cipher: auto
-  name: '559|🇺🇸_US_美国 #21'
+  name: '559|🇺🇸_US_美国 #23'
   network: ws
   port: 80
   server: wnd2.shabijichang.com
@@ -18086,7 +18461,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '559|🇺🇸_US_美国 #22'
+  name: '559|🇺🇸_US_美国 #24'
   network: ws
   port: 80
   server: wnd3.shabijichang.com
@@ -18099,21 +18474,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 559|🇺🇸 US_96
-  network: ws
-  port: 443
-  server: n1761214908.wpg27.xyz
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '559|🇺🇸 US_93 #2'
+  name: 559|🇺🇸 US_93
   network: ws
   port: 443
   server: n1753101272.lie5d.cyou
@@ -18171,28 +18532,6 @@ proxies:
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - alterId: 0
   cipher: auto
-  name: 559,567,585|CN_speednode_0011
-  network: ''
-  port: 6019
-  server: cn02.365cloud5878.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
-  name: 559|美国_0316044990
-  network: ''
-  port: '6023'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- alterId: 0
-  cipher: auto
   name: 559|美国_0316044998
   network: ''
   port: '6038'
@@ -18202,19 +18541,29 @@ proxies:
   type: vmess
   uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
 - cipher: chacha20-ietf-poly1305
-  name: 566|🇺🇸 美国 | USA 4
-  password: 4f8b270a-8fb1-4d53-913c-772bf1587da9
-  port: 40063
-  server: slur.izenny.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 566|🇺🇸 美国 | USA 10
-  password: a02e6b74-95c0-4296-9c2c-64121e8634cc
+  name: 566|🇺🇸 美国 | USA 3
+  password: c83fd20e-80b6-4bcb-9ae0-5c05ea9a644d
   port: 47831
   server: jry.izenny.com
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 566|🇺🇸 美国 | USA 12
+  password: 30718cdf-4e51-4129-8db4-afa70e7f53dc
+  port: 40063
+  server: slur.izenny.com
+  type: ss
+  udp: true
+- name: 566|🇺🇸 美国 | USA 17
+  network: ws
+  password: e424dc45-7075-4355-aaa7-609ff2388ece
+  port: 443
+  server: us3.edge.blzstatic.online
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  ws-opts:
+    path: ''
 - alterId: 0
   name: 574|🇸US美国7
   password: BxceQaOe
