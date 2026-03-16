@@ -535,7 +535,7 @@ proxies:
       Host: download.windowsupdate.com
     path: /download
 - client-fingerprint: chrome
-  name: 127,426,489,523,524,566|🇯🇵 日本 | JPN 2
+  name: 127,426,489,523,524,553,566|🇯🇵 日本 | JPN 2
   network: ws
   port: 443
   server: 172.64.229.85
@@ -551,15 +551,36 @@ proxies:
       Host: r.icy.de5.net
     path: /?ed=2560
   xudp: true
-- name: '127,426|🇯🇵 JP_2|5.0MB/s|GPT⁺|YT-JP|D+|... #1'
-  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-  port: 32455
-  server: tokyo-ociee.faforex.eu.org
+- name: '127,426,523,524|_未知_14 #1'
+  network: ws
+  port: 443
+  server: 162.159.45.232
+  servername: r.icy.de5.net
   skip-cert-verify: true
-  sni: tokyo-ociee.faforex.eu.org
-  type: anytls
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+  ws-opts:
+    headers:
+      Host: r.icy.de5.net
+    path: /?ed=2560
+- name: '127,426,523,524|_未知_10 #1'
+  network: ws
+  port: 443
+  server: 162.159.38.78
+  servername: r.icy.de5.net
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+  ws-opts:
+    headers:
+      Host: r.icy.de5.net
+    path: /?ed=2560
 - client-fingerprint: chrome
-  name: '127,426,489|🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001... #28'
+  name: 127,426,489,553|yandex-653
   network: ws
   port: 443
   server: 172.64.229.165
@@ -573,10 +594,14 @@ proxies:
   ws-opts:
     headers:
       Host: r.icy.de5.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/54.0.2840.71 Safari/537.36
     path: /?ed=2560
   xudp: true
+- name: '127,426|JP_5|5.3MB/s|GPT⁺|NF|GM|3% #1'
+  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
+  port: 32455
+  server: tokyo-ociee.faforex.eu.org
+  skip-cert-verify: true
+  type: anytls
 - alterId: 0
   cipher: auto
   name: '128,430|日本NO.1 #2'
@@ -1233,22 +1258,25 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|🇯🇵 JP
+- name: 255|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
-- name: '306,378,454,502,507,514,515,516,537,544,548,551,556,557,579,580,582|🇭🇰 香港3|@stairnode
-    #7'
+- alterId: 0
+  name: '306,378,454,502,507,514,515,516,537,544,548,551,556,557,574,579,580,582|🇭🇰
+    香港3|@stairnode #7'
   network: tcp
   password: f389ed926e512e15f382dc3804029474
   port: 921
   server: 18.182.10.16
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '306,378,454,502,514,515,516,537,544,548,551,556,557,579,580,582|🇯🇵 日本|@stairnode
     #7'
   network: tcp
@@ -1258,7 +1286,8 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '306,378,454,502,514,515,516,537,544,548,551,556,557,579,580,582|🇯🇵 日本2|@stairnode
+- alterId: 0
+  name: '306,378,454,502,514,515,516,537,544,548,551,556,557,574,579,580,582|🇯🇵 日本2|@stairnode
     #8'
   network: tcp
   password: f389ed926e512e15f382dc3804029474
@@ -1266,8 +1295,11 @@ proxies:
   server: 57.180.28.65
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,378,454,502,514,515,516,537,544,548,551,556,557,579,580,582|🇯🇵 日本3|@stairnode
+  udp: true
+- alterId: 0
+  name: '306,378,454,502,514,515,516,537,544,548,551,556,557,574,579,580,582|🇯🇵 日本3|@stairnode
     #7'
   network: tcp
   password: f389ed926e512e15f382dc3804029474
@@ -1275,8 +1307,11 @@ proxies:
   server: 160.16.124.17
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,378,454,502,514,515,516,537,544,548,551,556,557,579,580,582|🇸🇬 新加坡|@stairnode
+  udp: true
+- alterId: 0
+  name: '306,378,454,502,514,515,516,537,544,548,551,556,557,574,579,580,582|🇸🇬 新加坡|@stairnode
     #8'
   network: tcp
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
@@ -1284,8 +1319,11 @@ proxies:
   server: 160.16.72.33
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,378,454,502,514,515,516,537,544,548,551,556,557,579,580,582|🇸🇬 新加坡2|@stairnode
+  udp: true
+- alterId: 0
+  name: '306,378,454,502,514,515,516,537,544,548,551,556,557,574,579,580,582|🇸🇬 新加坡2|@stairnode
     #7'
   network: tcp
   password: f389ed926e512e15f382dc3804029474
@@ -1293,8 +1331,11 @@ proxies:
   server: 54.238.113.186
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,378,454,502,514,515,516,537,544,548,551,556,557,579,580,582|🇺🇸 美国|@stairnode
+  udp: true
+- alterId: 0
+  name: '306,378,454,502,514,515,516,537,544,548,551,556,557,574,579,580,582|🇺🇸 美国|@stairnode
     #8'
   network: tcp
   password: f389ed926e512e15f382dc3804029474
@@ -1302,8 +1343,11 @@ proxies:
   server: 13.113.193.32
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,378,454,502,514,515,516,537,544,548,551,556,557,579,580,582|🇺🇸 美国2|@stairnode
+  udp: true
+- alterId: 0
+  name: '306,378,454,502,514,515,516,537,544,548,551,556,557,574,579,580,582|🇺🇸 美国2|@stairnode
     #8'
   network: tcp
   password: f389ed926e512e15f382dc3804029474
@@ -1311,7 +1355,9 @@ proxies:
   server: 13.115.145.176
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - client-fingerprint: firefox
   flow: ''
   grpc-opts:
@@ -1424,28 +1470,22 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- alterId: 0
-  name: '340,378,536,537,559,574,580|🇯🇵 日本2|@stairnode #6'
+- name: '340,378,536,537,559,580|🇯🇵 日本2|@stairnode #6'
   network: tcp
   password: f389ed926e512e15f382dc3804029474
   port: 4937
   server: 3.112.213.118
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: '340,378,536,537,559,574,580|🇯🇵 日本3|@stairnode #5'
+- name: '340,378,536,537,559,580|🇯🇵 日本3|@stairnode #5'
   network: tcp
   password: f389ed926e512e15f382dc3804029474
   port: 34818
   server: 57.181.29.108
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
 - name: 356|🇯🇵1 |  34.4MB/s
   network: ws
   password: bpb-trojan
@@ -2542,7 +2582,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇯🇵JP
-  name: 378,537,538,548|🇯🇵JP_53
+  name: 378,537,538,548|🇯🇵JP_56
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 172.105.199.111
@@ -2607,7 +2647,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇳IN
-  name: 378,537,538,548|🇮🇳IN_51
+  name: 378,537,538,548|🇮🇳IN_54
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 103.106.228.247
@@ -3655,6 +3695,40 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 435| JP_46
+  network: ws
+  port: 443
+  server: n1753598448.74qxv.top
+  servername: n1753598448.74qxv.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
+  ws-headers:
+    HOST: n1753598448.74qxv.top
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇯🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇵 JP_47
+  network: ws
+  port: 443
+  server: 47.74.52.195
+  servername: n1753598448.74qxv.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
+  ws-headers:
+    HOST: n1753598448.74qxv.top
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 437|🇯🇵 JP_47
   network: ws
   port: 443
@@ -3668,7 +3742,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '438,459,502,559,717|US【机场推荐：https://a9a.xyz】45 #1'
+  name: 438,459,502,559,717|US【机场推荐：https://a9a.xyz】46
   network: tcp
   port: '6003'
   server: cn02.365cloud5878.com
@@ -3708,9 +3782,9 @@ proxies:
   sni: jp.xn--ehqa22b.site
   tls: false
   type: hysteria2
-- client-fingerprint: random
+- client-fingerprint: chrome
   host: navi.bankrate.com
-  name: '438,489|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #5'
+  name: 438,489,553|yandex-318
   network: tcp
   path: /
   port: 443
@@ -3725,7 +3799,7 @@ proxies:
   type: vless
   uuid: bcc53d6e-4ff9-4e19-8145-7fbb298f2c56
 - client-fingerprint: chrome
-  name: 438,489|🟢🇯🇵[📺🎭🎪📦]_github.com/Ruk1ng001...
+  name: 438,489,553|yandex-316
   network: tcp
   port: 443
   reality-opts:
@@ -4431,7 +4505,7 @@ proxies:
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 64
   cipher: auto
-  name: 489|🟢🇯🇵[🧠📺🎭🎪]_github.com/Ruk1ng001...
+  name: 489,553|yandex-242
   port: 51556
   server: 103.181.164.145
   skip-cert-verify: false
@@ -4441,14 +4515,14 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489|🔴🇯🇵_github.com/Ruk1ng001_97a65...
+  name: 489,553|yandex-254
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 29000
   server: ss.054.node-for-bigairport.win
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 489|🟡🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001...
+  name: 489,553|yandex-262
   network: tcp
   password: da6f49ae-b0dd-4527-b993-ae6ec688000c
   port: 55044
@@ -4458,7 +4532,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001...
+  name: 489,553|yandex-268
   password: f7b73dc0-8fee-4f18-8095-4799dd721e85
   port: 48802
   server: jp2.network-cdn-gw-yd.net
@@ -4467,7 +4541,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: '489|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
+  name: 489,553|yandex-282
   network: tcp
   port: 31411
   reality-opts:
@@ -4483,7 +4557,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  name: 489,553|yandex-289
   network: tcp
   port: 31411
   reality-opts:
@@ -4497,7 +4571,7 @@ proxies:
   uuid: e788f7b2-aae8-4d97-9a6b-769b554b3f63
   xudp: true
 - client-fingerprint: chrome
-  name: '489|🟡🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  name: 489,553|yandex-292
   network: tcp
   password: da6f49ae-b0dd-4527-b993-ae6ec688000c
   port: 55043
@@ -4509,7 +4583,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
+  name: 489,553|yandex-293
   network: tcp
   port: 31411
   reality-opts:
@@ -4525,7 +4599,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+  name: 489,553|yandex-299
   network: tcp
   port: 31411
   reality-opts:
@@ -4539,14 +4613,14 @@ proxies:
   uuid: 8f68ee81-06d1-4e42-b9cd-61de25aa0f41
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001...
+  name: 489,553|yandex-300
   password: f7b73dc0-8fee-4f18-8095-4799dd721e85
   port: 48801
   server: jp01.network-cdn-gw-yd.net
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: '489|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #2'
+  name: 489,553|yandex-303
   network: ws
   port: 3193
   server: 45.120.157.18
@@ -4558,14 +4632,12 @@ proxies:
   ws-opts:
     headers:
       Host: v-jkid7x7r71t868pqf81hs.worker.ddns-ip.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.67 Safari/537.36
     path: /@Marisa_kristi
   xudp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: '489|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #3'
+  name: 489,553|yandex-304
   network: tcp
   port: 31411
   reality-opts:
@@ -4580,17 +4652,18 @@ proxies:
   xudp: true
 - alterId: 2
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #4'
+  name: 489,553|yandex-314
   port: 30806
   server: v6.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 489|🔴🇯🇵[🎬🤖📺🎪]_github.com/Ruk1ng001...
+  name: 489,553|yandex-317
   network: tcp
   port: 31411
   reality-opts:
@@ -4609,7 +4682,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 489|🔴🇯🇵[🤖📺🎭🎪]_github.com/Ruk1ng001...
+  name: 489,553|yandex-321
   network: tcp
   port: 31411
   reality-opts:
@@ -4628,7 +4701,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: '489|🔴🇯🇵[🤖📺🎭🎪]_github.com/Ruk1ng001... #1'
+  name: 489,553|yandex-328
   network: tcp
   port: 31411
   reality-opts:
@@ -4647,7 +4720,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: '489|🔴🇯🇵[🤖📺🎭🎪]_github.com/Ruk1ng001... #2'
+  name: 489,553|yandex-331
   network: tcp
   port: 31411
   reality-opts:
@@ -4666,7 +4739,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 489|🔴🇯🇵[📺🎭🎪✨]_github.com/Ruk1ng001...
+  name: 489,553|yandex-334
   network: tcp
   port: 31411
   reality-opts:
@@ -4680,7 +4753,7 @@ proxies:
   uuid: b944716b-271c-49f1-bf94-9dcea8454b96
   xudp: true
 - client-fingerprint: chrome
-  name: '489|🟡🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
+  name: 489,553|yandex-356
   network: tcp
   password: da6f49ae-b0dd-4527-b993-ae6ec688000c
   port: 55041
@@ -4690,7 +4763,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: '489|🔴🇯🇵[📺🎭🎪✨]_github.com/Ruk1ng001... #1'
+  name: 489,553|yandex-366
   network: ws
   port: 51002
   server: 45.66.130.58
@@ -4702,12 +4775,10 @@ proxies:
   ws-opts:
     headers:
       Host: wu.090881.xyz
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7
-        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
     path: /products/proxyip=ProxyIP.SG.CMLiussss.net/proxyip=ProxyIP.SG.CMLiussss.net
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: '489|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #6'
+  name: 489,553|yandex-410
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -4718,9 +4789,9 @@ proxies:
   type: ss
   udp: true
   udp-over-tcp: true
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #7'
+  name: 489,553|yandex-427
   network: ws
   port: 16617
   server: planb.mojcn.com
@@ -4736,7 +4807,7 @@ proxies:
   xudp: true
 - alterId: 0
   cipher: auto
-  name: 489|🟢🇯🇵[🎭📦]_github.com/Ruk1ng001_9...
+  name: 489,553|yandex-502
   network: ws
   port: 12883
   server: gtm1.ktmwan.net
@@ -4764,7 +4835,7 @@ proxies:
   up: ''
 - alterId: 0
   cipher: auto
-  name: 489,523,524,548,567,585|CN_speednode_0008
+  name: 489,523,524,548,553,567,585|CN_speednode_0008
   port: 6003
   server: cn02.365cloud5878.com
   skip-cert-verify: false
@@ -4775,7 +4846,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 489|🔴🇯🇵[🎭]_github.com/Ruk1ng001_35...
+  name: 489,553|yandex-634
   network: ws
   port: 8443
   server: 43.165.180.71
@@ -4787,8 +4858,6 @@ proxies:
   ws-opts:
     headers:
       Host: _acme-challenge.443888.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/39.0.2171.95 Safari/537.36
     path: /danfeng?ed=2560
   xudp: true
 - client-fingerprint: chrome
@@ -4982,7 +5051,7 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2
 - cipher: chacha20-ietf-poly1305
   delay: 2101
-  name: 528|日本 - 东京 - 2
+  name: 528,553|yandex-180
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 8989
   server: 52.194.245.178
@@ -5209,7 +5278,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 542|🇵 日本 1 Nico Abema - 西瓜皮是真的皮
+  name: 542,553|yandex-674
   port: 19831
   server: xgcma.dx002.top
   skip-cert-verify: true
@@ -5219,7 +5288,7 @@ proxies:
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
 - alterId: 0
   cipher: auto
-  name: 542|🇵 日本 2 Nico Abema - 西瓜皮是真的皮
+  name: 542,553|yandex-675
   port: 19832
   server: xgcta.dx002.top
   skip-cert-verify: true
@@ -5227,7 +5296,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
-- name: 542|🇯🇵 日本•高速114•高速 - 飞翔吧
+- name: 542,553|yandex-705
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 41767
   server: gy.58n.net
@@ -5236,7 +5305,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542|🇵 日本•高速115•高速 - 飞翔吧
+- name: 542,553|yandex-706
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 54178
   server: gy.58n.net
@@ -5245,7 +5314,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542|🇯🇵 日本•高速139•铂金 - 飞翔吧
+- name: 542,553|yandex-707
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20139
   server: gy.58n.net
@@ -5254,7 +5323,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542|🇯🇵 日本•高速140•铂金 - 飞翔吧
+- name: 542,553|yandex-708
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20140
   server: gy.58n.net
@@ -5263,7 +5332,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542|🇯🇵 日本•高速141•铂金 - 飞翔吧
+- name: 542,553|yandex-709
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20141
   server: gy.58n.net
@@ -5272,7 +5341,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542|🇯🇵 日本•高速142•原生 - 飞翔吧
+- name: 542,553|yandex-710
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20142
   server: gy.58n.net
@@ -5281,7 +5350,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542|🇯🇵 日本•高速59•青铜 - 飞翔吧
+- name: 542,553|yandex-711
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20059
   server: gy.58n.net
@@ -5290,7 +5359,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542|🇯🇵 日本•高速71•高速 - 飞翔吧
+- name: 542,553|yandex-712
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20071
   server: gy.58n.net
@@ -5299,7 +5368,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542|🇵 日本•高速76•高速 - 飞翔吧
+- name: 542,553|yandex-713
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20076
   server: gy.58n.net
@@ -5310,39 +5379,39 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 542|🇵 [vip①]日本1 - MG Network
+  name: 542,553|yandex-780
   port: 23611
   server: traffic.a1.szx.gfw250.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: a870d5d1-8778-3f06-b9e9-4232252c9d22
+  uuid: 33590843-87a0-34c7-8b47-78b9ef507193
 - alterId: 2
   cipher: auto
-  name: 542|🇯🇵 [vip①]日本2 - MG Network
+  name: 542,553|yandex-781
   port: 23617
   server: traffic.a1.szx.gfw250.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: a870d5d1-8778-3f06-b9e9-4232252c9d22
+  uuid: 33590843-87a0-34c7-8b47-78b9ef507193
 - alterId: 2
   cipher: auto
-  name: 542|🇯🇵 [vip①]日本3 - MG Network
+  name: 542,553|yandex-782
   port: 23618
   server: traffic.a1.szx.gfw250.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: a870d5d1-8778-3f06-b9e9-4232252c9d22
+  uuid: 33590843-87a0-34c7-8b47-78b9ef507193
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_-🇯🇵JP_10
+  name: 548|Relay_-🇯🇵JP_12
   network: ws
   port: 443
   server: n1753598451.74qxv.top
@@ -5788,25 +5857,11 @@ proxies:
   skip-cert-verify: true
   type: anytls
   udp: true
-- name: '567,585,586|JP_speednode_0021 #1'
-  network: ws
-  port: 443
-  server: 188.253.23.98
-  servername: kuangbao.xiejiang.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-  ws-opts:
-    headers:
-      Host: kuangbao.xiejiang.dpdns.org
-    path: /?ed=2560
 - alterId: 0
-  name: 574|🇯🇵JP日本3
+  name: '574|JP #3'
   password: BxceQaOe
-  port: 21508
-  server: 54.238.7.116
+  port: 4945
+  server: 13.115.145.176
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   tls: true
