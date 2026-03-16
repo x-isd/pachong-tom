@@ -66,6 +66,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 255|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-8121 #1'
   password: f8f7aCzcPKbsF8p3
@@ -643,7 +657,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: 🇫🇷FR
+- country: 🇷FR
   name: '378,435,436,536,537|🇫🇷FR-57.128.174.124-4646 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
@@ -1488,7 +1502,16 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '438|🇫🇷FR_4|1.5MB/s | 福利姬: https://...'
+- name: '438|🇫🇷FR_3|1.3MB/s | 更多节点: https:/...'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.32.47
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '438|🇫🇷FR_7|1.6MB/s | 更多节点: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1497,24 +1520,12 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '438|🇫🇷FR_6|1.3MB/s | 更多节点: https:/...'
+- name: '438|🇫🇷FR_8|1.6MB/s | 福利姬: https://...'
   network: ws
   password: humanity
   port: 443
   server: 185.18.250.245
   skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - h2
-  - http/1.1
-  name: '438|🇫🇷FR_8|1.7MB/s | 网盘搜宝: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: chat.openai.com
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
@@ -1813,13 +1824,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_37 #1'
+  name: 523,524,566|🇯🇵 日本 | JPN
   network: ws
   port: 16617
   server: planb.mojcn.com
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: c6152124-47b2-475f-867a-7c7f11424f38
   ws-opts:
     headers:
@@ -1841,10 +1853,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524,566,568|🇯🇵 日本 | JPN #1'
+  name: '523,524|🇫🇷_法国_39 #1'
   network: ws
-  port: '16617'
+  port: 16617
   server: t.cnmjcn.cyou
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c6152124-47b2-475f-867a-7c7f11424f38
+  ws-opts:
+    headers:
+      Host: dd6d6c5547a5433b345f58beabb719d0.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 523,524,566|🇸🇬 新加坡 | SGP 5
+  network: ws
+  port: 16618
+  server: planb.mojcn.com
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1856,27 +1882,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_40 #1'
-  network: ws
-  port: 16618
-  server: planb.mojcn.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c6152124-47b2-475f-867a-7c7f11424f38
-  ws-opts:
-    headers:
-      Host: dd6d6c5547a5433b345f58beabb719d0.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '523,524|🇫🇷_法国_41 #1'
+  name: 523,524,566|🇸🇬 新加坡 | SGP 16
   network: ws
   port: 16618
   server: m.cnmjin.net
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: c6152124-47b2-475f-867a-7c7f11424f38
   ws-opts:
     headers:
@@ -1912,9 +1925,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_44 #1'
+  name: '523,524,568|🇭🇰 香港 | HKG #4'
   network: ws
-  port: 16632
+  port: '16632'
   server: m.cnmjin.net
   skip-cert-verify: false
   tls: false
@@ -1926,38 +1939,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_45 #1'
+  name: 523,524,566|🇭🇰 香港 | HKG 5
   network: ws
   port: 16632
   server: t.cnmjcn.cyou
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c6152124-47b2-475f-867a-7c7f11424f38
-  ws-opts:
-    headers:
-      Host: dd6d6c5547a5433b345f58beabb719d0.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '523,524|🇫🇷_法国_46 #1'
-  network: ws
-  port: 16622
-  server: planb.mojcn.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c6152124-47b2-475f-867a-7c7f11424f38
-  ws-opts:
-    headers:
-      Host: dd6d6c5547a5433b345f58beabb719d0.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '523,524,566,568|🇭🇰 香港 | HKG #5'
-  network: ws
-  port: '16622'
-  server: m.cnmjin.net
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1969,13 +1954,43 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_48 #1'
+  name: 523,524,566|🇭🇰 香港 | HKG
+  network: ws
+  port: 16622
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c6152124-47b2-475f-867a-7c7f11424f38
+  ws-opts:
+    headers:
+      Host: dd6d6c5547a5433b345f58beabb719d0.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇫🇷_法国_47 #1'
+  network: ws
+  port: 16622
+  server: m.cnmjin.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c6152124-47b2-475f-867a-7c7f11424f38
+  ws-opts:
+    headers:
+      Host: dd6d6c5547a5433b345f58beabb719d0.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 523,524,566|🇭🇰 香港 | HKG 12
   network: ws
   port: 16622
   server: t.cnmjcn.cyou
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: c6152124-47b2-475f-867a-7c7f11424f38
   ws-opts:
     headers:
@@ -1997,9 +2012,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_50 #1'
+  name: '523,524,568|🇹🇼 🇨🇳 台湾 | TWN #3'
   network: ws
-  port: 16616
+  port: '16616'
   server: planb.mojcn.com
   skip-cert-verify: false
   tls: false
@@ -2011,9 +2026,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_51 #1'
+  name: '523,524,568|🇹🇼 🇨🇳 台湾 | TWN #5'
   network: ws
-  port: 16616
+  port: '16616'
   server: m.cnmjin.net
   skip-cert-verify: false
   tls: false
@@ -2039,13 +2054,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_53 #1'
+  name: 523,524,566|🇺🇸 美国 | USA 5
   network: ws
   port: 16648
   server: planb.mojcn.com
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: c6152124-47b2-475f-867a-7c7f11424f38
   ws-opts:
     headers:
@@ -2053,9 +2069,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_54 #1'
+  name: '523,524,568|🇺🇸 美国 | USA #5'
   network: ws
-  port: 16648
+  port: '16648'
   server: m.cnmjin.net
   skip-cert-verify: false
   tls: false
@@ -2067,14 +2083,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524,566,568|🇺🇸 美国 | USA #1'
+  name: '523,524|🇫🇷_法国_55 #1'
   network: ws
-  port: '16648'
+  port: 16648
   server: t.cnmjcn.cyou
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: c6152124-47b2-475f-867a-7c7f11424f38
   ws-opts:
     headers:
@@ -2152,9 +2167,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_61 #1'
+  name: '523,524,568|🇫🇷 法国 | FRA #4'
   network: ws
-  port: 16645
+  port: '16645'
   server: planb.mojcn.com
   skip-cert-verify: false
   tls: false
@@ -2166,14 +2181,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524,566,568|🇫🇷 法国 | FRA #3'
+  name: '523,524|🇫🇷_法国_62 #1'
   network: ws
-  port: '16645'
+  port: 16645
   server: m.cnmjin.net
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: c6152124-47b2-475f-867a-7c7f11424f38
   ws-opts:
     headers:
@@ -2181,13 +2195,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_63 #1'
+  name: 523,524,566|🇫🇷 法国 | FRA 2
   network: ws
   port: 16645
   server: t.cnmjcn.cyou
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: c6152124-47b2-475f-867a-7c7f11424f38
   ws-opts:
     headers:
@@ -2951,7 +2966,7 @@ proxies:
     path: /
 - country: 🇫🇷FR
   delay: 1377
-  name: 528,553|yandex-173
+  name: 528,553|yandex-3070
   password: telegram-id-directvpn
   port: 22223
   server: 13.36.148.207
@@ -2961,7 +2976,7 @@ proxies:
   udp: true
 - country: 🇫🇷FR
   delay: 1381
-  name: 528,553|yandex-174
+  name: 528,553|yandex-3071
   password: telegram-id-privatevpns
   port: 22222
   server: 13.36.148.207
@@ -3003,13 +3018,13 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '559|🇫🇷FR_19 #1'
+- name: 559|🇫🇷FR_19
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: '559|🇫🇷FR_21 #2'
+- name: '559|🇫🇷FR_21 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -3031,16 +3046,16 @@ proxies:
   tls: false
   type: vmess
   uuid: ede27a79-b039-490b-932c-495de4b68880
-- name: '566|🇫🇷 法国 | FRA #1'
-  network: ws
-  password: e424dc45-7075-4355-aaa7-609ff2388ece
-  port: 443
-  server: fr1.cdn.blzstatic.online
+- alterId: 2
+  cipher: auto
+  name: '566|🇫🇷 法国 | FRA #1'
+  port: 30835
+  server: v35.hdacd.com
   skip-cert-verify: true
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-  ws-opts:
-    path: ''
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
