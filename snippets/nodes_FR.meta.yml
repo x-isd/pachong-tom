@@ -84,20 +84,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- alterId: 0
-  cipher: auto
-  name: 255|🇫🇷 法国
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-8084 #2'
   password: f8f7aCzcPKbsF8p3
@@ -626,7 +612,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-51.77.158.169-3561 #1'
+  name: '378,536,537|🇷FR-51.77.158.169-3561 #1'
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -871,7 +857,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-146.59.55.50-6951 #1'
+  name: '378,536,537|🇷FR-146.59.55.50-6951 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1564,7 +1550,7 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '438|🇫🇷FR_1|1.7MB/s | 更多节点: https:/...'
+- name: '438|🇫🇷FR_1|2.1MB/s | 更多节点: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1573,29 +1559,51 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '438,494|Join+Telegram:@Farah_VPN #3588'
+- name: '438|🇫🇷FR_2|1.3MB/s | 福利姬: https://...'
   network: ws
   password: humanity
   port: 443
   server: 104.18.32.47
-  skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- alpn:
-  - h2
-  - http/1.1
-  name: '438|🇫🇷FR_3|1.5MB/s | 网盘搜宝: https:/...'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇫🇷FR_3|1.1MB/s | 网盘搜宝: https:/...'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.2
+  servername: fuck.rkn
+  tls: false
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇫🇷FR_4|1.6MB/s | 福利姬: https://...'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: fuck.rkn
+  tls: false
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: '438|🇫🇷FR_5|1.3MB/s | 网盘搜宝: https:/...'
   network: ws
   password: humanity
   port: 443
-  server: chat.openai.com
+  server: 188.114.98.0
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '438|🇫🇷FR_4|2.8MB/s | 福利姬: https://...'
+- name: '438|🇫🇷FR_7|1.4MB/s | 更多节点: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1782,24 +1790,14 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: '470,494|Join+Telegram:@Farah_VPN #4154'
-  network: grpc
-  port: 8880
-  server: 185.242.87.247
-  tls: false
-  type: vless
-  udp: false
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - cipher: aes-256-gcm
-  name: 489,553|yandex-3140
+  name: 489,553|yandex-3239
   password: 2fcb15d0-902e-339d-8899-5b6b660a5d5b
   port: 20069
   server: g.g.o.q.9.l.9.d.1.fr01-ae5.entry.v51124-6.qpon
   type: ss
   udp: true
-- name: 489,553|yandex-3392
+- name: 489,553|yandex-3491
   network: ws
   port: 8443
   server: 188.130.207.158
@@ -1813,7 +1811,7 @@ proxies:
     path: /?ed=2560&Telegram🇨🇳@WangCai2
 - client-fingerprint: chrome
   encryption: none
-  name: 489,553|yandex-3417
+  name: 489,553|yandex-3516
   network: ws
   port: 443
   server: 217.60.39.10
@@ -1827,6 +1825,42 @@ proxies:
       Host: sni.111000.dynv6.net
     path: /?ed=2560&Telegram🇨🇳@WangCai2
   xudp: true
+- name: 507|FR VLESS-21 | free-nodes
+  network: ws
+  port: 80
+  server: fsdns.ectunnelvpn.me
+  tls: false
+  type: vless
+  uuid: 15cbab96-197e-46a5-9042-073b3980c798
+  ws-opts:
+    headers:
+      Host: fsdns.ectunnelvpn.me
+    path: /vless
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507,559,580|FR VLESS-47 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
+    short-id: 9c2378562188c3cb
+  server: fr.denditop.site
+  servername: fr.denditop.site
+  tls: false
+  type: vless
+  uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507|FR VLESS-49 | free-nodes
+  network: tcp
+  port: 23151
+  reality-opts:
+    public-key: eP0MKUFOcNVSVFbHT8GgBLP4LIHZFq8JuVGlCAlH1HI
+  server: 3.fr.vles.space
+  servername: cms-res-web.online.sberbank.ru
+  tls: false
+  type: vless
+  uuid: 7f37b28b-cfcb-4c2a-ae41-8f2ddc9325dd
 - alterId: 0
   cipher: auto
   name: '523,524|🇫🇷_法国_14 #1'
@@ -2809,13 +2843,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_108 #1'
+  name: 523,524,566|🇨🇦 加拿大 | CAN
   network: ws
   port: 16641
   server: t.cnmjcn.cyou
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: 0bc2e282-126d-4519-8cb8-ade27c35bd46
   ws-opts:
     headers:
@@ -3943,13 +3978,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_197 #1'
+  name: 523,524,566|🇹🇼 🇨🇳 台湾 | TWN
   network: ws
   port: 16616
   server: planb.mojcn.com
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: 861f9ab1-8191-42d6-9586-a2465fa92480
   ws-opts:
     headers:
@@ -4517,7 +4553,7 @@ proxies:
     path: /
 - country: 🇫🇷FR
   delay: 1686
-  name: 528,553|yandex-266
+  name: 528,553|yandex-3684
   password: telegram-id-directvpn
   port: 22223
   server: 13.37.160.17
@@ -4527,7 +4563,7 @@ proxies:
   udp: true
 - country: 🇫🇷FR
   delay: 1069
-  name: 528,553|yandex-267
+  name: 528,553|yandex-3685
   password: telegram-id-directvpn
   port: 22223
   server: 15.188.40.40
@@ -4797,6 +4833,17 @@ proxies:
   server: 109.61.110.80
   sni: jflsjlaf.pages.dev
   type: trojan
+- name: '559|FR VLESS-28 | free-nodes #1'
+  network: ws
+  port: 80
+  server: fsdns.ectunnelvpn.me
+  tls: false
+  type: vless
+  uuid: 15cbab96-197e-46a5-9042-073b3980c798
+  ws-opts:
+    headers:
+      Host: fsdns.ectunnelvpn.me
+    path: '%2Fvless'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 559|FR VLESS-50 | free-nodes
@@ -4938,6 +4985,18 @@ proxies:
   tls: false
   type: vless
   uuid: 63e21079-30c6-4617-9631-c3638ce4701f
+- client-fingerprint: chrome
+  name: 559,580|FR VLESS-86 | free-nodes
+  network: tcp
+  port: 61873
+  reality-opts:
+    public-key: wEU32qHhiQq-FDYUvuEl7_HAM6r5nDh6M4F8WGnEhjE
+    short-id: 34d8e80d8fa40501
+  server: 45.95.233.85
+  servername: yandex.ru
+  tls: false
+  type: vless
+  uuid: 8b8f4dfb-cd48-4dab-bb75-b304971176cd
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 559|FR VLESS-106 | free-nodes
@@ -5821,6 +5880,23 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 559|法国_031704002
+  network: tcp
+  port: '550'
+  server: 162.19.248.238
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ede27a79-b039-490b-932c-495de4b68880
+- name: 566|🇫🇷 法国 | FRA
+  password: 2ec58858-976b-11ea-82ef-f23c9164ca5d
+  port: 443
+  server: 20a7c8d0-tc5ls0-tdl04o-tng5.fr.oshuawei.com
+  tls: true
+  type: http
+  username: 2ec58858-976b-11ea-82ef-f23c9164ca5d
+- alterId: 0
+  cipher: auto
   name: '577|法国1 #4'
   network: tcp
   port: '45072'
@@ -5865,6 +5941,17 @@ proxies:
   tls: false
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
+- name: 580|FR VLESS-32 | free-nodes
+  network: ws
+  port: 80
+  server: 213.136.69.8
+  tls: false
+  type: vless
+  uuid: 15cbab96-197e-46a5-9042-073b3980c798
+  ws-opts:
+    headers:
+      Host: fsdns.ectunnelvpn.me
+    path: '%2Fvless'
 - client-fingerprint: chrome
   name: 580|FR VLESS-61 | free-nodes
   network: tcp
