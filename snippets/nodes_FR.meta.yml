@@ -84,20 +84,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- alterId: 0
-  cipher: auto
-  name: 255|🇫🇷 法国
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-7171 #1'
   password: f8f7aCzcPKbsF8p3
@@ -957,7 +943,19 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '438,494|Join+Telegram:@Farah_VPN #3105'
+- alpn:
+  - h2
+  - http/1.1
+  name: '438|🇫🇷FR_1|1.0MB/s | 福利姬: https://...'
+  network: ws
+  password: humanity
+  port: 443
+  server: chat.openai.com
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '438,494|Join+Telegram:@Farah_VPN #3651'
   network: ws
   password: humanity
   port: 443
@@ -969,39 +967,18 @@ proxies:
     path: '%2Fassignment'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #3405'
+  name: 438,494,559|FR VLESS-66 | free-nodes
   network: tcp
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-  server: 62.210.91.2
+  server: 62.210.91.10
   servername: fuck.rkn
   tls: false
   type: vless
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- alpn:
-  - h2
-  - http/1.1
-  name: '438|🇫🇷FR_4|2.4MB/s | 福利姬: https://...'
-  network: ws
-  password: humanity
-  port: 443
-  server: chat.openai.com
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_5|1.5MB/s | 网盘搜宝: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.64.152.23
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_6|1.2MB/s | 更多节点: https:/...'
+- name: '438|🇫🇷FR_5|1.1MB/s | 福利姬: https://...'
   network: ws
   password: humanity
   port: 443
@@ -1011,28 +988,15 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '438|🇫🇷FR_7|2.1MB/s | 网盘搜宝: https:/...'
+- name: '438|🇫🇷FR_6|2.1MB/s | 网盘搜宝: https:/...'
   network: ws
   password: humanity
   port: 443
-  server: 188.114.96.3
+  server: 188.114.98.0
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #1116'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
-    short-id: 9c2378562188c3cb
-  server: 185.171.202.38
-  servername: fr.denditop.site
-  tls: false
-  type: vless
-  uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
 - name: 456,494,507,559|FR VLESS-51 | free-nodes
   network: ws
   port: 80
@@ -1544,9 +1508,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_11 #1'
+  name: '523,524,568|🇸🇬 新加坡 | SGP #2'
   network: ws
-  port: 16618
+  port: '16618'
   server: t.cnmjcn.cyou
   skip-cert-verify: false
   tls: false
@@ -1572,13 +1536,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_14 #1'
+  name: 523,524,566|🇯🇵 日本 | JPN
   network: ws
   port: 16617
   server: t.cnmjcn.cyou
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
   ws-opts:
     headers:
@@ -1586,9 +1551,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_15 #1'
+  name: '523,524,568|🇸🇬 新加坡 | SGP #3'
   network: ws
-  port: 16618
+  port: '16618'
   server: planb.mojcn.com
   skip-cert-verify: false
   tls: false
@@ -1726,9 +1691,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_46 #1'
+  name: '523,524,568|🇭🇰 香港 | HKG #3'
   network: ws
-  port: 16632
+  port: '16632'
   server: planb.mojcn.com
   skip-cert-verify: false
   tls: false
@@ -1740,13 +1705,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_48 #1'
+  name: 523,524,566|🇭🇰 香港 | HKG 5
   network: ws
   port: 16632
   server: t.cnmjcn.cyou
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: 8fe47794-bb25-446c-a1f7-7408a1d0b9c3
   ws-opts:
     headers:
@@ -2006,9 +1972,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_74 #1'
+  name: '523,524,568|🇭🇰 香港 | HKG #4'
   network: ws
-  port: 16632
+  port: '16632'
   server: m.cnmjin.net
   skip-cert-verify: false
   tls: false
@@ -2048,13 +2014,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_77 #1'
+  name: 523,524,566|🇭🇰 香港 | HKG 13
   network: ws
   port: 16622
   server: m.cnmjin.net
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: b569056b-ce7b-423d-b947-b900d72430c0
   ws-opts:
     headers:
@@ -2370,9 +2337,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_100 #1'
+  name: '523,524,568|🇭🇰 香港 | HKG #1'
   network: ws
-  port: 16632
+  port: '16632'
   server: planb.mojcn.com
   skip-cert-verify: false
   tls: false
@@ -2440,9 +2407,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_105 #1'
+  name: '523,524,568|🇭🇰 香港 | HKG #5'
   network: ws
-  port: 16622
+  port: '16622'
   server: t.cnmjcn.cyou
   skip-cert-verify: false
   tls: false
@@ -2552,9 +2519,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524|🇫🇷_法国_113 #1'
+  name: '523,524,568|🇸🇬 新加坡 | SGP #4'
   network: ws
-  port: 16641
+  port: '16641'
   server: planb.mojcn.com
   skip-cert-verify: false
   tls: false
@@ -3337,7 +3304,7 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '559|🇫🇷FR_18 #1'
+- name: 559|🇫🇷FR_18
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -3497,6 +3464,16 @@ proxies:
   tls: true
   type: vless
   uuid: fe1912e2-43a9-4067-9d18-b8eebf9a61b9
+- alterId: 2
+  cipher: auto
+  name: 566|🇫🇷 法国 | FRA
+  port: 30835
+  server: v35.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
