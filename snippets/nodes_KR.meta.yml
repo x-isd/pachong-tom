@@ -226,7 +226,7 @@ proxies:
     path: /download
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '127,426,438|🇰🇷KR_1|3.4MB/s | 福利姬: https://...'
+  name: '127,426|🇰🇷 KR_2|2.1MB/s|GPT⁺|YT-KR|NF|... #1'
   network: tcp
   port: 19001
   reality-opts:
@@ -235,7 +235,7 @@ proxies:
   servername: addons.mozilla.org
   skip-cert-verify: true
   tfo: false
-  tls: false
+  tls: true
   type: vless
   uuid: 6eeb820e-89ef-4b60-9060-ddcaea0580f0
 - client-fingerprint: firefox
@@ -244,7 +244,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 127,426,489|🟢🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001...
+  name: 127,426,438,489|🟢🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001...
   network: tcp
   port: 19001
   reality-opts:
@@ -719,21 +719,31 @@ proxies:
   skip-cert-verify: true
   sni: appsvs.shop
   type: trojan
-- name: 378,494,507,536,537,538,559|韩国_032004001
+- country: 🇰🇷KR
+  name: 378,440,494,507,536,537,538,559|韩国_032018001
   password: IL37892054
   port: 443
   server: select-marmoset.rooster465.autos
   skip-cert-verify: false
   sni: select-marmoset.rooster465.autos
   type: trojan
-- name: 378,438,456,494,507,536,537,538,559,580|KR TROJAN-29 | free-nodes
-  network: tcp
+  udp: true
+- country: 🇷KR
+  name: '378,440,456,494,507,536,537,538,559,580|KR TROJAN-29 | free-nodes #1'
   password: ZY07256934
   port: 443
   server: glowing-deer.rooster465.autos
   skip-cert-verify: false
   sni: glowing-deer.rooster465.autos
   type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇰🇷KR
+  name: 378,537,538,548|🇰🇷KR_55
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 141.164.45.187
+  type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
   name: '378,435,537,538,548|netflix_KR #1'
@@ -748,18 +758,11 @@ proxies:
   port: 989
   server: 154.90.62.168
   type: ss
-- cipher: aes-256-gcm
-  country: 🇰🇷KR
-  name: 378,537,538,548|🇰🇷KR_55
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 141.164.45.187
-  type: ss
-- cipher: aes-256-gcm
-  name: 378,537,538|🇰🇷KR-141.164.45.187-0339 | 0.0...
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 141.164.45.187
+- cipher: aes-256-cfb
+  name: 378,537,538|🇰🇷KR-218.237.185.230-0280 | 0....
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
   type: ss
 - cipher: aes-256-cfb
   country: 🇰🇷KR
@@ -767,6 +770,13 @@ proxies:
   password: qwerREWQ@@
   port: 13979
   server: 221.139.79.57
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇷KR
+  name: 378,440,537,538|🇰🇷KR-141.164.45.187-0309 | 0.0...
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 141.164.45.187
   type: ss
 - alterId: 0
   cipher: auto
@@ -794,7 +804,7 @@ proxies:
   uuid: 053ca0f4-057e-493d-ad30-5ba51f00f59c
   ws-opts:
     path: /
-- name: '378,536,537|🇷KR-138.2.113.248-0567 #1'
+- name: '378,536,537|🇷KR-138.2.113.248-0566 #1'
   password: 9c822f05-cfdc-479a-9534-60f3d4127435
   port: 443
   server: 138.2.113.248
@@ -802,7 +812,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-146.56.162.25-0592 #1'
+  name: '378,536,537|🇷KR-146.56.162.25-0591 #1'
   network: ws
   port: 443
   server: 146.56.162.25
@@ -817,7 +827,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-130.162.141.104-0647 #1'
+  name: '378,536,537|🇷KR-130.162.141.104-0646 #1'
   network: ws
   port: 443
   server: 130.162.141.104
@@ -828,18 +838,6 @@ proxies:
   uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
   ws-opts:
     path: /reffs7y26g0ua
-- name: '378,459,537,580|US美国(mibei77.com 米贝节点分享) #99'
-  network: ws
-  password: trojan
-  port: 10003
-  server: 118.34.36.61
-  skip-cert-verify: false
-  sni: jflsjlaf.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: jflsjlaf.pages.dev
-    path: '%2F'
 - alterId: 1
   cipher: auto
   name: '378,536,537,559|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #44'
@@ -857,7 +855,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '378,536,537|🇷KR-27.124.8.141-1123 #1'
+  name: '378,536,537|🇷KR-27.124.8.141-1093 #1'
   network: ws
   port: 443
   server: 27.124.8.141
@@ -868,7 +866,7 @@ proxies:
   uuid: c7e645be-1704-4f0a-afe9-8b21f9c711d6
   ws-opts:
     path: /path/220128071100
-- name: '378,536,537|🇰🇷KR-144.24.76.54-1214 #1'
+- name: '378,536,537|🇰🇷KR-144.24.76.54-1184 #1'
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   port: 8443
   server: 144.24.76.54
@@ -877,7 +875,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-52.78.213.224-1255 #1'
+  name: '378,536,537|🇷KR-52.78.213.224-1225 #1'
   network: ws
   port: 80
   server: 52.78.213.224
@@ -890,7 +888,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|KR-131.186.24.103-1489 #1'
+  name: '378,536,537|KR-131.186.24.103-1459 #1'
   network: ws
   port: 443
   server: 131.186.24.103
@@ -903,7 +901,7 @@ proxies:
     path: /reffs7y26g0ua
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-52.231.200.179-1497 #1'
+  name: '378,536,537|🇷KR-52.231.200.179-1467 #1'
   network: ws
   port: 443
   server: fullaccesstokoreannetsubnode1.azurewebsites.net
@@ -918,7 +916,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-146.56.47.1-1618 #1'
+  name: '378,536,537|🇷KR-146.56.47.1-1588 #1'
   network: ws
   port: 443
   server: kr-arm2.018999.xyz
@@ -932,12 +930,12 @@ proxies:
       Host: kr-arm2.018999.xyz
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - cipher: aes-256-cfb
-  name: '378,537|🇷KR-43.201.48.212-1646 #1'
+  name: '378,537|🇷KR-43.201.48.212-1616 #1'
   password: amazonskr05
   port: 443
   server: 43.201.48.212
   type: ss
-- name: '378,523,524,537|🇷KR-220.92.22.170-1674 #1'
+- name: '378,523,524,536,537|🇷KR-220.92.22.170-1644 #1'
   password: trojan
   port: 11000
   server: 220.92.22.170
@@ -950,19 +948,19 @@ proxies:
       Host: jflsjlaf.pages.dev
     path: /
 - cipher: aes-256-gcm
-  name: '378,537|🇷KR-141.164.39.146-1689 #1'
+  name: '378,537|🇷KR-141.164.39.146-1659 #1'
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 141.164.39.146
   type: ss
 - cipher: aes-256-gcm
-  name: '378,537|🇷KR-158.247.205.87-1716 #1'
+  name: '378,537|🇷KR-158.247.205.87-1686 #1'
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 158.247.205.87
   type: ss
 - cipher: aes-256-gcm
-  name: '378,537|🇷KR-158.247.205.87-1717 #1'
+  name: '378,537|🇷KR-158.247.205.87-1687 #1'
   password: pKEW8JPByTVTLtM
   port: 443
   server: 158.247.205.87
@@ -973,7 +971,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '378,536,537|🇰🇷KR-150.230.249.15-1822 #1'
+  name: '378,536,537|🇰🇷KR-150.230.249.15-1792 #1'
   network: http
   port: 46842
   server: 150.230.249.15
@@ -984,7 +982,7 @@ proxies:
   uuid: 4530b5ee-ced4-4e64-9285-1867fc5df7f8
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇰🇷KR-152.70.252.218-1867 #1'
+  name: '378,536,537|🇰🇷KR-152.70.252.218-1837 #1'
   network: ws
   port: 10020
   server: 152.70.252.218
@@ -1011,80 +1009,80 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: '378,537|🇷KR-43.200.245.35-2135 #1'
+  name: '378,537|🇷KR-43.200.245.35-2105 #1'
   password: amazonskr05
   port: 443
   server: 43.200.245.35
   type: ss
-- name: '378,536,537|🇷KR-119.193.20.248-2202 #1'
+- name: '378,536,537|🇷KR-119.193.20.248-2172 #1'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.seoulcitygovernment.com.ua
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇷KR-138.2.113.84-2235 #1'
+- name: '378,536,537|🇷KR-138.2.113.84-2205 #1'
   password: b291d129-ee55-4801-a9b8-b5316e5c37b7
   port: 443
   server: 138.2.113.84
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇷KR-138.2.115.240-2237 #1'
+- name: '378,536,537|🇷KR-138.2.115.240-2207 #1'
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   port: 443
   server: 138.2.115.240
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇰🇷KR-43.201.59.8-2267 #1'
+  name: '378,537|🇰🇷KR-43.201.59.8-2237 #1'
   password: amazonskr05
   port: 443
   server: 43.201.59.8
   type: ss
-- name: '378,536,537|🇷KR-119.193.20.250-2413 #1'
+- name: '378,536,537|🇷KR-119.193.20.250-2383 #1'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.seoulcityhall.com.ua
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇷KR-144.24.72.126-2453 #1'
+- name: '378,536,537|🇷KR-144.24.72.126-2423 #1'
   password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
   port: 443
   server: 144.24.72.126
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇷KR-43.201.47.102-2472 #1'
+  name: '378,537|🇷KR-43.201.47.102-2442 #1'
   password: amazonskr05
   port: 443
   server: 43.201.47.102
   type: ss
-- name: '378,536,537|🇷KR-119.193.20.250-2542 #1'
+- name: '378,536,537|🇷KR-119.193.20.250-2512 #1'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: official.seoulcityhall.com.ua
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇰🇷KR-146.56.189.146-3008 #1'
+- name: '378,536,537|🇰🇷KR-146.56.189.146-2978 #1'
   password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
   port: 443
   server: 146.56.189.146
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇷KR-43.201.57.66-3403 #1'
+  name: '378,537|🇷KR-43.201.57.66-3373 #1'
   password: amazonskr05
   port: 443
   server: 43.201.57.66
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇷KR-43.201.86.30-3482 #1'
+  name: '378,537|🇷KR-43.201.86.30-3452 #1'
   password: amazonskr05
   port: 443
   server: 43.201.86.30
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-13.125.24.112-3485 #1'
+  name: '378,536,537|🇷KR-13.125.24.112-3455 #1'
   network: ws
   port: 49517
   server: 13.125.24.112
@@ -1097,7 +1095,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇰🇷KR-13.125.24.112-3490 #1'
+  name: '378,536,537|🇰🇷KR-13.125.24.112-3460 #1'
   network: ws
   port: 42517
   server: 13.125.24.112
@@ -1108,14 +1106,14 @@ proxies:
   uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
   ws-opts:
     path: /
-- name: '378,536,537|🇰🇷KR-3.34.6.217-3512 #1'
+- name: '378,536,537|🇰🇷KR-3.34.6.217-3482 #1'
   password: xxoo
   port: 443
   server: 3.34.6.217
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇷KR-13.125.124.161-3544 #1'
+  name: '378,537|🇷KR-13.125.124.161-3514 #1'
   password: amazonskr05
   port: 443
   server: 13.125.124.161
@@ -1135,21 +1133,21 @@ proxies:
     headers:
       Host: 152.67.218.38
     path: /
-- name: '378,536,537|🇷KR-150.230.249.20-4185 #1'
+- name: '378,536,537|🇷KR-150.230.249.20-4155 #1'
   password: b5fc9fa9-796d-4185-a316-395ecac04a85
   port: 443
   server: 150.230.249.20
   skip-cert-verify: false
   sni: www.gomacau.gq
   type: trojan
-- name: '378,536,537|🇷KR-146.56.179.67-4442 #1'
+- name: '378,536,537|🇷KR-146.56.179.67-4412 #1'
   password: cc05b267-2e17-4e73-92f0-2cf603aa5997
   port: 40005
   server: 146.56.179.67
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇷KR-3.36.118.190-4481 #1'
+  name: '378,537|🇷KR-3.36.118.190-4451 #1'
   password: amazonskr05
   port: 443
   server: 3.36.118.190
@@ -1160,15 +1158,9 @@ proxies:
   port: 4652
   server: p141.panda001.net
   type: ss
-- cipher: aes-256-cfb
-  name: '378,537|🇰🇷KR-218.237.185.230-4596 #1'
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-54.180.114.77-5475 #1'
+  name: '378,536,537|🇷KR-54.180.114.77-5445 #1'
   network: ws
   port: 42517
   server: 54.180.114.77
@@ -1180,12 +1172,12 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: '378,537|KR-158.247.213.230-6024 #1'
+  name: '378,537|KR-158.247.213.230-5994 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 158.247.213.230
   type: ss
-- name: '378,536,537|🇷KR-121.78.213.3-6829 #1'
+- name: '378,536,537|🇷KR-121.78.213.3-6799 #1'
   password: KLF0qOU0ZZGw5Tnu
   port: 443
   server: 121.78.213.3
@@ -1194,7 +1186,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-211.177.40.235-6847 #1'
+  name: '378,536,537|🇷KR-211.177.40.235-6817 #1'
   network: ws
   port: 30001
   server: 211.177.40.235
@@ -1207,7 +1199,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-1.238.102.214-6848 #1'
+  name: '378,536,537|🇷KR-1.238.102.214-6818 #1'
   network: ws
   port: 30001
   server: 1.238.102.214
@@ -1218,7 +1210,7 @@ proxies:
   uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
   ws-opts:
     path: /vmess
-- name: '378,536,537|🇰🇷KR-121.78.213.3-6850 #1'
+- name: '378,536,537|🇰🇷KR-121.78.213.3-6820 #1'
   password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy
   port: 443
   server: 121.78.213.3
@@ -1227,7 +1219,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-146.56.136.237-6993 #1'
+  name: '378,536,537|🇷KR-146.56.136.237-6963 #1'
   network: ws
   port: 443
   server: seoul02.zgjok.com
@@ -1242,7 +1234,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-49.128.219.213-7009 #1'
+  name: '378,536,537|🇷KR-49.128.219.213-6979 #1'
   network: ws
   port: 38265
   server: 49.128.219.213
@@ -1255,7 +1247,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-45.141.139.109-7259 #1'
+  name: '378,536,537|🇷KR-45.141.139.109-7229 #1'
   network: ws
   port: 13311
   server: 45.141.139.109
@@ -1268,7 +1260,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-203.227.62.142-7322 #1'
+  name: '378,536,537|🇷KR-203.227.62.142-7292 #1'
   network: ws
   port: 44630
   server: 203.227.62.142
@@ -1281,7 +1273,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-61.111.244.132-7329 #1'
+  name: '378,536,537|🇷KR-61.111.244.132-7299 #1'
   network: ws
   port: 23347
   server: 61.111.244.132
@@ -1294,7 +1286,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇰🇷KR-61.111.244.51-7334 #1'
+  name: '378,536,537|🇰🇷KR-61.111.244.51-7304 #1'
   network: ws
   port: 61155
   server: 61.111.244.51
@@ -1307,7 +1299,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷KR-220.123.48.124-7403 #1'
+  name: '378,536,537|🇷KR-220.123.48.124-7373 #1'
   network: ws
   port: 30002
   server: 220.123.48.124
@@ -1322,7 +1314,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|KR-211.248.216.119-7784 #1'
+  name: '378,536,537|KR-211.248.216.119-7754 #1'
   network: ws
   port: 17443
   server: 211.248.216.119
@@ -1336,19 +1328,19 @@ proxies:
       Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
     path: /obdii.cfd:443/linkws
 - cipher: aes-256-cfb
-  name: '378,537|🇷KR-43.202.49.222-8153 #1'
+  name: '378,537|🇷KR-43.202.49.222-8123 #1'
   password: doub.io
   port: 2333
   server: 43.202.49.222
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇷KR-43.201.108.109-8154 #1'
+  name: '378,537|🇷KR-43.201.108.109-8124 #1'
   password: amazonskr05
   port: 443
   server: 43.201.108.109
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇷KR-125.141.26.5-8752 #1'
+  name: '378,537|🇷KR-125.141.26.5-8722 #1'
   password: qwerREWQ@@
   port: 2003
   server: 125.141.26.5
@@ -1416,7 +1408,7 @@ proxies:
     headers:
       Host: ylnhh.cc.cd
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '459,559,580|KR韩国(mibei77.com 米贝节点分享) #66'
+- name: '459,559,580|KR韩国(mibei77.com 米贝节点分享) #63'
   network: ws
   port: 16001
   server: 14.42.206.205
@@ -1429,7 +1421,7 @@ proxies:
     headers:
       Host: snippet.danfeng.kozow.com
     path: '%2Fdanfeng%3Fed%3D2560'
-- name: '459,559|🇰🇷_韩国 #9'
+- name: '459,559|🇰🇷_韩国 #8'
   network: ws
   port: 25105
   server: 59.14.58.161
@@ -1442,11 +1434,12 @@ proxies:
     headers:
       Host: snippet.fgfw.ndjp.net
     path: '%2Fdanfeng'
-- name: '459|韩国(yudou789.top 玉豆免费节点) #2'
+- name: '459,559|🇰🇷_韩国 #7'
   network: ws
   port: 10554
   server: 182.31.252.120
   servername: snippet.fgfw.ndjp.net
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
@@ -2277,11 +2270,12 @@ proxies:
   server: 43.203.229.162
   tfo: false
   type: ss
-- name: '523,524|🇰🇷_韩国 #1'
+- name: 523,524,559|韩国_032018070
   password: 3ac6a6ca99f74941b1eaf892818e2ddb
   port: 443
   server: 158.247.220.63
   skip-cert-verify: true
+  sni: ''
   tls: true
   type: trojan
 - name: '523,524|🇰🇷_韩国_1 #1'
@@ -2308,7 +2302,7 @@ proxies:
     headers:
       Host: ylnhh.cc.cd
     path: /Telegram🇨🇳@WangCai2
-- name: 523,524,559|🇰🇷KR韩国
+- name: '523,524|🇰🇷_韩国_3 #1'
   password: trojan
   port: 10003
   server: 118.34.36.61
@@ -3011,6 +3005,15 @@ proxies:
   server: slur.izenny.com
   type: ss
   udp: true
+- name: 536|🇰🇷KR-118.34.36.61-0839
+  network: ws
+  password: trojan
+  port: 10003
+  server: 118.34.36.61
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  ws-opts:
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 542|【高级】🇷韩国1 - 滑梯云
@@ -3050,7 +3053,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 09dcaca9-ca15-38b8-88bf-84c2ebe0f42f
+  uuid: 65e2c70b-e810-35d9-b840-710954e7f112
 - name: '545,546|韩国[01] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -3126,7 +3129,7 @@ proxies:
   server: 3.34.192.249
   tfo: false
   type: ss
-- name: 559|韩国_032004075
+- name: 559|韩国_032018069
   password: IL37892054
   port: 443
   server: positive-bear.rooster465.autos
@@ -3145,22 +3148,10 @@ proxies:
   server: 118.35.208.37
   sni: jflsjlaf.pages.dev
   type: trojan
-- name: 559|韩国 - Yeongdong-gun - 15
-  password: trojan
-  port: 17988
-  server: 175.126.186.39
-  sni: jflsjlaf.pages.dev
-  type: trojan
 - name: 559|韩国 - Yeongdong-gun - 3
   password: trojan
   port: 11310
   server: 211.106.184.129
-  sni: jflsjlaf.pages.dev
-  type: trojan
-- name: 559|韩国 - Yeongdong-gun - 19
-  password: trojan
-  port: 20000
-  server: 211.110.32.47
   sni: jflsjlaf.pages.dev
   type: trojan
 - name: 559|韩国 - Yeongdong-gun - 2
@@ -3181,98 +3172,11 @@ proxies:
   server: 59.20.121.139
   sni: jflsjlaf.pages.dev
   type: trojan
-- name: '559|KR韩国(mibei77.com 米贝节点分享) #57'
-  network: ws
-  port: 23297
-  server: 112.167.47.83
-  servername: ylnhh.cc.cd
-  tls: true
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  ws-opts:
-    headers:
-      Host: ylnhh.cc.cd
-    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '559|KR韩国(mibei77.com 米贝节点分享) #58'
-  network: ws
-  port: 11176
-  server: 118.42.204.220
-  servername: ylnhh.cc.cd
-  tls: true
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  ws-opts:
-    headers:
-      Host: ylnhh.cc.cd
-    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '559|KR韩国(mibei77.com 米贝节点分享) #59'
-  network: ws
-  port: 12281
-  server: 118.42.204.220
-  servername: ylnhh.cc.cd
-  tls: true
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  ws-opts:
-    headers:
-      Host: ylnhh.cc.cd
-    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: 559|KR韩国(mibei77.com 米贝节点分享)-016
-  network: ws
-  port: 29729
-  server: 132.226.233.187
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  ws-opts:
-    headers:
-      Host: ylnhh.cc.cd
-    path: '%2FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: '559|KR韩国(mibei77.com 米贝节点分享) #60'
-  network: ws
-  port: 12053
-  server: 175.212.45.195
-  servername: ylnhh.cc.cd
-  tls: true
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  ws-opts:
-    headers:
-      Host: ylnhh.cc.cd
-    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- client-fingerprint: chrome
-  name: '559|🇰🇷_韩国 #2'
-  network: ws
-  port: 11074
-  server: 180.233.245.33
-  servername: ylnhh.cc.cd
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  ws-opts:
-    headers:
-      Host: ylnhh.cc.cd
-    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- name: '559|KR韩国(mibei77.com 米贝节点分享) #61'
-  network: ws
-  port: 11265
-  server: 211.48.77.114
-  servername: ylnhh.cc.cd
-  tls: true
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  ws-opts:
-    headers:
-      Host: ylnhh.cc.cd
-    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '559,580|KR韩国(mibei77.com 米贝节点分享) #67'
+- name: '559,580|KR韩国(mibei77.com 米贝节点分享) #64'
   network: ws
   port: 11253
   server: 221.144.40.169
   servername: ylnhh.cc.cd
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
@@ -3304,68 +3208,16 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- client-fingerprint: random
-  name: '559|🇰🇷_韩国 #6'
-  network: ws
-  port: 12146
-  server: 59.5.26.71
-  servername: 5fcf0b95.mfree.ccwu.cc
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '559,580|KR VLESS-119 | free-nodes #1'
+  port: 443
+  server: ako.pagate.top
+  servername: ako.pagate.top
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 69b9d375-c6c1-64f9-c4a9-f409c8586e5b
-  ws-opts:
-    headers:
-      Host: 5fcf0b95.mfree.ccwu.cc
-    path: '%2Fsocks5%3D4b2c7676%3A6f0f4cbba5bb%4038.111.30.111%3A26433'
-- name: 559|KR韩国(mibei77.com 米贝节点分享)-017-1
-  network: ws
-  port: 11371
-  server: 121.152.61.147
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.de5.net
-    path: '%2Fdanfeng'
-- name: 559|KR韩国(mibei77.com 米贝节点分享)-006
-  network: ws
-  port: 26257
-  server: 211.228.64.93
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.kozow.com
-    path: '%2Fdanfeng'
-- name: 559|KR韩国(mibei77.com 米贝节点分享)-020-1
-  network: ws
-  port: 32768
-  server: 27.119.233.26
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.de5.net
-    path: '%2Fdanfeng'
-- name: 559|KR韩国(mibei77.com 米贝节点分享)-022-1
-  network: ws
-  port: 15018
-  server: 61.79.252.188
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.de5.net
-    path: '%2Fdanfeng'
+  uuid: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
 - alpn:
   - http/1.1
   client-fingerprint: random
@@ -3417,13 +3269,9 @@ proxies:
     headers:
       Host: krcc1.topf6.com
     path: /ws?ed=2048
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|KR VLESS-119 | free-nodes
+- name: '580|KR韩国(mibei77.com 米贝节点分享) #61'
+  network: tcp
+  password: IL37892054
   port: 443
-  server: ako.pagate.top
-  servername: ako.pagate.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+  server: apt-magpie.rooster465.autos
+  type: trojan
