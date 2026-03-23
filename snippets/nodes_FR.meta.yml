@@ -84,6 +84,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 255|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-8051 #2'
   password: f8f7aCzcPKbsF8p3
@@ -552,7 +566,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-51.77.158.169-3510 #1'
+  name: '378,494,536,537|🇷FR-51.77.158.169-3510 #1'
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -639,18 +653,22 @@ proxies:
     headers:
       Host: ahdaeph8.com
     path: /ws
-- name: '378,436,536,537|🇷FR-51.254.142.162-4537 #1'
+- country: 🇷FR
+  name: '378,435,436,536,537|🇷FR-51.254.142.162-4537 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇫🇷FR-57.128.174.124-4538 #2'
+  udp: true
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇫🇷FR-57.128.174.124-4538 #2'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇷FR-162.19.192.89-4742 #1'
@@ -810,7 +828,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-146.59.55.50-6918 #1'
+  name: '378,494,536,537|🇷FR-146.59.55.50-6918 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1532,16 +1550,18 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '438|🇫🇷FR_4|1.7MB/s | 福利姬: https://...'
+- name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #3811'
   network: ws
   password: humanity
   port: 443
   server: 104.18.32.47
+  skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '438|🇫🇷FR_5|2.2MB/s | 更多节点: https:/...'
+- flow: ''
+  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #3219'
   network: ws
   port: 80
   server: 152.228.162.19
@@ -1552,7 +1572,7 @@ proxies:
     headers:
       Host: akamaized.net
     path: '%2Fvless%2F'
-- name: '438,462|德国_兰河畔林堡 #2'
+- name: '438,462,494|🔥Join+Telegram:@Farah_VPN🟣 #168'
   network: ws
   port: 80
   server: 162.19.228.119
@@ -1583,7 +1603,7 @@ proxies:
     path: '%2Fassignment'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438|🇫🇷FR_9|1.1MB/s | 福利姬: https://...'
+  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #2772'
   network: tcp
   port: 23576
   reality-opts:
@@ -1760,21 +1780,6 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 470|dad9205c33d84d2bb5084a67a19e82...
-  network: ws
-  port: 443
-  server: cf.008500.xyz
-  servername: powered-by-surena.configfarsi695fcee895881.workers.dev
-  tls: true
-  type: vless
-  udp: false
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  ws-opts:
-    headers:
-      host: powered-by-surena.configfarsi695fcee895881.workers.dev
-    path: /@OnNetVpn
 - alterId: 0
   cipher: auto
   name: '476,481|FR法国(mibei77.com 米贝节点分享) #1'
@@ -1996,11 +2001,6 @@ proxies:
   udp: true
   uuid: 491ce522-7923-41ad-869f-df74539af6e0
   xudp: true
-- name: 507|FR TROJAN-37 | free-nodes
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.236.16.104
-  type: trojan
 - name: 507,559|未知 VLESS-58 | free-nodes
   network: ws
   port: 80
@@ -2014,7 +2014,7 @@ proxies:
     path: '%2Fvless'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507|FR VLESS-44 | free-nodes
+  name: 507|FR VLESS-42 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -2027,7 +2027,7 @@ proxies:
   uuid: 19cb2ba5-d074-42d6-8400-6d9183514f48
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507|FR VLESS-48 | free-nodes
+  name: 507|FR VLESS-46 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -2040,7 +2040,7 @@ proxies:
   uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507|FR VLESS-76 | free-nodes
+  name: 507|FR VLESS-73 | free-nodes
   network: tcp
   port: 23151
   reality-opts:
@@ -2158,7 +2158,7 @@ proxies:
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 559|🇫🇷FR_20
+- name: '559|🇫🇷FR_20 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -2187,7 +2187,7 @@ proxies:
     headers:
       Host: fsdns.ectunnelvpn.me
     path: /vless
-- name: '559|FR VLESS-48 | free-nodes #1'
+- name: 559|FR VLESS-48 | free-nodes
   port: 443
   server: fr.denditop.site
   tls: false
@@ -2310,12 +2310,6 @@ proxies:
   tls: false
   type: vless
   uuid: 7f37b28b-cfcb-4c2a-ae41-8f2ddc9325dd
-- name: 559|FR VLESS-87 | free-nodes
-  port: 61873
-  server: 45.95.233.85
-  tls: false
-  type: vless
-  uuid: 8b8f4dfb-cd48-4dab-bb75-b304971176cd
 - alterId: 0
   cipher: auto
   name: '559|🇫🇷_法国 #8'
@@ -2632,16 +2626,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 559|法国_032304004
-  network: tcp
-  port: '550'
-  server: 162.19.248.238
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ede27a79-b039-490b-932c-495de4b68880
-- alterId: 0
-  cipher: auto
   name: '577|法国1 #4'
   network: tcp
   port: '45072'
@@ -2686,6 +2670,17 @@ proxies:
   tls: false
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
+- name: 580|FR VLESS-71 | free-nodes
+  network: ws
+  port: 80
+  server: 213.136.69.8
+  tls: false
+  type: vless
+  uuid: 15cbab96-197e-46a5-9042-073b3980c798
+  ws-opts:
+    headers:
+      Host: fsdns.ectunnelvpn.me
+    path: '%2Fvless'
 - alpn:
   - h3
   auth-str: dongtaiwang.com

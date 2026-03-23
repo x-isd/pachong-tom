@@ -457,7 +457,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: 378,537,538,548|🇺🇸US_103
+  name: '378,537,538,548|disney_US #1'
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.60.250.107
@@ -1070,14 +1070,16 @@ proxies:
   uuid: 826b8d0a-e0d3-407a-927d-19953c170779
   ws-opts:
     path: /cctv13/hd.m3u8
-- name: 378,436,536,537,559|🇩🇪DE_17
+- country: 🇪DE
+  name: 378,435,436,536,537,559|🇩🇪DE_17
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
   skip-cert-verify: false
   sni: de2-full.privateip.net
   type: trojan
-- name: '378,436,536,537|🇪DE-51.75.69.164-4536 #1'
+  udp: true
+- name: '378,536,537|🇪DE-51.75.69.164-4536 #1'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -1283,7 +1285,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.28.64-6899 #2'
+  name: '378,494,536,537|🇩🇪DE-57.129.28.64-6899 #2'
   network: ws
   port: 443
   server: 57.129.28.64
@@ -1298,7 +1300,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.59.201-6900 #2'
+  name: '378,494,536,537|🇩🇪DE-57.129.59.201-6900 #2'
   network: ws
   port: 443
   server: 57.129.59.201
@@ -1328,7 +1330,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇪DE-57.129.64.238-6910 #1'
+  name: '378,494,536,537|🇪DE-57.129.64.238-6910 #1'
   network: ws
   port: 443
   server: 57.129.64.238
@@ -1433,7 +1435,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.25.22-6923 #2'
+  name: '378,494,536,537|🇩🇪DE-57.129.25.22-6923 #2'
   network: ws
   port: 443
   server: 57.129.25.22
@@ -1448,7 +1450,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇪DE-57.129.2.121-6926 #1'
+  name: '378,494,536,537|🇪DE-57.129.2.121-6926 #1'
   network: ws
   port: 443
   server: 57.129.2.121
@@ -1463,7 +1465,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.28.65-6928 #2'
+  name: '378,494,536,537|🇩🇪DE-57.129.28.65-6928 #2'
   network: ws
   port: 443
   server: 57.129.28.65
@@ -1523,7 +1525,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇪DE-57.129.25.25-6937 #1'
+  name: '378,494,536,537|🇪DE-57.129.25.25-6937 #1'
   network: ws
   port: 443
   server: 57.129.25.25
@@ -1613,7 +1615,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.24.125-6951 #2'
+  name: '378,494,536,537|🇩🇪DE-57.129.24.125-6951 #2'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -1658,7 +1660,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.24.124-6954 #2'
+  name: '378,494,536,537|🇩🇪DE-57.129.24.124-6954 #2'
   network: ws
   port: 443
   server: 57.129.24.124
@@ -1673,7 +1675,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-57.129.28.69-6958 #2'
+  name: '378,494,536,537|🇩🇪DE-57.129.28.69-6958 #2'
   network: ws
   port: 443
   server: 57.129.28.69
@@ -2214,9 +2216,9 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '459,523,524|🇺🇸_美国_147 #1'
+  name: '459,523,524,580|US美国(mibei77.com 米贝节点分享) #60'
   network: ws
-  port: 443
+  port: '443'
   server: d.810114.xyz
   servername: ''
   skip-cert-verify: false
@@ -2224,13 +2226,9 @@ proxies:
   type: vmess
   uuid: 2ce2ab9a-ea25-45d3-80d9-c361878bb983
   ws-opts:
+    headers:
+      Host: ''
     path: /mea
-- name: '459|德国(yudou789.top 玉豆免费节点) #1'
-  network: tcp
-  password: IL37892054
-  port: 443
-  server: steady-lemming.rooster465.autos
-  type: trojan
 - name: '460|德国_Frankfurt am Main #3'
   network: ws
   password: NISHIKUITAN222
@@ -2543,19 +2541,13 @@ proxies:
     headers:
       Host: yyyt-de-2024.mofaxw.top
     path: /2024
-- alterId: 0
-  cipher: auto
-  name: '544,559|🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch... #1'
-  network: ws
-  port: '8080'
-  server: 547.rtxconfigz.shop
-  tls: false
-  type: vmess
-  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
-  ws-opts:
-    headers:
-      Host: 547.rtxconfigz.shop
-    path: /@Malinda6104
+- cipher: aes-256-cfb
+  country: 🇳🇱NL
+  name: 548|Relay_🇳🇱NL-🇩🇪DE_70
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 558|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2658,39 +2650,13 @@ proxies:
   uuid: 0654d64d-08bf-43e5-ad44-18a7d1a8d6f7
 - alterId: 0
   cipher: auto
-  name: 559|德国_032304046
-  network: ws
-  port: '2096'
-  server: 164.92.245.167
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4c95d617-efd8-4045-98d5-4d00e96667f9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '559|🇩🇪_DE_德国 #10'
+  name: '559|🇩🇪_DE_德国 #8'
   network: tcp
   port: 8080
   server: 185.189.58.195
   tls: false
   type: vmess
   uuid: 42e25353-b1ae-59f3-bd59-d86d2737b814
-- name: 566|🇩🇪 德国 | DEU 3
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 172.66.44.230
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /tro8sFW1S91B6sZrM1?ed=2560
 - alterId: 2
   cipher: auto
   name: '578|13,25|1|🇩🇪1 |  4.9MB/s #1'
