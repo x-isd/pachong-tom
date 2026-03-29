@@ -1054,15 +1054,15 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|🇯🇵 JP
+- name: 255|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - alterId: 0
-  name: '306,378,454,494,502,507,514,515,516,537,544,548,551,556,557,574,579,580,582|🇭🇰
+  name: '306,378,454,494,502,507,514,515,516,537,544,548,551,556,557,566,574,579,580,582|🇭🇰
     香港3|@stairnode #6'
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
@@ -1083,7 +1083,7 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 0
-  name: '306,378,454,494,502,514,515,516,537,544,548,551,556,557,574,579,580,582|🇯🇵
+  name: '306,378,438,454,494,502,514,515,516,537,544,548,551,556,557,574,579,580,582|🇯🇵
     日本2|@stairnode #7'
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
@@ -1119,7 +1119,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '306,378,454,494,502,507,514,515,516,537,544,548,551,556,557,574,579,580,582|🇸🇬
+  name: '306,378,438,454,494,502,507,514,515,516,537,544,548,551,556,557,574,579,580,582|🇸🇬
     新加坡2|@stairnode #7'
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
@@ -1142,7 +1142,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '306,378,454,494,502,507,514,515,516,537,544,548,551,556,557,579,580,582|🇺🇸
+- name: '306,378,454,494,502,507,514,515,516,537,544,548,551,556,557,568,579,580,582|🇺🇸
     美国3|@stairnode #7'
   network: tcp
   password: BxceQaOe
@@ -1152,7 +1152,7 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
 - delay: 2544
-  name: '306,340,378,502,514,515,516,523,524,528,537,551,559,567,585,586|MD_speednode_0012
+  name: '306,340,378,502,514,515,516,523,524,528,537,551,559,566,567,585,586|MD_speednode_0012
     #3'
   password: strong-secret-pass-777
   port: 4443
@@ -1205,7 +1205,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '340,378,494,536,537,559,580|🇯🇵 日本2|@stairnode #5'
+- name: '340,378,536,537,559,580|🇯🇵 日本2|@stairnode #5'
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
   port: 34818
@@ -1213,7 +1213,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '340,378,494,536,537,559,580|🇯🇵 日本3|@stairnode #5'
+- name: '340,378,536,537,559,580|🇯🇵 日本3|@stairnode #5'
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
   port: 4937
@@ -2136,7 +2136,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇯🇵JP
-  name: 378,537,538,548|🇯🇵JP_52
+  name: '378,537,538,548|netflix_JP #1'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 172.105.199.111
@@ -2164,7 +2164,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇳IN
-  name: 378,537,538,548|🇮🇳IN_49
+  name: 378,537,538,548|🇮🇳IN_54
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 103.106.228.247
@@ -2466,7 +2466,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537,559|JP #2'
+  name: '378,536,537,559|JP #3'
   network: ws
   port: '443'
   server: 138.2.39.24
@@ -3086,6 +3086,15 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- country: 🇵JP
+  name: 440|🇵JP_10
+  password: strong-secret-pass-777
+  port: 4443
+  server: 103.231.73.181
+  skip-cert-verify: true
+  sni: 103.231.73.181
+  type: trojan
+  udp: true
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -3365,20 +3374,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 470|17c7c2b036c545cba98a5f64932239...
-  network: ws
-  port: 31518
-  server: static.ubejiasu.top
-  tls: false
-  type: vmess
-  udp: false
-  uuid: 957d12d8-048d-4b57-b09c-f19d027484a0
-  ws-opts:
-    path: /
 - cipher: aes-128-gcm
   name: 489|🟡🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001...
   password: f97cf7d99d
@@ -3417,7 +3412,7 @@ proxies:
   delay: 642
   h2-opts: {}
   http-opts: {}
-  name: 489,528,548|Relay_🇭🇰HK-🇯🇵JP_41
+  name: 489,528,548|Relay_🇭🇰HK-🇯🇵JP_46
   network: tcp
   port: 30806
   server: v6.hdacd.com
@@ -3429,12 +3424,13 @@ proxies:
   ws-path: /
 - alterId: 2
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #3'
+  name: 489,566|🇯🇵 日本 | JPN
   port: 30806
   server: v6.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-128-gcm
   name: 489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001...
@@ -3526,16 +3522,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: trojan
-- alterId: 0
-  name: 523,524,574|🇸US美国11
-  password: BxceQaOe
-  port: 14919
-  server: 3.112.191.104
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
 - country: 🇳🇱NL
   delay: 1305
   name: 528,559|塞浦路斯_032904099
@@ -3545,6 +3531,137 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 542|🇵 日本 1 Nico Abema - 西瓜皮是真的皮
+  port: 19831
+  server: xgcma.dx002.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 075c16e6-67cb-3599-aa5a-025b478db156
+- alterId: 0
+  cipher: auto
+  name: 542|🇯🇵 日本 2 Nico Abema - 西瓜皮是真的皮
+  port: 19832
+  server: xgcta.dx002.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 075c16e6-67cb-3599-aa5a-025b478db156
+- name: 542|🇯🇵 日本•高速114•高速 - 飞翔吧
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 41767
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x114.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542|🇯🇵 日本•高速115•高速 - 飞翔吧
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 54178
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x115.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542|🇯🇵 日本•高速139•铂金 - 飞翔吧
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20139
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z139.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542|🇯🇵 日本•高速140•铂金 - 飞翔吧
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20140
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z140.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542|🇯🇵 日本•高速141•铂金 - 飞翔吧
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20141
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z141.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542|🇯🇵 日本•高速142•原生 - 飞翔吧
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20142
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z142.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542|🇯🇵 日本•高速59•青铜 - 飞翔吧
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20059
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x59.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542|🇯🇵 日本•高速71•高速 - 飞翔吧
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20071
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x71.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542|🇯🇵 日本•高速76•高速 - 飞翔吧
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20076
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x76.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 542|🇵 [vip①]日本1 - MG Network
+  port: 23611
+  server: traffic.a1.szx.gfw250.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c3b7bb4a-7aed-31a7-8ae6-20786c772d72
+- alterId: 2
+  cipher: auto
+  name: 542|🇯🇵 [vip①]日本2 - MG Network
+  port: 23617
+  server: traffic.a1.szx.gfw250.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c3b7bb4a-7aed-31a7-8ae6-20786c772d72
+- alterId: 2
+  cipher: auto
+  name: 542|🇯🇵 [vip①]日本3 - MG Network
+  port: 23618
+  server: traffic.a1.szx.gfw250.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c3b7bb4a-7aed-31a7-8ae6-20786c772d72
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3734,21 +3851,25 @@ proxies:
       Host: v6.583181.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 566|🇯🇵 日本 | JPN 3
-  password: 58f49e40-84f9-48ac-8a42-62781e845210
-  port: 29571
-  server: jry.izenny.com
+  name: 566|🇯🇵 日本 | JPN 2
+  password: ab447bda-2318-4535-a208-7bf915d2b1d6
+  port: 40003
+  server: jp.fastsoonlink.com
   type: ss
   udp: true
-- alterId: 0
-  name: 574|🇵JP日本2
-  password: BxceQaOe
-  port: 3278
-  server: 43.207.1.64
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 566|🇯🇵 日本 | JPN 3
+  password: a719b36a-bb00-4fb0-86b5-75ade580ba39
+  port: 40003
+  server: jp.fastsoonlink.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 566|🇯🇵 日本 | JPN 4
+  password: 1d4803da-e4ba-4372-9a05-82d7b6db0979
+  port: 40003
+  server: jp.fastsoonlink.com
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
