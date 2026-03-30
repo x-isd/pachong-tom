@@ -774,6 +774,25 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
+- alterId: 0
+  name: '340,378,494,536,537,559,574,580|🇸🇬 新加坡|@stairnode #6'
+  network: tcp
+  password: 6d29eb2f74293cb01a19b32cf08ad2e9
+  port: 1524
+  server: 153.121.45.139
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- name: '340,378,494,536,537,559,580|🇸🇬 新加坡3|@stairnode #5'
+  network: tcp
+  password: BxceQaOe
+  port: 30726
+  server: 18.162.154.71
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - name: 356|🇸🇬1 |  9.0MB/s
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -794,7 +813,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇸🇬SG
-  name: 356,378,489,537,538,548|🇸🇬SG_85
+  name: 356,378,489,537,538,548|🇸🇬SG_90
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -1882,7 +1901,8 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '378,537,538,548|_06 #1'
+  country: 🇸 US
+  name: '378,435,537,538,548|_03 #1'
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.89.142.56
@@ -3474,6 +3494,17 @@ proxies:
   udp: true
   uuid: d52d6e7f-95c3-41a1-ba85-756f9bce1b87
   xudp: true
+- name: 507|SG TROJAN-79 | free-nodes
+  network: ws
+  password: 13c169be-8592-4eaa-94cb-69c859e7d987
+  port: 443
+  server: ubu.okaoclax.me
+  sni: ubu.okaoclax.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ubu.okaoclax.me
+    path: /trojan-ws
 - cipher: aes-256-cfb
   name: '513,517,578|1|_SG_ #2'
   password: amazonskr05
@@ -3627,7 +3658,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: d3ecde78-efd8-3fd4-8acb-a5e2683d480f
+  uuid: 6b306e10-1d2a-3c2d-bbfb-03093a731378
 - alterId: 2
   cipher: auto
   name: 542|🇸🇬 [vip①]新加坡2 - MG Network
@@ -3637,7 +3668,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: d3ecde78-efd8-3fd4-8acb-a5e2683d480f
+  uuid: 6b306e10-1d2a-3c2d-bbfb-03093a731378
 - grpc-opts:
     grpc-service-name: sgvip101
   name: 542|🇬 新加坡 101 - 墙了个墙
@@ -3699,12 +3730,26 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
+- alterId: 32
+  cipher: auto
+  name: 548|SG新加坡(mibei77.com 米贝节点分享)
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-headers:
+    Host: vc.fly.dev
+  ws-path: /vc
 - alterId: 0
   cipher: auto
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: '548|disney_SG #1'
+  name: 548|disney_SG
   port: 35034
   server: 165.154.195.38
   skip-cert-verify: true
@@ -3790,32 +3835,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '566,568|🇸🇬 新加坡 | SGP #1'
-  password: ed9b3eb3-92f0-4186-8e73-2c3d0e240c25
-  port: 12023
-  server: 64f890ce.sched.sma-dk.ali-oss.cn
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-  udp: true
-- name: '566,568|🇸🇬 新加坡 | SGP #2'
-  password: ed9b3eb3-92f0-4186-8e73-2c3d0e240c25
-  port: 12024
-  server: 64f890ce.sched.sma-dk.ali-oss.cn
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 574|🇬SG新加坡3
-  password: BxceQaOe
-  port: 30726
-  server: 18.162.154.71
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '577|新加坡NO.1 #4'
