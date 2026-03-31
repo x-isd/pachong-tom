@@ -504,14 +504,14 @@ proxies:
   skip-cert-verify: true
   sni: appsvs.shop
   type: trojan
-- name: 378,507,536,537,538,559,580|KR TROJAN-72 | free-nodes
+- name: '378,456,507,536,537,538,559,580|KR TROJAN-72 | free-nodes #1'
   password: IL37892054
   port: 443
   server: select-marmoset.rooster465.autos
   skip-cert-verify: false
   sni: select-marmoset.rooster465.autos
   type: trojan
-- name: 378,507,536,537,538,559,580|KR TROJAN-83 | free-nodes
+- name: '378,456,536,537,538,559,580|KR TROJAN-83 | free-nodes #1'
   password: ZY07256934
   port: 443
   server: glowing-deer.rooster465.autos
@@ -535,14 +535,14 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: '378,537,538,548|disney_KR #2'
+  name: 378,537,538,548|🇰🇷KR_49
   password: qwerREWQ@@
   port: 13979
   server: 221.139.79.57
   type: ss
 - cipher: aes-256-gcm
   country: 🇰🇷KR
-  name: 378,537,538,548|🇰🇷KR_52
+  name: 378,537,538,548|🇰🇷KR_48
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 141.164.45.187
@@ -930,16 +930,14 @@ proxies:
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 378,537,548,553,606|218.237.185.230_Claude
+  name: 378,537,553,606|218.237.185.230_Claude
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 378,537,548|disney_KR
+  name: '378,537|🇰🇷KR-218.237.185.230-4552 #1'
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -1152,26 +1150,23 @@ proxies:
   uuid: 81d5cac4-d039-4874-9a20-c391f580012d
   ws-opts:
     path: /
-- delay: 1563
-  name: '459,528,580|US美国(mibei77.com 米贝节点分享) #121'
-  network: ws
-  password: trojan
-  port: 8444
-  server: 152.53.200.98
-  skip-cert-verify: false
-  sni: jflsjlaf.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: jflsjlaf.pages.dev
-    path: '%2F'
 - name: '459,580|HK香港(mibei77.com 米贝节点分享) #26'
   network: ws
   password: trojan
   port: 8444
   server: 152.53.60.198
   skip-cert-verify: false
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: '%2F'
+- name: '459,580|KR韩国(mibei77.com 米贝节点分享) #57'
+  network: ws
+  password: trojan
+  port: 10003
+  server: 221.146.116.77
   sni: jflsjlaf.pages.dev
   type: trojan
   ws-opts:
@@ -1366,7 +1361,7 @@ proxies:
   server: 43.203.229.162
   tfo: false
   type: ss
-- name: '523,524|🇰🇷_韩国 #1'
+- name: 523,524,544,548|US美国(mibei77.com 米贝节点分享)_87
   password: trojan
   port: 29999
   server: 59.20.121.139
@@ -1378,7 +1373,7 @@ proxies:
     headers:
       Host: jflsjlaf.pages.dev
     path: /
-- name: '523,524|🇰🇷_韩国_2 #1'
+- name: 523,524,544,548|KR韩国(mibei77.com 米贝节点分享)_5
   password: trojan
   port: 10003
   server: 221.146.116.77
@@ -1447,27 +1442,19 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: e5a0a450-b1f0-3271-a504-a3821208f6bc
+  uuid: f5e7efeb-293d-3c8f-908f-eaf436b4c72d
 - name: '545,546|韩国[01] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '548,559|🇰🇷_韩国 #2'
-  network: tcp
-  password: trojan
-  port: 10003
-  server: 221.146.116.77
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   country: 🇰🇷KR
   h2-opts: {}
   http-opts: {}
-  name: 548|🇰🇷KR_53
+  name: 548|netflix_KR
   network: none
   port: 443
   server: 140.238.2.250
@@ -1718,13 +1705,20 @@ proxies:
   server: workable-crawdad.rooster465.autos
   sni: workable-crawdad.rooster465.autos
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 566|🇰🇷 韩国 | KOR
-  password: 903739eb-721f-4059-b8f8-9b694fbff8bf
-  port: 40032
-  server: kr.fastsoonlink.com
-  type: ss
-  udp: true
+- name: '559|🇰🇷_韩国 #2'
+  network: tcp
+  password: trojan
+  port: 10003
+  server: 221.146.116.77
+  skip-cert-verify: true
+  type: trojan
+- name: '559|🇰🇷_韩国 #3'
+  network: tcp
+  password: trojan
+  port: 29999
+  server: 59.20.121.139
+  skip-cert-verify: true
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 578|26|🇰🇷 韩国特殊|@ripaojiedian
