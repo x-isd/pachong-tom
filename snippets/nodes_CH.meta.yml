@@ -135,6 +135,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
+- name: 472,473,474,494,502,536|🇮🇹IT-81.29.149.201-0792
+  network: tcp
+  password: hCjWaBe5vTkewfiljOL=9FS9DYg0c09c.t
+  port: 18390
+  server: 81.29.149.201
+  sni: osl7.solidly.click
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '523,524|🇨🇭_瑞士 #1'
@@ -174,6 +181,19 @@ proxies:
   server: 95.85.239.4
   sni: xo.e0f.cx
   type: trojan
+- name: '559|🇨🇭_瑞士 #2'
+  network: ws
+  port: 2096
+  server: 185.18.250.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F'
 - name: 559|🇨🇭CH_1|1.6MB/s
   network: grpc
   port: 443
