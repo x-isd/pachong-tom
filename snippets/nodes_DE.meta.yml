@@ -1356,25 +1356,31 @@ proxies:
   uuid: 826b8d0a-e0d3-407a-927d-19953c170779
   ws-opts:
     path: /cctv13/hd.m3u8
-- name: '378,436,536,537|🇪DE-165.22.74.230-4549 #1'
+- country: 🇪 DE
+  name: '378,435,436,536,537|🇪DE-165.22.74.230-4549 #1'
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
   server: 165.22.74.230
   skip-cert-verify: false
   type: trojan
-- name: 378,436,536,537,559|🇩🇪DE_17
+  udp: true
+- country: 🇪DE
+  name: 378,435,436,536,537,559|🇩🇪DE_17
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
   skip-cert-verify: false
   sni: de2-full.privateip.net
   type: trojan
-- name: '378,436,536,537|🇪DE-51.75.69.164-4552 #1'
+  udp: true
+- country: 🇷FR
+  name: '378,435,436,536,537|🇪DE-51.75.69.164-4552 #1'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: '378,537|DE-193.108.117.75-5191 #1'
   password: PCnnH6SQSnfoS27
@@ -2547,7 +2553,7 @@ proxies:
   tls: true
   type: vless
   uuid: 9357d31a-97f5-492b-9a9d-24dcb3449fb9
-- name: '455,457,458,559|🇩🇪_DE_德国 #7'
+- name: '455,559|🇩🇪_DE_德国 #11'
   network: ws
   port: 42622
   server: 159.69.162.184
@@ -2559,7 +2565,31 @@ proxies:
     headers:
       Host: sub.mot.ip-ddns.com
     path: '%2F'
-- name: '459,580|DE德国(mibei77.com 米贝节点分享) #7'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '456,457,458,522,548,559,580,581|🇩🇪_DE_德国 #19'
+  port: 443
+  reality-opts:
+    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+    short-id: '23'
+  server: best4.pineappled.org
+  servername: www.apple.com
+  tls: true
+  type: vless
+  uuid: 71322f86-f37a-4929-ada0-05e6a2688145
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '456,457,458,522,548,559,580,581|🇩🇪_DE_德国 #20'
+  port: 443
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  server: 5.254.85.151
+  servername: germany.scroogethebest.com
+  tls: true
+  type: vless
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+- name: '459,580|DE德国(mibei77.com 米贝节点分享) #2'
   network: ws
   port: 8443
   server: 89.58.40.177
@@ -2571,32 +2601,19 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2F'
-- name: '459,559,580|FR法国(mibei77.com 米贝节点分享) #16'
-  network: ws
-  port: 12001
-  server: 89.58.32.115
-  servername: sni.111000.v6.navy
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: '459,559,580|FR法国(mibei77.com 米贝节点分享) #18'
+- name: '459,559,580|DE德国(mibei77.com 米贝节点分享) #1'
   network: ws
   port: 443
-  server: 109.235.242.101
-  servername: 1-bhn.pages.dev
+  server: 104.19.58.118
+  servername: us1-us1.aiopen.sbs
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  uuid: 340dee85-bfd7-4395-8d2e-87dbc2781a13
   ws-opts:
     headers:
-      Host: 1-bhn.pages.dev
-    path: '%2Fproxyip%3DProxyIP.DE.owg.dpdns.org'
+      Host: us1-us1.aiopen.sbs
+    path: '%2Fkbjc%2Fus1'
 - name: 460|德国_Frankfurt am Main
   network: ws
   port: 443
@@ -3022,36 +3039,8 @@ proxies:
   skip-cert-verify: false
   sni: awaited-chicken.adder289.quest
   type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: '470,494|🔥Join+Telegram:@Farah_VPN🟣 #2553'
-  network: ws
-  port: 443
-  server: hk2.lrzdx.uk
-  servername: hk2.lrzdx.uk
-  tls: true
-  type: vmess
-  udp: false
-  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
-  ws-opts:
-    path: /register
 - client-fingerprint: chrome
-  fingerprint: ''
-  grpc-opts:
-    grpc-service-name: grpc
-  name: 470|8dfdab54d3cd4e0cb80ac03f1ff267...
-  network: grpc
-  port: 2053
-  server: reserve.pilates.rodeo
-  servername: nice.ducks.tel
-  tls: true
-  type: vless
-  udp: false
-  uuid: 3d243df5-9cda-4aac-89d5-354de77d79e2
-- client-fingerprint: chrome
-  name: '475,480|🇩🇪_DE_德国 #4'
+  name: '475,480|🇩🇪_DE_德国 #8'
   network: ws
   port: 4001
   server: 185.94.29.156
@@ -3194,30 +3183,6 @@ proxies:
   server: 91.107.219.5
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '522,548,559,580,581|🇩🇪_DE_德国 #15'
-  port: 443
-  reality-opts:
-    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
-    short-id: '23'
-  server: best4.pineappled.org
-  servername: www.apple.com
-  tls: true
-  type: vless
-  uuid: 71322f86-f37a-4929-ada0-05e6a2688145
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '522,548,559,580,581|🇩🇪_DE_德国 #16'
-  port: 443
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
-  server: 5.254.85.151
-  servername: germany.scroogethebest.com
-  tls: true
-  type: vless
-  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 523,524,553|🇯🇵 日本 打倒美帝国主义及其一切走狗_7bd4
@@ -5284,55 +5249,13 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '559|🇩🇪_DE_德国 #10'
+  name: '559|🇩🇪_DE_德国 #14'
   network: tcp
   port: 8080
   server: 185.189.58.195
   tls: false
   type: vmess
   uuid: 42e25353-b1ae-59f3-bd59-d86d2737b814
-- client-fingerprint: chrome
-  name: 566|🇩🇪 德国 | DEU
-  network: ws
-  port: 443
-  server: 45.83.21.13
-  servername: 1-brc.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: 1-brc.pages.dev
-    path: /proxyip=ProxyIP.DE.owg.dpdns.org
-- client-fingerprint: chrome
-  name: 566|🇩🇪 德国 | DEU 2
-  network: ws
-  port: 443
-  server: 202.144.192.37
-  servername: 3-93f.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: 3-93f.pages.dev
-    path: /proxyip=ProxyIP.DE.owg.dpdns.org
-- client-fingerprint: chrome
-  name: 566|🇩🇪 德国 | DEU 3
-  network: ws
-  port: 443
-  server: 178.62.67.149
-  servername: 3-deu.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: 3-deu.pages.dev
-    path: /proxyip=ProxyIP.DE.owg.dpdns.org
 - alterId: 2
   cipher: auto
   name: '578|13,25|1|🇩🇪1 |  4.9MB/s #1'
@@ -5400,3 +5323,27 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: '580|DE德国(mibei77.com 米贝节点分享) #4'
+  network: ws
+  port: 443
+  server: love.zshabai.top
+  servername: 1-2cd.pages.dev
+  tls: true
+  type: vless
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  ws-opts:
+    headers:
+      Host: 1-2cd.pages.dev
+    path: '%2Fproxyip%3DProxyIP.DE.owg.dpdns.org'
+- name: '580|DE德国(mibei77.com 米贝节点分享) #9'
+  network: ws
+  port: 443
+  server: dnew.cc
+  servername: 3-7bf.pages.dev
+  tls: true
+  type: vless
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  ws-opts:
+    headers:
+      Host: 3-7bf.pages.dev
+    path: '%2Fproxyip%3DProxyIP.DE.owg.dpdns.org'
