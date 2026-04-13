@@ -1283,25 +1283,6 @@ proxies:
   sni: kr.mjhy2.com
   type: hysteria2
   up: 10000
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: '438,489,523,524,559|🇰🇷_韩国 #2'
-  network: tcp
-  port: 19001
-  reality-opts:
-    public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
-  server: krp01.jumperservice.com
-  servername: addons.mozilla.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 455fc271-3ee2-493b-8c75-9324b4851e2f
-  xudp: true
 - client-fingerprint: chrome
   name: '457,458,559,580,581|🇰🇷_KR_韩国 #16'
   network: ws
@@ -1841,11 +1822,14 @@ proxies:
   skip-cert-verify: true
   sni: humble-rodent.treefrog761.one
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '476,481|美国(yudou789.top 玉豆免费节点)_125 #1'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 476,481,574|HK
   password: RFK38Cg7APneSB5cWDcpbm
   port: 443
   server: switcher-nick-croquet.freesocks.work
+  skip-cert-verify: true
+  tls: true
   type: ss
 - name: '476,481|韩国(yudou789.top 玉豆免费节点)_3 #1'
   network: ws
@@ -1871,6 +1855,25 @@ proxies:
     headers:
       Host: snippet.danfeng.theworkpc.com
     path: /danfeng?ed=2560
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: '489,523,524,559|🇰🇷_韩国 #2'
+  network: tcp
+  port: 19001
+  reality-opts:
+    public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
+  server: krp01.jumperservice.com
+  servername: addons.mozilla.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 455fc271-3ee2-493b-8c75-9324b4851e2f
+  xudp: true
 - name: '489,566,567,585,586|KR_speednode_0025 #1'
   password: test.+
   port: 30446
