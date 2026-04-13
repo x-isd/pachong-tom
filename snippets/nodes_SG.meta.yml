@@ -913,6 +913,36 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
+- alterId: 0
+  name: '340,378,489,494,536,537,559,574,580|🇸🇬 新加坡|@stairnode #5'
+  network: tcp
+  password: 187dda4498be9ac4f28db939d5940185
+  port: 4674
+  server: 18.181.196.7
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '340,378,494,536,537,559,574,580|🇸🇬 新加坡2|@stairnode #4'
+  network: tcp
+  password: 187dda4498be9ac4f28db939d5940185
+  port: 4674
+  server: 18.177.145.165
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- name: '340,378,494,536,537,559,580|🇸🇬 新加坡3|@stairnode #4'
+  network: tcp
+  password: BxceQaOe
+  port: 30726
+  server: 43.199.69.179
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - name: 356|🇸🇬1 |  9.0MB/s
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -2081,7 +2111,7 @@ proxies:
   type: ss
 - alterId: 4
   cipher: auto
-  name: '378,494,536,537|🇸🇬SG-103.253.26.134-0096 #1'
+  name: '378,536,537|🇸🇬SG-103.253.26.134-0096 #1'
   network: ws
   port: 443
   server: 103.253.26.134
@@ -2096,7 +2126,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 378,536,537,538|🇸🇬SG-180.215.130.123-0142 | 0....
+  name: 378,494,536,537,538|🇸🇬SG-180.215.130.123-0142 | 0....
   network: ws
   port: 46452
   server: 180.215.130.123
@@ -2170,8 +2200,7 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇸 US
-  name: 378,435,537,538|🇸🇬SG-38.89.142.56-0273 | 0.078...
+  name: 378,537,538|🇸🇬SG-38.89.142.56-0273 | 0.078...
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.89.142.56
@@ -3371,17 +3400,76 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '459,559|🇸🇬_新加坡 #4'
+- name: '456,507,559,580|SG TROJAN-72 | free-nodes #3'
+  network: ws
+  password: 13c169be-8592-4eaa-94cb-69c859e7d987
+  port: 443
+  server: ubu.okaoclax.me
+  sni: ubu.okaoclax.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ubu.okaoclax.me
+    path: /trojan-ws
+- name: '456,507,559,580|SG TROJAN-73 | free-nodes #3'
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 4674
+  server: 160.16.124.17
+  sni: www.nintendogames.net
+  type: trojan
+- name: '456,494,507,559,580|SG VLESS-101 | free-nodes #3'
+  network: ws
+  port: 2096
+  server: 104.18.32.47
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed'
+- name: '456,494,507,559,580|SG VLESS-104 | free-nodes #3'
   network: ws
   port: 443
-  server: dongjing1.zqjsqapi.com
-  servername: dongjing1.zqjsqapi.com
+  server: 172.67.224.0
+  servername: holy-dawn-e9ec.jonas05-ba6.workers.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: holy-dawn-e9ec.jonas05-ba6.workers.dev
+    path: '%2Fsni.111000.dynv6.net%2F'
+- client-fingerprint: chrome
+  name: '456,507,559,580|SG VLESS-105 | free-nodes #3'
+  network: ws
+  port: 2096
+  server: 192.0.54.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40wangcai2'
+- name: '456,494,507,559,580|SG VLESS-106 | free-nodes #3'
+  network: ws
+  port: 2096
+  server: 194.59.5.238
+  servername: sni.jpmj.dev
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    path: '%2Fproxy'
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%3Ftelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2B%2540wangcai2%3D'
 - name: '459,559,580|HK香港(mibei77.com 米贝节点分享) #26'
   network: ws
   port: 443
@@ -3394,6 +3482,17 @@ proxies:
   ws-opts:
     headers:
       Host: xinjiapo1.zqjsqapi.com
+    path: '%2Fproxy'
+- name: '459,559|🇸🇬_新加坡 #4'
+  network: ws
+  port: 443
+  server: dongjing1.zqjsqapi.com
+  servername: dongjing1.zqjsqapi.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-opts:
     path: '%2Fproxy'
 - name: 460|新加坡_新加坡
   network: ws
@@ -4973,7 +5072,7 @@ proxies:
   ws-opts:
     path: /proxy
   xudp: true
-- name: '489,536,559|🇸🇬 新加坡|@stairnode #4'
+- name: '489,536,559|🇸🇬 新加坡|@stairnode #3'
   password: 187dda4498be9ac4f28db939d5940185
   port: 4674
   server: 3.112.132.73
@@ -5021,37 +5120,6 @@ proxies:
       Host: 2242886851f342201af8846f33b069e0.mobgslb.tbcache.com
     path: /
   xudp: true
-- name: '507,559,580|SG TROJAN-72 | free-nodes #2'
-  network: ws
-  password: 13c169be-8592-4eaa-94cb-69c859e7d987
-  port: 443
-  server: ubu.okaoclax.me
-  sni: ubu.okaoclax.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ubu.okaoclax.me
-    path: /trojan-ws
-- name: '507,559,580|SG TROJAN-73 | free-nodes #2'
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 4674
-  server: 160.16.124.17
-  sni: www.nintendogames.net
-  type: trojan
-- client-fingerprint: chrome
-  name: '507,559,580|SG VLESS-105 | free-nodes #2'
-  network: ws
-  port: 2096
-  server: 192.0.54.238
-  servername: sni.jpmj.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40wangcai2'
 - cipher: aes-256-cfb
   name: '513,517,578|1|_SG_ #2'
   password: amazonskr05
@@ -5429,7 +5497,7 @@ proxies:
   sni: hy2-sg.onetaplink.app
   tls: false
   type: hysteria2
-- name: '559|🇸🇬 新加坡3|@stairnode #3'
+- name: '559|🇸🇬 新加坡3|@stairnode #2'
   password: BxceQaOe
   port: 25675
   server: 43.199.69.64
@@ -5759,68 +5827,6 @@ proxies:
   tls: true
   type: vless
   uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
-- alterId: 0
-  cipher: auto
-  name: 566|🇸🇬 新加坡 | SGP 4
-  network: ws
-  port: 16618
-  server: planb.mojcn.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: dd5d705b-2343-4afd-b4a2-d7722f0b71a9
-  ws-opts:
-    headers:
-      Host: f8175b07847544d116c785ef5149ef79.mobgslb.tbcache.com
-    path: '%2F'
-- alterId: 0
-  cipher: auto
-  name: 566|🇸🇬 新加坡 | SGP 5
-  network: ws
-  port: 16618
-  server: t.cnmjcn.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c224620c-8449-460f-aaa5-34dbda86d910
-  ws-opts:
-    headers:
-      Host: 738396ea7c59b68bfda9d9afa7fae74e.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '568|🇸🇬 新加坡 | SGP #2'
-  network: ws
-  port: '16618'
-  server: m.cnmjin.net
-  tls: false
-  type: vmess
-  uuid: dd5d705b-2343-4afd-b4a2-d7722f0b71a9
-  ws-opts:
-    headers:
-      Host: f8175b07847544d116c785ef5149ef79.mobgslb.tbcache.com
-    path: /
-- name: '568|🇸🇬 新加坡 | SGP #3'
-  password: cf2a7194-ae38-48b0-9cfb-8594f34d02dd
-  port: 8080
-  server: st2zsdfgsa.892622.xyz
-  skip-cert-verify: false
-  sni: st2zsdfgsa.892622.xyz
-  tls: false
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: '568|🇸🇬 新加坡 | SGP #4'
-  network: ws
-  port: '16618'
-  server: m.cnmjin.net
-  tls: false
-  type: vmess
-  uuid: c224620c-8449-460f-aaa5-34dbda86d910
-  ws-opts:
-    headers:
-      Host: 738396ea7c59b68bfda9d9afa7fae74e.mobgslb.tbcache.com
-    path: /
 - alterId: 0
   cipher: auto
   name: '577|新加坡NO.1 #4'
