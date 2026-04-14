@@ -818,11 +818,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|SG
-  network: tcp
+- name: 255|🇸🇬 SG
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
+  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - client-fingerprint: firefox
@@ -912,30 +912,6 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,378,494,536,537,559,580|🇸🇬 新加坡|@stairnode #6'
-  network: tcp
-  password: 1a98450e6f743b1b66a8bebfe3ea93e9
-  port: 4674
-  server: 52.199.231.68
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '340,378,494,536,537,559,580|🇸🇬 新加坡2|@stairnode #6'
-  network: tcp
-  password: 1a98450e6f743b1b66a8bebfe3ea93e9
-  port: 4674
-  server: 13.193.221.106
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '340,378,536,537,559,580|🇸🇬 新加坡3|@stairnode #5'
-  network: tcp
-  password: BxceQaOe
-  port: 30726
-  server: 54.46.43.243
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - name: 356|🇸🇬1 |  9.0MB/s
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -2249,7 +2225,8 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇬SG-38.89.142.56-0225 #1'
+  country: 🇸 US
+  name: '378,435,537|🇬SG-38.89.142.56-0225 #1'
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.89.142.56
@@ -3399,6 +3376,15 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- name: '438|🇸🇬SG_1|2.6MB/s | 网盘搜宝: https:/...'
+  network: ws
+  password: 13c169be-8592-4eaa-94cb-69c859e7d987
+  port: 443
+  server: ubu.okaoclax.me
+  sni: ubu.okaoclax.me
+  type: trojan
+  ws-opts:
+    path: '%2Ftrojan-ws'
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -3485,7 +3471,7 @@ proxies:
     path: '%2F%3Ftelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2B%2540wangcai2%3D'
 - alterId: 0
   cipher: auto
-  name: '459,472,473,474,494,502,559,717|HK【机场推荐：https://a9a.xyz】5 #1'
+  name: '459,494,502,559,717|HK【机场推荐：https://a9a.xyz】5 #1'
   network: tcp
   port: '30812'
   server: v12.hdacd.com
@@ -5672,45 +5658,85 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
+- client-fingerprint: chrome
   name: 566|🇸🇬 新加坡 | SGP
   network: ws
-  port: 16618
-  server: t.cnmjcn.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+  port: 2053
+  server: legion.lenovo.com
+  servername: jkl3gix3qz.danfeng.qzz.io
+  tls: true
+  type: vless
   udp: true
-  uuid: b688ce0f-9201-4e8e-a67a-f3be2c6aa201
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
   ws-opts:
     headers:
-      Host: 7a297964a2b31dafd3529ef4d14574b9.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
+      Host: jkl3gix3qz.danfeng.qzz.io
+    path: /danfeng?ed=2560
+- client-fingerprint: chrome
   name: 566|🇸🇬 新加坡 | SGP 2
   network: ws
-  port: 16618
-  server: planb.mojcn.com
-  tls: false
-  type: vmess
+  port: 443
+  server: testingcf.jsdelivr.net
+  servername: jkl3gix3qz.danfeng.qzz.io
+  tls: true
+  type: vless
   udp: true
-  uuid: b569056b-ce7b-423d-b947-b900d72430c0
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
   ws-opts:
     headers:
-      Host: 2cf595a77b4634cc1f01fc4b2aa550b1.mobgslb.tbcache.com
-    path: '%2F'
-- alterId: 0
-  name: 574|🇬SG新加坡3
-  password: BxceQaOe
-  port: 25675
-  server: 16.162.119.43
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: true
-  type: trojan
+      Host: jkl3gix3qz.danfeng.qzz.io
+    path: /danfeng?ed=2560
+- client-fingerprint: randomized
+  name: 566|🇸🇬 新加坡 | SGP 3
+  network: ws
+  port: 2095
+  server: cloudflare-dns.com
+  tls: false
+  type: vless
   udp: true
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-g.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: 566|🇸🇬 新加坡 | SGP 4
+  network: ws
+  port: 2053
+  server: cloudflare.seeck.cn
+  servername: jkl3gix3qz.danfeng.qzz.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: jkl3gix3qz.danfeng.qzz.io
+    path: /danfeng?ed=2560
+- client-fingerprint: chrome
+  name: 566|🇸🇬 新加坡 | SGP 6
+  network: ws
+  port: 443
+  server: newsroom.paypal-corp.com
+  servername: jkl3gix3qz.danfeng.qzz.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: jkl3gix3qz.danfeng.qzz.io
+    path: /danfeng?ed=2560
+- name: '568|🇸🇬 新加坡 | SGP #1'
+  obfs: salamander
+  obfs-password: salamander
+  password: a4c1b618-024a-42d4-b78a-1c25c337a484
+  port: 10086
+  server: sg2.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: sg2.xiaoliyu.cyou
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: '577|新加坡NO.1 #4'
