@@ -68,21 +68,21 @@ proxies:
   port: 9098
   server: 185.126.116.125
   type: ss
-- name: '378,536,537|CH-152.67.71.149-2143 #1'
+- name: '378,536,537|CH-152.67.71.149-2172 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-3714 #1'
+  name: '378,537|🇨CH-156.146.62.160-3743 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
 - alterId: 1
   cipher: auto
-  name: '378,536,537|CH-186.190.215.32-7559 #1'
+  name: '378,536,537|CH-186.190.215.32-7588 #1'
   network: ws
   port: 443
   server: 186.190.215.32
@@ -97,7 +97,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: '378,536,537|🇭CH-186.190.215.75-7623 #1'
+  name: '378,536,537|🇭CH-186.190.215.75-7652 #1'
   network: ws
   port: 443
   server: 186.190.215.75
@@ -112,7 +112,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇭CH-140.238.212.95-7636 #1'
+  name: '378,536,537|🇭CH-140.238.212.95-7665 #1'
   network: ws
   port: 443
   server: 140.238.212.95
@@ -125,19 +125,6 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
-- client-fingerprint: chrome
-  name: '438|🇨🇭CH_1|2.1MB/s | 福利姬: https://...'
-  network: ws
-  port: 8443
-  server: 172.64.149.54
-  servername: Kingdom.turbooo-server.com
-  tls: true
-  type: vless
-  uuid: 4dc0b42a-1a8a-4337-851b-5d8a1f149fca
-  ws-opts:
-    headers:
-      Host: Kingdom.turbooo-server.com
-    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 465|16|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
@@ -149,17 +136,21 @@ proxies:
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
 - flow: xtls-rprx-vision
-  name: '523,524|🇨🇭_瑞士 #1'
+  name: '523,524,559|🇨🇭_瑞士 #2'
+  network: tcp
   port: 443
   server: 45.148.117.94
   servername: yandex.ru
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 443fd8ea-3cfd-4286-a4e2-91276e41fe51
-- name: '523,524|🇨🇭_瑞士_1 #1'
+- name: '523,524,559|🇨🇭_瑞士 #3'
+  network: tcp
   port: 8443
   server: 45.12.109.68
   servername: dropbox.com
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: d0436b64-3355-11f1-a772-ee3d4fb45757
@@ -174,17 +165,6 @@ proxies:
   tls: false
   type: vless
   uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-- name: 559|🇨🇭 瑞士-8C301693
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: -tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw
-    short-id: '50'
-  server: 138.124.32.77
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 4b481152-ba7f-4445-8cc0-d33d58546e23
 - name: 559|🇨🇭 瑞士-A055C9D4
   network: ws
   port: 2096
@@ -197,17 +177,6 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F'
-- name: 559|🇨🇭 瑞士-57E98999
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: DoZSKLwNQjogQMlE7oEEuB8TqpNa-umXzG-2Q6dTTEY
-    short-id: 4fa44664f6a566d3
-  server: se.milas.click
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 913c6074-a747-492b-a7e9-5abfcad6369d
 - name: 559|🇨🇭 瑞士-34BB67D0
   network: grpc
   port: 2041
