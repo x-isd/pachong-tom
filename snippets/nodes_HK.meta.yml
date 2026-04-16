@@ -814,30 +814,48 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- name: 255|HK
+- name: 255|🇭🇰 HK
   network: ws
   port: 65056
   server: 202.181.24.70
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: c9d0ddb5-f2c1-4111-a92d-9798a2348a56
   ws-opts:
-    path: '%2Fyz'
+    path: /yz
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '255|HK #1'
+  name: 255|🇭🇰 HK 2
   network: tcp
   port: 46716
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: agaungzhou01.bumbleshrimp.com
   servername: www.nvidia.com
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: none
+  name: 255|🇭🇰 HK-Eons_Data_Communications
+  network: ws
+  port: 443
+  server: www.visa.com.tw
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: df7a96e2-c663-48ed-9713-1c144705f79e
+  ws-opts:
+    headers:
+      Host: ee-boston-therapist-cleaning.trycloudflare.com
+    path: /vmess-argo?ed=2048
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '255|HK #2'
+  name: 255|🇭🇰 HK 3
   network: tcp
   port: 25791
   reality-opts:
@@ -845,7 +863,9 @@ proxies:
     short-id: 57d9de10de16538d
   server: 34.92.65.82
   servername: cloudreve.mnm.pp.ua
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 711007f1-9cdf-4fd9-b5d4-d67aee173281
 - alterId: 2
@@ -857,8 +877,8 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '306,378,494,502,514,515,516,536,537,544,548,551,556,557,579,580,582|🇭🇰 香港5|@stairnode
-    #7'
+- name: '306,340,378,494,502,514,515,516,536,537,544,548,551,556,557,579,580,582|🇭🇰
+    香港5|@stairnode #7'
   network: tcp
   password: BxceQaOe
   port: 11097
@@ -866,8 +886,8 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '306,378,494,502,514,515,516,536,537,544,548,551,556,557,579,580,582|🇸🇬 新加坡3|@stairnode
-    #7'
+- name: '306,340,378,494,502,514,515,516,536,537,544,548,551,556,557,579,580,582|🇸🇬
+    新加坡3|@stairnode #7'
   network: tcp
   password: BxceQaOe
   port: 25675
@@ -875,7 +895,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '306,378,438,494,502,514,515,516,536,537,544,548,551,556,557,579,580,582|🇺🇸
+- name: '306,340,378,494,502,514,515,516,536,537,544,548,551,556,557,579,580,582|🇺🇸
     美国3|@stairnode #8'
   network: tcp
   password: BxceQaOe
@@ -894,33 +914,10 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '340,378,494,536,537,559,580|🇭🇰 香港3|@stairnode #5'
-  network: tcp
-  password: 868ecdaf6aed618ec98cf78585672b2b
-  port: 52687
-  server: 54.46.54.246
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '340,378,489,536,537,559,580|🇭🇰 香港4|@stairnode #6'
-  network: tcp
-  password: BxceQaOe
-  port: 6313
-  server: 54.199.28.140
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '340,378,536,537,559,580|🇭🇰 香港5|@stairnode #5'
-  network: tcp
-  password: BxceQaOe
-  port: 6313
-  server: 54.65.154.235
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,551,559,567,585,586|HK_speednode_0006 #3'
+  name: '340,438,502,514,551,559,567,585,586|HK_speednode_0006 #3'
+  network: tcp
   port: 443
   reality-opts:
     public-key: _t05V9DbgwyxSJOgRBhWYHt8d4Xt-qFfUXONotbUnCE
@@ -1816,7 +1813,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '374|🇭🇰 香港 #1'
+  name: '374|🇭🇰 香港 #2'
   port: 19901
   server: xg.dashuai.cyou
   tls: false
@@ -2022,6 +2019,30 @@ proxies:
   uuid: 80e94af6-e42a-4dbc-8f4b-c5f99bf97d3d
   ws-opts:
     path: /zh-cn/download
+- name: '378,536,537,559,580|🇭🇰 香港3|@stairnode #5'
+  network: tcp
+  password: 868ecdaf6aed618ec98cf78585672b2b
+  port: 52687
+  server: 54.46.54.246
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '378,536,537,559,580|🇸🇬 新加坡3|@stairnode #5'
+  network: tcp
+  password: BxceQaOe
+  port: 28033
+  server: 95.40.88.248
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: '378,536,537,559,580|🇺🇸 美国3|@stairnode #6'
+  network: tcp
+  password: BxceQaOe
+  port: 44386
+  server: 16.162.191.83
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - cipher: aes-128-gcm
   name: '378,537|🇰HK-202.85.76.170-0835 #1'
   password: JVrsLLN1tkN8oXZO
@@ -2676,7 +2697,8 @@ proxies:
   server: hinet.mjt000.com
   skip-cert-verify: false
   type: trojan
-- name: '378,523,524,536,537|🇰HK-58.152.25.253-4683 #1'
+- country: 🇰HK
+  name: '378,440,523,524,536,537|🇰HK-58.152.25.253-4683 #1'
   password: BxceQaOe
   port: 443
   server: 58.152.25.253
@@ -2684,6 +2706,7 @@ proxies:
   sni: 58.152.25.253
   tls: true
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 378,537,538|🇭🇰HK-216.250.97.82-4734 | 9.87...
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
@@ -5342,16 +5365,6 @@ proxies:
     headers:
       Host: edtunnel-eiz.pages.dev
     path: '%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3'
-- alterId: 0
-  cipher: auto
-  name: '459,472,473,474,494,502,544,559|🇬🇧_英国 #17'
-  network: tcp
-  port: '30812'
-  server: v12.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '459|香港(yudou789.top 玉豆免费节点) #3'
   network: ws
   port: 443
@@ -5366,7 +5379,7 @@ proxies:
     path: '%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3'
 - alterId: 64
   cipher: auto
-  name: '459,494,502,544,559,580|美国节点 #2'
+  name: '459,494,544,559,580|美国节点 #2'
   network: tcp
   port: '54022'
   server: 103.181.164.145
@@ -5411,7 +5424,7 @@ proxies:
     headers:
       Host: 2026.hhhhh.eu.org
     path: '%2F222.167.202.52%3A7443'
-- name: '459,494|🔥Join+Telegram:@Farah_VPN🟣 #1940'
+- name: '459,494|🔥Join+Telegram:@Farah_VPN🟣 #1480'
   network: ws
   port: 80
   server: nnet.online
@@ -5953,26 +5966,6 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 472,473,474,494,502,559|香港_041604001
-  network: tcp
-  port: '7754'
-  server: efan.dnsefan04881.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- alterId: 0
-  name: 472,473,474,475,480,523,524,559,574,580|🇨🇳_CN_中国丨yoyapai.com
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.253
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
 - name: '476,481|US美国(mibei77.com 米贝节分享)_65 #1'
   network: ws
   port: 7443
@@ -6261,7 +6254,7 @@ proxies:
     headers:
       Host: 2026.hhhhh.eu.org
     path: /222.167.202.35:7443
-- name: '476,481,494,523,524,559|🇭🇰 HK香港(mibei77.com 米贝节点分享) #3'
+- name: '476,481,523,524,559|🇭🇰 HK香港(mibei77.com 米贝节点分享) #3'
   password: trojan
   port: 2087
   server: 109.234.211.66
@@ -7246,7 +7239,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 502,559,580,717|HK【机场推荐：https://a9a.xyz】5
+  name: '502,559,580,717|HK【机场推荐：https://a9a.xyz】5 #1'
   network: tcp
   port: '51556'
   server: 103.181.164.145
@@ -7355,16 +7348,6 @@ proxies:
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- alterId: 0
-  name: 523,524,574|🇺🇸US美国9
-  password: BxceQaOe
-  port: 49534
-  server: 16.163.106.216
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
 - name: '523,524|🇭🇰_香港_1 #1'
   password: BxceQaOe
   port: 25675
@@ -7372,16 +7355,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: trojan
-- alterId: 0
-  name: 523,524,574|🇰HK香港3
-  password: BxceQaOe
-  port: 11097
-  server: 16.163.106.216
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
 - name: '523,524|🇭🇰_香港_5 #1'
   password: BxceQaOe
   port: 49534
@@ -7840,6 +7813,13 @@ proxies:
   sni: hy5.hy2yydsapi.top
   tls: false
   type: hysteria2
+- name: '559|🇭🇰 HK香港(mibei77.com 米贝节点分享) #2'
+  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  port: 443
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  skip-cert-verify: false
+  sni: _acme-challenge.sb.cloudns.biz
+  type: trojan
 - name: '559|🇭🇰_香港 #2'
   network: ws
   port: 7443
@@ -8389,34 +8369,6 @@ proxies:
   type: hysteria
   udp: true
   up: 1000 Mbps
-- name: 566|🇭🇰 香港 | HKG
-  password: <password>
-  port: 8443
-  server: 2a682cb7-tdlgg0-tf25f7-1phla.hkt.cdnhuawei.com
-  tls: true
-  type: http
-  username: 467f2940-77cd-11ee-b5ed-f23c9164ca5d
-- name: 566|🇭🇰 香港 | HKG 2
-  password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
-  port: 8443
-  server: 9a0db56e-tdlgg0-tf1c7b-b4pt.hkmpro.wkuaishou.com
-  tls: true
-  type: http
-  username: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
-- name: 566|🇭🇰 香港 | HKG 4
-  password: <password>
-  port: 8443
-  server: d2201c2c-tdlgg0-teykgk-19xg1.hkt.cdnhuawei.com
-  tls: true
-  type: http
-  username: e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9
-- cipher: aes-256-gcm
-  name: 566|🇭🇰 香港 | HKG 9
-  password: 7b562532-8f03-3a69-bb44-3c3e18227c19
-  port: 807
-  server: j.l.6.b.i.g.u.e.d.hk04-ae5.entry.v51124-5.qpon
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   name: '567,585,586|HK_speednode_0004 #1'
   network: ws
@@ -8432,35 +8384,6 @@ proxies:
     headers:
       Host: q40ivxuck.danfeng.qzz.io
     path: /danfeng
-- name: '568|🇭🇰 香港 | HKG #3'
-  obfs: salamander
-  obfs-password: salamander
-  password: de8e0342-ea12-4f9d-bc2a-e62409e1913f
-  port: 20003
-  server: zz.66jc.xyz
-  skip-cert-verify: true
-  sni: hkzz.66jc.xyz
-  tls: false
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 568,717|HK【机场推荐：https://a9a.xyz】4
-  network: tcp
-  port: '7754'
-  server: efan.dnsefan04881.com
-  tls: false
-  type: vmess
-  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
-- alterId: 0
-  name: 574|🇰HK香港4
-  password: BxceQaOe
-  port: 39507
-  server: 18.183.212.72
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 577|澳门NO.2
@@ -8769,7 +8692,7 @@ proxies:
     headers:
       Host: yf.xhya.nyc.mn
     path: /
-- name: '605|HK #4'
+- name: '605|HK #1'
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 41288
@@ -8777,13 +8700,3 @@ proxies:
   skip-cert-verify: true
   sni: hk12.bilibili.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '717|HK【机场推荐：https://a9a.xyz】6 #1'
-  network: tcp
-  port: '7754'
-  server: vm51544542.dns8656815.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
