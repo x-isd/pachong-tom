@@ -508,7 +508,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 378,465,478,483,522,537,538,548,574|🇺🇸US美国10 11.8MB/s
+  name: 378,465,478,483,522,537,538,574|🇺🇸US美国10 11.8MB/s
   password: W74XFALLLuw6m5IA
   port: 443
   server: series-a1.samanehha.co
@@ -517,7 +517,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 378,537,538,574|🇺🇸US美国5 10.0MB/s
+  name: 378,537,538,543,574|🇺🇸US美国5 10.0MB/s
   password: 1kVr0KATIJI7mwOF
   port: 443
   server: admin.c1.havij.co
@@ -526,7 +526,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 378,537,538,574|🇺🇸US美国2 11.6MB/s
+  name: 378,537,538,543,574|🇺🇸US美国2 11.6MB/s
   password: W74XFALLLuw6m5IA
   port: 443
   server: series-a2.samanehha.co
@@ -534,13 +534,13 @@ proxies:
   tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,478,483,522,537,538,548|🇺🇸_US_美国_1 #3'
+  name: 378,478,483,522,537,538,543|GB-20.117.140.169-31
   password: W74XFALLLuw6m5IA
   port: 443
   server: admin.c1.webramz.co
   type: ss
 - alterId: 0
-  name: 378,494,536,537,538,544,559,574|🇧GB英国3 641.0KB/s
+  name: 378,494,536,537,538,559,574|🇧GB英国3 641.0KB/s
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
   server: 82.26.155.3
@@ -549,8 +549,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,456,472,473,474,494,507,536,537,538,559,580|DE TROJAN-84 | free-nodes
-    #2'
+- name: '378,494,507,536,537,538,559,580|DE TROJAN-84 | free-nodes #1'
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
   server: 82.26.155.20
@@ -558,7 +557,7 @@ proxies:
   sni: fra35.chasem2026sud.com
   type: trojan
 - alterId: 0
-  name: 378,438,494,502,536,537,538,559,574|GB国 548.0KB/s
+  name: 378,438,494,536,537,538,559,574|GB国 548.0KB/s
   network: tcp
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
@@ -651,7 +650,7 @@ proxies:
   ws-opts:
     path: /
 - alterId: 0
-  name: 378,438,494,502,536,537,559,574|🇬🇧GB英国2 651.3KB/s
+  name: 378,438,494,536,537,559,574|🇬🇧GB英国2 651.3KB/s
   network: tcp
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
@@ -1888,17 +1887,21 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '437,459,472,473,474,494,502,544,559,580,717|US【机场推荐：https://a9a.xyz】5 #1'
+  name: '437,459,494,502,543,544,559,568,580,717|US【机场推荐：https://a9a.xyz】5 #1'
   network: tcp
   port: '180'
   server: 82.198.246.46
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-headers:
+    Host: 82.198.246.46
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '437,459,489,494,502,544,559,580,717|US【机场推荐：https://a9a.xyz】3 #1'
+  name: '437,459,489,494,502,559,568,580,717|US【机场推荐：https://a9a.xyz】3 #1'
   network: tcp
   port: '180'
   server: 82.198.246.97
@@ -1911,19 +1914,23 @@ proxies:
   xudp: true
 - alterId: 0
   cipher: auto
-  country: 🇬🇧GB
+  country: 🇧GB
   h2-opts: {}
   http-opts: {}
-  name: '437,438,440,459,489,494,502,544,559,580,717|US【机场推荐：https://a9a.xyz】4 #1'
+  name: '437,438,440,459,489,494,502,543,544,559,580,717|US【机场推荐：https://a9a.xyz】4
+    #1'
   network: tcp
   port: '180'
   server: 82.198.246.250
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-headers:
+    Host: 82.198.246.250
+  ws-path: /
   xudp: true
 - alterId: 0
   cipher: auto
@@ -2223,6 +2230,16 @@ proxies:
   skip-cert-verify: false
   sni: ultimate-civet.adder289.quest
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '472,473,474,559|🇺🇸_美国 #132'
+  network: tcp
+  port: '30830'
+  server: v30.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: chacha20-ietf-poly1305
   name: 489|🔴🇬🇧[🎬🤖📺🔍]_github.com/Ruk1ng001...
   password: aed6e687-58a9-4836-ba62-7d8184c94df4
@@ -2230,11 +2247,11 @@ proxies:
   server: uks1.network-cdn-gw-yd.net
   type: ss
   udp: true
-- alterId: 2
+- alterId: '2'
   cipher: auto
-  name: 489,568|🇮🇩 印尼 | IDN
+  name: 489|🔴🇬🇧[🎭🎪📦]_github.com/Ruk1ng001_...
   network: tcp
-  port: '30836'
+  port: 30836
   server: v36.hdacd.com
   skip-cert-verify: false
   tls: false

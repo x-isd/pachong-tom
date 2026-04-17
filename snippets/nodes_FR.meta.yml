@@ -1509,11 +1509,6 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '456,507,559,580|FR TROJAN-86 | free-nodes #3'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.39.95.237
-  type: trojan
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1935,6 +1930,11 @@ proxies:
   server: fr.network-cdn-gw-yd.net
   type: ss
   udp: true
+- name: '507,559,580|FR TROJAN-86 | free-nodes #2'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.95.237
+  type: trojan
 - client-fingerprint: chrome
   name: '523,524,559|🇫🇷_法国 #5'
   network: tcp
@@ -2044,14 +2044,17 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 559|🇫🇷 法国-79FCDF1D
+- auth: dongtaiwang.com
+  name: 559,566|🇫🇷 法国 | FRA
   password: dongtaiwang.com
   port: 40022
+  ports: 41000-42000
   server: 163.172.113.118
   skip-cert-verify: true
   sni: www.microsoft.com
   tls: false
   type: hysteria2
+  udp: true
 - name: 559|🇫🇷 法国-6F0B42D3
   password: humanity
   port: 443
@@ -2090,6 +2093,32 @@ proxies:
   network: ws
   port: 443
   server: 141.11.43.124
+  servername: snippet.danfeng.rr.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.rr.kg
+    path: '%2Fdanfeng'
+- name: '559,580|JP日本(mibei77.com 米贝节点分享) #22'
+  network: ws
+  port: 443
+  server: 185.16.110.42
+  servername: snippet.danfeng.rr.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.rr.kg
+    path: '%2Fdanfeng'
+- name: 559,580|GB英国(mibei77.com 米贝节点分享)
+  network: ws
+  port: 443
+  server: 185.7.240.42
   servername: snippet.danfeng.rr.kg
   skip-cert-verify: false
   tls: true
