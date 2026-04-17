@@ -230,23 +230,6 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,378,456,494,523,524,536,537,538,559,580|🇺🇸 美国|@stairnode #6'
-  network: tcp
-  password: 868ecdaf6aed618ec98cf78585672b2b
-  port: 3057
-  server: 160.16.132.38
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-- name: '340,378,456,536,537,559,580|🇺🇸 美国3|@stairnode #6'
-  network: tcp
-  password: BxceQaOe
-  port: 49534
-  server: 16.163.106.216
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - cipher: aes-128-gcm
   name: '356,357|2 #6'
   password: shadowsocks
@@ -15078,18 +15061,21 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 438,494,559|美国_041704133
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 435| US_06
   network: ws
-  port: '2053'
-  server: usaapp1.jisuyun.top
-  servername: usaapp1.jisuyun.top
+  port: 443
+  server: cf.090227.xyz
+  servername: sgal.dagrate.eu.org
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  ws-opts:
-    headers:
-      Host: usaapp1.jisuyun.top
-    path: /usavm
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-headers:
+    HOST: sgal.dagrate.eu.org
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 438,494,559|美国_041704131
@@ -15104,9 +15090,23 @@ proxies:
     headers:
       Host: ''
     path: /ws
+- alterId: 0
+  cipher: auto
+  name: 438,494,559|美国_041704133
+  network: ws
+  port: '2053'
+  server: usaapp1.jisuyun.top
+  servername: usaapp1.jisuyun.top
+  tls: true
+  type: vmess
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  ws-opts:
+    headers:
+      Host: usaapp1.jisuyun.top
+    path: /usavm
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: 440|Relay_🇸US-🇺🇸US_10
+  name: 440|Relay_🇸US-🇺🇸US_09
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -15256,13 +15256,14 @@ proxies:
     path: /
 - country: 🇭🇰HK
   delay: 1830
-  name: 459,528,559|香港_041704156
+  name: 459,523,524,528,559|香港_041704156
   network: tcp
   password: 8b95cc43-3ae5-4920-bef9-da3a072c4b34
   port: 10184
   server: hk1.8989111.xyz
   skip-cert-verify: true
   sni: ''
+  tls: true
   type: trojan
   udp: true
 - name: '459|美国(yudou789.top 玉豆免费节点) #31'
@@ -15365,6 +15366,15 @@ proxies:
   ws-opts:
     headers:
       Host: 55329ac899df9e8e82d3d8ca08e402fa.mobgslb.tbcache.com
+    path: /
+- name: '459,559,580|US美国(mibei77.com 米贝节点分享) #97'
+  network: tcp
+  password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
+  port: 24534
+  server: jp2-8sb.6121999.dpdns.org
+  sni: jp2-8sb.6121999.dpdns.org
+  type: trojan
+  ws-opts:
     path: /
 - name: '459|美国(yudou789.top 玉豆免费节点) #90'
   network: tcp
@@ -16917,7 +16927,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 475,476,480,481,523,524,567,585|GB_speednode_0007
+  name: 475,476,480,481,567,585|GB_speednode_0007
   port: 180
   server: 82.198.246.97
   skip-cert-verify: true
@@ -16925,33 +16935,33 @@ proxies:
   type: vmess
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 475,476,480,481,494,523,524,559|未知31
+- name: 475,476,480,481,559|未知31
   password: trojan
   port: 8444
   server: 152.53.200.98
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: jflsjlaf.pages.dev
   tls: true
   type: trojan
   ws-opts:
     headers:
       Host: jflsjlaf.pages.dev
-    path: /
-- name: 475,476,480,481,494,523,524,559|未知19
+    path: //
+- name: 475,476,480,481,523,524,559|未知19
   password: trojan
   port: 8444
   server: 152.53.60.198
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: jflsjlaf.pages.dev
   tls: true
   type: trojan
   ws-opts:
     path: /
-- name: '475,476,480,481,494,523,524|🇦🇹_奥地利_9 #1'
+- name: '475,476,480,481|US美国(mibei77.com 米贝节点分享)_68 #1'
   password: trojan
   port: 8444
   server: 152.53.200.167
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: jflsjlaf.pages.dev
   tls: true
   type: trojan
@@ -17084,7 +17094,7 @@ proxies:
   uuid: 507825c4-f177-4985-97a0-dd326564dfb2
 - alterId: 0
   cipher: auto
-  name: '498|美国 CloudFlare节点 #3'
+  name: 498|美国 CloudFlare节点
   network: ws
   port: 2095
   server: 172.64.194.234
@@ -17097,7 +17107,7 @@ proxies:
     path: /hgcefomn
 - alterId: 0
   cipher: auto
-  name: '498|美国 CloudFlare节点 #4'
+  name: '498|美国 CloudFlare节点 #1'
   network: ws
   port: 8880
   server: 141.101.123.18
@@ -17110,7 +17120,7 @@ proxies:
     path: /qwer
 - alterId: 0
   cipher: auto
-  name: '498|美国 CloudFlare节点 #5'
+  name: '498|美国 CloudFlare节点 #2'
   network: ws
   port: 8080
   server: 198.41.218.144
@@ -17124,7 +17134,7 @@ proxies:
     path: /qwer01
 - alterId: 0
   cipher: auto
-  name: '498|美国 CloudFlare节点 #6'
+  name: '498|美国 CloudFlare节点 #3'
   network: ws
   port: 8080
   server: 162.159.241.157
@@ -17384,60 +17394,6 @@ proxies:
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- name: '523,524,559|🇺🇸_美国 #2'
-  network: tcp
-  password: 2d2d2b0c-033f-4810-ab2e-a95120ece063
-  port: 443
-  server: jp1.8989111.xyz
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-- name: '523,524,559|🇺🇸_美国 #3'
-  network: tcp
-  password: 61533449-6b22-4a79-b4f1-729bdc328037
-  port: 443
-  server: jp1.8989111.xyz
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-- name: '523,524,559|🇺🇸_美国 #4'
-  network: tcp
-  password: 61533449-6b22-4a79-b4f1-729bdc328037
-  port: 443
-  server: us1.8989111.xyz
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-- name: '523,524,559|🇺🇸_美国 #6'
-  network: tcp
-  password: 77eaa8d5-a4a5-4b77-9359-59e064476a70
-  port: 443
-  server: us1.8989111.xyz
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-- name: '523,524,559|🇺🇸_美国 #5'
-  network: tcp
-  password: 6ef6028c-edae-41a9-af7d-cc4013812d7b
-  port: 443
-  server: us1.8989111.xyz
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '523,524|🇺🇸_美国_13 #1'
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  port: 443
-  server: freeyx.cloudflare88.eu.org
-  skip-cert-verify: false
-  sni: sni.111000.dynv6.net
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
 - cipher: chacha20-ietf-poly1305
   delay: 783
   name: 528,606|US_Los Angeles_Cogent Communic...
@@ -17763,10 +17719,45 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
+  name: 553|🌐 未知地区 打倒美帝国主义及其一切走狗_c6ad
+  password: d3ce1160-8454-4731-929c-f2cfba6a486c
+  port: 10001
+  server: us01.n.lgjsq.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 553|🇺🇸 美国 打倒美帝国主义及其一切走狗_ef7a
   password: 456c497e-02bc-4b46-883f-06747cabdfbd
   port: 2096
   server: 107.172.219.230
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 553|🇺🇸 美国 打倒美帝国主义及其一切走狗_0d3c
+  password: c545f266-2265-4b9f-b3ee-936e634e40e0
+  port: 19201
+  server: dd01.appmimi.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 553|🌐 未知地区 打倒美帝国主义及其一切走狗_de8e
+  password: c545f266-2265-4b9f-b3ee-936e634e40e0
+  port: 19201
+  server: xj99.appmimi.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 553|🇺🇸 美国 打倒美帝国主义及其一切走狗_5cd7
+  password: c750b39f-55ef-407d-ab90-b6bdc1713004
+  port: 44444
+  server: keykey.b99.buzz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 553|🇺🇸 美国 打倒美帝国主义及其一切走狗_1fc2
+  password: c545f266-2265-4b9f-b3ee-936e634e40e0
+  port: 19201
+  server: dd02.appmimi.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -17944,6 +17935,41 @@ proxies:
   server: cmcc.877774.xyz
   sni: cm22-bgphhh.pages.dev
   type: trojan
+- name: 559|🇺🇸_美国
+  network: tcp
+  password: 2d2d2b0c-033f-4810-ab2e-a95120ece063
+  port: 443
+  server: jp1.8989111.xyz
+  skip-cert-verify: true
+  type: trojan
+- name: '559|🇺🇸_美国 #1'
+  network: tcp
+  password: 61533449-6b22-4a79-b4f1-729bdc328037
+  port: 443
+  server: jp1.8989111.xyz
+  skip-cert-verify: true
+  type: trojan
+- name: '559|🇺🇸_美国 #2'
+  network: tcp
+  password: 61533449-6b22-4a79-b4f1-729bdc328037
+  port: 443
+  server: us1.8989111.xyz
+  skip-cert-verify: true
+  type: trojan
+- name: '559|🇺🇸_美国 #3'
+  network: tcp
+  password: 6ef6028c-edae-41a9-af7d-cc4013812d7b
+  port: 443
+  server: us1.8989111.xyz
+  skip-cert-verify: true
+  type: trojan
+- name: '559|🇺🇸_美国 #4'
+  network: tcp
+  password: 77eaa8d5-a4a5-4b77-9359-59e064476a70
+  port: 443
+  server: us1.8989111.xyz
+  skip-cert-verify: true
+  type: trojan
 - name: '559|🇺🇸 美国|@stairnode #4'
   password: 868ecdaf6aed618ec98cf78585672b2b
   port: 3057
@@ -18007,16 +18033,6 @@ proxies:
   server: 38.83.41.89
   sni: jflsjlaf.pages.dev
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 559,717|MY【机场推荐：https://a9a.xyz】2
-  network: tcp
-  port: '30830'
-  server: v30.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: '559|🇺🇸_US_美国 #17'
@@ -18177,10 +18193,17 @@ proxies:
   type: vmess
   uuid: 31801968-9877-4ef5-be87-56503c34a69d
 - cipher: chacha20-ietf-poly1305
-  name: 566|🇺🇸 美国 | USA 4
-  password: 5vldsNMbQ8B4cKDK0sROwj
-  port: 20683
-  server: 142.93.183.235
+  name: 566|🇺🇸 美国 | USA
+  password: ExUzHZ3AqMIVRmz9r6mcgy
+  port: 19353
+  server: 66.154.114.231
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 566|🇺🇸 美国 | USA 2
+  password: dada1203
+  port: 80
+  server: 54.91.94.173
   type: ss
   udp: true
 - alterId: 0
