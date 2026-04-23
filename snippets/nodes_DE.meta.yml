@@ -65,7 +65,7 @@ proxies:
   type: hysteria2
 - auth: qQe1z5kU8kN6SlKnDt9Ru3Qp
   client-fingerprint: chrome
-  name: 127,426,559,568,606|DE_Frankfurt am Main_Amazon Te...
+  name: 127,426,559,606|DE_Frankfurt am Main_Amazon Te...
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
   server: vpn-de-002.fastervpn.world
@@ -753,18 +753,17 @@ proxies:
       Host: go.daluquan.top
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇬SG
-  name: 378,435,537,538|🇩🇪DE-8.209.74.72-0219 | 31.847...
+  name: 378,537,538|🇩🇪DE-8.209.74.72-0219 | 31.847...
   password: PWpjPo3tqhPN4yRZ
   port: 20001
   server: 8.209.74.72
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇸 US
-  name: 378,435,537,538|🇩🇪DE-38.60.250.107-0295 | 0.0M...
+  name: '378,537,538,579,582|🇺🇸 美国 华盛顿Cogent通信公司 #3'
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.60.250.107
+  tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 378,537,538|🇩🇪DE-46.101.196.138-0217 | 0.0...
@@ -1387,8 +1386,7 @@ proxies:
   ws-opts:
     path: /cctv13/hd.m3u8
 - cipher: chacha20-ietf-poly1305
-  country: 🇧🇪 BE
-  name: '378,435,537|🇩🇪DE-57.129.94.79-4515 #1'
+  name: '378,537|🇩🇪DE-57.129.94.79-4515 #1'
   password: 70c455c9f19aa3a5
   port: 11206
   server: 57.129.94.79
@@ -2532,15 +2530,29 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: '438,459,502,523,524,559,566,580|GB英国(mibei77.com 米贝节点分享) #6'
-  network: tcp
-  port: 2087
-  server: 178.104.118.247
-  servername: 178.104.118.247
+- name: '438,459,559,580|US美国(mibei77.com 米贝节点分享) #157'
+  network: ws
+  port: 80
+  server: 151.101.1.55
+  servername: plus-mobile1.global.ssl.fastly.net
   tls: false
   type: vless
-  udp: true
-  uuid: a34a5f3e-e9fa-40a6-f3af-2984adbd701b
+  uuid: 74d47fb8-c057-49b1-85ff-447ecd6cfcd6
+  ws-opts:
+    headers:
+      Host: plus-mobile1.global.ssl.fastly.net
+    path: '%2Flive'
+- name: '438|🇩🇪DE_15|1.9MB/s | 福利姬: https:/...'
+  network: ws
+  port: 80
+  server: 8.6.112.0
+  tls: false
+  type: vless
+  uuid: 9df1a806-e305-4a80-b03b-860bcad00442
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.azazilvpn.sbs
+    path: '%2FXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXn'
 - name: '456,559,580|DE德国(mibei77.com 米贝节点分享) #193'
   network: ws
   password: '!!str 1234567890'
@@ -3999,7 +4011,7 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: tg%40zdyz2
-- name: '462,494|🔥Join+Telegram:@Farah_VPN🟣 #623'
+- name: '462,494|🔥Join+Telegram:@Farah_VPN🟣 #98'
   network: ws
   port: 80
   server: 162.19.228.119
@@ -4261,7 +4273,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 429
-  name: '476,481,523,524,528,579,582|🇬🇧 英国 CCZZUU.TOP 3 #5'
+  name: '476,481,523,524,528,566,579,582|🇬🇧 英国 CCZZUU.TOP 3 #4'
   port: 180
   server: 82.198.246.250
   skip-cert-verify: true
@@ -4467,10 +4479,11 @@ proxies:
   cipher: auto
   delay: 1022
   fingerprint: chrome
-  name: '523,524,528,548,606|US_Los Angeles_Datacamp Limite... #4'
+  name: '523,524,528,579,582,606|US_Los Angeles_Datacamp Limite... #4'
   port: 180
   server: 82.198.246.214
   skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -4628,13 +4641,15 @@ proxies:
     headers:
       Host: sni.latonyamadeline.ndjp.net
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: '523,524|🇩🇪 德国 307 #1'
+- client-fingerprint: chrome
+  name: 523,524,566|🇱🇻 拉脱维亚 | LVA 5
   network: ws
   port: 44406
   server: 194.107.126.20
   servername: sni.latonyamadeline.ndjp.net
   tls: true
   type: vless
+  udp: true
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
@@ -4712,11 +4727,11 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: '523,524,559,568|🇩🇪 德国 | DEU #4'
+- name: 523,524,559|🇩🇪 德国-81C39838
   password: '!!str 1234567890'
   port: 443
   server: 144.31.138.127
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -4890,13 +4905,6 @@ proxies:
   protocol-param: MTEyNzU6S1dRSGhlcVdvOA%3D%3D
   server: 231103.level3.sdl-sz.com
   type: ssr
-- cipher: aes-256-gcm
-  name: 548|🇩🇪 德国 CCZZUU.TOP
-  password: jd9FR12wprKPNJHg
-  port: 443
-  server: 62.146.171.57
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 558|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5454,11 +5462,10 @@ proxies:
   server: 194.87.25.136
   sni: kfm-bn0.pages.dev
   type: trojan
-- name: '559,568|🇩🇪 德国 | DEU #2'
+- name: 559|🇩🇪 德国-55EA2A84
   password: '!!str 1234567890'
   port: 443
   server: 195.133.94.19
-  skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
 - name: 559|🇩🇪 德国-7DC694DD
@@ -6281,17 +6288,6 @@ proxies:
     headers:
       Host: s3vz.user-service.chinav.indevs.in
     path: '%2Fdanfeng'
-- name: 559|🇩🇪 德国-1288D747
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY
-    short-id: 7cad5040
-  server: 91.99.106.117
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
 - name: 559|🏁 未知-2DE579B7
   network: ws
   port: 443
@@ -8393,17 +8389,6 @@ proxies:
     headers:
       Host: test98x.pages.dev
     path: '%2FTwitter%25E8%258B%258F%25E5%25B0%258F%25E6%259F%25A0'
-- name: 559|🇩🇪 德国-763351E6
-  network: tcp
-  port: 7500
-  reality-opts:
-    public-key: 8a3blVdAACDlvRA5zrdNxHLZ9boU5QkwGMkf0WwyZVI
-    short-id: 77a3a1c829040294
-  server: new-de.vcfco.ir
-  servername: ''
-  tls: false
-  type: vless
-  uuid: e679aa5e-fde0-4e9f-ad46-63725e1c47f3
 - name: 559|🇩🇪 德国-1BE75DC0
   network: grpc
   port: 443
@@ -8449,7 +8434,7 @@ proxies:
   network: ws
   password: '!!str 1234567890'
   port: 443
-  server: 213.176.77.30
+  server: 144.31.216.160
   skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
@@ -8460,53 +8445,9 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
 - name: 566|🇩🇪 德国 | DEU 2
   network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 22558
-  server: 152.69.229.175
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- auth: fb211338854624f161f1Ea3D9584E2DEFE7c10A3
-  name: 566|🇩🇪 德国 | DEU 3
-  password: fb211338854624f161f1Ea3D9584E2DEFE7c10A3
-  port: 8443
-  server: sde.dbp.qzz.io
-  skip-cert-verify: true
-  sni: dbp.qzz.io
-  type: hysteria2
-  udp: true
-- auth: github.com/Alvin9999-newpac/fanqiang
-  name: 566|🇩🇪 德国 | DEU 4
-  password: github.com/Alvin9999-newpac/fanqiang
-  port: 29900
-  server: 178.18.147.66
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  type: hysteria2
-  udp: true
-- name: 566|🇩🇪 德国 | DEU 5
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 95.217.135.173
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 566|🇩🇪 德国 | DEU 6
-  network: ws
   password: '!!str 1234567890'
-  port: 8443
-  server: 185.170.153.115
+  port: 443
+  server: 64.188.115.82
   skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
@@ -8515,6 +8456,14 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
+- auth: 255456b5-4b3e-449f-8dd1-99fd7d21415a
+  name: 566|🇩🇪 德国 | DEU 3
+  password: 255456b5-4b3e-449f-8dd1-99fd7d21415a
+  port: 1443
+  server: de.mjhy2.com
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
 - alterId: 2
   cipher: auto
   name: '578|13,25|1|🇩🇪1 |  4.9MB/s #1'

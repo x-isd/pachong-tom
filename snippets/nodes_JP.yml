@@ -1199,7 +1199,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '340,378,494,536,537,559|11,12|日本2|@ripaojiedian #4'
+- name: '340,378,536,537,559|11,12|日本2|@ripaojiedian #4'
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4380
@@ -1207,7 +1207,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '340,378,494,536,537,559|11,12|日本3|@ripaojiedian #4'
+- name: '340,378,536,537,559|11,12|日本3|@ripaojiedian #4'
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4380
@@ -2213,7 +2213,6 @@ proxies:
   network: ws
   port: '80'
   server: 172.111.146.64
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -2834,30 +2833,24 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
-- country: 🇧GB
-  name: '378,435,436,536,537|🇵JP-52.195.12.80-4547 #1'
+- name: '378,436,536,537|🇵JP-52.195.12.80-4547 #1'
   password: IL37892054
   port: 443
   server: upright-rhino.rooster465.autos
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇵JP
-  name: '378,435,436,536,537|🇯🇵JP-3.113.25.200-4567 #1'
+- name: '378,436,536,537|🇯🇵JP-3.113.25.200-4567 #1'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇵JP
-  name: '378,435,436,536,537|🇵JP-160.16.72.205-4568 #1'
+- name: '378,436,536,537|🇵JP-160.16.72.205-4568 #1'
   password: c1d83c0c7d57cead4379ba14a82df69b
   port: 491
   server: 160.16.72.205
   skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: chacha20-ietf
   name: '378,536,537|JP-54.199.9.137-5006 #1'
   obfs: plain
@@ -3165,22 +3158,15 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 435|🇵JP_60
-  network: ws
-  port: 19568
-  server: kr01.a0a.xyz
-  servername: kr01.a0a.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 641500bf-92f9-4720-e2e7-579a8f7dbb04
-  ws-headers:
-    HOST: kr01.a0a.xyz
-  ws-path: /cctv13.m3u8
+- name: 438,494,559|日本_042304193
+  network: tcp
+  password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
+  port: 24534
+  server: 140.238.43.40
+  sni: jp2-8sb.6121999.dpdns.org
+  type: trojan
+  ws-opts:
+    path: /
 - alterId: 0
   name: '438,456,476,481,494,536,544,559,574,580|US美国(mibei77.com 米贝节点分享) #78'
   network: tcp
@@ -3227,7 +3213,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '455,457,458,559,580,581|🇯🇵_JP_日本 · proxy_pool:peasoft/... #8'
+- name: '455,457,458,559,580,581|🇯🇵_JP_日本 · proxy_pool:peasoft/... #6'
   password: BxceQaOe
   port: 1783
   server: 13.192.183.245
@@ -4522,9 +4508,9 @@ proxies:
     method: GET
     path:
     - /ABCDE
-  name: '528,559,568|🇯🇵 日本 | JPN #1'
+  name: 528,559|🇯🇵 日本-A528287D
   network: http
-  port: '56738'
+  port: 56738
   server: 103.127.243.59
   servername: ''
   skip-cert-verify: true
@@ -4555,14 +4541,6 @@ proxies:
   server: slur.izenny.com
   type: ss
   udp: true
-- name: '548|🇯🇵_JP_日本 · proxy_pool:peasoft/... #4'
-  password: BxceQaOe
-  port: 1783
-  server: 13.192.183.245
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: false
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -4847,27 +4825,31 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: '568|🇯🇵 日本 | JPN #2'
-  network: ws
-  port: '80'
-  server: jp01.a0a.xyz
+  http-opts:
+    method: GET
+    path:
+    - /ABCDE
+  name: 566|🇯🇵 日本 | JPN 11
+  network: http
+  port: 54291
+  server: 103.127.243.66
   tls: false
   type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  udp: true
+  uuid: c5856e0b-5ca6-49bf-8525-d02af9c37cf5
+- alterId: 0
+  cipher: auto
+  name: '568|🇯🇵 日本 | JPN #1'
+  network: ws
+  port: '16617'
+  server: planb.mojcn.com
+  tls: false
+  type: vmess
+  uuid: 033db0ca-703e-4484-a717-77b8900acd7b
   ws-opts:
     headers:
-      Host: jp01.a0a.xyz
-    path: '%2Fcctv13.m3u8'
-- alterId: 0
-  name: '574|JP #1'
-  password: BxceQaOe
-  port: 3278
-  server: 54.249.58.71
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: true
-  type: trojan
-  udp: true
+      Host: 5f34ddd3745456d7ab987287b3f66a2c.mobgslb.tbcache.com
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'
