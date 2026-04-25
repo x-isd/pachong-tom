@@ -737,25 +737,26 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|🇸🇬 SG
+- name: 255|SG
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
-  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
-- name: '306,502|B - 🇺🇸 US 17 TG: @nodpai'
+- name: 306|Singapore_Singapore_trojan_114...
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
-  server: 139.59.239.116
+  server: 178.128.209.190
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
-  tls: true
   type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: Koma-YT.PAGeS.Dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
     path: /trTelegram🇨🇳 @WangCai2
 - name: '321,322,323|tg群组: https://t.me/tjiajc1 #3'
   network: ws
@@ -793,7 +794,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,378,494,536,537,559|10,11|新加坡|@ripaojiedian #1'
+- name: '340,378,536,537,559|10,11|新加坡|@ripaojiedian #1'
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 32876
   server: 54.193.48.211
@@ -1928,7 +1929,8 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇸🇬SG-38.89.142.56-0300 | 7.948...
+  country: 🇸 US
+  name: 378,435,537,538|🇸🇬SG-38.89.142.56-0300 | 7.948...
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.89.142.56
@@ -2492,18 +2494,22 @@ proxies:
     headers:
       Host: ''
     path: /anti13.zingfast.vn
-- name: '378,436,536,537|🇸🇬SG-54.169.245.181-4506 #1'
+- country: BG
+  name: '378,435,436,536,537|🇸🇬SG-54.169.245.181-4506 #1'
   password: IL37892054
   port: 443
   server: engaged-ram.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-52.221.210.236-4614 #1'
+  udp: true
+- country: 🇺🇸US
+  name: '378,435,536,537|🇬SG-52.221.210.236-4614 #1'
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   port: 20000
   server: starlink-sg2.mfa.cat
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: '378,537|SG-139.99.68.21-5466 #1'
   password: zDNVedRFPQexG9v
@@ -3694,6 +3700,22 @@ proxies:
   xudp: true
 - alterId: '0'
   cipher: auto
+  name: '489|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #45'
+  network: ws
+  port: 16618
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 62e2f63d-eb5b-4e22-9501-7361dab470b0
+  ws-opts:
+    headers:
+      Host: f623ed67b551aedf776492df3bf507f4.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: '0'
+  cipher: auto
   name: '489|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #46'
   network: ws
   port: 16618
@@ -3855,6 +3877,22 @@ proxies:
   xudp: true
 - alterId: '0'
   cipher: auto
+  name: '489|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #59'
+  network: ws
+  port: 16618
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 88eebed0-9f57-4914-b9a3-403d1bc2c7f1
+  ws-opts:
+    headers:
+      Host: 0d4a9b9415e8fa3ab4f1a8607a773d28.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: '0'
+  cipher: auto
   name: '489|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #61'
   network: ws
   port: 16618
@@ -3933,6 +3971,28 @@ proxies:
       Host: ebc538857d74eb5070a79d1a208b3cc6.mobgslb.tbcache.com
     path: /
   xudp: true
+- alterId: 0
+  cipher: auto
+  name: '502|B - 🇸🇬 SG 11 TG: @nodpai'
+  network: raw
+  port: 443
+  server: 43.128.70.62
+  tls: false
+  type: vmess
+  uuid: 7eb64dc1-5b5c-4795-8383-e1964c45477b
+- alterId: 0
+  cipher: auto
+  name: '502|C - 🇸🇬 SG 21 TG: @nodpai'
+  network: ws
+  port: 16618
+  server: t.cnmjcn.cyou
+  tls: false
+  type: vmess
+  uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
+  ws-opts:
+    headers:
+      Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
+    path: /
 - name: '507,559,580|SG TROJAN-72 | free-nodes #2'
   network: ws
   password: 13c169be-8592-4eaa-94cb-69c859e7d987
@@ -4068,78 +4128,6 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '551|B - 🇸🇬 SG 11 TG: @nodpai #1'
-  network: raw
-  port: 443
-  server: 43.128.70.62
-  tls: false
-  type: vmess
-  uuid: 7eb64dc1-5b5c-4795-8383-e1964c45477b
-- alterId: 0
-  cipher: auto
-  name: '551|C - 🇸🇬 SG 21 TG: @nodpai'
-  network: ws
-  port: 16618
-  server: t.cnmjcn.cyou
-  tls: false
-  type: vmess
-  uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
-  ws-opts:
-    headers:
-      Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '551|C - 🇸🇬 SG 22 TG: @nodpai'
-  network: ws
-  port: 16618
-  server: m.cnmjin.net
-  tls: false
-  type: vmess
-  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
-  ws-opts:
-    headers:
-      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '551|C - 🇸🇬 SG 26 TG: @nodpai'
-  network: ws
-  port: 16618
-  server: t.cnmjcn.cyou
-  tls: false
-  type: vmess
-  uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
-  ws-opts:
-    headers:
-      Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '551|C - 🇸🇬 SG 27 TG: @nodpai'
-  network: ws
-  port: 16618
-  server: planb.mojcn.com
-  tls: false
-  type: vmess
-  uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
-  ws-opts:
-    headers:
-      Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com
-    path: /
-- name: 551|🇸🇬SG_1|1.2MB/s
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2096
-  server: 172.64.152.23
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /tr
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -4225,6 +4213,14 @@ proxies:
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: 566|🇸🇬 新加坡 | SGP 6
+  password: 0023c04a-3bfa-4c6e-b2f6-bfe94485dbdd
+  port: 12012
+  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
+  skip-cert-verify: false
+  sni: tr.yuanul.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '577|新加坡NO.1 #4'
