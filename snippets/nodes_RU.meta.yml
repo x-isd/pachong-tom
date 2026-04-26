@@ -469,11 +469,12 @@ proxies:
     path: /
 - cipher: aes-256-gcm
   country: 🇺RU
-  name: '378,435,537|🇺RU-46.17.40.197-4624 #1'
+  name: 378,435,440,537,566|🇷🇺 俄罗斯 | RUS
   password: 9ca2803c16de72cd
   port: 40412
   server: 46.17.40.197
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇺RU-45.67.215.119-7760 #1'
@@ -618,17 +619,76 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: 456|RU俄罗斯(mibei77.com 米贝节点分享)
-  network: ws
-  port: 443
-  server: 194.87.10.241
-  servername: sni.111000.v6.rocks
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 435|RU_87
+  password: Lp27rqyJq72bZsqX
+  port: 9045
+  server: 217.30.10.70
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇺RU
+  h2-opts: {}
+  http-opts: {}
+  name: '440,502,559,717|US【机场推荐：https://a9a.xyz】17 #1'
+  network: tcp
+  port: '2053'
+  server: node-us.connectsuite.org
+  servername: ''
+  skip-cert-verify: true
   tls: true
+  type: vmess
+  uuid: 9b91e960-f8f7-41aa-ac67-f5c7b6b72e74
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '456,559,580|RU VLESS-93 | free-nodes #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: kEhVzEXS_myQF6LPpKPWEI8Ha2-mmNMyLItXoVa8SD4
+  server: in-pl-hn.ray-proxy.ru
+  servername: eh.vk.com
+  tls: false
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 3cb9f2c2-cd60-4616-963e-6a1c5d1c8b02
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '456,559,580|RU VLESS-108 | free-nodes #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: VFzQg-tlMPhO7wBJNQJD8M82zPxnCTy_Y2oHWgsFbzQ
+    short-id: 10402c47a7e61563
+  server: nl10.404-it.ru
+  servername: www.google.com
+  tls: false
+  type: vless
+  uuid: 6d0e9ded-d23d-4ffb-b165-7bc757be84d3
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '456,559,580|RU VLESS-109 | free-nodes #2'
+  network: tcp
+  port: 5443
+  reality-opts:
+    public-key: DeZ1yrB7w_bpjIB3vrVo6veYiSQEwXWu1ZUOG8KzMCE
+    short-id: 62d5daa7ca19fc73
+  server: nl9.404-it.ru
+  servername: sun6-22.userapi.com
+  tls: false
+  type: vless
+  uuid: 6d0e9ded-d23d-4ffb-b165-7bc757be84d3
+- name: '459,580|捷克(mibei77.com 米贝节点分享) #2'
+  network: ws
+  password: '!!str 1234567890'
+  port: 443
+  server: 194.87.77.91
+  skip-cert-verify: false
+  sni: kfm-bn0.pages.dev
+  type: trojan
   ws-opts:
     headers:
-      Host: sni.111000.v6.rocks
+      Host: kfm-bn0.pages.dev
     path: '%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3'
 - name: 460|俄罗斯_新西伯利亚
   network: ws
@@ -1398,44 +1458,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '507,559,580|RU VLESS-93 | free-nodes #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: kEhVzEXS_myQF6LPpKPWEI8Ha2-mmNMyLItXoVa8SD4
-  server: in-pl-hn.ray-proxy.ru
-  servername: eh.vk.com
-  tls: false
-  type: vless
-  uuid: 3cb9f2c2-cd60-4616-963e-6a1c5d1c8b02
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '507,559,580|RU VLESS-108 | free-nodes #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: VFzQg-tlMPhO7wBJNQJD8M82zPxnCTy_Y2oHWgsFbzQ
-    short-id: 10402c47a7e61563
-  server: nl10.404-it.ru
-  servername: www.google.com
-  tls: false
-  type: vless
-  uuid: 6d0e9ded-d23d-4ffb-b165-7bc757be84d3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '507,559,580|RU VLESS-109 | free-nodes #2'
-  network: tcp
-  port: 5443
-  reality-opts:
-    public-key: DeZ1yrB7w_bpjIB3vrVo6veYiSQEwXWu1ZUOG8KzMCE
-    short-id: 62d5daa7ca19fc73
-  server: nl9.404-it.ru
-  servername: sun6-22.userapi.com
-  tls: false
-  type: vless
-  uuid: 6d0e9ded-d23d-4ffb-b165-7bc757be84d3
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
@@ -1553,11 +1575,12 @@ proxies:
   type: vless
   uuid: 75807638-6f19-07d0-ae08-38492ee85c88
 - flow: xtls-rprx-vision
-  name: 523,524,559|🇨🇿 捷克-03C7A708
+  name: 523,524,551,559|🇨🇿 捷克-03C7A708
   network: tcp
   port: 52006
   server: 178.72.181.87
   servername: ''
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 75807638-6f19-01f4-ae08-38492ee85c88
@@ -1582,7 +1605,7 @@ proxies:
   tls: false
   type: vless
   uuid: 8338171d-2ea7-4015-bdea-492f3d5d4e60
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #1'
+- name: 533|RU俄罗斯(mibei77.com 米贝节点分享)
   network: ws
   port: 2096
   server: 195.13.45.253
@@ -1594,7 +1617,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560'
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #2'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #1'
   network: ws
   port: 2053
   server: 31.192.238.71
@@ -1606,7 +1629,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560'
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #3'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #2'
   network: ws
   port: 8443
   server: 31.192.238.71
@@ -1618,7 +1641,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: X%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #4'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #3'
   network: ws
   port: 2053
   server: 31.192.238.71
@@ -1630,7 +1653,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FX%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F'
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #5'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #4'
   network: ws
   port: 2053
   server: 31.192.238.71
@@ -1642,7 +1665,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: X%40freecodes%2F%3Fed%3D2560
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #6'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #5'
   network: ws
   port: 8443
   server: 46.8.226.39
@@ -1654,7 +1677,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #7'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #6'
   network: ws
   port: 2053
   server: 31.192.238.71
@@ -1666,7 +1689,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FX%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560'
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #8'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #7'
   network: ws
   port: 2053
   server: 31.192.238.71
@@ -1678,12 +1701,29 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: X%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
-- cipher: aes-256-gcm
-  name: '548|🇷🇺_RU_俄罗斯 · proxy_pool:snakem9... #1'
-  password: 83acf69edb4e5453
-  port: 12091
-  server: 194.87.69.143
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 551,559|🇷🇺 俄罗斯-1F6C92CD
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0
+    short-id: ''
+  server: srv80.towersflowerss.com
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 551|🇷🇺RU_2|1.7MB/s
+  port: 52006
+  server: 82.202.249.248
+  servername: cluster-russia-3.firstvideocdn.ru
+  tls: true
+  type: vless
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1711,7 +1751,7 @@ proxies:
   server: 109.122.198.64
   sni: kfm-bn0.pages.dev
   type: trojan
-- name: '559|🇷🇺RU_90 #2'
+- name: '559|🇷🇺RU_90 #1'
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
@@ -1787,17 +1827,6 @@ proxies:
   tls: false
   type: vless
   uuid: 2cbd01de-4c6b-4b7a-89b2-2da483c9d314
-- name: 559|🇷🇺 俄罗斯-1F6C92CD
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Ufkz__Q3m_d8NFR08OVtXx3hLaV4-x7UesrVKduEIn0
-    short-id: ''
-  server: srv80.towersflowerss.com
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
 - name: 559|🇷🇺 俄罗斯-8745D97B
   network: tcp
   port: 443
@@ -2210,3 +2239,15 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: '580|俄羅斯丨yoyapai.com #1'
+  network: ws
+  password: '!!str 1234567890'
+  port: 443
+  server: 92.246.137.150
+  skip-cert-verify: false
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: kfm-bn0.pages.dev
+    path: '%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3'

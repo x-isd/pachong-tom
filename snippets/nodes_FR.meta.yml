@@ -46,7 +46,7 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - auth: qQe1z5kU8kN6SlKnDt9Ru3Qp
   client-fingerprint: chrome
-  name: 127,426,559,606|FR_Paris_Amazon Technologies I...
+  name: 127,426,559,566,606|FR_Paris_Amazon Technologies I...
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
   server: vpn-fr-001.fastervpn.world
@@ -54,6 +54,7 @@ proxies:
   sni: vpn-fr-001.fastervpn.world
   tls: false
   type: hysteria2
+  udp: true
 - auth: qQe1z5kU8kN6SlKnDt9Ru3Qp
   client-fingerprint: chrome
   name: 127,426,559,606|FR_Paris_Amazon.com, Inc._Clau...
@@ -65,14 +66,16 @@ proxies:
   tls: false
   type: hysteria2
 - auth: dongtaiwang.com
-  name: 127,426,438,502,551,559|🏁 未知-09D95B63
+  name: 127,426,438,502,551,559,566|🇫🇷 法国 | FRA 4
   password: dongtaiwang.com
   port: 40022
+  ports: 41000-42000
   server: 163.172.113.118
   skip-cert-verify: true
   sni: www.microsoft.com
   tls: false
   type: hysteria2
+  udp: true
 - alterId: 0
   cipher: auto
   name: '128,430|法国1 #2'
@@ -113,20 +116,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- alterId: 0
-  cipher: auto
-  name: 255|🇫🇷 法国
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-8065 #1'
   password: f8f7aCzcPKbsF8p3
@@ -479,7 +468,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537,544,559|🇫🇷 FR法国(mibei77.com 米贝节点分享) #1'
+  name: 378,494,536,537,559|🇫🇷 FR法国(mibei77.com 米贝节点分享)
   network: ws
   port: '16617'
   server: planb.mojcn.com
@@ -543,6 +532,166 @@ proxies:
   type: vmess
   uuid: d159c5be-8291-45c4-bd21-51d024658a6d
   ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '378,489,537,551|A - 🇭🇰 HK 01 TG: @nodpai #1'
+  network: ws
+  port: 16622
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 302457f5-6848-4e2b-be16-193131ab6374
+  ws-opts:
+    headers:
+      Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '378,537,559|A - 🇭🇰 HK 01 TG: @nodpai #2'
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 302457f5-6848-4e2b-be16-193131ab6374
+  ws-opts:
+    headers:
+      Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '378,537,551|A - 🇭🇰 HK 02 TG: @nodpai #1'
+  network: ws
+  port: 16632
+  server: t.cnmjcn.cyou
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 302457f5-6848-4e2b-be16-193131ab6374
+  ws-opts:
+    headers:
+      Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '378,489,537|🇫🇷FR-162.19.192.89-1636 #1'
+  network: ws
+  port: 16632
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
+  ws-opts:
+    headers:
+      Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: '378,489,537,551|B - 🇭🇰 HK 12 TG: @nodpai #1'
+  network: ws
+  port: 16622
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: '378,537,559|C - 🇭🇰 HK 17 TG: @nodpai'
+  network: ws
+  port: 16632
+  server: t.cnmjcn.cyou
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '378,537,551|B - 🇭🇰 HK 20 TG: @nodpai'
+  network: ws
+  port: 16622
+  server: m.cnmjin.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '378,537|🇫🇷FR-162.19.192.89-1656 #1'
+  network: ws
+  port: 16617
+  server: t.cnmjcn.cyou
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 302457f5-6848-4e2b-be16-193131ab6374
+  ws-opts:
+    headers:
+      Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '378,537,559|C - 🇯🇵 JP 15 TG: @nodpai'
+  network: ws
+  port: 16617
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
+  ws-opts:
+    headers:
+      Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '378,489,537,551,559|C - 🇸🇬 SG 16 TG: @nodpai #1'
+  network: ws
+  port: 16618
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
+  ws-opts:
+    headers:
+      Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: '378,537,559|D - 🇺🇸 US 25 TG: @nodpai'
+  network: ws
+  port: 16648
+  server: t.cnmjcn.cyou
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
     path: /
 - name: '378,536,537|🇷FR-141.95.61.209-2067 #1'
   password: 4f2c305b-9a03-4493-b3e4-2dff2f1af8c9
@@ -1632,7 +1781,7 @@ proxies:
   type: trojan
 - client-fingerprint: ''
   flow: xtls-rprx-vision
-  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #392'
+  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #3462'
   network: tcp
   port: 443
   reality-opts:
@@ -1657,7 +1806,7 @@ proxies:
   uuid: 7a5aed7d-8e71-499c-a6e6-d96a204ac88f
 - client-fingerprint: ''
   flow: xtls-rprx-vision
-  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #1436'
+  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #3475'
   network: tcp
   port: 443
   reality-opts:
@@ -1669,60 +1818,43 @@ proxies:
   uuid: 3fee3b68-d94d-45e7-b5aa-8733c9fa3094
 - alterId: 0
   cipher: auto
-  name: 456|FR法国(mibei77.com 米贝节点分享)
+  country: 🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 440|Relay_🇷FR-NL_06
   network: ws
-  port: '16622'
+  port: 16616
   server: planb.mojcn.com
-  servername: ''
-  tls: false
+  servername: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+  skip-cert-verify: true
   type: vmess
-  uuid: 033db0ca-703e-4484-a717-77b8900acd7b
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
   ws-opts:
     headers:
-      Host: 5f34ddd3745456d7ab987287b3f66a2c.mobgslb.tbcache.com
+      HOST: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
     path: /
 - alterId: 0
   cipher: auto
-  name: '456|FR法国(mibei77.com 米贝节点分享) #1'
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 440|Relay_🇫🇷FR-SI_07
   network: ws
-  port: '16616'
+  port: 16622
   server: planb.mojcn.com
-  servername: ''
-  tls: false
+  servername: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+  skip-cert-verify: true
   type: vmess
-  uuid: 033db0ca-703e-4484-a717-77b8900acd7b
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
   ws-opts:
     headers:
-      Host: 5f34ddd3745456d7ab987287b3f66a2c.mobgslb.tbcache.com
+      HOST: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: '456|FR法国(mibei77.com 米贝节点分享) #2'
-  network: ws
-  port: '16632'
-  server: planb.mojcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 255456b5-4b3e-449f-8dd1-99fd7d21415a
-  ws-opts:
-    headers:
-      Host: 37461892546988f67a6acfbe937e161b.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '456|FR法国(mibei77.com 米贝节点分享) #3'
-  network: ws
-  port: '16645'
-  server: planb.mojcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 033db0ca-703e-4484-a717-77b8900acd7b
-  ws-opts:
-    headers:
-      Host: 5f34ddd3745456d7ab987287b3f66a2c.mobgslb.tbcache.com
-    path: /
+- name: '456,559,580|FR TROJAN-86 | free-nodes #2'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.95.237
+  type: trojan
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1909,6 +2041,15 @@ proxies:
   uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
   ws-opts:
     path: /proxy
+- alterId: 0
+  cipher: auto
+  name: '476,481,523,524|🇭🇰 香港 39 #1'
+  port: 51556
+  server: 103.181.164.145
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: '476,481,523,524|🇭🇰 香港 137 #1'
@@ -1918,14 +2059,25 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '507,559,580|FR TROJAN-86 | free-nodes #2'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.39.95.237
+- name: 507|FR TROJAN-47 | free-nodes
+  password: gRhMxPMmod
+  port: 443
+  server: cc.websooj.site
   type: trojan
+- name: 507|FR VLESS-56 | free-nodes
+  network: ws
+  port: 80
+  server: 213.136.69.8
+  tls: false
+  type: vless
+  uuid: 15cbab96-197e-46a5-9042-073b3980c798
+  ws-opts:
+    headers:
+      Host: fsdns.ectunnelvpn.me
+    path: '%2Fvless'
 - alterId: 0
   cipher: auto
-  name: '523,524,559|C - 🇭🇰 HK 19 TG: @nodpai'
+  name: '523,524,551,559|C - 🇭🇰 HK 19 TG: @nodpai'
   network: ws
   port: 16632
   server: m.cnmjin.net
@@ -1939,7 +2091,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524,559|B - 🇭🇰 HK 11 TG: @nodpai #2'
+  name: '523,524,559|B - 🇭🇰 HK 11 TG: @nodpai #1'
   network: ws
   port: 16622
   server: m.cnmjin.net
@@ -2030,27 +2182,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '536,551,559|B - 🇭🇰 HK 09 TG: @nodpai #1'
+  name: 536,566|🇭🇰 香港 | HKG 5
   network: ws
   port: 16622
   server: m.cnmjin.net
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
-  ws-opts:
-    headers:
-      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 536|🇫🇷FR-162.19.192.89-1608
-  network: ws
-  port: 16622
-  server: m.cnmjin.net
-  servername: ''
-  tls: false
-  type: vmess
+  udp: true
   uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
   ws-opts:
     headers:
@@ -2100,13 +2240,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 536|🇫🇷FR-162.19.192.89-1613
+  name: 536,566|🇭🇰 香港 | HKG 3
   network: ws
   port: 16632
   server: m.cnmjin.net
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
   ws-opts:
     headers:
@@ -2156,9 +2298,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 536|🇫🇷FR-162.19.192.89-1620
+  name: '536,568|🇹🇼 🇨🇳 台湾 | TWN #2'
   network: ws
-  port: 16616
+  port: '16616'
   server: t.cnmjcn.cyou
   servername: ''
   tls: false
@@ -2226,20 +2368,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '536,551,559|B - 🇸🇬 SG 12 TG: @nodpai'
-  network: ws
-  port: 16618
-  server: t.cnmjcn.cyou
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
-  ws-opts:
-    headers:
-      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: '536|🇫🇷FR-162.19.192.89-1633 #1'
   network: ws
   port: 16618
@@ -2301,28 +2429,16 @@ proxies:
   tls: true
   type: vmess
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
-- alterId: 0
-  cipher: auto
-  name: 543|FR-162.19.192.89-058
-  network: ws
-  port: 16617
-  server: planb.mojcn.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1a97d136-a66b-4959-a9cc-42ab7fee9462
-  ws-headers:
-    Host: 77ca334818bda4db538ebedbe42e0859.mobgslb.tbcache.com
-  ws-path: /
 - name: '545,546|法国[01] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 559|🇫🇷 法国-0A94A1F3
+- name: 551,559|🇫🇷 法国-0A94A1F3
   password: dongtaiwang.com
   port: 41283
+  ports: 40022,41000-42000
   server: 163.172.113.118
   skip-cert-verify: true
   sni: www.microsoft.com
@@ -2380,16 +2496,18 @@ proxies:
     headers:
       Host: s3vz.user-service.chinav.indevs.in
     path: '%2Fdanfeng'
-- name: 559|🇫🇷 法国-8DBA5985
+- client-fingerprint: chrome
+  name: 559,566|🇫🇷 法国 | FRA 5
   network: tcp
   port: 443
   reality-opts:
     public-key: 13qS12jjsHCQpQfL3tEL2nHltgoTp1i-8kVcJ6odrEQ
     short-id: '6635'
   server: 193.233.133.55
-  servername: ''
-  tls: false
+  servername: yahoo.com
+  tls: true
   type: vless
+  udp: true
   uuid: 2bfea3fd-6826-480c-917d-e3bc99b47a0f
 - name: 559|🇫🇷 法国-F6C719A2
   network: tcp
@@ -3284,6 +3402,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: 566|🇫🇷 法国 | FRA 2
+  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+  port: 443
+  server: 0f373314-te3z40-twuk0i-1hzyr.fr.oshuawei.com
+  tls: true
+  type: http
+  username: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+- name: 566|🇫🇷 法国 | FRA 3
+  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+  port: 443
+  server: d0d108f0-te5ts0-twuk0i-1hzyr.fr.oshuawei.com
+  tls: true
+  type: http
+  username: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
