@@ -206,6 +206,50 @@ proxies:
   port: 11511
   server: 111.29.57.104
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 255|🇺🇸 美国
+  network: ws
+  port: 30804
+  server: v4.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 255|🇺🇸 美国 2
+  network: ws
+  port: 30832
+  server: v32.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 255,558|12,13|美国|@ripaojiedian
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: '306,378,515,516,537,543,556|tg频道:@ripaojiedian #2'
   password: amazonskr05
@@ -213,7 +257,7 @@ proxies:
   server: 63.180.254.10
   type: ss
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇭🇰HK香港4
+  name: 306,340,378,494,502,514,515,516,536,537,543,544,559,574|🇭🇰HK香港4
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 2008
@@ -225,9 +269,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 306,378,494,502,536,537,551,559|🇸🇬 新加坡-FCB9753F
+  name: 306,378,494,502,536,537,551,559|美国_043004004
   network: ws
-  port: 443
+  port: '443'
   server: sg-2za3n.knotic.space
   servername: sg-2za3n.knotic.space
   skip-cert-verify: false
@@ -241,9 +285,9 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 306,494,502,536,538,551,559|🏁 未知-EF413D42
+  name: 306,494,502,536,538,551,559|美国_043004005
   network: ws
-  port: 443
+  port: '443'
   server: sanjose01.zgjok.com
   servername: sanjose01.zgjok.com
   skip-cert-verify: false
@@ -254,6 +298,48 @@ proxies:
     headers:
       Host: sanjose01.zgjok.com
     path: /
+- name: '306,502,551|B - 🇺🇸 US 27 TG: @nodpai #1'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  sni: epge.muarua.filegear-sg.me
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epge.muarua.filegear-sg.me
+    path: /
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: 306,378,435,537,538|🇺🇸US-104.192.226.106-0220 | 58...
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 104.192.226.106
+  type: ss
+- name: '306,502,551,559|🇭🇰HK_2|2.7MB/s #2'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 25258
+  server: 38.147.163.152
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+- name: 306,502,551,559,566|🇺🇸 美国 | USA
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2096
+  server: 172.64.152.23
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /tr
 - name: '321,322,323|美国03 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -607,7 +693,8 @@ proxies:
   server: 169.197.142.187
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538|🇺🇸US-37.19.198.236-0170 | 43.5...
+  country: 🇦UA
+  name: 356,357,378,435,537,538|🇺🇸US-37.19.198.236-0170 | 43.5...
   password: shadowsocks
   port: 443
   server: 37.19.198.236
@@ -902,7 +989,8 @@ proxies:
   server: 194.116.173.21
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538|🇺🇸US-37.19.198.244-0171 | 43.0...
+  country: 🇦UA
+  name: 356,357,378,435,537,538|🇺🇸US-37.19.198.244-0171 | 43.0...
   password: shadowsocks
   port: 443
   server: 37.19.198.244
@@ -2223,23 +2311,19 @@ proxies:
       Host: 68.183.129.197
     path: /cctv13/hd.m3u8
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇺🇸US-173.234.29.2-0196 | 29.49...
+  country: 🇸 US
+  name: 378,435,537,538|🇺🇸US-173.234.29.2-0196 | 29.49...
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 173.234.29.2
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537,538,548,579,582|🇺🇸 美国 CCZZUU.TOP #3'
+  country: 🇸 US
+  name: 378,435,537,538,548|🇺🇸 美国 CCZZUU.TOP
   password: GyZ5Xo0ht41vYmW3H4
   port: 816
   server: 149.28.255.6
   tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 378,537,538|🇺🇸US-104.192.226.106-0220 | 58...
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 104.192.226.106
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 378,476,481,537,538,543|🇺🇸US-38.135.24.131-362
@@ -5607,46 +5691,56 @@ proxies:
   uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
   ws-opts:
     path: /
-- name: '378,436,536,537|🇸US-77.247.126.137-4564 #1'
+- country: 🇬🇧GB
+  name: '378,435,436,536,537|🇸US-77.247.126.137-4564 #1'
   password: 3ac6a6ca99f74941b1eaf892818e2ddb
   port: 443
   server: 77.247.126.137
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇸US-194.33.45.157-4565 #1'
+  udp: true
+- country: 🇬🇧GB
+  name: '378,435,436,536,537|🇸US-194.33.45.157-4565 #1'
   password: 3ac6a6ca99f74941b1eaf892818e2ddb
   port: 443
   server: 194.33.45.157
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇸US-54.184.22.123-4595 #1'
+  udp: true
+- country: 🇺RU
+  name: '378,435,436,536,537|🇸US-54.184.22.123-4595 #1'
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '378,537|🇺🇸US-45.55.40.127-4621 #2'
   password: elTuo73FsQwO90EbLo96Ve
   port: 49726
   server: 45.55.40.127
   type: ss
-- name: '378,436,536,537|🇺🇸US-64.94.95.118-4629 #2'
+- country: 🇸US
+  name: '378,435,436,536,537|🇺🇸US-64.94.95.118-4629 #2'
   password: kkzh2prsyr2ik47as615
   port: 57142
   server: 64.94.95.118
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇺🇸US-38.180.193.194-4630 #2'
+  udp: true
+- country: 🇺🇸US
+  name: '378,435,436,536,537|🇺🇸US-38.180.193.194-4630 #2'
   password: c1d83c0c7d57cead4379ba14a82df69b
   port: 443
   server: 38.180.193.194
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🏁ZZ
   delay: 620
-  name: '378,528,537|US-134.195.101.223-4877 #1'
+  name: '378,435,528,537|US-134.195.101.223-4877 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -5657,9 +5751,9 @@ proxies:
   type: ss
 - alterId: 32
   cipher: auto
-  name: '378,438,494,536,537|🇸US-77.83.141.171-5041 #1'
+  name: 378,494,536,537,559|美国_043004045
   network: ws
-  port: 443
+  port: '443'
   server: vc.fly.dev
   servername: vc.fly.dev
   skip-cert-verify: false
@@ -14683,44 +14777,111 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: 436|🇺🇸US_118
-  password: pro%40_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20000
-  server: starlink-sg2.mfa.cat
-  type: trojan
-- alterId: 1
-  cipher: auto
-  name: '437,494,559|🇺🇸US_113 #1'
-  network: tcp
-  port: 22324
-  server: 67.220.72.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 1
-  cipher: auto
-  name: 437,559|巴西_042919001
-  network: tcp
-  port: '22324'
-  server: 172.233.17.76
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- cipher: chacha20-ietf-poly1305
+  country: 🇸 US
+  name: '435,579,582|🇺🇸 美国 DXC Technology 3 #2'
+  password: akMKO9KXowxFcx5A
+  port: 443
+  server: 20.87.107.99
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '437,559|🇺🇸US_115 #1'
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇺🇸 US_115
+  network: ws
+  port: 443
+  server: cf.090227.xyz
+  servername: sgal.dagrate.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-headers:
+    HOST: sgal.dagrate.eu.org
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 435,437,559|🇺🇸US_120
   network: tcp
   port: 18000
   server: 67.220.85.46
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇸US_122
+  network: ws
+  port: 443
+  server: chuncheon03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 81d5cac4-d039-4874-9a20-c391f580012d
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  country: 🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 435,437,559|巴西_043004001
+  network: tcp
+  port: '22324'
+  server: 172.233.17.76
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: '435,437,494,559|🇺🇸US_121 #1'
+  network: tcp
+  port: 22324
+  server: 67.220.72.237
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  ws-path: /
+- name: 436|🇺🇸US_127
+  password: pro%40_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 20000
+  server: starlink-sg2.mfa.cat
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 437|🇺🇸US_122
+  network: ws
+  port: 443
+  server: chuncheon03.zgjok.com
+  tls: true
+  type: vmess
+  uuid: 81d5cac4-d039-4874-9a20-c391f580012d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: aes-256-cfb
   country: 🇸US
-  name: 440|Relay_🇸US-🇺🇸US_05
+  name: 440|Relay_🇸US-🇺🇸US_04
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -14729,10 +14890,10 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  country: 🇸US
+  country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 440|Relay_🇺🇸US-🇺🇸US_06
+  name: 440|Relay_🇸US-🇺🇸US_06
   network: ws
   port: 8810
   server: hk.aicvideo.info
@@ -14796,24 +14957,22 @@ proxies:
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: '459,559,580|US美国(mibei77.com 米贝节点分享) #56'
+- name: '459,580|US美国(mibei77.com 米贝节点分享) #82'
   network: ws
   password: Aimer
   port: 2053
   server: 167.68.4.199
-  skip-cert-verify: false
   sni: epge.muarua.filegear-sg.me
   type: trojan
   ws-opts:
     headers:
       Host: epge.muarua.filegear-sg.me
     path: '%2F%3Fed'
-- name: '459,580|美國節點丨yoyapai.com #2'
+- name: '459,580|US美国(mibei77.com 米贝节点分享) #96'
   network: ws
   password: Aimer
   port: 2053
   server: 167.68.4.199
-  skip-cert-verify: false
   sni: epge.muarua.filegear-sg.me
   type: trojan
   ws-opts:
@@ -16315,11 +16474,11 @@ proxies:
     headers:
       Host: lax2.ibgfw.top
     path: /dyajvws
-- name: 475,476,480,481,543|🇩🇪DE-103.109.234.64-370
+- name: '475,476,480,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #127'
   password: '!!str 1234567890'
   port: 443
   server: 103.109.234.64
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16328,11 +16487,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 475,476,480,481,543|🇪DE-152.53.119.132-240
+- name: '475,476,480,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #147'
   password: '!!str 1234567890'
   port: 443
   server: 152.53.119.132
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16341,11 +16500,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 475,476,480,481,543|🇿CZ-194.87.77.2-333
+- name: '475,476,480,481,494,543,544,559|🇨🇿 捷克(mibei77.com 米贝节点分享) #2'
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.2
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16354,11 +16513,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 475,480,543|🇪SE-77.110.96.220-338
+- name: '475,480,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #169'
   password: '!!str 1234567890'
   port: 443
   server: 77.110.96.220
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16367,11 +16526,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F
-- name: 475,476,480,481,543|🇪DE-202.61.226.121-231
+- name: '475,476,480,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #158'
   password: '!!str 1234567890'
   port: 2053
   server: 202.61.226.121
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16380,7 +16539,7 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 475,480,494,536,544|美國丨yoyapai.com\r
+- name: 475,480,494,536,544,559|未知23
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
   server: 172.66.44.230
@@ -16392,11 +16551,11 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /tro8sFW1S91B6sZrM1?ed=2560
-- name: 475,476,480,481,543|🇪SE-138.124.34.36-185
+- name: '475,476,480,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #133'
   password: '!!str 1234567890'
   port: 443
   server: 138.124.34.36
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16405,11 +16564,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 475,476,480,481,543|🇪DE-152.53.118.28-340
+- name: '475,476,480,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #146'
   password: '!!str 1234567890'
   port: 443
   server: 152.53.118.28
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16430,11 +16589,11 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: 476,481,543|🇪DE-159.195.44.151-343
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #149'
   password: '!!str 1234567890'
   port: 443
   server: 159.195.44.151
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16443,11 +16602,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇪SE-109.120.134.104-327
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #129'
   password: '!!str 1234567890'
   port: 443
   server: 109.120.134.104
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16456,11 +16615,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /
   ws-path: h=%2F
-- name: 476,481,543|🇩🇪DE-89.169.9.177-282
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #172'
   password: '!!str 1234567890'
   port: 2053
   server: 89.169.9.177
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16469,11 +16628,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇩🇪DE-144.31.116.8-305
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #138'
   password: '!!str 1234567890'
   port: 443
   server: 144.31.116.8
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16482,11 +16641,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇩🇪DE-93.123.84.194-366
+- name: '476,481,494,543,544,559|🇩🇪 DE德国(mibei77.com 米贝节点分享) #71'
   password: '!!str 1234567890'
   port: 443
   server: 93.123.84.194
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16495,11 +16654,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇩🇪DE-23.251.50.142-277
+- name: '476,481,494,543,544,559|🇩🇪 DE德国(mibei77.com 米贝节点分享) #64'
   password: '!!str 1234567890'
   port: 443
   server: 23.251.50.142
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16508,11 +16667,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F
-- name: 476,481,543|🇩🇪DE-143.20.160.200-358
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #136'
   password: '!!str 1234567890'
   port: 443
   server: 143.20.160.200
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16521,11 +16680,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇪DE-138.124.240.36-272
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #132'
   password: '!!str 1234567890'
   port: 443
   server: 138.124.240.36
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16534,11 +16693,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇸US-64.188.115.82-273
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #168'
   password: '!!str 1234567890'
   port: 443
   server: 64.188.115.82
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16547,11 +16706,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇪DE-2.27.120.108-353
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #155'
   password: '!!str 1234567890'
   port: 8443
   server: 2.27.120.108
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16560,11 +16719,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇪DE-148.253.215.61-291
+- name: '476,481,494,543,544,559|🇬🇧 GB英国(mibei77.com 米贝节点分享) #3'
   password: '!!str 1234567890'
   port: 443
   server: 148.253.215.61
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16573,11 +16732,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇭CH-138.124.32.121-274
+- name: '476,481,494,543,544,559|🇩🇪 DE德国(mibei77.com 米贝节点分享) #52'
   password: '!!str 1234567890'
   port: 443
   server: 138.124.32.121
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16586,11 +16745,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇭CH-138.124.28.78-326
+- name: '476,481,494,543,544,559|🇨🇭 瑞士(mibei77.com 米贝节点分享) #2'
   password: '!!str 1234567890'
   port: 443
   server: 138.124.28.78
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16599,11 +16758,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇩🇪DE-144.31.98.216-347
+- name: '476,481,494,543,544,559|🇩🇪 DE德国(mibei77.com 米贝节点分享) #56'
   password: '!!str 1234567890'
   port: 443
   server: 144.31.98.216
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16612,11 +16771,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?https://t.me/WangCai2🇨🇳=
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇩🇪DE-158.101.190.78-332
+- name: '476,481,494,543,544,559|🇩🇪 DE德国(mibei77.com 米贝节点分享) #58'
   password: '!!str 1234567890'
   port: 443
   server: 158.101.190.78
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16637,11 +16796,11 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: 476,481,543|🇩🇪DE-144.31.216.160-355
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #143'
   password: '!!str 1234567890'
   port: 443
   server: 144.31.216.160
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16650,11 +16809,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇭CH-138.124.87.163-371
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #134'
   password: '!!str 1234567890'
   port: 8443
   server: 138.124.87.163
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16663,11 +16822,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇪DE-77.239.127.77-349
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #170'
   password: '!!str 1234567890'
   port: 443
   server: 77.239.127.77
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16676,11 +16835,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇪DE-31.58.85.103-324
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #164'
   password: '!!str 1234567890'
   port: 443
   server: 31.58.85.103
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16701,11 +16860,11 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: 476,481,543|🇮🇷IR-213.176.77.30-314
+- name: '476,481,494,543,544,559|🇮🇷 伊朗(mibei77.com 米贝节点分享) #4'
   password: '!!str 1234567890'
   port: 443
   server: 213.176.77.30
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16714,11 +16873,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇶IQ-178.17.48.78-337
+- name: '476,481,494,543,544,559|🇩🇪 DE德国(mibei77.com 米贝节点分享) #61'
   password: '!!str 1234567890'
   port: 443
   server: 178.17.48.78
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16727,11 +16886,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇸US-185.170.153.115-234
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #152'
   password: '!!str 1234567890'
   port: 8443
   server: 185.170.153.115
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16740,11 +16899,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇸US-144.31.51.34-232
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #144'
   password: '!!str 1234567890'
   port: 443
   server: 144.31.51.34
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16753,11 +16912,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇸US-2.27.35.199-323
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #156'
   password: '!!str 1234567890'
   port: 8443
   server: 2.27.35.199
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16766,11 +16925,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇩🇪DE-80.253.249.66-296
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #171'
   password: '!!str 1234567890'
   port: 443
   server: 80.253.249.66
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16779,11 +16938,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F
-- name: 476,481,543|🇩🇪DE-144.31.118.170-357
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #139'
   password: '!!str 1234567890'
   port: 443
   server: 144.31.118.170
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16792,11 +16951,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇦🇪AE-104.128.139.68-307
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #128'
   password: '!!str 1234567890'
   port: 443
   server: 104.128.139.68
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16805,11 +16964,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F
-- name: 476,481,543|🇩🇪DE-185.219.84.221-208
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #153'
   password: '!!str 1234567890'
   port: 443
   server: 185.219.84.221
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16818,11 +16977,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /
   ws-path: h=%2F
-- name: 476,481,543|🇿CZ-95.85.234.43-258
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #174'
   password: '!!str 1234567890'
   port: 443
   server: 95.85.234.43
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16831,11 +16990,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇩🇪DE-144.31.188.6-335
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #141'
   password: '!!str 1234567890'
   port: 443
   server: 144.31.188.6
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16844,11 +17003,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇩🇪DE-144.31.191.159-255
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #142'
   password: '!!str 1234567890'
   port: 8443
   server: 144.31.191.159
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16857,11 +17016,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇩🇪DE-84.200.192.87-223
+- name: '476,481,494,543,544,559|🇩🇪 DE德国(mibei77.com 米贝节点分享) #70'
   password: '!!str 1234567890'
   port: 8443
   server: 84.200.192.87
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16870,11 +17029,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇷IR-213.176.78.192-249
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #159'
   password: '!!str 1234567890'
   port: 443
   server: 213.176.78.192
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16883,11 +17042,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇩🇪DE-202.61.195.167-287
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #157'
   password: '!!str 1234567890'
   port: 443
   server: 202.61.195.167
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16896,11 +17055,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇭CH-138.124.32.78-237
+- name: '476,481,494,543,544,559|🇨🇭 瑞士(mibei77.com 米贝节点分享) #3'
   password: '!!str 1234567890'
   port: 443
   server: 138.124.32.78
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16942,11 +17101,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
-- name: 476,481,543|🇩🇪DE-194.164.198.156-219
+- name: '476,481,494,543,544,559|🇺🇸 US美国(mibei77.com 米贝节点分享) #154'
   password: '!!str 1234567890'
   port: 8443
   server: 194.164.198.156
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -16955,11 +17114,11 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
   ws-path: h=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: 476,481,543|🇩🇪DE-144.31.62.181-295
+- name: '476,481,494,543,544,559|🇩🇪 DE德国(mibei77.com 米贝节点分享) #55'
   password: '!!str 1234567890'
   port: 8443
   server: 144.31.62.181
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -17045,6 +17204,95 @@ proxies:
   udp: true
   uuid: 9df7dc71-0a5c-4beb-bc89-68963c015aca
   xudp: true
+- alterId: '0'
+  cipher: auto
+  name: '489|🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  network: tcp
+  port: 28027
+  server: 103.181.164.186
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: eeb254d6-f03e-40bb-90e2-c88c1de4d346
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: '489|🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
+  port: 27114
+  server: 1096.rabbitpro-in-5.com
+  type: vmess
+  udp: true
+  uuid: b9027e08-cb6f-3391-8bd0-0a4f31e6c140
+- alterId: 0
+  cipher: auto
+  name: '489|🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+  port: 9028
+  server: select-us.ddnskunlun.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+- alterId: 0
+  cipher: auto
+  name: '489|🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
+  port: 27115
+  server: 1096.rabbitpro-in-5.com
+  type: vmess
+  udp: true
+  uuid: b9027e08-cb6f-3391-8bd0-0a4f31e6c140
+- alterId: '0'
+  cipher: auto
+  name: 489|🔴🇺🇸[🤖📺🔍]_github.com/Ruk1ng001_...
+  network: tcp
+  port: 29002
+  server: 103.181.164.186
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: eeb254d6-f03e-40bb-90e2-c88c1de4d346
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: '489|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+  network: tcp
+  port: 29709
+  server: 216.167.126.14
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c19c51e3-11ff-4f1c-92c6-200784acd4fc
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: '489|🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
+  port: 27116
+  server: 1096.rabbitpro-in-5.com
+  type: vmess
+  udp: true
+  uuid: b9027e08-cb6f-3391-8bd0-0a4f31e6c140
+- alterId: 0
+  cipher: auto
+  name: '489|🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #8'
+  port: 27113
+  server: 1096.rabbitpro-in-5.com
+  type: vmess
+  udp: true
+  uuid: b9027e08-cb6f-3391-8bd0-0a4f31e6c140
+- alterId: 0
+  cipher: auto
+  name: 489|🟢🇺🇸_github.com/Ruk1ng001_40280...
+  network: tcp
+  port: 9027
+  server: select-us.ddnskunlun.com
+  servername: select-us.ddnskunlun.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484
 - alterId: 0
   cipher: auto
   name: 498|美国 CloudFlare节点
@@ -17098,6 +17346,58 @@ proxies:
     headers:
       Host: ecc.vtcss.top
     path: /qwer01
+- name: 502,559,566|🇺🇸 美国 | USA 6
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 45.40.148.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: 502,559,566|🇺🇸 美国 | USA 18
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 194.59.5.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: 502,559,566|🇦🇹 奥地利 | AUT
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 185.106.94.130
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: 502,559,566|🇩🇪 德国 | DEU 9
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 89.167.100.106
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
 - alterId: 0
   cipher: auto
   name: '513,517,578|1,6|🇺🇸_US_美国 #7 #2'
@@ -17333,28 +17633,13 @@ proxies:
   type: vmess
   udp: true
   uuid: 31801968-9877-4ef5-be87-56503c34a69d
-- alterId: 2
-  cipher: auto
-  country: 🇺🇸 US
-  delay: 1235
-  http-opts: {}
-  name: 528,551,559|🇭🇰HK_55
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
 - delay: 809
-  name: 528|美国 - 聖荷西 - 11
+  name: 528,566|🇩🇪 德国 | DEU 4
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
   server: 172.66.44.230
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: Koma-YT.PAGeS.Dev
   type: trojan
   udp: true
@@ -17601,14 +17886,6 @@ proxies:
   port: 443?
   server: tinkered-pennies-puppies.freesocks.work
   type: ss
-- name: 543|🇸US-150.241.66.81-354
-  password: '!!str 1234567890'
-  port: 443
-  server: 150.241.66.81
-  skip-cert-verify: true
-  sni: kfm-bn0.pages.dev
-  type: trojan
-  ws-path: h=%2F
 - name: '545,546|美国[01] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 658
@@ -17623,7 +17900,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 548,559|美国_0429192384
+  name: 548,559|美国_0430042400
   network: ''
   port: '18000'
   server: 38.91.107.49
@@ -17632,86 +17909,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: '551|B - 🇺🇸 US 13 TG: @nodpai'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 45.40.148.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '551,559|B - 🇺🇸 US 19 TG: @nodpai #2'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 194.59.5.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '551,559|B - 🇺🇸 US 22 TG: @nodpai #2'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 114.129.43.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '551,559|B - 🇺🇸 US 27 TG: @nodpai #2'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 185.106.94.130
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '551|B - 🇺🇸 US 25 TG: @nodpai #1'
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  sni: epge.muarua.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epge.muarua.filegear-sg.me
-    path: /
-- name: '551,559|C - 🇺🇸 US 45 TG: @nodpai #1'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 65.109.186.249
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- alterId: 0
-  cipher: auto
-  name: '551|🇺🇸US_3|1.8MB/s #1'
-  network: raw
-  port: '180'
-  server: 82.198.246.37
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - name: 553|🇺🇸美国_8de94
   password: 2eef6b8a-8581-4433-8b9b-8b514508e6c9
   port: 443
@@ -17806,7 +18003,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 553,559|美国_0429192329
+  name: 553,559|美国_0430042351
   network: ws
   port: '8222'
   server: 104.168.1.102
@@ -17851,7 +18048,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 553,559|美国_0429192331
+  name: 553,559|美国_0430042353
   network: ws
   port: '8222'
   server: 104.168.1.102
@@ -17896,7 +18093,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 553,559|美国_0429192333
+  name: 553,559|美国_0430042355
   network: ws
   port: '8222'
   server: 104.168.1.102
@@ -18161,22 +18358,6 @@ proxies:
     headers:
       Host: 1g.890699.xyZ
     path: /lXENb74xF4ylXngZ
-- alterId: 2
-  cipher: auto
-  name: 558|12,13|美国|@ripaojiedian
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -18242,47 +18423,35 @@ proxies:
     headers:
       Host: 1g.890699.xyZ
     path: /lXENb74xF4ylXngZ
-- name: 559|🇺🇸 美国-68824190
-  password: '!!str 123456'
-  port: 2053
-  server: 104.18.93.164
-  sni: bPBg.aNguSWEN.toP
-  type: trojan
-- name: 559|🇺🇸 美国-37AF1E8F
-  password: '!!str 123456'
-  port: 443
-  server: 104.18.93.164
-  sni: bPBg.anGuSwEN.ToP
-  type: trojan
-- name: '559,580|美國丨yoyapai.com #12'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 172.66.44.230
-  skip-cert-verify: false
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: '%2Ftro8sFW1S91B6sZrM1%3Fed%3D2560'
 - name: 559|🇺🇸 美国-00734701
   password: Nova-Proxy
   port: 2083
   server: 8.39.125.191
   sni: spring-queen-a95f.cewon19053.workers.dev
   type: trojan
-- name: '559|🇺🇸US_117 #1'
+- name: '559|🇺🇸US_128 #1'
   password: ZY07256934
   port: 443
   server: closing-crow.rooster465.autos
   sni: closing-crow.rooster465.autos
   type: trojan
-- name: '559|🇺🇸US_119 #1'
+- name: 559|🇺🇸 美国-545B23CB
+  password: a003db5a-3b24-4f4d-ada8-80bb4e4bf1f6
+  port: 443
+  server: us.jp.bestmao.sbs
+  sni: us1.hellokitty.sbs
+  type: trojan
+- name: '559|🇺🇸US_126 #1'
   password: c1d83c0c7d57cead4379ba14a82df69b
   port: 443
   server: 38.180.193.194
   sni: 38.180.193.194
+  type: trojan
+- name: 559|🇺🇸 美国-856C3F9C
+  password: e70415c6-d937-4e67-975a-ffa84f486fda
+  port: 28812
+  server: svip-us.xiaobaivpn.icu
+  sni: ''
   type: trojan
 - name: 559|🇺🇸 美国-25814188
   password: kkzh2prsyr2ik47as615
@@ -18290,13 +18459,13 @@ proxies:
   server: 64.94.95.117
   sni: static.rutube.ru
   type: trojan
-- name: '559|🇺🇸US_120 #1'
+- name: '559|🇺🇸US_125 #2'
   password: kkzh2prsyr2ik47as615
   port: 57142
   server: 64.94.95.118
   sni: 64.94.95.118
   type: trojan
-- name: '559|🇺🇸US_118 #1'
+- name: '559|🇺🇸US_127 #1'
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   port: 20000
   server: starlink-sg2.mfa.cat
@@ -18304,7 +18473,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '559,580|US美国(mibei77.com 米贝节点分享) #62'
+  name: '559|US美国(mibei77.com 米贝节点分享) #21'
   network: ws
   port: '41037'
   server: 216.167.38.98
@@ -18417,7 +18586,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: '559|🇺🇸US_116 #1'
+  name: '559|🇺🇸US_124 #1'
   network: ws
   port: 443
   server: n1753101277.4u9ma.icu
@@ -18431,7 +18600,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 559|美国_0429192391
+  name: 559|美国_0430042408
   network: tcp
   port: '47034'
   server: 47.79.236.9
@@ -18441,7 +18610,7 @@ proxies:
   uuid: 6f2879e2-7595-4fc2-ca7e-3c163dbe0d4b
 - alterId: 0
   cipher: auto
-  name: 559|美国_042919096
+  name: 559|美国_043004261
   network: ws
   port: '8443'
   server: 47.90.244.153
@@ -18454,9 +18623,9 @@ proxies:
       Host: ''
     path: /ws
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 559|美国_042919095
-  network: tcp
+  cipher: auto
+  name: 559|美国_0430042412
+  network: ''
   port: '18000'
   server: 67.220.95.3
   servername: ''
@@ -18465,7 +18634,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: 559|美国_0429192397
+  name: 559|美国_0430042414
   network: tcp
   port: '18000'
   server: 84.17.41.2
@@ -18475,7 +18644,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: 559|美国_0429192394
+  name: 559|美国_0430042411
   network: ws
   port: '8222'
   server: 104.168.1.102
@@ -18489,7 +18658,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 559|美国_0429192422
+  name: 559|美国_0430042469
   network: tcp
   port: '18000'
   server: 169.197.142.22
@@ -18499,7 +18668,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: 559|美国_0429192423
+  name: 559|美国_0430042439
   network: ws
   port: '2053'
   server: 172.236.249.24
@@ -18513,7 +18682,7 @@ proxies:
     path: /usavm
 - alterId: 0
   cipher: auto
-  name: 559|美国_0429192417
+  name: 559|美国_0430042434
   network: tcp
   port: '10329'
   server: 192.210.236.15
@@ -18523,7 +18692,7 @@ proxies:
   uuid: 66c59c4f-e97a-4604-8791-e5b113055128
 - alterId: 0
   cipher: auto
-  name: 559|美国_0429192413
+  name: 559|美国_0430042430
   network: tcp
   port: '22324'
   server: 216.106.185.141
@@ -18533,7 +18702,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 559|美国_0429192419
+  name: 559|美国_0430042436
   network: ''
   port: '57138'
   server: 216.167.46.226
@@ -18543,7 +18712,7 @@ proxies:
   uuid: b18ae1c7-b9ef-433c-ebd0-36bb9c62cf86
 - alterId: 0
   cipher: auto
-  name: 559|美国_0429192418
+  name: 559|美国_0430042435
   network: tcp
   port: '55310'
   server: 23.226.135.232
@@ -18553,7 +18722,7 @@ proxies:
   uuid: 22066968-ef90-455e-b981-4bf782d25386
 - alterId: 0
   cipher: auto
-  name: 559|美国_0429192421
+  name: 559|美国_0430042438
   network: tcp
   port: '18000'
   server: 38.110.1.246
@@ -18582,6 +18751,123 @@ proxies:
   tls: false
   type: vmess
   uuid: 31801968-9877-4ef5-be87-56503c34a69d
+- name: 566|🇺🇸 美国 | USA 2
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 185.207.198.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: 566|🇺🇸 美国 | USA 3
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 154.197.108.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: 566|🇺🇸 美国 | USA 7
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 39792
+  server: 38.55.125.175
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: 566|🇺🇸 美国 | USA 8
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 34.143.159.175
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: 566|🇺🇸 美国 | USA 9
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2096
+  server: 172.64.147.106
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /tr
+- name: 566|🇺🇸 美国 | USA 13
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 108.162.198.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: 566|🇺🇸 美国 | USA 14
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2096
+  server: 104.20.6.134
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /tr
+- name: 566|🇺🇸 美国 | USA 15
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 104.20.6.134
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /tr
+- name: 566|🇺🇸 美国 | USA 16
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2096
+  server: 172.64.149.54
+  skip-cert-verify: false
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /tr
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -19829,6 +20115,38 @@ proxies:
     headers:
       Host: a.prapt1.ir
     path: /?ed=2048&Telegram🇨🇳
+- cipher: chacha20-ietf-poly1305
+  name: '579,582|🇺🇸 美国 DXC Technology 4 #2'
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: 20.90.87.141
+  tfo: false
+  type: ss
+- name: '580|美國丨yoyapai.com #11'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 172.66.44.230
+  skip-cert-verify: false
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: '%2Ftro8sFW1S91B6sZrM1%3Fed%3D2560'
+- alpn:
+  - http/1.1
+  name: '580|US美国(mibei77.com 米贝节点分享) #79'
+  network: ws
+  password: mSzFVhUczD
+  port: 443
+  server: 104.20.5.134
+  sni: abest.api-tel.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: abest.api-tel.xyz
+    path: '%2F'
 - alterId: 0
   cipher: none
   name: 584|🇸 hg-US-Google_LLC
