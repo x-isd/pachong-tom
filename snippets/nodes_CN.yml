@@ -1,4 +1,23 @@
 proxies:
+- alterId: 64
+  cipher: auto
+  name: '306,475,476,477,480,481,482,579,582|亚太地区 CCZZUU.TOP #6'
+  port: 54022
+  server: 103.181.164.145
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '306,475,480|美節點 #1'
+  port: 51556
+  server: 103.181.164.145
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   name: '362,363|423|🇨🇳  20X-1B |  16.5MB/s #1'
   password: cac56de5-40e5-4cd1-b23a-5e7e1dde311f
@@ -1391,8 +1410,9 @@ proxies:
   cipher: auto
   country: 🏁 ZZ
   delay: 981
+  h2-opts: {}
   http-opts: {}
-  name: '437,457,458,528,559,580,581|🇲🇾_MY_马来西亚->🇫🇷_FR_法国 #3'
+  name: '435,437,457,458,528,559,580,581|🇲🇾_MY_马来西亚->🇫🇷_FR_法国 #3'
   network: tcp
   port: 30835
   server: v35.hdacd.com
@@ -1403,21 +1423,26 @@ proxies:
   ws-path: /
 - alterId: 2
   cipher: auto
-  name: '437,459,502,551,559|🇨🇳CN_08 #1'
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: '435,437,459,502,559|🇨🇳CN_08 #2'
   network: tcp
   port: 30824
   server: v24.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - alterId: 2
   cipher: auto
   country: 🇨🇳CN
   delay: 2361
   h2-opts: {}
   http-opts: {}
-  name: '437,459,528,559|🇨🇳CN_06 #1'
+  name: '435,437,459,528,559|🇨🇳CN_06 #1'
   network: tcp
   port: 30833
   server: v33.hdacd.com
@@ -1426,17 +1451,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: '437,502,551,553,559|🇨🇳CN_09 #1'
-  network: tcp
-  port: 30845
-  server: v45.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - alterId: 64
   cipher: auto
   name: '462|中国_广州市 #1'
