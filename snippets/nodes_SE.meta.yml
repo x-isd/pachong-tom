@@ -254,26 +254,26 @@ proxies:
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 502,559,566|🇸🇪 瑞典 | SWE 2
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 9WnuH4KUb9-cCqbApq4bVLDhrqhPbpnd5eTn14bGciA
-    short-id: f7
-  server: lol-swe-0001.api.neuralrelay.stream
-  servername: hls-svod.itunes.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f189684b-6213-4c0d-a2e3-cb8860f5d4c5
 - delay: 2806
   name: 528|瑞典 - Steninge - 1
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
   server: 92.118.233.25
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- delay: 1189
+  name: '528,559|B - 🇺🇸 US 34 TG: @nodpai #1'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 185.221.163.129
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
@@ -452,6 +452,17 @@ proxies:
     headers:
       Host: sni.111000.dns.army
     path: '%2F%253Fhttps%253A%2F%2Ft.me%2FWangCai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3'
+- name: 559|🇸🇪 瑞典-4A6AC927
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: gwuAehnMX6e-n1fxIenfjx43j3qXXi7Cb4wfnW5VyBQ
+    short-id: f04729f65b9ea261
+  server: se1.samovargate.com
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 82b5b465-3307-4a25-acef-abd1649bbedf
 - name: 559|🇸🇪 瑞典-E5C8C343
   network: ws
   port: 8443
@@ -487,6 +498,20 @@ proxies:
   tls: false
   type: vless
   uuid: c1a18592-9e5a-47c1-9b30-2c713b5d86f1
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 559,566|🇸🇪 瑞典 | SWE 2
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 9WnuH4KUb9-cCqbApq4bVLDhrqhPbpnd5eTn14bGciA
+    short-id: f7
+  server: lol-swe-0001.api.neuralrelay.stream
+  servername: hls-svod.itunes.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f189684b-6213-4c0d-a2e3-cb8860f5d4c5
 - name: 566|🇸🇪 瑞典 | SWE
   network: ws
   password: 8r<[9'l6hAO#8ZQi
