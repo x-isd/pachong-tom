@@ -174,13 +174,23 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- name: 255|TW
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 167.68.4.223
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    path: '%2F'
 - alterId: 0
   cipher: auto
   http-opts:
     method: GET
     path:
     - /
-  name: '306,378,502,536,537,551,559|C - 🇯🇵 JP 03 TG: @nodpai #1'
+  name: '306,378,502,536,537,551,559|C - 🇯🇵 JP 03 TG: @nodpai'
   network: http
   port: 55386
   server: 103.127.243.60
@@ -189,45 +199,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 22d4ef9c-b269-4f82-9f59-6c2c0d8ce16d
-- alterId: 0
-  cipher: auto
-  name: 306|Taiwan_Taipei_vmess_1122
-  port: 10000
-  server: ne-cbe4k7vz.neurix.sbs
-  servername: us01.neurix.icu
-  tls: true
-  type: vmess
-  uuid: 7f620257-50b3-4ed6-ac6e-6c6e80b237af
-- delay: 483
-  name: '306,502,528,559|A - 🇩🇪 DE 06 TG: @nodpai #1'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 16443
-  server: 114.32.9.249
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- delay: 386
-  name: '306,502,528,559|B - 🇷🇺 RU 05 TG: @nodpai #2'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 114.33.57.170
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
 - cipher: aes-256-cfb
   name: 356|🇹🇼1 |  2.1MB/s
   password: qwerREWQ@@
@@ -556,15 +527,13 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: aes-256-cfb
-  country: 🇰HK
-  name: 378,435,537,538|🇨🇳TW-185.189.160.105-0279 | 8....
+  name: 378,537,538|🇨🇳TW-185.189.160.105-0279 | 8....
   password: qwerREWQ@@
   port: 41632
   server: 185.189.160.105
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇼 TW
-  name: 378,435,537,538|🇨🇳TW-61.231.19.71-0285 | 6.36M...
+  name: 378,537,538|🇨🇳TW-61.231.19.71-0285 | 6.36M...
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: 61.231.19.71
@@ -583,15 +552,13 @@ proxies:
   server: r3mrcg001287h3p.cybervena.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 378,435,537,538|🇨🇳TW-1.161.245.168-0277 | 2.77...
+  name: 378,537,538|🇨🇳TW-1.161.245.168-0277 | 2.77...
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: nbmrcg0034686rw.cybervena.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 378,435,537,538|🇨🇳TW-114.45.175.31-0282 | 4.50...
+  name: 378,537,538|🇨🇳TW-114.45.175.31-0282 | 4.50...
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: r3mrcg0011499tl.cybervena.com
@@ -603,8 +570,7 @@ proxies:
   server: r3mrcg00129437x.cybervena.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇼TW
-  name: 378,435,537,538|🇨🇳TW-61.231.19.71-0291 | 7.117...
+  name: 378,537,538|🇨🇳TW-61.231.19.71-0291 | 7.117...
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: r3mrcg001286ek2.cybervena.com
@@ -1040,22 +1006,18 @@ proxies:
     headers:
       Host: tw3.594888.xyz
     path: /v2ray
-- country: 🇳CN
-  name: '378,435,436,536,537|TW-61.228.113.73-4599 #1'
+- name: '378,436,536,537|TW-61.228.113.73-4599 #1'
   password: 736cd94d-7b94-3e44-8106-3419f64eaf09
   port: 3462
   server: a12.taipeicitygovernment.org.ua
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇧GB
-  name: '378,435,436,536,537|🇼TW-85.237.207.189-4636 #1'
+- name: '378,436,536,537|🇼TW-85.237.207.189-4636 #1'
   password: 3ac6a6ca99f74941b1eaf892818e2ddb
   port: 443
   server: 85.237.207.189
   skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '378,537|TW-118.160.193.190-5110 #1'
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
@@ -1234,6 +1196,18 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- name: 456|TW台湾(mibei77.com 米贝节点分享)
+  network: ws
+  port: 16443
+  server: 114.32.9.249
+  servername: babayaga-6i7.pages.dev
+  tls: true
+  type: vless
+  uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+  ws-opts:
+    headers:
+      Host: babayaga-6i7.pages.dev
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 465|18|🇹🇼 台湾|@ripaojiedian
@@ -1623,6 +1597,24 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,551|🇹🇼TW_1|1.1MB/s #1'
+  port: 35001
+  server: hinet2.nekohub.xyz
+  servername: dl.google.com
+  tls: true
+  type: vless
+  uuid: a8d37bf8-ff5b-4de8-8796-2de9c4072b41
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,551|🇹🇼TW_2|1.4MB/s #1'
+  port: 35000
+  server: hinet2.nekohub.xyz
+  servername: dl.google.com
+  tls: true
+  type: vless
+  uuid: a8d37bf8-ff5b-4de8-8796-2de9c4072b41
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: '513,517|15|🇹🇼 台湾|@ripaojiedian #1'
@@ -1762,24 +1754,6 @@ proxies:
   server: 114.33.57.170
   sni: Koma-YT.PAGeS.Dev
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 551|🇹🇼TW_2|1.4MB/s
-  port: 35000
-  server: hinet2.nekohub.xyz
-  servername: dl.google.com
-  tls: true
-  type: vless
-  uuid: a8d37bf8-ff5b-4de8-8796-2de9c4072b41
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 551|🇹🇼TW_1|1.1MB/s
-  port: 35001
-  server: hinet2.nekohub.xyz
-  servername: dl.google.com
-  tls: true
-  type: vless
-  uuid: a8d37bf8-ff5b-4de8-8796-2de9c4072b41
 - flow: xtls-rprx-vision
   name: 553|🇹🇼台湾_0e757
   port: 443
@@ -2007,6 +1981,16 @@ proxies:
     headers:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
+- name: 559|台湾_050104055
+  obfs: salamander
+  obfs-password: YmGRdMZ74sEC91FN
+  password: de8e0342-ea12-4f9d-bc2a-e62409e1913f
+  port: 20003
+  server: zz.66jc.xyz
+  skip-cert-verify: true
+  sni: hkzz.66jc.xyz
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   name: 559|🇹🇼 台湾 92
   network: ws
