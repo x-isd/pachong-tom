@@ -2557,7 +2557,7 @@ proxies:
     headers:
       Host: 138.2.52.176
     path: /
-- name: '378,494,536,537,559|11,12|日本2|@ripaojiedian #4'
+- name: '378,536,537,559|11,12|日本2|@ripaojiedian #4'
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 2008
@@ -2565,7 +2565,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,494,523,524,536,537,559|11,12|美国|@ripaojiedian
+- name: 378,523,524,536,537,559|11,12|美国|@ripaojiedian
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 4019
@@ -2575,7 +2575,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,494,536,537,559|11,12|美国2|@ripaojiedian #2'
+- name: '378,536,537,559|11,12|美国2|@ripaojiedian #2'
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 4019
@@ -3183,18 +3183,22 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
-- name: '378,436,536,537|🇵JP-52.195.12.80-4647 #1'
+- country: 🇧GB
+  name: '378,435,436,536,537|🇵JP-52.195.12.80-4647 #1'
   password: IL37892054
   port: 443
   server: upright-rhino.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇯🇵JP-3.113.25.200-4667 #2'
+  udp: true
+- country: 🇵JP
+  name: '378,435,436,536,537|🇯🇵JP-3.113.25.200-4667 #2'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf
   name: '378,536,537|JP-54.250.249.126-5111 #1'
   obfs: plain
@@ -3597,6 +3601,23 @@ proxies:
   tls: false
   type: hysteria2
   up: ''
+- client-fingerprint: chrome
+  name: '438,489,559,606|JP_Tokyo_Amazon Technologies I... #1'
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: vpn-jp-001.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-jp-001.fastervpn.world
+  tls: false
+  type: hysteria2
+- name: 438,489,559|🏁 未知-EC0B80C2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: vpn-jp-018.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-jp-018.fastervpn.world
+  tls: false
+  type: hysteria2
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -5459,23 +5480,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
-- client-fingerprint: chrome
-  name: '489,559,606|JP_Tokyo_Amazon Technologies I... #1'
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: vpn-jp-001.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-jp-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 489,559|🏁 未知-EC0B80C2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: vpn-jp-018.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-jp-018.fastervpn.world
-  tls: false
-  type: hysteria2
 - alterId: 1
   cipher: auto
   client-fingerprint: chrome
@@ -6619,20 +6623,6 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-- delay: 374
-  name: '528,551,559|A - 🇸🇪 SE 01 TG: @nodpai'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 108.162.198.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
 - delay: 810
   name: 528|日本 - Ōkubo-naka - 5
   network: ws
@@ -6891,6 +6881,12 @@ proxies:
   sni: www.iq.com
   type: hysteria2
   udp: true
+- name: 536,559|🇯🇵JP日本
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 153.121.45.101
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
 - flow: ''
   name: 553|🇯🇵日本_db0fd
   network: ws
@@ -7667,7 +7663,7 @@ proxies:
   server: engaging-toucan.rooster465.autos
   sni: engaging-toucan.rooster465.autos
   type: trojan
-- name: '559|🇯🇵JP_68 #1'
+- name: 559|🇯🇵JP_68
   password: strong-secret-pass-777
   port: 4443
   server: 103.231.73.181
@@ -8669,61 +8665,72 @@ proxies:
       Host: jp02.a0a.xyz
     path: /cctv13.m3u8
 - name: 566|🇯🇵 日本 | JPN
-  password: 0720c874-35e8-11ef-aa88-f23c913c8d2b
+  password: 32315324-cf6b-11ed-979b-f23c9164ca5d
   port: 443
-  server: a7c209d3-tegxs0-tiv91g-1l0qa.jp4.oshuawei.com
+  server: 56e80284-tegxs0-tfgtqm-nx3b.jp4.oshuawei.com
   tls: true
   type: http
-  username: 0720c874-35e8-11ef-aa88-f23c913c8d2b
+  username: 32315324-cf6b-11ed-979b-f23c9164ca5d
 - name: 566|🇯🇵 日本 | JPN 2
-  password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
+  password: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
   port: 443
-  server: 01c5f89c-tegxs0-tk5ls1-z7a1.jp4.oshuawei.com
+  server: b5a5b455-tegxs0-tip01z-1gevg.jp.oshuawei.com
   tls: true
   type: http
-  username: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
+  username: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
 - name: 566|🇯🇵 日本 | JPN 3
-  password: 1cce7df2-251c-11ee-9409-f23c9164ca5d
+  password: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
   port: 443
-  server: f368400b-tegxs0-ttx5yr-1j0y6.jp4.oshuawei.com
+  server: 94e9f26a-tegxs0-twnp5a-ahsb.jp.oshuawei.com
   tls: true
   type: http
-  username: 1cce7df2-251c-11ee-9409-f23c9164ca5d
+  username: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
 - name: 566|🇯🇵 日本 | JPN 4
-  password: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
+  password: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
   port: 443
-  server: 5ecaa46c-tegxs0-tw2fdz-1s824.jp.oshuawei.com
+  server: 188f491e-tegxs0-tgurfh-n09f.jp.oshuawei.com
   tls: true
   type: http
-  username: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
+  username: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
 - name: 566|🇯🇵 日本 | JPN 5
-  password: ecfab6c8-df5b-11ed-98a7-f23c913c8d2b
+  password: 336501b6-51d2-11ee-a993-f23c9164ca5d
   port: 443
-  server: 8a8bebd2-tegxs0-tn57fp-5ifr.jp.oshuawei.com
+  server: b8c47f5c-tegxs0-trhks8-1c9em.jp.oshuawei.com
   tls: true
   type: http
-  username: ecfab6c8-df5b-11ed-98a7-f23c913c8d2b
+  username: 336501b6-51d2-11ee-a993-f23c9164ca5d
 - name: 566|🇯🇵 日本 | JPN 6
-  password: 9d6acb62-401c-43e0-a8fb-277b844acb76
-  port: 28802
-  server: svip-jp.xiaobaivpn.icu
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- name: 566|🇯🇵 日本 | JPN 7
-  password: a130762f-3cb6-4dce-a264-caea2db069d1
-  port: 36842
-  server: aws-linkjp1.hellomoon.sbs
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- name: 566|🇯🇵 日本 | JPN 8
-  password: 1cce7df2-251c-11ee-9409-f23c9164ca5d
+  password: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
   port: 443
-  server: 81f12ddd-tegxs0-ttx5yr-1j0y6.jp.oshuawei.com
+  server: b318ac53-te7og0-tfmrui-duku.jp4.oshuawei.com
+  skip-cert-verify: true
   tls: true
   type: http
-  username: 1cce7df2-251c-11ee-9409-f23c9164ca5d
+  username: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
+- name: 566|🇯🇵 日本 | JPN 7
+  password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+  port: 8201
+  server: e2fb292a-tegxs0-tgmqvb-b4pt.ctupro.wkuaishou.com
+  tls: true
+  type: http
+  username: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+- alterId: 1
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 8
+  port: 21586
+  server: 5j7s4ea-g06.jp01-nn-vm0.entry.fr0528.art
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 85de20b1-6241-3f2a-94bf-2af152278953
+- name: 566|🇯🇵 日本 | JPN 9
+  password: de629d50-1711-11ed-bd7c-f23c913c8d2b
+  port: 443
+  server: 483e462a-tegxs0-tlpfci-1jdha.jp.oshuawei.com
+  tls: true
+  type: http
+  username: de629d50-1711-11ed-bd7c-f23c913c8d2b
 - client-fingerprint: random
   name: '567,585,586|JP_speednode_0010 #1'
   network: ws
@@ -8739,15 +8746,12 @@ proxies:
     headers:
       Host: subsources.pages.dev
     path: /?ed=2560
-- alterId: 1
-  cipher: auto
-  name: '568|🇯🇵 日本 | JPN #1'
-  network: tcp
-  port: '21586'
-  server: 5j7s4ea-g06.jp01-nn-vm0.entry.fr0528.art
-  tls: true
-  type: vmess
-  uuid: 85de20b1-6241-3f2a-94bf-2af152278953
+- name: '568|🇯🇵 日本 | JPN #1'
+  password: 9d6acb62-401c-43e0-a8fb-277b844acb76
+  port: 28803
+  server: svip-jp.xiaobaivpn.icu
+  skip-cert-verify: false
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'
