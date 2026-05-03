@@ -53,20 +53,20 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: '306,502,559|🇩🇪DE_1|1.7MB/s #1'
+- name: '306,502,551|🇳🇱NL_1|1.8MB/s #1'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 45.77.65.16
+  port: 2053
+  server: 31.15.17.129
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
+  udp: true
   ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
+    path: /trTelegram🇨🇳 @WangCai2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,494,502,514,523,524,549,551,559,567,585,586|DE_speednode_0005 #4'
+  name: '340,494,502,514,523,524,551,559,567,585,586|DE_speednode_0005 #3'
   network: tcp
   port: 443
   reality-opts:
@@ -836,7 +836,7 @@ proxies:
   server: 8.209.74.72
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
+  country: 🇸 US
   name: 378,435,537,538|🇩🇪DE-38.60.250.107-0321 | 0.17...
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
@@ -2607,7 +2607,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #1330'
+  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #3226'
   network: tcp
   port: 443
   server: finl9.keepsecured.net
@@ -2664,6 +2664,19 @@ proxies:
   type: vless
   udp: true
   uuid: 8ef19221-6d5e-4bce-baa1-7c043eae3309
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '456,559|德國丨yoyapai.com #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: vfmqSXTEjdIOgz43eZTNzBRztAvd1U1dDkSz_mnaSk4
+    short-id: 82c8140feb118043
+  server: 178.17.50.111
+  servername: ads.x5.ru
+  tls: false
+  type: vless
+  uuid: 36f6f998-029e-48e2-ba30-24e2a8159075
 - name: 460|德国_Frankfurt am Main
   network: ws
   port: 443
@@ -3318,6 +3331,29 @@ proxies:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
 - client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
+  name: '502,551|🇩🇪DE_2|1.5MB/s #1'
+  network: grpc
+  port: 8082
+  server: 5.199.133.35
+  servername: id.vk.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f6808c62-cfe0-438c-aae6-44fe6ef51e47
+- client-fingerprint: chrome
+  name: 507|DE VLESS-57 | free-nodes
+  network: grpc
+  port: 25565
+  reality-opts:
+    public-key: n00VSaVEImUfNI-8882Ecum-Er2KIHLg32Y-MWQGeh8
+  server: 144.31.220.136
+  servername: hypixel.net
+  tls: false
+  type: vless
+  uuid: 1c45e98c-8a4a-45e7-acc5-3a3cc962f463
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 507,559|🇩🇪 德国-E824C526
   network: tcp
@@ -3330,14 +3366,19 @@ proxies:
   tls: false
   type: vless
   uuid: 1e45a266-9a04-47af-b703-e53a67373cc9
-- name: 507,559|DE VLESS-99 | free-nodes
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507,559|🏁 未知-CFAEA543
   network: tcp
-  port: 2087
-  server: 178.104.118.247
-  servername: 178.104.118.247
+  port: 443
+  reality-opts:
+    public-key: Ic2uiGhkBgJUsY0CZUBqa1y22V_BO7F4S93Zgk_ir2c
+    short-id: 0c1553316a645758
+  server: 45.77.66.142
+  servername: ''
   tls: false
   type: vless
-  uuid: a34a5f3e-e9fa-40a6-f3af-2984adbd701b
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇩🇪_DE_德国 #2'
@@ -3356,17 +3397,6 @@ proxies:
   server: 91.107.219.5
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 523,524,567,579,582,585|GB_speednode_0006
-  port: 180
-  server: 82.198.246.9
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '523,524,559|🇩🇪 德国 42 #2'
@@ -3507,34 +3537,6 @@ proxies:
   protocol-param: ''
   server: cdn01.25k2l8.meituan88.com
   type: ssr
-- name: 549,551|🇩🇪DE_1|1.3MB/s
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2096
-  server: 104.20.6.134
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /tr
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: vless-grpc-reality
-  name: '549,551|🇩🇪DE_2|1.5MB/s #1'
-  network: grpc
-  port: 8082
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 5.199.133.35
-  servername: id.vk.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f6808c62-cfe0-438c-aae6-44fe6ef51e47
-  xudp: true
 - flow: ''
   name: 553|🇩🇪德国_2e00d
   network: ws
@@ -3855,6 +3857,28 @@ proxies:
   sni: vpn-de-001.fastervpn.world
   tls: false
   type: hysteria2
+- name: 559|🇩🇪DE_1|1.7MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 45.77.65.16
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+- name: 559|🇩🇪DE_2|1.2MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 91.220.8.170
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
 - name: 559|🏁 未知-727ECDEC
   password: strong-secret-pass-777
   port: 4443
@@ -4273,19 +4297,6 @@ proxies:
   tls: true
   type: vless
   uuid: 32bfe5f3-a406-48e3-bad9-932945bd0bc1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|德國丨yoyapai.com
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: vfmqSXTEjdIOgz43eZTNzBRztAvd1U1dDkSz_mnaSk4
-    short-id: 82c8140feb118043
-  server: 178.17.50.111
-  servername: ads.x5.ru
-  tls: false
-  type: vless
-  uuid: 36f6f998-029e-48e2-ba30-24e2a8159075
 - name: 559|🏁 未知-2DE579B7
   network: ws
   port: 443
@@ -6232,6 +6243,14 @@ proxies:
     headers:
       Host: babayaga-6i7.pages.dev
     path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: 559|DE VLESS-99 | free-nodes
+  network: tcp
+  port: 2087
+  server: 178.104.118.247
+  servername: 178.104.118.247
+  tls: false
+  type: vless
+  uuid: a34a5f3e-e9fa-40a6-f3af-2984adbd701b
 - name: 559|🏁 未知-2FFF7DE6
   network: ws
   port: 443
@@ -6622,20 +6641,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 42e25353-b1ae-59f3-bd59-d86d2737b814
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 1000
-  name: 566|🇩🇪 德国 | DEU
-  port: 20088
-  protocol: udp
-  server: 5.83.129.153
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 500
 - alterId: 2
   cipher: auto
   name: '578|13,25|1|🇩🇪1 |  4.9MB/s #1'
