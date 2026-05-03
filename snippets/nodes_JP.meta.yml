@@ -551,7 +551,7 @@ proxies:
   up: ''
 - auth: qQe1z5kU8kN6SlKnDt9Ru3Qp
   client-fingerprint: chrome
-  name: '127,426,438,489,559,606|JP_Tokyo_Amazon Technologies I... #1'
+  name: '127,426,489,559,606|JP_Tokyo_Amazon Technologies I... #1'
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
   server: vpn-jp-001.fastervpn.world
@@ -2625,7 +2625,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '378,438,536,537,559|11,12|日本|@ripaojiedian #2'
+- name: '378,536,537,559|11,12|日本|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -2633,7 +2633,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '378,494,536,537,559|11,12|日本3|@ripaojiedian #4'
+- name: '378,536,537,559|11,12|日本3|@ripaojiedian #4'
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 9201
@@ -2641,7 +2641,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,494,536,537,559|11,12|新加坡|@ripaojiedian
+- name: 378,536,537,559|11,12|新加坡|@ripaojiedian
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 3057
@@ -2649,7 +2649,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,494,536,537,559|11,12|新加坡2|@ripaojiedian #2'
+- name: '378,536,537,559|11,12|新加坡2|@ripaojiedian #2'
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 32876
@@ -3227,22 +3227,18 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
-- country: 🇬🇧GB
-  name: '378,435,436,536,537|🇵JP-52.195.12.80-4603 #1'
+- name: '378,436,536,537|🇵JP-52.195.12.80-4603 #1'
   password: IL37892054
   port: 443
   server: upright-rhino.rooster465.autos
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇵JP
-  name: '378,435,436,536,537|🇵JP-3.113.25.200-4623 #1'
+- name: '378,436,536,537|🇵JP-3.113.25.200-4623 #1'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
   skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: aes-128-gcm
   name: '378,537|🇵JP-172.238.15.102-4657 #1'
   password: 0fae0ceb-4b6d-4bab-9d3c-612c77ae9b2f
@@ -3636,14 +3632,19 @@ proxies:
   sni: vpn-jp-002.fastervpn.world
   tls: false
   type: hysteria2
-- name: 438,489,559|🏁 未知-EC0B80C2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+- client-fingerprint: chrome
+  name: '438|🇯🇵JP_4|1.1MB/s | 网盘搜宝: https:/...'
+  network: ws
   port: 443
-  server: vpn-jp-018.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-jp-018.fastervpn.world
-  tls: false
-  type: hysteria2
+  server: 69.84.182.13
+  servername: jp1-jp1.aiopen.sbs
+  tls: true
+  type: vless
+  uuid: 57d24033-f998-45c1-b973-16747ea76ce9
+  ws-opts:
+    headers:
+      Host: jp1-jp1.aiopen.sbs
+    path: '%2Fkbjc%2Fjp1'
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -4333,7 +4334,7 @@ proxies:
   encryption: none
   grpc-opts:
     grpc-service-name: update
-  name: 489,551|🇯🇵JP_3|2.1MB/s
+  name: '489,502,551|🇯🇵JP_3|2.1MB/s #1'
   network: grpc
   port: 10032
   reality-opts:
@@ -6764,13 +6765,62 @@ proxies:
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '502|C - 🇯🇵 JP 08 TG: @nodpai'
-  port: 443
-  server: 91.243.82.130
-  servername: s3.yandexcloud.net
+  name: '502,551|B - 🇯🇵 JP 13 TG: @nodpai'
+  port: 52006
+  server: 87.228.92.137
+  servername: cl-oth-1.edgeflux.ru
   tls: true
   type: vless
-  uuid: 1d1522f7-33c2-41ef-a5e2-4e6f77a8b56d
+  uuid: 75807638-6f19-0190-ae08-38492ee85c88
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,551,559|C - 🇯🇵 JP 09 TG: @nodpai'
+  port: 52006
+  server: cl-oth-1.edgeflux.ru
+  servername: cl-oth-1.edgeflux.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 75807638-6f19-0190-ae08-38492ee85c88
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 502,551,559|🇷🇺 俄罗斯-A7A744E5
+  network: tcp
+  port: 52006
+  server: 87.228.92.135
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 75807638-6f19-0190-ae08-38492ee85c88
+- flow: xtls-rprx-vision
+  name: '502,551|C - 🇯🇵 JP 22 TG: @nodpai #1'
+  port: 52006
+  server: 87.228.92.138
+  servername: cl-oth-1.edgeflux.ru
+  tls: true
+  type: vless
+  uuid: 75807638-6f19-0190-ae08-38492ee85c88
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 502,551,559|🇷🇺 俄罗斯-FCA7F9E8
+  network: tcp
+  port: 52006
+  server: 87.228.92.136
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 75807638-6f19-0190-ae08-38492ee85c88
+- flow: xtls-rprx-vision
+  name: 502,559|🇷🇺 俄罗斯-4144FDD3
+  network: tcp
+  port: 52006
+  server: 87.228.92.134
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 75807638-6f19-0190-ae08-38492ee85c88
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 513|15|🇯🇵 日本|@ripaojiedian
@@ -7228,73 +7278,22 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '551|B - 🇯🇵 JP 15 TG: @nodpai'
-  port: 52006
-  server: 87.228.92.137
-  servername: cl-oth-1.edgeflux.ru
-  tls: true
-  type: vless
-  uuid: 75807638-6f19-0190-ae08-38492ee85c88
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '551,559|C - 🇯🇵 JP 09 TG: @nodpai'
-  port: 52006
-  server: cl-oth-1.edgeflux.ru
-  servername: cl-oth-1.edgeflux.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 75807638-6f19-0190-ae08-38492ee85c88
-- name: '551|C - 🇯🇵 JP 21 TG: @nodpai'
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: russia.com
-  skip-cert-verify: false
-  sni: bpb.wdgg1979.nyc.mn
-  type: trojan
-  ws-opts:
-    headers:
-      Host: bpb.wdgg1979.nyc.mn
-    path: /tr
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 551,559|🇷🇺 俄罗斯-A7A744E5
-  network: tcp
-  port: 52006
-  server: 87.228.92.135
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 75807638-6f19-0190-ae08-38492ee85c88
 - flow: xtls-rprx-vision
-  name: '551|C - 🇯🇵 JP 23 TG: @nodpai'
+  name: '551|B - 🇯🇵 JP 14 TG: @nodpai'
   port: 52006
-  server: 87.228.92.138
+  server: 178.72.182.9
   servername: cl-oth-1.edgeflux.ru
+  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 75807638-6f19-0190-ae08-38492ee85c88
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 551,559|🇷🇺 俄罗斯-FCA7F9E8
+  name: 551,559|🇯🇵 日本-CD347F34
   network: tcp
   port: 52006
-  server: 87.228.92.136
+  server: 178.72.182.4
   servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 75807638-6f19-0190-ae08-38492ee85c88
-- flow: xtls-rprx-vision
-  name: 551,559|🇷🇺 俄罗斯-4144FDD3
-  network: tcp
-  port: 52006
-  server: 87.228.92.134
-  servername: ''
-  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 75807638-6f19-0190-ae08-38492ee85c88
@@ -8816,14 +8815,6 @@ proxies:
     headers:
       Host: sni.111000.v6.rocks
     path: '%2F%253Fhttps%253A%2F%2Ft.me%2FWangCai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3'
-- name: 559|🇯🇵 日本-CD347F34
-  network: tcp
-  port: 52006
-  server: 178.72.182.4
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 75807638-6f19-0190-ae08-38492ee85c88
 - name: 559|🇯🇵 日本 59
   network: ws
   port: 443
@@ -9253,88 +9244,70 @@ proxies:
     headers:
       Host: jp02.a0a.xyz
     path: /cctv13.m3u8
-- name: 566|🇯🇵 日本 | JPN
-  password: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
-  port: 443
-  server: 656092eb-teisg0-tw9un7-1k27l.jp.oshuawei.com
-  tls: true
-  type: http
-  username: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
 - congestion-controller: bbr
   disable-sni: false
-  name: 566|🇯🇵 日本 | JPN 2
-  password: 225d1cca-d744-11ef-b790-f23c91cfbbc9
+  name: 566|🇯🇵 日本 | JPN
+  password: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
   port: 443
   reduce-rtt: false
   request-timeout: 0
-  server: a1570e96-teisg0-tiuylw-46gc.jp5.hyhuawei.com
+  server: 893ec3ae-teisg0-tgurfh-n09f.jp5.hyhuawei.com
   type: tuic
-  uuid: 225d1cca-d744-11ef-b790-f23c91cfbbc9
-- name: 566|🇯🇵 日本 | JPN 3
-  password: 817d62a8-7910-403d-9845-b7663246f993
-  port: 40051
-  server: jp1.catzl.top
-  skip-cert-verify: false
-  type: anytls
-  udp: true
+  uuid: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
+- name: 566|🇯🇵 日本 | JPN 2
+  password: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
+  port: 443
+  server: 0db50678-tegxs0-tpaqgu-1smhu.jp.oshuawei.com
+  tls: true
+  type: http
+  username: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
+- congestion-controller: bbr
+  disable-sni: false
+  name: 566|🇯🇵 日本 | JPN 3
+  password: e2d8b574-e089-11ef-9cc7-f23c9164ca5d
+  port: 443
+  reduce-rtt: false
+  request-timeout: 0
+  server: f0aaacd4-teisg0-tegbrw-1ta58.jp5.hyhuawei.com
+  type: tuic
+  uuid: e2d8b574-e089-11ef-9cc7-f23c9164ca5d
 - congestion-controller: bbr
   disable-sni: false
   name: 566|🇯🇵 日本 | JPN 4
-  password: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
+  password: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
   port: 443
   reduce-rtt: false
   request-timeout: 0
-  server: 3f4124e4-teisg0-tfmrui-duku.jp5.hyhuawei.com
+  server: 79abb48e-teisg0-tkp3tl-1s09x.jp5.hyhuawei.com
   type: tuic
-  uuid: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
+  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
 - congestion-controller: bbr
   disable-sni: false
   name: 566|🇯🇵 日本 | JPN 5
-  password: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
+  password: 9141f048-0b70-11ef-9eb1-f23c91cfbbc9
   port: 443
   reduce-rtt: false
   request-timeout: 0
-  server: b4a362b0-teisg0-thntyd-1f596.jp5.hyhuawei.com
+  server: e8156328-teisg0-tpn98f-1rcxl.jp5.hyhuawei.com
   type: tuic
-  uuid: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
-- name: 566|🇯🇵 日本 | JPN 6
-  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
-  port: 443
-  server: c0717c61-tegxs0-twuk0i-1hzyr.jp.oshuawei.com
-  tls: true
-  type: http
-  username: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
-- name: 566|🇯🇵 日本 | JPN 7
-  password: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
-  port: 443
-  server: d21231c9-tegxs0-truoje-1uni.jp.oshuawei.com
-  tls: true
-  type: http
-  username: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
-- name: 566|🇯🇵 日本 | JPN 8
-  password: 40e084d6-0316-11f0-90e2-f23c913c8d2b
-  port: 443
-  server: 23b7f382-teisg0-thd0h1-1rz5s.jp.oshuawei.com
-  tls: true
-  type: http
-  username: 40e084d6-0316-11f0-90e2-f23c913c8d2b
+  uuid: 9141f048-0b70-11ef-9eb1-f23c91cfbbc9
 - congestion-controller: bbr
   disable-sni: false
-  name: 566|🇯🇵 日本 | JPN 9
-  password: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
+  name: 566|🇯🇵 日本 | JPN 6
+  password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
   port: 443
   reduce-rtt: false
   request-timeout: 0
-  server: de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com
+  server: 24ddb847-teisg0-tejxhc-1rdqg.jp5.hyhuawei.com
   type: tuic
-  uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
-- name: 566|🇯🇵 日本 | JPN 10
-  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  uuid: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
+- name: 566|🇯🇵 日本 | JPN 7
+  password: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
   port: 443
-  server: fe87ca13-teisg0-tlvq5w-1jcwu.jp.oshuawei.com
+  server: 88c7d090-tegxs0-th1s9h-8rja.jp.oshuawei.com
   tls: true
   type: http
-  username: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  username: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
 - client-fingerprint: random
   name: '567,585,586|JP_speednode_0010 #1'
   network: ws
@@ -9350,16 +9323,14 @@ proxies:
     headers:
       Host: subsources.pages.dev
     path: /?ed=2560
-- alterId: 0
-  name: 574|🇯🇵JP日本2
-  password: BxceQaOe
-  port: 443
-  server: 116.80.80.121
+- name: '568|🇯🇵 日本 | JPN #1'
+  password: 2ebd83a7-09aa-4f02-aad8-e499dc96068c
+  port: 30002
+  server: hy2.cloudsegl1.ccwu.cc
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: true
-  type: trojan
-  udp: true
+  sni: www.iq.com
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'

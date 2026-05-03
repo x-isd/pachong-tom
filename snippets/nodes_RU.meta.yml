@@ -586,20 +586,16 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- cipher: aes-256-cfb
-  country: 🇺RU
-  name: 435|RU_85
-  password: Lp27rqyJq72bZsqX
-  port: 9045
-  server: 217.30.10.70
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 435|🇷🇺RU_89
-  password: p9z5BVADH2YFs3MN
-  port: 9040
-  server: 217.30.10.70
-  type: ss
+- flow: xtls-rprx-vision
+  name: '438,502,551|🇷🇺RU_1|1.2MB/s #1'
+  network: tcp
+  port: 52006
+  server: 178.72.182.15
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
 - name: '456,559,580|俄羅斯節點丨yoyapai.com #9'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -1477,6 +1473,17 @@ proxies:
   port: 40129
   server: 185.22.155.49
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision-udp443
+  name: 502,551,559|🏁 未知-774EBF2A
+  network: tcp
+  port: 52006
+  server: 178.72.181.35
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 75807638-6f19-1f40-ae08-38492ee85c88
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
@@ -1634,12 +1641,11 @@ proxies:
     path: X%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
 - alterId: 0
   cipher: aes-256-gcm
-  name: '543,574,582|🇷🇺 俄罗斯 莫斯科JustHost #4'
+  name: 543,574|RU 82.1KB/s
   password: f34579d0148b2581
   port: 9012
   server: 185.22.154.51
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: ss
 - cipher: aes-256-gcm
@@ -1660,26 +1666,6 @@ proxies:
   port: 9012
   server: 46.17.41.191
   type: ss
-- flow: xtls-rprx-vision
-  name: 551|🇷🇺RU_1|1.2MB/s
-  port: 52006
-  server: 178.72.182.15
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision-udp443
-  name: 551,559|🏁 未知-774EBF2A
-  network: tcp
-  port: 52006
-  server: 178.72.181.35
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 75807638-6f19-1f40-ae08-38492ee85c88
 - flow: ''
   name: 553|🇷🇺俄罗斯联邦_97aaf
   network: ws
@@ -5338,19 +5324,6 @@ proxies:
   tls: false
   type: vless
   uuid: e7d88c6a-c253-4d16-b0cb-e293b2856c6e
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559,580|RU VLESS-114 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: MA_hDjnzRmn4qL60EqyybXYzuE_2Ap8FhJQ82szMDww
-    short-id: 1434b433
-  server: 80.92.205.57
-  servername: store.steampowered.com
-  tls: false
-  type: vless
-  uuid: e80c5348-5a5c-41f0-a78d-7a781f47afce
 - alpn:
   - h3
   auth_str: dongtaiwang.com
