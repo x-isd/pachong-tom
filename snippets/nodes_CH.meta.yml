@@ -1,15 +1,15 @@
 proxies:
-- name: '340,502,514,551,559,567,585,586|CH_speednode_0001 #3'
+- name: '340,502,559|13|CH_speednode_0001 #2'
   network: ws
   port: 30047
   server: 138.124.32.188
   skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
   uuid: 595ae3f9-5a91-4eaa-82a3-28a221cf8f7f
 - client-fingerprint: chrome
-  name: '340,502,514,551,559,567,585,586|CH_speednode_0002 #3'
+  name: '340,494,502,559|13|CH_speednode_0002 #1'
+  network: tcp
   port: 45886
   reality-opts:
     public-key: zJeLZDPHoHMcAzBJh38tSavofNlkBrpADFx9jVVPil0
@@ -19,7 +19,6 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: 8338171d-2ea7-4015-bdea-492f3d5d4e60
 - cipher: aes-128-gcm
   name: '356,357|4 #4'
@@ -147,7 +146,7 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
-- name: 438,559|🇨🇭 瑞士-AAFCEFFE
+- name: 438,494,559|🇨🇭 瑞士-AAFCEFFE
   network: http
   port: 22
   server: 172.65.111.43
@@ -155,7 +154,7 @@ proxies:
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
-    path: '%2F%40monacoVPN%40monacoVPN%40monacoVPN%40monacoVPN'
+    path: /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
 - alterId: 0
   cipher: auto
   name: 465|16|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
@@ -192,20 +191,6 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 523,524,559|🏁 未知-CC2E74B1
-  network: tcp
-  port: 16558
-  reality-opts:
-    public-key: vDKgmefC_2JaSrrvQSsb7DU3KBeKUlXG1V0vgdjv_i4
-    short-id: 0a856e071790b1
-  server: 138.124.9.190
-  servername: ''
-  tls: false
-  type: vless
-  udp: true
-  uuid: 11348c0f-b646-446a-bad7-b2b39c6de767
 - client-fingerprint: chrome
   name: '523,524|🇨🇭 瑞士 213 #1'
   network: ws
@@ -317,18 +302,6 @@ proxies:
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     path: '%2F'
-- name: 559|🇨🇭 瑞士-A055C9D4
-  network: ws
-  port: 2096
-  server: 185.18.250.238
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F'
 - name: 559|🇨🇭 瑞士-D7AA037E
   network: ws
   port: 443
@@ -353,10 +326,17 @@ proxies:
     headers:
       Host: edt2-lgy.pages.dev
     path: '%2F'
-- name: 559|🇨🇭 瑞士-1C18D99D
-  network: http
-  port: 22
-  server: 83.228.228.44
-  tls: false
+- name: '567,585,586|CH_speednode_0002 #2'
+  network: ws
+  port: 8443
+  server: 138.124.16.38
+  servername: sni.111000.v6.army
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.army
+    path: /
