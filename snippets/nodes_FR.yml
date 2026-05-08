@@ -66,6 +66,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 255|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-8263 #1'
   password: f8f7aCzcPKbsF8p3
@@ -389,48 +403,66 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '378,537|🇷FR-109.61.110.241-0849 #1'
+- alterId: 0
+  name: 378,537,574|未知87
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 109.61.110.241
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
+  tls: true
   type: trojan
-- name: '378,537|🇫🇷FR-217.60.252.48-0850 #1'
+  udp: true
+- alterId: 0
+  name: 378,537,574|未知95
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 2053
   server: 217.60.252.48
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
+  tls: true
   type: trojan
-- name: '378,537|🇫🇷FR-31.59.120.161-0851 #1'
+  udp: true
+- alterId: 0
+  name: 378,537,574|未知98
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 2053
   server: 31.59.120.161
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
+  tls: true
   type: trojan
-- name: '378,537|🇷FR-31.59.103.152-0860 #1'
+  udp: true
+- alterId: 0
+  name: 378,537,574|未知60
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 31.59.103.152
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
+  tls: true
   type: trojan
-- name: '378,537|🇷FR-138.124.81.204-0891 #1'
+  udp: true
+- alterId: 0
+  name: 378,537,574|未知47
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 138.124.81.204
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
+  tls: true
   type: trojan
-- name: '378,537|🇷FR-45.84.88.232-0919 #1'
+  udp: true
+- alterId: 0
+  name: '378,537,574|未知7 #1'
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 2053
   server: 45.84.88.232
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
+  tls: true
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 378,537,558|兰 V2CROSS.COM
@@ -1553,25 +1585,53 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '438|🇫🇷FR_1|1.9MB/s | 网盘搜宝: https:/...'
+- name: '438|🇫🇷FR_1|1.0MB/s | 更多节点: https:/...'
   network: ws
   password: humanity
   port: 443
-  server: 172.64.152.23
-  sni: www.calmlunch.com
+  server: 104.20.6.134
+  sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     headers:
-      Host: www.calmlunch.com
+      Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: '438|🇫🇷FR_3|1.2MB/s | 更多节点: https:/...'
+- alpn:
+  - http/1.1
+  name: 438,507|FR TROJAN-66 | free-nodes
   network: ws
   password: humanity
   port: 443
-  server: 104.18.32.47
+  server: 8.6.112.6
+  skip-cert-verify: false
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
+- name: '438|🇫🇷FR_3|1.1MB/s | 更多节点: https:/...'
+  network: ws
+  password: humanity
+  port: 443
+  server: www.calmlunch.com
+  skip-cert-verify: true
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  name: '438|🇫🇷FR_4|1.7MB/s | 网盘搜宝: https:/...'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.20.6.134
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
     path: '%2Fassignment'
 - alpn:
   - http/1.1
@@ -1587,36 +1647,13 @@ proxies:
     headers:
       Host: www.calmloud.com
     path: '%2Fassignment'
-- name: 438,507|FR TROJAN-51 | free-nodes
-  network: ws
-  password: humanity
-  port: 443
-  server: www.calmlunch.com
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_6|1.7MB/s | 福利姬: https://...'
-  network: ws
-  password: humanity
-  port: 443
-  server: 185.18.250.245
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
 - alpn:
   - http/1.1
-  name: '438|🇫🇷FR_7|2.0MB/s | 网盘搜宝: https:/...'
+  name: '438|🇫🇷FR_6|2.2MB/s | 网盘搜宝: https:/...'
   network: ws
   password: humanity
   port: 443
-  server: 8.6.112.0
-  skip-cert-verify: true
+  server: 104.17.150.76
   sni: www.calmloud.com
   type: trojan
   ws-opts:
@@ -1625,7 +1662,7 @@ proxies:
     path: '%2Fassignment'
 - alpn:
   - http/1.1
-  name: '438|🇫🇷FR_8|1.9MB/s | 更多节点: https:/...'
+  name: '438|🇫🇷FR_7|2.1MB/s | 福利姬: https://...'
   network: ws
   password: humanity
   port: 443
@@ -1637,7 +1674,32 @@ proxies:
     headers:
       Host: www.calmloud.com
     path: '%2Fassignment'
-- name: '438|🇫🇷FR_9|1.9MB/s | 网盘搜宝: https:/...'
+- name: '438|🇫🇷FR_9|1.3MB/s | 福利姬: https://...'
+  network: ws
+  password: humanity
+  port: 443
+  server: 188.114.96.3
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  name: '438|🇫🇷FR_10|1.4MB/s | 福利姬: https:/...'
+  network: ws
+  password: humanity
+  port: 443
+  server: 8.6.112.0
+  skip-cert-verify: true
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
+- name: '438|🇫🇷FR_11|1.6MB/s | 更多节点: https:...'
   network: ws
   password: humanity
   port: 443
@@ -1649,70 +1711,24 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '438|🇫🇷FR_10|1.3MB/s | 更多节点: https:...'
+- name: '438|🇫🇷FR_12|1.6MB/s | 更多节点: https:...'
   network: ws
   password: humanity
   port: 443
-  server: 188.114.98.0
+  server: 185.18.250.245
+  skip-cert-verify: true
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: '438|🇫🇷FR_11|1.2MB/s | 福利姬: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.150.76
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_12|1.4MB/s | 更多节点: https:...'
+- name: '438|🇫🇷FR_13|3.3MB/s | 更多节点: https:...'
   network: ws
   password: humanity
   port: 443
   server: www.calmlunch.com
   skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_13|1.2MB/s | 福利姬: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: www.ignitelimit.com
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: '438|🇫🇷FR_15|1.6MB/s | 网盘搜宝: https:...'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.20.6.134
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_16|2.3MB/s | 网盘搜宝: https:...'
-  network: ws
-  password: humanity
-  port: 443
-  server: 188.114.96.3
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
@@ -1843,31 +1859,7 @@ proxies:
   server: 0.p.y.j.y.a.z.e.d.fr01-ae5.entry.v51124-5.qpon
   type: ss
   udp: true
-- name: 502|🇫🇷FR_1|1.0MB/s
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 138.124.81.204
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 502|🇫🇷FR_2|1.7MB/s
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 51.38.32.99
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '507,580|TR TROJAN-44 | free-nodes #1'
+- name: 507,580|TR TROJAN-44 | free-nodes
   network: ws
   password: humanity
   port: 443
@@ -1879,20 +1871,23 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- alpn:
-  - http/1.1
-  name: 507|FR TROJAN-48 | free-nodes
+- name: 507|FR TROJAN-61 | free-nodes
   network: ws
   password: humanity
   port: 443
-  server: 8.6.112.6
-  skip-cert-verify: false
-  sni: www.calmloud.com
+  server: 104.21.40.34
+  skip-cert-verify: true
+  sni: www.gossipglove.com
   type: trojan
   ws-opts:
     headers:
-      Host: www.calmloud.com
+      Host: www.gossipglove.com
     path: '%2Fassignment'
+- name: 507|FR TROJAN-70 | free-nodes
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.224.87.132
+  type: trojan
 - delay: 964
   name: 528|法国 - 奧奈叢林 - 3
   network: ws
@@ -2046,13 +2041,16 @@ proxies:
   skip-cert-verify: true
   sni: www.multiplydose.com
   type: trojan
-- name: '544,559|🇫🇷 FR法国(mibei77.com 米贝节点分享) #16'
+- alterId: 0
+  name: 544,559,574|🇫🇷FR法国2
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: 443
   server: 104.18.41.190
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: vless.lrdxw.club
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '544,559,580|FR法国(mibei77.com 米贝节点分享) #13'
@@ -2069,6 +2067,411 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_3d717
+  network: ws
+  port: 16617
+  server: planb.mojcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_25965
+  network: ws
+  port: 16617
+  server: m.cnmjin.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_bb879
+  network: ws
+  port: 16617
+  server: t.cnmjcn.cyou
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_2b0a2
+  network: ws
+  port: 16618
+  server: planb.mojcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_31964
+  network: ws
+  port: 16618
+  server: m.cnmjin.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_f2761
+  network: ws
+  port: 16618
+  server: t.cnmjcn.cyou
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_c7c31
+  network: ws
+  port: 16632
+  server: planb.mojcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_2e951
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_a0bba
+  network: ws
+  port: 16632
+  server: t.cnmjcn.cyou
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_c4479
+  network: ws
+  port: 16622
+  server: planb.mojcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_ae6fe
+  network: ws
+  port: 16622
+  server: m.cnmjin.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_03f74
+  network: ws
+  port: 16622
+  server: t.cnmjcn.cyou
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_439b5
+  network: ws
+  port: 16626
+  server: planb.mojcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_531a9
+  network: ws
+  port: 16616
+  server: planb.mojcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_1ae5e
+  network: ws
+  port: 16616
+  server: m.cnmjin.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_c3c41
+  network: ws
+  port: 16616
+  server: t.cnmjcn.cyou
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_6c311
+  network: ws
+  port: 16648
+  server: planb.mojcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_f5c0f
+  network: ws
+  port: 16648
+  server: m.cnmjin.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_9856e
+  network: ws
+  port: 16648
+  server: t.cnmjcn.cyou
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_2044b
+  network: ws
+  port: 16641
+  server: planb.mojcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_9c6d7
+  network: ws
+  port: 16641
+  server: m.cnmjin.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_5f80c
+  network: ws
+  port: 16641
+  server: t.cnmjcn.cyou
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_06759
+  network: ws
+  port: 16644
+  server: planb.mojcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_5f829
+  network: ws
+  port: 16644
+  server: m.cnmjin.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_96f59
+  network: ws
+  port: 16645
+  server: planb.mojcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_5a089
+  network: ws
+  port: 16645
+  server: m.cnmjin.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 553|🇫🇷法国_fd418
+  network: ws
+  port: 16645
+  server: t.cnmjcn.cyou
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
 - name: 559|法国_050805352
   network: tcp
   password: 03mpolj39zyewzufal2r
