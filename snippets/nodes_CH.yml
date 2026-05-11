@@ -35,21 +35,21 @@ proxies:
   port: 9098
   server: 185.126.116.125
   type: ss
-- name: '378,536,537|CH-152.67.71.149-2244 #1'
+- name: '378,536,537|CH-152.67.71.149-2235 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-3815 #1'
+  name: '378,537|🇨CH-156.146.62.160-3806 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
 - alterId: 1
   cipher: auto
-  name: '378,536,537|CH-186.190.215.32-7749 #1'
+  name: '378,536,537|CH-186.190.215.32-7740 #1'
   network: ws
   port: 443
   server: 186.190.215.32
@@ -64,7 +64,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: '378,536,537|🇭CH-186.190.215.75-7813 #1'
+  name: '378,536,537|🇭CH-186.190.215.75-7804 #1'
   network: ws
   port: 443
   server: 186.190.215.75
@@ -79,7 +79,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇭CH-140.238.212.95-7826 #1'
+  name: '378,536,537|🇭CH-140.238.212.95-7817 #1'
   network: ws
   port: 443
   server: 140.238.212.95
@@ -102,10 +102,10 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
-- name: 475,480,536,559|🇨🇭CH瑞士3
+- name: 475,480,544|🇨🇭CH臺灣丨yoyapai.com\r
   password: 8r<[9'l6hAO#8ZQi
   port: 443
-  server: 38.180.84.86
+  server: 146.70.71.157
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   tls: true
@@ -115,66 +115,86 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-- name: 475,480,536,559|🇨🇭CH瑞士
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 140.238.208.240
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 536,559|未知48
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 146.70.71.157
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- name: 580|🇨🇭CH臺灣丨yoyapai.com
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 146.70.71.157
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 580|瑞士節點丨yoyapai.com
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 38.180.84.86
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '580|瑞士節點丨yoyapai.com #1'
-  network: ws
+- name: '475,480,544|瑞士節點丨yoyapai.com\r #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 443
   server: 91.192.102.55
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '475,480,544|瑞士節點丨yoyapai.com\r #2'
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 140.238.208.240
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- alterId: 0
+  cipher: auto
+  country: 🇹🇼TW
+  delay: 743
+  h2-opts: {}
+  http-opts: {}
+  name: 528|瑞士 - 格朗 - 1
+  network: tcp
+  port: 9989
+  server: t.tizi001.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9e51eb62-797c-42fa-a6af-e993a99e6ece
+- name: '559,580|瑞士節點丨yoyapai.com #5'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 140.238.208.240
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
   type: trojan
   ws-opts:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '580|瑞士節點丨yoyapai.com #2'
+- name: '559,580|🇨🇭CH臺灣丨yoyapai.com #1'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
-  server: 140.238.208.240
+  server: 146.70.71.157
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
+- name: '559,580|瑞士節點丨yoyapai.com #3'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 38.180.84.86
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
+- name: '559,580|瑞士節點丨yoyapai.com #4'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 91.192.102.55
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
