@@ -782,26 +782,30 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '306,340,378,502,514,515,516,536,537,544,551,556,557,559|11,12|日本3|@ripaojiedian
-    #4'
+- alterId: 0
+  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇵JP日本3
   network: tcp
   password: 7ebc402f3383366fe4f554abd8625439
   port: 24184
   server: 18.166.75.171
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,340,378,502,514,515,516,536,537,544,551,556,557,559|11,12|美国|@ripaojiedian
-    #2'
+  udp: true
+- alterId: 0
+  name: '306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇺🇸US美国12 #1'
   network: tcp
   password: 7ebc402f3383366fe4f554abd8625439
   port: 6604
   server: 18.166.75.171
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
-  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇺🇸US美国23
+  name: '306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇺🇸US美国4 #1'
   network: tcp
   password: 7ebc402f3383366fe4f554abd8625439
   port: 6604
@@ -823,7 +827,7 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - client-fingerprint: chrome
-  name: '306,489,502,559|B - 🇭🇰 HK 06 TG: @nodpai #3'
+  name: '306,489,551,559|B - 🇭🇰 HK 06 TG: @nodpai #3'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -834,20 +838,18 @@ proxies:
   udp: true
   ws-opts:
     path: /trTelegram🇨🇳 @WangCai2
-- delay: 1180
-  name: '306,502,528,559|🇩🇪DE_2|1.1MB/s #2'
+- name: 306,551,559|🇭🇰HK香港
   network: ws
   password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 62.60.216.82
-  skip-cert-verify: true
+  port: 23779
+  server: 149.129.91.58
   sni: Koma-YT.PAGeS.Dev
+  tls: true
   type: trojan
-  udp: true
   ws-opts:
     headers:
       Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
+    path: /trTelegram🇨🇳 @WangCai2
 - cipher: chacha20-ietf-poly1305
   name: 356|🇭🇰1 |  3.5MB/s
   password: WfmxKX2FBJRU0Ie9VLIYDL
@@ -1563,15 +1565,13 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇰HK
-  name: 378,435,537,538|🇭🇰HK-203.23.128.33-0104 | 38.7...
+  name: 378,537,538|🇭🇰HK-203.23.128.33-0104 | 38.7...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 203.23.128.33
   type: ss
 - cipher: aes-256-cfb
-  country: 🇰HK
-  name: 378,435,537,538|🇭🇰HK-112.213.102.188-0143 | 1....
+  name: 378,537,538|🇭🇰HK-112.213.102.188-0143 | 1....
   password: qwerREWQ@@
   port: 41632
   server: 112.213.102.188
@@ -1630,7 +1630,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,536,537,538|🇭🇰HK-47.76.254.70-0225 | 0.031...
+  name: 378,437,536,537,538|🇭🇰HK-47.76.254.70-0225 | 0.031...
   network: ws
   port: 443
   server: n1753101277.4u9ma.icu
@@ -1719,26 +1719,20 @@ proxies:
   uuid: 80e94af6-e42a-4dbc-8f4b-c5f99bf97d3d
   ws-opts:
     path: /zh-cn/download
-- alterId: 0
-  name: 378,536,537,559,574|🇵JP日本2
+- name: 378,536,537,559|🇯🇵JP日本2
   password: 7ebc402f3383366fe4f554abd8625439
   port: 11541
   server: 16.162.100.5
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: '378,536,537,559,574|🇸🇬SG新加坡2 #1'
+- name: 378,536,537,559|🇸🇬SG新加坡2
   password: 7ebc402f3383366fe4f554abd8625439
   port: 1180
   server: 16.163.139.177
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
 - name: '378,536,537|🇭🇰HK-18.163.28.128-0703 #2'
   password: BxceQaOe
   port: 5159
@@ -2408,30 +2402,24 @@ proxies:
   uuid: 1617e875-e377-4e4f-85ef-dcf9e5e10df7
   ws-opts:
     path: /
-- country: 🇰HK
-  name: '378,435,436,536,537|🇰HK-58.152.53.45-4502 #1'
+- name: '378,436,536,537|🇰HK-58.152.53.45-4502 #1'
   password: BxceQaOe
   port: 443
   server: 58.152.53.45
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇭🇺HU
-  name: '378,435,436,536,537|🇰HK-185.244.208.59-4503 #1'
+- name: '378,436,536,537|🇰HK-185.244.208.59-4503 #1'
   password: WF42809561
   port: 443
   server: top-goshawk.rooster465.autos
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇭🇺HU
-  name: '378,435,436,536,537|🇰HK-185.244.208.52-4505 #1'
+- name: '378,436,536,537|🇰HK-185.244.208.52-4505 #1'
   password: IL37892054
   port: 443
   server: just-alpaca.rooster465.autos
   skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: chacha20-ietf
   name: '378,537|HK-43.255.119.21-4898 #1'
   obfs: plain
@@ -4899,28 +4887,45 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: 435,489|🔴🇭🇰[📺🎪]_github.com/Ruk1ng001_a...
-  password: asd123456
-  port: 8388
-  server: 103.149.182.79
-  type: ss
 - alterId: 2
   cipher: auto
-  country: 🇰HK
-  h2-opts: {}
+  country: 🏁 ZZ
+  delay: 1074
   http-opts: {}
-  name: '435,437,459,559|每天更新，请加电报群防止失联 #2'
+  name: '437,459,528,544,559,580|US美国(mibei77.com 米贝节点分享) #83'
   network: tcp
-  port: 30804
-  server: v4.hdacd.com
+  port: '30808'
+  server: v8.hdacd.com
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
+- alterId: 2
+  cipher: auto
+  name: '437,459,559|每天更新，请加电报群防止失联 #2'
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: '438|🇭🇰HK_3|2.0MB/s | 福利姬: https://...'
+  network: ws
+  port: '443'
+  server: n1753356378.4u9ma.icu
+  servername: n1753356378.4u9ma.icu
+  tls: true
+  type: vmess
+  uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
+  ws-opts:
+    headers:
+      Host: n1753356378.4u9ma.icu
+    path: /
 - name: 453|🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -5082,6 +5087,36 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
+- name: '472,474,502|B - 🇭🇰 HK 13 TG: @nodpai'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 219.76.13.180
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '473|香港+电讯盈科有限公司 #1'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 219.76.13.180
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram @WangCai2
+- cipher: chacha20-ietf
+  name: 489|🔴🇭🇰[📺🎪]_github.com/Ruk1ng001_a...
+  password: asd123456
+  port: 8388
+  server: 103.149.182.79
+  type: ss
 - client-fingerprint: chrome
   name: 489|🟡🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001...
   network: tcp
@@ -5186,7 +5221,7 @@ proxies:
         like Gecko) Chrome/58.0.3029.110 Safari/537.36
     path: /trTelegram🇨🇳 @WangCai2
 - client-fingerprint: chrome
-  name: '489,551|B - 🇺🇸 US 16 TG: @nodpai #1'
+  name: '489,502|B - 🇺🇸 US 16 TG: @nodpai'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 39792
@@ -5371,6 +5406,18 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
+  name: 489,559|🇭🇰HK_1|1.6MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 43.168.16.112
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+- client-fingerprint: chrome
   name: '489|🟡🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
   network: tcp
   password: fa1464f2-0fec-47c9-97da-d6964de37f0e
@@ -5380,16 +5427,50 @@ proxies:
   sni: sni.eos-suzhou-4.cmecloud.cn
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '502,559|C - 🇭🇰 HK 17 TG: @nodpai'
-  network: tcp
-  port: 11933
-  server: board-01.ddnskunlun.com
-  servername: board-01.ddnskunlun.com
-  tls: false
-  type: vmess
-  uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484
+- client-fingerprint: chrome
+  name: '489|🔴🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_... #8'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 68.64.176.135
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi Note 5A Build/N2G47H; wv)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile
+        Safari/537.36
+    path: /trTelegram🇨🇳 @WangCai2
+- delay: 784
+  name: '502,528,559|香港+ThinkDream数据中心 #1'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 27.50.48.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- delay: 2883
+  name: '502,528,559|B - 🇭🇰 HK 10 TG: @nodpai #1'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 64.188.58.138
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
 - client-fingerprint: chrome
   name: '513,517|15|🇭🇰 香港|@ripaojiedian #1'
   network: ws
@@ -5514,11 +5595,10 @@ proxies:
     headers:
       Host: vpn5.rnmcnm.com
     path: /ws-79dffb8106db
-- name: '536,580|🇨🇳 中国 阿里云 #1'
+- name: '536|🇭🇰HK-8.223.63.189-1605 #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 443
   server: 8.223.63.189
-  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
 - name: 536|🇭🇰HK-70.39.206.127-1606
@@ -5772,305 +5852,16 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- name: 548|🇭🇰 香港 阿里云
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 23779
-  server: 149.129.91.58
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tfo: false
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 548|🇭🇰 香港 ThinkDream数据中心
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 27.50.48.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tfo: false
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '551|B - 🇭🇰 HK 01 TG: @nodpai'
+- name: '551|B - 🇭🇰 HK 03 TG: @nodpai #1'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 8.223.63.189
+  port: 21505
+  server: 70.39.206.127
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
   ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
     path: /trTelegram @WangCai2
-- name: '551|B - 🇭🇰 HK 13 TG: @nodpai #1'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 219.76.13.180
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 553|🇭🇰香港_c7ff4
-  password: aeabae7e-a055-4505-85a6-b4cd4982b76a
-  port: 443
-  server: hkzoa.osaip.net
-  sni: ''
-  type: trojan
-  udp: true
-- name: 553|🇭🇰香港_e497a
-  password: f7d06c85-4a73-4687-bf1d-0c140406c248
-  port: 443
-  server: hkzoa.osaip.net
-  sni: ''
-  type: trojan
-  udp: true
-- name: 553|🇭🇰香港_2f3b6
-  password: 67f4b8ff-15cf-3ec9-b09d-c31a4728c652
-  port: 14555
-  server: ikuai.404.mn
-  sni: ikuai.404.mn
-  type: trojan
-  udp: true
-- name: 553|🇭🇰香港_9d234
-  password: 67f4b8ff-15cf-3ec9-b09d-c31a4728c652
-  port: 10777
-  server: ikuai.404.mn
-  sni: windows11.dpdns.org
-  type: trojan
-  udp: true
-- name: 553|🇭🇰香港_b87da
-  password: 67f4b8ff-15cf-3ec9-b09d-c31a4728c652
-  port: 12777
-  server: ikuai.404.mn
-  sni: ikuai.404.mn
-  type: trojan
-  udp: true
-- name: 553,559|香港_051519311
-  password: 67f4b8ff-15cf-3ec9-b09d-c31a4728c652
-  port: 13555
-  server: apple.1337.cx
-  skip-cert-verify: false
-  sni: windows11.dpdns.org
-  type: trojan
-  udp: true
-- name: 553,559|香港_051519312
-  password: 67f4b8ff-15cf-3ec9-b09d-c31a4728c652
-  port: 13777
-  server: apple.1337.cx
-  skip-cert-verify: false
-  sni: windows11.dpdns.org
-  type: trojan
-  udp: true
-- name: 553|🇭🇰香港_96010
-  password: 67f4b8ff-15cf-3ec9-b09d-c31a4728c652
-  port: 10777
-  server: strawberry.joe.dj
-  sni: windows11.dpdns.org
-  type: trojan
-  udp: true
-- name: 553|🇭🇰香港_ccdc7
-  password: 67f4b8ff-15cf-3ec9-b09d-c31a4728c652
-  port: 711
-  server: strawberry.joe.dj
-  sni: windows11.dpdns.org
-  type: trojan
-  udp: true
-- name: 553|🇭🇰香港_16bf3
-  password: 67f4b8ff-15cf-3ec9-b09d-c31a4728c652
-  port: 11777
-  server: strawberry.joe.dj
-  sni: windows11.dpdns.org
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 553,559,567|HK_36784_0019
-  network: ws
-  port: 53213
-  server: bgroup.node4.v.nodelist-airport.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 504cb0be-b285-4ec5-9561-bc289aea0d46
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: 553|🇭🇰香港_24a86
-  network: tcp
-  port: 56698
-  server: 47.239.69.43
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a3de462b-0276-4003-8f34-536b0f9d340c
-- alterId: 0
-  cipher: auto
-  name: 553,559|🇭🇰 香港-8D0006F7
-  network: tcp
-  port: 47286
-  server: 47.239.132.90
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a3de462b-0276-4003-8f34-536b0f9d340c
-- alterId: 0
-  cipher: auto
-  name: 553,559|香港_051519318
-  network: tcp
-  port: '51453'
-  server: 8.210.121.88
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a3de462b-0276-4003-8f34-536b0f9d340c
-- alterId: 0
-  cipher: auto
-  name: 553,559|香港_051519320
-  network: tcp
-  port: '11638'
-  server: 27.122.57.43
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a3de462b-0276-4003-8f34-536b0f9d340c
-- alterId: 0
-  cipher: auto
-  name: 553,559|香港_051519324
-  network: tcp
-  port: '56698'
-  server: 47.239.69.43
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
-- alterId: 0
-  cipher: auto
-  name: 553|🇭🇰香港_9c829
-  network: tcp
-  port: 47286
-  server: 47.239.132.90
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
-- alterId: 0
-  cipher: auto
-  name: 553,559|香港_051519326
-  network: tcp
-  port: '51453'
-  server: 8.210.121.88
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
-- alterId: 0
-  cipher: auto
-  name: 553|🇭🇰香港_ada4f
-  network: tcp
-  port: 11638
-  server: 27.122.57.43
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
-- alterId: 0
-  cipher: auto
-  name: 553,559|香港_051519332
-  network: tcp
-  port: '56698'
-  server: 47.239.69.43
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
-- alterId: 0
-  cipher: auto
-  name: 553,559|香港_051519333
-  network: tcp
-  port: '47286'
-  server: 47.239.132.90
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
-- alterId: 0
-  cipher: auto
-  name: 553,559|香港_051519334
-  network: tcp
-  port: '51453'
-  server: 8.210.121.88
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
-- alterId: 0
-  cipher: auto
-  name: 553|🇭🇰香港_03383
-  network: tcp
-  port: 11638
-  server: 27.122.57.43
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
-- alterId: 0
-  cipher: auto
-  name: 553,559|香港_051519341
-  network: tcp
-  port: '47286'
-  server: 47.239.132.90
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0be3a336-85ad-4c42-930b-05318236e68c
-- alterId: 0
-  cipher: auto
-  name: 553,559|香港_051519342
-  network: tcp
-  port: '51453'
-  server: 8.210.121.88
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0be3a336-85ad-4c42-930b-05318236e68c
-- alterId: 0
-  cipher: auto
-  name: 553|🇭🇰香港_d661a
-  network: tcp
-  port: 11638
-  server: 27.122.57.43
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0be3a336-85ad-4c42-930b-05318236e68c
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇭 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -6216,6 +6007,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 559|香港_051519311
+  password: 67f4b8ff-15cf-3ec9-b09d-c31a4728c652
+  port: 13555
+  server: apple.1337.cx
+  skip-cert-verify: false
+  sni: windows11.dpdns.org
+  type: trojan
+- name: 559|香港_051519312
+  password: 67f4b8ff-15cf-3ec9-b09d-c31a4728c652
+  port: 13777
+  server: apple.1337.cx
+  skip-cert-verify: false
+  sni: windows11.dpdns.org
+  type: trojan
 - name: '559|B - 🇭🇰 HK 07 TG: @nodpai #1'
   password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
   port: 51001
@@ -6223,29 +6028,30 @@ proxies:
   skip-cert-verify: true
   sni: sg.01.naiun.bilibili.com
   type: trojan
-- name: '559|C - 🇭🇰 HK 13 TG: @nodpai'
+- name: '559|C - 🇭🇰 HK 13 TG: @nodpai #1'
   password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
   port: 51002
   server: a-v4-03.bilibilii.cc
   skip-cert-verify: true
   sni: sg.01.naiun.bilibili.com
   type: trojan
-- name: 559|🇭🇰HK香港
+- name: '559|B - 🇭🇰 HK 08 TG: @nodpai #2'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
-  port: 23779
-  server: 149.129.91.58
+  port: 443
+  server: 219.76.13.177
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
   ws-opts:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-- name: '559|B - 🇭🇰 HK 08 TG: @nodpai #2'
+- name: '559|B - 🇭🇰 HK 06 TG: @nodpai #2'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 219.76.13.177
+  port: 2053
+  server: 45.136.14.61
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
@@ -6259,17 +6065,13 @@ proxies:
   server: 47.82.155.79
   sni: Koma-YT.PAGeS.Dev
   type: trojan
-- alterId: 0
-  name: '559,574|🇭🇰HK香港3 #1'
+- name: 559|🇭🇰HK香港3
   password: BxceQaOe
   port: 5823
   server: 18.183.247.220
-  skip-cert-verify: true
   sni: t.me/ripaojiedian
-  tls: true
   type: trojan
-  udp: true
-- name: '559|🇭🇰HK_64 #1'
+- name: 559|🇭🇰HK_64
   password: BxceQaOe
   port: 443
   server: 58.152.53.45
@@ -6289,6 +6091,46 @@ proxies:
     path: '%2Fws-79dffb8106db'
 - alterId: 0
   cipher: auto
+  name: '559|B - 🇭🇰 HK 10 TG: @nodpai #2'
+  network: tcp
+  port: 11946
+  server: board-01.ddnskunlun.com
+  servername: board-01.ddnskunlun.com
+  tls: false
+  type: vmess
+  uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484
+- alterId: 0
+  cipher: auto
+  name: '559|C - 🇭🇰 HK 16 TG: @nodpai'
+  network: ws
+  port: 53213
+  server: bgroup.node4.v.nodelist-airport.com
+  tls: false
+  type: vmess
+  uuid: 504cb0be-b285-4ec5-9561-bc289aea0d46
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '559|C - 🇭🇰 HK 17 TG: @nodpai'
+  network: tcp
+  port: 11933
+  server: board-01.ddnskunlun.com
+  servername: board-01.ddnskunlun.com
+  tls: false
+  type: vmess
+  uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484
+- alterId: 0
+  cipher: auto
+  name: 559|🇭🇰 香港-8D0006F7
+  network: tcp
+  port: 47286
+  server: 47.239.132.90
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a3de462b-0276-4003-8f34-536b0f9d340c
+- alterId: 0
+  cipher: auto
   name: 559|🇭🇰 香港-07E9C8FA
   network: tcp
   port: 9527
@@ -6297,6 +6139,86 @@ proxies:
   tls: false
   type: vmess
   uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+- alterId: 0
+  cipher: auto
+  name: 559|香港_051519341
+  network: tcp
+  port: '47286'
+  server: 47.239.132.90
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0be3a336-85ad-4c42-930b-05318236e68c
+- alterId: 0
+  cipher: auto
+  name: 559|香港_051519333
+  network: tcp
+  port: '47286'
+  server: 47.239.132.90
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
+- alterId: 0
+  cipher: auto
+  name: 559|香港_051519332
+  network: tcp
+  port: '56698'
+  server: 47.239.69.43
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
+- alterId: 0
+  cipher: auto
+  name: 559|香港_051519324
+  network: tcp
+  port: '56698'
+  server: 47.239.69.43
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
+- alterId: 0
+  cipher: auto
+  name: 559|香港_051519342
+  network: tcp
+  port: '51453'
+  server: 8.210.121.88
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0be3a336-85ad-4c42-930b-05318236e68c
+- alterId: 0
+  cipher: auto
+  name: 559|香港_051519334
+  network: tcp
+  port: '51453'
+  server: 8.210.121.88
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
+- alterId: 0
+  cipher: auto
+  name: 559|香港_051519326
+  network: tcp
+  port: '51453'
+  server: 8.210.121.88
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
+- alterId: 0
+  cipher: auto
+  name: 559|香港_051519318
+  network: tcp
+  port: '51453'
+  server: 8.210.121.88
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a3de462b-0276-4003-8f34-536b0f9d340c
 - alterId: 0
   cipher: auto
   name: 559|香港_051519352
@@ -6321,6 +6243,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 559|香港_051519320
+  network: tcp
+  port: '11638'
+  server: 27.122.57.43
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a3de462b-0276-4003-8f34-536b0f9d340c
 - alterId: 0
   cipher: auto
   name: 559|香港_051519363
@@ -6405,21 +6337,21 @@ proxies:
       Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com
     path: '%2F'
 - alterId: 0
-  name: 574|HK
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 23779
-  server: 149.129.91.58
+  name: '574|🇭🇰HK香港2 #1'
+  password: BxceQaOe
+  port: 5823
+  server: 18.181.229.56
   skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
+  sni: t.me/ripaojiedian
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: '574|🇭🇰HK香港4 #1'
+  name: '574|🇭🇰HK香港3 #1'
+  network: ws
   password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 2053
-  server: 47.82.155.79
+  port: 443
+  server: 27.50.48.253
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   tls: true
@@ -6625,20 +6557,6 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
-- name: '580|🇭🇰 香港 阿里云 #1'
-  password: 8r<[9'l6hAO#8ZQi
-  port: 23779
-  server: 149.129.91.58
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- name: '580|🇭🇰 香港 ThinkDream数据中心 #1'
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 27.50.48.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
 - name: '605|HK #1'
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
