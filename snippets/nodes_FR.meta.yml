@@ -1947,6 +1947,18 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
+- name: '472,473,474|法国+格拉沃利讷OVH数据中心 #2'
+  network: ws
+  port: 2053
+  server: 54.36.98.82
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
 - name: 475,480,536,544,559|未知54
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -1972,18 +1984,18 @@ proxies:
   type: vmess
   udp: true
   uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484
-- client-fingerprint: chrome
-  name: 502,559|🇫🇷 法国-1656BA9F
-  network: tcp
+- name: 502|法国+国际航空电讯集团公司(SITA)
+  network: ws
   port: 443
-  reality-opts:
-    public-key: fXdtB8vImCUJMQBLcCNK7p1v3rVzx6HllaDLk8Vc4EU
-    short-id: 239dcd11
-  server: 57.128.81.193
-  servername: ''
-  tls: false
+  server: 57.128.183.59
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: 53821f3c-5b03-456a-89f3-f8379f130752
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
 - name: 507,559|🏁 未知-44169244
   network: ws
   port: 80
@@ -2034,26 +2046,20 @@ proxies:
     headers:
       Host: sni.111000.dns.army
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- country: 🇫🇷FR
-  delay: 1535
-  name: 528|法国 - 巴黎 - 1
-  password: telegram-id-directvpn
-  port: 22223
-  server: 15.188.28.43
+- alterId: 2
+  cipher: auto
+  country: 🇬🇧 GB
+  delay: 2120
+  http-opts: {}
+  name: 528,559|🇲🇾 马来西亚 148
+  network: tcp
+  port: 30835
+  server: v35.hdacd.com
   skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  delay: 1276
-  name: 528|法国 - 巴黎 - 2
-  password: telegram-id-directvpn
-  port: 22223
-  server: 35.180.235.87
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - name: 536|🇫🇷FR-146.70.158.111-8572
   network: ws
   password: 11ae0edd-2f63-4495-8683-037abbda9986
@@ -2090,17 +2096,20 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 551|🇫🇷FR_1|1.8MB/s
+- name: '548,579,582|🇫🇷 法国 国际航空电讯集团公司(SITA) #2'
   network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 45.77.63.51
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
+  port: 443
+  server: 57.128.183.59
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
+      Host: sni.111000.v6.navy
+    path: /
 - name: 559|🇫🇷 法国-E05B9879
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
@@ -2197,6 +2206,17 @@ proxies:
   tls: false
   type: vless
   uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- name: 559|🇫🇷 法国-1656BA9F
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: fXdtB8vImCUJMQBLcCNK7p1v3rVzx6HllaDLk8Vc4EU
+    short-id: 239dcd11
+  server: 57.128.81.193
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 53821f3c-5b03-456a-89f3-f8379f130752
 - name: 559|FR VLESS-76 | free-nodes
   network: ws
   port: 80
