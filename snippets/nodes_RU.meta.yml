@@ -38,8 +38,7 @@ proxies:
   uuid: 85b5cb2e-2617-4930-b6a4-4aeaf3b7b9aa
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,438,502,514,523,524,551,559,567,585,586|RU_speednode_0025 #3'
-  network: tcp
+  name: '340,502,514,523,524,551,559,567,585,586|RU_speednode_0025 #3'
   port: 443
   reality-opts:
     public-key: 6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do
@@ -553,7 +552,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '423,425|俄罗斯RU-A #2'
+  name: '423,424|俄罗斯RU-A #2'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1671
   server: a.mjanyt.com
@@ -561,6 +560,19 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: xyz
+  name: '438|🇷🇺RU_1|4.2MB/s | 福利姬: https://...'
+  network: grpc
+  port: 8443
+  reality-opts:
+    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+  server: 83.147.255.191
+  servername: ads.x5.ru
+  tls: false
+  type: vless
+  uuid: bc174d7d-6271-4b65-adb3-53164d61e9ea
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1329,6 +1341,24 @@ proxies:
     headers:
       Host: ''
     path: /
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 472,473,474,507,559,580|HK VLESS-129 | free-nodes
+  network: tcp
+  port: 443
+  server: s298.okgg.top
+  servername: 3556s298.okgg.top
+  tls: true
+  type: vless
+  uuid: 8f8ccdc5-fe99-38d7-a8a6-422f8c88ef0a
+  ws-opts:
+    headers:
+      Host: s298.okgg.top
+    path: ''
 - name: '475,480|俄羅斯節點丨yoyapai.com_1 #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 2053
@@ -1394,23 +1424,10 @@ proxies:
   udp: true
   uuid: 10550754-cf62-3d3b-ba6a-50be27a275d7
   xudp: true
-- name: '502,559,717|RU【机场推荐：https://a9a.xyz】10 #1'
-  network: ws
-  port: 443
-  server: s28233.cdn.ngenix.net
-  servername: s28233.cdn.ngenix.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: c3f112fc-1041-Fade-b85c-5ed478daeeb9
-  ws-opts:
-    headers:
-      Host: s28233.cdn.ngenix.net
-    path: '%2F'
 - alpn:
   - h3
   fingerprint: ''
-  name: 502,551,559|防失效github+SubCrawler俄罗斯联邦_0518...
+  name: 502,559|防失效github+SubCrawler俄罗斯联邦_0518...
   obfs: ''
   obfs-password: ''
   password: 10550754-cf62-3d3b-ba6a-50be27a275d7
@@ -1420,19 +1437,32 @@ proxies:
   sni: s463.okgfwbackxyz.xyz
   tls: false
   type: hysteria2
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 507|RU VLESS-432 | free-nodes
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: 0L2az4daQfRLsPZPMnDuU6VLA5yJWL3qIcOTfF3Sn2g
+    short-id: 70030fabf700a5d7
+  server: de4-mwscloud.onnstreaming.ru
+  servername: de4-mwscloud.onnstreaming.ru
+  tls: false
+  type: vless
+  uuid: 5fb4beab-89b7-48b4-9517-172a4221cbad
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507|RU VLESS-93 | free-nodes
+  name: 507|RU VLESS-856 | free-nodes
   network: tcp
   port: 443
   reality-opts:
-    public-key: MA_hDjnzRmn4qL60EqyybXYzuE_2Ap8FhJQ82szMDww
-    short-id: 1434b433
-  server: 80.92.205.57
-  servername: store.steampowered.com
+    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+    short-id: 8dc4fccb2bcfc99d
+  server: at.jojack.ru
+  servername: at.jojack.ru
   tls: false
   type: vless
-  uuid: e80c5348-5a5c-41f0-a78d-7a781f47afce
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
@@ -1508,20 +1538,6 @@ proxies:
   type: vless
   udp: true
   uuid: c180deb8-34ef-4c7a-9d56-fa2a54077ba5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 523,524,559|🏁 未知-CFF567B3
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: zjv3djnsCKDqP7zZFIrJ9ImzgdPE3zFMCYrOvdWqkEE
-    short-id: bc8ceae578236c
-  server: 5.188.143.235
-  servername: ''
-  tls: false
-  type: vless
-  udp: true
-  uuid: 66036ae7-f4b4-4dd9-b72f-88b571c6ba26
 - name: '523,524|🇷🇺 俄罗斯 289 #1'
   network: ws
   port: 443
@@ -1564,20 +1580,6 @@ proxies:
       Host: sni.jpmj.dev
     path: /
 - client-fingerprint: chrome
-  name: '523,524|🇷🇺 俄罗斯 414 #1'
-  network: ws
-  port: 443
-  server: 31.130.128.197
-  servername: 2-eox.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: 2-eox.pages.dev
-    path: /
-- client-fingerprint: chrome
   name: '523,524|🇷🇺 俄罗斯 435 #1'
   network: ws
   port: 2096
@@ -1590,20 +1592,6 @@ proxies:
   ws-opts:
     headers:
       Host: sni.111000.indevs.in
-    path: /
-- client-fingerprint: qq
-  name: '523,524|🇷🇺 俄罗斯 438 #1'
-  network: ws
-  port: 443
-  server: 195.209.82.149
-  servername: s28233.cdn.ngenix.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5a478129-3e7e-Fade-99d7-95e1da14fbdc
-  ws-opts:
-    headers:
-      Host: s28233.cdn.ngenix.net
     path: /
 - name: 533|RU俄罗斯(mibei77.com 米贝节点分享)
   network: ws
@@ -1707,13 +1695,20 @@ proxies:
   server: 45.87.154.147
   sni: Koma-YT.PAGeS.Dev
   type: trojan
-- name: '544,559|🇷🇺 俄罗斯 CCZZUU.TOP #1'
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 94.103.80.218
+- name: 548|🇷🇺 俄罗斯 CCZZUU.TOP 2
+  network: ws
+  port: 443
+  server: 109.120.157.29
+  servername: sni.latonyamadeline.ndjp.net
   skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2125,17 +2120,6 @@ proxies:
     headers:
       Host: babayaga-6i7.pages.dev
     path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 559|🇷🇺 俄罗斯-CB7EF57E
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: zlmNRlSzdn2zegjL4nFXmOmlBe_2_Wm0mKhD2aeJ9BE
-    short-id: b3
-  server: 82.202.140.8
-  servername: ''
-  tls: false
-  type: vless
-  uuid: a8ebcce6-3260-49a4-9be0-cea2fa479753
 - name: 559|🇷🇺 俄罗斯-816D6C51
   network: ws
   port: 8443
