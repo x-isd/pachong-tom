@@ -44,16 +44,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
-- auth: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  client-fingerprint: chrome
-  name: 127,426,568,606|FR_Paris_Amazon Technologies I...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: vpn-fr-001.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-fr-001.fastervpn.world
-  tls: false
-  type: hysteria2
 - alterId: 0
   cipher: auto
   name: '128,430|法国1 #2'
@@ -416,7 +406,7 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - alterId: 4
   cipher: auto
-  name: '378,494,536,537|FR-104.166.135.10-0028 #1'
+  name: '378,536,537|FR-104.166.135.10-0028 #1'
   network: ws
   port: 443
   server: 104.166.135.10
@@ -431,7 +421,7 @@ proxies:
     path: /ws
 - alterId: 4
   cipher: auto
-  name: 378,494,536,537,538|🇫🇷FR-104.166.135.10-0088 | 0.0...
+  name: 378,536,537,538|🇫🇷FR-104.166.135.10-0088 | 0.0...
   network: ws
   port: 443
   server: 104.166.135.10
@@ -613,7 +603,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-51.77.158.169-3538 #1'
+  name: '378,536,537|🇷FR-51.77.158.169-3538 #1'
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -814,7 +804,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-146.59.55.50-6768 #1'
+  name: '378,536,537|🇷FR-146.59.55.50-6768 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1522,7 +1512,7 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '438|🇫🇷FR_1|1.3MB/s | 更多节点: https:/...'
+- name: '438|🇫🇷FR_1|1.1MB/s | 网盘搜宝: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1531,19 +1521,19 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2F%252Fassignment'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438,494,507,559|🇩🇪 德国 182 #2'
-  network: raw
+- alpn:
+  - http/1.1
+  name: '438|🇫🇷FR_2|1.0MB/s | 更多节点: https:/...'
+  network: ws
+  password: humanity
   port: 443
-  reality-opts:
-    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
-    short-id: '23'
-  server: 89.106.95.193
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: 629d2ccc-3a2a-4dd3-83d2-86b25fc8783e
+  server: sourceforge.net
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '438,507,559|未知 VLESS-632 | free-nodes #1'
@@ -1583,84 +1573,46 @@ proxies:
   tls: false
   type: vless
   uuid: deb96819-bdaa-4f52-a536-d4751290ce47
-- name: '438,494|Join+Telegram:@Farah_VPN #3184'
-  network: ws
-  password: humanity
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇫🇷FR_6|2.1MB/s | 网盘搜宝: https:/...'
+  network: tcp
   port: 443
-  server: 104.18.32.47
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '438,494|Join+Telegram:@Farah_VPN #2632'
-  network: ws
-  password: humanity
-  port: 443
-  server: 185.18.250.245
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
-- name: '438,494|Join+Telegram:@Farah_VPN #1386'
+  reality-opts:
+    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+    short-id: '23'
+  server: 89.106.95.203
+  servername: www.apple.com
+  tls: false
+  type: vless
+  uuid: 629d2ccc-3a2a-4dd3-83d2-86b25fc8783e
+- name: '438|🇫🇷FR_7|1.1MB/s | 更多节点: https:/...'
   network: ws
   password: humanity
   port: 443
   server: 188.114.98.0
-  skip-cert-verify: true
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- alpn:
-  - h2
-  - http/1.1
-  name: '438|🇫🇷FR_10|1.3MB/s | 网盘搜宝: https:...'
-  network: ws
-  password: humanity
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,559|🇩🇪 德国 182 #2'
+  network: tcp
   port: 443
-  server: chat.openai.com
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
+  reality-opts:
+    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+    short-id: '23'
+  server: 89.106.95.193
+  servername: www.apple.com
+  tls: false
+  type: vless
+  uuid: 629d2ccc-3a2a-4dd3-83d2-86b25fc8783e
 - alpn:
   - http/1.1
-  name: '438,494,559|418 #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.150.76
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: '438,494,559|457 #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: 8.6.112.6
-  skip-cert-verify: false
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: '438,494|Join+Telegram:@Farah_VPN #432'
+  name: '438|🇫🇷FR_9|2.3MB/s | 网盘搜宝: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1674,56 +1626,40 @@ proxies:
     path: '%2Fassignment'
 - alpn:
   - http/1.1
-  name: '438,494|Join+Telegram:@Farah_VPN #2687'
+  name: 438,559|418
   network: ws
   password: humanity
   port: 443
-  server: sourceforge.net
-  skip-cert-verify: true
+  server: 104.17.150.76
   sni: www.calmloud.com
   type: trojan
   ws-opts:
     headers:
       Host: www.calmloud.com
     path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: '438,494|Join+Telegram:@Farah_VPN #1076'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,507,559|🏁 未知-7FD7D7D6
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+    short-id: '23'
+  server: 89.106.95.206
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 629d2ccc-3a2a-4dd3-83d2-86b25fc8783e
+- name: '438|🇫🇷FR_12|2.6MB/s | 福利姬: https:/...'
   network: ws
   password: humanity
   port: 443
-  server: 104.18.13.149
-  skip-cert-verify: true
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: '%2Fassignment'
-- name: '438,494|Join+Telegram:@Farah_VPN #2763'
-  network: ws
-  password: humanity
-  port: 443
-  server: 185.18.250.252
-  skip-cert-verify: true
+  server: 104.18.32.47
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '438,494|Join+Telegram:@Farah_VPN #1427'
-  network: ws
-  password: humanity
-  port: 443
-  server: 188.114.96.3
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_18|2.2MB/s | 网盘搜宝: https:...'
+- name: '438,502|美国+CloudFlare节点 #28'
   network: ws
   password: humanity
   port: 443
@@ -1735,32 +1671,93 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- client-fingerprint: ''
-  flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #2529'
-  network: tcp
+- alpn:
+  - http/1.1
+  name: '438|🇫🇷FR_14|3.0MB/s | 更多节点: https:...'
+  network: ws
+  password: humanity
   port: 443
-  reality-opts:
-    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
-    short-id: '23'
-  server: 89.106.95.203
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: 629d2ccc-3a2a-4dd3-83d2-86b25fc8783e
-- client-fingerprint: ''
-  flow: xtls-rprx-vision
-  name: 438,494,559|🏁 未知-7FD7D7D6
-  network: tcp
+  server: 104.18.13.149
+  skip-cert-verify: true
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  name: 438,580|FR TROJAN-48 | free-nodes
+  network: ws
+  password: humanity
   port: 443
-  reality-opts:
-    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
-    short-id: '23'
-  server: 89.106.95.206
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 629d2ccc-3a2a-4dd3-83d2-86b25fc8783e
+  server: 104.20.6.134
+  skip-cert-verify: false
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  name: 438,559|457
+  network: ws
+  password: humanity
+  port: 443
+  server: 8.6.112.6
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
+- name: '438,472,473,474|巴西圣保罗+CloudFlare节点 #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 188.114.96.3
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '438|🇫🇷FR_18|3.4MB/s | 福利姬: https:/...'
+  network: ws
+  password: humanity
+  port: 443
+  server: 185.18.250.252
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '438|🇫🇷FR_19|3.8MB/s | 福利姬: https:/...'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.19.229.21
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- name: '438|🇫🇷FR_20|6.5MB/s | 更多节点: https:...'
+  network: ws
+  password: humanity
+  port: 443
+  server: 185.18.250.245
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 438,559,580|FR VLESS-57 | free-nodes
@@ -2013,6 +2010,15 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
+- country: 🇺🇸US
+  delay: 751
+  name: 528|法国 - 巴黎 - 3
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.224.82.53
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: '536|🇫🇷FR-146.70.158.111-8497 #1'
   network: ws
   password: 11ae0edd-2f63-4495-8683-037abbda9986
@@ -2040,6 +2046,17 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
+- name: 551|🇫🇷FR_1|1.5MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 31.57.109.126
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
 - name: 559|🇫🇷 法国-86751637
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
@@ -2048,8 +2065,7 @@ proxies:
   sni: 15.237.176.6
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  name: '559,606|FR_Paris_Amazon Technologies I... #1'
+- name: 559|🇫🇷 法国-E05B9879
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
   server: vpn-fr-002.fastervpn.world
@@ -2118,6 +2134,17 @@ proxies:
       Host: ov-france1.09vpn.com
     path: '%2Fvless%2F'
 - client-fingerprint: chrome
+  name: 559|🇫🇷 法国 214
+  port: 443
+  reality-opts:
+    public-key: 13qS12jjsHCQpQfL3tEL2nHltgoTp1i-8kVcJ6odrEQ
+    short-id: '6635'
+  server: 193.233.133.55
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 2bfea3fd-6826-480c-917d-e3bc99b47a0f
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 559|🇫🇷 法国 112
   port: 443
@@ -2154,6 +2181,19 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F'
+- client-fingerprint: chrome
+  name: 559|🇫🇷 法国 516
+  network: ws
+  port: 2096
+  server: 141.11.203.238
+  servername: sni.jpmj.dev
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F'
 - name: 559|🇫🇷 法国-E50E9A8C
   network: ws
   port: 8443
@@ -2166,6 +2206,19 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- client-fingerprint: chrome
+  name: 559|🇫🇷 法国 399
+  network: ws
+  port: 8443
+  server: 146.59.230.8
+  servername: sni.111000.v6.navy
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F'
 - name: 559|🇫🇷 法国-A26F1128
   network: ws
   port: 443
@@ -2360,6 +2413,19 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%25253Fed'
+- client-fingerprint: chrome
+  name: 559|🇫🇷 法国 467
+  network: ws
+  port: 443
+  server: 37.59.96.48
+  servername: sni.111000.v6.navy
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2%3D'
 - name: 559|🇫🇷 法国-58FC23A3
   network: ws
   port: 443
@@ -2396,6 +2462,19 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- client-fingerprint: chrome
+  name: 559|🇫🇷 法国 434
+  network: ws
+  port: 8443
+  server: 51.210.150.65
+  servername: sni.111000.v6.navy
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%3FTelegram%E9%A6%83%E5%9A%9A%E9%A6%83%E5%9A%A6+%40WangCai2%3D'
 - name: 559|🇫🇷 法国-D9F0C646
   network: ws
   port: 443
@@ -2685,6 +2764,19 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2F%25253Fed'
+- client-fingerprint: chrome
+  name: 559|🇫🇷 法国 458
+  network: ws
+  port: 443
+  server: 51.91.253.60
+  servername: sni.111000.v6.navy
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2%3D'
 - name: 559|🇫🇷 法国-10BA9609
   network: ws
   port: 443
@@ -3234,6 +3326,14 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+- name: '568|🇫🇷 法国 | FRA #1'
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: vpn-fr-001.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-fr-001.fastervpn.world
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
