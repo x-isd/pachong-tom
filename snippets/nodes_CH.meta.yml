@@ -62,21 +62,21 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- name: '378,536,537|CH-152.67.71.149-2194 #1'
+- name: '378,536,537|CH-152.67.71.149-2157 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-3765 #1'
+  name: '378,537|🇨CH-156.146.62.160-3728 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
 - alterId: 1
   cipher: auto
-  name: '378,536,537|CH-186.190.215.32-7528 #1'
+  name: '378,536,537|CH-186.190.215.32-7491 #1'
   network: ws
   port: 443
   server: 186.190.215.32
@@ -91,7 +91,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: '378,536,537|🇭CH-186.190.215.75-7592 #1'
+  name: '378,536,537|🇭CH-186.190.215.75-7555 #1'
   network: ws
   port: 443
   server: 186.190.215.75
@@ -106,7 +106,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇭CH-140.238.212.95-7605 #1'
+  name: '378,536,537|🇭CH-140.238.212.95-7568 #1'
   network: ws
   port: 443
   server: 140.238.212.95
@@ -119,16 +119,28 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
-- name: 438,507,559|🇨🇭 瑞士-AAFCEFFE
-  network: http
+- name: '438,507,548,559,579,582|🇺🇸 美国 CloudFlare节点 6 #2'
+  network: raw
   port: 22
   server: 172.65.111.43
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
-    path: /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
+    path: '%2F%40monacoVPN%40monacoVPN%40monacoVPN%40monacoVPN'
+- name: '438|🇨🇭CH_2|2.0MB/s | 福利姬: https://...'
+  network: ws
+  port: 2095
+  server: 104.19.229.21
+  tls: false
+  type: vless
+  uuid: 58fbbc47-237d-4bc2-a8c3-6db623585a1b
+  ws-opts:
+    headers:
+      Host: Kingdom.turbooo-server.com
+    path: '%2Fed%3D2560'
 - alterId: 0
   cipher: auto
   name: 465|16|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
@@ -200,18 +212,6 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 559|🇨🇭 瑞士 411
-  network: ws
-  password: humanity
-  port: 443
-  server: 185.18.250.252
-  skip-cert-verify: true
-  sni: www.gossipglove.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.gossipglove.com
-    path: '%2Fassignment'
 - name: 559|🇨🇭 瑞士-A055C9D4
   network: ws
   port: 2096
@@ -248,7 +248,8 @@ proxies:
     headers:
       Host: edt2-lgy.pages.dev
     path: '%2F'
-- name: 559|🇨🇭 瑞士 221
+- name: 559|🇨🇭 瑞士-1C18D99D
+  network: http
   port: 22
   server: 83.228.228.44
   tls: false
