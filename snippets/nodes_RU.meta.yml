@@ -23,24 +23,8 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '127,426,502,523,524,580,581|🇫🇮_FI_芬兰 #1'
-  network: tcp
-  port: 18038
-  reality-opts:
-    public-key: UDLhjunZjP-5A6KBMeuWe3qp_FusLAshcQIcCF7EZh8
-    short-id: ce9f790791426d83
-  server: 144.31.82.47
-  servername: www.microsoft.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a42c8b66-d0a7-4b49-9143-b98f1c84edba
 - auth: jOIItw1h4D
-  name: '127,340,426,438,472,473,474,496,502,514,551,559|9|🧃59@oneclickvpnkeys #2'
+  name: '127,340,426,438,496,502,514,551,559|9|🧃59@oneclickvpnkeys #2'
   password: jOIItw1h4D
   port: 8443
   server: 138.124.182.202
@@ -278,13 +262,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 378,537,538,543,574|🇺🇸US美国3 641.8KB/s
+  country: 🇺RU
+  name: 378,435,500,522,537,538,548,574|🇺🇸US美国26
   password: 6784aee2-0dfe-474f-8446-480259ff9918
   port: 442
   server: ru.safepass.click
   skip-cert-verify: true
   tls: true
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: '378,537|🇺RU-213.183.53.222-0277 #1'
   password: KnJGad3FqTvjqbaX
@@ -626,7 +612,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '424|俄罗斯RU-A #1'
+  name: '425|俄罗斯RU-A #1'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1671
   server: a.mjanyt.com
@@ -1403,29 +1389,33 @@ proxies:
       Host: ''
     path: /
 - client-fingerprint: chrome
-  name: 472,473,474,502,507,551,559|未知 VLESS-904 | free-nodes
-  network: raw
-  port: 2040
-  reality-opts:
-    public-key: b6DZwkKAeXf3wjXrL6iV6dTt1Crpv2o88LRDJRgFglE
-    short-id: b589db8f02882bae
-  server: 62.133.60.206
-  servername: eh.vk.com
-  tls: false
+  name: 500|[Vless] 🇷🇺 俄罗斯 V2CROSS.COM 2
+  network: ws
+  port: 2096
+  server: 176.124.223.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
-  uuid: aef7716a-d0a5-4a85-9cb0-fda41d9f34b0
-- client-fingerprint: chrome
-  name: 502,507,551,559,580|未知 VLESS-457 | free-nodes
-  network: raw
-  port: 26424
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  server: 45.12.75.242
-  servername: ya.ru
-  tls: false
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /
+- name: 507|RU VLESS-648 | free-nodes
+  network: ws
+  port: 443
+  server: fl-4-direct.djarbnet.ru
+  servername: fl-4-direct.djarbnet.ru
+  tls: true
   type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: 6c364976-715e-4454-a2e4-0ff6db9c522d
+  ws-opts:
+    headers:
+      Host: fl-4-direct.djarbnet.ru
+    path: '%2Fgetupdates'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 507,559,580|RU VLESS-796 | free-nodes
@@ -1436,19 +1426,6 @@ proxies:
     short-id: 8dc4fccb2bcfc99d
   server: at.jojack.ru
   servername: at.jojack.ru
-  tls: false
-  type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 507,559,580|RU VLESS-801 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4
-    short-id: 6bb3c7f9f97b45b8
-  server: nl.jojack.ru
-  servername: nl.jojack.ru
   tls: false
   type: vless
   uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
@@ -1677,20 +1654,6 @@ proxies:
   server: 91.196.32.171
   sni: Koma-YT.PAGeS.Dev
   type: trojan
-- name: 548|🇷🇺 俄罗斯 CCZZUU.TOP
-  network: ws
-  port: 443
-  server: 185.244.40.33
-  servername: sni.latonyamadeline.ndjp.net
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.latonyamadeline.ndjp.net
-    path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1810,32 +1773,6 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- client-fingerprint: chrome
-  name: 559|🇷🇺 俄罗斯 322
-  network: ws
-  port: 2096
-  server: 176.124.223.138
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F'
-- client-fingerprint: chrome
-  name: 559|🇷🇺 俄罗斯 317
-  network: ws
-  port: 2096
-  server: 176.124.223.238
-  servername: sni.jpmj.dev
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F'
 - name: 559|🇷🇺 俄罗斯-A9509417
   network: ws
   port: 2096
@@ -1860,19 +1797,6 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%25253Fed%25253D2560%252526telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%25252B%252540wangcai2'
-- client-fingerprint: chrome
-  name: 559|🇷🇺 俄罗斯 419
-  network: ws
-  port: 2096
-  server: 185.148.106.138
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2%3D'
 - name: 559|🇷🇺 俄罗斯-499A2E37
   network: ws
   port: 443
@@ -1933,19 +1857,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- client-fingerprint: chrome
-  name: 559|🇷🇺 俄罗斯 329
-  network: ws
-  port: 2096
-  server: 213.241.198.138
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%3D'
 - name: 559|🇷🇺 俄罗斯-99B6C76E
   network: ws
   port: 443
@@ -2044,19 +1955,6 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- client-fingerprint: chrome
-  name: 559|🇷🇺 俄罗斯 493
-  network: ws
-  port: 443
-  server: 85.92.108.39
-  servername: sni.111000.v6.army
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.army
-    path: '%2F%3Fhttps%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3%3D'
 - name: 559|🇷🇺 俄罗斯-E5A744E4
   network: ws
   port: 2096
