@@ -98,20 +98,6 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '340,559,580|未知 VLESS-440 | free-nodes #3'
-  network: raw
-  port: 20567
-  reality-opts:
-    public-key: 1WOtQYIQ-3sJtbrhSA1LW6gAnO-wG0Z5aCnlL_zoiXQ
-    short-id: b82d7208fe23
-  server: fr.gryaz-vpn.com
-  servername: cloudflare.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 40bf709c-4353-4552-ba26-406d2bf7821d
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-8183 #1'
   password: f8f7aCzcPKbsF8p3
@@ -162,7 +148,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '356,507,580|未知 VMESS-1259 | free-nodes #1'
+  name: 356,507,580|未知 VMESS-1259 | free-nodes
   network: ws
   port: 2082
   server: 5.196.29.123
@@ -770,7 +756,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-51.77.158.169-3692 #1'
+  name: '378,494,536,537|🇷FR-51.77.158.169-3692 #1'
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -971,7 +957,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-146.59.55.50-7050 #1'
+  name: '378,494,536,537|🇷FR-146.59.55.50-7050 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1681,7 +1667,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,559|未知 VLESS-492 | free-nodes #1'
+  name: '438,494,559|未知 VLESS-492 | free-nodes #1'
   network: tcp
   port: 23576
   reality-opts:
@@ -1694,7 +1680,7 @@ proxies:
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,507,559,580|未知 VLESS-795 | free-nodes #1'
+  name: '438,507,559,580|未知 VLESS-795 | free-nodes #2'
   network: raw
   port: 44520
   reality-opts:
@@ -1733,7 +1719,7 @@ proxies:
   uuid: deb96819-bdaa-4f52-a536-d4751290ce47
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 438,502,559|🏁 未知-E51F1DC7
+  name: 438,559|🏁 未知-E51F1DC7
   network: tcp
   port: 31413
   reality-opts:
@@ -1741,13 +1727,12 @@ proxies:
     short-id: ead3d6f82a9d
   server: 51.44.16.107
   servername: ''
-  skip-cert-verify: false
   tls: false
   type: vless
   uuid: 5454343b-541b-4c96-8c2a-52e81079d124
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 438,559|🏁 未知-9ABDA738
+  name: 438,494,559|🏁 未知-9ABDA738
   network: tcp
   port: 23576
   reality-opts:
@@ -1987,6 +1972,15 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
+- name: 472,473,474,536|🇫🇷FR-146.19.168.188-1685
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 146.19.168.188
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
 - name: '477,482|🇫🇷 法国 国际航空电讯集团公司(SITA) #1'
   network: ws
   port: 8443
@@ -2021,58 +2015,14 @@ proxies:
   server: 51.158.54.209
   type: ss
   udp: true
-- name: 500|[Vless] 🇫🇷 法国 国际航空电讯集团公司(SITA)
-  network: ws
-  port: 8443
-  server: 57.128.181.219
-  servername: sni.111000.v6.navy
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- name: 502|法国+国际航空电讯集团公司(SITA)
-  network: ws
-  port: 8443
-  server: 57.128.181.219
-  servername: sni.111000.v6.navy
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-- name: 502|🇫🇷FR_1|1.2MB/s
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 146.19.168.188
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 502,559|🇫🇷 法国-28E80359
-  network: tcp
-  port: 7443
-  reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-    short-id: be0ce047
-  server: fr.oneok.name
-  servername: ''
-  skip-cert-verify: false
-  tls: false
+  name: '502,551|🇫🇷FR_1|1.1MB/s #1'
+  port: 443
+  server: 194.226.169.36
+  servername: yahoo.com
+  tls: true
   type: vless
-  uuid: 030f6019-b8ce-4de8-911f-35b0ee11c33c
+  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
 - name: '523,524|🇫🇷 法国 78 #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 2053
@@ -2128,20 +2078,6 @@ proxies:
       Host: sni.111000.v6.navy
     path: /
 - client-fingerprint: chrome
-  name: '523,524|🇫🇷 法国 285 #1'
-  network: ws
-  port: 8443
-  server: 51.91.255.121
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
   name: '523,524|🇫🇷 法国 286 #1'
   network: ws
   port: 443
@@ -2169,11 +2105,11 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: /
-- name: '523,524|🇫🇷 法国 319 #1'
+- name: 523,524,544|欧盟 V2CROSS.COM
   password: 8r<[9'l6hAO#8ZQi
   port: 2053
   server: 45.84.88.232
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: Koma-YT.PAGeS.Dev
   tls: true
   type: trojan
@@ -2346,15 +2282,6 @@ proxies:
   server: 45.84.88.204
   sni: Koma-YT.PAGeS.Dev
   type: trojan
-- name: 536|🇫🇷FR-146.19.168.188-1685
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 146.19.168.188
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
 - name: 536|🇫🇷FR-188.130.207.119-1694
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -2400,15 +2327,6 @@ proxies:
   type: trojan
   ws-opts:
     path: /trTelegram🇨🇳+@WangCai2
-- name: 536|🇫🇷FR-31.58.76.27-1741
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 31.58.76.27
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
 - name: 536|🇫🇷FR-31.58.76.27-1742
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -2418,11 +2336,11 @@ proxies:
   type: trojan
   ws-opts:
     path: /trTelegram🇨🇳+@WangCai2
-- name: 536|🇫🇷FR-45.84.88.232-1755
+- name: 536|🇫🇷FR-31.59.103.186-1743
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 2053
-  server: 45.84.88.232
+  server: 31.59.103.186
   sni: Koma-YT.PAGeS.Dev
   type: trojan
   ws-opts:
@@ -2475,20 +2393,19 @@ proxies:
   tls: true
   type: vmess
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
+- name: 544,580|🇫🇷 法国 CCZZUU.TOP
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 146.19.168.188
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
 - name: '545,546|法国[01] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- client-fingerprint: chrome
-  name: 551|🇫🇷FR_1|1.1MB/s
-  port: 443
-  server: 194.226.169.36
-  servername: yahoo.com
-  tls: true
-  type: vless
-  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
 - name: 559|🇫🇷 France, Paris | 🌐 | [IPv6] ...
   password: dongtaiwang.com
   port: 22000
@@ -2765,19 +2682,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%25253Fed'
-- client-fingerprint: chrome
-  name: '559|🇫🇷 法国 365 #2'
-  network: ws
-  port: 443
-  server: 37.59.96.48
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2%3D'
 - name: 559|🇫🇷 法国-58FC23A3
   network: ws
   port: 443
@@ -3666,13 +3570,6 @@ proxies:
   tls: false
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
-- name: 580|🇫🇷 法国 CCZZUU.TOP
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 146.19.168.188
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
 - client-fingerprint: chrome
   name: 606|FR_Paris_Amazon Technologies I...
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
