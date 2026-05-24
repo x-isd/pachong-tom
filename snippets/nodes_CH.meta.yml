@@ -119,19 +119,22 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
-- name: '438,502,507,559,580|未知 VLESS-1054 | free-nodes #1'
+- name: '438,494,507,559,580|未知 VLESS-1054 | free-nodes #1'
   network: raw
   port: 22
   server: 172.65.111.43
+  skip-cert-verify: false
   tls: false
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     path: '%2F%40monacoVPN%40monacoVPN%40monacoVPN%40monacoVPN'
-- name: 438,559|🇨🇭 瑞士 112
+- name: 438,494,502,548,559|🇨🇭 瑞士 112
   network: tcp
   port: 22
   server: 83.228.228.44
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
@@ -251,19 +254,6 @@ proxies:
   tls: false
   type: vless
   uuid: 10e82fcc-94ec-4d09-8855-579bb55b77e4
-- client-fingerprint: chrome
-  name: 559|🇨🇭 瑞士 477
-  network: ws
-  port: 2096
-  server: 185.18.250.238
-  servername: sni.jpmj.dev
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F'
 - name: 559|🇨🇭 瑞士-D7AA037E
   network: ws
   port: 443
