@@ -1193,7 +1193,7 @@ proxies:
   skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
-- name: '306,378,502,514,515,516,537,551,556,557|香港4|@ripaojiedian #2'
+- name: '306,340,378,502,507,514,515,516,537,544,551,556,557|香港4|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 3285
@@ -1201,23 +1201,29 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '306,378,502,514,515,516,537,551,556,557|日本2|@ripaojiedian #2'
+- alterId: 0
+  name: 306,340,378,502,514,515,516,537,544,551,556,557,574|🇯🇵JP日本4
   network: tcp
   password: 635340b47bddf8f41c123dc6f2b5f7ce
   port: 24184
   server: 18.181.205.14
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,378,502,514,515,516,537,551,556,557|新加坡2|@ripaojiedian #2'
+  udp: true
+- alterId: 0
+  name: 306,340,378,502,514,515,516,537,544,551,556,557,574|🇬SG新加坡3
   network: tcp
   password: 635340b47bddf8f41c123dc6f2b5f7ce
   port: 3842
   server: 52.195.217.94
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,378,502,514,515,516,537,551,556,557|新加坡3|@ripaojiedian #2'
+  udp: true
+- name: '306,340,378,502,514,515,516,537,544,551,556,557|新加坡3|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 10578
@@ -1225,16 +1231,19 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '306,378,502,514,515,516,537,551,556,557|美国|@ripaojiedian #2'
+- alterId: 0
+  name: 306,340,378,502,514,515,516,537,544,551,556,557,574|US
   network: tcp
   password: 635340b47bddf8f41c123dc6f2b5f7ce
   port: 5224
   server: 18.181.205.14
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
-  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇸US美国6
+  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇸US美国16
   network: tcp
   password: 635340b47bddf8f41c123dc6f2b5f7ce
   port: 2663
@@ -1244,7 +1253,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '306,378,502,514,515,516,537,551,556,557|美国3|@ripaojiedian #2'
+- name: '306,340,378,502,514,515,516,537,544,551,556,557|美国3|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 8359
@@ -1252,28 +1261,25 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 306,502,536,544,551,559|🇦🇺AU澳大利亚
+- name: 306,502,536,559|🇦🇺AU澳大利亚
   password: 8r<[9'l6hAO#8ZQi
   port: 443
   server: 140.83.50.165
-  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   tls: true
   type: trojan
-- name: 306,502,536|🇯🇵JP-64.110.104.30-1594
+- name: 306,502|🇸🇪SE_4|1.2MB/s
+  network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
-  server: 64.110.104.30
+  server: 185.130.46.81
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
-  tls: true
   type: trojan
-- name: '306,502|B - 🇯🇵 JP 13 TG: @nodpai'
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 103.125.216.22
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: tj
@@ -1372,36 +1378,6 @@ proxies:
   server: jp008.421421.xyz
   skip-cert-verify: true
   sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '340,378,536,537,544,559|11,12|日本|@ripaojiedian #2'
-  network: tcp
-  password: BxceQaOe
-  port: 4099
-  server: 16.162.45.118
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- alterId: 0
-  name: 340,378,536,537,544,559,574|🇵JP日本2
-  network: tcp
-  password: 635340b47bddf8f41c123dc6f2b5f7ce
-  port: 3135
-  server: 18.183.147.31
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 340,378,536,537,544,559,574|🇵JP日本3
-  network: tcp
-  password: 635340b47bddf8f41c123dc6f2b5f7ce
-  port: 8066
-  server: 18.183.147.31
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
   type: trojan
   udp: true
 - name: 356|🇯🇵1 |  34.4MB/s
@@ -2567,6 +2543,54 @@ proxies:
     headers:
       Host: 138.2.52.176
     path: /
+- name: '378,536,537,559|11,12|日本2|@ripaojiedian #4'
+  network: tcp
+  password: 635340b47bddf8f41c123dc6f2b5f7ce
+  port: 3135
+  server: 18.183.147.31
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: '378,536,537,559|11,12|日本3|@ripaojiedian #4'
+  network: tcp
+  password: 635340b47bddf8f41c123dc6f2b5f7ce
+  port: 8066
+  server: 18.183.147.31
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: '378,536,537,559|11,12|新加坡|@ripaojiedian #2'
+  network: tcp
+  password: 635340b47bddf8f41c123dc6f2b5f7ce
+  port: 2511
+  server: 13.193.127.185
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: '378,536,537,559|11,12|新加坡2|@ripaojiedian #4'
+  network: tcp
+  password: 635340b47bddf8f41c123dc6f2b5f7ce
+  port: 2511
+  server: 18.183.147.31
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: '378,536,537,559|11,12|美国|@ripaojiedian #2'
+  network: tcp
+  password: 635340b47bddf8f41c123dc6f2b5f7ce
+  port: 6604
+  server: 18.183.147.31
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: '378,536,537,559|11,12|美国3|@ripaojiedian #4'
+  network: tcp
+  password: BxceQaOe
+  port: 8359
+  server: 54.249.46.16
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - name: '378,537|🇯🇵JP-219.103.68.164-0777 #1'
   network: ws
   password: 8r%3C%5B9%27l6hAO%238ZQi
@@ -3197,13 +3221,14 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  name: '378,476,481,537|🇵JP-47.79.144.115-4744 #1'
+  country: 🇸 US
+  name: '378,435,476,481,537|🇵JP-47.79.144.115-4744 #1'
   password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
   port: 40003
   server: 47.79.144.115
   type: ss
   udp: true
-- country: 🇸US
+- country: 🇺🇸US
   name: '378,435,537|🇵JP-64.176.36.61-4765 #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -3307,7 +3332,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 378,507,536,537,559,580|未知 VMESS-1253 | free-nodes
+  name: '378,507,536,537,559,580|未知 VMESS-1253 | free-nodes #1'
   network: ws
   port: 443
   server: 47.245.42.92
@@ -3518,7 +3543,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '423|日本-优化2 #1'
+  name: '423,424,425|日本-优化2 #3'
   network: ws
   port: 16617
   server: m.cnmjin.net
@@ -3534,7 +3559,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '423|日本-优化3 #1'
+  name: '423,424,425|日本-优化3 #3'
   network: ws
   port: 16617
   server: t.cnmjcn.cyou
@@ -3549,7 +3574,7 @@ proxies:
     path: /
   ws-path: /
 - down: 3000
-  name: '423|日本JP-HY2 #1'
+  name: '423,424,425|日本JP-HY2 #3'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1443
   server: jp.mjhy2.com
@@ -3561,7 +3586,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '423|日本JP-A #1'
+  name: '423,424,425|日本JP-A #3'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1663
   server: a.mjanyt.com
@@ -3573,7 +3598,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '423|尼日利亚NG-A #1'
+  name: '423,424,425|尼日利亚NG-A #3'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1681
   server: a.mjanyt.com
@@ -3581,6 +3606,19 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #21'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+  security: reality
+  server: t13.qifei.app
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -4620,18 +4658,6 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/61.0.3163.79 Safari/537.36
     path: /trTelegram🇨🇳 @WangCai2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #21'
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-  security: reality
-  server: t13.qifei.app
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
 - client-fingerprint: firefox
   encryption: none
   fp: firefox
@@ -4896,16 +4922,15 @@ proxies:
       Host: guslef2w8oz12wv.ymj.xx.kg
     path: /@Marisa_kristi
   xudp: true
-- alterId: 2
-  cipher: auto
-  name: 502,559|美国_0524042787
-  network: tcp
-  port: '30806'
-  server: 103.182.97.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '502|A - 🇯🇵 JP 01 TG: @nodpai'
+  port: 8443
+  server: jp.rfc.7li7li.vip
+  servername: itunes.apple.com
+  tls: true
+  type: vless
+  uuid: 135a7899-d6d6-40e9-a33e-d0ae87e09a7e
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 513|15|🇯🇵 日本|@ripaojiedian
@@ -5245,11 +5270,16 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: Telegram%40freecodes%2F%3Fed%3D2560
-- name: 536,544|🇺🇸 美国 伊利诺伊州库克与杜佩奇县芝加哥市Nobis技术集...
+- name: 536|🇯🇵JP-142.91.108.54-1592
   password: 8r<[9'l6hAO#8ZQi
   port: 443
   server: 142.91.108.54
-  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- name: 536|🇯🇵JP-64.110.104.30-1594
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 64.110.104.30
   sni: Koma-YT.PAGeS.Dev
   type: trojan
 - name: 542|🇯🇵 日本•高速114•高速 - 飞翔吧
@@ -5383,28 +5413,46 @@ proxies:
   type: vmess
   udp: true
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
-- name: '544,559|🇯🇵 日本 东京 #1'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '551|B - 🇯🇵 JP 01 TG: @nodpai'
+  port: 10444
+  server: 185.18.222.50
+  servername: max.ru
+  tls: true
+  type: vless
+  uuid: f4df3096-8568-4c86-83d2-985623035724
+- name: '551|B - 🇯🇵 JP 04 TG: @nodpai #1'
+  network: ws
   password: 8r<[9'l6hAO#8ZQi
-  port: 20770
-  server: 219.103.68.164
+  port: 443
+  server: 140.83.50.165
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
-- client-fingerprint: qq
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '551|A - 🇯🇵 JP 01 TG: @nodpai'
-  port: 8443
-  server: jp.rfc.7li7li.vip
-  servername: itunes.apple.com
+  name: '551|B - 🇯🇵 JP 06 TG: @nodpai'
+  port: 443
+  server: jp.nodes.rocketnetwork.ru
+  servername: jp.nodes.rocketnetwork.ru
   tls: true
   type: vless
-  uuid: 135a7899-d6d6-40e9-a33e-d0ae87e09a7e
-- name: '551|C - 🇯🇵 JP 14 TG: @nodpai'
+  uuid: dad97768-187b-40be-b423-2f312f740085
+- name: '551|B - 🇯🇵 JP 07 TG: @nodpai'
+  network: ws
   password: 8r<[9'l6hAO#8ZQi
-  port: 42841
-  server: 43.165.190.11
+  port: 443
+  server: 142.91.108.54
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
+  ws-opts:
+    path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
 - flow: xtls-rprx-vision
   name: 553|🇯🇵日本_26dbf
   port: 36699
@@ -5832,9 +5880,9 @@ proxies:
   uuid: 0be3a336-85ad-4c42-930b-05318236e68c
 - alterId: 0
   cipher: auto
-  name: 553|🇯🇵日本_87257
+  name: 553,717|JP【机场推荐：https://a9a.xyz】32
   network: tcp
-  port: 23464
+  port: '23464'
   server: 47.91.10.237
   servername: ''
   tls: false
@@ -6183,6 +6231,13 @@ proxies:
   server: xijinping.19890604.day
   skip-cert-verify: true
   sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+- name: 559|🇯🇵 日本 东京
+  password: 8r<[9'l6hAO#8ZQi
+  port: 20770
+  server: 219.103.68.164
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
   type: trojan
 - name: 559|[Trojan] 🇯🇵 日本 V2CROSS.COM
   password: 8r<[9'l6hAO#8ZQi
@@ -6631,20 +6686,6 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: 559|日本_052404309
-  network: ws
-  port: '25686'
-  server: 140.83.51.161
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6733c357-ba11-4e9f-f00f-7d87f2776ff9
-  ws-opts:
-    headers:
-      Host: jp02.a0a.xyz
-    path: /cctv13.m3u8
-- alterId: 0
-  cipher: auto
   name: 559|日本_052404314
   network: ''
   port: '32221'
@@ -6666,6 +6707,20 @@ proxies:
   ws-opts:
     headers:
       Host: jp01.a0a.xyz
+    path: /cctv13.m3u8
+- alterId: 0
+  cipher: auto
+  name: '559,580|未知 VMESS-1207 | free-nodes #1'
+  network: ws
+  port: 25686
+  server: jp02.a0a.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6733c357-ba11-4e9f-f00f-7d87f2776ff9
+  ws-opts:
+    headers:
+      Host: jp02.a0a.xyz
     path: /cctv13.m3u8
 - auth: qQe1z5kU8kN6SlKnDt9Ru3Qp
   name: 566|🇯🇵 日本 | JPN
@@ -6697,21 +6752,22 @@ proxies:
   udp: true
 - alterId: 0
   name: 574|JP
-  password: BxceQaOe
-  port: 4099
-  server: 16.162.45.118
+  network: ws
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 43.168.16.112
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
+  sni: Koma-YT.PAGeS.Dev
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 574|🇯🇵JP日本4
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 20770
-  server: 219.103.68.164
+  name: 574|🇵JP日本2
+  password: BxceQaOe
+  port: 4099
+  server: 43.198.101.71
   skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
+  sni: t.me%2Fripaojiedian
   tls: true
   type: trojan
   udp: true
