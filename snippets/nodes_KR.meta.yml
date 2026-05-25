@@ -225,19 +225,15 @@ proxies:
       Host: i1.hdslb.com
     path: /download
 - client-fingerprint: firefox
-  ech-opts:
-    enable: true
-    query-server-name: encryptedsni.com
-  name: '127,426,489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #12'
+  name: '127,426|🇰🇷 KR_1|3.5MB/s|GPT⁺|YT-KR|NF|... #1'
   network: ws
   port: 15000
   server: 125.138.172.119
   servername: qznql.node-proxy.chinat.indevs.in
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: true
   type: vless
-  udp: true
   uuid: 26524cce-d514-4014-a426-365fb266a14d
   ws-opts:
     headers:
@@ -735,7 +731,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,507,536,537,538,578,580|未知 VMESS-1086 | free-nodes #1'
+  name: '378,507,536,537,538,578,580|未知 VMESS-1065 | free-nodes #1'
   network: ws
   port: '443'
   server: 152.67.218.38
@@ -750,7 +746,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,507,536,537,538,578,580|未知 VMESS-1084 | free-nodes #1'
+  name: '378,489,502,507,536,537,538,578,580|未知 VMESS-1064 | free-nodes #1'
   network: ws
   port: '443'
   server: 152.67.218.38
@@ -758,6 +754,7 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
   ws-opts:
     headers:
@@ -770,7 +767,7 @@ proxies:
   server: p141.panda001.net
   type: ss
 - cipher: aes-256-cfb
-  name: 378,537,538|🇰🇷KR-218.237.185.230-0211 | 0....
+  name: 378,489,537,538|🇰🇷KR-218.237.185.230-0211 | 0....
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -783,17 +780,19 @@ proxies:
   server: 141.164.45.187
   type: ss
 - cipher: aes-256-cfb
-  name: 378,537,538|🇰🇷KR-221.139.79.57-0166 | 0.03...
+  name: 378,489,537,538|🇰🇷KR-221.139.79.57-0166 | 0.03...
   password: qwerREWQ@@
   port: 13979
   server: 221.139.79.57
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   country: 🇷KR
-  name: 378,435,537,538|🇰🇷KR-211.178.105.134-0217 | 0....
+  name: 378,435,489,537,538|🇰🇷KR-211.178.105.134-0217 | 0....
   password: qwerREWQ@@
   port: 6123
   server: 211.178.105.134
+  tfo: false
   type: ss
 - cipher: aes-256-gcm
   delay: 2713
@@ -811,9 +810,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537,538,580|未知 VMESS-1198 | free-nodes #1'
+  name: '378,536,537,538,580|未知 VMESS-1173 | free-nodes #1'
   network: ws
-  port: '443'
+  port: 443
   server: chuncheon03.zgjok.com
   servername: ''
   skip-cert-verify: false
@@ -1172,7 +1171,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: HU
+- country: 🇺HU
   name: '378,435,436,536,537|🇰🇷KR-13.125.222.125-4655 #1'
   password: WF42809561
   port: 443
@@ -1409,7 +1408,7 @@ proxies:
   type: hysteria2
   up: 10000
 - down: 10000
-  name: '425|韩国KR-HY2 #1'
+  name: '423,425|韩国KR-HY2 #2'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1443
   server: kr.mjhy2.com
@@ -1951,25 +1950,18 @@ proxies:
   server: bgroup.node2.s2.nodelist-airport.com
   type: ss
   udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 489|🔴🇰🇷[🎬🤖]_github.com/Ruk1ng001_b...
-  password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
-  port: 27008
-  server: djl007.yytls.top
+- alterId: 0
+  cipher: auto
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
+  network: none
+  port: 443
+  server: 140.238.2.250
   skip-cert-verify: false
-  sni: djl007.yytls.top
-  type: anytls
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-256-gcm
-  name: 489|🔴🇰🇷_github.com/Ruk1ng001_1c307...
-  password: 504cb0be-b285-4ec5-9561-bc289aea0d46
-  port: 50001
-  server: bgroup.node2.s.nodelist-airport.com
-  type: ss
-  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  xudp: true
 - alpn:
   - h2
   - http/1.1
@@ -1982,22 +1974,52 @@ proxies:
   sni: cusujn.yytls.top
   type: anytls
   udp: true
-- down: ''
-  fingerprint: ''
-  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
-  obfs: ''
-  obfs-password: ''
-  password: 9678fe03-ca76-4044-8803-324d5e7fd7c8
-  port: 60000
-  server: aws-linkhy21.liangxin1.xyz
-  skip-cert-verify: true
-  sni: bilibili-kr.biliimg.com
-  type: hysteria2
-  up: ''
+- cipher: aes-256-gcm
+  name: 489|🔴🇰🇷_github.com/Ruk1ng001_1c307...
+  password: 504cb0be-b285-4ec5-9561-bc289aea0d46
+  port: 50001
+  server: bgroup.node2.s.nodelist-airport.com
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '489,507,580|未知 VMESS-1054 | free-nodes #1'
+  network: ws
+  port: '80'
+  server: 132.145.80.230
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  ws-opts:
+    headers:
+      Host: kr02.a0a.xyz
+    path: /cctv13.m3u8
+  xudp: true
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
+  password: 876d9d25-19c8-462b-b364-7b47e0602f12
+  port: 50020
+  server: hg1.shdetai.cn
+  sni: hg1.shdetai.cn
+  type: tuic
+  udp: true
+  uuid: 876d9d25-19c8-462b-b364-7b47e0602f12
+- cipher: chacha20-ietf-poly1305
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
+  password: 876d9d25-19c8-462b-b364-7b47e0602f12
+  port: 50060
+  server: hg2.shdetai.cn
+  type: ss
+  udp: true
 - client-fingerprint: firefox
   encryption: none
   fp: firefox
-  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #6'
   network: ws
   port: 10909
   security: tls
@@ -2012,10 +2034,21 @@ proxies:
     headers:
       Host: vfa9.cdn-stream.fgfw.indevs.in
     path: /danfeng?ed=2560
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
+  password: 876d9d25-19c8-462b-b364-7b47e0602f12
+  port: 50020
+  server: hg2.shdetai.cn
+  sni: hg2.shdetai.cn
+  type: tuic
+  udp: true
+  uuid: 876d9d25-19c8-462b-b364-7b47e0602f12
 - client-fingerprint: safari
   encryption: none
   flow: xtls-rprx-vision
-  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #8'
   network: tcp
   port: 443
   reality-opts:
@@ -2027,6 +2060,25 @@ proxies:
   type: vless
   udp: true
   uuid: 9678fe03-ca76-4044-8803-324d5e7fd7c8
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #12'
+  network: tcp
+  port: 50030
+  reality-opts:
+    public-key: AY3eZI8cejXsjvPjI3el8wol1zy7IpbhRRBhZpLi004
+    short-id: 137d4fdd
+  server: hg1.shdetai.cn
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 876d9d25-19c8-462b-b364-7b47e0602f12
   xudp: true
 - alpn:
   - h2
@@ -2040,6 +2092,50 @@ proxies:
   sni: b87zd5.yytls.top
   type: anytls
   udp: true
+- down: ''
+  fingerprint: ''
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #13'
+  obfs: ''
+  obfs-password: ''
+  password: 876d9d25-19c8-462b-b364-7b47e0602f12
+  port: 50010
+  server: hg1.shdetai.cn
+  skip-cert-verify: false
+  sni: hg1.shdetai.cn
+  type: hysteria2
+  up: ''
+- client-fingerprint: chrome
+  encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #14'
+  network: tcp
+  port: 50030
+  reality-opts:
+    public-key: x680plnGvN9qkSD1yqq-tl-7K--azehw9tem9aUBrlk
+    short-id: 49ec75
+  server: hg2.shdetai.cn
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 876d9d25-19c8-462b-b364-7b47e0602f12
+  xudp: true
+- name: 489|🔴🇰🇷[🎭]_github.com/Ruk1ng001_48...
+  password: ''
+  port: 1090
+  server: 121.169.46.116
+  type: socks5
+  username: Og%3D%3D
+- cipher: chacha20-ietf-poly1305
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #15'
+  password: 876d9d25-19c8-462b-b364-7b47e0602f12
+  port: 50110
+  server: hg1.shdetai.cn
+  type: ss
+  udp: true
 - alpn:
   - h2
   - http/1.1
@@ -2052,42 +2148,14 @@ proxies:
   sni: an9pfq.yytls.top
   type: anytls
   udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
-  password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
-  port: 27008
-  server: g4brd6.yytls.top
-  skip-cert-verify: false
-  sni: g4brd6.yytls.top
-  type: anytls
-  udp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 489,566|🇱🇻 拉脱维亚 | LVA 7
-  network: ws
-  port: 20000
-  server: 121.158.68.235
-  servername: sni.111000.v6.army
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.army
-    path: /?ed=2560
-  xudp: true
 - client-fingerprint: firefox
   ech-opts:
     enable: true
     query-server-name: encryptedsni.com
-  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #6'
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #16'
   network: ws
-  port: 20201
-  server: 125.135.9.231
+  port: 18852
+  server: 220.94.34.138
   servername: qznql.node-proxy.chinat.indevs.in
   skip-cert-verify: false
   tfo: false
@@ -2099,44 +2167,48 @@ proxies:
     headers:
       Host: qznql.node-proxy.chinat.indevs.in
     path: /danfeng?ed=2560
-- down: ''
-  fingerprint: ''
-  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
-  obfs: ''
-  obfs-password: ''
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: vpn-kr-001.fastervpn.world
+- client-fingerprint: firefox
+  ech-opts:
+    enable: true
+    query-server-name: encryptedsni.com
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #17'
+  network: ws
+  port: 19888
+  server: 222.97.226.51
+  servername: qznql.node-proxy.chinat.indevs.in
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: qznql.node-proxy.chinat.indevs.in
+    path: /danfeng?ed=2560
+- client-fingerprint: chrome
+  name: 489|🔴🇰🇷[🎬📺🔍]_github.com/Ruk1ng001_...
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 18161
+  server: 193.122.102.79
   skip-cert-verify: true
-  sni: vpn-kr-001.fastervpn.world
-  type: hysteria2
-  up: ''
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /trTelegram🇨🇳 @WangCai2
 - client-fingerprint: firefox
   encryption: none
   fp: firefox
-  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #8'
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #18'
   network: ws
   port: 20005
   security: tls
   server: 119.195.235.198
-  servername: vfa9.cdn-stream.fgfw.indevs.in
-  skip-cert-verify: false
-  sni: vfa9.cdn-stream.fgfw.indevs.in
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: vfa9.cdn-stream.fgfw.indevs.in
-    path: /danfeng?ed=2560
-- client-fingerprint: firefox
-  encryption: none
-  fp: firefox
-  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #9'
-  network: ws
-  port: 10333
-  security: tls
-  server: 121.151.210.54
   servername: vfa9.cdn-stream.fgfw.indevs.in
   skip-cert-verify: false
   sni: vfa9.cdn-stream.fgfw.indevs.in
@@ -2166,7 +2238,25 @@ proxies:
 - client-fingerprint: firefox
   encryption: none
   fp: firefox
-  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #10'
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #20'
+  network: ws
+  port: 10333
+  security: tls
+  server: 121.151.210.54
+  servername: vfa9.cdn-stream.fgfw.indevs.in
+  skip-cert-verify: false
+  sni: vfa9.cdn-stream.fgfw.indevs.in
+  tls: true
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: vfa9.cdn-stream.fgfw.indevs.in
+    path: /danfeng?ed=2560
+- client-fingerprint: firefox
+  encryption: none
+  fp: firefox
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #21'
   network: ws
   port: 20332
   security: tls
@@ -2184,7 +2274,7 @@ proxies:
 - client-fingerprint: firefox
   encryption: none
   fp: firefox
-  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #11'
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #22'
   network: ws
   port: 19530
   security: tls
@@ -2219,7 +2309,7 @@ proxies:
 - client-fingerprint: firefox
   encryption: none
   fp: firefox
-  name: 489|🔴🇰🇷[🎬📺🔍]_github.com/Ruk1ng001_...
+  name: '489|🔴🇰🇷[🎬📺🔍]_github.com/Ruk1ng001_... #1'
   network: ws
   port: 32770
   security: tls
@@ -2270,69 +2360,14 @@ proxies:
         (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /?ed=2560
   xudp: true
-- name: '489|🔴🇰🇷[🎬📺🔍]_github.com/Ruk1ng001_... #1'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 18790
-  server: 169.212.176.182
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 489|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001...
-  password: ''
-  port: 1090
-  server: 121.169.46.116
-  type: socks5
-  username: Og%3D%3D
-- client-fingerprint: firefox
-  encryption: none
-  fp: firefox
-  name: '489|🔴🇰🇷[🎬📺🔍]_github.com/Ruk1ng001_... #2'
-  network: ws
-  port: 14534
-  security: tls
-  server: 121.174.143.49
-  servername: w9rw8g1k.node-c.danfeng.gv.uy
-  skip-cert-verify: false
-  sni: w9rw8g1k.node-c.danfeng.gv.uy
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: w9rw8g1k.node-c.danfeng.gv.uy
-    path: /danfeng?ed=2560
-- client-fingerprint: firefox
-  encryption: none
-  fp: firefox
-  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #13'
-  network: ws
-  port: 10255
-  security: tls
-  server: 112.222.0.27
-  servername: w9rw8g1k.node-c.danfeng.gv.uy
-  skip-cert-verify: false
-  sni: w9rw8g1k.node-c.danfeng.gv.uy
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: w9rw8g1k.node-c.danfeng.gv.uy
-    path: /danfeng?ed=2560
 - client-fingerprint: firefox
   ech-opts:
     enable: true
     query-server-name: encryptedsni.com
-  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #14'
+  name: '489|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #23'
   network: ws
-  port: 18852
-  server: 220.94.34.138
+  port: 12300
+  server: 49.142.200.31
   servername: qznql.node-proxy.chinat.indevs.in
   skip-cert-verify: false
   tfo: false
@@ -2344,44 +2379,7 @@ proxies:
     headers:
       Host: qznql.node-proxy.chinat.indevs.in
     path: /danfeng?ed=2560
-- client-fingerprint: firefox
-  encryption: none
-  fp: firefox
-  name: 489|🔴🇰🇷_github.com/Ruk1ng001_81c8b...
-  network: ws
-  port: 23023
-  security: tls
-  server: 221.165.124.107
-  servername: vfa9.cdn-stream.fgfw.indevs.in
-  skip-cert-verify: false
-  sni: vfa9.cdn-stream.fgfw.indevs.in
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: vfa9.cdn-stream.fgfw.indevs.in
-    path: /danfeng?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '502,717|KR【机场推荐：https://a9a.xyz】31 #1'
-  network: tcp
-  port: '8888'
-  server: 146.56.112.110
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-- alterId: 0
-  cipher: auto
-  name: '502,717|KR【机场推荐：https://a9a.xyz】34 #1'
-  network: tcp
-  port: 443
-  server: 140.238.2.250
-  tls: false
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-- name: '507,580|KR VLESS-768 | free-nodes #1'
+- name: 507,580|KR VLESS-758 | free-nodes
   network: ws
   port: 80
   server: afrcloud22.mmv.kr
@@ -2393,7 +2391,7 @@ proxies:
       Host: chatgpt.com.afrcloud22.mmv.kr
     path: '%2F157.245.215.195%3D8443'
 - client-fingerprint: chrome
-  name: 507,580|KR VLESS-1043 | free-nodes
+  name: 507,580|KR VLESS-1020 | free-nodes
   network: ws
   port: 443
   server: afrcloud22.mmv.kr
@@ -3526,7 +3524,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 80c1d3a1-abfd-3de2-b328-e43dcbabe5dd
+  uuid: 790956bb-6d48-36bc-871a-8d0d8790d72a
 - name: '545,546|韩国[01] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -3760,20 +3758,32 @@ proxies:
   server: 3.34.192.249
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 566|🇰🇷 韩国 | KOR
+- name: 566|🇰🇷 韩国 | KOR
   network: ws
-  port: 443
-  server: 203.227.191.189
-  servername: gogo.wknm.dpdns.org
-  tls: true
-  type: vless
+  password: 8r<[9'l6hAO#8ZQi
+  port: 60004
+  server: 220.118.83.101
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
   udp: true
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
   ws-opts:
     headers:
-      Host: gogo.wknm.dpdns.org
-    path: /
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: 566|🇰🇷 韩国 | KOR 2
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 12345
+  server: 222.114.198.232
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 578|26|🇰🇷 韩国特殊|@ripaojiedian
@@ -3808,11 +3818,23 @@ proxies:
     headers:
       Host: krcc1.topf6.com
     path: /ws?ed=2048
+- name: '579,582|🇰🇷 韩国 KT电信 #1'
+  network: ws
+  port: 18979
+  server: 59.9.104.98
+  servername: vpn2.rnmcnm.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b2b62085-f202-4c49-9f19-a44676a3d76d
+  ws-opts:
+    path: /ray
 - name: 580|🇰🇷KR韓國丨yoyapai.com
   network: ws
   password: 8r<[9'l6hAO#8ZQi
-  port: 12345
-  server: 59.12.232.18
+  port: 32773
+  server: 59.0.95.106
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
@@ -3823,8 +3845,8 @@ proxies:
 - name: '580|🇰🇷KR韓國丨yoyapai.com #1'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
-  port: 32773
-  server: 59.0.95.106
+  port: 12345
+  server: 59.12.232.18
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
