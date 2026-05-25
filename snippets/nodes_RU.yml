@@ -23,17 +23,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
-- name: '306,502,559|B - 🇺🇸 US 17 TG: @nodpai #2'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 8.34.146.253
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /tr
-- name: '306,502,559|B - 🇺🇸 US 59 TG: @nodpai #2'
+- name: '306,551,559|B - 🇺🇸 US 59 TG: @nodpai #2'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -196,11 +186,14 @@ proxies:
   port: 30129
   server: 45.140.169.244
   type: ss
-- cipher: aes-128-gcm
-  name: '378,522,537,538,548|🇷🇺_RU_俄罗斯 #1'
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 378,522,537,538,574|🇸US美国18
   password: 6784aee2-0dfe-474f-8446-480259ff9918
   port: 442
   server: ru.safepass.click
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -523,10 +516,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  country: 🇺RU
+  country: 🇰HK
   h2-opts: {}
   http-opts: {}
-  name: '435,437,494,507,559,580|未知 VMESS-1089 | free-nodes #2'
+  name: '435,437,440,507,559,580|未知 VMESS-1089 | free-nodes #2'
   network: tcp
   port: '22324'
   server: 213.156.141.52
@@ -893,16 +886,7 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '472,473,474|俄罗斯+V2CROSS.COM #12'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 176.124.201.78
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '472,473,474|俄罗斯+V2CROSS.COM #14'
+- name: '472,473,474|俄罗斯+V2CROSS.COM #6'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
@@ -910,35 +894,34 @@ proxies:
   sni: Koma-YT.PAGeS.Dev
   type: trojan
   ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 472,473,474,536|🇫🇮FI-46.8.236.104-1690
+    path: /trTelegram🇨🇳+@WangCai2
+- name: 500|[Trojan] 🇷🇺 俄罗斯 V2CROSS.COM
   network: ws
-  password: 8r<[9'l6hAO#8ZQi
+  password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 2053
-  server: 46.8.236.104
+  server: 176.124.201.78
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
+  udp: true
   ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-- name: 472,473,474,502,536|🇩🇪DE-92.246.136.90-1730
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: 500|[Trojan] 🇷🇺 俄罗斯 V2CROSS.COM 2
   network: ws
-  password: 8r<[9'l6hAO#8ZQi
+  password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
-  server: 92.246.136.90
+  server: 194.135.38.131
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
+  udp: true
   ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-- name: 472,473,474,536|🇫🇮FI-46.8.236.104-1691
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 46.8.236.104
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '500,579,582|🇷🇺 俄罗斯 CCZZUU.TOP 2 #2'
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: '500,579,582|🇷🇺 俄罗斯 CCZZUU.TOP 2 #3'
   network: ws
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
@@ -960,6 +943,14 @@ proxies:
   type: trojan
   ws-opts:
     path: /trTelegram🇨🇳+@WangCai2
+- alpn:
+  - h2
+  - http/1.1
+  name: 507|RU TROJAN-153 | free-nodes
+  password: 7aXwJPnpAJ
+  port: 50824
+  server: yespaintstudio.rav-kraski.ru
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
@@ -1059,25 +1050,13 @@ proxies:
   type: trojan
   ws-opts:
     path: /trTelegram🇨🇳+@WangCai2
-- name: 544|🇷🇺 俄罗斯 CCZZUU.TOP
+- name: '544,580|🇷🇺 俄罗斯 CCZZUU.TOP #3'
   password: 8r<[9'l6hAO#8ZQi
   port: 2053
   server: 46.8.236.104
   skip-cert-verify: false
   sni: Koma-YT.PAGeS.Dev
   type: trojan
-- name: '548|🇷🇺 俄罗斯 CCZZUU.TOP #1'
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 2053
-  server: 95.182.101.74
-  skip-cert-verify: false
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1110,7 +1089,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-- name: '559|俄罗斯+V2CROSS.COM #20'
+- name: '559|俄罗斯+V2CROSS.COM #11'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 2053
@@ -1121,28 +1100,62 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-- name: 559|🇷🇺RU_93
+- name: '559|🇷🇺RU_93 #2'
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
   sni: nearby-muskrat.rooster465.autos
   type: trojan
 - alterId: 0
-  name: 574|RU
+  name: 574|🇺RU
   network: ws
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
-  server: 195.211.124.140
+  server: 92.246.136.90
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 574|🇺RU俄罗斯2
+  name: 574|🇺RU俄罗斯3
+  network: ws
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 8443
+  server: 46.8.236.104
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 574|🇷🇺RU俄罗斯4
+  network: ws
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 2053
+  server: 46.8.236.104
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 574|🇷🇺RU俄罗斯5
+  network: ws
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 194.135.38.131
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 574|🇺RU俄罗斯6
+  network: ws
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 2053
+  server: 176.124.201.78
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   tls: true
@@ -1172,19 +1185,20 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '580|🇷🇺 俄罗斯 CCZZUU.TOP #3'
+- name: '580|🇷🇺 俄罗斯 CCZZUU.TOP #2'
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
   server: 62.182.196.202
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
-- name: '580|🇷🇺 俄罗斯 CCZZUU.TOP #4'
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 195.211.124.140
+- name: 580|RU TROJAN-140 | free-nodes
+  network: tcp
+  password: 7aXwJPnpAJ
+  port: 50824
+  server: yespaintstudio.rav-kraski.ru
   skip-cert-verify: false
-  sni: Koma-YT.PAGeS.Dev
+  sni: yespaintstudio.rav-kraski.ru
   type: trojan
 - name: 728|🇷🇺 俄罗斯1
   password: 升级订阅解锁全部节点
