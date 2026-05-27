@@ -1760,7 +1760,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇸SG-139.162.59.41-0073 #1'
+  name: '378,536,537|🇸SG-139.162.59.41-0073 #1'
   network: ws
   port: 80
   server: 139.162.59.41
@@ -1780,7 +1780,8 @@ proxies:
   server: 194.233.94.119
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇸🇬SG-154.18.239.126-0180 | 0.0...
+  country: 🇺 US
+  name: 378,435,537,538|🇸🇬SG-154.18.239.126-0180 | 0.0...
   password: eLPlIVuRZ6UJyapVDeT++l7fYC0uowXJFlb9qhntAd4=
   port: 37425
   server: 154.18.239.126
@@ -2374,18 +2375,22 @@ proxies:
     headers:
       Host: ''
     path: /anti13.zingfast.vn
-- name: '378,436,536,537|🇸🇬SG-54.169.245.181-4524 #1'
+- country: 🇬BG
+  name: '378,435,436,536,537|🇸🇬SG-54.169.245.181-4524 #1'
   password: IL37892054
   port: 443
   server: engaged-ram.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-54.254.42.84-4633 #1'
+  udp: true
+- country: 🇺🇸US
+  name: '378,435,536,537|🇬SG-54.254.42.84-4633 #1'
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   port: 20000
   server: starlink-sg2.mfa.cat
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: '378,537|SG-139.99.68.21-5434 #1'
   password: zDNVedRFPQexG9v
@@ -3086,9 +3091,22 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- client-fingerprint: ''
+- country: 🇬SG
+  name: 435|🇬SG_67
+  password: 8r<[9'l6hAO#8ZQi
+  port: 23779
+  server: 149.129.91.58
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 436|🇸🇬SG_67
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 23779
+  server: 149.129.91.58
+  type: trojan
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,494,507,559|未知 VLESS-724 | free-nodes #1'
+  name: '438,507,559|未知 VLESS-724 | free-nodes #1'
   network: raw
   port: 35308
   reality-opts:
@@ -3101,7 +3119,7 @@ proxies:
   uuid: 779d227c-f7be-4b9d-a4a9-1197c734b4e7
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: '438,523,524,559|🇸🇬 新加坡 111 #2'
+  name: '438,523,524,551,559|🇸🇬 新加坡 111 #2'
   network: tcp
   port: 443
   reality-opts:
@@ -4695,6 +4713,21 @@ proxies:
   server: sg21.453521.xyz
   sni: sg21.453521.xyz
   type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 489,559|HK_speednode_0010
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 8mv22T5d1KHXlT1EQiQMcgbOZpwkospsUb8WLkuDsAA
+    short-id: 7994d24409820c44
+  server: mx0wbu.sgvless.yydzx.xyz
+  servername: deb.debian.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
 - alpn:
   - h2
   - http/1.1
@@ -5401,7 +5434,7 @@ proxies:
   tls: false
   type: vless
   uuid: 9fe5f13e-a1b2-469d-fe5d-e41e0d933b49
-- name: '502,551|A - 🇸🇬 SG 01 TG: @nodpai #1'
+- name: '502|A - 🇸🇬 SG 01 TG: @nodpai'
   password: aecd8c25-fd16-42a3-aefb-89c89557828f
   port: 8080
   server: hkt05.769970.xyz
@@ -5409,7 +5442,7 @@ proxies:
   sni: hkt05.769970.xyz
   tls: false
   type: hysteria2
-- name: '502,551|B - 🇸🇬 SG 05 TG: @nodpai #1'
+- name: '502|B - 🇸🇬 SG 05 TG: @nodpai'
   password: 45a90d32-08bd-4dea-8345-f1f541cc7f90
   port: 10026
   server: sg02.jgpy.help
@@ -5419,7 +5452,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '502,551|B - 🇸🇬 SG 08 TG: @nodpai #1'
+  name: '502,551|B - 🇸🇬 SG 07 TG: @nodpai'
   port: 443
   server: sg.hsyun.top
   servername: www.propertyguru.com.sg
@@ -5569,140 +5602,57 @@ proxies:
   server: 47.82.160.100
   sni: Koma-YT.PAGeS.Dev
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 542|【高级】🇬新加坡 - 滑梯云
-  network: ws
-  port: 20011
-  server: htsub-2024.899696998.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: eb9b6d07-8644-437f-a1c5-dbed378d38ed
-  ws-opts:
-    headers:
-      Host: yyyt-sg-2024.mofaxw.top
-    path: /2024
-- name: 542|🇸🇬 新加坡•高速129•高速 - 飞翔吧
-  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
-  port: 20129
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x129.flybar.work
-  tfo: true
-  type: trojan
-  udp: true
-- name: 542|🇸🇬 新加坡•高速130•铂金 - 飞翔吧
-  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
-  port: 20130
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x130.flybar.work
-  tfo: true
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 542|🇬 [vip①]新加坡1|低倍率 - MG Network
-  port: 23616
-  server: 16.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e6718918-e49f-30a1-ac7f-f30f49c6986d
-- alterId: 2
-  cipher: auto
-  name: 542|🇸🇬 [vip①]新加坡2|低倍率 - MG Network
-  port: 23613
-  server: 13.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e6718918-e49f-30a1-ac7f-f30f49c6986d
-- grpc-opts:
-    grpc-service-name: sgvip101
-  name: 542|🇬 新加坡 101 - 墙了个墙
-  network: grpc
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  port: 11223
-  server: sgvip101.qlgq.fun
-  skip-cert-verify: true
-  sni: sgvip101.qlgq.fun
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: sgvip101
-  name: 542|🇸🇬 新加坡 102 - 墙了个墙
-  network: grpc
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  port: 21223
-  server: sgvip101.qlgq.fun
-  skip-cert-verify: true
-  sni: sgvip101.qlgq.fun
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: sgvip101
-  name: 542|🇸🇬 新加坡 103 - 墙了个墙
-  network: grpc
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  port: 31223
-  server: sgvip101.qlgq.fun
-  skip-cert-verify: true
-  sni: sgvip101.qlgq.fun
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: sgvip101
-  name: 542|🇸🇬 新加坡 104 - 墙了个墙
-  network: grpc
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  port: 41223
-  server: sgvip101.qlgq.fun
-  skip-cert-verify: true
-  sni: sgvip101.qlgq.fun
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: sgvip101
-  name: 542|🇸🇬 新加坡 105 - 墙了个墙
-  network: grpc
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  port: 51223
-  server: sgvip101.qlgq.fun
-  skip-cert-verify: true
-  sni: sgvip101.qlgq.fun
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 542|🇬 新加坡 1 GPT/Netflix  - 西瓜皮是真的皮
-  port: 19841
-  server: xgcma.dx002.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 075c16e6-67cb-3599-aa5a-025b478db156
-- alterId: 0
-  cipher: auto
-  name: 542|🇬 新加坡 2 GPT/Netflix - 西瓜皮是真的皮
-  port: 19842
-  server: xgcta.dx002.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 075c16e6-67cb-3599-aa5a-025b478db156
 - name: '545,546|新加坡[02] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '551|A - 🇸🇬 SG 01 TG: @nodpai #1'
+  network: tcp
+  port: 11137
+  server: dotu-sgv1.kunlun03dns.com
+  tls: false
+  type: vmess
+  uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+- alterId: 0
+  cipher: auto
+  name: '551|A - 🇸🇬 SG 02 TG: @nodpai'
+  network: tcp
+  port: 11138
+  server: dotu-sgv1.kunlun03dns.com
+  tls: false
+  type: vmess
+  uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+- alterId: 0
+  cipher: auto
+  name: '551|A - 🇸🇬 SG 03 TG: @nodpai'
+  network: tcp
+  port: 11136
+  server: dotu-sgv1.kunlun03dns.com
+  tls: false
+  type: vmess
+  uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+- alterId: 0
+  cipher: auto
+  name: '551|A - 🇸🇬 SG 04 TG: @nodpai'
+  network: tcp
+  port: 11135
+  server: dotu-sgv1.kunlun03dns.com
+  tls: false
+  type: vmess
+  uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+- name: '551|C - 🇸🇬 SG 11 TG: @nodpai'
+  network: ws
+  port: 20378
+  server: sgc.tdz-server.store
+  tls: false
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    path: /@TuhinBroh
 - name: 553|🇸🇬新加坡_5ac40
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -6151,6 +6101,30 @@ proxies:
     headers:
       Host: pagescm.freen7.de5.net
     path: '%2Ftools%2Fp'
+- client-fingerprint: firefox
+  name: '559,580|新加坡丨yoyapai.com #1'
+  network: ws
+  port: 2053
+  server: cf4.danfeng.eu.org
+  servername: juzi8186.qea.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: bafacd98-136a-4530-838d-4e5c51838dac
+  ws-opts:
+    headers:
+      Host: juzi8186.qea.ccwu.cc
+    path: '%2Ftv%2Fjuzibaipiao%3Fed%3D2560'
+- alterId: 0
+  name: 574|🇬SG新加坡3
+  password: BxceQaOe
+  port: 443
+  server: 140.235.140.105
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '577|新加坡NO.1 #4'
