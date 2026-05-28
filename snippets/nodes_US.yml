@@ -256,24 +256,58 @@ proxies:
   port: 443
   server: 63.180.254.10
   type: ss
-- alpn:
-  - http/1.1
-  name: 306|United States_None_trojan_1127
+- delay: 781
+  name: '306,515,516,528,567,585,586|US_speednode_0046 #1'
   network: ws
   password: mitivpn
-  port: '443'
+  port: 443
   server: 14.102.228.76
   skip-cert-verify: true
   sni: www.app-cloud.ir
-  tls: true
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L21 Build/HUAWEICAM-L21; wv)
-        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile
-        Safari/537.36
+      Host: www.app-cloud.ir
     path: /?ed=2048
+- name: '306,340,502,514,515,516,551,567,585,586|US_speednode_0048 #3'
+  network: ws
+  password: mitivpn
+  port: 443
+  server: 14.102.228.76
+  skip-cert-verify: true
+  sni: www.app-cloud.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.app-cloud.ir
+    path: /
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '306,502,507,551|🇨🇾CY_1|2.5MB/s #1'
+  network: ws
+  port: '80'
+  server: 45.128.72.44
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a2170d39-140a-47f9-85b8-084078856c36
+  ws-opts:
+    path: /api/v1
+  xudp: true
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  delay: 465
+  name: 306,528|德国 - Frankfurt am Main - 6
+  password: amazonskr05
+  port: 443
+  server: 63.180.239.185
+  type: ss
+  udp: true
 - name: '321,322,323|美国03 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -627,8 +661,7 @@ proxies:
   server: 169.197.142.187
   type: ss
 - cipher: aes-128-gcm
-  country: 🇦UA
-  name: 356,357,378,435,537,538|🇺🇸US-37.19.198.236-0077 | 54.2...
+  name: 356,357,378,537,538|🇺🇸US-37.19.198.236-0077 | 54.2...
   password: shadowsocks
   port: 443
   server: 37.19.198.236
@@ -923,8 +956,7 @@ proxies:
   server: 194.116.173.21
   type: ss
 - cipher: aes-128-gcm
-  country: 🇦UA
-  name: 356,357,378,435,537,538|🇺🇸US-37.19.198.244-0078 | 52.8...
+  name: 356,357,378,537,538|🇺🇸US-37.19.198.244-0078 | 52.8...
   password: shadowsocks
   port: 443
   server: 37.19.198.244
@@ -2374,26 +2406,24 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 378,537,538|🇺🇸US-100.27.193.207-0079 | 0.0...
+  country: 🇺🇸US
+  name: 378,440,537,538|🇺🇸US-100.27.193.207-0079 | 0.0...
   password: amazonskr05
   port: 443
   server: 100.27.193.207
   type: ss
 - cipher: aes-256-cfb
-  name: 378,537,538|🇺🇸US-13.218.172.80-0082 | 0.0M...
+  country: 🇺🇸US
+  name: 378,440,537,538|🇺🇸US-13.218.172.80-0082 | 0.0M...
   password: amazonskr05
   port: 443
   server: 13.218.172.80
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  country: 🇺 US
-  name: 378,435,537,538,574|🇸US美国4 37.7MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 378,537,538|🇺🇸US-149.28.255.6-0090 | 111.0...
   password: GyZ5Xo0ht41vYmW3H4
   port: 816
   server: 149.28.255.6
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 378,537,538|🇺🇸US-173.244.56.9-0098 | 80.04...
@@ -2403,7 +2433,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: 378,435,440,537,538|🇺🇸US-107.172.250.161-0103 | 23...
+  name: 378,440,537,538|🇺🇸US-107.172.250.161-0103 | 23...
   password: QTmLViU4VEmuwbOxUw4IXd
   port: 59556
   server: 107.172.250.161
@@ -2417,7 +2447,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   country: 🇸US
-  name: '378,435,440,476,481,537,538,574|🇺🇸US美国12 #1'
+  name: 378,440,476,481,537,538,574|🇺🇸US美国7 107.6KB/s
   password: hbGrpfvNrJsUmKmPbR3iY2
   port: 443
   server: tinkered-pennies-puppies.freesocks.work
@@ -2433,7 +2463,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '378,476,481,537,538,574|🇺🇸US美国2 37.7KB/s #1'
+  name: 378,476,481,537,538,574|🇩🇪DE德国2 35.8KB/s
   password: XUMTygEM1jVYIvysXKqA5T
   port: 443
   server: hackney-latest-strike.freesocks.work
@@ -5600,46 +5630,36 @@ proxies:
   uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
   ws-opts:
     path: /
-- country: 🇧GB
-  name: '378,435,436,536,537|🇸US-194.33.45.157-4564 #1'
+- name: '378,436,536,537|🇸US-194.33.45.157-4564 #1'
   password: 3ac6a6ca99f74941b1eaf892818e2ddb
   port: 443
   server: 194.33.45.157
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇬🇧GB
-  name: '378,435,436,536,537|🇸US-77.247.126.137-4567 #1'
+- name: '378,436,536,537|🇸US-77.247.126.137-4567 #1'
   password: 3ac6a6ca99f74941b1eaf892818e2ddb
   port: 443
   server: 77.247.126.137
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇺RU
-  name: '378,435,436,536,537|🇸US-54.184.22.123-4589 #1'
+- name: '378,436,536,537|🇸US-54.184.22.123-4589 #1'
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇸US
-  name: '378,435,436,536,537|🇺🇸US-64.94.95.118-4616 #2'
+- name: '378,436,536,537|🇺🇸US-64.94.95.118-4616 #2'
   password: kkzh2prsyr2ik47as615
   port: 57142
   server: 64.94.95.118
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇺🇸US
-  name: '378,435,436,536,537|🇺🇸US-38.180.193.194-4617 #2'
+- name: '378,436,536,537|🇺🇸US-38.180.193.194-4617 #2'
   password: c1d83c0c7d57cead4379ba14a82df69b
   port: 443
   server: 38.180.193.194
   skip-cert-verify: false
   type: trojan
-  udp: true
 - name: '378,536,537|🇸US-15.204.56.75-4721 #1'
   password: d30ab83dbde4480082048fb315bedebd
   port: 443
@@ -14606,7 +14626,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '423,424,425|美国LA-优化-GPT #3'
+  name: '423,425|美国LA-优化-GPT #2'
   network: ws
   port: 16648
   server: planb.mojcn.com
@@ -14622,7 +14642,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '423,424,425|美国LA-优化2-GPT #3'
+  name: '423,425|美国LA-优化2-GPT #2'
   network: ws
   port: 16648
   server: m.cnmjin.net
@@ -14638,7 +14658,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '423,424,425|美国LA-优化3-GPT #3'
+  name: '423,425|美国LA-优化3-GPT #2'
   network: ws
   port: 16648
   server: t.cnmjcn.cyou
@@ -14652,57 +14672,69 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 435,437,559,580|未知 VMESS-1163 | free-nodes
-  network: tcp
-  port: '22324'
-  server: 66.163.117.58
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  ws-path: /
+- name: 436|🇺🇸US_105
+  password: pro%40_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 20000
+  server: starlink-sg2.mfa.cat
+  type: trojan
+- name: 436|🇺🇸US_108
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 64.176.36.61
+  type: trojan
 - alterId: 0
   cipher: aes-128-gcm
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 435,437,507,559,580|未知 VMESS-1166 | free-nodes
+  name: 437,507,559,580|未知 VMESS-1166 | free-nodes
   network: tcp
   port: 18000
   server: 67.220.95.3
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 437,559,580|未知 VMESS-1163 | free-nodes
+  network: tcp
+  port: '22324'
+  server: 66.163.117.58
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: aes-128-gcm
-  country: 🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 435,437,507,559,580|未知 VMESS-1165 | free-nodes
+  name: 437,507,559,580|未知 VMESS-1165 | free-nodes
   network: tcp
   port: '18000'
   server: 67.220.85.46
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: 437,507,559,580|未知 VMESS-1091 | free-nodes
+  network: tcp
+  port: 22324
+  server: 172.233.17.76
+  servername: null
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  country: 🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 435,437,507,559,580,606|US_Los Angeles_GTHost_Claude
+  name: 437,507,559,580|未知 VMESS-1110 | free-nodes
+  network: tcp
+  port: '18000'
+  server: 38.110.1.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: 437,559,580,606|US_Los Angeles_GTHost_Claude
   network: tcp
   port: 22324
   server: 67.220.72.237
@@ -14712,82 +14744,15 @@ proxies:
   type: vmess
   udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 435|🇸US_88
-  network: ws
-  port: 443
-  server: n1753101277.4u9ma.icu
-  servername: n1753101277.4u9ma.icu
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
-  ws-headers:
-    HOST: n1753101277.4u9ma.icu
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 435,437,507,559,580|未知 VMESS-1110 | free-nodes
-  network: tcp
-  port: '18000'
-  server: 38.110.1.246
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  ws-path: /
-- name: '436|🇺🇸US_90 #1'
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 64.176.36.61
-  type: trojan
-- name: 436|🇺🇸US_94
-  password: pro%40_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20000
-  server: starlink-sg2.mfa.cat
-  type: trojan
 - cipher: aes-256-cfb
   country: 🇸US
-  name: 440|Relay_🇸US-🇺🇸US_39
+  name: 440|Relay_🇺🇸US-🇺🇸US_41
   obfs: http_simple
   password: Uk92CS
   port: 13000
   protocol: auth_aes128_sha1
   server: nm3.boom.party
   type: ssr
-- alterId: 2
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 440|Relay_ZZ-🇺🇸US_44
-  network: tcp
-  port: 30829
-  server: 103.182.97.25
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 440|Relay_🏁ZZ-🇺🇸US_49
-  network: tcp
-  port: 30829
-  server: 103.182.97.12
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 453|🇺🇸 美国|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 24673
@@ -14910,7 +14875,7 @@ proxies:
     path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
 - alterId: 0
   cipher: auto
-  name: '459,472,473,474,502,544,559,580|HK香港(mibei77.com 米贝节点分享) #13'
+  name: 459,502,544,551,559,580|亞太地區
   network: tcp
   port: '51556'
   server: 103.181.164.145
@@ -14950,7 +14915,7 @@ proxies:
     path: '%2Fassignment'
 - alterId: 0
   cipher: auto
-  name: '459,544,559,580|HK香港(mibei77.com 米贝节点分享) #11'
+  name: 459,502,544,551,559,580,717|HK【机场推荐：https://a9a.xyz】3
   network: tcp
   port: '54022'
   server: 103.181.164.145
@@ -14960,9 +14925,9 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: '459,544,559,580|GB英国(mibei77.com 米贝节点分享) #13'
+  name: '459,544,559|🇮🇩 印度尼西亚 220 #2'
   network: tcp
-  port: '30836'
+  port: 30836
   server: v36.hdacd.com
   servername: ''
   tls: false
@@ -16537,6 +16502,20 @@ proxies:
     headers:
       Host: lax2.ibgfw.top
     path: /dyajvws
+- alpn:
+  - http/1.1
+  name: '472,473,474,559,580|未知 TROJAN-179 | free-nodes #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.20.6.134
+  skip-cert-verify: false
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
 - cipher: chacha20-ietf-poly1305
   name: '476,481|NL荷兰(mibei77.com 米贝节点分享)_3 #1'
   password: RFK38Cg7APneSB5cWDcpbm
@@ -16563,7 +16542,7 @@ proxies:
     path: /assignment
 - alterId: 0
   cipher: aes-128-gcm
-  name: '476,481,523,524,567,585|GB_speednode_0023 #1'
+  name: 476,481,523,524,567,585|GB_speednode_0023
   port: 180
   server: 82.198.246.37
   servername: <nil>
@@ -16577,26 +16556,6 @@ proxies:
   name: '476,481,523,524|🇮🇩 印度尼西亚 220 #1'
   port: 30836
   server: v36.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: '476,481,523,524|🇭🇰 香港 64 #1'
-  port: 54022
-  server: 103.181.164.145
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  name: '476,481,523,524|🇯🇵 日本 215 #1'
-  port: 30809
-  server: v9.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -16700,30 +16659,6 @@ proxies:
     headers:
       Host: ecc.vtcss.top
     path: /qwer01
-- name: '500,579,582|🇺🇸 美国 CloudFlare节点 #6'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.32.47
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: '502|美国+CloudFlare节点 #7'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.20.6.134
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: /assignment
 - name: 507,559,580|US TROJAN-156 | free-nodes
   network: tcp
   password: FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D
@@ -16733,21 +16668,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '507,559|US VMESS-1571 | free-nodes #1'
-  network: ws
-  port: '2053'
-  server: s173.ayxj.top
-  servername: u712032us173.ayxj.top
-  tls: true
-  type: vmess
-  uuid: 6d49fae1-374d-313e-b360-1227b0ea8dea
-  ws-opts:
-    headers:
-      Host: s173.ayxj.top
-    path: ssp-ws
-- alterId: 0
-  cipher: auto
-  name: '507,559|US VMESS-1580 | free-nodes #1'
+  name: 507,559|US VMESS-1580 | free-nodes
   network: ws
   port: '2053'
   server: s542.ccgfw.online
@@ -16761,7 +16682,21 @@ proxies:
     path: ssp-ws
 - alterId: 0
   cipher: auto
-  name: '507,559|US VMESS-1583 | free-nodes #1'
+  name: 507|US VMESS-1639 | free-nodes
+  network: ws
+  port: '2053'
+  server: s77.okgfwbackxyz.xyz
+  servername: u712032us77.okgfwbackxyz.xyz
+  tls: true
+  type: vmess
+  uuid: 6d49fae1-374d-313e-b360-1227b0ea8dea
+  ws-opts:
+    headers:
+      Host: s77.okgfwbackxyz.xyz
+    path: ssp-ws
+- alterId: 0
+  cipher: auto
+  name: 507,559|US VMESS-1583 | free-nodes
   network: ws
   port: '2053'
   server: s842.ccgfw.top
@@ -16775,7 +16710,7 @@ proxies:
     path: ssp-ws
 - alterId: 0
   cipher: auto
-  name: '507,559|US VMESS-1585 | free-nodes #1'
+  name: 507,559|US VMESS-1585 | free-nodes
   network: ws
   port: '2053'
   server: s70.ayxj.top
@@ -16980,60 +16915,6 @@ proxies:
   type: vmess
   uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739
   ws-opts: {}
-- name: '514,515,516,551,567,585,586|US_speednode_0048 #2'
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 14.102.228.76
-  skip-cert-verify: true
-  sni: www.app-cloud.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.app-cloud.ir
-    path: /
-- name: '514,515,516,551,567,585,586|US_speednode_0049 #2'
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 104.18.20.213
-  skip-cert-verify: false
-  sni: www.app-cloud.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.app-cloud.ir
-    path: /
-- delay: 1993
-  name: '515,516,528,567,585,586|US_speednode_0045 #1'
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 104.18.20.213
-  skip-cert-verify: false
-  sni: www.app-cloud.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.app-cloud.ir
-    path: /?ed=2048
-- delay: 781
-  name: '515,516,528,567,585,586|US_speednode_0046 #1'
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 14.102.228.76
-  skip-cert-verify: true
-  sni: www.app-cloud.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.app-cloud.ir
-    path: /?ed=2048
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 517|15|🇺🇸 美国|@ripaojiedian
@@ -17251,7 +17132,7 @@ proxies:
       Host: v2ray.codefyinc.com
     path: /vmessws
 - alterId: 0
-  name: 544,559,574|🇸US美国5
+  name: '544,559,574|🇺🇸US美国8 #1'
   password: humanity
   port: 443
   server: 104.21.40.34
@@ -17260,28 +17141,41 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '544|🇺🇸 US美国(mibei77.com 米贝节点分享) #5'
+- alterId: 0
+  name: 544,574|🇺🇸US美国13
   password: humanity
   port: 443
   server: www.gossipglove.com
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tls: true
   type: trojan
-- name: '544,559|🇺🇸 美国 CloudFlare节点 #3'
+  udp: true
+- alterId: 0
+  name: 544,559,574|🇸US美国9
   password: humanity
   port: 443
   server: v1.dabache.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.multiplydose.com
+  tls: true
   type: trojan
-- name: '544|🇺🇸 美国 CloudFlare节点 2 #2'
-  password: trojan
-  port: 2087
-  server: 22b.net
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
-  type: trojan
+  udp: true
 - alterId: 0
-  name: '544,559,574|🇺🇸US美国8 #1'
+  cipher: auto
+  name: 544,559|美国_052821001
+  network: ws
+  port: '49632'
+  server: 45.63.7.19
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 05f2bbe3-f29a-480f-ebfb-0deebb80741d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /05f2bbe3-f29a-480f-ebfb-0deebb80741d
+- alterId: 0
+  name: 544,559,574|🇺🇸US美国16
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
   port: 443
   server: 216.24.57.250
@@ -17302,24 +17196,30 @@ proxies:
   server: 45.83.140.22
   skip-cert-verify: true
   type: trojan
-- name: '551|B - 🇺🇸 US 11 TG: @nodpai'
-  network: ws
+- alterId: 0
+  cipher: auto
+  name: 551,559,580,717|HK【机场推荐：https://a9a.xyz】23
+  network: tcp
+  port: 11130
+  server: dotu-usv1.kunlun03dns.com
+  tls: false
+  type: vmess
+  uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+- alterId: 2
+  cipher: auto
+  name: '551|B - 🇺🇸 US 27 TG: @nodpai'
+  network: tcp
+  port: 30824
+  server: 70.153.148.135
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '551|C - 🇺🇸 US 28 TG: @nodpai'
   password: 433e785b-2077-47f7-a43d-985f63dd18d1
-  port: 30303
-  server: 121.191.33.84
+  port: 32603
+  server: 220.86.228.109
   sni: vpn.rnmcnm.com
   type: trojan
-  ws-opts:
-    path: /trojan
-- name: '551|B - 🇺🇸 US 19 TG: @nodpai'
-  network: ws
-  password: 433e785b-2077-47f7-a43d-985f63dd18d1
-  port: 18080
-  server: 175.192.103.88
-  sni: vpn.rnmcnm.com
-  type: trojan
-  ws-opts:
-    path: /trojan
 - name: 553|🇺🇸美国_f379a
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -17726,17 +17626,6 @@ proxies:
   uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
 - alterId: 0
   cipher: auto
-  name: 553|🇺🇸美国_06f2f
-  network: tcp
-  port: 3593
-  server: 69.12.91.52
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
-- alterId: 0
-  cipher: auto
   name: 553|🇺🇸美国_94a39
   network: tcp
   port: 43474
@@ -18072,14 +17961,14 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '559,580|🇺🇸 美国 CloudFlare节点 2 #4'
+- name: '559,580|🇺🇸 美国 CloudFlare节点 2 #3'
   password: humanity
   port: 443
   server: 172.64.229.75
   skip-cert-verify: false
   sni: www.calmloud.com
   type: trojan
-- name: '559|🇺🇸US_93 #1'
+- name: 559|🇺🇸US_93
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   port: 20000
   server: starlink-sg2.mfa.cat
@@ -18155,6 +18044,20 @@ proxies:
     path: ssp-ws
 - alterId: 0
   cipher: auto
+  name: 559|US VMESS-1571 | free-nodes
+  network: ws
+  port: '2053'
+  server: s173.ayxj.top
+  servername: u712032us173.ayxj.top
+  tls: true
+  type: vmess
+  uuid: 6d49fae1-374d-313e-b360-1227b0ea8dea
+  ws-opts:
+    headers:
+      Host: s173.ayxj.top
+    path: ssp-ws
+- alterId: 0
+  cipher: auto
   name: 559|美国_0528212740
   network: ''
   port: '18000'
@@ -18174,31 +18077,17 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
-  cipher: auto
-  name: 559|美国_0528212735
-  network: ws
-  port: '39495'
-  server: 129.146.77.248
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  ws-opts:
-    headers:
-      Host: ''
-    path: /cctv13.m3u8
+  name: '574|🇺🇸US美国6 #1'
+  password: trojan
+  port: 2087
+  server: 22b.net
+  skip-cert-verify: true
+  sni: store.timimi.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
-  cipher: auto
-  name: 559,580|未知 VMESS-1087 | free-nodes
-  network: tcp
-  port: 18000
-  server: 169.197.142.22
-  servername: null
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  name: 574|🇺🇸US美国13
+  name: 574|🇸US美国15
   password: BxceQaOe
   port: 2702
   server: 43.206.155.159
@@ -19232,6 +19121,18 @@ proxies:
     headers:
       Host: a.prapt1.ir
     path: /?ed=2048&Telegram🇨🇳
+- name: '579,582|🇺🇸 美国 CloudFlare节点 #6'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.32.47
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
 - alterId: 0
   cipher: none
   name: 584|🇸 hg-US-Google_LLC
