@@ -841,17 +841,6 @@ proxies:
   skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
-- country: 🇸🇬SG
-  delay: 1892
-  name: 306,378,502,528,536,537,559|新加坡_052805556
-  password: d30ab83dbde4480082048fb315bedebd
-  port: 443
-  server: 5.180.78.22
-  skip-cert-verify: true
-  sni: 5.180.78.22
-  tls: true
-  type: trojan
-  udp: true
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: tj
@@ -1770,7 +1759,8 @@ proxies:
       Host: westsg2-ddns.oraclenat.cc
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇸🇬SG-154.18.239.126-0143 | 0.1...
+  country: 🇺🇸 US
+  name: 378,435,537,538|🇸🇬SG-154.18.239.126-0143 | 0.1...
   password: eLPlIVuRZ6UJyapVDeT++l7fYC0uowXJFlb9qhntAd4=
   port: 37425
   server: 154.18.239.126
@@ -1841,6 +1831,14 @@ proxies:
   uuid: a5c804aa-8a4d-4fd2-97a1-4f0cc1384953
   ws-opts:
     path: /hkaa0
+- name: '378,536,537,559|11,12|新加坡3|@ripaojiedian #3'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 140.235.140.105
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - alterId: 1
   cipher: auto
   name: '378,536,537,559|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #30'
@@ -2018,6 +2016,16 @@ proxies:
   uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc
   ws-opts:
     path: /
+- country: 🇸🇬SG
+  delay: 1892
+  name: 378,528,536,537,559|新加坡_052805556
+  password: d30ab83dbde4480082048fb315bedebd
+  port: 443
+  server: 5.180.78.22
+  skip-cert-verify: true
+  sni: 5.180.78.22
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: '378,537|🇬SG-13.214.212.124-1777 #1'
   password: amazonskr05
@@ -2385,18 +2393,22 @@ proxies:
     headers:
       Host: ''
     path: /anti13.zingfast.vn
-- name: '378,436,536,537|🇸🇬SG-54.169.245.181-4515 #2'
+- country: 🇬BG
+  name: '378,435,436,536,537|🇸🇬SG-54.169.245.181-4515 #2'
   password: IL37892054
   port: 443
   server: engaged-ram.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-54.254.42.84-4590 #1'
+  udp: true
+- country: 🇺🇸US
+  name: '378,435,536,537|🇬SG-54.254.42.84-4590 #1'
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   port: 20000
   server: starlink-sg2.mfa.cat
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: '378,537|SG-139.99.68.21-5129 #1'
   password: zDNVedRFPQexG9v
@@ -3098,23 +3110,10 @@ proxies:
     path: /
   ws-path: /
 - name: 436|🇸🇬SG_60
-  password: d30ab83dbde4480082048fb315bedebd
-  port: 443
-  server: 5.180.78.22
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 23779
+  server: 149.129.91.58
   type: trojan
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 438,502,551,559|🇸🇬 新加坡 111
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: fS59W37_i8457GqkbB9_kdCfLCtWbl14qmVRnm2ty2I
-    short-id: 2da4299da566b7
-  server: 84.32.22.143
-  servername: maps.apple.com
-  tls: true
-  type: vless
-  uuid: 91a3f712-c4e0-42a0-9475-bdd551a06e73
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 438,559|🇸🇬 新加坡-BCB25492
@@ -3128,19 +3127,22 @@ proxies:
   tls: false
   type: vless
   uuid: 20ae58df-d562-40b3-908c-21b4881315d4
-- client-fingerprint: chrome
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: '438,507,559|未知 VLESS-718 | free-nodes #1'
-  network: raw
-  port: 35308
+  name: '438,500,502,548,551,559,579,582|🇱🇹 立陶宛 starcorenode.com #2'
+  network: tcp
+  port: 443
   reality-opts:
-    public-key: 4g1kpdmdbN6aNxeBYMj9WherunH9JSXsI_nKZTDiewE
-    short-id: fef8dcb8cafe30
-  server: 18.141.49.252
-  servername: www.tesla.com
-  tls: false
+    public-key: fS59W37_i8457GqkbB9_kdCfLCtWbl14qmVRnm2ty2I
+    short-id: 2da4299da566b7
+  server: 84.32.22.143
+  servername: maps.apple.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vless
-  uuid: 779d227c-f7be-4b9d-a4a9-1197c734b4e7
+  udp: true
+  uuid: 91a3f712-c4e0-42a0-9475-bdd551a06e73
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -5208,7 +5210,7 @@ proxies:
   type: anytls
   udp: true
 - encryption: none
-  name: '489,502,523,524,559,717|SG【机场推荐：https://a9a.xyz】42 #2'
+  name: 489,502,523,524,559,717|SG【机场推荐：https://a9a.xyz】17
   network: tcp
   port: 24974
   server: 47.82.177.57
@@ -5368,25 +5370,17 @@ proxies:
       Host: 9f212577fc1fa9a13ccf657f03a1a20f.mobgslb.tbcache.com
     path: /
   xudp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '502,559|B - 🇸🇬 SG 07 TG: @nodpai'
-  port: 443
-  server: sg.hsyun.top
-  servername: www.propertyguru.com.sg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 231a569a-55f0-4d31-94ac-dbe4bed3efdb
-- name: '502,559|C - 🇸🇬 SG 11 TG: @nodpai'
+- name: 502|🇸🇬SG_1|3.9MB/s
   network: ws
-  port: 20378
-  server: sgc.tdz-server.store
+  port: 8880
+  server: 188.164.248.30
   tls: false
   type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    path: /@TuhinBroh
+    headers:
+      Host: vms.lifetime26.workers.dev
+    path: /?https://t.me/YouTube@小青科学网🇨🇳
 - name: 507,559,580|SG VLESS-304 | free-nodes
   network: ws
   port: 2052
@@ -5542,7 +5536,7 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 551|🇸🇬SG_1|3.9MB/s
+- name: '551|🇸🇬SG_1|3.9MB/s #1'
   network: ws
   port: 8880
   server: 188.164.248.30
@@ -5552,7 +5546,7 @@ proxies:
   ws-opts:
     headers:
       Host: vms.lifetime26.workers.dev
-    path: /?https://t.me/YouTube@🇨🇳
+    path: /?https://t.me/YouTube@
 - name: 553|🇸🇬新加坡_5ac40
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -5842,6 +5836,16 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
+  name: '559|B - 🇸🇬 SG 07 TG: @nodpai'
+  port: 443
+  server: sg.hsyun.top
+  servername: www.propertyguru.com.sg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 231a569a-55f0-4d31-94ac-dbe4bed3efdb
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 559|新加坡SG-20042
   network: tcp
   port: 20042
@@ -5876,6 +5880,15 @@ proxies:
     headers:
       Host: sni.latonyamadeline.ndjp.net
     path: '%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3'
+- name: '559|C - 🇸🇬 SG 11 TG: @nodpai'
+  network: ws
+  port: 20378
+  server: sgc.tdz-server.store
+  tls: false
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    path: /@TuhinBroh
 - name: 559|🇸🇬 新加坡-7E2DF098
   network: ws
   port: 443
@@ -5902,6 +5915,16 @@ proxies:
     headers:
       Host: juzi8186.qea.ccwu.cc
     path: '%2Ftv%2Fjuzibaipiao%3Fed%3D2560'
+- alterId: 0
+  name: 574|🇬SG新加坡3
+  password: BxceQaOe
+  port: 39756
+  server: 35.78.121.219
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '577|新加坡NO.1 #4'

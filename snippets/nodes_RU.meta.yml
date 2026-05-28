@@ -57,21 +57,20 @@ proxies:
     path: '%2F'
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '340,438,500,502,514,523,524,551,559,566,567,579,580,582,585,586|RU_speednode_0043
+  name: '340,438,502,507,514,523,524,551,559,566,567,580,585,586|RU_speednode_0043
     #3'
-  network: tcp
+  network: raw
   port: 443
   server: 85.234.114.53
   servername: r1.mizulina.top
   skip-cert-verify: false
-  tfo: false
   tls: true
   type: vless
   udp: true
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '340,438,502,514,523,524,551,559,566,567,585,586|RU_speednode_0044 #3'
+  name: '340,502,507,514,523,524,551,559,566,567,585,586|RU_speednode_0044 #3'
   network: tcp
   port: 22231
   server: 85.234.114.53
@@ -83,7 +82,7 @@ proxies:
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - client-fingerprint: randomized
   flow: xtls-rprx-vision
-  name: '340,438,472,473,474,502,514,551,559,566,567,585,586|RU_speednode_0045 #3'
+  name: '340,502,514,551,559,566,567,585,586|RU_speednode_0045 #3'
   network: tcp
   port: 443
   reality-opts:
@@ -626,25 +625,15 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: 436,559|🇷🇺RU_69
+- country: 🇺RU
+  name: 435,436,559|🇷🇺RU_69
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
+  skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438,507,559,580|未知 VLESS-902 | free-nodes #3'
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: YJBjpcuIbJ02pKPB2BMI64i_29nMBTI9jo2gdLX8zQg
-    short-id: 16ab14
-  server: 130.49.219.124
-  servername: dl.google.com
-  tls: false
-  type: vless
-  uuid: d4ca8f1f-45b2-486c-8944-b6524887e656
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 438,523,524,559|🏁 未知-82481376
@@ -659,19 +648,32 @@ proxies:
   type: vless
   udp: true
   uuid: 6fd9f786-d974-49d0-b5c4-397678de69a2
-- client-fingerprint: randomized
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,551|B - 🇷🇺 RU 04 TG: @nodpai'
+  name: '438,559|B - 🇷🇺 RU 02 TG: @nodpai #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: tMEkGmuOsuS_cgZYpj2UYBKnni559FZd-poGnH82ck8
+    short-id: bfb7cb31
+  server: 109.122.198.76
+  servername: www.icloud.com
+  tls: true
+  type: vless
+  uuid: 18afb896-6e4b-403b-b804-714b09b517e5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,551|B - 🇷🇺 RU 04 TG: @nodpai #1'
   network: tcp
   port: 443
   reality-opts:
     public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
     short-id: c1a7e9b4711d5f60
-  server: 193.168.46.180
+  server: 193.168.46.180-ia1nrwec.nike77prime.ru
   servername: rruu.persik.host
   tls: true
   type: vless
-  uuid: 717516f9-7416-4751-a4a1-20e63a50f71a
+  uuid: 3d48f115-144a-4275-96bf-8ff67c330ce4
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1441,7 +1443,34 @@ proxies:
       Host: ''
     path: /
 - client-fingerprint: chrome
-  name: '472,473,474,507,523,524,559|未知 VLESS-598 | free-nodes #1'
+  name: '472,473,474,507,559|未知 VLESS-570 | free-nodes #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: tWRR3W8jBAQKBUujLzL7Xri3WXy3F08OxHYrkSOnlAc
+    short-id: 52a6
+  server: 147.45.145.127
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 534cbbe2-cc36-4f2d-8fb0-90410e7148c9
+- client-fingerprint: chrome
+  name: 500,523,524,548|🇷🇺 俄罗斯 starcorenode.com
+  network: tcp
+  port: 16622
+  reality-opts:
+    public-key: E5N_ckakvqgTOjiQ6Rmuwz1fchiT1-J3tH4cbzcH_GQ
+    short-id: 1c01d60ea915
+  server: 77.73.238.191
+  servername: yahoo.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f2e9df1b-e0ba-4b37-a301-6aab8662c926
+- client-fingerprint: chrome
+  name: '502,507,523,524,559|未知 VLESS-598 | free-nodes #1'
   network: raw
   port: 19562
   reality-opts:
@@ -1454,50 +1483,57 @@ proxies:
   udp: true
   uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
 - client-fingerprint: chrome
-  name: '502,523,524|🇱🇻 拉脱维亚 85 #1'
+  name: 502,507,523,524,559|🇫🇷 法国 35
   network: tcp
-  port: 16622
+  port: 443
   reality-opts:
-    public-key: E5N_ckakvqgTOjiQ6Rmuwz1fchiT1-J3tH4cbzcH_GQ
-    short-id: 1c01d60ea915
-  server: 77.73.238.191
+    public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+    short-id: b8aa
+  server: 194.226.169.36
   servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f2e9df1b-e0ba-4b37-a301-6aab8662c926
-- name: '502|A - 🇷🇺 RU 02 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 176.124.223.30
   tls: false
   type: vless
+  udp: true
+  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
+- name: '502,523,524|🇷🇺 俄罗斯 441 #1'
+  network: ws
+  port: 8880
+  server: 45.67.215.30
+  tls: false
+  type: vless
+  udp: true
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: vms.lifetime38.workers.dev
+      Host: vms.lifetime48.workers.dev
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '502,559|B - 🇷🇺 RU 02 TG: @nodpai #1'
+  name: '502,551|B - 🇷🇺 RU 02 TG: @nodpai #1'
   port: 443
-  server: 109.122.198.76
-  servername: www.icloud.com
+  server: 193.168.46.180
+  servername: rruu.persik.host
   tls: true
   type: vless
-  uuid: 18afb896-6e4b-403b-b804-714b09b517e5
-- client-fingerprint: chrome
+  uuid: e30d8712-00f5-4223-873e-47e31d4fda17
+- client-fingerprint: randomized
   flow: xtls-rprx-vision
-  name: 502,559|🏁 未知-FDE3AD0F
-  network: tcp
+  name: '502|B - 🇷🇺 RU 04 TG: @nodpai'
   port: 443
-  reality-opts:
-    public-key: RpM3WEYiP4xbmvoe1sfnGBmtW9ZIaKARcf5JJvqSsxQ
-    short-id: 8a5fa3d7e3de8557
-  server: ru4.easyserf.top
-  servername: ''
-  tls: false
+  server: 193.168.46.180
+  servername: rruu.persik.host
+  tls: true
   type: vless
-  uuid: 79f063dd-77bd-4a40-854a-67870be42175
+  uuid: 717516f9-7416-4751-a4a1-20e63a50f71a
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision-udp443
+  name: '502,551|B - 🇷🇺 RU 01 TG: @nodpai'
+  port: 443
+  server: 213.108.2.130
+  servername: cloudflare.com
+  tls: true
+  type: vless
+  uuid: 5e8ee155-0962-4307-98f2-b65f6bbbd5bb
 - name: 507,559,580|RU VLESS-446 | free-nodes
   network: ws
   port: 443
@@ -1703,18 +1739,6 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
-- name: '523,524,551|B - 🇷🇺 RU 02 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 45.67.215.30
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime48.workers.dev
-    path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺RU
   delay: 562
@@ -1819,24 +1843,6 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: X%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '551|B - 🇷🇺 RU 03 TG: @nodpai'
-  port: 443
-  server: 193.168.46.180
-  servername: rruu.persik.host
-  tls: true
-  type: vless
-  uuid: e30d8712-00f5-4223-873e-47e31d4fda17
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '551|B - 🇷🇺 RU 05 TG: @nodpai'
-  port: 443
-  server: 213.108.2.130
-  servername: cloudflare.com
-  tls: true
-  type: vless
-  uuid: 5e8ee155-0962-4307-98f2-b65f6bbbd5bb
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1873,7 +1879,7 @@ proxies:
   port: 50824
   server: yespaintstudio.rav-kraski.ru
   type: trojan
-- name: 559|🇷🇺 俄罗斯 starcorenode.com
+- name: '559|🇷🇺 俄罗斯 starcorenode.com #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 443
   server: 185.106.95.125
