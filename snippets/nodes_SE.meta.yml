@@ -151,29 +151,7 @@ proxies:
   port: 989
   server: 121.127.46.147
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438,507,523,524,559,580|未知 VLESS-309 | free-nodes #2'
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: mO8C8IMouuBMVJA63JnS4xcdY7knrc7Hg_IclJR_MnE
-    short-id: '75'
-  server: 89.125.37.77
-  servername: www.nvidia.com
-  tls: false
-  type: vless
-  udp: true
-  uuid: 027ddfdf-59c3-4cce-b75a-d6cec7ace390
-- name: 438,507,523,524,559|🇸🇪 瑞典 330
-  network: tcp
-  port: 54346
-  server: 89.22.236.213
-  tls: false
-  type: vless
-  udp: true
-  uuid: 1e865d4f-dfc3-5cae-bc29-344e2c971900
-- name: '438,507,523,524,559|未知 VLESS-864 | free-nodes #1'
+- name: 438,507,523,524,559|未知 VLESS-864 | free-nodes
   network: raw
   port: 54346
   server: 89.22.236.213
@@ -215,35 +193,32 @@ proxies:
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 500|[Trojan] 🇸🇪 瑞典 V2CROSS.COM
-  network: ws
-  password: rYuChHcwQZskq9E0zdoR
-  port: 443
-  server: 193.180.209.21
-  skip-cert-verify: true
-  sni: vpn5.rnmcnm.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vpn5.rnmcnm.com
-    path: /ws-79dffb8106db
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 502,523,524,551,559|🇸🇪 瑞典 150
+  name: '502,523,524,559,579,582|🇬🇧 英国 South Cheshire College #1'
+  network: tcp
   port: 443
   reality-opts:
     public-key: 56RJlIcxwncUs5m9QSfd3waHxm6vJFBKso5IkMSsyCA
     short-id: 5d
   server: 194.238.57.104
   servername: www.icloud.com
-  tls: false
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vless
   udp: true
   uuid: 8046e3a1-83a7-4155-86e4-374153fe66f3
+- name: 523,524,559|🇸🇪 瑞典 330
+  port: 54346
+  server: 89.22.236.213
+  tls: false
+  type: vless
+  udp: true
+  uuid: 1e865d4f-dfc3-5cae-bc29-344e2c971900
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 523,524,559|🇸🇪 瑞典 452
+  name: 523,524,553,559|🇸🇪 瑞典 452
   port: 443
   reality-opts:
     public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
@@ -263,6 +238,13 @@ proxies:
   type: trojan
   ws-opts:
     path: /trTelegram🇨🇳+@WangCai2
+- name: 553|🇸🇪瑞典_d821d
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 45.91.171.116
+  sni: sto.freeguard.org
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: 559|🇸🇪 瑞典 60
   port: 17625
@@ -274,6 +256,17 @@ proxies:
   tls: true
   type: vless
   uuid: 24d67aba-049e-4a31-b7f3-c0ecf3ebcdee
+- client-fingerprint: chrome
+  name: 559|🇸🇪 瑞典 247
+  port: 23164
+  reality-opts:
+    public-key: XoIxfrtYaItQL-X_zvZqTcCHBF3_LhIiptW9ph3Rgjs
+    short-id: '62'
+  server: 77.110.121.202
+  servername: teamdocs.su
+  tls: false
+  type: vless
+  uuid: 340e4d5f-a117-427c-8373-eb89439d32b5
 - name: 559|🇸🇪 Sweden, Stockholm | 🌐 | [BL...
   network: xhttp
   port: 11111
