@@ -406,7 +406,7 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - alterId: 4
   cipher: auto
-  name: '378,536,537|FR-104.166.135.10-0083 #1'
+  name: '378,494,536,537|FR-104.166.135.10-0083 #1'
   network: ws
   port: 443
   server: 104.166.135.10
@@ -420,14 +420,15 @@ proxies:
       Host: ahdaeph8.com
     path: /ws
 - cipher: aes-256-gcm
-  name: 378,537,538|🇫🇷FR-51.254.128.106-4576 | 0.1...
+  country: 🇷FR
+  name: 378,435,537,538|🇫🇷FR-51.254.128.106-4576 | 0.1...
   password: FjG3IPbny+0ZYU4/p1vULP84GcKpGoZpWKAay16VhIw=
   port: 2083
   server: 51.254.128.106
   type: ss
 - alterId: 4
   cipher: auto
-  name: 378,536,537,538|🇫🇷FR-104.166.135.10-0083 | 0.0...
+  name: 378,494,536,537,538|🇫🇷FR-104.166.135.10-0083 | 0.0...
   network: ws
   port: 443
   server: 104.166.135.10
@@ -812,7 +813,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-51.77.158.169-3575 #1'
+  name: '378,494,536,537|🇷FR-51.77.158.169-3575 #1'
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -1013,7 +1014,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-146.59.55.50-6574 #1'
+  name: '378,494,536,537|🇷FR-146.59.55.50-6574 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1737,7 +1738,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '423,424,425|法国FR-A #3'
+  name: '425|法国FR-A #1'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1691
   server: 5.135.5.130
@@ -1747,7 +1748,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,523,524,559|🇫🇷 法国 171 #2'
+  name: '438,494,523,524,559|🇫🇷 法国 171 #2'
   network: tcp
   port: 23576
   reality-opts:
@@ -1761,7 +1762,7 @@ proxies:
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,559,580|未知 VLESS-500 | free-nodes #1'
+  name: '438,494,559,580|未知 VLESS-500 | free-nodes #1'
   network: raw
   port: 20567
   reality-opts:
@@ -1772,8 +1773,11 @@ proxies:
   tls: false
   type: vless
   uuid: 40bf709c-4353-4552-ba26-406d2bf7821d
+  ws-opts:
+    headers:
+      Host: '@ProxyVPN11'
 - client-fingerprint: chrome
-  name: '438,507,559,580|未知 VLESS-453 | free-nodes #1'
+  name: '438,494,507,559,580|未知 VLESS-453 | free-nodes #1'
   network: raw
   port: 443
   reality-opts:
@@ -1784,7 +1788,7 @@ proxies:
   tls: false
   type: vless
   uuid: 391ff971-a901-415e-b0f1-e0c0047e7a24
-- name: 438,472,473,474,507,523,524,559|法国_053119017
+- name: 438,494,523,524,559|法国_053119017
   network: tcp
   password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
   port: 443
@@ -2046,23 +2050,6 @@ proxies:
   type: vmess
   udp: true
   uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
-- client-fingerprint: chrome
-  name: 523,524,559,580|未知 VLESS-590 | free-nodes
-  port: 8443
-  server: cdg-1.fromblancwithlove.com
-  servername: cdg-1.fromblancwithlove.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55f7d143-a594-4a91-b030-f227039f85ef
-- name: '523,524,559|🇫🇷 法国 150 #2'
-  port: 8443
-  server: 79.127.196.11
-  servername: cdg-1.fromblancwithlove.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55f7d143-a594-4a91-b030-f227039f85ef
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '523,524,559|🇫🇷 法国 178 #2'
@@ -2333,40 +2320,6 @@ proxies:
     path: '%2Fws'
 - alterId: 0
   cipher: auto
-  name: 559|法国_053119031
-  network: tcp
-  port: '2052'
-  server: 51.195.235.71
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 59e28f78-c31b-4613-9d9f-1e6732a31f46
-- alterId: 0
-  cipher: auto
-  name: 559,580|未知 VMESS-1324 | free-nodes
-  network: ws
-  port: '8443'
-  server: 57.131.32.191
-  servername: OV-Italy1.09vpn.com
-  tls: true
-  type: vmess
-  uuid: 848af33c-81f2-40c9-93b2-4681d056936b
-  ws-opts:
-    headers:
-      Host: OV-Italy1.09vpn.com
-    path: /vmess/
-- alterId: 0
-  cipher: auto
-  name: 559|法国_053119363
-  network: tcp
-  port: '2053'
-  server: uk5.taskflowhub.org
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 89371dfc-2618-40d7-a558-693ff4f7f1eb
-- alterId: 0
-  cipher: auto
   name: 559|法国_053119362
   network: tcp
   port: '2053'
@@ -2375,16 +2328,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 79e33f2e-6f88-4867-b311-844198e59270
-- alterId: 0
-  cipher: auto
-  name: 559|法国_053119032
-  network: tcp
-  port: '2053'
-  server: node-fr.connectsuite.org
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 2f4234f9-8f33-4c7f-952f-565ffa5f5fb7
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
