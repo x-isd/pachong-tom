@@ -130,7 +130,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 356,580|未知 VMESS-1407 | free-nodes
+  name: 356,580|未知 VMESS-1744 | free-nodes
   network: ws
   port: 2082
   server: 5.196.29.123
@@ -360,7 +360,7 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - alterId: 4
   cipher: auto
-  name: '378,494,536,537|FR-104.166.135.10-0083 #1'
+  name: '378,536,537|FR-104.166.135.10-0083 #1'
   network: ws
   port: 443
   server: 104.166.135.10
@@ -375,14 +375,14 @@ proxies:
     path: /ws
 - cipher: aes-256-gcm
   country: 🇷FR
-  name: 378,435,537,538|🇫🇷FR-51.254.128.106-4576 | 0.1...
+  name: 378,440,537,538|🇫🇷FR-51.254.128.106-4576 | 0.1...
   password: FjG3IPbny+0ZYU4/p1vULP84GcKpGoZpWKAay16VhIw=
   port: 2083
   server: 51.254.128.106
   type: ss
 - alterId: 4
   cipher: auto
-  name: 378,494,536,537,538|🇫🇷FR-104.166.135.10-0083 | 0.0...
+  name: 378,536,537,538|🇫🇷FR-104.166.135.10-0083 | 0.0...
   network: ws
   port: 443
   server: 104.166.135.10
@@ -767,7 +767,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-51.77.158.169-3575 #1'
+  name: '378,536,537|🇷FR-51.77.158.169-3575 #1'
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -968,7 +968,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-146.59.55.50-6574 #1'
+  name: '378,536,537|🇷FR-146.59.55.50-6574 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1676,16 +1676,28 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 438,494,523,524,559|法国_053119017
-  network: tcp
-  password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
+- name: '438|🇫🇷FR_2|1.9MB/s | 福利姬: https://...'
+  network: ws
+  password: humanity
   port: 443
-  server: 217.69.2.107
-  skip-cert-verify: false
-  sni: www.weavenet.click
-  tls: true
+  server: 104.20.6.134
+  sni: www.calmloud.com
   type: trojan
-  udp: true
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2F%252Fassignment'
+- name: '438|🇫🇷FR_3|1.9MB/s | 更多节点: https:/...'
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.64.152.23
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2F%252Fassignment'
 - alterId: 0
   cipher: auto
   name: 461|法国_马赛
@@ -1819,6 +1831,16 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳+@WangCai2
+- name: 502,523,524,559,580|未知 TROJAN-220 | free-nodes
+  network: raw
+  password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
+  port: 443
+  server: 217.69.2.107
+  skip-cert-verify: false
+  sni: www.weavenet.click
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '523,524|🇫🇷 法国 128 #1'
@@ -2009,20 +2031,6 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 553|🇫🇷法国_5e1d3
-  password: WF42809561
-  port: 443
-  server: tough-pigeon.rooster465.autos
-  sni: tough-pigeon.rooster465.autos
-  type: trojan
-  udp: true
-- name: 553|🇫🇷法国_719cc
-  password: WF42809561
-  port: 443
-  server: lucky-marmot.rooster465.autos
-  sni: lucky-marmot.rooster465.autos
-  type: trojan
-  udp: true
 - name: 559|🌐 Anycast-IP | 🇫🇷 🇮🇪 🇮🇶 | [BL]
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -2037,7 +2045,27 @@ proxies:
     path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
 - alterId: 0
   cipher: auto
-  name: 559|法国_053119362
+  name: 559,580|未知 VMESS-1617 | free-nodes
+  network: tcp
+  port: '2052'
+  server: 51.195.235.71
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 59e28f78-c31b-4613-9d9f-1e6732a31f46
+- alterId: 0
+  cipher: auto
+  name: 559|法国_060104356
+  network: tcp
+  port: '2053'
+  server: uk5.taskflowhub.org
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 89371dfc-2618-40d7-a558-693ff4f7f1eb
+- alterId: 0
+  cipher: auto
+  name: 559|法国_060104355
   network: tcp
   port: '2053'
   server: it.connfull.org
@@ -2045,6 +2073,16 @@ proxies:
   tls: true
   type: vmess
   uuid: 79e33f2e-6f88-4867-b311-844198e59270
+- alterId: 0
+  cipher: auto
+  name: 559|法国_060104354
+  network: tcp
+  port: '2053'
+  server: node-fr.connectsuite.org
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 2f4234f9-8f33-4c7f-952f-565ffa5f5fb7
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
