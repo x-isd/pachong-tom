@@ -557,12 +557,19 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 435|🇺RU_85
+  password: Lp27rqyJq72bZsqX
+  port: 9045
+  server: 217.30.10.70
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇺RU
   h2-opts: {}
   http-opts: {}
-  name: '435,437,507,559,580|未知 VMESS-112 | free-nodes #1'
+  name: 435,437,507,559,580|未知 VMESS-112 | free-nodes
   network: tcp
   port: 22324
   server: 213.156.141.52
@@ -573,7 +580,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   ws-path: /
 - country: 🇺RU
-  name: 435,436,559|🇷🇺RU_86
+  name: '435,436,559|🇷🇺RU_86 #1'
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
@@ -1351,8 +1358,8 @@ proxies:
     path: /
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '475,480,494,502,519,523,524,551,559,566,567,579,580,582,585,586|RU_speednode_0040
-    #2'
+  name: '475,480,494,502,514,519,523,524,551,559,566,567,579,580,582,585,586|RU_speednode_0040
+    #3'
   network: tcp
   port: 443
   server: 85.234.114.53
@@ -1373,18 +1380,24 @@ proxies:
   server: ru.safepass.click
   type: ss
   udp: true
-- name: '502,579,582|🇷🇺 俄罗斯 starcorenode.com 2 #1'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,507,514,551,559,567,580,585,586|RU_speednode_0042 #3'
   network: tcp
   port: 443
-  server: 109.120.138.95
+  reality-opts:
+    public-key: c9eCHF41FReFLIdarpg8M5edw4_E133EJBzrvYS02Ck
+    short-id: cd9a5f0edff48da4
+  server: 213.108.2.130
+  servername: cloudflare.com
   skip-cert-verify: false
-  tfo: false
-  tls: false
+  tls: true
   type: vless
-  uuid: c2b6a323-19ec-4e4f-a95c-8b0e99aa7660
+  udp: true
+  uuid: 5e8ee155-0962-4307-98f2-b65f6bbbd5bb
 - alpn:
   - h3
-  name: '507,559|RU HY2-193 | free-nodes #1'
+  name: 507,559|RU HY2-193 | free-nodes
   password: 205d6869-02ca-3b36-b933-be2465250c7e
   port: 443
   server: 139.84.155.186
@@ -1397,7 +1410,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|RU VLESS-208 | free-nodes #1'
+  name: 507,559|RU VLESS-208 | free-nodes
   network: xhttp
   port: 443
   server: 139.84.155.186
@@ -1628,6 +1641,15 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: '579,582|🇷🇺 俄罗斯 starcorenode.com 2 #1'
+  network: tcp
+  port: 443
+  server: 109.120.138.95
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: c2b6a323-19ec-4e4f-a95c-8b0e99aa7660
 - name: 728|🇷🇺 俄罗斯1
   password: 升级订阅解锁全部节点
   port: 10110
