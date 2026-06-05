@@ -1329,14 +1329,14 @@ proxies:
   server: 57.180.246.231
   type: ss
 - cipher: aes-128-gcm
-  country: 🇸US
+  country: 🇺US
   name: 356,357,378,435,537,538|🇯🇵JP-149.22.87.240-0148 | 16.6...
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
 - cipher: aes-128-gcm
-  country: 🇸US
+  country: 🇺US
   name: 356,357,378,435,537,538|🇯🇵JP-149.22.87.241-0146 | 15.5...
   password: shadowsocks
   port: 443
@@ -2358,12 +2358,14 @@ proxies:
   server: 103.106.228.175
   type: ss
 - cipher: aes-256-gcm
-  name: 378,537,538|🇯🇵JP-47.79.144.115-4681 | 14.3...
+  country: 🇸 US
+  name: 378,435,537,538|🇯🇵JP-47.79.144.115-4681 | 14.3...
   password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
   port: 40003
   server: 47.79.144.115
   type: ss
-- name: '378,507,536,537,538,548,559|未知 TROJAN-19 | free-nodes #1'
+- name: '378,502,507,536,537,538,559|未知 TROJAN-19 | free-nodes #1'
+  network: tcp
   password: E_hUHrn0+6VeZO=v9=fLgoPDXZWGfcrejg
   port: 443
   server: 172.238.19.11
@@ -3086,7 +3088,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- country: 🇬🇧GB
+- country: 🇧GB
   name: '378,435,436,536,537|🇵JP-52.195.12.80-4628 #1'
   password: IL37892054
   port: 443
@@ -3102,7 +3104,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: 🇸US
+- country: 🇺🇸US
   name: '378,435,537|🇵JP-64.176.36.61-4695 #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -3532,6 +3534,26 @@ proxies:
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   ws-path: /
+- name: '438|🇯🇵JP_2|1.4MB/s | 网盘搜宝: https:/...'
+  password: 1c65bee4-bc54-364c-8988-6a5912fda891
+  port: 443
+  server: 38.54.50.210
+  sni: u723829us1456.csgfw.top
+  tls: false
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: '438|🇯🇵JP_3|1.1MB/s | 更多节点: https:/...'
+  network: ws
+  port: '80'
+  server: 168.138.43.75
+  tls: false
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: jp01.a0a.xyz
+    path: /cctv13.m3u8
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -4864,6 +4886,24 @@ proxies:
   tls: false
   type: hysteria2
 - alpn:
+  - ''
+  client-fingerprint: random
+  flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507,559|JP VLESS-153 | free-nodes
+  network: xhttp
+  port: 443
+  server: 38.54.50.210
+  servername: u723829us1455.csgfw.top
+  tls: true
+  type: vless
+  uuid: 1c65bee4-bc54-364c-8988-6a5912fda891
+  ws-opts:
+    headers:
+      Host: s1455.csgfw.top
+    path: ssp-xhttp
+- alpn:
   - h3
   name: 507,559|美国_0605203061
   password: 1c65bee4-bc54-364c-8988-6a5912fda891
@@ -4878,7 +4918,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-173 | free-nodes #1'
+  name: 507,559|JP VLESS-173 | free-nodes
   network: tcp
   port: 443
   server: 38.54.56.26
@@ -4896,7 +4936,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-189 | free-nodes #1'
+  name: 507,559|JP VLESS-189 | free-nodes
   network: xhttp
   port: 443
   server: 108.160.134.123
@@ -5329,7 +5369,7 @@ proxies:
   sni: vps-orange-jpn.maze-maker.com
   tls: false
   type: hysteria2
-- name: 559|🇯🇵JP_61
+- name: '559|🇯🇵JP_61 #1'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
@@ -5424,7 +5464,7 @@ proxies:
       Host: jp02.a0a.xyz
     path: /cctv13.m3u8
 - alterId: 0
-  name: 574|JP
+  name: 574|🇵JP日本3
   password: BxceQaOe
   port: 24370
   server: 95.40.84.43
