@@ -23,6 +23,21 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '127,426|🇷🇺 NL_1|2.5MB/s|GPT⁺|YT-RU|NF|... #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mk-fkkWvUHz2ubIOkr8kfDeglXowdCI3Z4OssjWIIwg
+    short-id: 2b145d99dc39e2cc
+  server: nl-1.rknzaebalyzhe.com
+  servername: nl-1.rknzaebalyzhe.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 3c3c3969-b06a-43ff-ad1e-11621c542946
 - cipher: aes-256-gcm
   name: '306,378,489,537|🇷🇺RU-46.29.163.200-0732 #1'
   password: 32c0ea6e823341a2
@@ -32,7 +47,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,472,473,474,475,480,494,502,507,514,523,524,551,559,566,567,580,585,586|RU_speednode_0039
+  name: '340,438,472,473,474,475,480,494,502,507,514,523,524,551,559,566,567,580,585,586|RU_speednode_0039
     #3'
   network: tcp
   port: 22231
@@ -48,14 +63,13 @@ proxies:
       Host: r1.mizulina.top
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '340,475,480,494,502,514,519,523,524,548,551,559,566,567,580,585,586|RU_speednode_0040
+  name: '340,438,475,480,494,502,514,519,523,524,551,559,566,567,580,585,586|RU_speednode_0040
     #3'
   network: tcp
   port: 443
   server: 85.234.114.53
   servername: r1.mizulina.top
   skip-cert-verify: false
-  tfo: false
   tls: true
   type: vless
   udp: true
@@ -64,7 +78,7 @@ proxies:
     path: '%2F'
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '340,475,478,480,483,489,494,502,514,522,523,524,548,551,559,566,567,580,581,585,586|RU_speednode_0043
+  name: '340,438,472,473,474,475,478,480,483,489,494,502,514,522,523,524,548,551,559,566,567,580,581,585,586|RU_speednode_0043
     #3'
   network: tcp
   port: 22231
@@ -72,6 +86,7 @@ proxies:
   server: 85.234.114.53
   servername: r1.mizulina.top
   skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   udp: true
@@ -337,7 +352,7 @@ proxies:
     path: /fr-unlimitxxx
 - alterId: 0
   cipher: auto
-  name: 378,494,507,523,524,537,559,580|俄羅斯
+  name: 378,507,523,524,537,559,580|俄羅斯
   network: ws
   port: '443'
   server: renderer-stream-1-411.mirra.now
@@ -651,35 +666,6 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 426|🇷🇺 NL_1|2.5MB/s|GPT⁺|YT-RU|NF|...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: mk-fkkWvUHz2ubIOkr8kfDeglXowdCI3Z4OssjWIIwg
-    short-id: 2b145d99dc39e2cc
-  server: nl-1.rknzaebalyzhe.com
-  servername: nl-1.rknzaebalyzhe.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 3c3c3969-b06a-43ff-ad1e-11621c542946
-- cipher: aes-256-cfb
-  country: 🇺RU
-  name: 435|RU_84
-  password: fG2artUmHfNT2cX7
-  port: 9018
-  server: 217.30.10.70
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 435|🇺RU_85
-  password: p9z5BVADH2YFs3MN
-  port: 9040
-  server: 217.30.10.70
-  type: ss
 - alterId: 0
   cipher: auto
   country: 🇺RU
@@ -704,6 +690,21 @@ proxies:
   sni: kfm-bn0.pages.dev
   type: trojan
   udp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '438,494|Join+Telegram:@Farah_VPN #2475'
+  network: xhttp
+  port: 80
+  server: ru.riotvpn.eu
+  servername: obhod.riotvpn.eu
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: bd78d4ee-c068-4125-94ba-50814578dc41
+  ws-opts:
+    path: /
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1493,17 +1494,6 @@ proxies:
   server: 45.140.169.216
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: '502,548,551|🇭🇺HU_1|2.1MB/s #1'
-  network: tcp
-  port: 8443
-  server: 213.171.24.172
-  servername: cdn7-09.vk-cdnvideo.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
 - alpn:
   - h3
   name: 507,559,580|RU HY2-181 | free-nodes
@@ -1726,18 +1716,10 @@ proxies:
   type: vless
   uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
 - client-fingerprint: chrome
-  name: '559|俄罗斯+V2CROSS.COM #5'
+  name: '559|俄罗斯+V2CROSS.COM #7'
   port: 8443
   server: 82.202.139.238
   servername: cdn3-25.vk-cdnvideo.com
-  tls: true
-  type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- name: 559|🇷🇺 俄罗斯-23224965
-  network: tcp
-  port: 8443
-  server: 82.202.157.230
-  servername: ''
   tls: true
   type: vless
   uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
