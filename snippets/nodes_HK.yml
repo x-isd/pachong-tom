@@ -780,17 +780,19 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '306,378,494,502,514,515,516,536,537,544,551,556,557,559|11,12|香港3|@ripaojiedian
-    #1'
+- alterId: 0
+  name: 306,378,494,502,514,515,516,536,537,544,551,556,557,559,574|HK
   network: tcp
   password: d84665c37878196ecf983cf6910e3b44
   port: 53018
   server: 43.199.71.149
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '306,378,494,502,514,515,516,536,537,544,551,556,557,559|11,12|日本|@ripaojiedian
-    #1'
+    #2'
   network: tcp
   password: BxceQaOe
   port: 9731
@@ -798,44 +800,55 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '306,378,494,502,514,515,516,536,537,544,551,556,557,559|11,12|日本3|@ripaojiedian
-    #1'
+- alterId: 0
+  name: '306,378,494,502,514,515,516,536,537,544,551,556,557,559,574|JP #3'
   network: tcp
   password: d84665c37878196ecf983cf6910e3b44
   port: 37973
   server: 43.199.189.134
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,378,494,502,514,515,516,536,537,544,551,556,557,559|11,12|新加坡2|@ripaojiedian
-    #1'
+  udp: true
+- alterId: 0
+  name: 306,378,494,502,514,515,516,536,537,544,551,556,557,559,574|🇬SG新加坡2
   network: tcp
   password: d84665c37878196ecf983cf6910e3b44
   port: 6357
   server: 18.167.51.169
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,378,494,502,514,515,516,536,537,544,551,556,557,559|11,12|美国2|@ripaojiedian
-    #1'
+  udp: true
+- alterId: 0
+  name: 306,378,494,502,514,515,516,536,537,544,551,556,557,559,574|🇸US美国4
   network: tcp
   password: d84665c37878196ecf983cf6910e3b44
   port: 49277
   server: 43.199.71.149
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
-  name: '306,340,437,454,459,494,502,514,515,516,544,551,557,559|11|🇭🇰 香港|@ripaojiedian
-    #1'
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '306,340,435,437,454,459,494,502,514,515,516,544,551,557,559|11|🇭🇰 香港|@ripaojiedian
+    #2'
   network: tcp
   port: 30807
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - name: 340,536|🇭🇰HK-43.198.226.205-0697
   password: d84665c37878196ecf983cf6910e3b44
   port: 53018
@@ -1641,13 +1654,14 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 378,494,519,536,537,559|🇺🇸US美国7
+- alterId: 0
+  name: 378,494,519,536,537,559,574|🇸US美国17
   password: BxceQaOe
   port: 2702
   server: 95.40.68.150
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: t.me/ripaojiedian
-  tls: false
+  tls: true
   type: trojan
   udp: true
 - alterId: 0
@@ -2383,18 +2397,22 @@ proxies:
   uuid: 1617e875-e377-4e4f-85ef-dcf9e5e10df7
   ws-opts:
     path: /
-- name: '378,436,536,537|🇰HK-185.244.208.59-4349 #1'
+- country: 🇭🇺HU
+  name: '378,435,436,536,537|🇰HK-185.244.208.59-4349 #1'
   password: WF42809561
   port: 443
   server: top-goshawk.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇭🇰HK-185.244.208.52-4351 #1'
+  udp: true
+- country: 🇭🇺HU
+  name: '378,435,436,536,537|🇭🇰HK-185.244.208.52-4351 #1'
   password: IL37892054
   port: 443
   server: just-alpaca.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: rc4-md5
   name: '378,537|🇰HK-43.255.119.21-4428 #1'
   obfs: tls1.2_ticket_auth
@@ -3279,7 +3297,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇭🇰HK-47.243.251.240-6467 #1'
+  name: '378,536,537|🇭🇰HK-47.243.251.240-6467 #1'
   network: ws
   port: 14382
   server: 47.243.251.240
@@ -3879,7 +3897,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇰HK-47.86.43.91-6629 #1'
+  name: '378,536,537|🇰HK-47.86.43.91-6629 #1'
   network: ws
   port: 20521
   server: 47.86.43.91
@@ -4232,7 +4250,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇭🇰HK-156.224.57.248-6714 #1'
+  name: '378,536,537|🇭🇰HK-156.224.57.248-6714 #1'
   network: ws
   port: 443
   server: n1737850919.ryjml.cn
@@ -4543,24 +4561,21 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- alpn:
-  - ''
-  alterId: 2
+- alterId: 2
   cipher: auto
-  delay: 1755
+  country: 🇰HK
   h2-opts: {}
   http-opts: {}
-  name: '437,459,489,528,559|中国台湾 #3'
+  name: '435,437,459,494,544,559|美国 #5'
   network: tcp
-  port: 30829
-  server: v29.hdacd.com
+  port: 30804
+  server: v4.hdacd.com
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
+  ws-path: /
 - name: 453|🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -5247,7 +5262,7 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
-- name: 605|HK
+- name: '605|HK #1'
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 41288

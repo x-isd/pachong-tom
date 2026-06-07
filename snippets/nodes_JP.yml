@@ -1062,7 +1062,7 @@ proxies:
   sni: k12.tudou211.com
   type: trojan
 - name: '306,340,378,494,502,514,515,516,536,537,544,551,556,557,559|11,12|香港5|@ripaojiedian
-    #1'
+    #4'
   network: tcp
   password: BxceQaOe
   port: 4327
@@ -1146,19 +1146,22 @@ proxies:
   server: 57.180.246.231
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538|🇯🇵JP-149.22.87.240-0119 | 26.1...
+  country: 🇺🇸US
+  name: 356,357,378,435,537,538|🇯🇵JP-149.22.87.240-0119 | 26.1...
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538|🇯🇵JP-149.22.87.241-0122 | 29.7...
+  country: 🇺🇸US
+  name: 356,357,378,435,537,538|🇯🇵JP-149.22.87.241-0122 | 29.7...
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538|🇯🇵JP-149.22.87.204-0120 | 28.0...
+  country: 🇸US
+  name: 356,357,378,435,537,538|🇯🇵JP-149.22.87.204-0120 | 28.0...
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -1986,7 +1989,8 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 378,537,538|🇯🇵JP-103.106.228.175-0125 | 25...
+  country: IN
+  name: 378,435,537,538|🇯🇵JP-103.106.228.175-0125 | 25...
   password: XKFKl2rULjIp74
   port: 8009
   server: 103.106.228.175
@@ -2007,7 +2011,8 @@ proxies:
       Host: jp01.a0a.xyz
     path: /
 - cipher: aes-256-gcm
-  name: 378,537,538|🇯🇵JP-47.79.144.115-0193 | 0.0M...
+  country: ' US'
+  name: 378,435,537,538|🇯🇵JP-47.79.144.115-0193 | 0.0M...
   password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
   port: 40003
   server: 47.79.144.115
@@ -2741,24 +2746,30 @@ proxies:
   skip-cert-verify: false
   sni: t.me/ripaojiedian
   type: trojan
-- name: '378,436,536,537|🇯🇵JP-52.195.12.80-4341 #1'
+- country: 🇧GB
+  name: '378,435,436,536,537|🇯🇵JP-52.195.12.80-4341 #1'
   password: IL37892054
   port: 443
   server: upright-rhino.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇵JP-3.113.25.200-4356 #1'
+  udp: true
+- country: 🇵JP
+  name: '378,435,436,536,537|🇵JP-3.113.25.200-4356 #1'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,537|🇯🇵JP-64.176.36.61-4404 #1'
+  udp: true
+- country: 🇺🇸US
+  name: '378,435,537|🇯🇵JP-64.176.36.61-4404 #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 443
   server: 64.176.36.61
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf
   name: '378,536,537|🇵JP-13.231.116.14-4431 #1'
   obfs: plain
@@ -3059,14 +3070,19 @@ proxies:
   ws-path: /
 - alterId: 1
   cipher: auto
-  name: '437,494,507,559,580|未知 VMESS-117 | free-nodes #2'
+  country: 🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: '435,437,559,580|未知 VMESS-117 | free-nodes #2'
   network: tcp
   port: '22324'
   server: 172.104.80.66
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  ws-path: /
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -3670,7 +3686,7 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- name: 559|🇯🇵JP_57
+- name: '559|🇯🇵JP_57 #1'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
@@ -3714,6 +3730,20 @@ proxies:
   network: ws
   port: '25686'
   server: 140.83.51.161
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6733c357-ba11-4e9f-f00f-7d87f2776ff9
+  ws-opts:
+    headers:
+      Host: jp02.a0a.xyz
+    path: /cctv13.m3u8
+- alterId: 0
+  cipher: auto
+  name: 559,580|未知 VMESS-131 | free-nodes
+  network: ws
+  port: '25686'
+  server: jp02.a0a.xyz
   servername: ''
   tls: false
   type: vmess
