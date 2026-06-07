@@ -55,6 +55,7 @@ proxies:
     path: /download
 - name: '306,340,378,494,502,507,514,515,516,536,537,538,551,559,567,580,585,586|DE_speednode_0011
     #3'
+  network: tcp
   password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
   port: 9443
   server: de-1.hysteria.ltd
@@ -465,14 +466,14 @@ proxies:
       Host: go.daluquan.top
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
+  country: 🇸US
   name: 378,435,537,538|🇩🇪DE-209.46.102.22-0107 | 36.0...
   password: 1hhrqrokj3ag
   port: 8388
   server: 209.46.102.22
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇸SG
+  country: 🇬SG
   name: 378,435,537,538|🇩🇪DE-8.209.74.72-0117 | 11.443...
   password: PWpjPo3tqhPN4yRZ
   port: 20001
@@ -498,9 +499,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,477,482,494,507,536,537,538,544,559,574,579,580,582|🇷🇴 罗马尼亚 starcorenode.com
+  name: '378,477,482,494,502,507,536,537,538,544,559,574,579,580,582|🇷🇴 罗马尼亚 starcorenode.com
     #6'
-  network: tcp
   password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
   port: 443
   server: 185.137.157.254
@@ -509,11 +509,8 @@ proxies:
   tls: true
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: v2rayNplus-v2rayNplus-v2rayNplus
 - name: '378,477,482,494,507,536,537,538,544,559,579,580,582|🇺🇸 美国 Akamai科技公司CDN网络节点
-    #10'
+    #7'
   network: tcp
   password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
   port: 443
@@ -522,7 +519,7 @@ proxies:
   sni: 172.236.220.10
   type: trojan
 - alterId: 0
-  name: '378,477,482,494,507,537,538,544,559,574,579,580,582|🇩🇪 德国 starcorenode.com
+  name: '378,473,477,482,494,537,538,544,559,574,579,580,582|🇩🇪 德国 starcorenode.com
     #5'
   password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
   port: 443
@@ -769,7 +766,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇩🇪DE-138.68.90.231-1565 #1'
+  name: '378,494,536,537|🇩🇪DE-138.68.90.231-1565 #1'
   network: ws
   port: 8080
   server: 138.68.90.231
@@ -974,7 +971,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '378,536,537|🇩🇪DE-167.235.136.155-2943 #1'
+  name: '378,494,536,537|🇩🇪DE-167.235.136.155-2943 #1'
   network: http
   port: 443
   server: 167.235.136.155
@@ -2278,6 +2275,14 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- country: 🇪DE
+  name: 435,436,536|🇩🇪DE-91.233.8.138-4547
+  password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
+  port: 443
+  server: 91.233.8.138
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: '460|德国_Frankfurt am Main #3'
   network: ws
   password: NISHIKUITAN222
@@ -2508,6 +2513,14 @@ proxies:
   skip-cert-verify: false
   sni: awaited-chicken.adder289.quest
   type: trojan
+- name: '473,494,536,559,580|未知 TROJAN-22 | free-nodes #2'
+  network: tcp
+  password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
+  port: 443
+  server: 91.233.8.25
+  skip-cert-verify: false
+  sni: fra34.tracker-ws.click
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: '489|🟢🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
   password: Xu7h4yO69H7QG_C0A9tY7jP1wN0jSzc8
@@ -2716,11 +2729,6 @@ proxies:
   type: trojan
   ws-opts:
     path: /trTelegram+@WangCai2
-- name: 536|🇩🇪DE-91.233.8.138-4547
-  password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
-  port: 443
-  server: 91.233.8.138
-  type: trojan
 - cipher: chacha20-ietf
   name: '536|8J%2BHrfCfh7BISy00My4yNTUuMTE5... #19'
   obfs: plain
@@ -2797,15 +2805,6 @@ proxies:
   tls: true
   type: vmess
   uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
-- alterId: 2
-  cipher: auto
-  name: '559|德国 #2'
-  network: tcp
-  port: 30833
-  server: v33.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: '559|🇩🇪_DE_德国 #2'

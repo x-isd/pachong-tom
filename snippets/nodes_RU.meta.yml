@@ -47,7 +47,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,475,480,494,502,514,523,524,551,559,566,567,580,585,586|RU_speednode_0039
+  name: '340,472,474,475,480,494,502,514,523,524,551,559,566,567,580,585,586|RU_speednode_0039
     #3'
   network: tcp
   port: 22231
@@ -63,7 +63,7 @@ proxies:
       Host: r1.mizulina.top
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '340,438,475,480,494,502,514,519,523,524,551,559,566,567,580,585,586|RU_speednode_0040
+  name: '340,438,472,474,475,480,494,502,514,519,523,524,551,559,566,567,580,585,586|RU_speednode_0040
     #3'
   network: tcp
   port: 443
@@ -78,7 +78,7 @@ proxies:
     path: '%2F'
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '340,438,475,478,480,483,494,502,514,522,523,524,548,551,559,566,567,580,581,585,586|RU_speednode_0043
+  name: '340,438,472,474,475,478,480,483,494,502,514,522,523,524,548,551,559,566,567,580,581,585,586|RU_speednode_0043
     #3'
   network: tcp
   port: 22231
@@ -94,7 +94,7 @@ proxies:
       Host: r1.mizulina.top
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,494,502,507,514,551,559,567,580,585,586|RU_speednode_0042 #3'
+  name: '340,494,502,514,551,559,567,580,585,586|RU_speednode_0042 #3'
   network: tcp
   port: 443
   reality-opts:
@@ -627,7 +627,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇺RU
-  name: 435|RU_74
+  name: 435|RU_88
   password: fG2artUmHfNT2cX7
   port: 9018
   server: 217.30.10.70
@@ -1425,6 +1425,16 @@ proxies:
       Host: ''
     path: /
 - client-fingerprint: chrome
+  name: '472,474,494,502,551,559|🇭🇺HU_1|2.1MB/s #2'
+  network: tcp
+  port: 8443
+  server: 213.171.24.172
+  servername: cdn7-09.vk-cdnvideo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+- client-fingerprint: chrome
   name: '475,478,480,483,522,548,559,580,581|🇱🇻_LV_拉脱维亚 #4'
   network: raw
   port: 19562
@@ -1459,45 +1469,6 @@ proxies:
   server: 176.32.39.99
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: '502,507,523,524,548,551,559,580|RU俄罗斯(mibei77.com 米贝节点分享) #23'
-  network: tcp
-  port: 8443
-  server: 89.232.177.114
-  servername: cdn3-87.vk-cdnvideo.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- alpn:
-  - h3
-  name: 507,559,580|RU HY2-181 | free-nodes
-  password: 1c65bee4-bc54-364c-8988-6a5912fda891
-  port: 443
-  server: 139.84.155.186
-  sni: u723829us1441.csgfw.top
-  tls: false
-  type: hysteria2
-- alpn:
-  - ''
-  client-fingerprint: random
-  flow: ''
-  grpc-opts:
-    grpc-service-name: ''
-  name: 507,559,580|RU VLESS-206 | free-nodes
-  network: xhttp
-  port: 443
-  server: 139.84.155.186
-  servername: u723829us1440.csgfw.top
-  tls: true
-  type: vless
-  uuid: 1c65bee4-bc54-364c-8988-6a5912fda891
-  ws-opts:
-    headers:
-      Host: s1440.csgfw.top
-    path: ssp-xhttp
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
@@ -1667,12 +1638,39 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
+- alpn:
+  - h3
+  name: 559,580|RU HY2-181 | free-nodes
+  password: 1c65bee4-bc54-364c-8988-6a5912fda891
+  port: 443
+  server: 139.84.155.186
+  sni: u723829us1441.csgfw.top
+  tls: false
+  type: hysteria2
 - name: 559|🇷🇺RU_79
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
   sni: nearby-muskrat.rooster465.autos
   type: trojan
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: 559,580|RU VLESS-206 | free-nodes
+  network: xhttp
+  port: 443
+  server: 139.84.155.186
+  servername: u723829us1440.csgfw.top
+  tls: true
+  type: vless
+  uuid: 1c65bee4-bc54-364c-8988-6a5912fda891
+  ws-opts:
+    headers:
+      Host: s1440.csgfw.top
+    path: ssp-xhttp
 - name: 559|🇧🇾 白俄罗斯-25608915
   network: tcp
   port: 443

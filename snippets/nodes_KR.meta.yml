@@ -283,7 +283,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇰🇷KR
   delay: 589
-  name: '306,378,435,440,528,537|🇷KR-221.150.109.20-1529 #1'
+  name: '306,378,435,528,537|🇷KR-221.150.109.20-1529 #1'
   password: qwerREWQ@@
   port: 55104
   server: 221.150.109.20
@@ -292,7 +292,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇰🇷KR
   delay: 1312
-  name: '306,378,435,440,528,537|🇰🇷KR-221.150.109.19-1534 #1'
+  name: '306,378,435,528,537|🇰🇷KR-221.150.109.19-1534 #1'
   password: qwerREWQ@@
   port: 3417
   server: 221.150.109.19
@@ -734,14 +734,14 @@ proxies:
       Host: 152.67.218.38
     path: /
 - cipher: aes-256-cfb
-  country: 🇰🇷KR
+  country: 🇷KR
   name: 378,435,537,538|🇰🇷KR-218.237.185.230-0168 | 0....
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
   type: ss
 - cipher: aes-256-cfb
-  country: 🇰🇷KR
+  country: 🇷KR
   name: 378,435,537,538|🇰🇷KR-211.178.105.134-0181 | 0....
   password: qwerREWQ@@
   port: 6123
@@ -1104,7 +1104,7 @@ proxies:
   port: 443
   server: 3.36.118.190
   type: ss
-- country: 🇬🇧GB
+- country: 🇧GB
   name: '378,435,436,536,537|🇷KR-13.125.84.24-4345 #1'
   password: WF42809561
   port: 443
@@ -1112,7 +1112,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: HU
+- country: 🇺HU
   name: '378,435,436,536,537|🇷KR-13.125.222.125-4350 #1'
   password: WF42809561
   port: 443
@@ -1128,7 +1128,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: 🇰🇷KR
+- country: 🇷KR
   name: '378,435,436,536,537|🇰🇷KR-43.203.243.134-4361 #1'
   password: IL37892054
   port: 443
@@ -1853,7 +1853,7 @@ proxies:
   skip-cert-verify: true
   sni: humble-rodent.treefrog761.one
   type: trojan
-- name: '475,480|韩国+KT电信_1 #1'
+- name: '475,480,544|韩国+KT电信\r #1'
   password: GKHWMe2R4qwNcNxu6l3KMkdd
   port: 26214
   server: 121.178.83.161
@@ -2100,24 +2100,6 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 507,559,580|KR VLESS-196 | free-nodes
-  network: xhttp
-  port: 443
-  server: 141.164.59.253
-  servername: u723829us1279.csgfw.top
-  tls: true
-  type: vless
-  uuid: 1c65bee4-bc54-364c-8988-6a5912fda891
-  ws-opts:
-    headers:
-      Host: s1279.csgfw.top
-    path: ssp-xhttp
-- alpn:
-  - ''
-  client-fingerprint: random
-  flow: ''
-  grpc-opts:
-    grpc-service-name: ''
   name: 507,559,580|KR VLESS-199 | free-nodes
   network: xhttp
   port: 443
@@ -2130,15 +2112,6 @@ proxies:
     headers:
       Host: s1310.csgfw.top
     path: ssp-xhttp
-- alpn:
-  - h3
-  name: 507,559,580|KR HY2-200 | free-nodes
-  password: 1c65bee4-bc54-364c-8988-6a5912fda891
-  port: 443
-  server: 141.164.59.253
-  sni: u723829us1316.csgfw.top
-  tls: false
-  type: hysteria2
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 513|15|🇰🇷 韩国特殊|@ripaojiedian
@@ -2885,6 +2858,15 @@ proxies:
   server: 3.34.192.249
   tfo: false
   type: ss
+- alpn:
+  - h3
+  name: 559,580|KR HY2-200 | free-nodes
+  password: 1c65bee4-bc54-364c-8988-6a5912fda891
+  port: 443
+  server: 141.164.59.253
+  sni: u723829us1316.csgfw.top
+  tls: false
+  type: hysteria2
 - name: '559,580|韩国+KT电信 #3'
   network: ws
   password: GKHWMe2R4qwNcNxu6l3KMkdd
@@ -2909,18 +2891,36 @@ proxies:
     headers:
       Host: vpn1.rnmcnm.com
     path: '%2Ftrj-ws'
-- name: '559|🇰🇷KR_64 #1'
+- name: 559|🇰🇷KR_64
   password: IL37892054
   port: 443
   server: select-marmoset.rooster465.autos
   sni: select-marmoset.rooster465.autos
   type: trojan
-- name: '559|🇰🇷KR_63 #1'
+- name: 559|🇰🇷KR_63
   password: ZY07256934
   port: 443
   server: glowing-deer.rooster465.autos
   sni: glowing-deer.rooster465.autos
   type: trojan
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: 559,580|KR VLESS-196 | free-nodes
+  network: xhttp
+  port: 443
+  server: 141.164.59.253
+  servername: u723829us1279.csgfw.top
+  tls: true
+  type: vless
+  uuid: 1c65bee4-bc54-364c-8988-6a5912fda891
+  ws-opts:
+    headers:
+      Host: s1279.csgfw.top
+    path: ssp-xhttp
 - name: '559,580|🇰🇷KR韓國節點丨yoyapai.com #1'
   network: ws
   port: 16000
