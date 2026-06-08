@@ -1546,7 +1546,7 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
-- name: '438|🇫🇷FR_1|3.6MB/s | 网盘搜宝: https:/...'
+- name: '438|🇫🇷FR_1|3.5MB/s | 更多节点: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1557,7 +1557,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2F%252Fassignment'
-- name: '438|🇫🇷FR_2|3.7MB/s | 福利姬: https://...'
+- name: '438|🇫🇷FR_2|3.5MB/s | 网盘搜宝: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1570,7 +1570,11 @@ proxies:
     path: '%2F%252Fassignment'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 438,507,559|🏁 未知-79F579D8
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 438,489,494,507,559|🏁 未知-79F579D8
   network: tcp
   port: 31413
   reality-opts:
@@ -1580,7 +1584,9 @@ proxies:
   servername: ''
   tls: false
   type: vless
+  udp: true
   uuid: 5454343b-541b-4c96-8c2a-52e81079d124
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '438,494,502,507,551,559,580|未知 VLESS-98 | free-nodes #2'
@@ -1613,6 +1619,31 @@ proxies:
   udp: true
   uuid: deb96819-bdaa-4f52-a536-d4751290ce47
   xudp: true
+- flow: ''
+  name: '438,494,559,580|未知 VLESS-54 | free-nodes #3'
+  network: tcp
+  port: 8080
+  server: 62.60.148.226
+  tls: false
+  type: vless
+  uuid: 47c87a37-3d09-4c3d-96fb-91ce3bcae058
+  ws-opts:
+    headers:
+      Host: www.speedtest.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,494,559|🇩🇪 德国-86972D10
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: RWE5ORdQ2SzuFWX8DlaRP415wbhee9ynJkqC7yFPgQw
+    short-id: d13ddfca12760d03
+  server: 51.195.116.82
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 21c25bef-eb3b-44a8-9b26-fa7f674e5bfc
 - alpn:
   - h2
   client-fingerprint: edge
@@ -1626,39 +1657,6 @@ proxies:
   tls: true
   type: vless
   uuid: 7b241232-208d-4d36-857e-913f91b044f4
-- flow: ''
-  name: '438,494,507,559,580|未知 VLESS-54 | free-nodes #3'
-  network: tcp
-  port: 8080
-  server: 62.60.148.226
-  tls: false
-  type: vless
-  uuid: 47c87a37-3d09-4c3d-96fb-91ce3bcae058
-  ws-opts:
-    headers:
-      Host: www.speedtest.com
-- name: '438|🇫🇷FR_9|1.5MB/s | 更多节点: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: 89.116.46.68
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,559|🏁 未知-710DF3D3
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: wwH_L9FmhJ7AyOBKm9J8YGKdVo1G-QlDEuw5-s3eGEM
-    short-id: 9a4c7d2f8e1b6a3c
-  server: 51.91.158.180
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 7b4b7d4e-7a53-4c0c-bd8e-9f3b1b2c7f21
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1846,18 +1844,6 @@ proxies:
   udp: true
   uuid: d2ce0b49-2b2c-46f6-9b43-4829d0075654
   xudp: true
-- alterId: 2
-  cipher: auto
-  name: '489,559|法国 #2'
-  network: tcp
-  port: 30835
-  server: v35.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
 - name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
   password: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
   port: 443
@@ -1883,6 +1869,54 @@ proxies:
   type: http
   username: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
 - client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 489,559|🇫🇷 法国-DA9DB452
+  network: tcp
+  port: 12453
+  reality-opts:
+    public-key: 7Bp5RgrAqaiXOsiKaWnu6uliLDG8Eey2gA0coU9oay0
+    short-id: 52f510cea0a0a5ef
+  server: 52.47.86.31
+  servername: ''
+  tls: false
+  type: vless
+  udp: true
+  uuid: c9f0224c-c509-427e-b314-cef6cab20646
+  xudp: true
+- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
+  password: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
+  port: 443
+  server: 6461960b-t9zts0-tbicd9-1go3q.fr.oshuawei.com
+  sni: 6461960b-t9zts0-tbicd9-1go3q.fr.oshuawei.com
+  tls: true
+  type: http
+  username: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
+- name: '489|🔴🇫🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #2'
+  password: b02327ac-a49a-11ef-a673-f23c913c8d2b
+  port: 443
+  server: 2399ae9a-t9zts0-tqruo0-1pqhp.fr.oshuawei.com
+  sni: 2399ae9a-t9zts0-tqruo0-1pqhp.fr.oshuawei.com
+  tls: true
+  type: http
+  username: b02327ac-a49a-11ef-a673-f23c913c8d2b
+- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #6'
+  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
+  port: 443
+  server: eac88fe8-t9zts0-tonrmx-8n27.fr.oshuawei.com
+  sni: eac88fe8-t9zts0-tonrmx-8n27.fr.oshuawei.com
+  tls: true
+  type: http
+  username: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
+- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
+  password: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
+  port: 443
+  server: b8d00fba-ta1og0-tryjtz-12ach.fr.oshuawei.com
+  sni: b8d00fba-ta1og0-tryjtz-12ach.fr.oshuawei.com
+  tls: true
+  type: http
+  username: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
+- client-fingerprint: chrome
   name: '519,559|🇫🇷_FR_法国 #2'
   port: 443
   reality-opts:
@@ -1894,6 +1928,26 @@ proxies:
   type: vless
   udp: true
   uuid: 4706d9c3-eec0-4666-9d84-e608a200e872
+- country: 🇫🇷FR
+  delay: 731
+  name: 528|法国 - 巴黎 - 1
+  password: telegram-id-directvpn
+  port: 22223
+  server: 15.236.237.21
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  delay: 726
+  name: 528|法国 - 巴黎 - 2
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.236.237.21
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - name: '536|🇫🇷FR-146.70.158.111-8055 #1'
   network: ws
   password: 11ae0edd-2f63-4495-8683-037abbda9986
@@ -2041,6 +2095,29 @@ proxies:
   tls: true
   type: vless
   uuid: 834184d0-b7f6-4e2c-9e12-a53a1d2af807
+- name: 559|🇫🇷 法国-2BADFB95
+  network: tcp
+  port: 54809
+  reality-opts:
+    public-key: 06rvKjC9dE_Ndd-dw6B-0zAyEpn-jUs7mcNFAPQ_1G8
+    short-id: b4b3
+  server: 5.196.51.152
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 87e60810-bb71-41ea-a2a6-f05c8ab903ef
+- client-fingerprint: firefox
+  name: '559|🇫🇷 France, Paris | [BL] #4'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: kpEmyVJAZ9sMN_9fo384bqlSbqNZz2TVk7Tpd_9cnFg
+    short-id: fad0a8e7
+  server: 66.201.5.216
+  servername: cdnpic.henseful.com
+  tls: false
+  type: vless
+  uuid: 94ae5ad5-8f3e-41bf-9546-99a1543d3cd1
 - name: '559,580|FR法国(mibei77.com 米贝节点分享) #10'
   network: xhttp
   port: 80
@@ -2063,17 +2140,6 @@ proxies:
     headers:
       Host: tignaltofan.global.ssl.fastly.net
     path: '%2FTignaliSWithYou'
-- name: 559|🇫🇷 法国-DA9DB452
-  network: tcp
-  port: 12453
-  reality-opts:
-    public-key: 7Bp5RgrAqaiXOsiKaWnu6uliLDG8Eey2gA0coU9oay0
-    short-id: 52f510cea0a0a5ef
-  server: 52.47.86.31
-  servername: ''
-  tls: false
-  type: vless
-  uuid: c9f0224c-c509-427e-b314-cef6cab20646
 - name: 559|🇫🇷 法国-391582A5
   network: tcp
   port: 443

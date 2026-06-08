@@ -45,14 +45,12 @@ proxies:
   server: 46.29.163.200
   type: ss
   udp: true
-- client-fingerprint: chrome
-  encryption: none
+- client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '340,438,475,480,489,494,502,507,514,523,524,551,559,566,567,580,585,586|RU_speednode_0039
-    #3'
+  name: '340,438,475,480,494,502,514,523,524,551,559,567,580,585,586|RU_speednode_0048
+    #1'
   network: tcp
   port: 22231
-  security: tls
   server: r1.mizulina.top
   servername: r1.mizulina.top
   skip-cert-verify: false
@@ -65,8 +63,8 @@ proxies:
       Host: r1.mizulina.top
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '340,472,473,474,475,480,494,502,514,519,523,524,551,559,566,567,580,585,586|RU_speednode_0040
-    #3'
+  name: '340,475,480,494,502,514,519,523,524,551,559,567,580,585,586|RU_speednode_0049
+    #1'
   network: tcp
   port: 443
   server: 85.234.114.53
@@ -78,16 +76,15 @@ proxies:
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
   ws-opts:
     path: '%2F'
-- client-fingerprint: edge
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,475,478,480,483,489,494,502,514,522,523,524,551,559,566,567,580,581,585,586|RU_speednode_0043
+  name: '340,438,475,478,480,483,494,502,514,522,523,524,551,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
     #3'
   network: tcp
   port: 22231
-  security: tls
   server: 85.234.114.53
   servername: r1.mizulina.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
@@ -97,7 +94,7 @@ proxies:
       Host: r1.mizulina.top
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,494,502,507,514,551,559,567,580,585,586|RU_speednode_0042 #3'
+  name: '340,502,507,514,551,559,580|未知 VLESS-61 | free-nodes #3'
   network: tcp
   port: 443
   reality-opts:
@@ -106,9 +103,8 @@ proxies:
   server: 213.108.2.130
   servername: cloudflare.com
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
-  udp: true
   uuid: 5e8ee155-0962-4307-98f2-b65f6bbbd5bb
 - cipher: chacha20-ietf-poly1305
   name: 356|🇷🇺1 |  5.2MB/s
@@ -368,26 +364,19 @@ proxies:
       Host: renderer-stream-1-411.mirra.now
     path: /api/v1/gpu-stream/socket
 - cipher: aes-256-gcm
-  country: 🇨🇿CZ
-  delay: 585
-  name: '378,489,528,537|🇷🇺RU-195.58.49.104-0713 #2'
+  name: '378,537|🇷🇺RU-195.58.49.104-0713 #2'
   password: fbaf33bcffe53cf9
   port: 20129
   server: 195.58.49.104
   type: ss
-  udp: true
 - cipher: aes-256-gcm
-  country: 🇷🇺RU
-  delay: 652
-  name: '378,528,537|🇷🇺RU-45.140.169.244-0714 #2'
+  name: '378,537|🇷🇺RU-45.140.169.244-0714 #2'
   password: cfe685726eea2c4b
   port: 20981
   server: 45.140.169.244
   type: ss
 - cipher: aes-256-gcm
-  country: 🇨🇿CZ
-  delay: 552
-  name: '378,528,537|🇷🇺RU-195.58.49.162-0736 #2'
+  name: '378,537|🇷🇺RU-195.58.49.162-0736 #2'
   password: 9f3d1a6d31468599
   port: 60120
   server: 195.58.49.162
@@ -596,7 +585,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇺RU-185.59.218.177-7761 #1'
+  name: '378,536,537|🇺RU-185.59.218.177-7761 #1'
   network: ws
   port: 443
   server: 185.59.218.177
@@ -671,9 +660,16 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇺RU
-  name: 435|RU_79
-  password: c3NtHJ5ujV2tGDfj
-  port: 9084
+  name: 435|RU_80
+  password: wjTugX3ZtHMB9c3Z
+  port: 9057
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 435|🇺RU_81
+  password: BNmAXXxAHYpTRdzu
+  port: 9020
   server: 217.30.10.70
   type: ss
 - alterId: 0
@@ -681,7 +677,7 @@ proxies:
   country: 🇺RU
   h2-opts: {}
   http-opts: {}
-  name: 435,437,559,580|未知 VMESS-128 | free-nodes
+  name: '435,437,507,559,580|未知 VMESS-128 | free-nodes #1'
   network: tcp
   port: 22324
   server: 213.156.141.52
@@ -700,20 +696,6 @@ proxies:
   sni: kfm-bn0.pages.dev
   type: trojan
   udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '438|🇷🇺RU_1|1.0MB/s | 福利姬: https://...'
-  network: xhttp
-  port: 80
-  server: ru.riotvpn.eu
-  servername: obhod.riotvpn.eu
-  tls: true
-  type: vless
-  uuid: bd78d4ee-c068-4125-94ba-50814578dc41
-  ws-opts:
-    path: '%2F'
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1483,6 +1465,18 @@ proxies:
       Host: ''
     path: /
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '472,473,474,502,551,559|🇺🇸US_6|2.4MB/s #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 217.149.25.106
+  servername: ai.sellflow.org
+  tls: true
+  type: vless
+  uuid: 029a4bc6-4557-4b6b-a5fc-6232e943e43b
+- client-fingerprint: chrome
   name: '475,478,480,483,522,559,580,581|🇱🇻_LV_拉脱维亚 #2'
   network: raw
   port: 19562
@@ -1504,28 +1498,17 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 502|俄罗斯+Samara+State+University
-  network: ws
-  port: 443
-  server: 195.209.87.184
-  servername: s46053.cdn.ngenix.net
-  tls: true
-  type: vless
-  uuid: bfef1a3f-d106-4346-89fa-4f7e369e99de
-  ws-opts:
-    path: /stream/live
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '502,551,559|🇺🇸US_6|2.4MB/s #2'
+  name: 489,559|🏁 未知-317A6480
   network: tcp
   port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 217.149.25.106
-  servername: ai.sellflow.org
+  server: cloud.cdnru.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
-  uuid: 029a4bc6-4557-4b6b-a5fc-6232e943e43b
+  uuid: 33612cbf-0639-4285-81da-f88eba1d4f85
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
