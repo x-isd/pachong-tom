@@ -1212,7 +1212,7 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - cipher: aes-128-gcm
-  name: 306|Japan_Tokyo_ss_1129
+  name: 306|Japan_Tokyo_ss_1128
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   plugin: v2ray-plugin
   plugin-opts:
@@ -1224,6 +1224,22 @@ proxies:
     tls: true
   port: 443
   server: 54.65.58.58
+  skip-cert-verify: false
+  type: ss
+  udp: false
+- cipher: aes-128-gcm
+  name: 306|Japan_Tokyo_ss_1133
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ss.hhll.qqs.me
+    mode: websocket
+    mux: false
+    path: /proxyip=104.168.132.123\,172.104.53.198\,85.121.50.16\,151.242.125.226?enc=aes-128-gcm
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 18.178.41.33
   skip-cert-verify: false
   type: ss
   udp: false
@@ -1336,17 +1352,13 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 340,502,507,559,567|JP_654bd_0013
+  name: '340,559|13|JP_speednode_0013 #1'
   port: 39611
-  reality-opts:
-    public-key: bffq0wpw2vUOczXypqTqoXzYEzwXAZQzhOut1fvFyWQ
-    short-id: d7627055cafc62
   server: 18.183.94.154
   servername: www.icloud.com
   skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
   uuid: f032fd94-715d-4d37-835f-13959a63df14
 - name: 356|🇯🇵1 |  34.4MB/s
   network: ws
@@ -1367,14 +1379,14 @@ proxies:
   server: 57.180.246.231
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺US
+  country: 🇺🇸US
   name: 356,357,378,435,537,538|🇯🇵JP-149.22.87.240-0108 | 7.07...
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
 - cipher: aes-128-gcm
-  country: 🇸US
+  country: 🇺🇸US
   name: 356,357,378,435,537,538|🇯🇵JP-149.22.87.241-0106 | 11.6...
   password: shadowsocks
   port: 443
@@ -2384,7 +2396,7 @@ proxies:
   server: 103.106.228.175
   type: ss
 - cipher: aes-256-gcm
-  country: 🇸 US
+  country: 🇺 US
   name: 378,435,537,538|🇯🇵JP-47.79.144.115-0154 | 0.0M...
   password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
   port: 40003
@@ -4600,6 +4612,14 @@ proxies:
       Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
     path: /
   xudp: true
+- name: '496,514,551|🇯🇵JP-🚀@VPNine1 #1 #1'
+  password: 573402b7-156e-4141-8c3b-f01b6ebedf05
+  port: 10089
+  server: hk03.jgpy.help
+  skip-cert-verify: true
+  sni: apple.com
+  tls: false
+  type: hysteria2
 - alpn:
   - ''
   client-fingerprint: ''
@@ -4624,7 +4644,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-171 | free-nodes #1'
+  name: 507,559|JP VLESS-171 | free-nodes
   network: tcp
   port: 443
   server: 64.176.41.201
@@ -4656,7 +4676,7 @@ proxies:
     path: ssp-xhttp
 - alpn:
   - h3
-  name: '507,559|JP HY2-189 | free-nodes #1'
+  name: 507,559|JP HY2-189 | free-nodes
   password: 723af53a-b131-3270-8ce0-13f8ecaaa322
   port: 443
   server: 108.160.143.158
@@ -4701,7 +4721,7 @@ proxies:
     path: ''
 - alpn:
   - h3
-  name: '507,559|JP HY2-197 | free-nodes #1'
+  name: 507,559|JP HY2-197 | free-nodes
   password: 723af53a-b131-3270-8ce0-13f8ecaaa322
   port: 443
   server: 64.176.41.201
@@ -5015,6 +5035,16 @@ proxies:
   server: 35.77.201.105
   sni: t.me%252Fripaojiedian
   type: trojan
+- name: 551,559|🏁 未知-DA5C1FBA
+  obfs: salamander
+  obfs-password: xK9mN2pLq5vR8wB3
+  password: C5FC4ED3-25A0-4ACC-9862-0B63EB7EAD54
+  port: 20253
+  server: jp2.dexlos.com
+  skip-cert-verify: false
+  sni: jp2.dexlos.com
+  tls: false
+  type: hysteria2
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5212,7 +5242,7 @@ proxies:
   sni: u723829us1475.csgfw.top
   tls: false
   type: hysteria2
-- name: '559|🇯🇵JP_65 #1'
+- name: 559|🇯🇵JP_65
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
@@ -5232,7 +5262,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: '559,580|JP VLESS-218 | free-nodes #1'
+  name: 559,580|JP VLESS-218 | free-nodes
   network: xhttp
   port: 443
   server: 108.160.134.123
@@ -5286,7 +5316,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 559,580|JP VLESS-200 | free-nodes
+  name: '559,580|JP VLESS-200 | free-nodes #1'
   network: xhttp
   port: 443
   server: 38.54.50.210
@@ -5358,7 +5388,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: '559,580|JP VLESS-228 | free-nodes #1'
+  name: 559,580|JP VLESS-228 | free-nodes
   network: xhttp
   port: 443
   server: 64.176.61.186
@@ -5484,7 +5514,7 @@ proxies:
     method: GET
     path:
     - /ABCDE
-  name: '566,567,568|🇯🇵 日本 | JPN #1'
+  name: '566,568|🇯🇵 日本 | JPN #1'
   network: http
   port: '53229'
   server: 103.127.243.54
@@ -5493,70 +5523,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 2f50f5ef-1a3a-4585-a3c9-3a860d37b134
-- alterId: 0
-  cipher: aes-128-gcm
-  name: '574|🇯🇵JP日本2 #1'
+- cipher: aes-128-gcm
+  name: 567,585|JP_speednode_0007
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 2053
-  server: 167.88.186.137
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: '574|🇯🇵JP日本3 #1'
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ss.hhll.qqs.me
+    mode: websocket
+    mux: false
+    path: /proxyip=104.168.132.123,172.104.53.198,85.121.50.16,151.242.125.226?enc=aes-128-gcm
+    tls: true
   port: 443
-  server: 47.79.37.210
-  skip-cert-verify: true
-  tls: true
+  server: 54.65.58.58
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: '574|🇯🇵JP日本4 #1'
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 35.72.81.216
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 574|🇯🇵JP日本5
-  password: BxceQaOe
-  port: 6737
-  server: 54.178.8.69
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: true
-  type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 574|🇵JP日本7
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 54.199.97.220
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: '574|🇯🇵JP日本8 #1'
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 3.115.100.16
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: '574|🇯🇵JP日本9 #1'
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 54.248.143.139
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'
@@ -5723,20 +5703,6 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- cipher: aes-128-gcm
-  name: 585|JP_speednode_0007
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ss.hhll.qqs.me
-    mode: websocket
-    mux: false
-    path: /proxyip=104.168.132.123,172.104.53.198,85.121.50.16,151.242.125.226?enc=aes-128-gcm
-    tls: true
-  port: 443
-  server: 54.65.58.58
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   name: 606|JP_Tokyo_Cloudflare, Inc._Gemi...
   password: 85d88b03-7e14-494d-ac8c-c00f38aff117
