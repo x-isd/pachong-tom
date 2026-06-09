@@ -420,12 +420,13 @@ proxies:
       Host: ahdaeph8.com
     path: /ws
 - cipher: aes-256-gcm
-  name: 378,537,538|🇫🇷FR-51.254.128.106-0099 | 25....
+  country: 🇷FR
+  name: 378,435,537,538|🇫🇷FR-51.254.128.106-0099 | 25....
   password: FjG3IPbny+0ZYU4/p1vULP84GcKpGoZpWKAay16VhIw=
   port: 2083
   server: 51.254.128.106
   type: ss
-- name: '378,494,507,536,537,538,559,580|未知 TROJAN-18 | free-nodes #2'
+- name: '378,507,536,537,538,559,580|未知 TROJAN-18 | free-nodes #2'
   password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
   port: 443
   server: 217.69.2.107
@@ -618,7 +619,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-51.77.158.169-3472 #1'
+  name: '378,536,537|🇷FR-51.77.158.169-3472 #1'
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -701,7 +702,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-51.83.97.167-6226 #1'
+  name: '378,536,537|🇷FR-51.83.97.167-6226 #1'
   network: ws
   port: 80
   server: 51.83.97.167
@@ -813,7 +814,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-146.59.55.50-6332 #1'
+  name: '378,536,537|🇷FR-146.59.55.50-6332 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1030,7 +1031,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-141.94.155.229-6373 #1'
+  name: '378,536,537|🇷FR-141.94.155.229-6373 #1'
   network: ws
   port: 443
   server: 141.94.155.229
@@ -1545,21 +1546,9 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
-- name: '438|🇫🇷FR_2|3.8MB/s | 更多节点: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.64.152.23
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2F%252F%252Fassignment'
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: 438,489,494,559|🇫🇷 法国-171B8D3B
+  name: 438,559|🇫🇷 法国-171B8D3B
   network: tcp
   port: 15469
   reality-opts:
@@ -1569,9 +1558,7 @@ proxies:
   servername: ''
   tls: false
   type: vless
-  udp: true
   uuid: deb96819-bdaa-4f52-a536-d4751290ce47
-  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   http-opts:
@@ -1592,9 +1579,8 @@ proxies:
   uuid: 5454343b-541b-4c96-8c2a-52e81079d124
   xudp: true
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: 438,489,559|🇫🇷 法国-DA9DB452
+  name: 438,559|🇫🇷 法国-DA9DB452
   network: tcp
   port: 12453
   reality-opts:
@@ -1604,12 +1590,10 @@ proxies:
   servername: ''
   tls: false
   type: vless
-  udp: true
   uuid: c9f0224c-c509-427e-b314-cef6cab20646
-  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,494,559|未知 VLESS-98 | free-nodes #1'
+  name: '438,559|未知 VLESS-98 | free-nodes #1'
   network: tcp
   port: 44520
   reality-opts:
@@ -1620,23 +1604,19 @@ proxies:
   tls: false
   type: vless
   uuid: acd726d3-0128-44d8-a575-21013ff7740a
-  ws-opts:
-    headers:
-      Host: '@ProxyVPN11'
-- alterId: 0
-  cipher: auto
-  name: 438,559|🏁 未知-1D4E0FDA
-  network: ws
-  port: 40804
-  server: 185.248.33.173
-  servername: imafake.locker
+- alpn:
+  - h2
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '438,559|🇫🇷 France, Paris | [BL] #2'
+  network: tcp
+  port: 443
+  server: fr.noooo.win
+  servername: api-6a20f558.noooo.win
+  skip-cert-verify: false
   tls: true
-  type: vmess
-  uuid: c6e0562f-7ad1-40fb-a255-26194b2de84a
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
+  type: vless
+  uuid: 7b241232-208d-4d36-857e-913f91b044f4
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1811,67 +1791,7 @@ proxies:
   skip-cert-verify: false
   sni: bing.com
   type: hysteria2
-- encryption: none
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001...
-  network: tcp
-  port: 1210
-  server: white77.alexanderoff.ru
-  type: vless
-  udp: true
-  uuid: d2ce0b49-2b2c-46f6-9b43-4829d0075654
-  xudp: true
-- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
-  password: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
-  port: 443
-  server: e4c830ba-t9zts0-tryjtz-12ach.fr.oshuawei.com
-  sni: e4c830ba-t9zts0-tryjtz-12ach.fr.oshuawei.com
-  tls: true
-  type: http
-  username: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
-- cipher: chacha20-ietf-poly1305
-  name: 489|🟡🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001...
-  password: xs-h9TyN3xE21ntt8osfVg
-  port: 1080
-  server: 45.67.139.93
-  type: ss
-  udp: true
-- name: 489|🔴🇫🇷[🎬🤖📺🎭]_github.com/Ruk1ng001...
-  password: 8f7cb770-1305-11ee-b107-f23c91cfbbc9
-  port: 443
-  server: 4257c453-t9zts0-tg8syu-1nyy5.fr.oshuawei.com
-  sni: 4257c453-t9zts0-tg8syu-1nyy5.fr.oshuawei.com
-  tls: true
-  type: http
-  username: 8f7cb770-1305-11ee-b107-f23c91cfbbc9
-- name: '489|🔴🇫🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
-  password: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
-  port: 443
-  server: a80c5f65-t9zts0-tifnix-1ro8s.fr.oshuawei.com
-  sni: a80c5f65-t9zts0-tifnix-1ro8s.fr.oshuawei.com
-  tls: true
-  type: http
-  username: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
-- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #6'
-  password: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
-  port: 443
-  server: 6461960b-t9zts0-tbicd9-1go3q.fr.oshuawei.com
-  sni: 6461960b-t9zts0-tbicd9-1go3q.fr.oshuawei.com
-  tls: true
-  type: http
-  username: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
-- name: '489|🔴🇫🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #3'
-  password: b02327ac-a49a-11ef-a673-f23c913c8d2b
-  port: 443
-  server: 2399ae9a-t9zts0-tqruo0-1pqhp.fr.oshuawei.com
-  sni: 2399ae9a-t9zts0-tqruo0-1pqhp.fr.oshuawei.com
-  tls: true
-  type: http
-  username: b02327ac-a49a-11ef-a673-f23c913c8d2b
-- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
+- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
   password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
   port: 443
   server: eac88fe8-t9zts0-tonrmx-8n27.fr.oshuawei.com
@@ -1879,15 +1799,7 @@ proxies:
   tls: true
   type: http
   username: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
-- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #8'
-  password: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
-  port: 443
-  server: b8d00fba-ta1og0-tryjtz-12ach.fr.oshuawei.com
-  sni: b8d00fba-ta1og0-tryjtz-12ach.fr.oshuawei.com
-  tls: true
-  type: http
-  username: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
-- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #9'
+- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
   password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
   port: 443
   server: 2d225054-t9zts0-tawg6w-1rfon.fr.oshuawei.com
@@ -1895,7 +1807,7 @@ proxies:
   tls: true
   type: http
   username: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #10'
+- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
   password: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
   port: 443
   server: ca00f95b-t9zts0-tb08pe-luwe.fr.oshuawei.com
@@ -1903,7 +1815,7 @@ proxies:
   tls: true
   type: http
   username: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
-- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #11'
+- name: '489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
   password: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
   port: 443
   server: 46f62755-t9zts0-tnnrly-g43g.fr.oshuawei.com
@@ -1911,14 +1823,13 @@ proxies:
   tls: true
   type: http
   username: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
-- name: '489|🔴🇫🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #4'
-  password: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
-  port: 443
-  server: 08b01439-t9zts0-tjsm26-6gn6.fr.oshuawei.com
-  sni: 08b01439-t9zts0-tjsm26-6gn6.fr.oshuawei.com
-  tls: true
-  type: http
-  username: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+- cipher: chacha20-ietf-poly1305
+  name: 489|🟡🇫🇷[🎬🤖]_github.com/Ruk1ng001_f...
+  password: xs-h9TyN3xE21ntt8osfVg
+  port: 1080
+  server: 45.67.139.93
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   name: '519,559|🇫🇷_FR_法国 #2'
   port: 443
@@ -1962,21 +1873,31 @@ proxies:
       Host: linek.perry.us.kg
     path: /p/url
 - country: 🇫🇷FR
-  delay: 731
+  delay: 829
   name: 528|法国 - 巴黎 - 1
   password: telegram-id-directvpn
   port: 22223
-  server: 15.236.237.21
+  server: 13.37.141.219
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  delay: 726
+  delay: 911
   name: 528|法国 - 巴黎 - 2
+  password: telegram-id-directvpn
+  port: 22223
+  server: 15.236.101.176
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  delay: 869
+  name: 528|法国 - 巴黎 - 3
   password: telegram-id-privatevpns
   port: 22222
-  server: 15.236.237.21
+  server: 13.37.141.219
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
@@ -2002,18 +1923,21 @@ proxies:
   tls: true
   type: vmess
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
+- alterId: 0
+  name: 544,574|FR国
+  password: humanity
+  port: 443
+  server: 172.64.152.23
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  tls: true
+  type: trojan
+  udp: true
 - name: '545,546|法国[01] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
-  type: trojan
-- name: 551,559|🇺🇸 美国-1A309CAC
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 155.117.198.89
-  skip-cert-verify: true
-  sni: gh.01.naiun.bilibili.com
   type: trojan
 - name: 559|🇫🇷 France, Paris | 🌐 | [BL]
   password: dongtaiwang.com
@@ -2064,6 +1988,17 @@ proxies:
     headers:
       Host: ov-france1.09vpn.com
     path: '%2Fvless%2F'
+- name: 559|🇫🇷 法国-F1C8C609
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: 1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA
+    short-id: f34818a561dfd1fe
+  server: 45.196.224.103
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 356ccb34-22cc-4446-a137-072bc60d65ca
 - name: 559|🇫🇷 法国-61741AFD
   network: ws
   port: 443
@@ -2099,6 +2034,29 @@ proxies:
     headers:
       Host: play.google.com
     path: '%2Fapi%2Fv2%2Fxtrnwqjbkr%3Fed%3D2560'
+- name: 559|🇫🇷 法国-BEDABF3B
+  network: ws
+  port: 30001
+  server: 213.199.39.156
+  tls: false
+  type: vless
+  uuid: 3e5da4f6-93c4-4701-911b-1a5091d2430f
+  ws-opts:
+    headers:
+      Host: ''
+    path: '%2Fws'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '559|🇫🇷 France, Paris | [BL] #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Cbu6fkQiURQES7hfw916CFcfZYvRXMMgVmxnpK6CgSQ
+  server: 37.49.230.97
+  servername: s3.tehno.store
+  tls: false
+  type: vless
+  uuid: 7dd36ce4-97ad-41cf-a349-53bcccd8f17d
 - alpn:
   - h2
   client-fingerprint: edge
@@ -2136,6 +2094,17 @@ proxies:
   tls: false
   type: vless
   uuid: 94ae5ad5-8f3e-41bf-9546-99a1543d3cd1
+- name: '559,580|US美国(mibei77.com 米贝节点分享) #83'
+  network: xhttp
+  port: 80
+  server: 146.75.117.91
+  tls: false
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: tignaltofansv5.global.ssl.fastly.net
+    path: '%2FTignal'
 - name: '559,580|FR法国(mibei77.com 米贝节点分享) #14'
   network: xhttp
   port: 80
@@ -2147,6 +2116,17 @@ proxies:
     headers:
       Host: shangulin.global.ssl.fastly.net
     path: '%2Flogin'
+- name: '559,580|RU俄罗斯(mibei77.com 米贝节点分享) #26'
+  network: xhttp
+  port: 80
+  server: fastly.com
+  tls: false
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: sv6tignal.global.ssl.fastly.net
+    path: '%2Ftofan'
 - name: 559|🇫🇷 France, Paris (7th Arrondis...
   network: xhttp
   port: 80
@@ -3951,6 +3931,46 @@ proxies:
     headers:
       Host: imafake.locker
     path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: 559|法国_060905406
+  network: tcp
+  port: '2052'
+  server: 51.195.235.71
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 59e28f78-c31b-4613-9d9f-1e6732a31f46
+- alterId: 0
+  cipher: auto
+  name: 559|法国_060905407
+  network: tcp
+  port: '2053'
+  server: uk5.taskflowhub.org
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 89371dfc-2618-40d7-a558-693ff4f7f1eb
+- alterId: 0
+  cipher: auto
+  name: 559|法国_060905410
+  network: tcp
+  port: '2053'
+  server: de5.taskflowhub.org
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
+- alterId: 0
+  cipher: auto
+  name: 559|法国_060905412
+  network: tcp
+  port: '2053'
+  server: node-fr.connectsuite.org
+  servername: node-fr.connectsuite.org
+  tls: true
+  type: vmess
+  uuid: 2f4234f9-8f33-4c7f-952f-565ffa5f5fb7
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
