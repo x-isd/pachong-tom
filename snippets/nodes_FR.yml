@@ -655,7 +655,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-51.83.97.167-6226 #1'
+  name: '378,494,536,537|🇷FR-51.83.97.167-6226 #1'
   network: ws
   port: 80
   server: 51.83.97.167
@@ -984,7 +984,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-141.94.155.229-6373 #1'
+  name: '378,494,536,537|🇷FR-141.94.155.229-6373 #1'
   network: ws
   port: 443
   server: 141.94.155.229
@@ -1475,7 +1475,7 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '438|🇫🇷FR_1|2.1MB/s | 网盘搜宝: https:/...'
+- name: '438|🇫🇷FR_2|3.8MB/s | 更多节点: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1486,16 +1486,20 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2F%252F%252Fassignment'
-- name: '438|🇫🇷FR_10|2.3MB/s | 更多节点: https:...'
+- alterId: 0
+  cipher: auto
+  name: 438,559|🏁 未知-1D4E0FDA
   network: ws
-  password: humanity
-  port: 443
-  server: 141.101.90.101
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
+  port: 40804
+  server: 185.248.33.173
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: c6e0562f-7ad1-40fb-a255-26194b2de84a
   ws-opts:
-    path: '%2Fassignment'
+    headers:
+      Host: imafake.locker
+    path: /speedtest
 - alterId: 0
   cipher: auto
   name: 461|法国_马赛
@@ -1606,22 +1610,6 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- alterId: 2
-  cipher: auto
-  country: 🏁 ZZ
-  delay: 1153
-  http-opts: {}
-  name: '489,528,568|🇮🇩 印尼 | IDN #1'
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-  xudp: true
 - cipher: chacha20-ietf-poly1305
   name: 489|🟡🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001...
   password: xs-h9TyN3xE21ntt8osfVg
@@ -1675,6 +1663,13 @@ proxies:
   port: 443
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
+  type: trojan
+- name: 551,559|🇺🇸 美国-1A309CAC
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 48697
+  server: 155.117.198.89
+  skip-cert-verify: true
+  sni: gh.01.naiun.bilibili.com
   type: trojan
 - name: 559|🇫🇷 法国-DFCE0B65
   password: humanity

@@ -24,7 +24,7 @@ proxies:
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - client-fingerprint: chrome
-  name: 127|🇬🇧 GB_1|2.6MB/s|GPT⁺|YT-GB|NF|...
+  name: '127,426|🇬🇧 GB_1|2.6MB/s|GPT⁺|YT-GB|NF|... #1'
   network: ws
   port: 443
   server: 208.103.161.12
@@ -1570,7 +1570,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬🇧GB-172.99.190.206-7042 #2'
+  name: '378,494,536,537|🇬🇧GB-172.99.190.206-7042 #2'
   network: ws
   port: 443
   server: 172.99.190.206
@@ -1933,19 +1933,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '437,438,459,489,494,502,544,559,580,581,606,717|节点日期：2026-06-09 #1'
-  network: tcp
-  port: '180'
-  server: 82.198.246.214
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
-- alterId: 0
-  cipher: auto
   name: 437,559|🇬🇧 GB_24
   network: tcp
   port: 30830
@@ -1956,14 +1943,17 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: '437,438,459,494,544,559,580|美國節點 #56'
+  name: '437,459,472,473,474,489,494,502,544,559,580,581,606,717|节点日期：2026-06-09 #1'
   network: tcp
   port: '180'
-  server: 82.198.246.97
+  server: 82.198.246.214
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  xudp: true
 - alterId: 0
   cipher: aes-128-gcm
   name: 437,456,459,494,544,559,580,606|149.34.251.249_Claude
@@ -1978,18 +1968,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: '437,459,553,559|🇬🇧GB_38 #1'
-  network: tcp
-  port: 180
-  server: 82.198.246.9
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: '437,459,559|🇬🇧GB_40 #1'
+  name: '437,459,494,559|🇬🇧GB_40 #1'
   network: tcp
   port: 180
   server: 82.198.246.233
@@ -1997,47 +1976,95 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '438,507,559,580|未知 VLESS-101 | free-nodes #3'
+- alterId: 0
+  cipher: auto
+  name: '437,459,494,544,559,580|美國節點 #56'
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
-    short-id: 7a3f9e2b1c8d4f6a
-  server: 31.76.113.16
-  servername: it.s3-cloud.xyz
+  port: '180'
+  server: 82.198.246.97
+  servername: ''
   tls: false
-  type: vless
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- client-fingerprint: edge
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  country: 🇬🇧GB
+  h2-opts: {}
+  http-opts: {}
+  name: '437,440,459,553,559|🇬🇧GB_38 #1'
+  network: tcp
+  port: 180
+  server: 82.198.246.9
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,489,494,559,580|未知 VLESS-103 | free-nodes #2'
+  name: '438,494,519,559|🇬🇧_GB_英国 #4'
   network: tcp
   port: 443
   reality-opts:
     public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
     short-id: 7a3f9e2b1c8d4f6a
-  server: 31.76.113.34
+  server: 31.76.113.91
   servername: it.s3-cloud.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '438,494|Join+Telegram:@Farah_VPN #85'
+  network: xhttp
+  port: 443
+  server: 188.114.97.6
+  servername: sabkpo.tll-far.ir
   skip-cert-verify: true
-  tfo: false
+  tls: true
+  type: vless
+  uuid: d644824c-7f7c-4b48-87da-d988722082cb
+  ws-opts:
+    headers:
+      Host: sabkpo.tll-far.ir
+    path: '%2FTelegram-Zedmodeon'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,494,559|🏁 未知-75E23364
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
+    short-id: 7a3f9e2b1c8d4f6a
+  server: 31.76.91.34
+  servername: ''
   tls: false
   type: vless
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 438,494,559|🏁 未知-26D83EA4
+  name: 438,494,559|🏁 未知-A58EF87B
   network: tcp
-  port: 443
+  port: 7443
   reality-opts:
-    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
-    short-id: 7a3f9e2b1c8d4f6a
-  server: 31.76.113.17
+    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+    short-id: d82fb387
+  server: 31.77.201.3
   servername: ''
   tls: false
   type: vless
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+  uuid: 10484bee-8516-400a-9b1e-efb5144ad324
+- name: 438,494,717|GB【机场推荐：https://a9a.xyz】5
+  network: tcp
+  port: 13149
+  server: 91.223.236.155
+  tls: false
+  type: vless
+  uuid: 236b557f-90db-4a63-87bf-ae3c944c4764
 - client-fingerprint: edge
   flow: xtls-rprx-vision
   name: '438,494,507,559|未知 VLESS-117 | free-nodes #1'
@@ -2053,43 +2080,55 @@ proxies:
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 438,494,559|🏁 未知-7616D8DA
+  name: 438,494,559|🏁 未知-03930D76
   network: tcp
   port: 443
   reality-opts:
     public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
     short-id: 7a3f9e2b1c8d4f6a
-  server: 31.76.91.33
+  server: 31.76.91.36
   servername: ''
   tls: false
   type: vless
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- client-fingerprint: edge
+- alpn:
+  - h2
+  client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '438,494,507,559,580|未知 VLESS-105 | free-nodes #2'
+  name: '438,494,559|🇬🇧 United Kingdom, London | [B... #3'
   network: tcp
   port: 443
-  reality-opts:
-    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
-    short-id: 7a3f9e2b1c8d4f6a
-  server: 31.76.91.12
-  servername: jp.s3-cloud.org
-  tls: false
+  server: uk.noooo.win
+  servername: api-6a20f558.noooo.win
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+  uuid: 7b241232-208d-4d36-857e-913f91b044f4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 438,494,559|🏁 未知-A2679B79
+  name: 438,494,559|🏁 未知-DD37AB12
   network: tcp
   port: 443
   reality-opts:
-    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
+    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
     short-id: 7a3f9e2b1c8d4f6a
-  server: 31.76.91.30
+  server: 31.76.113.93
   servername: ''
   tls: false
   type: vless
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,494|Join+Telegram:@Farah_VPN #1842'
+  network: tcp
+  port: 443
+  server: 165.231.33.235
+  servername: api-6a20f558.noooo.win
+  tls: true
+  type: vless
+  uuid: 7b241232-208d-4d36-857e-913f91b044f4
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '438,559,580|US美国(mibei77.com 米贝节点分享) #16'
@@ -2103,6 +2142,32 @@ proxies:
   tls: false
   type: vless
   uuid: ffaa8e95-74e2-4ef4-8974-69dd3651b6f9
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '438,559,580|未知 VLESS-101 | free-nodes #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
+    short-id: 7a3f9e2b1c8d4f6a
+  server: 31.76.113.16
+  servername: it.s3-cloud.xyz
+  tls: false
+  type: vless
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: xyz
+  name: '438|🇬🇧GB_14|1.6MB/s | 更多节点: https:...'
+  network: grpc
+  port: 7443
+  reality-opts:
+    public-key: F2MKDw5CCtP1oXIej2EgNxB01k3eyNu7tKCFfucgnRA
+  server: l7.l-itx.info
+  servername: colorlib.com
+  tls: false
+  type: vless
+  uuid: f1a44ae4-20f9-4dd7-b60e-b4f2acecfdb4
 - name: '455,457,458|🇬🇧_GB_英国 #2'
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
@@ -2769,23 +2834,23 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 472,473,474,494,502,551,559|🇩🇪 德国-50046111
+  name: 472,473,474,559|🏁 未知-918EB5C6
   network: tcp
   port: 443
   reality-opts:
-    public-key: _M0MBe7f2r36dqtjltSRSOOBlclR2q7uY3Rje5r_mgY
-    short-id: '73'
-  server: 2.26.135.131
+    public-key: D0tYligRGe3BOGZyKT6RhHQxYFZqpKm7-FnDrYHkIzU
+    short-id: a9496097304cffd1
+  server: 31.76.84.184
   servername: ''
   tls: false
   type: vless
-  uuid: 0a963275-4865-452b-8d65-ac67344f913a
+  uuid: 5481bfe3-bf42-425c-b561-cb9d64bff7ff
 - alterId: 0
   cipher: auto
-  name: '475,478,480,483,519,522,523,524|美国_31 #1'
+  name: '475,478,480,483,519,522,523,524,548|🇺🇸_US_美国 #29'
   port: 180
   server: 82.198.246.214
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
@@ -2976,6 +3041,21 @@ proxies:
   tls: true
   type: http
   username: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '489,494,559,580|未知 VLESS-103 | free-nodes #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
+    short-id: 7a3f9e2b1c8d4f6a
+  server: 31.76.113.34
+  servername: it.s3-cloud.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
 - name: '489|🔴🇬🇧[🎬🤖📺🎭]_github.com/Ruk1ng001... #4'
   password: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
   port: 443
@@ -3017,7 +3097,7 @@ proxies:
     path: /@Marisa_kristifp=chrome
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '489,494,507,559,580|未知 VLESS-104 | free-nodes #2'
+  name: '489,494,559,580|未知 VLESS-104 | free-nodes #2'
   network: tcp
   port: 443
   reality-opts:
@@ -3210,7 +3290,7 @@ proxies:
   - http/1.1
   - h3
   client-fingerprint: chrome
-  name: '502,551|🇬🇧GB_1|1.7MB/s #1'
+  name: 502|🇬🇧GB_1|1.7MB/s
   port: 8443
   server: alicdn.devefunx.net
   servername: alicdn.devefunx.net
@@ -3397,7 +3477,7 @@ proxies:
   sni: u723829us372.okgfw.top
   tls: false
   type: hysteria2
-- name: '559|🇬🇧GB_47 #1'
+- name: 559|🇬🇧GB_47
   password: 3ac6a6ca99f74941b1eaf892818e2ddb
   port: 443
   server: 194.33.45.157
@@ -3655,17 +3735,6 @@ proxies:
   tls: true
   type: vless
   uuid: 6585a62b-4d8b-48cc-bdad-e2542504d748
-- client-fingerprint: chrome
-  name: '559|🇬🇧 United Kingdom, London | [B... #4'
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: uemqA7VkHB7Xw_gc88AfbBijEJgiWaVdCiIyMae8CSI
-  server: 94.183.219.239
-  servername: google.com
-  tls: false
-  type: vless
-  uuid: 91427003-38cb-473e-95f2-a4b500c91f7b
 - client-fingerprint: random
   name: 559|🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
   network: xhttp
@@ -3726,6 +3795,17 @@ proxies:
   uuid: d0793daa-c12a-4f78-ae9d-a553062f245f
   ws-opts:
     path: '%2Fxhttppath'
+- name: 559|🇬🇧 英国-0AD66CFE
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
+    short-id: 3ca620a7ed5f3196
+  server: 23.26.37.119
+  servername: ''
+  tls: false
+  type: vless
+  uuid: dcba77d7-bb59-4802-b32c-37fd7011fca4
 - name: 559|🇬🇧 英国-998261F5
   network: tcp
   port: 443
