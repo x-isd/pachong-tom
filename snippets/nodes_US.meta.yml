@@ -415,28 +415,6 @@ proxies:
   port: 443
   server: 63.180.254.10
   type: ss
-- alpn:
-  - h2
-  - http/1.1
-  name: '306,502,559|🇺🇸US_8|1.9MB/s #1'
-  network: ws
-  password: 0cb2739d-98b8-45ce-b52c-4305c40975a6
-  port: 443
-  server: h2.bnm.uw.to
-  skip-cert-verify: false
-  sni: h2.bnm.uw.to
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /0cb2739d-98b8-45ce-b52c-4305c40975a6-tr
-- name: 306,378,502,537,559|美国_061220049
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 155.117.198.85
-  skip-cert-verify: true
-  sni: fr.01.naiun.bilibili.com
-  type: trojan
-  udp: true
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: tj
@@ -497,7 +475,8 @@ proxies:
   type: hysteria2
 - encryption: none
   flow: ''
-  name: '340,489,502,514,523,524,551,553,559,566,567,585,586|US_speednode_0049 #3'
+  name: '340,472,473,474,489,502,514,523,524,551,553,559,567,585,586|US_speednode_0049
+    #3'
   network: ws
   port: 80
   server: 199.232.197.131
@@ -513,7 +492,7 @@ proxies:
     path: /
   xudp: true
 - encryption: none
-  name: '340,489,502,514,523,524,551,559,566,567,585,586|US_speednode_0050 #3'
+  name: '340,489,502,514,523,524,551,559,567,585,586|US_speednode_0050 #3'
   network: ws
   port: 80
   server: 199.232.197.131
@@ -530,7 +509,8 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: '340,489,502,514,523,524,551,559,567,580,585,586|US_speednode_0051 #3'
+  name: '340,472,473,474,489,502,514,523,524,551,559,567,580,585,586|US_speednode_0051
+    #3'
   network: ws
   port: 80
   server: 151.101.2.219
@@ -546,7 +526,7 @@ proxies:
     path: /
   xudp: true
 - encryption: none
-  name: '340,489,502,514,523,524,551,559,566,567,585,586|US_speednode_0052 #3'
+  name: '340,489,502,514,523,524,551,559,567,585,586|US_speednode_0052 #3'
   network: ws
   port: 80
   server: 151.101.0.1
@@ -563,7 +543,7 @@ proxies:
   xudp: true
 - cipher: aes-128-gcm
   country: 🇺🇸US
-  name: 356,357,378,435,537,538|🇺🇸US-156.146.38.168-0064 | 114...
+  name: 356,357,378,435,537,538,606|156.146.38.168_Claude
   password: shadowsocks
   port: 443
   server: 156.146.38.168
@@ -645,7 +625,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇸US
-  name: 356,357,378,435,537,538|🇺🇸US-156.146.38.167-0068 | 117...
+  name: 356,357,378,435,537,538,606|156.146.38.167_Claude
   password: shadowsocks
   port: 443
   server: 156.146.38.167
@@ -899,7 +879,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇦UA
-  name: 356,357,378,435,537,538|🇺🇸US-37.19.198.236-0057 | 47.0...
+  name: 356,357,378,435,537,538,606|37.19.198.236_Gemini_Claude
   password: shadowsocks
   port: 443
   server: 37.19.198.236
@@ -1111,7 +1091,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇦UA
-  name: 356,357,378,435,537,538|🇺🇸US-37.19.198.160-0054 | 24.7...
+  name: 356,357,378,435,537,538,606|37.19.198.160_Gemini_Claude
   password: shadowsocks
   port: 443
   server: 37.19.198.160
@@ -1196,7 +1176,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇦UA
-  name: 356,357,378,435,537,538|🇺🇸US-37.19.198.244-0056 | 40.7...
+  name: 356,357,378,435,537,538,606|37.19.198.244_Gemini_Claude
   password: shadowsocks
   port: 443
   server: 37.19.198.244
@@ -1214,14 +1194,14 @@ proxies:
   server: 38.121.43.71
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538|🇺🇸US-156.146.38.169-0075 | 119...
+  name: 356,357,378,537,538,606|156.146.38.169_Claude
   password: shadowsocks
   port: 443
   server: 156.146.38.169
   type: ss
 - cipher: aes-128-gcm
-  country: 🇸US
-  name: 356,357,378,435,537,538|🇺🇸US-156.146.38.170-0065 | 106...
+  country: 🇺US
+  name: 356,357,378,435,537,538,606|156.146.38.170_Claude
   password: shadowsocks
   port: 443
   server: 156.146.38.170
@@ -1279,7 +1259,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇺🇸US
-  name: 356,378,435,537,538|🇺🇸US-173.244.56.6-0087 | 177.9...
+  name: 356,378,435,537,538,606|173.244.56.6_Gemini_Claude
   password: shadowsocks
   port: 443
   server: 173.244.56.6
@@ -1346,7 +1326,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇦UA
-  name: 356,357,378,435,537,538|🇺🇸US-37.19.198.243-0055 | 33.7...
+  name: 356,357,378,435,537,538,606|37.19.198.243_Gemini_Claude
   password: shadowsocks
   port: 443
   server: 37.19.198.243
@@ -3178,21 +3158,21 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇺 US
-  name: 378,435,537,538|🇺🇸US-149.28.255.6-0090 | 74.96...
+  name: 378,435,537,538,606|149.28.255.6_Gemini_Claude
   password: GyZ5Xo0ht41vYmW3H4
   port: 816
   server: 149.28.255.6
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 378,435,537,538,606|US_Los Angeles_Psychz Networks...
+  name: 378,435,537,538,606|108.181.0.177_Gemini_Claude
   password: G5p6ww4o67HB
   port: 8388
   server: 108.181.0.177
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺US
-  name: 378,435,537,538|🇺🇸US-173.244.56.9-0089 | 212.5...
+  country: 🇺🇸US
+  name: 378,435,537,538,606|173.244.56.9_Claude
   password: shadowsocks
   port: 443
   server: 173.244.56.9
@@ -3204,13 +3184,13 @@ proxies:
   server: ru.moktana.app
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇺US
-  name: 378,435,537,538|🇺🇸US-107.172.250.161-0084 | 23...
+  country: 🇺🇸US
+  name: 378,435,537,538,606|107.172.250.161_Claude
   password: QTmLViU4VEmuwbOxUw4IXd
   port: 59556
   server: 107.172.250.161
   type: ss
-- name: '378,507,523,524,536,537,538,559,580|未知 TROJAN-29 | free-nodes #2'
+- name: '378,523,524,536,537,538,559,580|未知 TROJAN-29 | free-nodes #2'
   network: tcp
   password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
   port: 443
@@ -3221,7 +3201,8 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇺🇸US-216.105.168.18-0141 | 0.5...
+  country: 🇸US
+  name: 378,435,537,538|🇺🇸US-216.105.168.18-0141 | 0.5...
   password: hCCWOcIsK5wrFz4OX70rWf
   port: 443
   server: 216.105.168.18
@@ -3242,7 +3223,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   country: 🇺 US
-  name: '378,435,475,476,480,481,537,538,574|🇺🇸US美国10 148.9KB/s #1'
+  name: 378,435,475,476,480,481,537,538,574,606|147.90.234.133_Claude
   password: hbGrpfvNrJsUmKmPbR3iY2
   port: 443
   server: tinkered-pennies-puppies.freesocks.work
@@ -3252,7 +3233,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 378,475,476,480,481,537,538,574|DE国 179.2KB/s
+  name: 378,475,476,480,481,537,538,574|DE国 1.7MB/s
   password: XUMTygEM1jVYIvysXKqA5T
   port: 443
   server: hackney-latest-strike.freesocks.work
@@ -3398,14 +3379,14 @@ proxies:
     headers:
       Host: cn.zzv02.infonode.xyz
     path: /
-- name: '378,507,536,537,538,559,580|未知 TROJAN-34 | free-nodes #2'
+- name: '378,536,537,538,559,580|未知 TROJAN-34 | free-nodes #2'
   password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
   port: 443
   server: 172.235.63.252
   skip-cert-verify: false
   sni: 172.235.63.252
   type: trojan
-- name: '378,507,536,537,538,559|未知 TROJAN-27 | free-nodes #1'
+- name: '378,536,537,538,559|未知 TROJAN-27 | free-nodes #1'
   network: tcp
   password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM
   port: 443
@@ -3869,8 +3850,7 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- alterId: 0
-  name: '378,475,480,536,537,559,574,580|香港節點丨yoyapai.com #2'
+- name: '378,475,480,536,537,559,580|香港節點丨yoyapai.com #2'
   network: tcp
   password: 825929f4-c702-35ce-9124-00d3f95b8c32
   port: 34436
@@ -3880,8 +3860,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: 378,475,480,536,537,559,574,580|臺灣節點丨yoyapai.com
+- name: 378,475,480,536,537,559,580|臺灣節點丨yoyapai.com
   network: tcp
   password: 825929f4-c702-35ce-9124-00d3f95b8c32
   port: 34450
@@ -3891,8 +3870,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: '378,475,480,536,537,559,574,580|日本節點丨yoyapai.com #4'
+- name: '378,475,480,536,537,559,580|日本節點丨yoyapai.com #4'
   network: tcp
   password: 825929f4-c702-35ce-9124-00d3f95b8c32
   port: 34470
@@ -3903,7 +3881,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,476,481,489,522,536,537,544,548,559,574,580,581|🇺🇸_US_美国 #56'
+  country: 🇺🇸US
+  name: '378,440,476,481,489,522,536,537,544,548,559,574,580,581|🇺🇸_US_美国 #56'
   network: tcp
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 48697
@@ -4031,7 +4010,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,536,537,544,559,574,580|US美国(mibei77.com 米贝节点分享) #126'
+  name: '378,507,536,537,544,559,574,580|US美国(mibei77.com 米贝节点分享) #126'
   network: tcp
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
@@ -4099,7 +4078,7 @@ proxies:
       Host: www.calmlunch.com
     path: '%2Fassignment'
 - alterId: 0
-  name: '378,507,536,537,544,559,574,580|GB英国(mibei77.com 米贝节点分享) #25'
+  name: '378,536,537,544,559,574,580|GB英国(mibei77.com 米贝节点分享) #25'
   network: tcp
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 47909
@@ -4122,7 +4101,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,536,537,544,559,574,580|GB英国(mibei77.com 米贝节点分享) #28'
+  name: '378,507,536,537,544,559,574,580|GB英国(mibei77.com 米贝节点分享) #28'
   network: tcp
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 47909
@@ -5202,6 +5181,13 @@ proxies:
   server: 20.163.90.12
   skip-cert-verify: false
   sni: paydiu.com
+  type: trojan
+- name: 378,537,559|美国_061220049
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45619
+  server: 155.117.198.85
+  skip-cert-verify: true
+  sni: fr.01.naiun.bilibili.com
   type: trojan
 - cipher: aes-128-gcm
   name: '378,537|🇺🇸US-154.17.13.158-1656 #1'
@@ -6596,7 +6582,7 @@ proxies:
   port: 11475
   server: 167.160.90.51
   type: ss
-- country: 🇸US
+- country: 🇺🇸US
   name: '378,435,436,536,537|🇺🇸US-64.94.95.118-4521 #1'
   password: kkzh2prsyr2ik47as615
   port: 57142
@@ -6716,7 +6702,7 @@ proxies:
   skip-cert-verify: false
   sni: ch.01.naiun.bilibili.com
   type: trojan
-- name: 378,536,537,559|🏁 未知-71B5A0A7
+- name: 378,507,536,537,559|🏁 未知-71B5A0A7
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 46424
   server: 155.117.198.86
@@ -15685,13 +15671,28 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 435,437,559|美国_061220018
+  network: tcp
+  port: '18000'
+  server: 67.220.95.3
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  ws-path: /
+- alterId: 0
+  cipher: auto
   country: 🇸US
   h2-opts: {}
   http-opts: {}
-  name: 435,437,559|🇺🇸US_109
+  name: 435,437,559|美国_061220019
   network: tcp
-  port: 18000
-  server: 67.220.85.46
+  port: '18000'
+  server: 38.110.1.246
   servername: ''
   skip-cert-verify: true
   tls: false
@@ -15700,13 +15701,13 @@ proxies:
   ws-path: /
 - alterId: 1
   cipher: auto
-  country: 🇺🇸US
+  country: 🇸US
   h2-opts: {}
   http-opts: {}
-  name: '435,437,559|🇺🇸US_110 #1'
+  name: '435,437,559|🇺🇸US_112 #1'
   network: tcp
   port: 22324
-  server: 172.233.17.76
+  server: 67.220.72.237
   servername: ''
   skip-cert-verify: true
   tls: false
@@ -15715,19 +15716,18 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇸US
+  country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 435,437,559,606|US_Los Angeles_GTHost_Claude
+  name: '435,437,559|🇺🇸US_109 #1'
   network: tcp
-  port: 22324
-  server: 67.220.72.237
+  port: 18000
+  server: 67.220.85.46
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -15744,23 +15744,16 @@ proxies:
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 435,437,559|美国_061220019
-  network: tcp
-  port: '18000'
-  server: 38.110.1.246
-  servername: ''
+- country: 🇺🇸US
+  name: 435,436|🇺🇸US_118
+  password: humanity
+  port: 443
+  server: v3.dabache.top
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  ws-path: /
-- country: 🇸US
-  name: '435,436,559|🇺🇸US_114 #1'
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: '435,436,559|🇺🇸US_114 #2'
   password: '!!str 1234567890'
   port: 443
   server: 144.31.85.72
@@ -15768,17 +15761,17 @@ proxies:
   sni: kfm-bn0.pages.dev
   type: trojan
   udp: true
-- name: 436|🇺🇸US_122
+- name: 436|🇺🇸US_117
   password: pro%40_LlpRWwEh4tRl4cSzc0TZDxM
   port: 20000
   server: starlink-sg2.mfa.cat
   type: trojan
-- name: '436|🇺🇸US_123 #1'
+- name: '436|🇺🇸US_119 #1'
   password: AZWY%3DWAZk5TeVYmMUudr2xmeb00I3ymeMQ
   port: 443
   server: 23.227.193.173
   type: trojan
-- name: '436|🇺🇸US_124 #1'
+- name: '436|🇺🇸US_120 #1'
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 64.176.36.61
@@ -15820,7 +15813,7 @@ proxies:
       Host: r1.mizulina.top
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '438,475,478,480,483,489,522,523,524,548,553,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
+  name: '438,475,478,480,483,489,507,522,523,524,548,553,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
     #12'
   network: tcp
   port: 22231
@@ -15996,7 +15989,7 @@ proxies:
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - cipher: aes-256-cfb
   country: 🇸US
-  name: 440|Relay_🇸US-🇺🇸US_12
+  name: 440|Relay_🇸US-🇺🇸US_14
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -16194,16 +16187,6 @@ proxies:
     headers:
       Host: s28233.cdn.ngenix.net
     path: '%2F'
-- alterId: 2
-  cipher: auto
-  name: '459|美国(yudou789.top 玉豆免费节点) #3'
-  network: tcp
-  port: '30824'
-  server: v24.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '459|美国(yudou789.top 玉豆免费节点) #4'
   network: ws
   port: 2087
@@ -16271,21 +16254,6 @@ proxies:
     headers:
       Host: epge.muarua.filegear-sg.me
     path: '%2F%3Fed'
-- alpn:
-  - ''
-  alterId: '2'
-  cipher: auto
-  name: 459,489|🔴🇺🇸[🎬📺🎪🎞️]_github.com/Ruk1ng00...
-  network: tcp
-  port: 30829
-  server: v29.hdacd.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
 - name: '459,559|美国 #3'
   network: ws
   password: humanity
@@ -16464,20 +16432,6 @@ proxies:
     headers:
       Host: vms.lifetime15.workers.dev
     path: '%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FYouTube%40%E5%B0%8F%E9%9D%92%E7%A7%91%E5%AD%A6%E7%BD%91%F0%9F%87%A8%F0%9F%87%B3'
-- alterId: '2'
-  cipher: auto
-  client-fingerprint: chrome
-  name: '459,489|🔴🇺🇸[🎬📺🎭🎪]_github.com/Ruk1ng001... #2'
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
 - name: 460|美国_洛杉矶
   network: ws
   password: NISHIKUITAN222
@@ -19921,59 +19875,38 @@ proxies:
     headers:
       Host: lax2.ibgfw.top
     path: /dyajvws
-- name: '472,473,474|美国+V2CROSS.COM #4'
+- encryption: none
+  flow: ''
+  name: '472,473,474,489,523,524,553,580|未知 VLESS-44 | free-nodes #2'
   network: ws
-  port: 443
-  server: 199.232.78.159
-  servername: default.ssl.fastly.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 2e4798a9-d8e9-4a43-ad43-285d3ad5633c
-  ws-opts:
-    headers:
-      Host: pan1.global.ssl.fastly.net
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 472,473,474,502,559|🏁 未知-2C4C4FEC
-  network: tcp
-  port: 7443
-  reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-    short-id: d82fb387
-  server: 167.104.223.68
+  port: 80
+  server: 151.101.194.219
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vless
-  uuid: 1c0277ad-bb4d-496f-bc0c-40ccee03fca5
-- flow: ''
-  name: '472,473,474|美国+CloudFlare节点 #2'
-  network: ws
-  port: 443
-  server: 172.64.32.75
-  servername: octopusss4.com
-  tls: true
-  type: vless
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  udp: true
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   ws-opts:
     headers:
-      Host: octopusss4.com
-    path: /tsghdws
-- client-fingerprint: chrome
-  name: '472,473,474|美国+RF+Engineering #2'
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+  xudp: true
+- encryption: none
+  name: '472,473,474,489,523,524|加拿大- #1'
   network: ws
-  port: 443
-  server: 141.193.213.10
-  servername: octopusss4.com
-  tls: true
+  port: 80
+  server: 151.101.130.219
+  skip-cert-verify: true
+  tls: false
   type: vless
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  udp: true
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   ws-opts:
     headers:
-      Host: octopusss4.com
-    path: '%2Ftsghdws'
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+  xudp: true
 - client-fingerprint: chrome
   name: '475,480|美國+CloudFlare丨yoyapai.com #1'
   network: ws
@@ -19989,10 +19922,11 @@ proxies:
     path: /@Marisa_kristi
 - alterId: 0
   cipher: auto
-  name: 475,480,519,548|🇬🇧 英国 starcorenode.com
+  fingerprint: chrome
+  name: 475,480,519,548,606|149.34.251.249_Claude2
   port: 180
   server: 82.198.246.37
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -20428,7 +20362,7 @@ proxies:
         (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
     path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
   xudp: true
-- name: '489,502,559|🇺🇸US_2|1.0MB/s #1'
+- name: 489,559|🇺🇸US_2|1.0MB/s
   network: ws
   port: 8880
   server: 114.129.43.30
@@ -21173,7 +21107,7 @@ proxies:
         like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: ''
   xudp: true
-- name: '489,502,559|🇺🇸US_4|1.3MB/s #1'
+- name: 489,559|🇺🇸US_4|1.3MB/s
   network: ws
   port: 8880
   server: 185.193.30.30
@@ -21190,7 +21124,7 @@ proxies:
   tls: true
   type: http
   username: 94d40708-8273-11ea-8fc9-f23c913c8d2b
-- name: '489,502,559|🇺🇸US_5|1.8MB/s #1'
+- name: 489,559|🇺🇸US_5|1.8MB/s
   network: ws
   port: 8880
   server: 92.53.188.30
@@ -21472,9 +21406,9 @@ proxies:
   udp: true
   uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
   xudp: true
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   encryption: none
-  name: '489,502,507,559|未知 VLESS-114 | free-nodes #1'
+  name: '489,507,559|未知 VLESS-114 | free-nodes #1'
   network: tcp
   port: 1005
   reality-opts:
@@ -21575,74 +21509,20 @@ proxies:
     headers:
       Host: ecc.vtcss.top
     path: /qwer01
-- flow: ''
-  name: 502,553|🏳️未知_5e638_ESET_NOD32_Symantec...
-  network: ws
-  port: 2053
-  server: josni.hoyes.cloudns.ch
-  servername: josni.hoyes.cloudns.ch
-  tls: true
-  type: vless
-  udp: true
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  ws-opts:
-    headers:
-      Host: josni.hoyes.cloudns.ch
-    path: /
-- alpn:
-  - http/1.1
-  name: '502|美国+CloudFlare节点 #4'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.233
-  skip-cert-verify: false
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: /assignment
-- name: 502|🇺🇸65919 | ⚡️Telegram = t.me/SO...
-  obfs: salamander
-  obfs-password: gxXGwphUe6APbFFsWA
-  password: Nrqyc1GkGr
-  port: 54236
-  server: panel.cobalttoolsgithub.online
-  skip-cert-verify: false
-  tls: false
-  type: hysteria2
-- name: 502,559|🏁 未知-4410EA2D
-  obfs: salamander
-  obfs-password: gxXGwphUe6APbFFsWA
-  password: Nrqyc1GkGr
-  port: 54236
-  server: panel.cobalttoolsgithub.online
-  skip-cert-verify: false
-  sni: panel.cobalttoolsgithub.online
-  tls: false
-  type: hysteria2
-- name: '502,507,559|未知 VLESS-54 | free-nodes #2'
-  network: ws
-  port: 55380
-  server: 172.86.109.206
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 502,507,559|🏁 未知-2C4C4FEC
+  network: tcp
+  port: 7443
+  reality-opts:
+    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+    short-id: d82fb387
+  server: 167.104.223.68
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 5e1f8cb7-5509-43c9-a417-1c65c0df5959
-  ws-opts:
-    path: /
-- name: '502,559|🇺🇸US_9|1.4MB/s #1'
-  network: ws
-  port: 80
-  server: 104.17.72.206
-  tls: false
-  type: vless
-  uuid: 1de37726-744b-46e1-9101-c926b3402e82
-  ws-opts:
-    headers:
-      Host: v2.v2configlab.workers.dev
-    path: /
+  uuid: 1c0277ad-bb4d-496f-bc0c-40ccee03fca5
 - alpn:
   - ''
   client-fingerprint: random
@@ -21766,7 +21646,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559,580|US VLESS-254 | free-nodes #1'
+  name: 507,559,580|US VLESS-254 | free-nodes
   network: tcp
   port: 443
   server: s542.ccgfw.online
@@ -22086,6 +21966,21 @@ proxies:
   uuid: 5f57df48-45c4-4e1d-aa13-dd539ecb257d
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
+  name: '523,524,559|美国 #7'
+  network: tcp
+  port: 2443
+  reality-opts:
+    public-key: wa00o0wO4pEn9ki565dMNkzt0SBcuJ4aRyz6tpTYmQw
+    short-id: 9d35004ad989e412
+  server: 185.151.241.186
+  servername: www.microsoft.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 129400e5-7d1b-4720-bf3e-f877c3e5021e
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
   name: '523,524,559|美国 #13'
   network: tcp
   port: 443
@@ -22098,6 +21993,21 @@ proxies:
   type: vless
   udp: true
   uuid: 5729c1fc-c7cf-41b7-8c17-f9b5f59772da
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '523,524,559|美国 #24'
+  network: tcp
+  port: 2443
+  reality-opts:
+    public-key: FuTPREnx4yIuC5tNUDrS1VOHBo9y9Dq22C354dritlM
+    short-id: efbd846f848d8d37
+  server: 93.92.80.5
+  servername: www.microsoft.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 87c26575-4ccc-4d93-a967-21d98a8f05d8
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '523,524,559|美国 #27'
@@ -22619,7 +22529,7 @@ proxies:
       Host: store.timimi.dpdns.org
     path: /
 - alterId: 0
-  name: '523,524,544,559,574|🇺🇸US美国3 #1'
+  name: 523,524,544,559,574|🇺🇸US美国7
   password: humanity
   port: 443
   server: 165.215.250.14
@@ -22752,7 +22662,7 @@ proxies:
       Host: mrnetwork.pages.dev
     path: /en/http://nz6dNVWWqy:iqKcbEJGQP@91.228.227.175:9996
 - alterId: 0
-  name: '523,524,544,559,574|🇺🇸US美国29 #1'
+  name: '523,524,544,559,574|🇺🇸US美国32 #1'
   password: 497dae1f-6db8-4c35-957f-ceb8c1500909
   port: 443
   server: 11u8k6n04q3y4ajoai.lovebaipiao.net
@@ -23733,7 +23643,7 @@ proxies:
       Host: v2ray.codefyinc.com
     path: /vmessws
 - alterId: 0
-  name: '544,559,574|🇺🇸US美国47 #1'
+  name: 544,559,574|US
   password: humanity
   port: 443
   server: 104.18.152.233
@@ -24009,14 +23919,30 @@ proxies:
   sni: hy2.aspidnet.xyz
   tls: false
   type: hysteria2
-- name: 559|美国_061220009
+- client-fingerprint: chrome
+  name: 559,606|NL_Dronten__Claude
   obfs: salamander
+  obfs_password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   port: 443
   server: hy2.aspidnet.xyz
+  skip-cert-verify: false
   tls: false
   type: hysteria2
-- name: '559|🇺🇸US_116 #1'
+- alpn:
+  - h2
+  - http/1.1
+  name: 559|🇺🇸US_8|1.9MB/s
+  network: ws
+  password: 0cb2739d-98b8-45ce-b52c-4305c40975a6
+  port: 443
+  server: h2.bnm.uw.to
+  skip-cert-verify: false
+  sni: h2.bnm.uw.to
+  type: trojan
+  ws-opts:
+    path: /0cb2739d-98b8-45ce-b52c-4305c40975a6-tr
+- name: '559|🇺🇸US_116 #2'
   password: '!!str 1234567890'
   port: 443
   server: 144.31.138.127
@@ -24133,16 +24059,21 @@ proxies:
   server: closing-crow.rooster465.autos
   sni: closing-crow.rooster465.autos
   type: trojan
-- alterId: 0
-  name: '559,574|🇺🇸US美国60 #1'
+- name: 559,580|未知 TROJAN-38 | free-nodes
+  network: tcp
+  password: d1UH4TrhvCmjc-s4nmChew1qGqX3MNMqel
+  port: 443
+  server: 130.94.29.102
+  sni: www.ws-converter.click
+  type: trojan
+  ws-opts:
+    path: '%2f'
+- name: 559|🇺🇸US美国60
   password: humanity
   port: 443
   server: 104.19.2.175
-  skip-cert-verify: true
   sni: www.calmloud.com
-  tls: true
   type: trojan
-  udp: true
 - name: '559,580|🇺🇸 美国 CloudFlare节点 2 #3'
   password: humanity
   port: 443
@@ -24150,13 +24081,13 @@ proxies:
   skip-cert-verify: false
   sni: www.gossipglove.com
   type: trojan
-- name: '559|🇺🇸US_121 #1'
+- name: '559|🇺🇸US_121 #2'
   password: humanity
   port: 443
   server: v3.dabache.top
   sni: v3.dabache.top
   type: trojan
-- name: '559|🇺🇸US_117 #2'
+- name: '559|🇺🇸US_117 #1'
   password: kkzh2prsyr2ik47as615
   port: 57142
   server: 64.94.95.118
@@ -24215,6 +24146,17 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: '%2F'
+- name: 559|🇺🇸US_9|1.4MB/s
+  network: ws
+  port: 80
+  server: 104.17.72.206
+  tls: false
+  type: vless
+  uuid: 1de37726-744b-46e1-9101-c926b3402e82
+  ws-opts:
+    headers:
+      Host: v2.v2configlab.workers.dev
+    path: /
 - name: 559|🇺🇸 United States, Las Vegas | ...
   network: ws
   port: 35711
@@ -25181,19 +25123,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alpn:
-  - ''
-  alterId: 0
+- alterId: 0
   cipher: auto
-  name: 559,606|US_Santa Clara_GTHost_Claude
+  name: 559|🇺🇸 美国-ADAF2D9F
   network: tcp
   port: 22324
   server: 216.106.185.141
   servername: ''
-  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
@@ -25205,16 +25143,16 @@ proxies:
   tls: false
   type: vmess
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 559|美国_061220018
+  name: 559|🇺🇸US_110
   network: tcp
-  port: '18000'
-  server: 67.220.95.3
+  port: 22324
+  server: 172.233.17.76
   servername: ''
   tls: false
   type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
   name: 559|美国_0612203378
@@ -25235,6 +25173,16 @@ proxies:
   tls: false
   type: vmess
   uuid: d4d715a6-0a2e-4304-df2f-d5efd85a5a5d
+- alterId: 0
+  cipher: auto
+  name: 559|美国_0612203374
+  network: tcp
+  port: '48111'
+  server: 129.146.143.80
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
 - alterId: 0
   cipher: auto
   name: 559|美国_0612203375
@@ -25295,7 +25243,29 @@ proxies:
   type: hysteria
   up: 1000 Mbps
 - alterId: 0
-  name: 574|🇺🇸US美国33
+  name: 574|🇺🇸US美国17
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.12
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 574|🇺🇸US美国26
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.66.47.69
+  skip-cert-verify: true
+  sni: www.multiplydose.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 574|🇺🇸US美国59
   password: BxceQaOe
   port: 17801
   server: 18.166.30.83
@@ -26581,7 +26551,7 @@ proxies:
     headers:
       Host: a.prapt1.ir
     path: /?ed=2048&Telegram🇨🇳
-- name: 580|未知 VLESS-46 | free-nodes
+- name: '580|未知 VLESS-46 | free-nodes #1'
   network: ws
   port: 80
   server: 199.232.197.131
@@ -26734,36 +26704,16 @@ proxies:
       Host: railway.leochina.nyc.mn
     max-early-data: 2560
     path: /vless-argo
-- cipher: chacha20-ietf-poly1305
-  name: 606|US_Los Angeles_Melbikomas UAB_...
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-  port: 2377
-  server: 88.210.36.109
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '606|US_Los Angeles_Melbikomas UAB_... #1'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-  port: 2377
-  server: 88.210.36.106
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '606|US_Los Angeles_Melbikomas UAB_... #2'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-  port: 2377
-  server: 88.210.36.108
-  type: ss
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: 606|US_Santa Clara_DigitalOcean, L...
+  password: 52b09f69-a832-4070-b9c3-6f10aeb24c6a
+  port: 60728
+  server: 165.227.60.163
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - name: 728|🇺🇸 美国1
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443

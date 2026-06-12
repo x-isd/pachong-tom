@@ -53,8 +53,7 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: '306,340,378,502,507,514,515,516,523,524,536,537,538,551,559,567,580,585,586|DE_speednode_0001
-    #3'
+- name: 306,340,378,502,507,514,515,516,523,524,536,537,538,551,559,567,580,585,586,606|94.103.173.70_Claude
   network: tcp
   password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
   port: 9443
@@ -467,8 +466,8 @@ proxies:
       Host: go.daluquan.top
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇸US
-  name: 378,435,537,538|🇩🇪DE-209.46.102.22-0086 | 32.1...
+  country: 🇺🇸US
+  name: 378,435,537,538,606|209.46.102.22_Gemini_Claude
   password: 1hhrqrokj3ag
   port: 8388
   server: 209.46.102.22
@@ -481,13 +480,13 @@ proxies:
   server: 8.209.74.72
   type: ss
 - cipher: aes-256-gcm
-  name: 378,537,538|🇩🇪DE-213.202.208.199-0125 | 0....
+  name: 378,537,538,606|213.202.208.199_Claude
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 213.202.208.199
   type: ss
 - alterId: 0
-  name: '378,507,536,537,538,544,559,574,580|未知 TROJAN-39 | free-nodes #1'
+  name: 378,502,507,536,537,538,544,559,574,580|未知 TROJAN-39 | free-nodes
   network: tcp
   password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
   port: 443
@@ -497,8 +496,11 @@ proxies:
   tls: true
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: v2rayNplus-v2rayNplus-v2rayNplus
 - alterId: 0
-  name: '378,507,523,524,536,537,538,544,559,574,580|未知 TROJAN-41 | free-nodes #1'
+  name: 378,502,507,523,524,536,537,538,544,559,574,580|未知 TROJAN-41 | free-nodes
   password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
   port: 443
   server: 91.233.8.138
@@ -507,13 +509,11 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: 378,507,523,524,536,537,538,559,574|🇪DE德国3
-  network: tcp
+- name: 378,507,523,524,536,537,538,559|德国_061220004
   password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
   port: 443
   server: 91.233.8.25
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: fra34.tracker-ws.click
   tls: true
   type: trojan
@@ -633,7 +633,7 @@ proxies:
       Host: khvwycch.cymlr.xyz
     path: /videnset
 - alterId: 0
-  name: 378,507,536,537,544,559,574,580|未知 TROJAN-43 | free-nodes
+  name: 378,536,537,544,559,574,580|未知 TROJAN-43 | free-nodes
   password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
   port: 443
   server: 172.236.220.10
@@ -643,7 +643,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,536,537,544,559,574|🇺🇸US美国12 #1'
+  name: 378,536,537,544,559,574|🇺🇸US美国4
   password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
   port: 443
   server: 172.238.120.124
@@ -1136,8 +1136,8 @@ proxies:
   uuid: 826b8d0a-e0d3-407a-927d-19953c170779
   ws-opts:
     path: /cctv13/hd.m3u8
-- country: 🇬🇧GB
-  name: '378,435,436,536,537,559|🇬🇧GB_41 #2'
+- country: 🇧GB
+  name: '378,435,436,536,537,559|🇬🇧GB_41 #1'
   password: 11559103-9993-4d00-b599-d6bcd8db2197
   port: 443
   server: free-v7-09.elbrusway.online
@@ -2268,6 +2268,14 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- country: 🇪DE
+  name: 435,436|🇩🇪DE_07
+  password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
+  port: 443
+  server: 91.233.8.138
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: '460|德国_Frankfurt am Main #3'
   network: ws
   password: NISHIKUITAN222
