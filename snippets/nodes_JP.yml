@@ -1054,7 +1054,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '306,378,502,514,515,516,536,537,544,551,556,557|日本|@ripaojiedian #2'
+- name: '306,340,378,502,514,515,516,536,537,544,551,556,557|日本|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 5408
@@ -1098,25 +1098,6 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 340,378,536,537,559|10,11|日本|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 47655
-  server: 18.183.150.2
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- alterId: 0
-  name: '340,378,536,537,559,574|JP #3'
-  network: tcp
-  password: d02e3bb7e6b3333e818d36866d40de6e
-  port: 5701
-  server: 18.162.244.255
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
 - name: 356|🇯🇵1 |  34.4MB/s
   network: ws
   password: bpb-trojan
@@ -1136,7 +1117,7 @@ proxies:
   server: 57.180.246.231
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺🇸US
+  country: 🇺US
   name: 356,357,378,435,537,538,606|149.22.87.240_Claude
   password: shadowsocks
   port: 443
@@ -2143,6 +2124,22 @@ proxies:
     headers:
       Host: 138.2.52.176
     path: /
+- name: 378,536,537,559|10,11|香港3|@ripaojiedian
+  network: tcp
+  password: d02e3bb7e6b3333e818d36866d40de6e
+  port: 53018
+  server: 18.183.58.98
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 378,536,537,559|10,11|日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 47655
+  server: 18.183.150.2
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: '378,537|🇵JP-54.250.165.160-0781 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -2733,7 +2730,8 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,476,481,522,536,537,548,559,580,581|🇺🇸_US_美国 #56'
+- country: 🇺🇸US
+  name: '378,440,476,481,522,536,537,548,551,559,580,581|🇺🇸_US_美国 #56'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 48697
   server: 90081bb25c.node.tro.cac.cab
@@ -2749,7 +2747,7 @@ proxies:
   skip-cert-verify: false
   sni: t.me/ripaojiedian
   type: trojan
-- country: 🇬🇧GB
+- country: 🇧GB
   name: '378,435,436,536,537|🇯🇵JP-52.195.12.80-4456 #2'
   password: IL37892054
   port: 443
@@ -3607,19 +3605,6 @@ proxies:
   xudp: true
 - alterId: 2
   cipher: auto
-  client-fingerprint: chrome
-  name: '489,544,559|🇲🇾_MY_马来西亚->🇯🇵_JP_日本 #2'
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
   name: '489,523,524|日本_20 #1'
   port: 30806
   server: 103.182.97.12
@@ -3745,6 +3730,15 @@ proxies:
   sni: cdnfire.xiaomispeed.com
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '551|A - 🇯🇵 JP 04 TG: @nodpai'
+  network: tcp
+  port: 6003
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  tls: false
+  type: vmess
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
 - name: 553|🇯🇵日本_22c62
   password: aeabae7e-a055-4505-85a6-b4cd4982b76a
   port: 25055
@@ -3972,10 +3966,10 @@ proxies:
       Host: jp02.a0a.xyz
     path: /cctv13.m3u8
 - alterId: 0
-  name: 574|🇯🇵JP日本2
+  name: '574|JP #3'
   password: BxceQaOe
-  port: 47655
-  server: 18.183.150.2
+  port: 5408
+  server: 18.181.230.17
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   tls: true
