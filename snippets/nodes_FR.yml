@@ -1460,18 +1460,7 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '438|🇫🇷FR_1|1.9MB/s | 更多节点: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2F%252Fassignment'
-- name: '438|🇫🇷FR_2|1.9MB/s | 网盘搜宝: https:/...'
+- name: '438|🇫🇷FR_1|3.2MB/s | 更多节点: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1482,7 +1471,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2F%252Fassignment'
-- name: '438|🇫🇷FR_3|1.9MB/s | 福利姬: https://...'
+- name: '438|🇫🇷FR_2|3.4MB/s | 网盘搜宝: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1493,6 +1482,17 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2F%252Fassignment'
+- alpn:
+  - http/1.1
+  name: '438|🇫🇷FR_6|1.4MB/s | 网盘搜宝: https:/...'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.246
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - alterId: 0
   cipher: auto
   name: 461|法国_马赛
@@ -1623,6 +1623,19 @@ proxies:
   sni: fr.01.naiun.bilibili.com
   type: trojan
   udp: true
+- alterId: 2
+  cipher: auto
+  name: '489,559,580,581|🇮🇩_ID_印度尼西亚->🇫🇷_FR_法国 #4'
+  network: tcp
+  port: 30835
+  server: v35.hdacd.com
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
 - country: 🇫🇷FR
   delay: 746
   name: 528|法国 - 巴黎 - 1

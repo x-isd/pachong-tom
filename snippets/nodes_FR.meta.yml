@@ -1530,18 +1530,7 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
-- name: '438|🇫🇷FR_1|1.9MB/s | 更多节点: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2F%252Fassignment'
-- name: '438|🇫🇷FR_2|1.9MB/s | 网盘搜宝: https:/...'
+- name: '438|🇫🇷FR_1|3.2MB/s | 更多节点: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1552,7 +1541,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2F%252Fassignment'
-- name: '438|🇫🇷FR_3|1.9MB/s | 福利姬: https://...'
+- name: '438|🇫🇷FR_2|3.4MB/s | 网盘搜宝: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1584,7 +1573,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438|🇫🇷FR_5|1.5MB/s | 网盘搜宝: https:/...'
+  name: '438|🇫🇷FR_4|1.9MB/s | 网盘搜宝: https:/...'
   network: tcp
   port: 44520
   reality-opts:
@@ -1597,7 +1586,7 @@ proxies:
   uuid: acd726d3-0128-44d8-a575-21013ff7740a
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438|🇫🇷FR_6|1.8MB/s | 更多节点: https:/...'
+  name: '438|🇫🇷FR_5|1.7MB/s | 更多节点: https:/...'
   network: tcp
   port: 31413
   reality-opts:
@@ -1608,19 +1597,17 @@ proxies:
   tls: false
   type: vless
   uuid: 5454343b-541b-4c96-8c2a-52e81079d124
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438|🇫🇷FR_7|2.0MB/s | 网盘搜宝: https:/...'
-  network: tcp
+- alpn:
+  - http/1.1
+  name: '438|🇫🇷FR_6|1.4MB/s | 网盘搜宝: https:/...'
+  network: ws
+  password: humanity
   port: 443
-  reality-opts:
-    public-key: OhHt4eEk9pZVzDpt37apm_7DRM0qP6_D4yJBCK0n02A
-    short-id: 5701e710c025b4b8
-  server: 89.208.97.95
-  servername: amazon.fr
-  tls: false
-  type: vless
-  uuid: e96ffcc1-5acf-4e24-9b67-1b736a2f1c24
+  server: 104.18.152.246
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1871,6 +1858,38 @@ proxies:
   tls: true
   type: http
   username: 8f7cb770-1305-11ee-b107-f23c91cfbbc9
+- alterId: 2
+  cipher: auto
+  name: '489,559,580,581|🇮🇩_ID_印度尼西亚->🇫🇷_FR_法国 #4'
+  network: tcp
+  port: 30835
+  server: v35.hdacd.com
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- name: '502|A - 🇫🇷 FR 01 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 45.85.119.30
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime56.workers.dev
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '502|A - 🇫🇷 FR 03 TG: @nodpai'
+  port: 7443
+  server: 152.89.253.239
+  servername: ya.ru
+  tls: true
+  type: vless
+  uuid: 54a54ea0-4409-4030-ad9b-44c45849c05a
 - client-fingerprint: chrome
   name: '519,559|🇫🇷_FR_法国 #4'
   port: 443
@@ -2021,25 +2040,6 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '551|A - 🇫🇷 FR 01 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 45.85.119.30
-  tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime56.workers.dev
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '551|A - 🇫🇷 FR 03 TG: @nodpai'
-  port: 7443
-  server: 152.89.253.239
-  servername: ya.ru
-  tls: true
-  type: vless
-  uuid: 54a54ea0-4409-4030-ad9b-44c45849c05a
 - name: 559|🇫🇷 France, Paris | 🌐 | [BL]
   password: dongtaiwang.com
   port: 22000

@@ -2391,7 +2391,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  country: 🇮🇷IR
+  country: 🇷IR
   name: 378,440,489,536,537,559|澳大利亚_061305018
   network: tcp
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
@@ -2424,7 +2424,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  country: 🇷IR
+  country: 🇮🇷IR
   name: 378,440,489,536,537,559|澳大利亚_061305014
   network: tcp
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
@@ -3134,6 +3134,33 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇸🇬SG_2|2.1MB/s | 更多节点: https:/...'
+  network: tcp
+  port: 46799
+  reality-opts:
+    public-key: inxRtKQbaiuz18TGXqdYu0dyO_RplIhR7MDZ6rL42UA
+    short-id: af0d579034a74916
+  server: 54.151.254.107
+  servername: www.tesla.com
+  tls: false
+  type: vless
+  uuid: f232a803-ff05-4219-b16f-b4dc8497b938
+- client-fingerprint: chrome
+  name: '438|🇸🇬SG_3|1.4MB/s | 福利姬: https://...'
+  network: xhttp
+  port: 6443
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: 844352756c1fabba
+  server: nl.riotvpn.eu
+  servername: avatars.mds.yandex.net
+  tls: false
+  type: vless
+  uuid: 84b504e4-a97f-40ab-93c3-a03a5f0ff36c
+  ws-opts:
+    path: '%2F'
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -4504,7 +4531,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: '489,551|B - 🇸🇬 SG 16 TG: @nodpai'
+  name: '489,502|B - 🇸🇬 SG 16 TG: @nodpai'
   network: tcp
   port: 30845
   server: v45.hdacd.com
@@ -4545,6 +4572,48 @@ proxies:
       Host: 1a7b4b2d69cfc3485134b5ca9cc738f6.mobgslb.tbcache.com
     path: /
   xudp: true
+- alterId: 0
+  cipher: auto
+  name: '502,544,559|🇺🇸_US_美国->🇸🇬_SG_新加坡 #2'
+  network: tcp
+  port: 6004
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+- name: '502|A - 🇸🇬 SG 08 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 45.131.4.30
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime59.workers.dev
+- alpn:
+  - http/1.1
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '502|A - 🇸🇬 SG 10 TG: @nodpai'
+  port: 443
+  server: 46.149.71.46
+  servername: www.avito.ru
+  tls: true
+  type: vless
+  uuid: 0dc3fe97-73e3-4cc2-89a7-331e66540365
+- alpn:
+  - http/1.1
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '502|B - 🇸🇬 SG 17 TG: @nodpai'
+  port: 443
+  server: 46.149.71.46
+  servername: www.avito.ru
+  tls: true
+  type: vless
+  uuid: d511e429-e32b-46a7-ac07-a0fffa9b634c
 - cipher: aes-256-cfb
   name: '513,517,578|1|_SG_ #2'
   password: amazonskr05
@@ -5028,38 +5097,6 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '551|A - 🇸🇬 SG 08 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 45.131.4.30
-  tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime59.workers.dev
-- alpn:
-  - http/1.1
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '551|A - 🇸🇬 SG 10 TG: @nodpai'
-  port: 443
-  server: 46.149.71.46
-  servername: www.avito.ru
-  tls: true
-  type: vless
-  uuid: 0dc3fe97-73e3-4cc2-89a7-331e66540365
-- alpn:
-  - http/1.1
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '551|B - 🇸🇬 SG 17 TG: @nodpai'
-  port: 443
-  server: 46.149.71.46
-  servername: www.avito.ru
-  tls: true
-  type: vless
-  uuid: d511e429-e32b-46a7-ac07-a0fffa9b634c
 - alterId: 0
   cipher: auto
   name: 553|🇸🇬新加坡_157f5
