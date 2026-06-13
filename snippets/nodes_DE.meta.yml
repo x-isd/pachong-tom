@@ -77,7 +77,7 @@ proxies:
   sni: de-1.hysteria.ltd
   type: trojan
   udp: true
-- name: '340,495,502,514,551,559|8|DE #1'
+- name: '340,495,502,514,551,559|8|DE #2'
   password: a084933d-0b41-4571-ae0c-7163b8c71ed1
   port: 2056
   server: de.eyucdn.xyz
@@ -777,7 +777,7 @@ proxies:
   port: 20001
   server: 8.209.74.72
   type: ss
-- name: '378,502,536,537,538,559,580|未知 TROJAN-37 | free-nodes #1'
+- name: '378,536,537,538,559,580|未知 TROJAN-37 | free-nodes #1'
   password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
   port: 443
   server: 91.233.8.138
@@ -785,7 +785,8 @@ proxies:
   sni: www.homelywebs.click
   type: trojan
 - alterId: 0
-  name: 378,536,537,538,559,574|RO
+  name: 378,502,536,537,538,559,574|RO
+  network: tcp
   password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
   port: 443
   server: 185.137.157.254
@@ -801,7 +802,7 @@ proxies:
   server: 213.202.208.199
   type: ss
 - alterId: 0
-  name: '378,536,537,538,544,548,559,574,580|未知 TROJAN-27 | free-nodes #2'
+  name: '378,472,474,536,537,538,544,548,559,574,580|未知 TROJAN-27 | free-nodes #1'
   password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
   port: 443
   server: 91.233.8.25
@@ -2546,18 +2547,13 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: 436|🇩🇪DE_09
-  password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
-  port: 443
-  server: 91.233.8.138
-  type: trojan
 - alpn:
   - ''
   client-fingerprint: random
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 438,507,559|DE VLESS-147 | free-nodes
+  name: '438,507,559|DE VLESS-147 | free-nodes #1'
   network: xhttp
   port: 443
   server: 179.61.138.177
@@ -3354,7 +3350,7 @@ proxies:
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: '489,502,507,523,524,559,580|DE德国(mibei77.com 米贝节点分享) #3'
+  name: '489,507,523,524,559,580|DE德国(mibei77.com 米贝节点分享) #3'
   network: tcp
   port: 443
   reality-opts:
@@ -3368,25 +3364,26 @@ proxies:
   udp: true
   uuid: c897facf-2836-4538-be6e-25386fb49284
   xudp: true
-- alterId: 2
-  cipher: auto
-  country: 🇺🇸US
-  delay: 1679
-  h2-opts: {}
-  http-opts: {}
-  name: 489,528|德国 - 法兰克福 - 6
-  network: tcp
-  port: 30833
-  server: v33.hdacd.com
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  encryption: none
+  name: '489,502,523,524,551,580|未知 VLESS-38 | free-nodes #1'
+  network: ws
+  port: 80
+  server: 151.101.0.1
+  servername: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: false
   tls: false
-  type: vmess
+  type: vless
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: '489,502,523,524|美国_70 #1'
+  name: '489,523,524|美国_70 #1'
   network: ws
   port: 80
   server: 151.101.66.219
@@ -3448,68 +3445,11 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
     path: /
   xudp: true
-- client-fingerprint: chrome
-  name: '502,580|NL荷兰(mibei77.com 米贝节点分享) #3'
-  network: ws
-  port: 443
-  server: nl08.abvpn.ru
-  servername: nl08.abvpn.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 95e118b4-4352-4218-8493-f20cc7fc467a
-  ws-opts:
-    headers:
-      Host: nl08.abvpn.ru
-    path: '%2Fwebsocket'
-- name: 502|🇩🇪68365 | ⚡️Telegram = t.me/SO...
-  obfs: salamander
-  obfs-password: Masir_Sefid
-  password: '@Masir_Sefid'
-  port: 4040
-  server: 18.157.222.169
-  skip-cert-verify: false
-  sni: free.masir-sefid.shop
-  tls: false
-  type: hysteria2
-- name: 502|🇩🇪68367 | ⚡️Telegram = t.me/SO...
-  obfs: salamander
-  obfs-password: Masir_Sefid
-  password: '@Masir_Sefid'
-  port: 44044
-  server: 18.157.222.169
-  skip-cert-verify: false
-  sni: free.masir-sefid.shop
-  tls: false
-  type: hysteria2
-- name: 502|🇩🇪68366 | ⚡️Telegram = t.me/SO...
-  obfs: salamander
-  obfs-password: Masir_Sefid
-  password: '@Masir_Sefid'
-  port: 54040
-  server: 18.157.222.169
-  skip-cert-verify: false
-  sni: free.masir-sefid.shop
-  tls: false
-  type: hysteria2
-- alpn:
-  - h2
-  - h3
-  fingerprint: chrome
-  name: 502|🇩🇪68388 | ⚡️Telegram = t.me/SO...
-  obfs: salamander
-  obfs-password: xdbc2u01v1j9fhvv
-  password: hk6ah4vgb0qp2koh
-  port: 2087
-  server: ger1.riziro.ir
-  sni: ger1.riziro.ir
-  tls: false
-  type: hysteria2
 - alpn:
   - h3
   fingerprint: chrome
-  name: 502|🇩🇪68382 | ⚡️Telegram = t.me/SO...
-  password: hk6ah4vgb0qp2koh
+  name: '496,514,551|🇩🇪68978 | ⚡️Telegram = t.me/SO... #1'
+  password: dfbxu5tmmnmf23u5
   port: 4526
   server: panel.riziro.ir
   sni: ger1.riziro.ir
@@ -3572,20 +3512,6 @@ proxies:
   type: vless
   uuid: 417a471c-6183-495d-87ef-331e7e8842fe
 - client-fingerprint: chrome
-  name: '502,523,524,551|🇩🇪DE_13|1.1MB/s #1'
-  network: ws
-  port: 80
-  server: 151.101.109.223
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- client-fingerprint: chrome
   name: 502,551,559|🇩🇪 德国-4E44AC55
   network: tcp
   port: 2040
@@ -3597,7 +3523,7 @@ proxies:
   tls: false
   type: vless
   uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
-- name: '502,551,559|未知 VLESS-47 | free-nodes #1'
+- name: '502,507,551,559|未知 VLESS-47 | free-nodes #1'
   network: ws
   port: 8080
   server: 169.40.32.242
