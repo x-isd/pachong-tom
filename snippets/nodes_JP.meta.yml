@@ -3550,26 +3550,6 @@ proxies:
   tls: false
   type: vless
   uuid: a5ac4482-917b-4739-b199-2602b0d685c1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438,507,559,580|未知 VLESS-114 | free-nodes #3'
-  network: tcp
-  port: 12524
-  reality-opts:
-    public-key: snK07S_XyboGtyPOcmLFn4aNuxaRwHBG8w8JH2K0RS4
-    short-id: 2895e9532d0c
-  server: 57.180.22.236
-  servername: www.intel.com
-  tls: false
-  type: vless
-  uuid: c8a930cb-7a41-403f-922a-0b2148a75e05
-- name: 438,559|🏁 未知-5CB4B38A
-  network: raw
-  port: 24477
-  server: 43.163.241.110
-  tls: false
-  type: vless
-  uuid: 2bc72bec-0c2a-4c6b-aa9f-138bfce7ba0d
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -4221,23 +4201,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '472,473,474|日本+东京Fastly节点 #2'
+- name: '472,473,474,502,551,559|🇩🇪DE_8|2.5MB/s #2'
   network: ws
-  port: 443
+  port: 80
   server: 151.101.109.223
-  servername: global.fastly.com
-  skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
-  uuid: 62d26257-546d-a267-c4f1-fb19de937929
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   ws-opts:
     headers:
-      Host: wwwfgggffffii.global.ssl.fastly.net
+      Host: max-gb1.global.ssl.fastly.net
     path: /
 - cipher: aes-128-gcm
   name: '476,481|JP(mibei77.com 米贝节点分享) #1'
@@ -4428,7 +4401,7 @@ proxies:
     method: GET
     path:
     - /ABCDE
-  name: 489,566,567,585|TW_speednode_0048
+  name: 489,567,585|TW_speednode_0048
   network: http
   port: 53229
   server: 103.127.243.54
@@ -4479,6 +4452,20 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: chrome
+  name: 502|日本+V2CROSS.COM
+  network: ws
+  port: 443
+  server: mail.mmadcoffee.info
+  servername: sni.mmadcoffee.info
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 317c8bd5-2e89-4bfb-9513-a37b8e29427f
+  ws-opts:
+    headers:
+      Host: mail.mmadcoffee.info
+    path: /19426/mmad
 - alpn:
   - h3
   name: 507,559|爱尔兰_061405051
@@ -4488,6 +4475,24 @@ proxies:
   sni: u723828us646.csgfw.top
   tls: false
   type: hysteria2
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507,559|JP VLESS-136 | free-nodes
+  network: xhttp
+  port: 443
+  server: 89.125.244.28
+  servername: u723828us641.csgfw.top
+  tls: true
+  type: vless
+  uuid: 723af53a-b131-3270-8ce0-13f8ecaaa322
+  ws-opts:
+    headers:
+      Host: s641.csgfw.top
+    path: ssp-xhttp
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 513|15|🇯🇵 日本|@ripaojiedian
@@ -4552,7 +4557,8 @@ proxies:
   server: 18.181.194.77
   tfo: false
   type: ss
-- name: 523,524,544|🇬🇧 GB英国(mibei77.com 米贝节点分享)
+- alterId: 0
+  name: 523,524,544,574|GB国
   password: humanity
   port: 443
   server: 165.215.250.14
@@ -5362,7 +5368,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 559|JP VLESS-166 | free-nodes
+  name: '559|JP VLESS-166 | free-nodes #1'
   network: xhttp
   port: 443
   server: 64.176.39.50
@@ -5781,7 +5787,7 @@ proxies:
       Host: jp02.a0a.xyz
     path: /cctv13.m3u8
 - alterId: 0
-  name: '574|🇯🇵JP日本2 #1'
+  name: '574|JP #3'
   password: BxceQaOe
   port: 5408
   server: 18.181.230.17
