@@ -54,13 +54,6 @@ proxies:
       Host: download.windowsupdate.com
     path: /download
 - cipher: chacha20-ietf-poly1305
-  name: 306|Germany_None_ss_1130
-  password: 8baa4ead22db1d7e8fea063b6aefcc73
-  port: '1085'
-  server: 77.42.33.181
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 356|🇩🇪1 |  1.6MB/s
   password: oXGp1+ihlfKg826H
   port: 1866
@@ -463,13 +456,15 @@ proxies:
       Host: go.daluquan.top
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538,606|209.46.102.22_Gemini_Claude
+  country: 🇸US
+  name: 378,435,537,538,606|209.46.102.22_Gemini_Claude
   password: 1hhrqrokj3ag
   port: 8388
   server: 209.46.102.22
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇩🇪DE-8.209.74.72-0115 | 26.541...
+  country: 🇬SG
+  name: 378,435,537,538|🇩🇪DE-8.209.74.72-0115 | 26.541...
   password: PWpjPo3tqhPN4yRZ
   port: 20001
   server: 8.209.74.72
@@ -482,7 +477,7 @@ proxies:
   sni: de-1.hysteria.ltd
   type: trojan
 - alterId: 0
-  name: '378,502,507,536,537,538,544,559,574,580|未知 TROJAN-75 | free-nodes #2'
+  name: '378,507,536,537,538,544,559,574,580|未知 TROJAN-75 | free-nodes #2'
   network: tcp
   password: fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX
   port: 443
@@ -1130,13 +1125,15 @@ proxies:
   uuid: 826b8d0a-e0d3-407a-927d-19953c170779
   ws-opts:
     path: /cctv13/hd.m3u8
-- name: '378,436,536,537,559|🇬🇧GB_49 #1'
+- country: 🇧GB
+  name: '378,435,436,536,537,559|🇬🇧GB_49 #2'
   password: 11559103-9993-4d00-b599-d6bcd8db2197
   port: 443
   server: free-v7-09.elbrusway.online
   skip-cert-verify: false
   sni: free-v7-09.elbrusway.online
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: '378,537|🇪DE-193.108.117.75-4694 #1'
   password: PCnnH6SQSnfoS27
@@ -2511,6 +2508,19 @@ proxies:
   tls: true
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 489,502,507,559,574,580|未知 VMESS-289 | free-nodes
+  network: tcp
+  port: '1020'
+  server: nlt.reata.ir
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
+  xudp: true
 - alterId: 2
   cipher: auto
   name: 489,559|🇨🇳CN_06

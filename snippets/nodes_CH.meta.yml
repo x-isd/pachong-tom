@@ -1,17 +1,4 @@
 proxies:
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  name: '306,502,507,551|🇨🇭CH_1|3.3MB/s #1'
-  network: tcp
-  password: SoftNetConnect
-  port: 42549
-  server: 83.228.230.226
-  skip-cert-verify: true
-  sni: www.speedtest.net
-  type: trojan
-  udp: true
 - cipher: aes-128-gcm
   name: '356,357|4 #4'
   password: shadowsocks
@@ -132,24 +119,14 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
-- name: 436|🇨🇭CH_08
+- country: CH
+  name: 435,436|🇨🇭CH_08
   password: SoftNetConnect
   port: 42549
   server: 83.228.230.226
+  skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438,502,551|🇨🇭CH_2|1.9MB/s #1'
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: l1Ekgk-8T5rB-yolp5OIpc0XZTcd2gBeqmIR2bytKXY
-    short-id: 4e590fdc
-  server: 83.228.230.226
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 89049f79-320b-48a0-b1cf-110165cae30c
+  udp: true
 - http-opts:
     method: GET
     path:
@@ -175,6 +152,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  name: 502,507|未知 TROJAN-79 | free-nodes
+  password: SoftNetConnect
+  port: 42549
+  server: 83.228.230.226
+  skip-cert-verify: true
+  sni: www.speedtest.net
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 502|🇨🇭CH_2|1.9MB/s
+  port: 2083
+  server: 83.228.230.226
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 89049f79-320b-48a0-b1cf-110165cae30c
 - client-fingerprint: chrome
   name: 559|🇨🇭 Switzerland, Zurich | [BL]
   network: xhttp

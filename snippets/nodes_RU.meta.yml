@@ -303,6 +303,12 @@ proxies:
   server: 46.29.163.195
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '378,537|🇺RU-45.10.41.129-0825 #1'
+  password: 7SEstdmLhf-aFK_G9eaYHKT_YpSov58B
+  port: 51523
+  server: ru.moktana.app
+  type: ss
 - alterId: 0
   cipher: auto
   name: '378,536,537,559|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #37'
@@ -566,12 +572,29 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: 436,559|🇷🇺RU_97
+- country: 🇺RU
+  name: 435,436,559|🇷🇺RU_97
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
+  skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,559,580|俄羅斯丨yoyapai.com #12'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: UQLa8BZNvHnwWL7pUnMbO046iRPh0jGhvA2xtjJRgQE
+    short-id: 8b263e22ba03b4c1
+  server: 81.177.212.44
+  servername: sw1.panel11.ru
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: 039a1658-e86e-475f-a3a4-67cc249acada
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1342,6 +1365,19 @@ proxies:
     path: /
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
+  name: '502,717|RU【机场推荐：https://a9a.xyz】35 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: r77nilacD34SeLmghmchRKuNiUL0xzh-pK87Ux58dzI
+    short-id: d0a1665d1b96515e
+  server: 31.129.55.211
+  servername: dev.max.ru
+  tls: false
+  type: vless
+  uuid: 097a6067-520a-4b5e-ad9f-e541eb125258
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
   name: 507,559|🇳🇱 荷兰-DD8EB26E
   network: tcp
   port: 443
@@ -1578,19 +1614,6 @@ proxies:
   server: nearby-muskrat.rooster465.autos
   sni: nearby-muskrat.rooster465.autos
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '559,580|俄羅斯丨yoyapai.com #12'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UQLa8BZNvHnwWL7pUnMbO046iRPh0jGhvA2xtjJRgQE
-    short-id: 8b263e22ba03b4c1
-  server: 81.177.212.44
-  servername: sw1.panel11.ru
-  tls: false
-  type: vless
-  uuid: 039a1658-e86e-475f-a3a4-67cc249acada
 - name: 559|🇷🇺 俄罗斯-44B003AB
   network: tcp
   port: 443
@@ -1610,18 +1633,6 @@ proxies:
   tls: true
   type: vless
   uuid: 201e3301-9e4b-4136-8d45-d8d61d2b04bc
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559,580|RU VLESS-189 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 1BdgrQ_esOEya01sDCBYK4MGpJgaUhssHQG-aWJkyFQ
-  server: s2.dipvpn.ru
-  servername: dipvpn.ru
-  tls: false
-  type: vless
-  uuid: 3559f1f7-7d70-46c9-82db-d2b46269300b
 - name: 559|🇷🇺 俄罗斯-F50A1A43
   network: tcp
   port: 443
@@ -1733,19 +1744,6 @@ proxies:
   uuid: 95e118b4-4352-4218-8493-f20cc7fc467a
   ws-opts:
     path: '%2Fwebsocket'
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 717|RU【机场推荐：https://a9a.xyz】35
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: r77nilacD34SeLmghmchRKuNiUL0xzh-pK87Ux58dzI
-    short-id: d0a1665d1b96515e
-  server: 31.129.55.211
-  servername: dev.max.ru
-  tls: false
-  type: vless
-  uuid: 097a6067-520a-4b5e-ad9f-e541eb125258
 - name: 728|🇷🇺 俄罗斯1
   password: 升级订阅解锁全部节点
   port: 10110

@@ -68,13 +68,6 @@ proxies:
   tls: true
   type: vless
   uuid: d78c12c4-6927-40b8-8550-ed9be00334da
-- cipher: chacha20-ietf-poly1305
-  name: 306|Germany_None_ss_1130
-  password: 8baa4ead22db1d7e8fea063b6aefcc73
-  port: '1085'
-  server: 77.42.33.181
-  type: ss
-  udp: true
 - name: '340,495,502,514,551,559|8|DE #2'
   password: a084933d-0b41-4571-ae0c-7163b8c71ed1
   port: 2056
@@ -749,13 +742,15 @@ proxies:
       Host: go.daluquan.top
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538,606|209.46.102.22_Gemini_Claude
+  country: 🇸US
+  name: 378,435,537,538,606|209.46.102.22_Gemini_Claude
   password: 1hhrqrokj3ag
   port: 8388
   server: 209.46.102.22
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇩🇪DE-8.209.74.72-0115 | 26.541...
+  country: 🇬SG
+  name: 378,435,537,538|🇩🇪DE-8.209.74.72-0115 | 26.541...
   password: PWpjPo3tqhPN4yRZ
   port: 20001
   server: 8.209.74.72
@@ -768,7 +763,7 @@ proxies:
   sni: de-1.hysteria.ltd
   type: trojan
 - alterId: 0
-  name: '378,502,507,536,537,538,544,559,574,580|未知 TROJAN-75 | free-nodes #2'
+  name: '378,507,536,537,538,544,559,574,580|未知 TROJAN-75 | free-nodes #2'
   network: tcp
   password: fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX
   port: 443
@@ -1416,13 +1411,15 @@ proxies:
   uuid: 826b8d0a-e0d3-407a-927d-19953c170779
   ws-opts:
     path: /cctv13/hd.m3u8
-- name: '378,436,536,537,559|🇬🇧GB_49 #1'
+- country: 🇧GB
+  name: '378,435,436,536,537,559|🇬🇧GB_49 #2'
   password: 11559103-9993-4d00-b599-d6bcd8db2197
   port: 443
   server: free-v7-09.elbrusway.online
   skip-cert-verify: false
   sni: free-v7-09.elbrusway.online
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: '378,537|🇪DE-193.108.117.75-4694 #1'
   password: PCnnH6SQSnfoS27
@@ -2546,60 +2543,88 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '438,559,580|未知 VLESS-254 | free-nodes #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: vTtRZ_FeFQoAigFr_pmVc_O85RaE9H8aVL0SitFYcmI
-    short-id: 53cd45d26d7b53fe
-  server: 159.195.60.65
-  servername: free1.anotherboring.top
-  tls: false
-  type: vless
-  uuid: c897facf-2836-4538-be6e-25386fb49284
-- client-fingerprint: chrome
-  name: '438|🇩🇪DE_7|1.4MB/s | 福利姬: https://...'
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: dc3O5Dt33E1G0yRQ2QSeu1sHKmdm5qttYU7iX9vaxGY
-    short-id: cf13
-  server: trp.aradart.top
-  servername: aparat.com
-  tls: false
-  type: vless
-  uuid: 74dd3bb4-8f4f-48d6-9a65-555eb808b9c7
-  ws-opts:
-    path: '%2F'
-- client-fingerprint: chrome
-  name: '438|🇩🇪DE_8|1.6MB/s | 更多节点: https:/...'
-  network: xhttp
-  port: 443
-  server: 45.130.125.6
-  servername: germany4.alibaba1405.org
-  tls: true
-  type: vless
-  uuid: ac006062-f051-43c6-bd4c-f409285c8635
-  ws-opts:
-    headers:
-      Host: germany4.alibaba1405.org
-    path: '%2Fv2raylink'
 - alpn:
   - h2
+  - http/1.1
   client-fingerprint: chrome
-  name: '438|🇩🇪DE_9|1.6MB/s | 更多节点: https:/...'
+  name: '438|🇩🇪DE_6|2.2MB/s | 网盘搜宝: https:/...'
+  network: xhttp
+  port: 2053
+  server: s9.meoshop.ir
+  servername: baba.meoshop.ir
+  tls: true
+  type: vless
+  uuid: 2dacceea-8664-4fed-ba16-27fdd3b40f3e
+  ws-opts:
+    headers:
+      Host: baba.meoshop.ir
+    path: '%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,559|🏁 未知-E594CF8C
+  network: tcp
+  port: 9443
+  server: 37.114.48.146
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 7d876627-abf5-4865-8ff4-03f37d49de5d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,559|🇩🇪 德国-72E4C148
+  network: tcp
+  port: 10443
+  reality-opts:
+    public-key: WeShDM0MdunM6N8btrY8tXlL0GT1Ah-0jcplNQf9FEo
+    short-id: ''
+  server: 83.243.86.118
+  servername: ''
+  tls: false
+  type: vless
+  uuid: f6431ff1-dec0-4a6c-be4a-ce917913b589
+- client-fingerprint: chrome
+  name: '438|🇩🇪DE_9|1.7MB/s | 更多节点: https:/...'
   network: xhttp
   port: 443
-  server: 199.232.237.245
-  servername: global.fastly.com
-  tls: true
+  reality-opts:
+    public-key: CztuuKGH_5oJJZ5psgQJ4MjmIMU8jT8YwC9T74LrOl4
+    short-id: b4
+  server: 63.185.83.92
+  servername: is1-ssl.mzstatic.com
+  tls: false
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
+    path: '%2F%40namedzadim%40namedzadim%40namedzadim%40namedzarim%40namedzadim%40namedzadim'
+- name: 438,559|🏁 未知-A917D8FF
+  network: tcp
+  port: 443
+  server: 18.153.81.34
+  tls: false
+  type: vless
+  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
+- name: '438|🇩🇪DE_11|1.6MB/s | 网盘搜宝: https:...'
+  network: tcp
+  port: 443
+  server: 46.4.162.63
+  tls: false
+  type: vless
+  uuid: 6e28e54a-9fb9-49c4-a998-65a0648f5ad5
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 438,551|🇩🇪DE_2|1.6MB/s
+  network: xhttp
+  port: 2053
+  server: s5.meoshop.ir
+  servername: baba.meoshop.ir
+  tls: true
+  type: vless
+  uuid: 2dacceea-8664-4fed-ba16-27fdd3b40f3e
+  ws-opts:
     headers:
-      Host: alfred-13.global.ssl.fastly.net
+      Host: baba.meoshop.ir
     path: '%2F'
 - alpn:
   - h2
@@ -2618,96 +2643,23 @@ proxies:
       Host: mhione.mgvip.ir
     path: '%2F'
 - client-fingerprint: chrome
-  name: '438|🇩🇪DE_11|1.4MB/s | 更多节点: https:...'
+  name: '438|🇩🇪DE_14|1.9MB/s | 网盘搜宝: https:...'
   network: xhttp
   port: 443
-  server: fsxhh.fastshop1.com
-  servername: ssl.fastly.com
+  server: 45.130.125.6
+  servername: germany4.alibaba1405.org
   tls: true
   type: vless
-  uuid: 4c9b304f-ec00-41af-be5b-aa3f22ed430e
+  uuid: ac006062-f051-43c6-bd4c-f409285c8635
   ws-opts:
     headers:
-      Host: wizardali.global.ssl.fastly.net
-    path: '%2Fmammadalifsx'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438|🇩🇪DE_12|1.7MB/s | 更多节点: https:...'
-  network: tcp
-  port: 10443
-  reality-opts:
-    public-key: WeShDM0MdunM6N8btrY8tXlL0GT1Ah-0jcplNQf9FEo
-  server: 83.243.86.119
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: f6431ff1-dec0-4a6c-be4a-ce917913b589
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,559|🇩🇪 德国-4E21F5D5
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 5NHgGSXmIyLoslNxkfnH9ZUojx_WafjIhllNUEAhIwc
-    short-id: ea7acce8b971
-  server: 79.137.207.130
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
+      Host: germany4.alibaba1405.org
+    path: '%2Fv2raylink'
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '438|🇩🇪DE_14|1.8MB/s | 更多节点: https:...'
-  network: xhttp
-  port: 2053
-  server: s7.meoshop.ir
-  servername: baba.meoshop.ir
-  tls: true
-  type: vless
-  uuid: 2dacceea-8664-4fed-ba16-27fdd3b40f3e
-  ws-opts:
-    headers:
-      Host: baba.meoshop.ir
-    path: '%2F'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '438|🇩🇪DE_15|1.9MB/s | 福利姬: https:/...'
-  network: xhttp
-  port: 2053
-  server: s6.meoshop.ir
-  servername: baba.meoshop.ir
-  tls: true
-  type: vless
-  uuid: 2dacceea-8664-4fed-ba16-27fdd3b40f3e
-  ws-opts:
-    headers:
-      Host: baba.meoshop.ir
-    path: '%2F'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '438|🇩🇪DE_16|1.9MB/s | 网盘搜宝: https:...'
-  network: xhttp
-  port: 2053
-  server: s4.meoshop.ir
-  servername: baba.meoshop.ir
-  tls: true
-  type: vless
-  uuid: 2dacceea-8664-4fed-ba16-27fdd3b40f3e
-  ws-opts:
-    headers:
-      Host: baba.meoshop.ir
-    path: '%2F'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '438|🇩🇪DE_17|1.8MB/s | 更多节点: https:...'
+  name: '438|🇩🇪DE_15|1.7MB/s | 网盘搜宝: https:...'
   network: xhttp
   port: 2053
   server: s3.meoshop.ir
@@ -2723,10 +2675,10 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '438|🇩🇪DE_18|1.8MB/s | 福利姬: https:/...'
+  name: '438|🇩🇪DE_16|1.8MB/s | 更多节点: https:...'
   network: xhttp
   port: 2053
-  server: s5.meoshop.ir
+  server: s4.meoshop.ir
   servername: baba.meoshop.ir
   tls: true
   type: vless
@@ -2739,7 +2691,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '438|🇩🇪DE_19|1.8MB/s | 网盘搜宝: https:...'
+  name: '438|🇩🇪DE_17|1.9MB/s | 更多节点: https:...'
   network: xhttp
   port: 2053
   server: fbi.gov
@@ -2755,7 +2707,111 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '438|🇩🇪DE_20|1.8MB/s | 福利姬: https:/...'
+  name: '438|🇩🇪DE_18|1.8MB/s | 福利姬: https:/...'
+  network: xhttp
+  port: 2053
+  server: s10.meoshop.ir
+  servername: baba.meoshop.ir
+  tls: true
+  type: vless
+  uuid: 2dacceea-8664-4fed-ba16-27fdd3b40f3e
+  ws-opts:
+    headers:
+      Host: baba.meoshop.ir
+    path: '%2F'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '438|🇩🇪DE_19|1.7MB/s | 网盘搜宝: https:...'
+  network: xhttp
+  port: 2053
+  server: s7.meoshop.ir
+  servername: baba.meoshop.ir
+  tls: true
+  type: vless
+  uuid: 2dacceea-8664-4fed-ba16-27fdd3b40f3e
+  ws-opts:
+    headers:
+      Host: baba.meoshop.ir
+    path: '%2F'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '438|🇩🇪DE_20|1.8MB/s | 网盘搜宝: https:...'
+  network: xhttp
+  port: 2053
+  server: s6.meoshop.ir
+  servername: baba.meoshop.ir
+  tls: true
+  type: vless
+  uuid: 2dacceea-8664-4fed-ba16-27fdd3b40f3e
+  ws-opts:
+    headers:
+      Host: baba.meoshop.ir
+    path: '%2F'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '438|🇩🇪DE_21|1.8MB/s | 更多节点: https:...'
+  network: xhttp
+  port: 2087
+  server: www.speedtest.net
+  servername: r1.firefly-service.com
+  tls: true
+  type: vless
+  uuid: 2330f424-ef1f-47ad-a42a-815e5c576820
+  ws-opts:
+    path: '%2F'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '438|🇩🇪DE_22|1.9MB/s | 更多节点: https:...'
+  network: xhttp
+  port: 2053
+  server: chatgpt.com
+  servername: baba.meoshop.ir
+  tls: true
+  type: vless
+  uuid: 2dacceea-8664-4fed-ba16-27fdd3b40f3e
+  ws-opts:
+    headers:
+      Host: baba.meoshop.ir
+    path: '%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,559|🏁 未知-D0386D38
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: KS0F6q2PTY1s6y2sH5PdrznYqprIkUBtS1masvcrJjo
+    short-id: 823257b7b9ab9d02
+  server: 94.156.179.71
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 967064b5-3272-431e-8dce-9519acfb94be
+- client-fingerprint: chrome
+  name: '438|🇩🇪DE_24|2.0MB/s | 福利姬: https:/...'
+  network: xhttp
+  port: 443
+  server: fsxhh.fastshop1.com
+  servername: ssl.fastly.com
+  tls: true
+  type: vless
+  uuid: 4c9b304f-ec00-41af-be5b-aa3f22ed430e
+  ws-opts:
+    headers:
+      Host: wizardali.global.ssl.fastly.net
+    path: '%2Fmammadalifsx'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '438|🇩🇪DE_25|2.2MB/s | 网盘搜宝: https:...'
   network: xhttp
   port: 2053
   server: s8.meoshop.ir
@@ -2767,6 +2823,36 @@ proxies:
     headers:
       Host: baba.meoshop.ir
     path: '%2F'
+- client-fingerprint: chrome
+  name: '438,559,580|烏克蘭丨yoyapai.com #7'
+  network: tcp
+  port: 8443
+  server: 95.133.245.106
+  servername: cdn9-33.vk-cdnvideo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+- client-fingerprint: chrome
+  name: '438,559,580|德國丨yoyapai.com #4'
+  network: tcp
+  port: 8443
+  server: 95.133.245.213
+  servername: cdn9-33.vk-cdnvideo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+- client-fingerprint: chrome
+  name: '438,559,580|德國丨yoyapai.com #5'
+  network: tcp
+  port: 8443
+  server: 95.133.245.212
+  servername: cdn9-33.vk-cdnvideo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
 - name: 460|德国_Frankfurt am Main
   network: ws
   port: 443
@@ -3192,18 +3278,6 @@ proxies:
   skip-cert-verify: false
   sni: awaited-chicken.adder289.quest
   type: trojan
-- client-fingerprint: chrome
-  name: '472,473,474,502,551|🇩🇪DE_2|1.0MB/s #1'
-  network: tcp
-  port: 9999
-  reality-opts:
-    public-key: _kcz60zlz7bBTIXtK11MgHIrnVBF9sTJnU2MiLCwDF8
-    short-id: 80335f00af
-  server: 134.255.252.76
-  servername: varzesh3.com
-  tls: true
-  type: vless
-  uuid: 437c9e5b-e0c5-47b9-930a-12824ffc53ed
 - alterId: 0
   cipher: auto
   fingerprint: chrome
@@ -3308,6 +3382,19 @@ proxies:
     headers:
       Host: sync.amordad.xyz
     path: /api/v1/stream
+- alterId: 0
+  cipher: auto
+  name: 489,502,507,559,574,580|未知 VMESS-289 | free-nodes
+  network: tcp
+  port: '1020'
+  server: nlt.reata.ir
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
+  xudp: true
 - alterId: 2
   cipher: auto
   name: 489,559|🇨🇳CN_06
@@ -3348,7 +3435,19 @@ proxies:
     server_name: iosapps.itunes.apple.com
   type: hysteria2
 - client-fingerprint: chrome
-  name: 502,551,559|🏁 未知-BDB63883
+  name: 502|🇩🇪DE_2|1.0MB/s
+  network: tcp
+  port: 9999
+  reality-opts:
+    public-key: _kcz60zlz7bBTIXtK11MgHIrnVBF9sTJnU2MiLCwDF8
+    short-id: 80335f00af
+  server: 134.255.252.76
+  servername: varzesh3.com
+  tls: true
+  type: vless
+  uuid: 437c9e5b-e0c5-47b9-930a-12824ffc53ed
+- client-fingerprint: chrome
+  name: 502,559|🏁 未知-BDB63883
   network: tcp
   port: 443
   reality-opts:
@@ -3362,7 +3461,7 @@ proxies:
   uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '502,551|🇩🇪DE_3|1.6MB/s #1'
+  name: 502|🇩🇪DE_3|1.6MB/s
   port: 443
   server: 138.124.53.198
   servername: amazon.de
@@ -3370,7 +3469,7 @@ proxies:
   type: vless
   uuid: e96ffcc1-5acf-4e24-9b67-1b736a2f1c24
 - client-fingerprint: chrome
-  name: '502,551|🇩🇪DE_5|2.7MB/s #1'
+  name: 502|🇩🇪DE_5|2.7MB/s
   port: 8080
   server: 204.168.185.202
   servername: www.sony.com
@@ -3379,7 +3478,7 @@ proxies:
   uuid: a9411912-a9ed-4ef2-b36a-92987cd63bf1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 502,551,559|🏁 未知-D76FF179
+  name: 502,559|🏁 未知-D76FF179
   network: tcp
   port: 40443
   reality-opts:
@@ -3596,6 +3695,27 @@ proxies:
     headers:
       Host: 547.rtxconfigz.shop
     path: /@Malinda6104
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  name: '551|🇩🇪DE_1|1.0MB/s #1'
+  port: 773
+  server: 31.70.87.57
+  servername: mesh-5340.spliceflowtech.com
+  tls: true
+  type: vless
+  uuid: 26ca9191-5a90-40e5-9f03-c9181bcefb21
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 551|🇩🇪DE_3|2.3MB/s
+  port: 443
+  server: 104.16.74.10
+  servername: erori3430330.cloudwanfaired.top
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
 - cipher: chacha20-ietf-poly1305
   name: 558|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3764,6 +3884,17 @@ proxies:
   tls: false
   type: vless
   uuid: 1c7e2730-839d-4321-84f9-4e6b69ea4856
+- name: 559|🇩🇪 德国-4E21F5D5
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 5NHgGSXmIyLoslNxkfnH9ZUojx_WafjIhllNUEAhIwc
+    short-id: ea7acce8b971
+  server: 79.137.207.130
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
 - name: 559|🇩🇪 德国-86972D10
   network: tcp
   port: 443
@@ -4886,24 +5017,6 @@ proxies:
   tls: true
   type: vless
   uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- name: '559,580|德國丨yoyapai.com #5'
-  network: tcp
-  port: 8443
-  server: 95.133.245.212
-  servername: cdn9-33.vk-cdnvideo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- name: '559,580|德國丨yoyapai.com #4'
-  network: tcp
-  port: 8443
-  server: 95.133.245.213
-  servername: cdn9-33.vk-cdnvideo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
 - name: 559|🇩🇪 德国-3CF5D6AA
   network: tcp
   port: 8443
@@ -5338,17 +5451,6 @@ proxies:
     public-key: WeShDM0MdunM6N8btrY8tXlL0GT1Ah-0jcplNQf9FEo
     short-id: ''
   server: 83.243.86.117
-  servername: ''
-  tls: false
-  type: vless
-  uuid: f6431ff1-dec0-4a6c-be4a-ce917913b589
-- name: 559|🇩🇪 德国-72E4C148
-  network: tcp
-  port: 10443
-  reality-opts:
-    public-key: WeShDM0MdunM6N8btrY8tXlL0GT1Ah-0jcplNQf9FEo
-    short-id: ''
-  server: 83.243.86.118
   servername: ''
   tls: false
   type: vless
