@@ -85,7 +85,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '340,496,502,514,551|🇩🇪@V2RayyNGvpn 🇩🇪 #1 #2'
+- name: '340,496,502,514,551|🇩🇪@V2RayyNGvpn 🇩🇪 #2 #1'
   obfs: salamander
   obfs-password: T.me/V2RayyNGvpn
   password: rQRuZ8nFbC
@@ -798,7 +798,7 @@ proxies:
       Host: tv.cctv.com
     path: /hls/cctv5phd.m3u8
 - cipher: chacha20-ietf-poly1305
-  country: 🇸US
+  country: 🇺US
   name: 378,435,537,538,606|209.46.102.22_Gemini_Claude
   password: 1hhrqrokj3ag
   port: 8388
@@ -839,24 +839,24 @@ proxies:
   port: 7001
   server: 213.202.208.199
   type: ss
-- name: 378,472,473,474,502,507,536,537,538,544,559,580|未知 TROJAN-85 | free-nodes
+- alterId: 0
+  name: 378,507,536,537,538,544,559,574,580|未知 TROJAN-85 | free-nodes
   network: tcp
   password: fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX
   port: 443
   server: 185.137.157.59
   skip-cert-verify: true
   sni: www.lateralio.click
+  tls: true
   type: trojan
-- alterId: 0
-  name: 378,536,537,538,559,574,580|未知 TROJAN-87 | free-nodes
+  udp: true
+- name: 378,536,537,538,559,580|未知 TROJAN-87 | free-nodes
   password: lhvfOzkRQqNd9cLDwpryrAkFGgqzlZR9Fi
   port: 443
   server: 38.54.13.189
   skip-cert-verify: true
   sni: 38.54.13.189
-  tls: true
   type: trojan
-  udp: true
 - name: 378,477,482,536,537,538|🇩🇪DE-185.137.157.254-0238 | 0....
   password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
   port: 443
@@ -948,14 +948,11 @@ proxies:
   uuid: 36793d2c-0d5a-4a84-8862-f9c93e9af5b5
   ws-opts:
     path: /4ba99a39b90faa/
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 378,537,574|🇪DE德国2 46.0KB/s
+- cipher: chacha20-ietf-poly1305
+  name: '378,537|🇪DE-213.226.68.8-0530 #1'
   password: hkasb5cVrs4jE18jCEJxB4Gr55hVGW24y35gU9GIIeyT31Fw
   port: 31348
   server: 213.226.68.8
-  skip-cert-verify: true
-  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -1472,7 +1469,7 @@ proxies:
   uuid: 826b8d0a-e0d3-407a-927d-19953c170779
   ws-opts:
     path: /cctv13/hd.m3u8
-- country: 🇬🇧GB
+- country: 🇧GB
   name: 378,435,436,536,537,559|🇬🇧GB_50
   password: 11559103-9993-4d00-b599-d6bcd8db2197
   port: 443
@@ -2598,68 +2595,27 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 438,507,559|未知 VLESS-377 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 159.195.148.47
-  servername: sellflow.org
-  tls: false
-  type: vless
-  uuid: ff19693c-11f3-4df9-8713-79a85a5ca090
-- name: '438|🇩🇪DE_2|1.9MB/s | 福利姬: https://...'
-  obfs: salamander
-  obfs-password: T.me%2FV2RayyNGvpn
-  password: rQRuZ8nFbC
-  port: 443
-  server: 185.250.41.245
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
 - client-fingerprint: chrome
-  name: '438,502,551|🇩🇪DE_3|1.7MB/s #1'
-  network: xhttp
+  http-opts:
+    headers:
+      Host:
+      - germany4.alibaba1405.org
+    path:
+    - /v2raylink
+  name: '438,502,523,524,551|🇩🇪DE_3|1.7MB/s #1'
+  network: http
   port: 443
   server: 45.130.125.6
   servername: germany4.alibaba1405.org
+  skip-cert-verify: true
   tls: true
   type: vless
+  udp: true
   uuid: ac006062-f051-43c6-bd4c-f409285c8635
   ws-opts:
     headers:
       Host: germany4.alibaba1405.org
     path: '%2Fv2raylink'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,559|🏁 未知-77FF7E45
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: EuExqpNB141gtIjbCmU0yyurbBqiLtGjDg-n95JIuig
-    short-id: 28415a7918168947
-  server: 159.195.27.99
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 859a537b-09cf-4bce-8da4-ecbb72950e3a
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: '438,523,524,559|德国 #3'
-  network: tcp
-  port: 40443
-  reality-opts:
-    public-key: yaODAPfguKDxgflfG-SEl8KvsZs8VyHBZvIyj34jLmI
-    short-id: 1f76
-  server: 72.56.122.42
-  servername: deepl.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c58cc0f2-116a-4e8e-a972-f0f62fca315c
 - name: 438,559|🏁 未知-E9D9941A
   network: xhttp
   port: 7000
@@ -2671,17 +2627,33 @@ proxies:
     headers:
       Host: a12.crowsvpn.shop
     path: '%2F'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 438,507,559|🇩🇪 德国-73238F15
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: EIlnBMyH--EIasnzGPJAAFSP5WM_4FNU4ktFUQI0O00
+    short-id: a13edee689fca1da
+  server: 144.31.219.56
+  servername: ''
+  tls: false
+  type: vless
+  uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438|🇩🇪DE_8|1.6MB/s | 更多节点: https:/...'
+  name: 438,507,559|🏁 未知-D0386D38
   network: tcp
-  port: 9443
-  server: bero-3.bexum.fun
-  servername: bero-3.bexum.fun
-  tls: true
+  port: 443
+  reality-opts:
+    public-key: KS0F6q2PTY1s6y2sH5PdrznYqprIkUBtS1masvcrJjo
+    short-id: 823257b7b9ab9d02
+  server: 94.156.179.71
+  servername: ''
+  tls: false
   type: vless
-  uuid: 7d876627-abf5-4865-8ff4-03f37d49de5d
-- name: '438,559|未知 VLESS-345 | free-nodes #1'
+  uuid: 967064b5-3272-431e-8dce-9519acfb94be
+- name: 438,507,559|未知 VLESS-345 | free-nodes
   network: tcp
   port: 443
   server: 18.153.81.34
@@ -2689,67 +2661,62 @@ proxies:
   type: vless
   uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
 - client-fingerprint: chrome
-  name: '438|🇩🇪DE_10|1.5MB/s | 福利姬: https:/...'
-  network: xhttp
+  flow: xtls-rprx-vision
+  name: 438,559|🏁 未知-E594CF8C
+  network: tcp
+  port: 9443
+  server: 37.114.48.146
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 7d876627-abf5-4865-8ff4-03f37d49de5d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,559|🏁 未知-0292E516
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 4wQjPB3VmJXy_VEecZl2vut6SAerBMPOldUrOV-Je0I
+    short-id: 87119a6de24e23ca
+  server: 159.195.60.190
+  servername: ''
+  tls: false
+  type: vless
+  uuid: c897facf-2836-4538-be6e-25386fb49284
+- client-fingerprint: chrome
+  http-opts:
+    headers:
+      Host:
+      - wizardali.global.ssl.fastly.net
+    path:
+    - /mammadalifsx
+  name: '438,523,524|美国_12 #1'
+  network: http
   port: 443
   server: fsxhh.fastshop1.com
   servername: ssl.fastly.com
+  skip-cert-verify: true
   tls: true
   type: vless
+  udp: true
   uuid: 4c9b304f-ec00-41af-be5b-aa3f22ed430e
   ws-opts:
     headers:
       Host: wizardali.global.ssl.fastly.net
     path: '%2Fmammadalifsx'
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,559|🇩🇪 德国-DD16DCA8
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: Xb-A55KyH9nwjxKw85wksIUJs9KBGk5B8rLArXGVLiw
-    short-id: d9654598d4415f95
-  server: 144.31.216.98
-  servername: ''
-  tls: false
-  type: vless
-  uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,559|🇩🇪 德国-408CE107
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  server: 159.195.151.6
-  servername: ''
-  tls: false
-  type: vless
-  uuid: ff19693c-11f3-4df9-8713-79a85a5ca090
-- client-fingerprint: chrome
-  name: '438,559,580|未知 VLESS-301 | free-nodes #1'
+  name: '438|🇩🇪DE_9|1.7MB/s | 网盘搜宝: https:/...'
   network: ws
-  port: 443
-  server: 172.64.33.162
-  servername: octopusss5.info
-  skip-cert-verify: false
+  port: 2053
+  server: 45.130.125.158
+  servername: po.fastbrokencompony.com
   tls: true
   type: vless
-  uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
+  uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
   ws-opts:
     headers:
-      Host: octopusss5.info
-    path: '%2Fudfyfws'
-- client-fingerprint: chrome
-  name: 438,559|🇭🇷 克罗地亚-9138CF7C
-  network: tcp
-  port: 8443
-  server: 46.229.243.148
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+      Host: po.fastbrokencompony.com
+    path: '%2F'
 - name: 460|德国_Frankfurt am Main
   network: ws
   port: 443
@@ -3176,10 +3143,11 @@ proxies:
   sni: awaited-chicken.adder289.quest
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '476,481|🇩🇪 DE德国(mibei77.com 米贝节点分享) 12 #1'
+  name: '476,481,523,524|美国_18 #1'
   password: XUMTygEM1jVYIvysXKqA5T
   port: 443
   server: hackney-latest-strike.freesocks.work
+  skip-cert-verify: true
   type: ss
   udp: true
 - alterId: 0
@@ -3200,20 +3168,6 @@ proxies:
   server: 217.179.5.162
   type: ss
   udp: true
-- insecure: '1'
-  mport: 10000-19999
-  name: 489|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001...
-  obfs: salamander
-  obfs-password: YzgyOTowNDk4ZTU2NTdiNA==
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 10000
-  server: de-by10fuo0kw.9966690.xyz
-  skip-cert-verify: true
-  tls:
-    enabled: true
-    insecure: true
-    server_name: iosapps.itunes.apple.com
-  type: hysteria2
 - client-fingerprint: chrome
   encryption: none
   name: 489,559|DE德国(mibei77.com 米贝节点分享)
@@ -3228,6 +3182,26 @@ proxies:
   type: vless
   udp: true
   uuid: 612c872d-1370-4109-8644-f0755f97e33f
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: '489,502,507,559,717|DE【机场推荐：https://a9a.xyz】8 #1'
+  network: tcp
+  port: 40443
+  reality-opts:
+    public-key: gFP8-P4r8FKkN10b0q1keHgL7jjmUOpY9qPAem_3z34
+    short-id: '5201'
+  server: 72.56.112.226
+  servername: deepl.com
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8c158c22-ecaf-441e-8653-91f1a5a4fd15
   xudp: true
 - name: 489|🔴🇩🇪[🤖]_github.com/Ruk1ng001_07...
   network: ws
@@ -3267,33 +3241,38 @@ proxies:
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   xudp: true
-- client-fingerprint: chrome
-  name: '489,523,524,544,559,580|US美国(mibei77.com 米贝节点分享) #38'
-  network: tcp
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 46424
-  server: 103.177.136.42
+- insecure: '1'
+  mport: 10000-19999
+  name: '489|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  obfs: salamander
+  obfs-password: YzgyOTowNDk4ZTU2NTdiNA==
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  port: 10000
+  server: de-by10fuo0kw.9966690.xyz
   skip-cert-verify: true
-  sni: de.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-  udp: true
-- name: '489|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
+  tls:
+    enabled: true
+    insecure: true
+    server_name: iosapps.itunes.apple.com
+  type: hysteria2
+- name: 489,548|🇧🇷 巴西圣保罗 CloudFlare节点
   network: ws
   port: 80
   server: 188.114.97.6
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vless
   udp: true
   uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
   ws-opts:
     headers:
       Host: de.vpnbase.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/40.0.2214.111 Safari/537.36
     path: /http
   xudp: true
-- client-fingerprint: chrome
-  name: '489,523,524,544,559,580|未知 TROJAN-68 | free-nodes #1'
+- alterId: 0
+  client-fingerprint: chrome
+  name: '489,523,524,544,559,574,580|未知 TROJAN-68 | free-nodes #1'
   network: tcp
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 46424
@@ -3315,38 +3294,21 @@ proxies:
   sni: apple.com
   type: hysteria
   up: '500'
-- cipher: aes-256-gcm
-  name: 489|🔴🇩🇪[🎬]_github.com/Ruk1ng001_ea...
-  password: wc/eqRPrYjnxfAJ2JKnio7cG2Ko9K9DiMwzonRjU3LI=
-  port: 1122
-  server: 103.130.147.40
-  type: ss
-  udp: true
-- name: 496|🇩🇪@V2RayyNGvpn 🇩🇪
-  obfs: salamander
-  obfs-password: T.me/V2RayyNGvpn
-  password: cFihfSrWtH
-  port: 443
-  server: 185.250.41.245
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '502,559,717|DE【机场推荐：https://a9a.xyz】8 #1'
+- alterId: 0
+  client-fingerprint: chrome
+  name: '489,523,524,544,559,574,580|US美国(mibei77.com 米贝节点分享) #38'
   network: tcp
-  port: 40443
-  reality-opts:
-    public-key: gFP8-P4r8FKkN10b0q1keHgL7jjmUOpY9qPAem_3z34
-    short-id: '5201'
-  server: 72.56.112.226
-  servername: deepl.com
-  tls: false
-  type: vless
-  uuid: 8c158c22-ecaf-441e-8653-91f1a5a4fd15
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 46424
+  server: 103.177.136.42
+  skip-cert-verify: true
+  sni: de.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '502,507,551,559,580|未知 VLESS-305 | free-nodes #1'
+  name: '502,551,559,580|未知 VLESS-305 | free-nodes #1'
   network: tcp
   port: 443
   reality-opts:
@@ -3427,21 +3389,23 @@ proxies:
   server: 91.107.219.5
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '523,524,559,580,581|🇩🇪_DE_德国 #2'
-  network: tcp
+- client-fingerprint: firefox
+  http-opts:
+    headers:
+      Host:
+      - dey.lnmarketplace.net
+    path:
+    - /kavir
+  name: 523,524,559|🏁 未知-12957214
+  network: xhttp
   port: 443
-  reality-opts:
-    public-key: EyzTSZxq5qlUT2xW0l7VP-DzIh2ucabMan9ekEv9Owo
-    short-id: 143627f1
-  server: tor.spectrumproxy.shop
-  servername: tor.spectrumproxy.shop
-  skip-cert-verify: false
+  server: 89.144.30.104
+  servername: ''
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
 - alterId: 0
   cipher: auto
   country: 🇩🇪DE
@@ -3527,7 +3491,7 @@ proxies:
   delay: 1383
   h2-opts: {}
   http-opts: {}
-  name: '528,559,574|未知63 #1'
+  name: '528,559,574|未知14 #1'
   network: ws
   port: 6066
   server: 188.121.109.55
@@ -3538,6 +3502,12 @@ proxies:
   uuid: 9aeb91f7-c539-4f15-8fbd-fb17efaca0e6
   ws-opts:
     path: /
+- name: 536|🇩🇪DE-2.26.54.174-0209
+  password: TrojanPass2026!
+  port: 8448
+  server: 2.26.54.174
+  sni: foolsland.ru
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '544,559|🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch... #1'
@@ -3551,6 +3521,21 @@ proxies:
     headers:
       Host: 547.rtxconfigz.shop
     path: /@Malinda6104
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '548,559,580,581|🇩🇪_DE_德国 #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: EyzTSZxq5qlUT2xW0l7VP-DzIh2ucabMan9ekEv9Owo
+    short-id: 143627f1
+  server: tor.spectrumproxy.shop
+  servername: tor.spectrumproxy.shop
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
 - cipher: chacha20-ietf-poly1305
   name: 558|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3685,28 +3670,6 @@ proxies:
   tls: false
   type: vless
   uuid: 1c7e2730-839d-4321-84f9-4e6b69ea4856
-- name: 559|🇩🇪 德国-9324A6BD
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: jI-HduKz_9UsArUUdbGFhqbB-73xllmGP1-yc_RGTFg
-    short-id: 72a9de7fe720652b
-  server: 89.169.54.21
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 1c7e2730-839d-4321-84f9-4e6b69ea4856
-- name: 559|🇩🇪 德国-4E21F5D5
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 5NHgGSXmIyLoslNxkfnH9ZUojx_WafjIhllNUEAhIwc
-    short-id: ea7acce8b971
-  server: 79.137.207.130
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '559,580|未知 VLESS-102 | free-nodes #1'
@@ -5187,17 +5150,20 @@ proxies:
   tls: false
   type: vless
   uuid: a9411912-a9ed-4ef2-b36a-92987cd63bf1
-- name: 559|🇩🇪 德国-73238F15
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '559|德国 #3'
   network: tcp
-  port: 8443
+  port: 40443
   reality-opts:
-    public-key: EIlnBMyH--EIasnzGPJAAFSP5WM_4FNU4ktFUQI0O00
-    short-id: a13edee689fca1da
-  server: 144.31.219.56
-  servername: ''
-  tls: false
+    public-key: yaODAPfguKDxgflfG-SEl8KvsZs8VyHBZvIyj34jLmI
+    short-id: 1f76
+  server: 72.56.122.42
+  servername: deepl.com
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
+  uuid: c58cc0f2-116a-4e8e-a972-f0f62fca315c
 - name: '559|🇩🇪 Germany | 🌐 | [BL] #1'
   network: xhttp
   port: 6444
@@ -5372,6 +5338,17 @@ proxies:
   tls: false
   type: vless
   uuid: fdba43e2-9dc3-4c3e-a890-08ab21e60081
+- name: 559|🇩🇪 德国-408CE107
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: ''
+  server: 159.195.151.6
+  servername: ''
+  tls: false
+  type: vless
+  uuid: ff19693c-11f3-4df9-8713-79a85a5ca090
 - alterId: 0
   cipher: auto
   name: 559|🇩🇪 德国-963F2944
@@ -5398,7 +5375,7 @@ proxies:
     path: /7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed-vm
 - alterId: 0
   cipher: auto
-  name: 559|🇩🇪_DE_德国
+  name: '559|🇩🇪_DE_德国 #1'
   network: tcp
   port: 8080
   server: 185.189.58.195
