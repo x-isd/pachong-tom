@@ -812,7 +812,7 @@ proxies:
   sni: de-1.hysteria.ltd
   type: trojan
 - alterId: 0
-  name: '378,502,507,536,537,538,543,544,548,559,574,580|未知 TROJAN-76 | free-nodes
+  name: '378,472,473,474,507,536,537,538,543,544,548,559,574,580|未知 TROJAN-76 | free-nodes
     #2'
   network: tcp
   password: fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX
@@ -968,7 +968,7 @@ proxies:
   ws-opts:
     path: /4ba99a39b90faa/
 - alterId: 0
-  name: 378,438,472,473,474,536,537,543,544,559,574|🇷🇴RO罗马尼亚2 2.5MB/s
+  name: 378,438,502,536,537,543,544,559,574|🇷🇴RO罗马尼亚2 2.5MB/s
   network: tcp
   password: n-S5Kuz58YgwljisuLEJltip2OWf1ourWz
   port: 443
@@ -2619,27 +2619,7 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: '438,507,559,580|未知 VLESS-345 | free-nodes #2'
-  network: tcp
-  port: 443
-  server: 18.153.81.34
-  tls: false
-  type: vless
-  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438,507,559|未知 VLESS-383 | free-nodes #1'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: Xb-A55KyH9nwjxKw85wksIUJs9KBGk5B8rLArXGVLiw
-    short-id: d9654598d4415f95
-  server: 144.31.216.98
-  servername: service.mycloudsfere.abrdns.com
-  tls: false
-  type: vless
-  uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
-- name: '438|🇩🇪DE_4|2.2MB/s | 更多节点: https:/...'
+- name: '438|🇩🇪DE_2|1.7MB/s | 福利姬: https://...'
   obfs: salamander
   obfs-password: T.me%2FV2RayyNGvpn
   password: V2RayyNGvpn
@@ -2648,7 +2628,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '438|🇩🇪DE_5|2.2MB/s | 福利姬: https://...'
+- name: '438|🇩🇪DE_3|1.7MB/s | 网盘搜宝: https:/...'
   obfs: salamander
   obfs-password: T.me%2FV2RayyNGvpn
   password: V2RayyNGvpn
@@ -2658,8 +2638,18 @@ proxies:
   sni: www.wordreference.com
   tls: false
   type: hysteria2
+- name: '438|🇩🇪DE_4|1.5MB/s | 网盘搜宝: https:/...'
+  obfs: salamander
+  obfs-password: YzgyOTowNDk4ZTU2NTdiNA%3D%3D
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  port: 10000
+  server: de-by10fuo0kw.9966690.xyz
+  skip-cert-verify: true
+  sni: de-by10fuo0kw.9966690.xyz
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
-  name: '438|🇩🇪DE_6|2.0MB/s | 福利姬: https://...'
+  name: '438|🇩🇪DE_5|1.7MB/s | 网盘搜宝: https:/...'
   network: xhttp
   port: 8443
   reality-opts:
@@ -2672,16 +2662,34 @@ proxies:
   uuid: c9f829a6-2f60-4bd9-8189-06df479d0488
   ws-opts:
     path: '%2Fcdn-data'
-- name: 438,559|🏁 未知-E9D9941A
-  network: xhttp
-  port: 7000
-  server: 89.106.64.15
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,559|🏁 未知-0905CDD9
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng
+    short-id: b415b8d7a6106ace
+  server: 64.188.91.92
+  servername: ''
   tls: false
   type: vless
-  uuid: 0a715ede-593a-4018-8406-66e2c3b1169c
+  uuid: 2e146372-aafa-42e6-aaa6-b2a7185225ce
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '438|🇩🇪DE_7|1.8MB/s | 福利姬: https://...'
+  network: xhttp
+  port: 443
+  server: mci.mgvip.ir
+  servername: ihvi.mgvip.ir
+  tls: true
+  type: vless
+  uuid: 6d9d01fc-6842-4d8b-989d-459579e5ae14
   ws-opts:
     headers:
-      Host: a12.crowsvpn.shop
+      Host: ihvi.mgvip.ir
     path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -2696,11 +2704,38 @@ proxies:
   tls: false
   type: vless
   uuid: f6431ff1-dec0-4a6c-be4a-ce917913b589
+- name: 438,559|🏁 未知-E9D9941A
+  network: xhttp
+  port: 7000
+  server: 89.106.64.15
+  tls: false
+  type: vless
+  uuid: 0a715ede-593a-4018-8406-66e2c3b1169c
+  ws-opts:
+    headers:
+      Host: a12.crowsvpn.shop
+    path: '%2F'
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '438|🇩🇪DE_9|1.6MB/s | 网盘搜宝: https:/...'
+  name: '438|🇩🇪DE_10|1.8MB/s | 更多节点: https:...'
+  network: xhttp
+  port: 8443
+  server: mci.mgvip.ir
+  servername: mdmhi.mgvip.ir
+  tls: true
+  type: vless
+  uuid: 6d9d01fc-6842-4d8b-989d-459579e5ae14
+  ws-opts:
+    headers:
+      Host: mdmhi.mgvip.ir
+    path: '%2F'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '438|🇩🇪DE_11|1.9MB/s | 福利姬: https:/...'
   network: xhttp
   port: 8443
   server: 104.25.118.116
@@ -2713,44 +2748,24 @@ proxies:
       Host: s1.filternet.qzz.io
     path: '%2Ftake'
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,559|🏁 未知-0905CDD9
+  name: '438,559,580|烏克蘭節點丨yoyapai.com #1'
   network: tcp
-  port: 443
+  port: 8443
   reality-opts:
-    public-key: j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng
-    short-id: b415b8d7a6106ace
-  server: 64.188.91.92
-  servername: ''
+    public-key: Crjd0I6hcasRXZcfNf7cs-YtJLpQ8u-t1CbwHIDAciU
+    short-id: 478dc6
+  server: 178.215.238.148
+  servername: eh.vk.com
   tls: false
   type: vless
-  uuid: 2e146372-aafa-42e6-aaa6-b2a7185225ce
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,559|🏁 未知-0292E516
+  uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
+- name: '438|🇩🇪DE_14|3.3MB/s | 更多节点: https:...'
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: 4wQjPB3VmJXy_VEecZl2vut6SAerBMPOldUrOV-Je0I
-    short-id: 87119a6de24e23ca
-  server: 159.195.60.190
-  servername: ''
+  port: 33819
+  server: 91.107.160.130
   tls: false
   type: vless
-  uuid: c897facf-2836-4538-be6e-25386fb49284
-- client-fingerprint: chrome
-  name: 438,559|🏁 未知-F8BA6AA8
-  network: xhttp
-  port: 2083
-  server: 45.130.125.20
-  servername: ''
-  tls: true
-  type: vless
-  uuid: ba532611-1b47-4998-8902-f13f14fe0c7c
-  ws-opts:
-    headers:
-      Host: cf.mmad.kdns.fr
-    path: '%2Fcdn-data'
+  uuid: 73eed38e-09ea-4c07-aa95-c53684400d68
 - name: 460|德国_Frankfurt am Main
   network: ws
   port: 443
@@ -3203,80 +3218,20 @@ proxies:
   tls: true
   type: socks5
   username: f8eca8df-a1a5-4918-a194-d34112a3673f
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: '489|🟢🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
-  network: tcp
-  port: 40443
-  reality-opts:
-    public-key: gFP8-P4r8FKkN10b0q1keHgL7jjmUOpY9qPAem_3z34
-    short-id: '5201'
-  server: 72.56.112.226
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8c158c22-ecaf-441e-8653-91f1a5a4fd15
-  xudp: true
-- insecure: '1'
-  mport: 10000-19999
-  name: '489|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
-  obfs: salamander
-  obfs-password: YzgyOTowNDk4ZTU2NTdiNA==
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 10000
-  server: de-by10fuo0kw.9966690.xyz
-  skip-cert-verify: true
-  tls:
-    enabled: true
-    insecure: true
-    server_name: iosapps.itunes.apple.com
-  type: hysteria2
-- client-fingerprint: firefox
-  encryption: none
-  name: 489,559|🇷🇴 罗马尼亚-1BA9621B
-  network: tcp
-  port: 448
-  reality-opts:
-    public-key: qX6IJfWNN-SNray6xJugb8pCpgY_zjeyCfvq9IUyd3w
-    short-id: e1bdc95c1554c8eb
-  server: 93.114.194.84
-  servername: ''
-  tls: false
-  type: vless
-  udp: true
-  uuid: bc5b801f-49a7-4db7-ac92-a2c57d42d132
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 489,502,551,559,580|RU VLESS-342 | free-nodes
-  network: tcp
-  port: 8443
-  server: vpn.oplatasite.ru
-  servername: vpn.oplatasite.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9cc56b5d-2a44-4fd1-91e3-659b06255c11
-  xudp: true
 - encryption: none
-  name: '489|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #9'
+  name: '489,551,567,585,586|US_speednode_0072 #2'
   network: ws
   port: 80
   server: 151.101.130.219
+  servername: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   ws-opts:
     headers:
       Host: max-gb1.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
     path: /
   xudp: true
 - client-fingerprint: chrome
@@ -3296,25 +3251,29 @@ proxies:
       Host: shegeftihaaa.net
     path: /rsedgws
   xudp: true
-- name: '489|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #10'
-  network: ws
-  port: 80
-  server: 188.114.97.6
-  type: vless
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  country: 🇮🇷IR
+  delay: 1130
+  h2-opts: {}
+  http-opts: {}
+  name: 489,528|德国 - Frankfurt Am Main - 3
+  network: tcp
+  port: 1050
+  server: spt.reata.ir
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
-  ws-opts:
-    headers:
-      Host: de.vpnbase.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/40.0.2214.111 Safari/537.36
-    path: /http
+  uuid: b5b183b6-a4f0-41ad-a015-ba9f000ad7ed
   xudp: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   down: '1000'
-  name: '489|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #11'
+  name: '489|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
   port: 20088
   protocol: udp
   server: 5.83.129.153
@@ -3346,7 +3305,36 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '496|🇩🇪@V2RayyNGvpn🇩🇪 #1'
+- insecure: '1'
+  mport: 10000-19999
+  name: '489|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #8'
+  obfs: salamander
+  obfs-password: YzgyOTowNDk4ZTU2NTdiNA==
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  port: 10000
+  server: de-by10fuo0kw.9966690.xyz
+  skip-cert-verify: true
+  tls:
+    enabled: true
+    insecure: true
+    server_name: iosapps.itunes.apple.com
+  type: hysteria2
+- client-fingerprint: firefox
+  encryption: none
+  name: 489,559|🇷🇴 罗马尼亚-1BA9621B
+  network: tcp
+  port: 448
+  reality-opts:
+    public-key: qX6IJfWNN-SNray6xJugb8pCpgY_zjeyCfvq9IUyd3w
+    short-id: e1bdc95c1554c8eb
+  server: 93.114.194.84
+  servername: ''
+  tls: false
+  type: vless
+  udp: true
+  uuid: bc5b801f-49a7-4db7-ac92-a2c57d42d132
+  xudp: true
+- name: '496,514,551|🇩🇪@V2RayyNGvpn🇩🇪 #1 #1'
   obfs: salamander
   obfs-password: T.me/V2RayyNGvpn
   password: t.me.V2RayyNGvpn
@@ -3378,6 +3366,18 @@ proxies:
     headers:
       Host: vms.lifetime23.workers.dev
     path: '%2F'
+- client-fingerprint: chrome
+  name: '502,507,559,717|DE【机场推荐：https://a9a.xyz】18 #1'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: S05RWQUVH-p3uqekd0iRpIeH__NpCt0XEN2xCiQJs3Y
+    short-id: c56c3ba3b9f676c5
+  server: 95.85.233.181
+  servername: c.primarymaster.online
+  tls: false
+  type: vless
+  uuid: e0bb3250-1873-4b9d-b9b5-7aa6c863885f
 - client-fingerprint: chrome
   name: '502,551,559,580|DE德国(mibei77.com 米贝节点分享) #4'
   network: xhttp
@@ -3422,6 +3422,14 @@ proxies:
   tls: true
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
+- client-fingerprint: chrome
+  name: 502,551,559,580|RU VLESS-342 | free-nodes
+  port: 8443
+  server: vpn.oplatasite.ru
+  servername: vpn.oplatasite.ru
+  tls: true
+  type: vless
+  uuid: 9cc56b5d-2a44-4fd1-91e3-659b06255c11
 - client-fingerprint: chrome
   name: '502,551,559|🇩🇪DE_8|3.2MB/s #2'
   port: 2053
@@ -4052,16 +4060,37 @@ proxies:
   server: 91.107.219.5
   tfo: false
   type: ss
-- country: 🇺🇸US
-  delay: 649
-  name: 528,559|🇩🇪 德国-CF80BD82
+- country: 🇩🇪DE
+  delay: 689
+  name: 528|德国 - Frankfurt am Main - 1
   password: telegram-id-directvpn
   port: 22223
-  server: 63.185.169.158
+  server: 52.28.80.88
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇮🇷IR
+  delay: 2141
+  h2-opts: {}
+  http-opts: {}
+  name: 528|德国 - Frankfurt Am Main - 2
+  network: tcp
+  port: 1020
+  server: spt.reata.ir
+  skip-cert-verify: true
+  type: vmess
+  uuid: a8022edb-0bd7-4f86-b70d-20f7f8a59814
+- cipher: aes-256-cfb
+  country: 🇪🇸ES
+  delay: 631
+  name: 528|西班牙 - 马德里 - 1
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 5.188.181.201
+  type: ss
 - name: 536|🇩🇪DE-2.26.54.174-0164
   password: TrojanPass2026!
   port: 8448
@@ -4166,6 +4195,12 @@ proxies:
   port: 443
   server: 89.116.46.68
   sni: www.calmloud.com
+  type: trojan
+- name: 559|🇩🇪 德国-CF80BD82
+  password: telegram-id-directvpn
+  port: 22223
+  server: 63.185.169.158
+  sni: trojan.burgerip.co.uk
   type: trojan
 - name: 559|🏁 未知-6A06DDE9
   network: ws
@@ -5796,7 +5831,7 @@ proxies:
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   down: 1000
-  name: 566|🇩🇪 德国 | DEU
+  name: 566|🇩🇪 德国 | DEU 7
   port: 54177
   protocol: udp
   server: 5.83.129.90
@@ -5944,42 +5979,42 @@ proxies:
   server: 185.250.41.245
   skip-cert-verify: true
   type: hysteria2
-- name: 728|🇩🇪 德国1
+- name: 728|🇩🇪 德国1🔒
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-de1.mfa.cat
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: hysteria2
-- name: 728|🇩🇪 德国2
+- name: 728|🇩🇪 德国2🔒
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-de2.mfa.cat
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: hysteria2
-- name: 728|🇩🇪 德国3
+- name: 728|🇩🇪 德国3🔒
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-de1.mfa.cat
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: 728|🇩🇪 德国4
+- name: 728|🇩🇪 德国4🔒
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
   server: starlink-de2.mfa.cat
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: 728|🇩🇪 德国5
+- name: 728|🇩🇪 德国5🔒
   password: 升级订阅解锁全部节点
   port: 10124
   server: z-eu1.mfa.cat
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: 728|🇩🇪 德国6
+- name: 728|🇩🇪 德国6🔒
   password: 升级订阅解锁全部节点
   port: 10125
   server: z-eu2.mfa.cat
