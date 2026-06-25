@@ -307,9 +307,9 @@ proxies:
     path: /fr-unlimitxxx
 - alterId: 0
   cipher: auto
-  name: 378,508,509,537,636|🇩🇪 德国 004
+  name: '378,508,509,537|🇺RU-45.87.155.14-0795 #1'
   network: ws
-  port: '443'
+  port: 443
   server: ua-full.privateip.net
   skip-cert-verify: false
   tls: true
@@ -324,9 +324,9 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: /
-  name: 378,508,509,537,636|🇷🇺 俄罗斯 028
+  name: '378,508,509,537|🇺RU-5.42.80.252-0870 #1'
   network: grpc
-  port: '32740'
+  port: 32740
   server: 5.42.80.252
   servername: ''
   skip-cert-verify: false
@@ -336,7 +336,7 @@ proxies:
   uuid: 433f1111-b780-4eae-b7e7-d7823b09e701
 - alterId: 64
   cipher: auto
-  name: 378,508,509,537,559,636|🇷🇺 俄罗斯 032
+  name: '378,508,509,537,559|Github搜索TrojanLinks #19'
   network: ws
   port: '30002'
   server: 185.173.94.1
@@ -350,9 +350,9 @@ proxies:
     path: /path/191019072927
 - alterId: 0
   cipher: auto
-  name: 378,508,509,537,636|🇷🇺 俄罗斯 051
+  name: '378,508,509,537|🇺RU-31.129.105.239-1180 #1'
   network: ws
-  port: '16231'
+  port: 16231
   server: 31.129.105.239
   skip-cert-verify: false
   tls: false
@@ -364,9 +364,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,537,636|🇷🇺 俄罗斯 052
+  name: '378,508,509,537|🇺RU-37.220.161.249-1196 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 37.220.161.249
   skip-cert-verify: false
   tls: true
@@ -382,9 +382,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 055
+  name: '378,508,509,536,537|🇺RU-194.87.248.27-1435 #1'
   network: http
-  port: '26743'
+  port: 26743
   server: 194.87.248.27
   servername: ''
   skip-cert-verify: false
@@ -397,9 +397,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 056
+  name: '378,508,509,536,537|🇺RU-176.119.159.245-1450 #1'
   network: http
-  port: '37672'
+  port: 37672
   server: 176.119.159.245
   servername: ''
   skip-cert-verify: false
@@ -408,9 +408,9 @@ proxies:
   uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇦 乌克兰 018
+  name: '378,508,509,536,537|🇺RU-45.67.215.119-1798 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 45.67.215.119
   servername: ''
   skip-cert-verify: false
@@ -423,9 +423,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,537,636|🇷🇺 俄罗斯 062
+  name: '378,508,509,537|🇷🇺RU-93.93.89.118-1847 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 93.93.89.118
   skip-cert-verify: false
   tls: true
@@ -692,12 +692,30 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: 436,559|🇷🇺RU_82
+- country: 🇺RU
+  name: '435,436,559|🇷🇺RU_64 #1'
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
+  skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '438,507,553,559,580|未知 VLESS-381 | free-nodes #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
+    short-id: c7e42004e5f024be
+  server: 155.117.137.160
+  servername: cdn8-03.yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: ccdce320-7eef-4815-8edb-c599987c2279
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 438,559|🏁 未知-CBF98AF2
@@ -1480,18 +1498,6 @@ proxies:
       Host: ''
     path: /
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '475,480,523,524,559,580|俄羅斯丨yoyapai.com #12'
-  network: tcp
-  port: 22231
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- client-fingerprint: chrome
   name: '475,480,559,580|俄羅斯丨yoyapai.com #9'
   network: tcp
   port: 19562
@@ -1541,21 +1547,6 @@ proxies:
   server: ru.safepass.click
   type: ss
   udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '502,559|RU【机场推荐：https://a9a.xyz】6 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 5.129.194.22
-  servername: sellflow.org
-  tls: false
-  type: vless
-  uuid: 33de2596-d95d-412b-a8c2-410be7060ca3
-  ws-opts:
-    headers:
-      Host: sellflow.org
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '502,551,553,559|🇷🇺RU_1|2.5MB/s #2'
@@ -1566,15 +1557,9 @@ proxies:
   type: vless
   udp: true
   uuid: 33de2596-d95d-412b-a8c2-410be7060ca3
-- name: 507|RU VLESS-310 | free-nodes
-  port: 40443
-  server: cdn.netraidly.ru
-  tls: false
-  type: vless
-  uuid: 4bf5a71c-d726-4585-b095-7396675706d5
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 507|RU VLESS-313 | free-nodes
+  name: 507,559,580|RU VLESS-318 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1998,19 +1983,18 @@ proxies:
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇷🇺 俄罗斯 054
+  name: '508,509|俄罗斯 054 #1'
   network: tcp
-  port: '11052'
+  port: 11052
   server: 45.67.230.79
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 314185f7-931d-4656-922d-0857e7afd224
 - alterId: 0
   cipher: auto
-  name: 508,509,559,574,636|🇷🇺 俄罗斯 031
+  name: '508,509,559,574|未知32 #1'
   network: tcp
-  port: '57392'
+  port: 57392
   server: s2.abtinphone.com
   servername: ''
   skip-cert-verify: true
@@ -2051,12 +2035,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇷🇺 俄罗斯 050
+  name: '508,509|俄罗斯 050 #1'
   network: tcp
-  port: '2020'
+  port: 2020
   server: 95.181.162.100
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 67744e32-4a46-4805-d42c-70391bdb8dc5
 - client-fingerprint: chrome
@@ -2106,7 +2089,7 @@ proxies:
     headers:
       Host: rutube.globaledgenet.com
     path: /rutube
-- name: '508,509,580|未知 VLESS-395 | free-nodes #2'
+- name: '508,509,559|未知 VLESS-395 | free-nodes #2'
   network: ws
   port: 80
   server: 80.78.245.227
@@ -2281,7 +2264,7 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 559|🇷🇺RU_83
+- name: 559|🇷🇺RU_65
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
@@ -2293,61 +2276,6 @@ proxies:
   server: 162.159.60.167
   sni: hhcm.hhxaf.cc.cd
   type: trojan
-- name: 559|🇷🇺 俄罗斯-570E0D0A
-  network: tcp
-  port: 2443
-  reality-opts:
-    public-key: Fw91C5rhL7w_xvF1jDPs9kDv7LAZDFqWlxTpFCRVdnc
-    short-id: a1b2c3d4
-  server: 5.188.140.142
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 144dd2a3-3059-4094-b7da-1901ab2e3033
-- name: 559|🇷🇺 俄罗斯-7DDF4403
-  network: tcp
-  port: 2443
-  reality-opts:
-    public-key: Fw91C5rhL7w_xvF1jDPs9kDv7LAZDFqWlxTpFCRVdnc
-    short-id: a1b2c3d4
-  server: germany.futurefast.ru
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 144dd2a3-3059-4094-b7da-1901ab2e3033
-- name: 559|🇷🇺 俄罗斯-9E2BAAE7
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  server: 147.45.175.79
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 33de2596-d95d-412b-a8c2-410be7060ca3
-- name: 559|🇷🇺 俄罗斯-E735D32B
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  server: 186.246.10.101
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 33de2596-d95d-412b-a8c2-410be7060ca3
-- name: 559|🇷🇺 俄罗斯-A326D792
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  server: 201.51.3.123
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 33de2596-d95d-412b-a8c2-410be7060ca3
 - name: 559|🇷🇺 俄罗斯-00513A45
   network: tcp
   port: 443
@@ -2359,47 +2287,14 @@ proxies:
   tls: false
   type: vless
   uuid: 6c6bb37a-3315-45bc-88d6-0fbba043c07f
-- name: 559|🇷🇺 俄罗斯-01859522
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: jwT3lcIzJQMjzBKRNsmyRGrgaa1qNfE7pQF_nAKu0GA
-    short-id: a73cf719b624
-  server: ru15.aimodelhub.top
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 7b3b6e39-dd78-000d-af6e-6d00da419aa0
-- name: 559|🇷🇺 俄罗斯-29AFFC2F
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ICOdUjV4l0pQKechbg5GIDyo0mvDH373CR1dcWxXCXg
-    short-id: 7baebcace7b4d3a6
-  server: 81.200.158.137
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 8f8a4b5f-2656-450e-95a6-6fb5e628bfb7
 - client-fingerprint: chrome
-  name: '559,580|RU VLESS-354 | free-nodes #1'
+  name: 559|RU VLESS-354 | free-nodes
   port: 8443
   server: swed.oplatasite.ru
   servername: vpn.oplatasite.ru
   tls: true
   type: vless
   uuid: 9cc56b5d-2a44-4fd1-91e3-659b06255c11
-- name: 559|🇷🇺 俄罗斯-F9864FAD
-  network: tcp
-  port: 6666
-  reality-opts:
-    public-key: p2RnyGzjMmZSM2TtVnlXQKNb1twbX-L80lBYc2nNJlM
-    short-id: ''
-  server: 94.198.219.166
-  servername: ''
-  tls: false
-  type: vless
-  uuid: a3aa75be-89a0-4e32-93fd-2b50b5f031ad
 - name: 559|🇷🇺 俄罗斯-57BBBC79
   network: tcp
   port: 443
@@ -2422,17 +2317,17 @@ proxies:
   tls: false
   type: vless
   uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
-- name: 559|🇷🇺 俄罗斯-054843BD
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: rZgu2lJcC2yrYnx66znee-Z75mW6m4TRfWt7_neoEVI
-    short-id: 1c74cf626ef50bb3
-  server: 2.59.80.65
-  servername: ''
+- name: 559|🇷🇺 俄罗斯-20D4321A
+  network: ws
+  port: 80
+  server: 45.8.211.140
   tls: false
   type: vless
-  uuid: c0fb5126-93f2-45dd-98c7-a1501b93d6db
+  uuid: f9255507-1b65-433f-bfd8-193b35e068e2
+  ws-opts:
+    headers:
+      Host: s5.868001.xyz
+    path: '%2FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540VPNine1'
 - alpn:
   - h3
   auth_str: dongtaiwang.com
@@ -2480,6 +2375,19 @@ proxies:
     headers:
       Host: ''
     path: /
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '580|RU VLESS-313 | free-nodes #2'
+  network: tcp
+  port: 40443
+  reality-opts:
+    public-key: fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y
+    short-id: 01d1bf2d4755d40c
+  server: netraidly.ru
+  servername: deepl.com
+  tls: false
+  type: vless
+  uuid: 4480161e-2c59-4d37-8736-675c9af32bf1
 - name: 728|🇷🇺 俄罗斯1🔒
   password: 升级订阅解锁全部节点
   port: 10110
