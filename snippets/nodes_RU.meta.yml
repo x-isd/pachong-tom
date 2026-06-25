@@ -25,7 +25,7 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '127,426|🇷🇺 NL_1|2.5MB/s|GPT⁺|YT-RU|NF|... #1'
+  name: 127,426|NL_1|2.5MB/s|GPT⁺|YT-RU|NF|0%
   network: tcp
   port: 443
   reality-opts:
@@ -35,7 +35,7 @@ proxies:
   servername: nl-1.rknzaebalyzhe.com
   skip-cert-verify: true
   tfo: false
-  tls: true
+  tls: false
   type: vless
   uuid: 3c3c3969-b06a-43ff-ad1e-11621c542946
 - cipher: chacha20-ietf-poly1305
@@ -663,16 +663,30 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇺RU
-  name: 435|RU_70
+  name: 435|RU_75
+  password: f8npKgNzdkss2ytn
+  port: 9088
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 435|🇺RU_76
   password: 9XwYyZsK8SNzQDtY
   port: 9059
   server: 217.30.10.70
   type: ss
 - cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: 435|🇺RU_71
+  name: 435|🇷🇺RU_77
   password: fG2artUmHfNT2cX7
   port: 9018
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 435|🇷🇺RU_78
+  password: p9z5BVADH2YFs3MN
+  port: 9040
   server: 217.30.10.70
   type: ss
 - country: 🇺RU
@@ -1479,6 +1493,18 @@ proxies:
   udp: true
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '475,480,523,524,553,559,580|俄羅斯丨yoyapai.com #12'
+  network: tcp
+  port: 22231
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- client-fingerprint: chrome
   name: '475,480,559,580|俄羅斯丨yoyapai.com #9'
   network: tcp
   port: 19562
@@ -1556,32 +1582,21 @@ proxies:
   type: vless
   udp: true
   uuid: 33de2596-d95d-412b-a8c2-410be7060ca3
-- flow: ''
+- client-fingerprint: qq
+  flow: ''
   name: 507,553,559,580|RU VLESS-315 | free-nodes
+  network: tcp
   port: 40443
   reality-opts:
     public-key: ''
     short-id: ''
   server: cdn.netraidly.ru
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vless
   udp: true
   uuid: 4bf5a71c-d726-4585-b095-7396675706d5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 507,553|🇨塞舌尔_ee809_ESET_NOD32_Symantec...
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-  server: grinoree.ru
-  servername: storage.yandex.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: /sequre/grpc
@@ -2003,7 +2018,7 @@ proxies:
   uuid: 314185f7-931d-4656-922d-0857e7afd224
 - alterId: 0
   cipher: auto
-  name: '508,509,559,574|未知72 #1'
+  name: '508,509,559,574|未知19 #1'
   network: tcp
   port: 57392
   server: s2.abtinphone.com
@@ -2131,6 +2146,20 @@ proxies:
     headers:
       Host: wstg.datasynctrue.online
     path: /api/connect
+- flow: ''
+  name: '508,509,553,559|未知 VLESS-357 | free-nodes #1'
+  port: 443
+  reality-opts:
+    public-key: ''
+    short-id: ''
+  server: 5.35.34.181
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 96e86354-c333-47b8-9bc7-271bba70df1d
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
