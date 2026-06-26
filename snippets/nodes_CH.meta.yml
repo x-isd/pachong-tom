@@ -62,19 +62,82 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- client-fingerprint: ''
-  flow: xtls-rprx-vision
-  name: 438,494,559|🏁 未知-C127D2AC
+- client-fingerprint: chrome
+  name: 378,494,508,509,537,559|🏁 未知-088C1D17
   network: tcp
+  password: SoftNetConnect
+  port: 42549
+  server: 83.228.226.164
+  skip-cert-verify: false
+  sni: www.speedtest.net
+  type: trojan
+  udp: true
+- name: '378,508,509,536,537|🇭CH-83.228.224.161-0708 #1'
+  network: tcp
+  password: SoftNetConnect
+  port: 42549
+  server: 83.228.224.161
+  skip-cert-verify: false
+  sni: www.speedtest.net
+  type: trojan
+  udp: true
+- alterId: 1
+  cipher: auto
+  name: '378,508,509,536,537|CH-186.190.215.32-1851 #1'
+  network: ws
   port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  server: 208.69.78.205
+  server: 186.190.215.32
   servername: ''
-  tls: false
-  type: vless
-  uuid: ff19693c-11f3-4df9-8713-79a85a5ca090
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.32
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: '378,508,509,536,537|🇭CH-186.190.215.75-1877 #1'
+  network: ws
+  port: 443
+  server: 186.190.215.75
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.75
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '378,508,509,536,537|🇭CH-140.238.212.95-1889 #1'
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /
+- name: '378,536,537|CH-152.67.71.149-3742 #1'
+  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
+  port: 18818
+  server: ch12.yukiss.eu.org
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-128-cfb
+  name: '378,537|🇨CH-156.146.62.160-5313 #1'
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.160
+  type: ss
 - alterId: 0
   cipher: auto
   name: 465|16|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
@@ -114,7 +177,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 489,494,502,553,559|🏁 未知-3370B816
+  name: 489,494,553,559|🏁 未知-3370B816
   network: tcp
   port: 2083
   reality-opts:
@@ -146,29 +209,6 @@ proxies:
   type: vless
   udp: true
   uuid: f1a44ae4-20f9-4dd7-b60e-b4f2acecfdb4
-- name: 508,509,537|🇭CH-83.228.224.161-0708
-  network: tcp
-  password: SoftNetConnect
-  port: 42549
-  server: 83.228.224.161
-  skip-cert-verify: false
-  sni: www.speedtest.net
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 508,509,537|🇭CH-140.238.212.95-1889
-  network: ws
-  port: 443
-  server: 140.238.212.95
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /
 - alterId: 0
   cipher: auto
   name: '508,509|瑞士 006 #1'
@@ -195,7 +235,7 @@ proxies:
     path: /mp3/all/us/
 - alterId: 0
   cipher: auto
-  name: 508,509|瑞士 008
+  name: '508,509|瑞士 008 #1'
   network: tcp
   port: 41515
   server: 178.83.45.94
@@ -203,18 +243,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 1de9d119-12ca-4620-a29c-60b40a7f8650
-- name: 537|CH-152.67.71.149-3742
-  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
-  port: 18818
-  server: ch12.yukiss.eu.org
-  skip-cert-verify: false
-  type: trojan
-- cipher: aes-128-cfb
-  name: 537|🇨CH-156.146.62.160-5313
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.160
-  type: ss
 - client-fingerprint: chrome
   name: 559|🇨🇭 Switzerland, Zurich | [BL]
   network: xhttp
