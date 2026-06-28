@@ -664,8 +664,15 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 435|RU_78
+  password: 9XwYyZsK8SNzQDtY
+  port: 9059
+  server: 217.30.10.70
+  type: ss
 - country: 🇺RU
-  name: 435,436,559|🇷🇺RU_78
+  name: 435,436,559|🇷🇺RU_84
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
@@ -673,6 +680,19 @@ proxies:
   sni: kfm-bn0.pages.dev
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇷🇺RU_1|1.5MB/s | 更多节点: https:/...'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: dgrcO3r5wkEjcsWdEsNtgtWCe9vER6mgADXYclWXVxg
+    short-id: 8de54d32a8d3fdf9
+  server: 193.93.194.120
+  servername: site.rumedia-cdn.com
+  tls: false
+  type: vless
+  uuid: cfb5b3d3-c094-4222-99e8-53faa787c857
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 438,559|🏁 未知-CBF98AF2
@@ -1454,30 +1474,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '475,480,508,509,553,559,580|俄羅斯丨yoyapai.com #14'
-  network: tcp
-  port: 443
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '475,480,553,559,580|俄羅斯丨yoyapai.com #13'
-  network: tcp
-  port: 22231
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - client-fingerprint: chrome
   name: '475,480,559,580|俄羅斯丨yoyapai.com #10'
   network: tcp
@@ -1529,17 +1525,18 @@ proxies:
   type: ss
   udp: true
 - encryption: none
-  name: 508,509,559|俄罗斯+V2CROSS.COM
+  name: '508,509|俄罗斯 002 #1'
   network: ws
   port: 2048
   server: fire.jykvpn.com
-  tls: false
   type: vless
   udp: true
   uuid: c28f3222-4f01-493c-a38f-0f1b34e62ea3
   ws-opts:
     headers:
       Host: ads.x5.ru
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/39.0.2171.95 Safari/537.36
     path: /
   xudp: true
 - client-fingerprint: chrome
@@ -2092,7 +2089,7 @@ proxies:
       Host: wstg.datasynctrue.online
     path: /api/connect
 - flow: xtls-rprx-vision
-  name: '508,509,553,559,580|未知 VLESS-393 | free-nodes #2'
+  name: '508,509,553,559|未知 VLESS-393 | free-nodes #1'
   port: 443
   reality-opts:
     public-key: wPBLToF6GA4jIb7C7yu0UMlCXlxTV9UlEh1R-EdCzRU
@@ -2106,7 +2103,7 @@ proxies:
   udp: true
   uuid: d78c12c4-6927-40b8-8550-ed9be00334da
 - flow: ''
-  name: '508,509,553,559,580|未知 VLESS-107 | free-nodes #3'
+  name: 508,509,553,559,580|未知 VLESS-87 | free-nodes
   port: 443
   reality-opts:
     public-key: ''
@@ -2149,7 +2146,8 @@ proxies:
   type: ss
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '523,524,559|🇷🇺_俄罗斯_71 #2'
+  name: 523,524,559,580|瑞典(mibei77.com 米贝节点分享)
+  network: tcp
   port: 443
   reality-opts:
     public-key: C1hW1bTA9WOacIK-fHHg-HLkDZ3FY7FhEhAyldMSUEA
@@ -2283,6 +2281,17 @@ proxies:
   tls: true
   type: vmess
   uuid: 433f1111-b780-4eae-b7e7-d7823b09e701
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: api-maps.yandex.ru
+  name: 551|🇷🇺RU_1|3.3MB/s
+  network: grpc
+  port: 8443
+  server: 178.209.127.33
+  servername: cdn.kwork.com
+  tls: true
+  type: vless
+  uuid: 17550015-678f-43ad-b0d2-65c0a829bedb
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2304,7 +2313,7 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 559|🇷🇺RU_77
+- name: 559|🇷🇺RU_83
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
@@ -2327,61 +2336,24 @@ proxies:
   tls: false
   type: vless
   uuid: 12a49340-fd9c-4a70-8ebc-d2cf0dd36b2a
-- name: 559|🇷🇺 俄罗斯-00513A45
+- name: 559|🇷🇺 俄罗斯-E0EC4F76
+  network: tcp
+  port: 898
+  server: 45.144.221.20
+  tls: false
+  type: vless
+  uuid: e60bef09-24fe-4463-8e71-38fc669f57ed
+- name: 559|🇷🇺 俄罗斯-E1853161
   network: tcp
   port: 443
   reality-opts:
-    public-key: EZ9ZUwrabGCJfowEvD4fI0ANMsxYh7hchEAbsnOTl0s
-    short-id: 803367e3aceaa5e1
-  server: 87.239.108.241
+    public-key: QG28iZ9kg8U8FsZQL8LDWTA-W0E6lEsAPbmh_n0Aoyw
+    short-id: ''
+  server: 51.250.27.41
   servername: ''
   tls: false
   type: vless
-  uuid: 6c6bb37a-3315-45bc-88d6-0fbba043c07f
-- name: 559|🇷🇺 俄罗斯-5623FCBF
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: nmdu3rhLXUr8KzGtN_0D4Zc5JS1V8t9S4_iDXvtWk2I
-    short-id: 39c7e5a0b286f41d
-  server: 176.124.222.137
-  servername: ''
-  tls: false
-  type: vless
-  uuid: a52db7a4-f8eb-4193-8403-48af7d7f1827
-- name: 559|🇷🇺 俄罗斯-57BBBC79
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 6QIHdF1dvSK8mDPOeWXvGIqJmZ2ySq5fyc7N15h1WFE
-    short-id: 34256b39b4ebb864
-  server: 158.160.196.38
-  servername: ''
-  tls: false
-  type: vless
-  uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
-- name: 559|🇷🇺 俄罗斯-60A72A49
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 6QIHdF1dvSK8mDPOeWXvGIqJmZ2ySq5fyc7N15h1WFE
-    short-id: 34256b39b4ebb864
-  server: 158.160.198.162
-  servername: ''
-  tls: false
-  type: vless
-  uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
-- name: 559|🇷🇺 俄罗斯-5687DF60
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: rLZ958cX7AMasTIeMo5amhntDinsuY3P5zwnc1Pebhw
-    short-id: e736
-  server: 82.202.156.57
-  servername: ''
-  tls: false
-  type: vless
-  uuid: b1ed5cfa-7ba2-49fb-9d44-3d2a4aa2aee3
+  uuid: f37a54b2-5a21-4aef-8f8d-38bd566f4862
 - alpn:
   - h3
   auth_str: dongtaiwang.com
