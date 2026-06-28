@@ -658,15 +658,12 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- country: 🇺RU
-  name: 435,436,559|🇷🇺RU_84
+- name: 436,559|🇷🇺RU_84
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
-  skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 438,559|🏁 未知-CBF98AF2
@@ -1448,18 +1445,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: firefox
-  name: '472,473,474|俄罗斯+V2CROSS.COM #2'
-  network: grpc
-  port: 50053
-  reality-opts:
-    public-key: X87ukWYsXHjmc-s4vDX0ph6sUoUklkFdtL_lXthn-z0
-    short-id: 75197d0b742bdbf5
-  server: 82.146.41.151
-  servername: rubr1.cheburnetnastalgia1998.com
-  tls: false
-  type: vless
-  uuid: 3283529b-3bc4-4e15-803a-7d5751a3df07
 - client-fingerprint: edge
   flow: xtls-rprx-vision
   name: '475,480,508,509,553,559,580|俄羅斯丨yoyapai.com #14'
@@ -1564,10 +1549,12 @@ proxies:
     headers: {}
     path:
     - /
-  name: '508,509|俄罗斯 002 #1'
+  name: '508,509,523,524|🇫🇷_法国_39 #1'
   network: http
   port: 8882
   server: gr1.fifapes.monster
+  skip-cert-verify: true
+  tls: false
   type: vless
   udp: true
   uuid: eab915bc-d2df-73d1-47d0-6eb240497055
@@ -2008,7 +1995,7 @@ proxies:
   uuid: 314185f7-931d-4656-922d-0857e7afd224
 - alterId: 0
   cipher: auto
-  name: '508,509,559,574|未知21 #1'
+  name: '508,509,559,574|未知3 #1'
   network: tcp
   port: 57392
   server: s2.abtinphone.com
@@ -2192,35 +2179,6 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 523,524,559,580|瑞典(mibei77.com 米贝节点分享)
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: C1hW1bTA9WOacIK-fHHg-HLkDZ3FY7FhEhAyldMSUEA
-    short-id: a1b2c3d4e5f6
-  server: 130.49.190.234
-  servername: cloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 3ef170be-05d0-479c-9753-aa2f860964ea
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '523,524,559|🇷🇺_俄罗斯_84 #2'
-  port: 443
-  reality-opts:
-    public-key: 1XDLWa8CNBQH2h3yauxbplirPLnNKkdjj6ptOyUUIgY
-    short-id: 3bd054289dc0748b
-  server: 45.131.186.103
-  servername: cdn.jsdelivr.net
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 98fdfffe-28d8-4580-a4d1-2d7e15bdde4a
 - name: 533|RU俄罗斯(mibei77.com 米贝节点分享)
   network: ws
   port: 2096
@@ -2373,6 +2331,31 @@ proxies:
   tls: false
   type: vless
   uuid: 12a49340-fd9c-4a70-8ebc-d2cf0dd36b2a
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 559,580|瑞典(mibei77.com 米贝节点分享)
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: C1hW1bTA9WOacIK-fHHg-HLkDZ3FY7FhEhAyldMSUEA
+    short-id: a1b2c3d4e5f6
+  server: 130.49.190.234
+  servername: cloudflare.com
+  tls: false
+  type: vless
+  uuid: 3ef170be-05d0-479c-9753-aa2f860964ea
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 559|🇷🇺_俄罗斯_84
+  port: 443
+  reality-opts:
+    public-key: 1XDLWa8CNBQH2h3yauxbplirPLnNKkdjj6ptOyUUIgY
+    short-id: 3bd054289dc0748b
+  server: 45.131.186.103
+  servername: cdn.jsdelivr.net
+  tls: false
+  type: vless
+  uuid: 98fdfffe-28d8-4580-a4d1-2d7e15bdde4a
 - name: 559|🇷🇺 俄罗斯-E0EC4F76
   network: tcp
   port: 898
