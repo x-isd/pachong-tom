@@ -1483,25 +1483,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: chrome
-  encryption: none
-  name: '472,473,474,508,509|俄罗斯 075 #1'
-  network: ws
-  port: 443
-  server: 109.120.176.17
-  servername: sertraline.adaspoloandco.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 10a6b923-e349-4594-92bb-d81a6245aaec
-  ws-opts:
-    headers:
-      Host: sertraline.adaspoloandco.com
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J120M Build/LMY47X) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /download.php
-  xudp: true
 - client-fingerprint: edge
   flow: xtls-rprx-vision
   name: '475,480,508,509,523,524,559,580|俄羅斯丨yoyapai.com #13'
@@ -1564,6 +1545,15 @@ proxies:
   server: ru.safepass.click
   type: ss
   udp: true
+- auth: c059a786-3a03-4300-9ace-4f9cda0f360c
+  name: '502,548,559,580|RU俄罗斯(mibei77.com 米贝节点分享) #12'
+  password: c059a786-3a03-4300-9ace-4f9cda0f360c
+  port: 8444
+  server: wlte3.nimarko.org
+  skip-cert-verify: false
+  sni: testing8.nimarko.org
+  tls: false
+  type: hysteria2
 - encryption: none
   http-opts:
     headers: {}
@@ -2158,6 +2148,24 @@ proxies:
   type: vless
   udp: true
   uuid: 1281ef13-f1cd-493b-903e-4c2f4ffe1eba
+- client-fingerprint: chrome
+  encryption: none
+  name: '508,509|俄罗斯 075 #1'
+  network: ws
+  port: 443
+  server: 109.120.176.17
+  servername: sertraline.adaspoloandco.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10a6b923-e349-4594-92bb-d81a6245aaec
+  ws-opts:
+    headers:
+      Host: sertraline.adaspoloandco.com
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J120M Build/LMY47X) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /download.php
+  xudp: true
 - alterId: 0
   cipher: auto
   name: 508,509,559|🏁 未知-4D25BF26
@@ -2232,9 +2240,23 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '519,523,524|🇷🇺_俄罗斯_133 #1'
+  port: 443
+  reality-opts:
+    public-key: mrdwYKeDH1Zj4EPov28I9cd3lQB7ZZFn_g7frYIsARY
+    short-id: 99410f96248aac87
+  server: 194.87.131.105
+  servername: max.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 08379cf5-8256-404f-a6c5-2b933bb6c73f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 519|🇷🇺_RU_俄罗斯
+  name: '519,523,524|🇷🇺_俄罗斯_138 #1'
   port: 9823
   reality-opts:
     public-key: iNnoaSfyKvdo5kp5znHSGFNqFxNhS0ormvHHHwsUSTM
@@ -2246,22 +2268,23 @@ proxies:
   type: vless
   udp: true
   uuid: a88ea8bf-7001-4e29-a9bb-379f6778195c
-- name: '523,524|🇷🇺_俄罗斯_311 #1'
+- client-fingerprint: chrome
+  name: '523,524|🇷🇺_俄罗斯_174 #1'
   network: ws
   port: 443
-  server: 92.38.190.44
-  servername: ee.seaspirit.dpdns.org
+  server: 193.233.251.202
+  servername: vpn47.cc.cd
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 14aedc8e-66d3-4e38-8f03-e7315fcf5b36
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
   ws-opts:
     headers:
-      Host: ee.seaspirit.dpdns.org
+      Host: vpn47.cc.cd
     path: /
 - client-fingerprint: qq
-  name: '523,524|🇷🇺_俄罗斯_342 #1'
+  name: '523,524|🇷🇺_俄罗斯_208 #1'
   network: ws
   port: 9443
   server: 176.109.94.202
@@ -2425,7 +2448,7 @@ proxies:
   tls: false
   type: vless
   uuid: 12a49340-fd9c-4a70-8ebc-d2cf0dd36b2a
-- name: '559|🇷🇺_俄罗斯_311 #2'
+- name: 559|🇷🇺_俄罗斯_311
   network: ws
   port: 443
   server: 92.38.190.44
@@ -2452,7 +2475,7 @@ proxies:
   type: vless
   uuid: 4bf5a71c-d726-4585-b095-7396675706d5
 - client-fingerprint: qq
-  name: '559|🇷🇺_俄罗斯_342 #2'
+  name: 559|🇷🇺_俄罗斯_342
   network: ws
   port: 9443
   server: 176.109.94.202
