@@ -148,6 +148,31 @@ proxies:
   port: 989
   server: 121.127.46.147
   type: ss
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '438,507,559,580|未知 VLESS-118 | free-nodes #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 9l18ryEYpf9E-qaQD2HkPfi1n5qfMRDkncpYLcZrdQc
+    short-id: b378
+  server: 89.22.228.57
+  servername: stockholmresilience.org
+  tls: false
+  type: vless
+  uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇸🇪SE_2|1.6MB/s | 福利姬: https://...'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: zMyJW8uYeZwurz4xCcnnPjYlCVP0nI5BDHp_0ZrxPjk
+  server: 62.152.58.128
+  servername: api-maps.yandex.ru
+  tls: false
+  type: vless
+  uuid: 47c2465f-e966-4930-b0a0-0ae7e53db7f3
 - name: '455,457,458|🇸🇪_SE_瑞典 #2'
   network: ws
   port: 443
@@ -329,6 +354,24 @@ proxies:
   type: vless
   udp: true
   uuid: 8e378a41-d5e1-427a-aaf8-30190d4be0a0
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '508,509|瑞典 002 #1'
+  network: tcp
+  port: 443
+  server: sto5.vpntype.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 601ad357-c8cf-491f-98e6-62175e130658
+- name: 544,559|🇸🇪SE瑞典
+  password: Mitivpn
+  port: 80
+  server: 146.75.116.190
+  skip-cert-verify: true
+  type: trojan
 - alpn:
   - h3
   name: 553|🇻🇳越南_650d7_ESET_NOD32_Symantec...
@@ -2902,11 +2945,6 @@ proxies:
     headers:
       Host: gb-lx.777076.xyz
     path: /liangxin/gb1
-- name: 559|🇸🇪SE瑞典
-  password: Mitivpn
-  port: 80
-  server: 146.75.116.190
-  type: trojan
 - name: 559|🇸🇪 瑞典-B96D1741
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 8443
