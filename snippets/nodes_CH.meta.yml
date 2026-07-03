@@ -171,19 +171,15 @@ proxies:
   type: vless
   udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
-- http-opts:
-    method: GET
-    path:
-    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
-  name: 502,508,509,559|🇨🇭CH_1|3.2MB/s
-  network: http
-  port: 22
-  server: 172.65.111.43
-  skip-cert-verify: false
-  tfo: false
-  tls: false
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 502|🇨🇭CH_1|1.6MB/s
+  port: 8443
+  server: 45.195.137.115
+  servername: storage.yandex.net
+  tls: true
   type: vless
-  uuid: 8a38623a-3e7f-5598-bdc9-894cbad4c5b6
+  uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
 - alterId: 0
   cipher: auto
   name: '508,509|瑞士 006 #1'
@@ -282,15 +278,6 @@ proxies:
   sni: empty.node
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 551|🇨🇭CH_1|1.6MB/s
-  port: 8443
-  server: 45.195.137.115
-  servername: storage.yandex.net
-  tls: true
-  type: vless
-  uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
 - client-fingerprint: chrome
   name: 559|🇨🇭 Switzerland, Zurich | [BL]
   network: xhttp
