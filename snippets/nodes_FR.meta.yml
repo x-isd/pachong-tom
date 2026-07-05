@@ -44,19 +44,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
-- client-fingerprint: chrome
-  name: 127|FR_1|2.1MB/s|GPT⁺|0%
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
-    short-id: b8aa
-  server: 194.226.169.36
-  servername: yahoo.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
 - alterId: 0
   cipher: auto
   name: '128,430|法国1 #2'
@@ -483,7 +470,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '378,519,523,524,536,537,544|🇭🇰_HK_中国香港->🇩🇪_DE_德国 #1'
+  name: 378,508,509,523,524,536,537,544|🇭🇰_HK_中国香港->🇩🇪_DE_德国
   network: ws
   port: 16644
   server: planb.mojcn.com
@@ -1278,6 +1265,13 @@ proxies:
   uuid: d159c5be-8291-45c4-bd21-51d024658a6d
   ws-opts:
     path: /
+- cipher: aes-256-cfb
+  name: 378,537,566|🇫🇷 法国 | FRA
+  password: amazonskr05
+  port: 443
+  server: 35.180.229.83
+  type: ss
+  udp: true
 - name: '378,536,537|🇷FR-141.95.61.209-3808 #1'
   password: 4f2c305b-9a03-4493-b3e4-2dff2f1af8c9
   port: 1145
@@ -1889,7 +1883,20 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
-- name: '438|🇫🇷FR_4|1.8MB/s | 更多节点: https:/...'
+- client-fingerprint: chrome
+  name: 426|FR_1|2.1MB/s|GPT⁺|0%
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+    short-id: b8aa
+  server: 194.226.169.36
+  servername: yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
+- name: '438|🇫🇷FR_1|9.1MB/s | 福利姬: https://...'
   network: ws
   password: humanity
   port: 443
@@ -1913,53 +1920,6 @@ proxies:
   tls: false
   type: vless
   uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
-- name: '438,508,509|法国 206 #1'
-  network: tcp
-  port: 58748
-  server: 145.239.137.250
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 21e22226-0b96-4b4e-9a91-5c7f9e3f1760
-  ws-opts:
-    headers:
-      Host: e1roj9ul.divarcdn.com%2Ce1roj9ul.alibaba.ir%2Ce1roj9ul.splus.ir%2Ce1roj9ul.cafebazaar.ir%2Ce1roj9ul.yjc.ir
-    path: '%2F'
-- name: '438,508,509,559|未知 VLESS-120 | free-nodes #2'
-  network: tcp
-  port: 58748
-  server: ara.public.lat
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 21e22226-0b96-4b4e-9a91-5c7f9e3f1760
-  ws-opts:
-    headers:
-      Host: e1roj9ul.divarcdn.com%2C%20e1roj9ul.alibaba.ir%2C%20e1roj9ul.splus.ir%2C%20e1roj9ul.cafebazaar.ir%2C%20e1roj9ul.yjc.ir
-- name: '438,559,580|未知 VLESS-492 | free-nodes #2'
-  network: tcp
-  port: 8888
-  server: 45.13.119.219
-  tls: false
-  type: vless
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438|🇫🇷FR_11|1.7MB/s | 更多节点: https:...'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ESRdmody9xdWVTaCtyGLg_LDopyMm9bUYDWH8NVWtjE
-    short-id: c906f73d3ba8211f
-  server: 145.239.8.221
-  servername: www.leboncoin.fr
-  tls: false
-  type: vless
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 438,559|🏁 未知-79F579D8
@@ -1973,6 +1933,100 @@ proxies:
   tls: false
   type: vless
   uuid: 5454343b-541b-4c96-8c2a-52e81079d124
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇫🇷FR_7|1.7MB/s | 更多节点: https:/...'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ESRdmody9xdWVTaCtyGLg_LDopyMm9bUYDWH8NVWtjE
+    short-id: c906f73d3ba8211f
+  server: 145.239.8.221
+  servername: www.leboncoin.fr
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- name: '438,559,580|未知 VLESS-492 | free-nodes #2'
+  network: tcp
+  port: 8888
+  server: 45.13.119.219
+  tls: false
+  type: vless
+  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇫🇷FR_9|1.6MB/s | 更多节点: https:/...'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 44nJcS9VxQunsNXIa1j3kDbhUIX0DmBaexgIfVxPYF8
+    short-id: ef3fe7099cd951c0
+  server: 141.227.165.196
+  servername: www.speedtest.net
+  tls: false
+  type: vless
+  uuid: 416b38f5-b4a2-4014-a169-f1d5dc3470c6
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇫🇷FR_10|1.7MB/s | 网盘搜宝: https:...'
+  network: tcp
+  port: 55025
+  reality-opts:
+    public-key: w-7OnHTgZcqOMrpIADIVnpAcbyColg9Y9w3BYpFeTg8
+    short-id: 06e557c2cc84390f
+  server: 51.195.235.8
+  servername: www.googletagmanager.com
+  tls: false
+  type: vless
+  uuid: be20f85a-bc04-45f8-b6cf-b8abc5f746ce
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇫🇷FR_11|1.6MB/s | 网盘搜宝: https:...'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: djTtGqd0XWqtt_WHukU7BTPQSn9o7gIpAosAxMy8tUo
+    short-id: ea1058117be12087
+  server: 92.222.128.104
+  servername: fl.crunch-crunch.com
+  tls: false
+  type: vless
+  uuid: 240eeef5-5d68-4025-8a1e-b4ab22bc403c
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 438,559|🇫🇷FR_3|2.4MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
+    short-id: 3c9c5d01c6f824dd
+  server: 155.117.137.110
+  servername: cdn6-49.yahoo.com
+  tls: true
+  type: vless
+  uuid: 9480871a-3843-441c-9b83-aa8c5c96b209
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,559|🇩🇪 德国-86972D10
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: RWE5ORdQ2SzuFWX8DlaRP415wbhee9ynJkqC7yFPgQw
+    short-id: d13ddfca12760d03
+  server: 51.195.116.82
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 21c25bef-eb3b-44a8-9b26-fa7f674e5bfc
+- name: '438|🇫🇷FR_14|1.3MB/s | 更多节点: https:...'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.19.64.105
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -2083,7 +2137,7 @@ proxies:
   uuid: 097ab42d-c4dd-4a69-9b4b-92f0da96299e
 - alterId: 0
   cipher: auto
-  name: '468,508,509|美国 834 #1'
+  name: '468,508,509|美国 841 #1'
   network: tcp
   port: 21809
   server: 38.109.228.113
@@ -2141,7 +2195,7 @@ proxies:
       Host: lax1.ibgfw.top
     path: /xrenvws
 - client-fingerprint: chrome
-  name: '475,480,502,523,524|🏳️_未知_85 #1'
+  name: '475,480,508,509,523,524|🏳️_未知_85 #1'
   network: ws
   port: 443
   server: yx.cloudflare.182682.xyz
@@ -2156,7 +2210,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
     path: /
 - client-fingerprint: chrome
-  name: '475,480|FR法國丨yoyapai.com_1 #1'
+  name: '475,480,508,509|美国 045 #1'
   network: ws
   port: 443
   server: cloudflare-ip.mofashi.ltd
@@ -2246,7 +2300,7 @@ proxies:
       Host: ld.223350.xyz
     path: /
 - client-fingerprint: chrome
-  name: '475,480|FR法國丨yoyapai.com_6 #1'
+  name: '475,480,508,509|美国 046 #1'
   network: ws
   port: 443
   server: cf.130519.xyz
@@ -2306,7 +2360,7 @@ proxies:
   name: '508,509|法国 003 #1'
   network: ws
   port: 443
-  server: 163.5.207.110
+  server: 45.80.111.244
   servername: vpn47.cc.cd
   tls: true
   type: vless
@@ -2315,8 +2369,8 @@ proxies:
   ws-opts:
     headers:
       Host: vpn47.cc.cd
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/45.0.2454.101 Safari/537.36
     path: /
   xudp: true
 - client-fingerprint: chrome
@@ -2336,25 +2390,6 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/46.0.2490.86 Safari/537.36
     path: /vws/
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: '508,509|法国 005 #1'
-  network: ws
-  port: 443
-  server: 37.59.96.25
-  servername: support.zoom.us.yxls.eu.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
-  ws-opts:
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L21 Build/HUAWEICAM-L21; wv)
-        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile
-        Safari/537.36
-    path: /sg-amz
   xudp: true
 - client-fingerprint: firefox
   encryption: none
@@ -4270,6 +4305,29 @@ proxies:
   type: vless
   udp: true
   uuid: 1ecde8de-3910-4301-b65e-a90b73f44036
+- name: '508,509|法国 206 #1'
+  network: tcp
+  port: 58748
+  server: 145.239.137.250
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 21e22226-0b96-4b4e-9a91-5c7f9e3f1760
+- name: '508,509,559|未知 VLESS-120 | free-nodes #2'
+  network: tcp
+  port: 58748
+  server: ara.public.lat
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 21e22226-0b96-4b4e-9a91-5c7f9e3f1760
+  ws-opts:
+    headers:
+      Host: e1roj9ul.divarcdn.com%2C%20e1roj9ul.alibaba.ir%2C%20e1roj9ul.splus.ir%2C%20e1roj9ul.cafebazaar.ir%2C%20e1roj9ul.yjc.ir
 - name: '508,509|法国 209 #1'
   network: tcp
   port: 800
@@ -4445,6 +4503,32 @@ proxies:
     headers:
       Host: us2.wxgqlfx.icu
     path: /TG
+- name: '508,509|法国 005 #1'
+  network: tcp
+  port: 8080
+  server: JDHDHDJJDHDU.DJJDHUDIISJJEJSJ.eorvexo.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 47e9fa2b-1146-47cb-9623-18a5343ed061
+- client-fingerprint: chrome
+  name: '508,509|法国 229 #1'
+  network: ws
+  port: 2053
+  server: 94.140.0.255
+  servername: uscdn.mohammadaz2d.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e286cebe-7473-44e9-8c30-273ac36ac83b
+  ws-opts:
+    headers:
+      Host: uscdn.mohammadaz2d.ir
+    path: /websocket?ed=2048
 - alpn:
   - h3
   disable-sni: false
@@ -4779,15 +4863,6 @@ proxies:
   tls: false
   type: vless
   uuid: 87e60810-bb71-41ea-a2a6-f05c8ab903ef
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 559|🇫🇷FR_3|2.4MB/s
-  port: 443
-  server: 155.117.137.110
-  servername: cdn6-49.yahoo.com
-  tls: true
-  type: vless
-  uuid: 9480871a-3843-441c-9b83-aa8c5c96b209
 - client-fingerprint: firefox
   name: '559|🇫🇷 France, Paris | [BL] #4'
   network: grpc
@@ -5211,13 +5286,6 @@ proxies:
   type: http
   udp: true
   username: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
-- name: '568|🇫🇷 法国 | FRA #1'
-  password: humanity
-  port: 443
-  server: 188.114.96.3
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'

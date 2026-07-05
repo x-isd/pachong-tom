@@ -25,7 +25,7 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 127,426|🇷🇺 NL_1|2.5MB/s|GPT⁺|YT-RU|NF|...
+  name: 127,426|NL_1|2.5MB/s|GPT⁺|YT-RU|NF|0%
   network: tcp
   port: 443
   reality-opts:
@@ -35,7 +35,7 @@ proxies:
   servername: nl-1.rknzaebalyzhe.com
   skip-cert-verify: true
   tfo: false
-  tls: true
+  tls: false
   type: vless
   uuid: 3c3c3969-b06a-43ff-ad1e-11621c542946
 - cipher: chacha20-ietf-poly1305
@@ -645,12 +645,15 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: 436,559|🇷🇺RU_83
+- country: 🇺RU
+  name: 435,436,559|🇷🇺RU_83
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
+  skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 438,559|🏁 未知-CBF98AF2
@@ -1432,6 +1435,20 @@ proxies:
     headers:
       Host: ''
     path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '472,473,474|俄罗斯+V2CROSS.COM #2'
+  network: ws
+  port: 443
+  server: 195.208.65.195
+  servername: s58794.cdn.ngenix.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 2be79376-2689-4b11-9c67-28ddd9c985b2
+  ws-opts:
+    path: /v1/data/sync/
 - client-fingerprint: edge
   flow: xtls-rprx-vision
   name: '475,480,508,509,559|俄羅斯節點丨yoyapai.com #3'
@@ -1508,59 +1525,15 @@ proxies:
   server: ru.safepass.click
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: '502,580|US美国(mibei77.com 米贝节点分享) #45'
-  network: ws
-  port: 443
-  server: 109.120.176.17
-  servername: sertraline.adaspoloandco.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 10a6b923-e349-4594-92bb-d81a6245aaec
-  ws-opts:
-    headers:
-      Host: sertraline.adaspoloandco.com
-    path: '%2Fdownload.php'
-- client-fingerprint: chrome
-  name: 502|🇷🇺RU_1|1.7MB/s
-  port: 40000
-  server: 95.182.90.46
-  servername: aparat.com
-  tls: true
-  type: vless
-  uuid: 5ec1e7c3-8afc-416f-ef88-1002d5b25139
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 502|🇷🇺RU_2|2.0MB/s
-  port: 443
-  server: 5.188.115.117
-  servername: ads.x5.ru
-  tls: true
-  type: vless
-  uuid: ed838389-e7e0-47e6-8a1b-040f06d0ba88
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: '502,523,524|免费VPN：https://tt.vg/FJOE2Mm #1'
-  port: 443
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-  server: 213.219.212.30
-  servername: eh.vk.ru
+- name: '502,519,551|🇷🇺RU_1|2.1MB/s #1'
+  password: a8a5b34d-fe46-487d-bd6a-d9f3101525fd
+  port: 51385
+  server: 46.17.40.117
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: music.apple.com
+  tls: false
+  type: hysteria2
   udp: true
-  uuid: ed838389-e7e0-47e6-8a1b-040f06d0ba88
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 502|🇷🇺RU_4|1.6MB/s
-  port: 443
-  server: 213.219.212.24
-  servername: eh.vk.ru
-  tls: true
-  type: vless
-  uuid: ed838389-e7e0-47e6-8a1b-040f06d0ba88
 - client-fingerprint: qq
   flow: xtls-rprx-vision
   name: 507,559,580|RU VLESS-329 | free-nodes
@@ -1589,8 +1562,8 @@ proxies:
   ws-opts:
     headers:
       Host: vpn47.cc.cd
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.77 Safari/537.36
     path: /
   xudp: true
 - encryption: none
@@ -2292,16 +2265,6 @@ proxies:
   type: vless
   udp: true
   uuid: 88888888-8888-8888-8888-888888888888
-- name: '508,509|俄罗斯 085 #1'
-  network: tcp
-  port: 27331
-  server: 193.233.174.195
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: af1e0692-6c91-4d61-bc6b-108f2e897c37
 - name: '508,509|俄罗斯 087 #1'
   network: tcp
   port: 443
@@ -2436,6 +2399,156 @@ proxies:
     headers:
       Host: us2.wxgqlfx.icu
     path: /TG
+- client-fingerprint: chrome
+  name: '508,509|俄罗斯 099 #1'
+  network: ws
+  port: 8444
+  server: 77.221.154.152
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 04c16649-bbf3-41fc-99eb-7507668221d2
+  ws-opts:
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: '508,509|俄罗斯 100 #1'
+  network: ws
+  port: 3443
+  server: 77.221.154.42
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 29ee269a-356f-475b-9e21-9df1f0899af1
+  ws-opts:
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+    path: /
+- name: '508,509|俄罗斯 101 #1'
+  network: tcp
+  port: 8080
+  server: JDHSHSHHJSHHDHJSHHSHHHSSHSH.JSHJJJJSSUJSH.mamli14.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 47e9fa2b-1146-47cb-9623-18a5343ed061
+- name: '508,509|俄罗斯 102 #1'
+  network: tcp
+  port: 4444
+  server: 92.119.230.134
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53396bf6-c215-414b-8de6-70915edb5dec
+- client-fingerprint: chrome
+  flow: ''
+  name: '508,509|俄罗斯 103 #1'
+  network: ws
+  port: 4443
+  server: 193.29.225.249
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 573bd634-8fad-46bd-9d76-7828df6dd05f
+  ws-opts:
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+    path: /
+- client-fingerprint: chrome
+  flow: ''
+  name: '508,509|俄罗斯 104 #1'
+  network: ws
+  port: 444
+  server: 109.120.155.155
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
+  ws-opts:
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: '508,509|俄罗斯 105 #1'
+  network: ws
+  port: 7443
+  server: 109.120.150.17
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b0105618-904b-48f8-8ffc-ea5754da6206
+  ws-opts:
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+    path: /
+- name: '508,509|俄罗斯 106 #1'
+  network: tcp
+  port: 22337
+  server: TurkGame.soltankabos.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b32359b9-eda1-4206-aafb-a95a0dd59ee4
+- client-fingerprint: chrome
+  name: '508,509|俄罗斯 107 #1'
+  network: xhttp
+  port: 443
+  server: au-aeza.t1n2.com
+  servername: au-aeza.t1n2.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d272ab5b-b5e9-4e5d-b235-6bee4970787c
+- name: '508,509|俄罗斯 108 #1'
+  network: tcp
+  port: 57836
+  server: 176.123.165.127
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f3131de4-3488-4434-afe9-8348b100324e
+- client-fingerprint: chrome
+  name: '508,509|俄罗斯 109 #1'
+  network: ws
+  port: 2087
+  server: 194.76.18.126
+  servername: probabblynot.fazelextremeisreal.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: probabblynot.fazelextremeisreal.com
+    path: /
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
@@ -2464,15 +2577,37 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
-- name: 519,551|🇷🇺RU_1|2.1MB/s
-  password: a8a5b34d-fe46-487d-bd6a-d9f3101525fd
-  port: 51385
+- name: 519|🇷🇺_RU_俄罗斯
+  password: cb887032-0447-4216-be3c-7333ecdcda9a
+  port: 50045
   server: 46.17.40.117
   skip-cert-verify: true
   sni: music.apple.com
-  tls: false
   type: hysteria2
   udp: true
+- name: 519|🇷🇺_RU_俄罗斯_1
+  password: 73ffcd12-0155-432f-9fd4-c1d2bf9190d7
+  port: 51857
+  server: 46.17.40.117
+  skip-cert-verify: true
+  sni: music.apple.com
+  type: hysteria2
+  udp: true
+- client-fingerprint: chrome
+  name: '519,523,524|🇷🇺_俄罗斯_213 #1'
+  network: ws
+  port: 8443
+  server: vlessru.duckdns.org
+  servername: vlessru.duckdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  ws-opts:
+    headers:
+      Host: vlessru.duckdns.org
+    path: /wsru
 - cipher: aes-256-gcm
   name: '522,548|🇷🇺_RU_俄罗斯 #2'
   password: c5fcdf7829112cb4
@@ -2629,6 +2764,20 @@ proxies:
   uuid: 10e1b54e-9bd1-4181-b337-3e464f8051ec
 - client-fingerprint: qq
   flow: xtls-rprx-vision
+  name: '523,524|🇷🇺_俄罗斯_43 #1'
+  port: 25567
+  reality-opts:
+    public-key: tsxzBG6xHNl1Nu8XPpd3hWk_zPGrpFrv2Z-difc3nGY
+    short-id: a5bd715847213387
+  server: 217.19.122.188
+  servername: iv.kommersant.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 72edcaa1-685e-4022-9576-273746529e1f
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
   name: '523,524|🇷🇺_俄罗斯_46 #1'
   port: 25567
   reality-opts:
@@ -2641,19 +2790,6 @@ proxies:
   type: vless
   udp: true
   uuid: 72edcaa1-685e-4022-9576-273746529e1f
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 523,524,551|🇺🇸US_3|2.0MB/s
-  port: 443
-  reality-opts:
-    public-key: zMyJW8uYeZwurz4xCcnnPjYlCVP0nI5BDHp_0ZrxPjk
-  server: 185.229.9.229
-  servername: api-maps.yandex.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 150f8634-ae68-4a26-a3d0-853d3c523c15
 - client-fingerprint: qq
   flow: xtls-rprx-vision
   name: '523,524|🇷🇺_俄罗斯_54 #1'
@@ -2727,21 +2863,6 @@ proxies:
     headers:
       Host: s10211.cdn.ngenix.net
     path: /api/user
-- client-fingerprint: chrome
-  name: '523,524|🇷🇺_俄罗斯_213 #1'
-  network: ws
-  port: 8443
-  server: vlessru.duckdns.org
-  servername: vlessru.duckdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  ws-opts:
-    headers:
-      Host: vlessru.duckdns.org
-    path: /wsru
 - name: 533|RU俄罗斯(mibei77.com 米贝节点分享)
   network: ws
   port: 2096
@@ -2904,7 +3025,7 @@ proxies:
   uuid: 12a49340-fd9c-4a70-8ebc-d2cf0dd36b2a
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '559|🇷🇺RU_1|2.1MB/s #1'
+  name: '559|🇷🇺RU_1|2.1MB/s #2'
   port: 443
   server: 193.168.46.180
   servername: rruu.persik.host
@@ -2914,7 +3035,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '559|俄罗斯+V2CROSS.COM #1'
+  name: '559|俄罗斯+V2CROSS.COM #3'
   network: ws
   port: 443
   server: 212.193.153.93
@@ -2924,14 +3045,6 @@ proxies:
   uuid: 2be79376-2689-4b11-9c67-28ddd9c985b2
   ws-opts:
     path: /v1/data/sync/
-- client-fingerprint: chrome
-  name: '559|🇷🇺_俄罗斯_11 #2'
-  port: 8443
-  server: 130.49.219.126
-  servername: at16.fastlanehosting.ru
-  tls: true
-  type: vless
-  uuid: 2ee2b77f-e4cd-4e5d-af22-f9d919eeadd5
 - client-fingerprint: firefox
   name: 559|RU VLESS-323 | free-nodes
   network: tcp
