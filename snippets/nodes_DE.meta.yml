@@ -56,6 +56,21 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '127,426|🇩🇪 DE_1|2.4MB/s|GPT⁺|YT-DE|NF|... #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: qdp5Q3QZ7JhMnOaETGJjsRJe8m30P7np9xnu75-6xSE
+    short-id: 0da3ca76067a5e3c
+  server: germany2.chickenkiller.com
+  servername: germany2.chickenkiller.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d78c12c4-6927-40b8-8550-ed9be00334da
 - down: 100
   name: 232|德国4-hy2  协议
   obfs: salamander
@@ -69,14 +84,14 @@ proxies:
   up: 300
 - name: 232|德国1-hy2  协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 24122
+  port: 23564
   ports: 22000-27000
   server: de1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 232|德国2-hy2 协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 25720
+  port: 25032
   ports: 22000-27000
   server: de2.xiaoliyu.cyou
   skip-cert-verify: true
@@ -88,7 +103,7 @@ proxies:
   down: 70
   fast-open: true
   name: 232|德国1-ChatGPT
-  port: 8926
+  port: 8305
   ports: 6000-11000
   protocol: udp
   server: de1.xiaoliyu.cyou
@@ -779,7 +794,7 @@ proxies:
       Host: go.daluquan.top
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
+  country: 🇸US
   name: 378,435,537,538|🇩🇪DE-209.46.102.22-0090 | 50.5...
   password: 1hhrqrokj3ag
   port: 8388
@@ -801,7 +816,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 378,536,537,538,559,574|🇷🇴RO罗马尼亚3
+  name: 378,472,473,474,502,536,537,538,543,544,559,574|🇷🇴RO罗马尼亚3
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.128
@@ -811,7 +826,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,508,509,536,537,538,543,544,548,559,580|🇷🇴 罗马尼亚 starcorenode.com #3'
+  name: '378,508,509,536,537,538,548,559,580|🇷🇴 罗马尼亚 starcorenode.com #3'
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -821,7 +836,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,507,536,537,538,580|未知 TROJAN-102 | free-nodes #1'
+- name: '378,536,537,538,580|未知 TROJAN-102 | free-nodes #1'
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -829,7 +844,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - alterId: 0
-  name: 378,508,509,536,537,538|🇩🇪DE-185.137.157.138-0171 | 0....
+  name: 378,507,508,509,536,537,538|🇩🇪DE-185.137.157.138-0171 | 0....
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -3036,21 +3051,6 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 426|🇩🇪 DE_1|2.4MB/s|GPT⁺|YT-DE|NF|...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: qdp5Q3QZ7JhMnOaETGJjsRJe8m30P7np9xnu75-6xSE
-    short-id: 0da3ca76067a5e3c
-  server: germany2.chickenkiller.com
-  servername: germany2.chickenkiller.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d78c12c4-6927-40b8-8550-ed9be00334da
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '438,559,580|未知 VLESS-124 | free-nodes #2'
@@ -3074,7 +3074,7 @@ proxies:
   type: vless
   udp: true
   uuid: c87950b3-f132-450a-bec6-e9e91fc9d8bc
-- name: '438,496,502,514,551,559|9|🇪@V2RayyNGvpn🇩🇪 #1'
+- name: 438,496,502,514,551,559|9|🇪@V2RayyNGvpn🇩🇪
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
   password: t-me-V2RayyNGvpN
@@ -3724,6 +3724,25 @@ proxies:
   type: hysteria2
   udp: true
   up: ''
+- name: '496,514,551|🇩🇪@V2RayyNGvpn🇩🇪 #2'
+  obfs: salamander
+  obfs-password: t-me-V2RayyNGvpn
+  password: T&me&V2RayyNGvpn
+  port: 40460
+  server: 91.107.152.188
+  skip-cert-verify: true
+  sni: www.amd.com
+  tls: false
+  type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 502|🇩🇪DE_6|1.5MB/s
+  port: 443
+  server: bel-03.node.lumixnet.com
+  servername: bel-03.node.lumixnet.com
+  tls: true
+  type: vless
+  uuid: 8645697d-51c1-4e90-aca5-ba63a0392f11
 - alpn:
   - h2
   - http/1.1
@@ -5613,13 +5632,13 @@ proxies:
   type: trojan
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 551|🇩🇪DE_6|1.5MB/s
+  name: 551|🇩🇪DE_2|2.0MB/s
   port: 443
-  server: bel-03.node.lumixnet.com
-  servername: bel-03.node.lumixnet.com
+  server: fast2.screw.page
+  servername: fast2.screw.page
   tls: true
   type: vless
-  uuid: 8645697d-51c1-4e90-aca5-ba63a0392f11
+  uuid: 8e62a80b-83ee-4eb8-9852-e8f8c7a6c4fa
 - cipher: chacha20-ietf-poly1305
   name: 558|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -6138,6 +6157,18 @@ proxies:
   network: ws
   port: 443
   server: 161.33.197.118
+  servername: ''
+  tls: true
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+    path: '%2F'
+- name: 559|🏁 未知-FDE6F46C
+  network: ws
+  port: 443
+  server: 172.64.52.240
   servername: ''
   tls: true
   type: vless
