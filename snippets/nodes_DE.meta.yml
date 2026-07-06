@@ -56,6 +56,21 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '127,426|🇩🇪 DE_1|2.4MB/s|GPT⁺|YT-DE|NF|... #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: qdp5Q3QZ7JhMnOaETGJjsRJe8m30P7np9xnu75-6xSE
+    short-id: 0da3ca76067a5e3c
+  server: germany2.chickenkiller.com
+  servername: germany2.chickenkiller.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d78c12c4-6927-40b8-8550-ed9be00334da
 - down: 100
   name: 232|德国4-hy2  协议
   obfs: salamander
@@ -69,14 +84,14 @@ proxies:
   up: 300
 - name: 232|德国1-hy2  协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 25446
+  port: 26224
   ports: 22000-27000
   server: de1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 232|德国2-hy2 协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 25629
+  port: 25662
   ports: 22000-27000
   server: de2.xiaoliyu.cyou
   skip-cert-verify: true
@@ -88,7 +103,7 @@ proxies:
   down: 70
   fast-open: true
   name: 232|德国1-ChatGPT
-  port: 8941
+  port: 9655
   ports: 6000-11000
   protocol: udp
   server: de1.xiaoliyu.cyou
@@ -838,14 +853,14 @@ proxies:
   port: 20001
   server: 8.209.74.72
   type: ss
-- name: 378,536,537,538|🇩🇪DE-185.137.157.128-0152 | 2....
+- name: 378,502,536,537,538|🇩🇪DE-185.137.157.128-0152 | 2....
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.128
   skip-cert-verify: false
   type: trojan
 - alterId: 0
-  name: 378,536,537,538,544,559,574|🇷🇴RO罗马尼亚2
+  name: 378,536,537,538,559,574|🇷🇴RO罗马尼亚2
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -861,7 +876,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - alterId: 0
-  name: 378,536,537,538,544,574|RO 3.4MB/s
+  name: 378,536,537,538,574|RO 3.4MB/s
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.149
@@ -886,14 +901,15 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,536,537,538,548,559,580|未知 TROJAN-108 | free-nodes #1'
+- name: '378,507,536,537,538,548,559,580|未知 TROJAN-108 | free-nodes #1'
+  network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.145
   skip-cert-verify: false
   type: trojan
 - alterId: 0
-  name: 378,502,507,508,509,536,537,538,574|🇷RO罗马尼亚3
+  name: 378,508,509,536,537,538,574|🇷RO罗马尼亚3
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -3532,6 +3548,19 @@ proxies:
   skip-cert-verify: false
   sni: awaited-chicken.adder289.quest
   type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 472,473,474,559|🇩🇪DE_2|2.1MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: '%2DtePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+  server: telegram.private-networks-zk.com
+  servername: ads.x5.ru
+  tls: true
+  type: vless
+  uuid: 5bb4eea6-7786-44c9-aafa-bd0113c1b800
 - name: '475,480|德國丨yoyapai.com #1'
   network: ws
   port: 8880
@@ -3683,6 +3712,17 @@ proxies:
     headers:
       Host: vms.lifetime28.workers.dev
     path: '%2F'
+- name: 502|🇩🇪DE_1|2.8MB/s
+  network: ws
+  port: 2052
+  server: net.irajapan.store
+  tls: false
+  type: vless
+  uuid: 0f8154d0-dcf2-4bf8-b741-a39f142c81dc
+  ws-opts:
+    headers:
+      Host: net.irajapan.store
+    path: /
 - alpn:
   - h2
   - http/1.1
@@ -5484,7 +5524,7 @@ proxies:
   type: vless
   udp: true
   uuid: b5057540-580a-45f3-ba5f-769540a80b55
-- name: '508,509,559,580|未知 VLESS-499 | free-nodes #1'
+- name: '508,509,559,580|未知 VLESS-499 | free-nodes #2'
   network: ws
   port: 80
   server: 192.166.82.165
@@ -5687,17 +5727,6 @@ proxies:
   protocol-param: ''
   server: cdn01.25k2l8.meituan88.com
   type: ssr
-- name: 551|🇩🇪DE_1|2.8MB/s
-  network: ws
-  port: 2052
-  server: net.irajapan.store
-  tls: false
-  type: vless
-  uuid: 0f8154d0-dcf2-4bf8-b741-a39f142c81dc
-  ws-opts:
-    headers:
-      Host: net.irajapan.store
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 558|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5776,6 +5805,12 @@ proxies:
   port: 443
   server: 185.137.157.138
   sni: 185.137.157.138
+  type: trojan
+- name: 559|🇩🇪 德国-1AF5AF39
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.151
+  sni: 185.137.157.151
   type: trojan
 - name: 559|🇩🇪 德国-749F5FBF
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
@@ -6017,15 +6052,6 @@ proxies:
   tls: false
   type: vless
   uuid: 3f9d99f1-dead-4718-9992-88ef957f4ed5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|🇩🇪DE_2|2.1MB/s
-  port: 443
-  server: telegram.private-networks-zk.com
-  servername: ads.x5.ru
-  tls: true
-  type: vless
-  uuid: 5bb4eea6-7786-44c9-aafa-bd0113c1b800
 - name: 559|🇩🇪 德国-0EB057AD
   network: tcp
   port: 443

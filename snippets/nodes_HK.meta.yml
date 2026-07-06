@@ -270,6 +270,12 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- cipher: aes-256-gcm
+  name: '127,426|🇭🇰 HK_1|7.6MB/s|YT-HK|NF #1'
+  password: feng3d@ss2025
+  port: 8388
+  server: li.feng3d.com
+  type: ss
 - alterId: 0
   cipher: auto
   name: '128,430|香港NO.2 #1'
@@ -824,7 +830,7 @@ proxies:
     path: /stream?ed=2048
 - name: 232|香港1-hy2  协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 25673
+  port: 22804
   ports: 22000-27000
   server: hk1.xiaoliyu.cyou
   skip-cert-verify: true
@@ -997,15 +1003,59 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- cipher: aes-256-gcm
+  name: 306|Hong Kong_Hong Kong_ss_1132
+  password: gXtfJmxrZ8Qkkd2k
+  port: '16025'
+  server: c722s2.portablesubmarines.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 306|Hong Kong_Hong Kong_ss_1134
+  password: gXtfJmxrZ8Qkkd2k
+  port: '16025'
+  server: c722s1.portablesubmarines.com
+  type: ss
+  udp: true
 - alterId: 0
-  name: 306,574|🇺🇸US美国8
-  password: BxceQaOe
-  port: 44265
-  server: 18.163.116.155
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
+  cipher: auto
+  name: 306,502|🇭🇰HK_3|5.0MB/s
+  network: tcp
+  port: '16025'
+  server: c722s3.portablesubmarines.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 306,502|🇭🇰HK_4|5.0MB/s
+  network: tcp
+  port: '16025'
+  server: c722s4.portablesubmarines.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 306,502|🇭🇰HK_5|4.6MB/s
+  network: tcp
+  port: '16025'
+  server: c722s5.portablesubmarines.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  xudp: true
+- cipher: aes-256-gcm
+  name: 306|Hong Kong_Hong Kong_ss_1138
+  password: gXtfJmxrZ8Qkkd2k
+  port: '16025'
+  server: 45.78.26.146
+  type: ss
   udp: true
 - name: '340,495,502,514,551,559|8| HK #2'
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
@@ -1968,7 +2018,7 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  country: 🇰HK
+  country: 🇭🇰HK
   name: 378,435,537,538|🇭🇰HK-112.213.102.188-0177 | 0....
   password: qwerREWQ@@
   port: 41632
@@ -3744,7 +3794,7 @@ proxies:
   uuid: 1617e875-e377-4e4f-85ef-dcf9e5e10df7
   ws-opts:
     path: /
-- country: 🇭🇺HU
+- country: 🇺HU
   name: '378,435,436,536,537|🇰HK-185.244.208.59-6205 #1'
   password: WF42809561
   port: 443
@@ -5690,6 +5740,14 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- country: 🇰HK
+  name: 435,436|🇭🇰HK_60
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.253
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '438|🇭🇰HK_1|1.4MB/s | 更多节点: https:/...'
@@ -6210,7 +6268,7 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
-- name: '475,480,559,580|香港丨yoyapai.com #4'
+- name: '475,480,544,559,580|香港丨yoyapai.com #4'
   network: tcp
   password: 65fQmPHHbPcBCfvSHt
   port: 443
@@ -6281,41 +6339,53 @@ proxies:
   sni: 4562ef30-tegxs0-tr9h64-1f1f1.hk2.hyhuawei.com
   type: anytls
   udp: true
-- name: '502,559|🇭🇰_HK_中国香港 #8'
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|HK VLESS-648 | free-nodes
+  network: xhttp
   port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
+  server: s299.csgfw.top
+  servername: u691611ub93696d0s298.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 9794d18f-9280-3553-a7a5-a23da75aca76
+  ws-opts:
+    headers:
+      Host: b93696d0s298.wagahaha.xyz
+    path: 8edbd56c1995b08e5d4a5faebe0e6ed7
+- alpn:
+  - h3
+  name: 507|HK HY2-649 | free-nodes
+  password: 9794d18f-9280-3553-a7a5-a23da75aca76
+  port: 443
+  server: s306.okgg.top
+  sni: u691611ub93696d0s298.wagahaha.xyz
   tls: false
   type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 502,551|🇭🇰HK_3|5.0MB/s
-  network: tcp
-  port: '16025'
-  server: c722s3.portablesubmarines.com
-  tls: false
-  type: vmess
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
-- alterId: 0
-  cipher: auto
-  name: 502,551|🇭🇰HK_4|5.0MB/s
-  network: tcp
-  port: '16025'
-  server: c722s4.portablesubmarines.com
-  tls: false
-  type: vmess
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
-- alterId: 0
-  cipher: auto
-  name: 502,551|🇭🇰HK_5|4.6MB/s
-  network: tcp
-  port: '16025'
-  server: c722s5.portablesubmarines.com
-  tls: false
-  type: vmess
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|HK VLESS-671 | free-nodes
+  network: xhttp
+  port: 443
+  server: 212.192.15.58
+  servername: u691611ub93696d0s298.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 9794d18f-9280-3553-a7a5-a23da75aca76
+  ws-opts:
+    headers:
+      Host: b93696d0s298.wagahaha.xyz
+    path: 8edbd56c1995b08e5d4a5faebe0e6ed7
 - client-fingerprint: chrome
   name: '513,517|15|🇭🇰 香港|@ripaojiedian #1'
   network: ws
