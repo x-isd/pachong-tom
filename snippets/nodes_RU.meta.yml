@@ -645,25 +645,15 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: 436,559|🇷🇺RU_80
+- country: 🇺RU
+  name: 435,436,559|🇷🇺RU_80
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
+  skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,580|🇷🇺RU_5|2.2MB/s|M002-260618 01
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: dgrcO3r5wkEjcsWdEsNtgtWCe9vER6mgADXYclWXVxg
-    short-id: 8de54d32a8d3fdf9
-  server: 193.93.194.120
-  servername: site.rumedia-cdn.com
-  tls: false
-  type: vless
-  uuid: cfb5b3d3-c094-4222-99e8-53faa787c857
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 438,559,580|🇷🇺RU_1|4.3MB/s|B007-260618 01
@@ -1473,7 +1463,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '475,480,508,509,522,523,524,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #2'
+  name: '475,480,508,509,522,523,524,548,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #4'
   network: tcp
   port: 22231
   server: 85.234.114.53
@@ -1485,7 +1475,7 @@ proxies:
   udp: true
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - client-fingerprint: chrome
-  name: '475,480,522,559,580,581|🇱🇻_LV_拉脱维亚 #3'
+  name: '475,480,522,548,559,580,581|🇱🇻_LV_拉脱维亚 #4'
   network: raw
   port: 19562
   reality-opts:
@@ -1521,22 +1511,6 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: '489,523,524|🇷🇺_俄罗斯_335 #1'
-  network: ws
-  port: 443
-  server: 78.41.111.87
-  servername: s10211.cdn.ngenix.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: dba50bb9-2456-4128-8632-f7ba1e6a7ab5
-  ws-opts:
-    headers:
-      Host: s10211.cdn.ngenix.net
-    path: /api/user
-  xudp: true
-- client-fingerprint: chrome
   name: '502,559,717|RU【机场推荐：https://a9a.xyz】23 #2'
   network: ws
   port: 443
@@ -1549,17 +1523,6 @@ proxies:
     headers:
       Host: s10211.cdn.ngenix.net
     path: '%2Fapi%2Fuser'
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc-yandex
-  name: 502|🇷🇺RU_1|1.6MB/s
-  network: grpc
-  port: 8443
-  server: 193.233.246.79
-  servername: ads.x5.ru
-  tls: true
-  type: vless
-  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
 - client-fingerprint: qq
   flow: xtls-rprx-vision
   name: 507,559,580|RU VLESS-328 | free-nodes
@@ -1621,20 +1584,18 @@ proxies:
     headers:
       Host: 2377cc1fs394.csgfw.top
     path: f8a885425dfa605bd16b2d73f3618d49
-- client-fingerprint: chrome
-  encryption: none
-  name: 508,509,580|🇳🇱NL_119|1.6MB/s|B007-260618 0...
+- encryption: none
+  name: 508,509,559|🇷🇺RU_1|1.7MB/s
   network: ws
-  port: 443
-  server: 5.35.32.96
-  servername: vpn47.cc.cd
-  tls: true
+  port: 2082
+  server: 95.182.90.252
+  tls: false
   type: vless
   udp: true
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  uuid: e9496c4c-95a7-491d-9c46-68c7395c7ac3
   ws-opts:
     headers:
-      Host: vpn47.cc.cd
+      Host: 95.182.90.252
     path: /
   xudp: true
 - client-fingerprint: chrome
@@ -2666,6 +2627,16 @@ proxies:
     headers:
       Host: nova-comet-core-5d04.ilia-talebi09.workers.dev
     path: /?u=1e5b0dc4c9
+- name: '508,509|俄罗斯 113 #1'
+  network: xhttp
+  port: 2060
+  server: ge-nn.jorzel.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 46cddd9c-dfed-4c98-b3cb-379e0c8dc27e
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
@@ -2695,7 +2666,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-gcm
-  name: 522|🇺_RU_
+  name: '522,548|🇷🇺_RU_俄罗斯 #1'
   password: c5fcdf7829112cb4
   port: 30129
   server: 45.140.169.216
@@ -2808,6 +2779,21 @@ proxies:
     headers:
       Host: s46270.cdn.ngenix.net
     path: /v1/data/sync/
+- client-fingerprint: chrome
+  name: '523,524|🇷🇺_俄罗斯_335 #1'
+  network: ws
+  port: 443
+  server: 78.41.111.87
+  servername: s10211.cdn.ngenix.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: dba50bb9-2456-4128-8632-f7ba1e6a7ab5
+  ws-opts:
+    headers:
+      Host: s10211.cdn.ngenix.net
+    path: /api/user
 - client-fingerprint: chrome
   name: '523,524|🇷🇺_俄罗斯_303 #1'
   network: ws
@@ -3100,17 +3086,6 @@ proxies:
   tls: false
   type: vless
   uuid: e60bef09-24fe-4463-8e71-38fc669f57ed
-- name: 559|🇷🇺RU_1|1.7MB/s
-  network: ws
-  port: 2082
-  server: 95.182.90.252
-  tls: false
-  type: vless
-  uuid: e9496c4c-95a7-491d-9c46-68c7395c7ac3
-  ws-opts:
-    headers:
-      Host: 95.182.90.252
-    path: /
 - name: 559|🇷🇺 俄罗斯-E1853161
   network: tcp
   port: 443
@@ -3193,6 +3168,19 @@ proxies:
   sni: sni.fi-m247-02.com
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 580|🇷🇺RU_5|2.2MB/s|M002-260618 01
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: dgrcO3r5wkEjcsWdEsNtgtWCe9vER6mgADXYclWXVxg
+    short-id: 8de54d32a8d3fdf9
+  server: 193.93.194.120
+  servername: site.rumedia-cdn.com
+  tls: false
+  type: vless
+  uuid: cfb5b3d3-c094-4222-99e8-53faa787c857
 - client-fingerprint: qq
   flow: xtls-rprx-vision
   name: 580|🇷🇺RU_6|2.0MB/s|S001-260618 01
