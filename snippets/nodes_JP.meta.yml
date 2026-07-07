@@ -1347,19 +1347,22 @@ proxies:
   server: 57.180.246.231
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538,606|JP_Tokyo_Datacamp Limited_Gemi...
+  country: 🇺🇸US
+  name: 356,357,378,435,537,538,606|JP_Tokyo_Datacamp Limited_Gemi...
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538,606|JP_Tokyo_Datacamp Limited_Clau...
+  country: 🇸US
+  name: 356,357,378,435,537,538,606|JP_Tokyo_Datacamp Limited_Clau...
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538|🇯🇵JP-149.22.87.204-0166 | 4.77...
+  country: 🇸US
+  name: 356,357,378,435,537,538|🇯🇵JP-149.22.87.204-0166 | 4.77...
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2377,12 +2380,15 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- name: 378,472,473,474,536,537,538,580|未知 TROJAN-103 | free-nodes
+- alterId: 0
+  name: 378,502,536,537,538,574,580|未知 TROJAN-103 | free-nodes
   password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
   port: 443
   server: 103.125.216.18
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 378,536,537,538|🇯🇵JP-140.83.51.161-1420 | 0.02...
@@ -3704,30 +3710,38 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
-- name: '378,436,536,537|🇵JP-43.207.105.49-6165 #1'
+- country: 🇦🇺AU
+  name: '378,435,436,536,537|🇵JP-43.207.105.49-6165 #1'
   password: BxceQaOe
   port: 443
   server: 43.207.105.49
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇯🇵JP-52.195.12.80-6208 #1'
+  udp: true
+- country: 🇧GB
+  name: '378,435,436,536,537|🇯🇵JP-52.195.12.80-6208 #1'
   password: IL37892054
   port: 443
   server: upright-rhino.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇯🇵JP-3.113.25.200-6224 #1'
+  udp: true
+- country: 🇵JP
+  name: '378,435,436,536,537|🇯🇵JP-3.113.25.200-6224 #1'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,537|🇯🇵JP-64.176.36.61-6252 #1'
+  udp: true
+- country: 🇸US
+  name: '378,435,537|🇯🇵JP-64.176.36.61-6252 #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 443
   server: 64.176.36.61
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf
   name: '378,536,537|🇵JP-54.238.165.56-6274 #1'
   obfs: plain
@@ -4064,7 +4078,10 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '437,508,509|日本 054 #1'
+  country: 🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: '435,437,508,509|日本 054 #1'
   network: tcp
   port: 22324
   server: 172.104.80.66
@@ -4072,19 +4089,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,580|🇯🇵JP_31|4.4MB/s|B007-260618 01
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Oua7ls5NZ2sxxFSyccAHZCMrCjW34WPEsHbaIpWmxX8
-    short-id: ac78f53d
-  server: 172.207.210.238
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 39d1c043-7bc5-4876-9d07-58574c023850
+  ws-path: /
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -5055,7 +5060,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-654 | free-nodes
+  name: 507|JP VLESS-659 | free-nodes
   network: xhttp
   port: 443
   reality-opts:
@@ -5077,7 +5082,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-659 | free-nodes
+  name: 507|JP VLESS-664 | free-nodes
   network: xhttp
   port: 443
   server: s9102.okgfwbackxyz.xyz
@@ -5096,7 +5101,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-660 | free-nodes
+  name: 507|JP VLESS-665 | free-nodes
   network: xhttp
   port: 443
   server: s9103.ccgfw.top
@@ -5134,7 +5139,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-698 | free-nodes
+  name: 507|JP VLESS-703 | free-nodes
   network: xhttp
   port: 443
   server: 167.179.77.171
@@ -5152,7 +5157,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-699 | free-nodes
+  name: 507|JP VLESS-704 | free-nodes
   network: xhttp
   port: 443
   reality-opts:
@@ -5173,7 +5178,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-700 | free-nodes
+  name: 507|JP VLESS-705 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -5194,7 +5199,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-710 | free-nodes
+  name: 507|JP VLESS-715 | free-nodes
   network: xhttp
   port: 443
   reality-opts:
@@ -5215,7 +5220,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-713 | free-nodes
+  name: 507|JP VLESS-718 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -5236,7 +5241,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-714 | free-nodes
+  name: 507|JP VLESS-719 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -5920,6 +5925,12 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: Telegram%40freecodes%2F%3Fed%3D2560
+- name: 536,538,580|未知 TROJAN-98 | free-nodes
+  password: PI36027154
+  port: 443
+  server: large-baboon.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 536|🇯🇵JP-172.111.146.64-0238
@@ -6103,7 +6114,7 @@ proxies:
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
 - alterId: 0
-  name: 574|🇵JP日本2
+  name: '574|JP #3'
   password: BxceQaOe
   port: 47656
   server: 18.162.113.168
@@ -6459,6 +6470,19 @@ proxies:
   sni: 103.106.228.187
   type: trojan
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 580|🇯🇵JP_31|4.4MB/s|B007-260618 01
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Oua7ls5NZ2sxxFSyccAHZCMrCjW34WPEsHbaIpWmxX8
+    short-id: ac78f53d
+  server: 172.207.210.238
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 39d1c043-7bc5-4876-9d07-58574c023850
+- client-fingerprint: chrome
   name: 580|🇯🇵JP_34|1.1MB/s|S001-260618 01
   network: ws
   port: 443
@@ -6586,7 +6610,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '580|JP VLESS-657 | free-nodes #1'
+  name: 580|JP VLESS-657 | free-nodes
   network: tcp
   port: 443
   server: s8884.okgfw.top
