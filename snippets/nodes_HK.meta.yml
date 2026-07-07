@@ -830,7 +830,7 @@ proxies:
     path: /stream?ed=2048
 - name: 232|香港1-hy2  协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 24933
+  port: 23100
   ports: 22000-27000
   server: hk1.xiaoliyu.cyou
   skip-cert-verify: true
@@ -968,19 +968,14 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: '306,340,435,437,454,459,502,514,515,516,544,551,557|香港|@ripaojiedian #2'
+  name: '306,340,437,454,459,502,514,515,516,544,551,557|香港|@ripaojiedian #2'
   network: tcp
   port: '30807'
   server: v10.hdacd.com
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
 - name: '340,495,502,514,551|🇭🇰 HK #1'
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
@@ -3774,28 +3769,24 @@ proxies:
   uuid: 1617e875-e377-4e4f-85ef-dcf9e5e10df7
   ws-opts:
     path: /
-- name: '378,536,537|🇰HK-58.152.25.253-6217 #1'
+- name: '378,436,536,537|🇰HK-58.152.25.253-6217 #1'
   password: BxceQaOe
   port: 443
   server: 58.152.25.253
   skip-cert-verify: false
   type: trojan
-- country: 🇭🇺HU
-  name: '378,435,436,536,537|🇰HK-185.244.208.52-6218 #1'
+- name: '378,436,536,537|🇰HK-185.244.208.52-6218 #1'
   password: IL37892054
   port: 443
   server: just-alpaca.rooster465.autos
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: HU
-  name: '378,435,436,536,537|🇰HK-185.244.208.59-6221 #1'
+- name: '378,436,536,537|🇰HK-185.244.208.59-6221 #1'
   password: WF42809561
   port: 443
   server: top-goshawk.rooster465.autos
   skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: chacha20-ietf
   name: '378,537|🇭🇰HK-43.255.119.21-6261 #1'
   obfs: plain
@@ -5664,25 +5655,27 @@ proxies:
   ws-path: /
 - alterId: 2
   cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: '435,437,459|美国(yudou789.top 玉豆免费节点) #54'
+  name: '437,459|美国(yudou789.top 玉豆免费节点) #84'
+  network: tcp
+  port: '30808'
+  server: v8.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: '437,459|美国(yudou789.top 玉豆免费节点) #54'
   network: tcp
   port: '30804'
   server: v4.hdacd.com
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
 - alterId: 2
   cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: '435,437,459,508,509|亚太地区 010 #1'
+  name: '437,459,508,509|亚太地区 010 #1'
   network: tcp
   port: 30829
   server: v29.hdacd.com
@@ -5693,25 +5686,9 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-headers:
     Host: v29.hdacd.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: '435,437,459|美国(yudou789.top 玉豆免费节点) #84'
-  network: tcp
-  port: '30808'
-  server: v8.hdacd.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 438,507|未知 VLESS-499 | free-nodes
+  name: '438|🇭🇰HK_1|1.1MB/s | 福利姬: https://...'
   network: tcp
   port: 49875
   reality-opts:
@@ -6317,6 +6294,15 @@ proxies:
   udp: true
   uuid: 3ecd1c85-ea7f-4444-81ac-330d1a2d0d4a
   xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 502|🇭🇰HK_1|3.8MB/s
+  port: 443
+  server: hk4.miyazono-kaori.com
+  servername: hk4e-launcher-static.hoyoverse.com
+  tls: true
+  type: vless
+  uuid: 017606e5-601f-44f0-953c-a7f81c96ac5c
 - alpn:
   - h2
   - http/1.1
@@ -6324,7 +6310,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 507|HK VLESS-650 | free-nodes
+  name: 507|HK VLESS-660 | free-nodes
   network: xhttp
   port: 443
   server: s299.csgfw.top
@@ -6338,7 +6324,7 @@ proxies:
     path: 8edbd56c1995b08e5d4a5faebe0e6ed7
 - alpn:
   - h3
-  name: 507|HK HY2-651 | free-nodes
+  name: 507|HK HY2-661 | free-nodes
   password: 9794d18f-9280-3553-a7a5-a23da75aca76
   port: 443
   server: s306.okgg.top
@@ -6352,7 +6338,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 507|HK VLESS-673 | free-nodes
+  name: 507|HK VLESS-677 | free-nodes
   network: xhttp
   port: 443
   server: 212.192.15.58
@@ -6826,15 +6812,6 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 551|🇭🇰HK_1|3.8MB/s
-  port: 443
-  server: hk4.miyazono-kaori.com
-  servername: hk4e-launcher-static.hoyoverse.com
-  tls: true
-  type: vless
-  uuid: 017606e5-601f-44f0-953c-a7f81c96ac5c
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇭 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
