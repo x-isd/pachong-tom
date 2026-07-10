@@ -754,19 +754,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '502,559,574|未知13 #1'
-  network: ws
-  port: 8880
-  server: 178.104.66.83
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6cd9c576-a21a-49a1-b922-f7daf1f2bfe4
-  ws-opts:
-    path: /ray
-- alterId: 0
-  cipher: auto
   name: '513,517,578|2|🇩🇪_DE_德国 #2'
   network: ws
   port: 45103
@@ -828,7 +815,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 536,537,538,548,574|🇴RO罗马尼亚3
+  name: 536,537,538,559,574|🇴RO罗马尼亚3
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.138
@@ -842,19 +829,21 @@ proxies:
   server: 89.163.220.99
   skip-cert-verify: false
   type: trojan
-- name: 536,537,538,548|🇷🇴 罗马尼亚 starcorenode.com 2
+- alterId: 0
+  name: 536,537,538,559,574|🇷RO罗
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
-  server: 185.137.157.145
-  skip-cert-verify: false
+  server: 185.137.157.149
+  skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   name: 536,537,538,559,574|🇷RO罗马尼亚2
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.135
   skip-cert-verify: true
-  sni: ''
   tls: true
   type: trojan
   udp: true
@@ -1858,7 +1847,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 536,537,559|未知59
+  name: 536,537,559|未知27
   network: ws
   port: '80'
   server: 159.89.29.136
@@ -1901,12 +1890,6 @@ proxies:
     headers:
       Host: 23.158.56.227
     path: /
-- name: 536,537,538|🇩🇪DE-185.137.157.151-0141 | 0....
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.151
-  skip-cert-verify: false
-  type: trojan
 - name: 536|🇩🇪DE-185.137.157.156-2356
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -2218,6 +2201,12 @@ proxies:
   uuid: 826b8d0a-e0d3-407a-927d-19953c170779
   ws-opts:
     path: /cctv13/hd.m3u8
+- name: 536,537|🇪DE-2.26.54.174-6273
+  password: TrojanPass2026!
+  port: 8448
+  server: 2.26.54.174
+  skip-cert-verify: false
+  type: trojan
 - cipher: rc4-md5
   name: '536|8J%2BHrfCfh7BISy00My4yNTUuMTE5... #1'
   obfs: plain
@@ -2661,6 +2650,12 @@ proxies:
   sni: frtgrpc.mainssh.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
+  name: 537,538|🇩🇪DE-209.46.102.22-0096 | 27.4...
+  password: 1hhrqrokj3ag
+  port: 8388
+  server: 209.46.102.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 537,538|🇩🇪DE-8.209.74.72-0106 | 5.087M...
   password: PWpjPo3tqhPN4yRZ
   port: 20001
@@ -2960,11 +2955,11 @@ proxies:
   server: 185.137.157.145
   sni: 185.137.157.145
   type: trojan
-- name: 559|🇩🇪 德国-86FF9C97
+- name: 559|🇩🇪 德国-1AF5AF39
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
-  server: 185.137.157.149
-  sni: 185.137.157.149
+  server: 185.137.157.151
+  sni: 185.137.157.151
   type: trojan
 - name: 559|🇩🇪 德国-749F5FBF
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
@@ -3004,7 +2999,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '559|🇩🇪_DE_德国 #4'
+  name: '559|🇩🇪_DE_德国 #2'
   network: tcp
   port: 8080
   server: 185.189.58.195
