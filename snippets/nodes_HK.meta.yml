@@ -830,7 +830,7 @@ proxies:
     path: /stream?ed=2048
 - name: 232|香港1-hy2  协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 25558
+  port: 26715
   ports: 22000-27000
   server: hk1.xiaoliyu.cyou
   skip-cert-verify: true
@@ -912,14 +912,20 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '306,340,437,454,459,502,514,515,516,544,551,557,559,580,581|🇭🇰_HK_中国香港 #17'
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '306,340,435,437,454,459,502,514,515,516,544,551,557,559,580,581|🇭🇰_HK_中国香港
+    #17'
   network: tcp
   port: 30807
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - name: '340,495,502,514,551,559|8| HK #2'
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
@@ -1867,12 +1873,14 @@ proxies:
   server: jg647hf446ghvw.eucs.cn
   type: ss
   udp: true
-- name: '378,436,507,536,537,538,559,580|未知 TROJAN-124 | free-nodes #1'
+- country: 🇹LT
+  name: '378,435,436,507,536,537,538,559,580|未知 TROJAN-124 | free-nodes #1'
   password: XG59623478
   port: 443
   server: growing-oyster.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 378,537,538|🇭🇰HK-112.213.102.188-0231 | 0....
   password: qwerREWQ@@
@@ -3173,18 +3181,22 @@ proxies:
   uuid: 1617e875-e377-4e4f-85ef-dcf9e5e10df7
   ws-opts:
     path: /
-- name: '378,436,536,537|🇭🇰HK-185.244.208.59-5868 #2'
+- country: 🇭🇺HU
+  name: '378,435,436,536,537|🇭🇰HK-185.244.208.59-5868 #2'
   password: WF42809561
   port: 443
   server: top-goshawk.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇰HK-185.244.208.52-5869 #1'
+  udp: true
+- country: 🇭🇺HU
+  name: '378,435,436,536,537|🇰HK-185.244.208.52-5869 #1'
   password: IL37892054
   port: 443
   server: just-alpaca.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf
   name: '378,537|🇰HK-103.149.183.12-5919 #1'
   password: asd123456
@@ -5037,26 +5049,35 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: 435|🇰HK_61
+  password: asd123456
+  port: 8388
+  server: 103.149.182.105
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: 435|🇰HK_62
+  password: asd123456
+  port: 8388
+  server: 103.141.221.124
+  type: ss
 - alterId: 2
   cipher: auto
-  name: '437,459|美国(yudou789.top 玉豆免费节点) #84'
-  network: tcp
-  port: '30808'
-  server: v8.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: 437,459,559|🇭🇰HK_57
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435,437,459,559|🇭🇰HK_57
   network: tcp
   port: 30804
   server: v4.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - name: '438|🇭🇰HK_1|1.8MB/s | 网盘搜宝: https:/...'
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -5080,25 +5101,6 @@ proxies:
   tls: false
   type: vless
   uuid: 71a7db14-1b6f-5aec-9e5d-9bd5f8beabab
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  delay: 1504
-  h2-opts: {}
-  http-opts: {}
-  name: 440,528,574|HK 342.7KB/s
-  network: ws
-  port: 11236
-  server: hk-vp1.xuanmiao.tech
-  servername: hk-vp1.xuanmiao.tech
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b35d1622-5cc0-407f-eac2-34e6f8219d25
-  ws-opts:
-    headers:
-      host: hk-vp1.xuanmiao.tech
-    path: /
 - name: 453|🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -5634,13 +5636,70 @@ proxies:
   type: hysteria2
   udp: true
   up: ''
-- name: '502,508,509,551,553,559|🇭🇰HK_1|3.0MB/s #1'
+- name: 502,508,509,553,559|🇭🇰HK_1|3.0MB/s
   network: tcp
   port: 18443
   server: 149.104.30.114
   tls: false
   type: vless
   uuid: 5fd31072-8511-4ce3-a466-9e02f3c96410
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|HK VLESS-852 | free-nodes
+  network: tcp
+  port: 443
+  server: s306.ccgfw.top
+  servername: u695099u36cf43b9s298.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3
+  ws-opts:
+    headers:
+      Host: 36cf43b9s298.wagahaha.xyz
+    path: ''
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|HK VLESS-861 | free-nodes
+  network: tcp
+  port: 443
+  server: 212.192.15.191
+  servername: u695099u36cf43b9s298.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3
+  ws-opts:
+    headers:
+      Host: 36cf43b9s298.wagahaha.xyz
+    path: ''
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|HK VLESS-863 | free-nodes
+  network: tcp
+  port: 443
+  server: s299.freessr.bid
+  servername: u695099u36cf43b9s298.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3
+  ws-opts:
+    headers:
+      Host: 36cf43b9s298.wagahaha.xyz
+    path: ''
 - client-fingerprint: chrome
   name: '513,517|15|🇭🇰 香港|@ripaojiedian #1'
   network: ws
@@ -5919,6 +5978,32 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
+- alpn:
+  - h3
+  name: 551|🇭🇰HK_1|3.2MB/s
+  obfs: ''
+  obfs-password: ''
+  password: 356c6c63-0ef7-4c45-a092-742d09b925c3
+  port: 4443
+  server: 64.188.57.161
+  skip-cert-verify: true
+  sni: de.24rostelekom.ru
+  tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 551,553|🇭🇰香港_1fe20_ESET_NOD32_Symantec...
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: 40-QvWVq-gj9xlnE9UxB6HUHAXg_XvR1T0Sc-B5U0nY
+    short-id: 3314ee8700a0affe
+  server: 149.104.29.83
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cab5e715-ddf0-497d-a065-5e04b1eafea9
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇭 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549

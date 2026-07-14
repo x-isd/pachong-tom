@@ -693,12 +693,15 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: 436,559|🇷🇺RU_75
+- country: 🇺RU
+  name: 435,436,559|🇷🇺RU_75
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
+  skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
+  udp: true
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1478,6 +1481,63 @@ proxies:
   tls: true
   type: vless
   uuid: 0c6b632a-cd96-4b74-9b51-151e3b5697db
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|RU VLESS-888 | free-nodes
+  network: tcp
+  port: 443
+  server: s462.csgfw.top
+  servername: u695099u57be39cds394.csgfw.top
+  tls: true
+  type: vless
+  uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3
+  ws-opts:
+    headers:
+      Host: 57be39cds394.csgfw.top
+    path: ''
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|RU VLESS-916 | free-nodes
+  network: tcp
+  port: 443
+  server: 45.130.146.232
+  servername: u695099u57be39cds394.csgfw.top
+  tls: true
+  type: vless
+  uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3
+  ws-opts:
+    headers:
+      Host: 57be39cds394.csgfw.top
+    path: ''
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|RU VLESS-928 | free-nodes
+  network: tcp
+  port: 443
+  server: s461.wagahaha.xyz
+  servername: u695099u57be39cds394.csgfw.top
+  tls: true
+  type: vless
+  uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3
+  ws-opts:
+    headers:
+      Host: 57be39cds394.csgfw.top
+    path: ''
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -1711,6 +1771,27 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: X%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
+- alpn:
+  - h3
+  name: 551|🇷🇺RU_1|2.6MB/s
+  obfs: ''
+  obfs-password: ''
+  password: 356c6c63-0ef7-4c45-a092-742d09b925c3
+  port: 4443
+  server: 135.106.156.10
+  skip-cert-verify: true
+  sni: ru.24rostelekom.ru
+  tls: false
+  type: hysteria2
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 551|🇷🇺RU_2|2.1MB/s
+  port: 443
+  server: ru.vrsvpn.com
+  servername: web.max.ru
+  tls: true
+  type: vless
+  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
