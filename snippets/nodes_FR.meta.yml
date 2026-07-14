@@ -410,7 +410,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
-- name: 378,502,536,537,538|🇫🇷FR-38.60.168.129-0184 | 7.98...
+- name: 378,472,473,474,502,536,537,538,544|🇺🇸 美国 华盛顿Cogent通信公司
   password: Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD
   port: 443
   server: 38.60.168.129
@@ -1897,7 +1897,7 @@ proxies:
     path: '%2F%252Fassignment'
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 438,507,559,580|🇫🇷FR_222|1.7MB/s|M002-260618 0...
+  name: 438,559,580|🇫🇷FR_222|1.7MB/s|M002-260618 0...
   network: tcp
   port: 40443
   reality-opts:
@@ -2164,7 +2164,7 @@ proxies:
     path: /xrenvws
 - alterId: 2
   cipher: auto
-  name: 489,519,522|_ID_亚->🇷_FR_法国
+  name: 489,519,548|🇮🇩_ID_印度尼西亚->🇫🇷_FR_法国
   port: 30835
   server: v35.hdacd.com
   skip-cert-verify: true
@@ -2182,22 +2182,13 @@ proxies:
   type: http
   username: aed1cc24-351d-11ef-ba52-f23c9164ca5d
 - client-fingerprint: safari
-  name: 502|🇫🇷FR_1|2.5MB/s
-  port: 3001
+  name: 502|🇫🇷FR_1|1.5MB/s
+  port: 3000
   server: 84.201.177.246
-  servername: cdnv-img.perekrestok.ru
+  servername: eda.yandex.ru
   tls: true
   type: vless
   uuid: 388451f3-5ce2-415d-bb06-2fab697fc648
-- flow: xtls-rprx-vision
-  name: '522,580,581|🇫🇷_FR_法国 #3'
-  port: 443
-  server: fr.noooo.win
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7b241232-208d-4d36-857e-913f91b044f4
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -2261,14 +2252,26 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- client-fingerprint: safari
-  name: 551|🇫🇷FR_1|1.5MB/s
-  port: 3000
-  server: 84.201.177.246
-  servername: eda.yandex.ru
+- name: 548|🇫🇷_FR_法国
+  network: ws
+  port: 8443
+  server: 146.59.230.8
+  servername: sni.111000.v6.navy
   tls: true
   type: vless
-  uuid: 388451f3-5ce2-415d-bb06-2fab697fc648
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+- flow: xtls-rprx-vision
+  name: '548,580,581|🇫🇷_FR_法国 #5'
+  port: 443
+  server: fr.noooo.win
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7b241232-208d-4d36-857e-913f91b044f4
 - name: 559|FR法国(mibei77.com 米贝节点分享)
   password: 8bc63720-5ec8-45b5-b6a6-9a21ffb490e8
   port: 443
@@ -2738,17 +2741,6 @@ proxies:
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    path: /assignment
-- name: 580|🇫🇷FR_6|3.4MB/s|R002-260618 01
-  network: ws
-  password: humanity
-  port: 443
-  server: 188.114.99.0
-  sni: www.gossipglove.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.gossipglove.com
     path: /assignment
 - name: 580|🇫🇷FR_7|4.6MB/s 01
   network: ws
