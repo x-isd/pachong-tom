@@ -62,7 +62,64 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- name: '438,508,509|美国 305 #1'
+- alterId: 1
+  cipher: auto
+  name: 378,508,509,536,537,636|🇺🇸 美国 983
+  network: ws
+  port: '443'
+  server: 186.190.215.32
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.32
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 378,508,509,536,537,636|🇺🇸 美国 1007
+  network: ws
+  port: '443'
+  server: 186.190.215.75
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.75
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 378,508,509,536,537,636|🇨🇭 瑞士 002
+  network: ws
+  port: '443'
+  server: 140.238.212.95
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /
+- name: '378,536,537|CH-152.67.71.149-3540 #1'
+  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
+  port: 18818
+  server: ch12.yukiss.eu.org
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-128-cfb
+  name: '378,537|🇨CH-156.146.62.160-5111 #1'
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.160
+  type: ss
+- name: '438,507,508,509|美国 305 #1'
   network: tcp
   port: 19551
   server: 37.156.44.241
@@ -93,40 +150,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
-- client-fingerprint: chrome
-  http-opts:
-    headers:
-      Host:
-      - yahoo.com
-    method: GET
-    path:
-    - /
-  name: 502,566|🇨🇭 瑞士 | CHE
-  network: http
-  port: 32875
-  reality-opts:
-    public-key: NFQAS72yT1b_7ZZhYcIC6Nm3rYSqQwxqOZKid5DJ0Gg
-  server: 179.237.75.28
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1961317f-5f2c-4346-e4b0-b767f0946138
-- alterId: 0
-  cipher: auto
-  name: 508,509,536,537,636|🇨🇭 瑞士 002
-  network: ws
-  port: '443'
-  server: 140.238.212.95
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '523,524|🇨🇭_瑞士_62 #1'
@@ -155,18 +178,6 @@ proxies:
   type: vless
   udp: true
   uuid: 8bba3194-4856-46d1-8319-075817d87eb1
-- name: 536,537|CH-152.67.71.149-3540
-  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
-  port: 18818
-  server: ch12.yukiss.eu.org
-  skip-cert-verify: false
-  type: trojan
-- cipher: aes-128-cfb
-  name: 537|🇨CH-156.146.62.160-5111
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.160
-  type: ss
 - client-fingerprint: chrome
   name: 559|🇨🇭 Switzerland, Zurich | [BL]
   network: xhttp
@@ -248,6 +259,25 @@ proxies:
   tls: false
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
+- client-fingerprint: chrome
+  http-opts:
+    headers:
+      Host:
+      - yahoo.com
+    method: GET
+    path:
+    - /
+  name: 566|🇨🇭 瑞士 | CHE
+  network: http
+  port: 32875
+  reality-opts:
+    public-key: NFQAS72yT1b_7ZZhYcIC6Nm3rYSqQwxqOZKid5DJ0Gg
+  server: 179.237.75.28
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1961317f-5f2c-4346-e4b0-b767f0946138
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 566|🇨🇭 瑞士 | CHE 2
