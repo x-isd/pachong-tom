@@ -84,7 +84,7 @@ proxies:
   up: 300
 - name: 232|德国1-hy2  协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 26652
+  port: 22581
   ports: 22000-27000
   server: de1.xiaoliyu.cyou
   skip-cert-verify: true
@@ -96,20 +96,18 @@ proxies:
   down: 70
   fast-open: true
   name: 232|德国1-ChatGPT
-  port: 8492
+  port: 7012
   ports: 6000-11000
   protocol: udp
   server: de1.xiaoliyu.cyou
   type: hysteria
   up: 30
 - cipher: aes-256-cfb
-  delay: 2851
-  name: '306,378,528,537|🇪DE-3.122.115.111-3117 #1'
+  name: 306|Germany_Frankfurt am Main_ss_1...
   password: amazonskr05
   port: 443
-  server: 3.122.115.111
+  server: 3.71.12.190
   type: ss
-  udp: true
 - name: '340,495,502,514,551,559|7|DE #2'
   password: a084933d-0b41-4571-ae0c-7163b8c71ed1
   port: 2056
@@ -118,7 +116,7 @@ proxies:
   sni: de.eyucdn.xyz
   tls: false
   type: hysteria2
-- name: '340,496,502,514,551,559|8|Telegram=V2RayyNGvpn🇩🇪 #2'
+- name: '340,496,502,514,551,559|8|Telegram=V2RayyNGvpn🇩🇪 #1'
   obfs: salamander
   obfs-password: T-ME-V2RayyNGvpn
   password: KJX4HQHodA
@@ -855,7 +853,8 @@ proxies:
   port: 9101
   server: 145.239.1.100
   type: ss
-- name: '378,494,536,537,538,559,580|未知 TROJAN-132 | free-nodes #1'
+- country: 🇩🇪DE
+  name: '378,440,494,536,537,538,559,580|未知 TROJAN-132 | free-nodes #1'
   network: raw
   password: CF68213490
   port: 443
@@ -863,7 +862,9 @@ proxies:
   skip-cert-verify: true
   sni: harmless-lab.rooster465.autos
   type: trojan
-- name: '378,494,536,537,538,559,580|未知 TROJAN-165 | free-nodes #1'
+  udp: true
+- country: 🇪DE
+  name: '378,440,494,536,537,538,559,580|未知 TROJAN-165 | free-nodes #1'
   network: tcp
   password: XG59623478
   port: 443
@@ -871,6 +872,7 @@ proxies:
   skip-cert-verify: false
   sni: enabling-asp.rooster465.autos
   type: trojan
+  udp: true
 - name: '378,494,536,537,538,559,580|未知 TROJAN-162 | free-nodes #2'
   network: tcp
   password: OD90375861
@@ -879,7 +881,8 @@ proxies:
   skip-cert-verify: false
   sni: busy-hermit.rooster465.autos
   type: trojan
-- name: '378,494,536,537,538,559,580|未知 TROJAN-164 | free-nodes #1'
+- country: 🇺🇸US
+  name: '378,440,494,536,537,538,559,580|未知 TROJAN-164 | free-nodes #1'
   network: raw
   password: OD90375861
   port: 443
@@ -887,7 +890,9 @@ proxies:
   skip-cert-verify: false
   sni: together-insect.rooster465.autos
   type: trojan
-- name: '378,494,536,537,538,559,580|未知 TROJAN-160 | free-nodes #1'
+  udp: true
+- country: 🇩🇪DE
+  name: '378,440,494,536,537,538,559,580|未知 TROJAN-160 | free-nodes #1'
   network: tcp
   password: KV63147582
   port: 443
@@ -895,8 +900,9 @@ proxies:
   skip-cert-verify: false
   sni: evolving-baboon.rooster465.autos
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇸US
+  country: 🇺🇸US
   name: 378,435,537,538|🇩🇪DE-209.46.102.22-0217 | 66.0...
   password: 1hhrqrokj3ag
   port: 8388
@@ -922,16 +928,17 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - alterId: 0
-  name: 378,494,502,536,537,538,574|🇷RO罗马尼亚3 2.5MB/s
+  name: 378,494,502,536,537,538,544,574|🇷RO罗马尼亚3 2.5MB/s
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.156
   skip-cert-verify: true
+  sni: ''
   tls: true
   type: trojan
   udp: true
-- name: 378,494,537,538,559|🇷🇴RO罗马尼亚2
+- name: 378,472,473,474,494,537,538,559|🇷🇴RO罗马尼亚2
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -2151,7 +2158,7 @@ proxies:
       Host: serkat.org
     path: linkvws
 - alterId: 0
-  name: 378,494,502,537,574|🇴RO罗马尼亚2 2.2MB/s
+  name: 378,494,537,574|🇴RO罗马尼亚2 2.2MB/s
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -2161,7 +2168,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 378,494,536,537,544,559,574|🇷🇴RO罗马尼亚4 2.4MB/s
+  name: 378,494,536,537,559,574|🇷🇴RO罗马尼亚4 2.4MB/s
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -2266,6 +2273,14 @@ proxies:
   port: 810
   server: 3.67.113.118
   type: ss
+- cipher: aes-256-cfb
+  delay: 2851
+  name: '378,528,537|🇪DE-3.122.115.111-3117 #1'
+  password: amazonskr05
+  port: 443
+  server: 3.122.115.111
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: '378,537|🇪DE-193.108.118.34-3392 #1'
   password: faBAoD54k87UJG7
@@ -2616,21 +2631,13 @@ proxies:
   ws-opts:
     path: /cctv13/hd.m3u8
 - country: 🇬🇧GB
-  name: '378,435,436,536,537,559|🇬🇧GB_70 #2'
+  name: 378,435,436,536,537,559|🇬🇧GB_70
   password: 11559103-9993-4d00-b599-d6bcd8db2197
   port: 443
   server: free-v7-09.elbrusway.online
   skip-cert-verify: false
   sni: free-v7-09.elbrusway.online
   type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇺US
-  name: '378,435,489,537|🇩🇪DE-63.183.207.82-6042 #1'
-  password: amazonskr05
-  port: 443
-  server: 63.183.207.82
-  type: ss
   udp: true
 - country: 🇸US
   name: 378,435,436,494,537,559|德国_071804027
@@ -3309,22 +3316,22 @@ proxies:
     path: /
   ws-path: /
 - country: 🇪DE
-  name: '435,436,494|Join+Telegram:@Farah_VPN #1865'
-  password: CF68213490
-  port: 443
-  server: harmless-lab.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇩🇪DE
-  name: '435,436,494|Join+Telegram:@Farah_VPN #1169'
+  name: '435,436,494|Join+Telegram:@Farah_VPN #4363'
   password: XG59623478
   port: 443
   server: enabling-asp.rooster465.autos
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 438,580|🇩🇪DE_93|1.8MB/s|K001-260618 01
+- country: 🇩🇪DE
+  name: '435,436,494|Join+Telegram:@Farah_VPN #1319'
+  password: CF68213490
+  port: 443
+  server: harmless-lab.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 438,472,473,474,580|🇩🇪DE_93|1.8MB/s|K001-260618 01
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -3344,7 +3351,7 @@ proxies:
   tls: false
   type: hysteria2
   up: ''
-- name: 438,494,551,566|🇩🇪 德国 | DEU
+- name: 438,494,502,551,566|🇩🇪 德国 | DEU
   network: tcp
   port: 53776
   server: 45.32.155.73
@@ -3384,8 +3391,8 @@ proxies:
   uuid: c8b5f6c9-83ff-4ca1-be9c-f997a5b2f692
   ws-opts:
     headers:
-      Host: '%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI'
-- name: '438,494|Join+Telegram:@Farah_VPN #5036'
+      Host: /?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI
+- name: '438,494|Join+Telegram:@Farah_VPN #4610'
   network: tcp
   port: 56792
   server: samd.softupdl.ir
@@ -3395,7 +3402,6 @@ proxies:
   ws-opts:
     headers:
       Host: play.google.com
-    path: /
 - client-fingerprint: chrome
   name: 438,494,580|🇩🇪DE_179|516KB/s|B007-260618 0...
   network: xhttp
@@ -3413,7 +3419,7 @@ proxies:
       Host: hostname
     path: /path
 - client-fingerprint: ''
-  name: '438,494|Join+Telegram:@Farah_VPN #4164'
+  name: '438,494|Join+Telegram:@Farah_VPN #4373'
   network: xhttp
   port: 443
   reality-opts:
@@ -3442,7 +3448,7 @@ proxies:
   ws-opts:
     headers:
       Host: www.nvidia.com
-- name: '438,494|Join+Telegram:@Farah_VPN #4328'
+- name: '438,494|Join+Telegram:@Farah_VPN #4382'
   network: tcp
   port: 8529
   server: panel.podcastico.ir
@@ -3486,7 +3492,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 438,494,551|🇩🇪DE_3|1.6MB/s
+  name: '438,494,502,551|🇩🇪DE_3|1.6MB/s #1'
   network: xhttp
   port: 2087
   server: v2.gafe-rezvan.ir
@@ -3497,7 +3503,7 @@ proxies:
   uuid: 9d6104a5-fc6d-4fe6-95b7-80d8f699e09d
   ws-opts:
     headers:
-      Host: ch-de.sdcards.ir
+      Host: ch-us.sdcards.ir
     path: /
 - alpn:
   - h2
@@ -4000,6 +4006,16 @@ proxies:
   sni: apple.com
   type: hysteria
   up: 500
+- name: 496|🇩🇪114133 | ️Telegram = t.me/SO...
+  obfs: salamander
+  obfs-password: T-ME-V2RayyNGvpn
+  password: yDkExundefinedconf
+  port: 25810
+  server: 91.107.174.32
+  skip-cert-verify: true
+  sni: www.amd.com
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '502,523,524,559,717|DE【机场推荐：https://a9a.xyz】18 #1'
@@ -4013,40 +4029,86 @@ proxies:
   type: vless
   udp: true
   uuid: 8516c47e-a7a1-42f7-9c14-ae9b14873cc8
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 502|🇩🇪DE_2|2.5MB/s
-  port: 443
-  server: 5.175.178.61
-  servername: ipv6.flash.try-me.store
-  tls: true
-  type: vless
-  uuid: e93998e0-dd6a-4234-be21-362bcc66f926
 - client-fingerprint: chrome
-  name: 502,523,524,566|🇩🇪 德国 | DEU 25
-  network: tcp
-  port: 8380
-  reality-opts:
-    public-key: xtMO91xo5JUl2SvkUtozmSr2lLBFEkghyVALchFrYRY
-    short-id: 50acf6
-  server: 5.252.26.173
-  servername: yahoo.com
-  skip-cert-verify: true
+  encryption: mlkem768x25519plus.native.0rtt.BBBQ6KZyjiYmpp2ErhKd0OwCBOm4J6_McyVQdB5yhBI
+  name: 502,508,509,551,580|🇩🇪DE_124|4.6MB/s|S001-260618 0...
+  network: xhttp
+  port: 8443
+  server: love.ns.cloudflare.com
+  servername: vamosargentina.dpdns.org
   tls: true
   type: vless
   udp: true
-  uuid: a2292e36-fafb-6634-051d-1d99f45503c7
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: vamosargentina.dpdns.org
+    path: /
+  xhttp-opts:
+    host: vamosargentina.dpdns.org
+    mode: auto
+    path: /
+    x-padding-bytes: 100-1000
+  xudp: true
+- client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.BBBQ6KZyjiYmpp2ErhKd0OwCBOm4J6_McyVQdB5yhBI
+  name: 502,508,509,551,559,580|🇩🇪DE_167|5.0MB/s|S001-260618 0...
+  network: xhttp
+  port: 8443
+  server: bayan.ns.cloudflare.com
+  servername: vamosargentina.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: vamosargentina.dpdns.org
+    path: /
+  xhttp-opts:
+    host: vamosargentina.dpdns.org
+    mode: auto
+    path: /
+    x-padding-bytes: 100-1000
+  xudp: true
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: '502,551|🇩🇪DE_12|2.5MB/s #1'
+  port: 443
+  server: 5.178.101.137
+  servername: test.connect.try-me.store
+  tls: true
+  type: vless
+  uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '502,551|🇩🇪DE_13|3.5MB/s #1'
+  port: 443
+  server: de.monkeyvillage.pro
+  servername: de.monkeyvillage.pro
+  tls: true
+  type: vless
+  uuid: 528ee6c3-7d3c-410e-b0de-0d5da09aeb14
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: api.v1.StreamService
-  name: 502|🇩🇪DE_11|3.2MB/s
+  name: '502,551|🇩🇪DE_14|2.0MB/s #1'
   network: grpc
   port: 443
-  server: 88.216.220.147
-  servername: fetch.anotherok.com
+  server: relay.oneoknews.com
+  servername: relay.oneoknews.com
   tls: true
   type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  uuid: 5ae9ec50-5551-4bfa-9e09-bae15ffdd33d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,551|🇩🇪DE_16|1.6MB/s #1'
+  port: 10001
+  server: cdn.globalschool.edu.kg
+  servername: www.icloud.com
+  tls: true
+  type: vless
+  uuid: ef061344-6e1c-4e8b-bfba-46f7b3e21f9e
 - alpn:
   - h2
   - http/1.1
@@ -4249,16 +4311,6 @@ proxies:
   type: vless
   udp: true
   uuid: d2d72499-5ccf-5b7b-a17d-4cbf703112ee
-- name: '508,509|德国 081 #1'
-  network: tcp
-  port: 22224
-  server: 3.121.132.146
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: '508,509|德国 087 #1'
   network: tcp
   port: 22222
@@ -4331,6 +4383,20 @@ proxies:
   type: vless
   udp: true
   uuid: 13b55e8e-fbea-4ee1-b6b7-115fa3043182
+- client-fingerprint: chrome
+  name: 523,524,566|🇩🇪 德国 | DEU 25
+  network: tcp
+  port: 8380
+  reality-opts:
+    public-key: xtMO91xo5JUl2SvkUtozmSr2lLBFEkghyVALchFrYRY
+    short-id: 50acf6
+  server: 5.252.26.173
+  servername: yahoo.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2292e36-fafb-6634-051d-1d99f45503c7
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '523,524|🇩🇪_德国_21 #1'
@@ -4373,13 +4439,6 @@ proxies:
   type: vless
   udp: true
   uuid: 320fb564-c329-4d32-8187-89d7058af0eb
-- name: 536,559,580|🇩🇪DE_70|1.8MB/s|S004-260618 01
-  network: tcp
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.151
-  sni: 185.137.157.151
-  type: trojan
 - cipher: rc4-md5
   name: '536|8J%2BHrfCfh7BISy00My4yNTUuMTE5... #1'
   obfs: plain
@@ -4390,44 +4449,6 @@ proxies:
   protocol-param: ''
   server: cdn01.25k2l8.meituan88.com
   type: ssr
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 551|🇩🇪DE_12|2.5MB/s
-  port: 443
-  server: 5.178.101.137
-  servername: test.connect.try-me.store
-  tls: true
-  type: vless
-  uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 551|🇩🇪DE_13|3.5MB/s
-  port: 443
-  server: de.monkeyvillage.pro
-  servername: de.monkeyvillage.pro
-  tls: true
-  type: vless
-  uuid: 528ee6c3-7d3c-410e-b0de-0d5da09aeb14
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
-  name: 551|🇩🇪DE_14|2.0MB/s
-  network: grpc
-  port: 443
-  server: relay.oneoknews.com
-  servername: relay.oneoknews.com
-  tls: true
-  type: vless
-  uuid: 5ae9ec50-5551-4bfa-9e09-bae15ffdd33d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 551|🇩🇪DE_16|1.6MB/s
-  port: 10001
-  server: cdn.globalschool.edu.kg
-  servername: www.icloud.com
-  tls: true
-  type: vless
-  uuid: ef061344-6e1c-4e8b-bfba-46f7b3e21f9e
 - cipher: chacha20-ietf-poly1305
   name: 558|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5478,6 +5499,13 @@ proxies:
   tls: false
   type: vless
   uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+- name: 566|🇩🇪 德国 | DEU 6
+  network: tcp
+  port: 2090
+  server: 46.8.225.98
+  tls: false
+  type: vless
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
 - alterId: 0
   cipher: auto
   name: 566|🇩🇪 德国 | DEU 7
@@ -5487,20 +5515,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-- client-fingerprint: chrome
-  name: 566|🇩🇪 德国 | DEU 8
-  network: ws
-  port: 443
-  server: 199.232.249.110
-  servername: ssl.fastly.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
-  ws-opts:
-    headers:
-      Host: pan1.global.ssl.fastly.net
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
 - client-fingerprint: chrome
   name: 566|🇩🇪 德国 | DEU 9
   network: ws
@@ -5783,19 +5797,6 @@ proxies:
       Host: amooaliii.net
     path: /jdhfyws
 - client-fingerprint: chrome
-  name: 580|🇩🇪DE_30|5.3MB/s|B007-260618 01
-  network: ws
-  port: 443
-  server: 104.21.74.63
-  servername: amooaliii.net
-  tls: true
-  type: vless
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
-  ws-opts:
-    headers:
-      Host: amooaliii.net
-    path: /jdhfyws
-- client-fingerprint: chrome
   name: 580|🇩🇪DE_11|7.0MB/s|B007-260618 01
   network: ws
   port: 443
@@ -5903,6 +5904,15 @@ proxies:
     headers:
       Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
     path: /@Marisa_kristi
+- grpc-opts:
+    grpc-service-name: vless
+  name: 580|🇩🇪DE_28|1.5MB/s|P002-260618 01
+  network: grpc
+  port: 2085
+  server: 45.86.159.134
+  tls: false
+  type: vless
+  uuid: 1ea1b30b-4114-4a5c-bd3a-9637bdae1948
 - client-fingerprint: chrome
   name: 580|🇩🇪DE_29|5.8MB/s|B007-260618 01
   network: ws
@@ -5916,6 +5926,15 @@ proxies:
     headers:
       Host: amooaliii.net
     path: /jdhfyws
+- grpc-opts:
+    grpc-service-name: vless
+  name: 580|🇩🇪DE_32|2.3MB/s|B007-260618 01
+  network: grpc
+  port: 2085
+  server: 45.86.159.136
+  tls: false
+  type: vless
+  uuid: 1ea1b30b-4114-4a5c-bd3a-9637bdae1948
 - client-fingerprint: chrome
   name: 580|🇩🇪DE_162|2.6MB/s|M002-260618 0...
   network: raw
@@ -5935,6 +5954,15 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
+- grpc-opts:
+    grpc-service-name: vless
+  name: 580|🇩🇪DE_39|2.0MB/s|B007-260618 01
+  network: grpc
+  port: 2085
+  server: 45.86.159.142
+  tls: false
+  type: vless
+  uuid: 1ea1b30b-4114-4a5c-bd3a-9637bdae1948
 - alpn:
   - networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-
   client-fingerprint: chrome
@@ -6144,19 +6172,6 @@ proxies:
     headers:
       Host: kcxal.freshfieldhub-ili.sbs
     path: /sea
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 580|🇩🇪DE_92|2.0MB/s|S004-260618 01
-  network: tcp
-  port: 50567
-  reality-opts:
-    public-key: NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs
-    short-id: 29a833ab20778306
-  server: 52b59d9fbc7ee2fc.mbcloudynias.ir
-  servername: play.google.com
-  tls: false
-  type: vless
-  uuid: 3b4529e8-9c14-4541-8388-fe90d737baeb
 - client-fingerprint: chrome
   name: 580|🇩🇪DE_94|2.6MB/s|M002-260618 01
   network: ws
@@ -6196,6 +6211,15 @@ proxies:
     headers:
       Host: 3byyf8q0.qnts33mtgi0ebq9tjd34.workers.dev
     path: /
+- grpc-opts:
+    grpc-service-name: vless
+  name: 580|🇩🇪DE_113|3.5MB/s|V004-260618 0...
+  network: grpc
+  port: 2085
+  server: 81.31.211.117
+  tls: false
+  type: vless
+  uuid: 3067642d-02fa-47e9-a6a2-fb5dda565969
 - client-fingerprint: chrome
   name: 580|🇩🇪DE_114|2.2MB/s|T001-260618 0...
   network: ws
@@ -6209,6 +6233,15 @@ proxies:
     headers:
       Host: etppnyfi.j84lb8cxseup4s2nb3if.workers.dev
     path: /
+- grpc-opts:
+    grpc-service-name: vless
+  name: '580|未知 VLESS-332 | free-nodes #1'
+  network: grpc
+  port: 2085
+  server: 45.86.159.138
+  tls: false
+  type: vless
+  uuid: 3067642d-02fa-47e9-a6a2-fb5dda565969
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 580|🇩🇪DE_123|2.7MB/s|B007-260618 0...
@@ -6274,6 +6307,15 @@ proxies:
     headers:
       Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
     path: /@Marisa_kristi
+- grpc-opts:
+    grpc-service-name: vless
+  name: '580|未知 VLESS-458 | free-nodes #1'
+  network: grpc
+  port: 2085
+  server: 45.86.159.139
+  tls: false
+  type: vless
+  uuid: 5fbee2a0-7ca4-46a8-aac7-9f26a1f2cb3c
 - grpc-opts:
     grpc-service-name: vless
   name: 580|🇩🇪DE_131|2.6MB/s|B007-260618 0...
@@ -6397,6 +6439,13 @@ proxies:
     headers:
       Host: speedtestgoogleyahoobingyandexgmailappleaol.xbx24.ir
     path: /mehdi
+- name: 580|🇩🇪DE_198|1.5MB/s|B007-260618 0...
+  network: tcp
+  port: 22224
+  server: 63.185.211.137
+  tls: false
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - alpn:
   - h2
   - http/1.1
