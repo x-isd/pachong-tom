@@ -270,12 +270,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: aes-256-gcm
-  name: 127|🇭🇰 HK_1|7.6MB/s|YT-HK|NF
-  password: feng3d@ss2025
-  port: 8388
-  server: li.feng3d.com
-  type: ss
 - alterId: 0
   cipher: auto
   name: '128,430|香港NO.2 #1'
@@ -830,7 +824,7 @@ proxies:
     path: /stream?ed=2048
 - name: 232|香港1-hy2  协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 23557
+  port: 26928
   ports: 22000-27000
   server: hk1.xiaoliyu.cyou
   skip-cert-verify: true
@@ -845,18 +839,18 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '306,340,378,502,514,515,516,523,524,537,544,551,556,557|香港3|@ripaojiedian
-    #2'
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,523,524,537,544,551,556,557,574|🇭🇰HK香港4
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 47867
   server: 18.166.74.220
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
-- name: 306,340,378,502,514,515,516,537,544,551,556,557|香港4|@ripaojiedian
+- name: '306,340,378,494,502,514,515,516,537,544,551,556,557|香港4|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 7674
@@ -864,24 +858,30 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '306,340,378,502,514,515,516,537,544,551,556,557|日本2|@ripaojiedian #2'
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,537,544,551,556,557,574|🇯🇵JP日本9
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 40138
   server: 16.163.40.213
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,340,378,502,514,515,516,537,544,551,556,557|日本3|@ripaojiedian #2'
+  udp: true
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,537,544,551,556,557,574|🇵JP日本4
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 38937
   server: 16.163.40.213
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,340,378,502,514,515,516,523,524,537,544,551,556,557|新加坡|@ripaojiedian
-    #2'
+  udp: true
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,523,524,537,544,551,556,557,574|🇸🇬SG新加坡6
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 6357
@@ -891,25 +891,29 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 306,340,378,438,502,514,515,516,537,544,551,556,557|美国|@ripaojiedian
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,537,544,551,556,557,574|🇸US
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 49277
   server: 16.163.108.33
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 306,340,378,438,502,514,515,516,523,524,537,544,551,556,557|美国2|@ripaojiedian
-  network: tcp
-  password: b490740312aedb5f9f6b84c7aebd08c0
-  port: 17005
-  server: 16.163.108.33
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
-- name: '306,340,378,502,514,515,516,523,524,537,544,551,556,557|美国3|@ripaojiedian
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,523,524,537,544,551,556,557,574|🇸US美国6
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 17005
+  server: 16.163.108.33
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- name: '306,340,378,494,502,514,515,516,523,524,537,544,551,556,557|美国3|@ripaojiedian
     #2'
   network: tcp
   password: BxceQaOe
@@ -922,7 +926,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  country: 🇰HK
+  country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
   name: '306,340,435,437,454,459,494,502,514,515,516,544,551,557,559,580,581|🇭🇰_HK_中国香港
@@ -2029,18 +2033,15 @@ proxies:
   uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a
   ws-opts:
     path: /
-- alterId: 0
-  name: 378,494,508,509,536,537,559,574,636|🇦🇺 澳大利亚 001
+- name: 378,508,509,536,537,559,636|🇦🇺 澳大利亚 001
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 13118
   server: 43.198.71.42
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- name: 378,494,508,509,536,537,559,636|🇺🇸 美国 001
+- name: 378,508,509,536,537,559,636|🇺🇸 美国 001
   network: tcp
   password: BxceQaOe
   port: 7674
@@ -2048,7 +2049,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 378,494,508,509,536,537,559,580,636|🇺🇸 美国 002
+- name: 378,508,509,536,537,559,580,636|🇺🇸 美国 002
   network: tcp
   password: BxceQaOe
   port: 27167
@@ -2056,7 +2057,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 378,494,508,509,536,537,559,636|🇺🇸 美国 003
+- name: 378,508,509,536,537,559,636|🇺🇸 美国 003
   network: tcp
   password: BxceQaOe
   port: 4099
@@ -2064,51 +2065,39 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- alterId: 0
-  name: 378,494,508,509,536,537,559,574,636|🇦🇺 澳大利亚 002
+- name: 378,508,509,536,537,559,636|🇦🇺 澳大利亚 002
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 24370
   server: 43.198.71.42
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: 378,494,508,509,536,537,559,574,580,636|🇺🇸 美国 004
+- name: 378,508,509,536,537,559,580,636|🇺🇸 美国 004
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 24370
   server: 18.166.55.241
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: 378,494,508,509,536,537,559,574,636|🇺🇸 美国 005
+- name: 378,508,509,536,537,559,636|🇺🇸 美国 005
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 48738
   server: 18.163.180.35
   skip-cert-verify: true
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: 378,494,508,509,536,537,559,574,636|🇦🇺 澳大利亚 003
+- name: 378,508,509,536,537,559,636|🇦🇺 澳大利亚 003
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 6357
   server: 43.198.71.42
   skip-cert-verify: true
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- name: 378,494,508,509,536,537,559,580,636|🇺🇸 美国 006
+- name: 378,508,509,536,537,559,580,636|🇺🇸 美国 006
   network: tcp
   password: BxceQaOe
   port: 9149
@@ -2116,29 +2105,23 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- alterId: 0
-  name: 378,494,508,509,536,537,559,574,580,636|🇺🇸 美国 007
+- name: 378,508,509,536,537,559,580,636|🇺🇸 美国 007
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 17005
   server: 18.166.55.241
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: 378,494,508,509,536,537,559,574,636|🇦🇺 澳大利亚 004
+- name: 378,508,509,536,537,559,636|🇦🇺 澳大利亚 004
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 17005
   server: 43.198.71.42
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- name: 378,494,508,509,536,537,559,636|🇺🇸 美国 008
+- name: 378,508,509,536,537,559,636|🇺🇸 美国 008
   network: tcp
   password: BxceQaOe
   port: 35966
@@ -3403,7 +3386,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: 🇺HU
+- country: HU
   name: '378,435,436,536,537|🇰HK-185.244.208.59-5942 #1'
   password: WF42809561
   port: 443
@@ -5296,15 +5279,21 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: aes-256-gcm
+  name: 426|🇭🇰 HK_1|7.6MB/s|YT-HK|NF
+  password: feng3d@ss2025
+  port: 8388
+  server: li.feng3d.com
+  type: ss
 - alterId: 2
   cipher: auto
-  country: 🇭🇰HK
+  country: 🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 435,437,459,559|🇭🇰HK_77
+  name: 435,437,459,559|🇭🇰HK_74
   network: tcp
-  port: 30804
-  server: v4.hdacd.com
+  port: 30829
+  server: v29.hdacd.com
   servername: ''
   skip-cert-verify: true
   tls: false
@@ -5868,7 +5857,7 @@ proxies:
   xudp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '502,523,524,551|🇭🇰HK_2|2.1MB/s #1'
+  name: '502,523,524|🇭🇰_香港_32 #1'
   port: 443
   reality-opts:
     public-key: MCdZOPt6XUdH3N8xQc6J4GElI9_9csxjsOOzwCPZjR0
@@ -5925,7 +5914,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,580|HK VLESS-892 | free-nodes #1'
+  name: 507,580|HK VLESS-892 | free-nodes
   network: tcp
   port: 443
   server: s299.freessr.bid
@@ -6943,23 +6932,9 @@ proxies:
     headers:
       Host: s5gydl.936.us.ci
     path: /proxyip=tw.william.us.ci?uuid=f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- alterId: 2
-  cipher: auto
-  name: '574|HK #1'
-  network: ws
-  port: 80
-  server: e0349a52-sv8cg0-t7uinf-i8ie.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
-  ws-opts:
-    headers:
-      host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 0
   cipher: auto
-  name: '574|HK2 #1'
+  name: '574|HK #1'
   network: ws
   port: 11655
   server: 131.186.63.89
@@ -6971,6 +6946,20 @@ proxies:
     headers:
       host: hk.nbee.pp.ua
     path: /aa
+- alterId: 2
+  cipher: auto
+  name: 574|HK5
+  network: ws
+  port: 80
+  server: e0349a52-sv8cg0-t7uinf-i8ie.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
+  ws-opts:
+    headers:
+      host: broadcastlv.chat.bilibili.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 577|澳门NO.2
@@ -7276,6 +7265,14 @@ proxies:
   tls: false
   type: vless
   uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
+- name: 580|香港 26
+  network: tcp
+  password: BxceQaOe
+  port: 27167
+  server: 18.166.113.165
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
 - client-fingerprint: randomized
   name: 583|eooce-04-HK
   network: ws
@@ -7392,7 +7389,7 @@ proxies:
   type: http
   udp: true
   username: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
-- name: '605|HK #2'
+- name: '605|HK #3'
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 41288
