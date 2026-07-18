@@ -138,21 +138,6 @@ proxies:
   port: 989
   server: 121.127.46.147
   type: ss
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 438,472,473,474,494,519,523,524,566|🇸🇪 瑞典 | SWE
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-  server: 185.231.101.89
-  servername: se.quattro-tech.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ecad47b0-249e-4f6f-adff-e3c8f02b1897
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 438,494,507|未知 VLESS-669 | free-nodes
@@ -166,6 +151,21 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vless
+  uuid: ecad47b0-249e-4f6f-adff-e3c8f02b1897
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '438,494,523,524|🇸🇪_瑞典_10 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
+  server: 185.231.101.89
+  servername: se.quattro-tech.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
   uuid: ecad47b0-249e-4f6f-adff-e3c8f02b1897
 - name: '455,457,458|🇸🇪_SE_瑞典 #2'
   network: ws
@@ -194,91 +194,10 @@ proxies:
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
   type: trojan
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: '489,494,502,507,523,524,559,566,580,717|PL【机场推荐：https://a9a.xyz】13 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U
-  server: meow-warsaw.nethcloud.top
-  servername: www.wikihow.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
-  xudp: true
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: api.v1.StreamService
-  name: 502,566|🇬🇧 英国 | GBR 2
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: uYXyM2Nwmqw3bSDSV95XmpbOaAYBmBTh619Vl8lFJRs
-    short-id: 60cde13ab21686e9
-  server: stats.oneoker.com
-  servername: stats.oneoker.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-- name: '508,509|瑞典 017 #1'
-  network: ws
-  port: 80
-  server: 146.75.119.82
-  servername: rb24.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 03c98076-6da5-4fe4-be5a-1b06c9aecf47
-  ws-opts:
-    headers:
-      Host: rb24.ir
-    path: ws/?ed=2048/
-- name: '508,509|瑞典 018 #1'
-  network: xhttp
-  port: 80
-  server: global.connectingissues.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 718ff826-3d64-441c-b1ec-54a1d7394931
-- name: '508,509|瑞典 019 #1'
-  network: xhttp
-  port: 80
-  server: Spd-mynames.global.ssl.fastly.net
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8e378a41-d5e1-427a-aaf8-30190d4be0a0
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 523,524,566|🇸🇪 瑞典 | SWE 4
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: T3x4G7qo9E25RaeXGVpZCbRpKYmzVVA4ewtJ5xkyq3I
-    short-id: a1b2c3d4e5f6
-  server: se.white-aist.com
-  servername: yahoo.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5b38fd24-4d47-4ee2-a077-7d125e723230
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '523,524|🇸🇪_瑞典_31 #1'
+  name: 523,524,566|🇸🇪 瑞典 | SWE 2
+  network: tcp
   port: 443
   reality-opts:
     public-key: wiqox4cXWo08IKTueVpIp5k0aC25Hcbuo0uAKvqlQ2Y
@@ -530,6 +449,21 @@ proxies:
   sni: swe-one.quiet-rogue.site
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: auragrpc
+  name: 566|🇸🇪 瑞典 | SWE 3
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: TGJxKbPG8ds2NwK6uhgQURUfVJ01BcRh3Eaoy3dtdGA
+    short-id: a3d8f1e9b2c7d4e6
+  server: virgin.ggsw01.auragg.org
+  servername: cloudflare.com
+  tls: true
+  type: vless
+  uuid: b05346a9-4d13-41a4-8d2a-6b7b64e73ffc
 - name: '580|瑞典丨yoyapai.com #8'
   network: ws
   password: Mitivpn
@@ -644,19 +578,6 @@ proxies:
     headers:
       Host: WqQdZtWi6.DoVaRi24.oRg
     path: /mashdi
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 580|🇸🇪SE_15|2.2MB/s|S001-260618 01
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 1c7TsslPz_gsvzX4ENkEa36Pp3gm-M3SRLhvqtGaAz4
-    short-id: e8e019c424ccb765
-  server: st.onnstreaming.ru
-  servername: st.onnstreaming.ru
-  tls: false
-  type: vless
-  uuid: d1c624fc-d0b0-49c7-8afa-e15a5949bc17
 - name: 728|🇸🇪 瑞典1🔒
   password: 升级订阅解锁全部节点
   port: 443

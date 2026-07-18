@@ -1,4 +1,38 @@
 proxies:
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 60|🇭🇰 香港01
+  network: ws
+  port: 12345
+  server: 119.237.21.220
+  servername: 123.714541.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+  ws-opts:
+    headers:
+      Host: 123.714541.xyz
+    path: /ccs-vl?ed=2560
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 60|🇭🇰 香港02
+  network: ws
+  port: 443
+  server: 58.152.13.239
+  servername: 123.714542.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+  ws-opts:
+    headers:
+      Host: 123.714542.xyz
+    path: /ccss-vl?ed=2560
 - alterId: 0
   cipher: auto
   name: 78|🇭🇰 香港NO.1
@@ -9,7 +43,7 @@ proxies:
   udp: true
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - cipher: chacha20-ietf-poly1305
-  name: 78|🇭🇰 香港01
+  name: '78|🇭🇰 香港01 #1'
   password: 0871a57c-64fd-44ff-a6aa-90d14d497b97
   port: 34338
   server: gy.666666222.shop
@@ -44,7 +78,7 @@ proxies:
   udp: true
   uuid: c0ee59ff-c24d-4932-9216-2da19ab0b056
 - cipher: chacha20-ietf-poly1305
-  name: 78|🇭🇰 香港02
+  name: '78|🇭🇰 香港02 #1'
   password: 0871a57c-64fd-44ff-a6aa-90d14d497b97
   port: 20035
   server: gy.666666222.shop
@@ -114,7 +148,7 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇨🇳 中国 022
+  name: 119,378,508,509,536,537,636|🇨🇳 中国 020
   network: ws
   port: '8080'
   server: 104.208.85.56
@@ -130,7 +164,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇺🇸 美国 514
+  name: 119,378,508,509,536,537,636|🇺🇸 美国 505
   network: ws
   port: '8080'
   server: 154.3.35.27
@@ -146,7 +180,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇨🇳 中国 023
+  name: 119,378,508,509,536,537,636|🇨🇳 中国 021
   network: ws
   port: '8080'
   server: 156.251.176.167
@@ -177,7 +211,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇺🇸 美国 523
+  name: 119,378,508,509,536,537,636|🇺🇸 美国 514
   network: ws
   port: '8080'
   server: 166.88.77.31
@@ -193,7 +227,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇺🇸 美国 524
+  name: 119,378,508,509,536,537,636|🇺🇸 美国 515
   network: ws
   port: '8080'
   server: 149.62.46.53
@@ -240,7 +274,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇦🇺 澳大利亚 016
+  name: 119,378,508,509,536,537,636|🇦🇺 澳大利亚 014
   network: ws
   port: '9000'
   server: 43.154.53.65
@@ -256,7 +290,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇨🇳 中国 025
+  name: 119,378,508,509,536,537,636|🇨🇳 中国 023
   network: ws
   port: '8080'
   server: 101.33.120.19
@@ -270,6 +304,12 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- cipher: aes-256-gcm
+  name: '127,426|🇭🇰 HK_1|7.6MB/s|YT-HK|NF #1'
+  password: feng3d@ss2025
+  port: 8388
+  server: li.feng3d.com
+  type: ss
 - alterId: 0
   cipher: auto
   name: '128,430|香港NO.2 #1'
@@ -824,11 +864,43 @@ proxies:
     path: /stream?ed=2048
 - name: 232|香港1-hy2  协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 26928
+  port: 24460
   ports: 22000-27000
   server: hk1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 248|香港01
+  network: ws
+  port: 12345
+  server: 119.237.21.220
+  servername: 123.714541.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+  ws-opts:
+    headers:
+      Host: 123.714541.xyz
+    path: '%2Fccs-vl%3Fed%3D2560'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 248|香港02
+  network: ws
+  port: 443
+  server: 58.152.13.239
+  servername: 123.714542.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+  ws-opts:
+    headers:
+      Host: 123.714542.xyz
+    path: '%2Fccss-vl%3Fed%3D2560'
 - alterId: 2
   cipher: auto
   name: '306,515,516,522,548,556|🇭🇰 香港|@ripaojiedian #3'
@@ -840,17 +912,18 @@ proxies:
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,523,524,537,544,551,556,557,574|🇭🇰HK香港4
+  name: 306,340,378,494,502,508,509,514,515,516,523,524,537,544,551,556,557,574,636|🇺🇸
+    美国 001
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 47867
   server: 18.166.74.220
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
-- name: '306,340,378,494,502,514,515,516,537,544,551,556,557|香港4|@ripaojiedian #1'
+- name: 306,340,378,494,502,508,509,514,515,516,537,544,551,556,557,636|🇺🇸 美国 002
   network: tcp
   password: BxceQaOe
   port: 7674
@@ -859,29 +932,32 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,537,544,551,556,557,574|🇯🇵JP日本9
+  name: 306,340,378,494,502,508,509,514,515,516,537,544,551,556,557,574,636|🇺🇸 美国
+    004
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 40138
   server: 16.163.40.213
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,537,544,551,556,557,574|🇵JP日本4
+  name: 306,340,378,494,502,508,509,514,515,516,537,544,551,556,557,574,636|🇺🇸 美国
+    005
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 38937
   server: 16.163.40.213
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,523,524,537,544,551,556,557,574|🇸🇬SG新加坡6
+  name: 306,340,378,494,502,508,509,514,515,516,523,524,537,544,551,556,557,574,636|🇺🇸
+    美国 006
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 6357
@@ -892,29 +968,31 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,537,544,551,556,557,574|🇸US
+  name: 306,340,378,494,502,508,509,514,515,516,537,544,551,556,557,574,636|🇺🇸 美国
+    008
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 49277
   server: 16.163.108.33
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,523,524,537,544,551,556,557,574|🇸US美国6
+  name: 306,340,378,494,502,508,509,514,515,516,523,524,537,544,551,556,557,574,636|🇺🇸
+    美国 009
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 17005
   server: 16.163.108.33
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
-- name: '306,340,378,494,502,514,515,516,523,524,537,544,551,556,557|美国3|@ripaojiedian
-    #2'
+- name: 306,340,378,494,502,508,509,514,515,516,523,524,537,544,551,556,557,636|🇦🇺
+    澳大利亚 001
   network: tcp
   password: BxceQaOe
   port: 25651
@@ -926,7 +1004,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  country: 🇭🇰HK
+  country: 🇰HK
   h2-opts: {}
   http-opts: {}
   name: '306,340,435,437,454,459,494,502,514,515,516,544,551,557,559,580,581|🇭🇰_HK_中国香港
@@ -940,16 +1018,6 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  delay: 940
-  name: '306,378,519,528,537|🇭🇰HK-45.78.30.173-0412 #1'
-  password: gXtfJmxrZ8Qkkd2k
-  port: 16025
-  server: c722s1.portablesubmarines.com
-  skip-cert-verify: true
-  type: ss
-  udp: true
 - name: '340,495,502,514,551,559|7| HK #2'
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
@@ -1817,7 +1885,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: '374|🇭🇰 香港02 #1'
+  name: '374|🇭🇰 香港02 #2'
   password: 9c997bc8-c00a-4a35-b64c-38bee4c4c8d3
   port: 20035
   server: gy.666666222.shop
@@ -1849,7 +1917,7 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: chacha20-ietf-poly1305
-  name: '374|🇭🇰 香港01 #1'
+  name: '374|🇭🇰 香港01 #2'
   password: 9c997bc8-c00a-4a35-b64c-38bee4c4c8d3
   port: 34338
   server: gy.666666222.shop
@@ -1961,9 +2029,17 @@ proxies:
   skip-cert-verify: true
   sni: electric-sturgeon.rooster465.autos
   type: trojan
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  delay: 940
+  name: '378,528,537|🇭🇰HK-45.78.30.173-0412 #1'
+  password: gXtfJmxrZ8Qkkd2k
+  port: 16025
+  server: c722s1.portablesubmarines.com
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 378,494,507,508,509,536,537,544,559,580,636|🇨🇳 中国 007
+  name: '378,494,507,536,537,544,559,580|未知 VMESS-822 | free-nodes #1'
   network: ws
   port: '443'
   server: n1747624274.4u9ma.icu
@@ -1971,7 +2047,6 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vmess
-  udp: true
   uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
   ws-opts:
     headers:
@@ -1992,7 +2067,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 467
+  name: 378,508,509,536,537,636|🇺🇸 美国 453
   network: ws
   port: '80'
   server: ee.oppo.quest
@@ -2007,7 +2082,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 471
+  name: 378,508,509,536,537,636|🇺🇸 美国 457
   network: ws
   port: '80'
   server: cfhk.oppo.quest
@@ -2033,7 +2108,7 @@ proxies:
   uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a
   ws-opts:
     path: /
-- name: 378,508,509,536,537,559,636|🇦🇺 澳大利亚 001
+- name: '378,536,537,559|10,11|香港3|@ripaojiedian #4'
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 13118
@@ -2041,7 +2116,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,508,509,536,537,559,636|🇺🇸 美国 001
+- name: '378,536,537,559|10,11|香港4|@ripaojiedian #4'
   network: tcp
   password: BxceQaOe
   port: 7674
@@ -2049,7 +2124,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 378,508,509,536,537,559,580,636|🇺🇸 美国 002
+- name: 378,536,537,559,580|香港 25
   network: tcp
   password: BxceQaOe
   port: 27167
@@ -2057,7 +2132,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 378,508,509,536,537,559,636|🇺🇸 美国 003
+- name: '378,536,537,559|10,11|日本|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 4099
@@ -2065,7 +2140,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 378,508,509,536,537,559,636|🇦🇺 澳大利亚 002
+- name: '378,536,537,559|10,11|日本2|@ripaojiedian #4'
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 24370
@@ -2073,7 +2148,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,508,509,536,537,559,580,636|🇺🇸 美国 004
+- name: 378,536,537,559,580|🇯🇵JP_379|2.4MB/s|R001-260618 0...
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 24370
@@ -2081,7 +2156,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,508,509,536,537,559,636|🇺🇸 美国 005
+- name: '378,536,537,559|10,11|新加坡|@ripaojiedian #2'
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 48738
@@ -2089,7 +2164,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 378,508,509,536,537,559,636|🇦🇺 澳大利亚 003
+- name: '378,536,537,559|10,11|新加坡2|@ripaojiedian #4'
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 6357
@@ -2097,7 +2172,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 378,508,509,536,537,559,580,636|🇺🇸 美国 006
+- name: 378,536,537,559,580|🇸🇬SG_211|2.6MB/s|R001-260618 0...
   network: tcp
   password: BxceQaOe
   port: 9149
@@ -2105,7 +2180,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 378,508,509,536,537,559,580,636|🇺🇸 美国 007
+- name: 378,536,537,559,580|🇺🇸US_1645|2.0MB/s|R001-260618 ...
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 17005
@@ -2113,7 +2188,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,508,509,536,537,559,636|🇦🇺 澳大利亚 004
+- name: '378,536,537,559|10,11|美国2|@ripaojiedian #4'
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 17005
@@ -2121,7 +2196,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,508,509,536,537,559,636|🇺🇸 美国 008
+- name: '378,536,537,559|10,11|美国3|@ripaojiedian #4'
   network: tcp
   password: BxceQaOe
   port: 35966
@@ -2138,7 +2213,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,528,536,537,636|🇳🇱 荷兰 021
+  name: 378,508,509,528,536,537,636|🇳🇱 荷兰 026
   network: http
   port: '27272'
   server: 45.158.23.138
@@ -2146,11 +2221,10 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: 1c7c0c72-6bc1-4e51-ada8-0e5570bb4780
 - alterId: 2
   cipher: auto
-  name: 378,494,508,509,536,537,559,636|🇨🇳 中国 008
+  name: 378,494,508,509,536,537,559,636|🇨🇳 中国 007
   network: ws
   port: '80'
   server: e0349a52-sv8cg0-t7uinf-i8ie.hk3.p5pv.com
@@ -2165,7 +2239,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,494,507,508,509,536,537,559,580,636|🇨🇳 中国 018
+  name: 378,494,507,508,509,536,537,559,580,636|🇨🇳 中国 016
   network: ws
   port: '443'
   server: n1747624260.4u9ma.icu
@@ -2180,7 +2254,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 489
+  name: 378,508,509,536,537,636|🇺🇸 美国 480
   network: ws
   port: '50045'
   server: 20.239.179.251
@@ -2195,7 +2269,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 027
+  name: 378,508,509,536,537,636|🇨🇳 中国 025
   network: ws
   port: '443'
   server: 103.212.98.234
@@ -2225,7 +2299,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 030
+  name: 378,508,509,536,537,636|🇨🇳 中国 028
   network: ws
   port: '80'
   server: hkt.gotochinatown.net
@@ -2240,7 +2314,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 031
+  name: 378,508,509,536,537,636|🇨🇳 中国 029
   network: ws
   port: '80'
   server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
@@ -2255,7 +2329,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 040
+  name: 378,508,509,536,537,636|🇨🇳 中国 038
   network: ws
   port: '80'
   server: 182.16.1.194
@@ -2270,7 +2344,7 @@ proxies:
     path: /opt/video/images
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 041
+  name: 378,508,509,536,537,636|🇨🇳 中国 039
   network: ws
   port: '8080'
   server: yh7.dtku41.xyz
@@ -2285,7 +2359,7 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,559,636|🇨🇳 中国 043
+  name: 378,508,509,536,537,559,636|🇨🇳 中国 041
   network: ws
   port: '30002'
   server: 64.120.121.21
@@ -2300,7 +2374,7 @@ proxies:
     path: /path/191019072927
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇳🇱 荷兰 028
+  name: 378,508,509,536,537,636|🇳🇱 荷兰 033
   network: ws
   port: '20015'
   server: 45.144.174.12
@@ -2319,7 +2393,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 045
+  name: 378,508,509,536,537,636|🇨🇳 中国 043
   network: http
   port: '31357'
   server: 8.210.131.2
@@ -2334,7 +2408,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 046
+  name: 378,508,509,536,537,636|🇨🇳 中国 044
   network: http
   port: '54620'
   server: 47.242.69.124
@@ -2349,7 +2423,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 048
+  name: 378,508,509,536,537,636|🇨🇳 中国 046
   network: http
   port: '35668'
   server: 47.243.230.222
@@ -2364,7 +2438,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 051
+  name: 378,508,509,536,537,636|🇨🇳 中国 049
   network: http
   port: '60808'
   server: 47.243.187.171
@@ -2379,7 +2453,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 053
+  name: 378,508,509,536,537,636|🇨🇳 中国 051
   network: http
   port: '47365'
   server: 47.243.185.128
@@ -2394,7 +2468,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 054
+  name: 378,508,509,536,537,636|🇨🇳 中国 052
   network: http
   port: '41083'
   server: 8.210.15.231
@@ -2409,7 +2483,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 055
+  name: 378,508,509,536,537,636|🇨🇳 中国 053
   network: http
   port: '28045'
   server: 47.242.26.30
@@ -2420,7 +2494,7 @@ proxies:
   uuid: bb73d6fe-9700-4607-8dc1-eb9f15253e9d
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 056
+  name: 378,508,509,536,537,636|🇨🇳 中国 054
   network: ws
   port: '443'
   server: fullaccesstohongkongnet.azurewebsites.net
@@ -2439,7 +2513,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 057
+  name: 378,508,509,536,537,636|🇨🇳 中国 055
   network: http
   port: '62307'
   server: 47.242.65.80
@@ -2454,7 +2528,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 058
+  name: 378,508,509,536,537,636|🇨🇳 中国 056
   network: http
   port: '61228'
   server: 8.210.236.45
@@ -2469,7 +2543,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 059
+  name: 378,508,509,536,537,636|🇨🇳 中国 057
   network: http
   port: '36298'
   server: 47.242.1.160
@@ -2484,7 +2558,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 060
+  name: 378,508,509,536,537,636|🇨🇳 中国 058
   network: http
   port: '48236'
   server: 8.210.166.114
@@ -2499,7 +2573,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 061
+  name: 378,508,509,536,537,636|🇨🇳 中国 059
   network: http
   port: '54570'
   server: 8.210.248.210
@@ -2514,7 +2588,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 062
+  name: 378,508,509,536,537,636|🇨🇳 中国 060
   network: http
   port: '51007'
   server: 47.242.21.177
@@ -2529,7 +2603,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 064
+  name: 378,508,509,536,537,636|🇨🇳 中国 062
   network: http
   port: '45751'
   server: 8.210.20.159
@@ -2544,7 +2618,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 065
+  name: 378,508,509,536,537,636|🇨🇳 中国 063
   network: http
   port: '48577'
   server: 8.210.153.242
@@ -2559,7 +2633,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 066
+  name: 378,508,509,536,537,636|🇨🇳 中国 064
   network: http
   port: '45719'
   server: 8.210.206.163
@@ -2574,7 +2648,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 067
+  name: 378,508,509,536,537,636|🇨🇳 中国 065
   network: http
   port: '31152'
   server: 47.242.52.13
@@ -2589,7 +2663,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 068
+  name: 378,508,509,536,537,636|🇨🇳 中国 066
   network: http
   port: '26812'
   server: 8.210.48.219
@@ -2604,7 +2678,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 069
+  name: 378,508,509,536,537,636|🇨🇳 中国 067
   network: http
   port: '40988'
   server: 47.242.95.19
@@ -2619,7 +2693,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 070
+  name: 378,508,509,536,537,636|🇨🇳 中国 068
   network: http
   port: '54148'
   server: 8.210.70.156
@@ -2630,7 +2704,7 @@ proxies:
   uuid: 1346261e-3201-4932-bfba-df869ab48116
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 072
+  name: 378,508,509,536,537,636|🇨🇳 中国 070
   network: ws
   port: '8300'
   server: hk3.grpc.stream
@@ -2645,7 +2719,7 @@ proxies:
     path: /event
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 073
+  name: 378,508,509,536,537,636|🇨🇳 中国 071
   network: ws
   port: '443'
   server: univstar-104-208-117-86.nip.io
@@ -2660,7 +2734,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 079
+  name: 378,508,509,536,537,636|🇨🇳 中国 077
   network: ws
   port: '60852'
   server: hkgb707.ifastcdncache.com
@@ -2675,7 +2749,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 080
+  name: 378,508,509,536,537,636|🇨🇳 中国 078
   network: ws
   port: '18243'
   server: imghk302.igcaches.com
@@ -2694,7 +2768,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 081
+  name: 378,508,509,536,537,636|🇨🇳 中国 079
   network: http
   port: '63239'
   server: 8.218.83.148
@@ -2709,7 +2783,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 082
+  name: 378,508,509,536,537,636|🇨🇳 中国 080
   network: http
   port: '46644'
   server: 8.210.234.189
@@ -2724,7 +2798,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 083
+  name: 378,508,509,536,537,636|🇨🇳 中国 081
   network: http
   port: '58641'
   server: 8.218.73.227
@@ -2739,7 +2813,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 084
+  name: 378,508,509,536,537,636|🇨🇳 中国 082
   network: http
   port: '58793'
   server: 8.218.80.207
@@ -2754,7 +2828,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 085
+  name: 378,508,509,536,537,636|🇨🇳 中国 083
   network: http
   port: '22362'
   server: 8.218.86.250
@@ -2769,7 +2843,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 086
+  name: 378,508,509,536,537,636|🇨🇳 中国 084
   network: http
   port: '51578'
   server: 8.210.34.212
@@ -2784,7 +2858,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 087
+  name: 378,508,509,536,537,636|🇨🇳 中国 085
   network: http
   port: '37309'
   server: 8.210.203.189
@@ -2799,7 +2873,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 088
+  name: 378,508,509,536,537,636|🇨🇳 中国 086
   network: http
   port: '51616'
   server: 8.218.86.226
@@ -2814,7 +2888,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 089
+  name: 378,508,509,536,537,636|🇨🇳 中国 087
   network: http
   port: '20113'
   server: 8.218.63.184
@@ -2829,7 +2903,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 090
+  name: 378,508,509,536,537,636|🇨🇳 中国 088
   network: http
   port: '43645'
   server: 8.218.85.43
@@ -2844,7 +2918,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 091
+  name: 378,508,509,536,537,636|🇨🇳 中国 089
   network: http
   port: '37064'
   server: 47.242.56.3
@@ -2859,7 +2933,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 092
+  name: 378,508,509,536,537,636|🇨🇳 中国 090
   network: http
   port: '49935'
   server: 47.242.205.255
@@ -2874,7 +2948,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 093
+  name: 378,508,509,536,537,636|🇨🇳 中国 091
   network: http
   port: '51784'
   server: 47.242.61.125
@@ -2889,7 +2963,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 094
+  name: 378,508,509,536,537,636|🇨🇳 中国 092
   network: http
   port: '48471'
   server: 47.242.243.218
@@ -2904,7 +2978,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 095
+  name: 378,508,509,536,537,636|🇨🇳 中国 093
   network: http
   port: '55986'
   server: 47.243.36.34
@@ -2915,7 +2989,7 @@ proxies:
   uuid: 87ed289f-cae3-49b4-bbe3-23da298c0e81
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 096
+  name: 378,508,509,536,537,636|🇨🇳 中国 094
   network: ws
   port: '443'
   server: n1737850919.ryjml.cn
@@ -2930,7 +3004,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 097
+  name: 378,508,509,536,537,636|🇨🇳 中国 095
   network: ws
   port: '443'
   server: n1735606087.ryjml.cn
@@ -2945,7 +3019,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 099
+  name: 378,508,509,536,537,636|🇨🇳 中国 097
   network: ws
   port: '8080'
   server: 1.65.209.213
@@ -2975,7 +3049,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 104
+  name: 378,508,509,536,537,636|🇨🇳 中国 102
   network: ws
   port: '80'
   server: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
@@ -2990,7 +3064,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 1182
+  name: 378,508,509,536,537,636|🇺🇸 美国 1171
   network: ws
   port: '80'
   server: 20.247.105.52
@@ -3005,7 +3079,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 1194
+  name: 378,508,509,536,537,636|🇺🇸 美国 1183
   network: ws
   port: '80'
   server: 20.247.105.202
@@ -3020,7 +3094,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 1273
+  name: 378,508,509,536,537,636|🇺🇸 美国 1262
   network: ws
   port: '50044'
   server: 20.239.179.251
@@ -3035,7 +3109,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 1277
+  name: 378,508,509,536,537,636|🇺🇸 美国 1266
   network: ws
   port: '80'
   server: 20.239.88.144
@@ -3050,7 +3124,7 @@ proxies:
     path: /nkpvpn.site
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 1298
+  name: 378,508,509,536,537,636|🇺🇸 美国 1285
   network: ws
   port: '80'
   server: 157.254.22.109
@@ -3378,7 +3452,7 @@ proxies:
   port: 8388
   server: 103.149.183.12
   type: ss
-- country: 🇭🇺HU
+- country: 🇺HU
   name: '378,435,436,536,537|🇭🇰HK-185.244.208.52-5939 #1'
   password: IL37892054
   port: 443
@@ -3386,7 +3460,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: HU
+- country: 🇺HU
   name: '378,435,436,536,537|🇰HK-185.244.208.59-5942 #1'
   password: WF42809561
   port: 443
@@ -5279,21 +5353,23 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- cipher: aes-256-gcm
-  name: 426|🇭🇰 HK_1|7.6MB/s|YT-HK|NF
-  password: feng3d@ss2025
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: 435,489|🔴🇭🇰[🎬]_github.com/Ruk1ng001_aa...
+  password: asd123456
   port: 8388
-  server: li.feng3d.com
+  server: 103.149.182.79
   type: ss
+  udp: true
 - alterId: 2
   cipher: auto
   country: 🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 435,437,459,559|🇭🇰HK_74
+  name: '435,437,459,559,568|🇺🇸 美国 | USA #3'
   network: tcp
-  port: 30829
-  server: v29.hdacd.com
+  port: '30804'
+  server: v4.hdacd.com
   servername: ''
   skip-cert-verify: true
   tls: false
@@ -5308,7 +5384,7 @@ proxies:
   sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
   tls: false
   type: hysteria2
-- name: '438|🇭🇰HK_2|1.5MB/s | 福利姬: https://...'
+- name: '438|🇭🇰HK_2|1.6MB/s | 福利姬: https://...'
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.174
@@ -5831,13 +5907,6 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
-- cipher: chacha20-ietf
-  name: 489|🔴🇭🇰[🎬]_github.com/Ruk1ng001_aa...
-  password: asd123456
-  port: 8388
-  server: 103.149.182.79
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   name: 489|🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001...
   network: ws
@@ -5855,20 +5924,6 @@ proxies:
         Gecko) Chrome/40.0.2214.111 Safari/537.36
     path: /proxyip=tw.william.us.ci?uuid=f4e91fac-25eb-4d26-a14c-c82c3778a0e4fp=chrome
   xudp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '502,523,524|🇭🇰_香港_32 #1'
-  port: 443
-  reality-opts:
-    public-key: MCdZOPt6XUdH3N8xQc6J4GElI9_9csxjsOOzwCPZjR0
-    short-id: 6378191533abf6df
-  server: hong1.panel11.ru
-  servername: hong1.panel11.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d
 - alpn:
   - h2
   - http/1.1
@@ -6055,6 +6110,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '523,524|🇭🇰_香港_32 #1'
+  port: 443
+  reality-opts:
+    public-key: MCdZOPt6XUdH3N8xQc6J4GElI9_9csxjsOOzwCPZjR0
+    short-id: 6378191533abf6df
+  server: hong1.panel11.ru
+  servername: hong1.panel11.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d
 - name: '523,524|🇭🇰_香港_94 #1'
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 40138
@@ -6084,6 +6153,16 @@ proxies:
   type: vmess
   udp: true
   uuid: 1c7c0c72-6bc1-4e51-ada8-0e5570bb4780
+- alterId: 2
+  cipher: auto
+  name: '523,524|🇭🇰_香港_115 #1'
+  port: 30807
+  server: v10.zgtfqs.click
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '523,524|🇭🇰_香港_125 #1'
   network: ws
   port: 8443
@@ -6224,20 +6303,6 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FX%40freecodes%2F%3Fed%3D2560'
-- alterId: 0
-  cipher: auto
-  name: 536|🇭🇰HK-20.205.115.140-0057
-  network: ws
-  port: 10000
-  server: 20.205.115.140
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: de4ceb36-b708-4658-81b2-2f2612e39a23
-  ws-opts:
-    headers:
-      Host: 20.205.115.140
-    path: /
 - name: '545,546|香港[01] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -6894,32 +6959,8 @@ proxies:
   type: hysteria
   udp: true
   up: 1000 Mbps
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG
-  port: 30809
-  server: v9.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alpn:
-  - h3
-  congestion-controller: bbr
-  disable-sni: false
-  name: 566|🇭🇰 香港 | HKG 2
-  password: 1ae7c1a7-53a4-49d3-87ef-597634834c6c
-  port: 27102
-  reduce-rtt: false
-  request-timeout: 0
-  server: vrwfdb.yydzx.xyz
-  skip-cert-verify: true
-  sni: vrwfdb.yydzx.xyz
-  type: tuic
-  uuid: 1ae7c1a7-53a4-49d3-87ef-597634834c6c
 - client-fingerprint: chrome
-  name: 566|🇭🇰 香港 | HKG 3
+  name: 566|🇭🇰 香港 | HKG
   network: ws
   port: 8443
   server: 185.241.42.81
@@ -6932,6 +6973,22 @@ proxies:
     headers:
       Host: s5gydl.936.us.ci
     path: /proxyip=tw.william.us.ci?uuid=f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+- name: 566|🇭🇰 香港 | HKG 4
+  password: 1ae7c1a7-53a4-49d3-87ef-597634834c6c
+  port: 27002
+  server: cf0op7.yytls.top
+  skip-cert-verify: true
+  sni: r709le.yytls.top
+  type: anytls
+  udp: true
+- name: 566|🇭🇰 香港 | HKG 5
+  password: 1ae7c1a7-53a4-49d3-87ef-597634834c6c
+  port: 27002
+  server: qxcv2o.yytls.top
+  skip-cert-verify: true
+  sni: wx5d5u.yytls.top
+  type: anytls
+  udp: true
 - alterId: 0
   cipher: auto
   name: '574|HK #1'
