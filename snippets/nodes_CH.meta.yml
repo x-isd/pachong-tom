@@ -119,15 +119,17 @@ proxies:
   port: 443
   server: 156.146.62.160
   type: ss
-- name: '378,436,494,536,537|🇨CH-86.106.84.195-6004 #1'
+- country: 🇴RO
+  name: '378,435,436,494,536,537|🇨CH-86.106.84.195-6004 #1'
   password: y3b03zx3tznhyo538p4c
   port: 53261
   server: 86.106.84.195
   skip-cert-verify: false
   type: trojan
+  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 438,494,507,580|未知 VLESS-501 | free-nodes
+  name: '438,494,507,580|未知 VLESS-501 | free-nodes #1'
   network: tcp
   port: 443
   reality-opts:
@@ -138,20 +140,6 @@ proxies:
   tls: false
   type: vless
   uuid: 8bba3194-4856-46d1-8319-075817d87eb1
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  name: '438|🇨🇭CH_2|1.8MB/s | 网盘搜宝: https:/...'
-  network: xhttp
-  port: 443
-  server: ch09.tunnely.ru
-  servername: ch09.tunnely.ru
-  tls: true
-  type: vless
-  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
-  ws-opts:
-    path: '%2Fxhttp%2F'
 - alterId: 0
   cipher: auto
   name: 465|16|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
@@ -179,6 +167,34 @@ proxies:
   udp: true
   uuid: 528ee6c3-7d3c-410e-b0de-0d5da09aeb14
   xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 566|🇨🇭 瑞士 | CHE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: QZDU9ZZt6HEIijqRyeyebLxt11S692nSBIDNCKLBM3k
+    short-id: f5420efbe305d354
+  server: free.ch1.laodavip.com
+  servername: free.ch1.laodavip.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 69f56e4d-6403-48c4-876d-16a5819c3672
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 566|🇨🇭 瑞士 | CHE 3
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+    short-id: 2e40144ddc07e8e1
+  server: ch03.tunnely.ru
+  servername: ch03.tunnely.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
 - client-fingerprint: chrome
   name: 580|瑞士丨yoyapai.com
   network: tcp
