@@ -1,5 +1,5 @@
 proxies:
-- name: 306,536,551,717|ES【机场推荐：https://a9a.xyz】28
+- name: '306,502,536,717|ES【机场推荐：https://a9a.xyz】28 #1'
   network: ws
   password: 74480619-b6a8-4ab8-94e1-1132fc18b2fa
   port: 443
@@ -118,27 +118,29 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
-- name: '378,536,537|CH-152.67.71.149-3664 #1'
+- name: '378,536,537|CH-152.67.71.149-3629 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-5235 #1'
+  name: '378,537|🇨CH-156.146.62.160-5200 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
-- name: '378,436,536,537|CH-86.106.84.195-6006 #1'
+- country: 🇴RO
+  name: '378,435,436,494,536,537|🇨CH-86.106.84.195-6004 #1'
   password: y3b03zx3tznhyo538p4c
   port: 53261
   server: 86.106.84.195
   skip-cert-verify: false
   type: trojan
+  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '438,507,580|未知 VLESS-501 | free-nodes #1'
+  name: '438,494,507,580|未知 VLESS-501 | free-nodes #1'
   network: tcp
   port: 443
   reality-opts:
@@ -149,6 +151,20 @@ proxies:
   tls: false
   type: vless
   uuid: 8bba3194-4856-46d1-8319-075817d87eb1
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: 438,502|🇨🇭CH_2|3.7MB/s
+  network: xhttp
+  port: 443
+  server: ch09.tunnely.ru
+  servername: ch09.tunnely.ru
+  tls: true
+  type: vless
+  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
+  ws-opts:
+    path: '%2Fxhttp%2F'
 - alterId: 0
   cipher: auto
   name: 465|16|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
@@ -162,7 +178,7 @@ proxies:
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 489,523,524,580,717|ES【机场推荐：https://a9a.xyz】12
+  name: '489,502,523,524,580,717|ES【机场推荐：https://a9a.xyz】12 #1'
   network: tcp
   port: 443
   reality-opts:
@@ -178,70 +194,13 @@ proxies:
   xudp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '523,524|🇨🇭_瑞士_53 #1'
-  port: 443
-  reality-opts:
-    public-key: USffNprEM08MHiuVy5bj6-kvxugxycuZcgQDFJyz2Wc
-    short-id: 8f9d033ad6d2cebf
-  server: fi2.cyphervpn.pro
-  servername: fi2.cyphervpn.pro
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 551|🇨🇭CH_1|2.4MB/s
+  name: 502|🇨🇭CH_1|2.4MB/s
   port: 443
   server: ch03.tunnely.ru
   servername: ch03.tunnely.ru
   tls: true
   type: vless
   uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  name: 551|🇨🇭CH_2|3.7MB/s
-  port: 443
-  server: ch09.tunnely.ru
-  servername: ch09.tunnely.ru
-  tls: true
-  type: vless
-  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
-- client-fingerprint: chrome
-  http-opts:
-    headers:
-      Host:
-      - yahoo.com
-    method: GET
-    path:
-    - /
-  name: 566|🇨🇭 瑞士 | CHE
-  network: http
-  port: 2053
-  reality-opts:
-    public-key: bBI2yUWXDIbDUrreMQL2YiCbFBWCjlv_Vxn35I0BlSc
-  server: isheheuuwhe-2-2-2-2-2.poki-pakipon.ir
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 992649b6-189d-4007-b0df-8a5457f9ccee
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: ljfxz
-  name: 566|🇨🇭 瑞士 | CHE 2
-  network: grpc
-  port: 46786
-  server: t2.feiyue706.com
-  servername: t2.feiyue706.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
 - client-fingerprint: chrome
   name: 580|瑞士丨yoyapai.com
   network: tcp
@@ -301,21 +260,6 @@ proxies:
   skip-cert-verify: true
   sni: 86.106.84.195
   type: trojan
-- client-fingerprint: chrome
-  name: 580|🇨🇭CH_6|2.7MB/s|B007-260618 01
-  network: tcp
-  port: 40084
-  reality-opts:
-    public-key: 9kgnhNCzQsfomFrK3nKlOCbmUyS2oPltp2gOnuFv7nY
-  server: 179.237.75.28
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: bcd7d69f-98d4-4622-8caf-db83b7af81da
-  ws-opts:
-    headers:
-      Host: yahoo.com
-    path: /
 - name: 728|🇨🇭 瑞士1🔒
   password: 升级订阅解锁全部节点
   port: 443
