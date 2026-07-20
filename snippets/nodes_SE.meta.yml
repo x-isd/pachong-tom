@@ -27,9 +27,9 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,636|🇸🇪 瑞典 007
+  name: '378,508,509,536,537|SE-37.120.209.126-1077 #1'
   network: ws
-  port: '31002'
+  port: 31002
   server: 37.120.209.126
   servername: ''
   skip-cert-verify: false
@@ -140,7 +140,7 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,507,580|未知 VLESS-692 | free-nodes #1'
+  name: '438,494,507,580|未知 VLESS-692 | free-nodes #1'
   network: tcp
   port: 443
   reality-opts:
@@ -148,23 +148,10 @@ proxies:
     short-id: 43dcff53849b81e6
   server: 185.231.101.88
   servername: se.quattro-tech.ru
-  tls: false
-  type: vless
-  uuid: ecad47b0-249e-4f6f-adff-e3c8f02b1897
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 438,580|🇸🇪SE_7|2.0MB/s|F003-260618 01
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: HUIUjR11K2-23-4Y-i51g9cun8etjfgaWW-h8AsEtEU
-    short-id: 45ba24f179ad1f26
-  server: se.vrsvpn.com
-  servername: web.max.ru
   skip-cert-verify: true
   tls: false
   type: vless
-  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
+  uuid: ecad47b0-249e-4f6f-adff-e3c8f02b1897
 - name: '455,457,458|🇸🇪_SE_瑞典 #2'
   network: ws
   port: 443
@@ -206,17 +193,20 @@ proxies:
     headers:
       Host: vp18.cc.cd
     path: /
-- name: 551|🇸🇪SE_1|1.8MB/s
-  network: ws
-  port: 8080
-  server: vips.irhubby.ir
-  tls: false
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 566|🇸🇪 瑞典 | SWE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
+    short-id: ecca56e9a9963ed7
+  server: se.monkeyisland.xyz
+  servername: se.monkeyisland.xyz
+  tls: true
   type: vless
-  uuid: 4a4b76ab-ec8a-4211-9f02-db69f4ec879b
-  ws-opts:
-    headers:
-      Host: vips.irhubby.ir
-    path: /
+  udp: true
+  uuid: d89c9d5e-004f-4a02-8cd5-0c0d697862bb
 - client-fingerprint: chrome
   name: 580|瑞典丨yoyapai.com
   network: tcp
@@ -328,19 +318,6 @@ proxies:
       Host: netlivpn4813.ddhshhshs.workers.dev
     path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
 - client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 580|🇸🇪SE_4|2.6MB/s|F003-260618 01
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: tSxNp48AuTUzqggANCWsR6v7bqlguCoVWk_YOUs36Ug
-    short-id: d9662905
-  server: 144.31.128.56
-  servername: 33432ews-topology-gslb-yccdn.ru
-  tls: false
-  type: vless
-  uuid: 8f0560ec-ba22-4431-a6a7-318dc59d5233
-- client-fingerprint: firefox
   name: 580|🇸🇪SE_9|3.5MB/s|T001-260618 01
   network: ws
   port: 443
@@ -366,34 +343,6 @@ proxies:
   tls: false
   type: vless
   uuid: d1c624fc-d0b0-49c7-8afa-e15a5949bc17
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
-  name: '580|未知 VLESS-523 | free-nodes #1'
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: yiX2T6z3GavNIgnnxsoU57vgq2pdfngXAU83vhBDQlA
-    short-id: a9b0c08836bad3c5
-  server: main.oneoker.com
-  servername: main.oneoker.com
-  tls: false
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
-  name: '580|未知 VLESS-515 | free-nodes #1'
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: W329R9_hAiG_wGLcIhfbm0AA8Si7DVhz4es2aASZACY
-    short-id: 9c478d3655bfa85d
-  server: add.oneoker.com
-  servername: add.oneoker.com
-  tls: false
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
 - alpn:
   - http/1.1
   client-fingerprint: qq
