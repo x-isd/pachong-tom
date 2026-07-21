@@ -4588,8 +4588,8 @@ proxies:
 - alterId: 2
   cipher: auto
   name: 519|🇨🇳_CN_中国->🇺🇸_US_美国
-  port: 30804
-  server: v4.hdacd.com
+  port: 30829
+  server: v29.hdacd.com
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -4597,34 +4597,23 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 519|🇨🇳_CN_中国->🇯🇵_JP_日本
-  port: 30806
-  server: v6.hdacd.com
+  name: 519|🇨🇳_CN_中国->🇸🇬_SG_新加坡
+  port: 30845
+  server: v45.hdacd.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: '519,522,548|🇮🇩_ID_印度尼西亚->🇬🇧_GB_英国 #1'
-  port: 30836
-  server: v36.hdacd.com
+- name: 519|🇺🇸_US_美国->🇬🇧_GB_英国
+  network: ws
+  port: 8443
+  server: ad-010.vector9nmb3.info
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  tls: true
+  type: vless
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: none
-  name: 519|🇨🇳_CN_中国->🇩🇪_DE_德国
-  port: 30833
-  server: v33.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
 - alterId: 2
   cipher: auto
   name: '519,523,524|🇨🇳_中国_51 #1'
@@ -4635,9 +4624,29 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 519,522|🇮🇩_ID_印度尼西亚->🇧_GB_英国
+  port: 30836
+  server: v36.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 519|🇨🇳_CN_中国->🇺🇸_US_美国_1
+  port: 30808
+  server: v8.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '522,548,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #8'
+  name: 522,580|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
   port: 22231
   server: r1.mizulina.top
   servername: r1.mizulina.top
@@ -4646,29 +4655,7 @@ proxies:
   type: vless
   udp: true
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '522,548,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #9'
-  port: 443
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '522,548,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #10'
-  port: 22231
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- name: '522,548,580,581|🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆 #4'
+- name: 522,580|🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 41943
   server: 90081bb25c.node.tro.cac.cab
@@ -5077,3 +5064,39 @@ proxies:
     headers:
       Host: nest-emily-healing-h.trycloudflare.com
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+- name: '580,581|🇵🇱_PL_波兰->🇺🇸_US_美国 #1'
+  network: ws
+  port: 8880
+  server: 185.158.133.30
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime58.workers.dev
+    path: '%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '580,581|🇭🇰_HK_中国香港->🇸🇬_SG_新加坡 #4'
+  port: 55567
+  reality-opts:
+    public-key: 0soGDTguByd3I9e2nLuzkw5BOHELZ_AHHDkA0Zx3JRA
+    short-id: f3f70ca767
+  server: 1.sdwan.realm-sync.com
+  servername: www.discoverasr.com
+  tls: true
+  type: vless
+  uuid: da4f61d1-8ca2-4bbf-a79a-1dfff04073e6
+- client-fingerprint: chrome
+  name: '580,581|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
+  network: ws
+  port: 2083
+  server: 192.0.63.61
+  servername: twotwoirvz.dpdns.org
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: twotwoirvz.dpdns.org
+    path: '%2F'
