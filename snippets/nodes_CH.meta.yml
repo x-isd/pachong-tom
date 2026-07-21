@@ -127,7 +127,7 @@ proxies:
   type: trojan
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 438,494,507,580|未知 VLESS-513 | free-nodes
+  name: '438,507,580|未知 VLESS-513 | free-nodes #1'
   network: tcp
   port: 443
   reality-opts:
@@ -167,6 +167,26 @@ proxies:
   sni: devideo.h2corp.org
   tls: false
   type: hysteria2
+- name: '508,509|瑞士 003 #1'
+  network: tcp
+  port: 13791
+  server: 138.124.72.60
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2410ed4e-b04c-45c4-a893-67e073c70398
+- name: '508,509|瑞士 004 #1'
+  network: tcp
+  port: 12596
+  server: 193.134.100.23
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e48cf70b-a9a5-4855-9330-e8649a11882e
 - client-fingerprint: chrome
   name: 580|瑞士丨yoyapai.com
   network: tcp
@@ -239,6 +259,19 @@ proxies:
   tls: false
   type: vless
   uuid: 8bba3194-4856-46d1-8319-075817d87eb1
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 580|🇨🇭CH_6|3.0MB/s|S001-260618 01
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+    short-id: 2e40144ddc07e8e1
+  server: ch03.tunnely.ru
+  servername: ch03.tunnely.ru
+  tls: false
+  type: vless
+  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
 - alpn:
   - h2
   - http/1.1
