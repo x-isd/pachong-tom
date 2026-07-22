@@ -270,6 +270,12 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- cipher: aes-256-gcm
+  name: '127,426|🇭🇰 HK_1|7.6MB/s|YT-HK|NF #1'
+  password: feng3d@ss2025
+  port: 8388
+  server: li.feng3d.com
+  type: ss
 - alterId: 0
   cipher: auto
   name: '128,430|香港NO.2 #1'
@@ -824,23 +830,23 @@ proxies:
     path: /stream?ed=2048
 - name: 232|香港1-hy2  协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 26567
+  port: 25225
   ports: 22000-27000
   server: hk1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - alterId: 2
   cipher: auto
-  name: '306,515,516,556|🇭🇰 香港|@ripaojiedian #3'
+  name: '306,515,516,519,556|🇭🇰 香港|@ripaojiedian #3'
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
-  name: 306,340,378,502,508,509,514,515,516,523,524,536,537,544,551,556,557,574,636|🇺🇸
-    美国 001
+  name: 306,340,378,502,508,509,514,515,516,523,524,536,537,544,574,636|🇺🇸 美国 001
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 13118
@@ -850,8 +856,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 306,340,378,502,508,509,514,515,516,523,524,536,537,544,551,556,557,636|🇦🇺
-    澳大利亚 001
+- name: 306,340,378,502,508,509,514,515,516,523,524,536,537,544,636|🇦🇺 澳大利亚 001
   network: tcp
   password: BxceQaOe
   port: 11035
@@ -861,7 +866,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 306,340,378,502,508,509,514,515,516,536,537,544,551,556,557,636|🇦🇺 澳大利亚 002
+- name: 306,340,378,502,508,509,514,515,516,536,537,544,636|🇦🇺 澳大利亚 002
   network: tcp
   password: BxceQaOe
   port: 11231
@@ -869,7 +874,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 306,340,378,502,508,509,514,515,516,536,537,544,551,556,557,636|🇺🇸 美国 002
+- name: 306,340,378,502,508,509,514,515,516,536,537,544,636|🇺🇸 美国 002
   network: tcp
   password: BxceQaOe
   port: 4099
@@ -878,8 +883,7 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 0
-  name: 306,340,378,502,508,509,514,515,516,523,524,536,537,544,551,556,557,574,636|🇺🇸
-    美国 004
+  name: 306,340,378,502,508,509,514,515,516,523,524,536,537,544,574,636|🇺🇸 美国 004
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 6357
@@ -889,7 +893,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 306,340,378,502,508,509,514,515,516,536,537,544,551,556,557,636|🇦🇺 澳大利亚 003
+- name: 306,340,378,502,508,509,514,515,516,536,537,544,636|🇦🇺 澳大利亚 003
   network: tcp
   password: BxceQaOe
   port: 9149
@@ -898,8 +902,7 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 0
-  name: 306,340,378,502,508,509,514,515,516,523,524,536,537,544,551,556,557,574,636|🇺🇸
-    美国 005
+  name: 306,340,378,502,508,509,514,515,516,523,524,536,537,544,574,636|🇺🇸 美国 005
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 17005
@@ -909,8 +912,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 306,340,378,502,508,509,514,515,516,523,524,536,537,544,551,556,557,636|🇺🇸
-    美国 006
+- name: 306,340,378,502,508,509,514,515,516,523,524,536,537,544,636|🇺🇸 美国 006
   network: tcp
   password: BxceQaOe
   port: 11993
@@ -922,23 +924,110 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: '306,340,437,454,459,502,514,515,516,544,551,557,580|🇭🇰_HK_中国香港 #11'
+  name: '306,340,454,459,502,514,515,516,544,551,557|香港|@ripaojiedian #2'
   network: tcp
-  port: 30807
+  port: '30807'
   server: v10.hdacd.com
   servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 306,502|🇸🇬SG_2|3.3MB/s
+- name: '306,551,556,557|香港3|@ripaojiedian #2'
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 47867
+  server: 43.198.78.177
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '306,551,556,557|香港4|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
-  port: 9149
-  server: 18.163.84.233
+  port: 27161
+  server: 43.198.11.229
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-  udp: true
+- name: '306,551,556,557|香港5|@ripaojiedian #2'
+  network: tcp
+  password: BxceQaOe
+  port: 27161
+  server: 43.198.17.21
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '306,551,556,557|日本|@ripaojiedian #2'
+  network: tcp
+  password: BxceQaOe
+  port: 54411
+  server: 43.199.253.12
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: '306,551,556,557|日本2|@ripaojiedian #2'
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 38937
+  server: 18.167.84.124
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '306,551,556,557|日本3|@ripaojiedian #2'
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 40138
+  server: 16.163.109.164
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '306,551,556,557|新加坡|@ripaojiedian #2'
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 6357
+  server: 43.198.78.177
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: '306,551,556,557|新加坡2|@ripaojiedian #2'
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 6357
+  server: 18.167.84.124
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: '306,551,556,557|新加坡3|@ripaojiedian #2'
+  network: tcp
+  password: BxceQaOe
+  port: 45744
+  server: 43.198.106.37
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: '306,551,556,557|美国|@ripaojiedian #2'
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 49277
+  server: 16.162.187.38
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '306,551,556,557|美国2|@ripaojiedian #2'
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 49277
+  server: 18.167.84.124
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '306,551,556,557|美国3|@ripaojiedian #2'
+  network: tcp
+  password: BxceQaOe
+  port: 29085
+  server: 43.198.106.37
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - name: '340,495,502,514,551|🇭🇰 HK #1'
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
@@ -1894,23 +1983,24 @@ proxies:
   type: trojan
 - country: 🇭🇰HK
   delay: 993
-  name: 378,528,536,537,538|🇭🇰HK-185.14.47.195-0441 | 19.7...
+  name: 378,528,536,537,538,580|香港 75
+  network: tcp
   password: HW85960347
   port: 443
   server: eminent-lamb.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: eminent-lamb.rooster465.autos
   type: trojan
   udp: true
-- name: 378,536,537,538|🇭🇰HK-185.14.47.195-3157 | 13.2...
+- name: 378,536,537,538,580|香港 76
+  network: tcp
   password: HW85960347
   port: 443
   server: 185.14.47.195
   skip-cert-verify: false
   sni: eminent-lamb.rooster465.autos
   type: trojan
-- name: 378,507,536,537,538,580|🇸🇬SG_120|1.3MB/s|B007-260618 0...
-  network: tcp
+- name: 378,507,536,537,538|🇭🇰HK-1.36.1.150-0540 | 0.864MB
   password: OccIqeORGQwiNkwS
   port: 19128
   server: jpbgp.netvigor.cc
@@ -3292,7 +3382,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf
-  name: '378,522,537|🇰HK-103.149.182.105-5974 #1'
+  name: '378,522,537,548|🇭🇰_HK_中国香港 #9'
   password: asd123456
   port: 8388
   server: 103.149.182.105
@@ -4982,32 +5072,6 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- cipher: aes-256-gcm
-  name: 426|🇭🇰 HK_1|7.6MB/s|YT-HK|NF
-  password: feng3d@ss2025
-  port: 8388
-  server: li.feng3d.com
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: '437,459|美国(yudou789.top 玉豆免费节点) #54'
-  network: tcp
-  port: '30804'
-  server: v4.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: '437,459|美国(yudou789.top 玉豆免费节点) #13'
-  network: tcp
-  port: '30829'
-  server: v29.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
   name: '437,459|美国(yudou789.top 玉豆免费节点) #84'
@@ -5018,7 +5082,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '438|🇭🇰HK_1|1.7MB/s | 更多节点: https:/...'
+- name: '438|🇭🇰HK_1|1.6MB/s | 福利姬: https://...'
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.174
@@ -5026,34 +5090,6 @@ proxies:
   sni: https%3A%2F%2Ft.me%2Foneclickvpnkeys
   tls: false
   type: hysteria2
-- name: '438|🇭🇰HK_2|1.7MB/s | 福利姬: https://...'
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.174
-  skip-cert-verify: true
-  sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-  tls: false
-  type: hysteria2
-- name: 438,580|香港 35
-  network: raw
-  port: 10443
-  server: jc.20120222.xyz
-  tls: false
-  type: vless
-  uuid: 71a7db14-1b6f-5aec-9e5d-9bd5f8beabab
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,580|香港 25
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: USffNprEM08MHiuVy5bj6-kvxugxycuZcgQDFJyz2Wc
-    short-id: 8f9d033ad6d2cebf
-  server: hk1.cyphervpn.pro
-  servername: hk1.cyphervpn.pro
-  tls: false
-  type: vless
-  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
 - name: 453|🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -5562,6 +5598,40 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
+- down: ''
+  fingerprint: ''
+  name: 489|🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001...
+  obfs: ''
+  obfs-password: ''
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/WangCai2🇨🇳
+  type: hysteria2
+  up: ''
+- alterId: 0
+  cipher: auto
+  name: '502|B - 🇭🇰 HK 04 TG: @nodpai'
+  network: tcp
+  port: 6001
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  tls: false
+  type: vmess
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 502,553|🇭🇰香港_8a063
+  port: 10011
+  reality-opts:
+    public-key: 82bbZIdU-0s8fydncIhp9_sNDYQQH9ZY_7RVI5apXnk
+    short-id: 447f3a05ace2b748
+  server: 103.123.162.50
+  servername: www.microsoft.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 17011a43-97e2-44b0-b0da-a2ea151ad75c
 - alpn:
   - h2
   - http/1.1
@@ -5569,7 +5639,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507,580|HK VLESS-929 | free-nodes
+  name: 507,580|HK VLESS-932 | free-nodes
   network: tcp
   port: 443
   server: s306.ccgfw.top
@@ -5588,7 +5658,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507,580|HK VLESS-937 | free-nodes
+  name: 507,580|HK VLESS-940 | free-nodes
   network: tcp
   port: 443
   server: 212.192.15.191
@@ -5607,7 +5677,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507,580|HK VLESS-939 | free-nodes
+  name: 507,580|HK VLESS-942 | free-nodes
   network: tcp
   port: 443
   server: s299.freessr.bid
@@ -5751,6 +5821,27 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: '523,524|🇭🇰_香港_48 #1'
+  port: 5566
+  server: 47.76.127.88
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇭🇰_香港_186 #1'
+  network: ws
+  port: 443
+  server: n1747624274.4u9ma.icu
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+- alterId: 0
+  cipher: auto
   name: '523,524|🇭🇰_香港_190 #1'
   network: ws
   port: 443
@@ -5856,14 +5947,14 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FX%40freecodes%2F%3Fed%3D2560'
-- name: '544,580|香港丨yoyapai.com #1'
+- name: 544,580|香港丨yoyapai.com
   network: tcp
   password: 65fQmPHHbPcBCfvSHt
   port: 443
   server: au-4.tr202605.com
   skip-cert-verify: false
   type: trojan
-- name: 544,580|香港丨yoyapai.com
+- name: '544,580|香港丨yoyapai.com #2'
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 47867
@@ -5883,28 +5974,6 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '551|B - 🇭🇰 HK 04 TG: @nodpai'
-  network: tcp
-  port: 6001
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  tls: false
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 551,553|🇭🇰香港_8a063
-  port: 10011
-  reality-opts:
-    public-key: 82bbZIdU-0s8fydncIhp9_sNDYQQH9ZY_7RVI5apXnk
-    short-id: 447f3a05ace2b748
-  server: 103.123.162.50
-  servername: www.microsoft.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 17011a43-97e2-44b0-b0da-a2ea151ad75c
 - name: 553|🇭🇰香港_abb1f
   password: aeabae7e-a055-4505-85a6-b4cd4982b76a
   port: 443
@@ -6123,40 +6192,171 @@ proxies:
   type: hysteria
   udp: true
   up: 1000 Mbps
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 566|🇭🇰 香港 | HKG
+  network: tcp
+  port: 41099
+  reality-opts:
+    public-key: J6AH-cR4oAg8Nzc88lp8EIKnfBlQYuknmANebmM-qng
+    short-id: 0f7921df8d6378
+  server: saggy.papapple.xyz
+  servername: academy.nvidia.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 70289a41-983c-43bf-8331-c2c8cfb1ffa0
+- auth: hy2pass123
+  name: '566,568|🇭🇰 香港 | HKG #1'
+  password: hy2pass123
+  port: 8443
+  server: hy2.zzrvic.com
+  skip-cert-verify: true
+  sni: hy2.zzrvic.com
+  tls: false
+  type: hysteria2
 - alpn:
   - h2
   - http/1.1
-  name: 566|🇭🇰 香港 | HKG
-  password: 1ae7c1a7-53a4-49d3-87ef-597634834c6c
-  port: 27002
-  server: mqfyf6.yytls.top
+  name: 566|🇭🇰 香港 | HKG 3
+  password: 349eec65-9150-44f4-89b2-7f40cff03f63
+  port: 5501
+  server: 111.2025windows.vip
   skip-cert-verify: true
-  sni: mqfyf6.yytls.top
+  sni: admin.blob.core.windows.net
   type: anytls
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 566|🇭🇰 香港 | HKG 2
+  name: 566|🇭🇰 香港 | HKG 4
   network: tcp
-  packet-encoding: xudp
-  port: 21001
+  port: 29545
   reality-opts:
-    public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA
-    short-id: dfa28122
-  server: fv2026.node2.top
-  servername: itunes.apple.com
+    public-key: FGDyizfv3NMbMAUExJGHZ4Pqkq9794Zg_JWfufkXnhI
+    short-id: 722f0f29c8
+  server: blunt.papapple.xyz
+  servername: academy.nvidia.com
   tls: true
   type: vless
   udp: true
-  uuid: c2c05d0e-07a5-4522-9c66-b29495b1d20d
-- name: 566|🇭🇰 香港 | HKG 3
-  password: 1ae7c1a7-53a4-49d3-87ef-597634834c6c
-  port: 27002
-  server: ytm7oi.yytls.top
+  uuid: e7d317bd-9124-4eb0-ae76-4d3b8dc54e92
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 566|🇭🇰 香港 | HKG 5
+  network: tcp
+  port: 25257
+  reality-opts:
+    public-key: p88KNWRKe4V7nItD44kCkPnBmdqOGV0P5Y0HzZhGLXA
+    short-id: 60e2105ffc
+  server: hktany.papstore.xyz
+  servername: www.cityu.edu.hk
+  tls: true
+  type: vless
+  udp: true
+  uuid: 70289a41-983c-43bf-8331-c2c8cfb1ffa0
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 566|🇭🇰 香港 | HKG 6
+  network: tcp
+  port: 41498
+  reality-opts:
+    public-key: Kk8pSNfYMkNm45cjbWpGpe7mOdJOMmUY7Q7krXoYgX0
+    short-id: 74dc55
+  server: besthk.papstore.xyz
+  servername: www.investhk.gov.hk
+  tls: true
+  type: vless
+  udp: true
+  uuid: 70289a41-983c-43bf-8331-c2c8cfb1ffa0
+- auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  name: '566,568|🇭🇰 香港 | HKG #2'
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
   skip-cert-verify: true
-  sni: ifvlto.yytls.top
+  tls: false
+  type: hysteria2
+- alpn:
+  - h2
+  - http/1.1
+  name: 566|🇭🇰 香港 | HKG 8
+  password: 349eec65-9150-44f4-89b2-7f40cff03f63
+  port: 5502
+  server: 111.2025windows.vip
+  skip-cert-verify: true
+  sni: admin.blob.core.windows.net
   type: anytls
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 566|🇭🇰 香港 | HKG 9
+  network: tcp
+  port: 41099
+  reality-opts:
+    public-key: J6AH-cR4oAg8Nzc88lp8EIKnfBlQYuknmANebmM-qng
+    short-id: 0f7921df8d6378
+  server: saggy.papapple.xyz
+  servername: academy.nvidia.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e7d317bd-9124-4eb0-ae76-4d3b8dc54e92
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 566|🇭🇰 香港 | HKG 10
+  network: tcp
+  port: 29545
+  reality-opts:
+    public-key: FGDyizfv3NMbMAUExJGHZ4Pqkq9794Zg_JWfufkXnhI
+    short-id: 722f0f29c8
+  server: blunt.papapple.xyz
+  servername: academy.nvidia.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 70289a41-983c-43bf-8331-c2c8cfb1ffa0
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 566|🇭🇰 香港 | HKG 11
+  network: tcp
+  port: 28195
+  reality-opts:
+    public-key: XXkeowHEtRLGNR15XoJGCvdjhIGx-sU83rFZu6wn2jg
+    short-id: 45fe5d148a
+  server: jpdancetach.youhere.xyz
+  servername: www.lovelive-anime.jp
+  tls: true
+  type: vless
+  udp: true
+  uuid: 70289a41-983c-43bf-8331-c2c8cfb1ffa0
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 566|🇭🇰 香港 | HKG 12
+  network: tcp
+  port: 28195
+  reality-opts:
+    public-key: XXkeowHEtRLGNR15XoJGCvdjhIGx-sU83rFZu6wn2jg
+    short-id: 45fe5d148a
+  server: jpdancetach.youhere.xyz
+  servername: www.lovelive-anime.jp
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9b4986aa-c166-49ca-b5dc-56469dab532f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 566|🇭🇰 香港 | HKG 13
+  network: tcp
+  port: 29545
+  reality-opts:
+    public-key: FGDyizfv3NMbMAUExJGHZ4Pqkq9794Zg_JWfufkXnhI
+    short-id: 722f0f29c8
+  server: blunt.papapple.xyz
+  servername: academy.nvidia.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9b4986aa-c166-49ca-b5dc-56469dab532f
 - alterId: 0
   name: 574|HK
   password: BxceQaOe
@@ -6406,7 +6606,7 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
-- name: '580|香港丨yoyapai.com #2'
+- name: '580|香港丨yoyapai.com #1'
   network: ws
   port: 80
   server: 151.101.77.151
@@ -6418,18 +6618,27 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
     path: '%2F%3Fhttps%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3'
 - client-fingerprint: chrome
-  name: 580|香港 01
-  network: ws
-  port: 2053
-  server: 217.60.248.94
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
+  name: '580|HK香港(mibei77.com 米贝节点分享) #7'
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: 1LFURXcCXDG7GjYZJOiKhSIGTGqlrvnLOuUalz_eR0g
+    short-id: 0123456789abcdef
+  server: nl-2.s.darkpn.com
+  servername: nl-2.s.darkpn.com
+  tls: false
   type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  uuid: 27c1d725-629c-4e65-9271-d6f5df82c7e9
   ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-    path: /
+    path: '%2Fassets%2Fbundle.js'
+- name: 580|香港 01
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: https://t.me/WangCai2
+  tls: false
+  type: hysteria2
 - name: 580|香港 02
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -6438,15 +6647,7 @@ proxies:
   sni: https://t.me/oneclickvpnkeys
   tls: false
   type: hysteria2
-- name: 580|香港 04
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.174
-  skip-cert-verify: true
-  sni: https://t.me/WangCai2
-  tls: false
-  type: hysteria2
-- name: 580|香港 05
+- name: 580|香港 03
   network: tcp
   password: BxceQaOe
   port: 443
@@ -6454,6 +6655,21 @@ proxies:
   skip-cert-verify: true
   sni: 119.246.1.143
   type: trojan
+- name: 580|香港 05
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 119.246.1.143
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 580|香港 31
+  network: raw
+  port: 10443
+  server: jc.20120222.xyz
+  tls: false
+  type: vless
+  uuid: 71a7db14-1b6f-5aec-9e5d-9bd5f8beabab
 - name: 580|香港 09
   network: tcp
   password: KV63147582
@@ -6485,88 +6701,62 @@ proxies:
 - client-fingerprint: chrome
   name: 580|香港 14
   network: ws
-  port: 443
-  server: 91.110.209.63
-  servername: edge-4cb23bf6.pages.dev
+  port: 2053
+  server: 45.38.42.156
+  servername: t1s1.rittbo.kdns.fr
   tls: true
   type: vless
-  uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   ws-opts:
     headers:
-      Host: edge-4cb23bf6.pages.dev
-    path: /Telegram🇨🇳+@WangCai2
-- client-fingerprint: chrome
-  name: 580|香港 15
-  network: ws
-  port: 443
-  server: 91.110.209.62
-  servername: edge-4cb23bf6.pages.dev
-  tls: true
-  type: vless
-  uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5
-  ws-opts:
-    headers:
-      Host: edge-4cb23bf6.pages.dev
-    path: /Telegram🇨🇳+@WangCai2
-- name: 580|香港 17
+      Host: t1s1.rittbo.kdns.fr
+    path: /
+- name: 580|香港 16
   network: tcp
   password: NQ26071394
   port: 443
   server: wealthy-loon.rooster465.autos
   sni: wealthy-loon.rooster465.autos
   type: trojan
-- name: 580|香港 19
+- name: 580|香港 18
   network: tcp
   password: NQ26071394
   port: 443
   server: electric-gibbon.rooster465.autos
   sni: electric-gibbon.rooster465.autos
   type: trojan
-- name: 580|香港 20
+- name: 580|香港 19
   network: tcp
   password: NQ26071394
   port: 443
   server: glad-roughy.rooster465.autos
   sni: glad-roughy.rooster465.autos
   type: trojan
-- name: 580|香港 21
+- name: 580|香港 20
   network: tcp
   password: NQ26071394
   port: 443
   server: striking-cheetah.rooster465.autos
   sni: striking-cheetah.rooster465.autos
   type: trojan
-- name: 580|香港 22
+- name: 580|香港 21
   network: tcp
   password: NQ26071394
   port: 443
   server: heroic-cow.rooster465.autos
   sni: heroic-cow.rooster465.autos
   type: trojan
-- name: 580|香港 23
+- name: 580|香港 22
   network: tcp
   password: NQ26071394
   port: 443
   server: full-ox.rooster465.autos
   sni: full-ox.rooster465.autos
   type: trojan
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 580|香港 24
-  network: tcp
-  port: 40443
-  reality-opts:
-    public-key: bjOGTQ4xsiFbyCPM_WzoK53L130rW5vZJtuYDJx_pkM
-    short-id: aa3c
-  server: billing.netraidly.ru
-  servername: deepl.com
-  tls: false
-  type: vless
-  uuid: 17d29827-7cf1-4115-b40d-548e10ec355d
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: web.max.ru
-  name: '580|未知 VLESS-191 | free-nodes #1'
+  name: '580|未知 VLESS-197 | free-nodes #1'
   network: grpc
   port: 444
   reality-opts:
@@ -6577,78 +6767,65 @@ proxies:
   tls: false
   type: vless
   uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 580|香港 28
-  network: tcp
-  port: 40443
-  reality-opts:
-    public-key: oc9uweln_cqyaJnlRMnhhhKrGNP7RrYOsuYtaIOIQDE
-    short-id: 2bc0
-  server: private.netraidly.ru
-  servername: deepl.com
-  tls: false
-  type: vless
-  uuid: 5e3f974b-06fc-4555-907a-6681391b7c17
-- name: 580|香港 29
+- name: 580|香港 25
   network: tcp
   password: PD07395842
   port: 443
   server: just-alpaca.rooster465.autos
   sni: just-alpaca.rooster465.autos
   type: trojan
-- name: 580|香港 30
+- name: 580|香港 26
   network: tcp
   password: PD07395842
   port: 443
   server: free-tahr.rooster465.autos
   sni: free-tahr.rooster465.autos
   type: trojan
-- name: 580|香港 31
-  network: tcp
-  password: PD07395842
-  port: 443
-  server: magical-kodiak.rooster465.autos
-  sni: magical-kodiak.rooster465.autos
-  type: trojan
-- name: 580|香港 32
-  network: tcp
-  password: PD07395842
-  port: 443
-  server: novel-mouse.rooster465.autos
-  sni: novel-mouse.rooster465.autos
-  type: trojan
-- name: 580|香港 33
-  network: tcp
-  password: PD07395842
-  port: 443
-  server: liberal-salmon.rooster465.autos
-  sni: liberal-salmon.rooster465.autos
-  type: trojan
-- name: 580|香港 34
-  network: tcp
-  password: PD07395842
-  port: 443
-  server: choice-worm.rooster465.autos
-  sni: choice-worm.rooster465.autos
-  type: trojan
-- name: 580|香港 36
-  network: tcp
-  password: PD07395842
-  port: 443
-  server: striking-cheetah.rooster465.autos
-  sni: striking-cheetah.rooster465.autos
-  type: trojan
-- name: 580|香港 37
+- name: 580|香港 27
   network: tcp
   password: PD07395842
   port: 443
   server: ace-starling.rooster465.autos
   sni: ace-starling.rooster465.autos
   type: trojan
+- name: 580|香港 28
+  network: tcp
+  password: PD07395842
+  port: 443
+  server: novel-mouse.rooster465.autos
+  sni: novel-mouse.rooster465.autos
+  type: trojan
+- name: 580|香港 29
+  network: tcp
+  password: PD07395842
+  port: 443
+  server: liberal-salmon.rooster465.autos
+  sni: liberal-salmon.rooster465.autos
+  type: trojan
+- name: 580|香港 30
+  network: tcp
+  password: PD07395842
+  port: 443
+  server: choice-worm.rooster465.autos
+  sni: choice-worm.rooster465.autos
+  type: trojan
+- name: 580|香港 32
+  network: tcp
+  password: PD07395842
+  port: 443
+  server: striking-cheetah.rooster465.autos
+  sni: striking-cheetah.rooster465.autos
+  type: trojan
+- name: 580|香港 33
+  network: tcp
+  password: PD07395842
+  port: 443
+  server: magical-kodiak.rooster465.autos
+  sni: magical-kodiak.rooster465.autos
+  type: trojan
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 580|香港 38
+  name: 580|香港 34
   network: tcp
   port: 443
   reality-opts:
@@ -6659,7 +6836,7 @@ proxies:
   tls: false
   type: vless
   uuid: aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d
-- name: 580|香港 39
+- name: 580|香港 35
   network: tcp
   password: JA96378052
   port: 443
@@ -6667,75 +6844,256 @@ proxies:
   skip-cert-verify: true
   sni: WangCai.rooster465.autos
   type: trojan
-- name: 580|香港 40
-  network: tcp
-  password: ON38567014
-  port: 443
-  server: top-goshawk.rooster465.autos
-  sni: top-goshawk.rooster465.autos
-  type: trojan
-- name: 580|香港 41
+- name: 580|香港 36
   network: tcp
   password: ON38567014
   port: 443
   server: dynamic-grubworm.rooster465.autos
   sni: dynamic-grubworm.rooster465.autos
   type: trojan
-- name: 580|香港 42
+- name: 580|香港 37
   network: tcp
   password: ON38567014
   port: 443
   server: leading-ram.rooster465.autos
   sni: leading-ram.rooster465.autos
   type: trojan
-- name: 580|香港 43
+- name: 580|香港 38
   network: tcp
   password: ON38567014
   port: 443
   server: novel-mouse.rooster465.autos
   sni: novel-mouse.rooster465.autos
   type: trojan
-- name: 580|香港 44
+- name: 580|香港 39
   network: tcp
   password: ON38567014
   port: 443
   server: pretty-mollusk.rooster465.autos
   sni: pretty-mollusk.rooster465.autos
   type: trojan
-- name: 580|香港 45
+- name: 580|香港 40
   network: tcp
   password: ON38567014
   port: 443
   server: humorous-parakeet.rooster465.autos
   sni: humorous-parakeet.rooster465.autos
   type: trojan
-- name: 580|香港 46
+- name: 580|香港 41
   network: tcp
   password: ON38567014
   port: 443
   server: natural-swan.rooster465.autos
   sni: natural-swan.rooster465.autos
   type: trojan
-- name: 580|香港 47
+- name: 580|香港 42
   network: tcp
   password: ON38567014
   port: 443
   server: genuine-grackle.rooster465.autos
   sni: genuine-grackle.rooster465.autos
   type: trojan
-- client-fingerprint: chrome
-  name: 580|香港 48
+- name: 580|香港 43
+  network: tcp
+  password: ON38567014
+  port: 443
+  server: top-goshawk.rooster465.autos
+  sni: top-goshawk.rooster465.autos
+  type: trojan
+- client-fingerprint: ios
+  name: 580|香港 44
   network: ws
   port: 443
-  server: 91.110.209.77
-  servername: edge-4cb23bf6.pages.dev
+  server: cos-cdn-a.alicdn.win
+  servername: mms-statlc-vwcrf1f-e.codeu.men
   tls: true
   type: vless
-  uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5
+  uuid: aa626cbf-abce-4369-9ad3-c6886312c4fb
   ws-opts:
     headers:
-      Host: edge-4cb23bf6.pages.dev
-    path: /Telegram🇨🇳+@WangCai2
+      Host: mms-static-version-e.codeu.men
+    path: /newlogin/login.do
+- client-fingerprint: firefox
+  name: 580|香港 45
+  network: ws
+  port: 443
+  server: cos-cdn-b.alicdn.win
+  servername: mms-statlc-n2jzzgn-f.codeu.men
+  tls: true
+  type: vless
+  uuid: aa626cbf-abce-4369-9ad3-c6886312c4fb
+  ws-opts:
+    headers:
+      Host: mms-static-version-f.codeu.men
+    path: /newlogin/login.do
+- name: 580|香港 46
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: relaxed-gull.rooster465.autos
+  sni: relaxed-gull.rooster465.autos
+  type: trojan
+- name: 580|香港 47
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: well-marmot.rooster465.autos
+  sni: well-marmot.rooster465.autos
+  type: trojan
+- name: 580|香港 48
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: growing-oyster.rooster465.autos
+  sni: growing-oyster.rooster465.autos
+  type: trojan
+- name: 580|香港 49
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: eminent-lamb.rooster465.autos
+  sni: eminent-lamb.rooster465.autos
+  type: trojan
+- name: 580|香港 50
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: just-alpaca.rooster465.autos
+  sni: just-alpaca.rooster465.autos
+  type: trojan
+- name: 580|香港 51
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: wealthy-loon.rooster465.autos
+  sni: wealthy-loon.rooster465.autos
+  type: trojan
+- name: 580|香港 52
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: engaging-llama.rooster465.autos
+  sni: engaging-llama.rooster465.autos
+  type: trojan
+- name: 580|香港 53
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: pretty-mollusk.rooster465.autos
+  sni: pretty-mollusk.rooster465.autos
+  type: trojan
+- name: 580|香港 54
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: true-coral.rooster465.autos
+  sni: true-coral.rooster465.autos
+  type: trojan
+- name: 580|香港 55
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: humorous-parakeet.rooster465.autos
+  sni: humorous-parakeet.rooster465.autos
+  type: trojan
+- name: 580|香港 56
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: renewing-ewe.rooster465.autos
+  sni: renewing-ewe.rooster465.autos
+  type: trojan
+- name: 580|香港 57
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: full-ox.rooster465.autos
+  sni: full-ox.rooster465.autos
+  type: trojan
+- name: 580|香港 58
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: liberal-salmon.rooster465.autos
+  sni: liberal-salmon.rooster465.autos
+  type: trojan
+- name: 580|香港 59
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: modern-bedbug.rooster465.autos
+  sni: modern-bedbug.rooster465.autos
+  type: trojan
+- name: 580|香港 60
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: novel-mouse.rooster465.autos
+  sni: novel-mouse.rooster465.autos
+  type: trojan
+- name: 580|香港 61
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: choice-worm.rooster465.autos
+  sni: choice-worm.rooster465.autos
+  type: trojan
+- name: 580|香港 62
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: natural-swan.rooster465.autos
+  sni: natural-swan.rooster465.autos
+  type: trojan
+- name: 580|香港 63
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: dynamic-grubworm.rooster465.autos
+  sni: dynamic-grubworm.rooster465.autos
+  type: trojan
+- name: 580|香港 64
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: ace-starling.rooster465.autos
+  sni: ace-starling.rooster465.autos
+  type: trojan
+- name: 580|香港 65
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: desired-tahr.rooster465.autos
+  sni: desired-tahr.rooster465.autos
+  type: trojan
+- name: 580|香港 66
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: genuine-grackle.rooster465.autos
+  sni: genuine-grackle.rooster465.autos
+  type: trojan
+- name: 580|香港 67
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: magical-kodiak.rooster465.autos
+  sni: magical-kodiak.rooster465.autos
+  type: trojan
+- name: 580|香港 68
+  network: tcp
+  password: XG59623478
+  port: 443
+  server: 194.99.79.214
+  sni: growing-oyster.rooster465.autos
+  type: trojan
+- name: 580|香港 69
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: electric-gibbon.rooster465.autos
+  sni: electric-gibbon.rooster465.autos
+  type: trojan
 - client-fingerprint: randomized
   name: 583|eooce-04-HK
   network: ws

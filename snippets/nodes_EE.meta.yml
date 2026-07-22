@@ -32,6 +32,46 @@ proxies:
   port: 989
   server: 37.252.5.234
   type: ss
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 438,551,566|🇪🇪 爱沙尼亚 | EST 2
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: dxsu1yp4dcpuhq32vLIX6fZ3A7uWs_5OzNIlUmLBSzQ
+    short-id: c7c005c49b11d17c
+  server: ru-xr-1.124515.xyz
+  servername: ru-xr-1.124515.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 56b812e4-2d96-0001-b365-6c801663a37a
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,580|🇪🇪EE_1|1.1MB/s|B007-260618 01
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SJkDT_L0eziQR2afDGrkN7-uRxjYu6bZxIGXlKeCvX4
+    short-id: 15aa18f971da1f81
+  server: est.vrsvpn.com
+  servername: web.max.ru
+  tls: false
+  type: vless
+  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,580|🇪🇪EE_2|1.3MB/s|B007-260618 01
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SJkDT_L0eziQR2afDGrkN7-uRxjYu6bZxIGXlKeCvX4
+    short-id: 15aa18f971da1f81
+  server: 185.155.97.241
+  servername: web.max.ru
+  tls: false
+  type: vless
+  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
 - name: 462|爱沙尼亚_塔林
   network: ws
   port: 2087
@@ -274,7 +314,8 @@ proxies:
     path: twitterfreecodessecurity%3Dtls
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '523,524|🇪🇪_爱沙尼亚_34 #1'
+  name: 523,524,580|爱沙尼亚(mibei77.com 米贝节点分享)
+  network: tcp
   port: 443
   reality-opts:
     public-key: DoZSKLwNQjogQMlE7oEEuB8TqpNa-umXzG-2Q6dTTEY
@@ -282,7 +323,7 @@ proxies:
   server: 138.124.100.13
   servername: estonia.milas.click
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vless
   udp: true
   uuid: 9ca88322-38bd-4ed7-aac9-8e10ae779699
@@ -295,56 +336,20 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
+- alpn:
+  - http/1.1
+  - h2
+  client-fingerprint: firefox
   name: 566|🇪🇪 爱沙尼亚 | EST
-  network: tcp
+  network: xhttp
   port: 443
-  reality-opts:
-    public-key: YviQqfgYjbDlVZhGgKvjfNtbx2Mfmfnx0U72mMZqawQ
-    short-id: f6cb69bf2ee16839
-  server: 95.156.206.65
-  servername: weather.com
+  server: free-exp.kyras.pw
+  servername: free-exp.kyras.pw
   tls: true
   type: vless
   udp: true
-  uuid: 4f8c3514-f1a6-49fd-bb8f-ad9b13a58aed
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|🇪🇪EE_1|1.3MB/s|B007-260618 01
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SJkDT_L0eziQR2afDGrkN7-uRxjYu6bZxIGXlKeCvX4
-    short-id: 15aa18f971da1f81
-  server: est.vrsvpn.com
-  servername: web.max.ru
-  tls: false
-  type: vless
-  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|🇪🇪EE_2|621KB/s|B007-260618 01
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-  server: 72.56.55.26
-  servername: auto.quattro-tech.ru
-  tls: false
-  type: vless
-  uuid: ecad47b0-249e-00ad-adff-e3c8f02b1897
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|🇪🇪EE_3|1.1MB/s|B007-260618 01
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SJkDT_L0eziQR2afDGrkN7-uRxjYu6bZxIGXlKeCvX4
-    short-id: 15aa18f971da1f81
-  server: 185.155.97.241
-  servername: web.max.ru
-  tls: false
-  type: vless
-  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
+  uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+  xhttp-opts:
+    host: free-exp.kyras.pw
+    mode: packet-up
+    path: /dashboard/
