@@ -874,14 +874,19 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '306,340,454,459,502,514,515,516,544,551,557|香港|@ripaojiedian #2'
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '306,340,435,437,454,459,502,514,515,516,544,551,557|香港|@ripaojiedian #2'
   network: tcp
   port: '30807'
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 356|🇭🇰1 |  3.5MB/s
   password: WfmxKX2FBJRU0Ie9VLIYDL
@@ -1604,12 +1609,14 @@ proxies:
   skip-cert-verify: false
   sni: pretty-mollusk.rooster465.autos
   type: trojan
-- name: 378,436,536,537,538|🇭🇰HK-194.99.79.214-0217 | 18.7...
+- country: 🇹LT
+  name: 378,435,436,536,537,538|🇭🇰HK-194.99.79.214-0217 | 18.7...
   password: XG59623478
   port: 443
   server: growing-oyster.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - country: 🇭🇰HK
   delay: 993
   name: '378,528,536,537,538,580|未知 TROJAN-165 | free-nodes #3'
@@ -3122,18 +3129,22 @@ proxies:
   uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
   ws-opts:
     path: /arki?ed=2048
-- name: '378,436,536,537|🇰HK-185.244.208.59-6140 #1'
+- country: 🇺HU
+  name: '378,435,436,536,537|🇰HK-185.244.208.59-6140 #1'
   password: WF42809561
   port: 443
   server: top-goshawk.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇰HK-185.244.208.52-6142 #1'
+  udp: true
+- country: 🇭🇺HU
+  name: '378,435,436,536,537|🇰HK-185.244.208.52-6142 #1'
   password: IL37892054
   port: 443
   server: just-alpaca.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇰HK-8.218.140.111-6523 #1'
@@ -3447,9 +3458,63 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: 435|🇰HK_62
+  password: asd123456
+  port: 8388
+  server: 103.149.183.12
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: 435|🇰HK_63
+  password: asd123456
+  port: 8388
+  server: 103.149.183.80
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: 435|🇭🇰HK_64
+  password: asd123456
+  port: 8388
+  server: 103.149.183.113
+  type: ss
 - alterId: 2
   cipher: auto
-  name: 437,459,508,509,636|🇨🇳 中国 002
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '435,437,459|美国(yudou789.top 玉豆免费节点) #13'
+  network: tcp
+  port: '30829'
+  server: v29.hdacd.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '435,437,459|美国(yudou789.top 玉豆免费节点) #54'
+  network: tcp
+  port: '30804'
+  server: v4.hdacd.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435,437,459,508,509,551,636|🇨🇳 中国 002
   network: tcp
   port: '30808'
   server: v8.hdacd.com
@@ -3460,16 +3525,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     path: /
-- alterId: 2
-  cipher: auto
-  name: '437,459|美国(yudou789.top 玉豆免费节点) #54'
-  network: tcp
-  port: '30804'
-  server: v4.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - name: 453|🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -4900,8 +4956,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- dialer-proxy: 🇭🇰 香港1 IPLC🔒
-  name: 728|🇭🇰 香港11 家宽🔒
+- name: 728|🇭🇰 香港11 家宽🔒
   password: 升级订阅解锁全部节点
   port: 21520
   server: starlink-hkt1.251313.xyz
