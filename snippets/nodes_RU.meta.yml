@@ -262,7 +262,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 006
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 017
   network: ws
   port: '14369'
   server: 195.133.53.192
@@ -325,7 +325,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: /
-  name: 378,537,636|🇷🇺 俄罗斯 008
+  name: 378,537,636|🇷🇺 俄罗斯 019
   network: grpc
   port: '32740'
   server: 5.42.80.252
@@ -336,7 +336,7 @@ proxies:
   uuid: 433f1111-b780-4eae-b7e7-d7823b09e701
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 010
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 021
   network: ws
   port: '30002'
   server: 185.173.94.1
@@ -351,7 +351,7 @@ proxies:
     path: /path/191019072927
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 011
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 022
   network: ws
   port: '16231'
   server: 31.129.105.239
@@ -366,7 +366,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 012
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 023
   network: ws
   port: '443'
   server: 37.220.161.249
@@ -385,7 +385,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 014
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 025
   network: http
   port: '26743'
   server: 194.87.248.27
@@ -400,7 +400,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 015
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 026
   network: http
   port: '37672'
   server: 176.119.159.245
@@ -411,7 +411,7 @@ proxies:
   uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇦 乌克兰 008
+  name: 378,508,509,536,537,636|🇺🇦 乌克兰 011
   network: ws
   port: '443'
   server: 45.67.215.119
@@ -426,7 +426,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 021
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 032
   network: ws
   port: '443'
   server: 93.93.89.118
@@ -441,7 +441,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 378,475,480,508,509,536,537,544,580,636|🇷🇺 俄罗斯 022
+  name: 378,475,480,508,509,536,537,544,580,636|🇷🇺 俄罗斯 033
   network: ws
   port: '443'
   server: renderer-stream-1-411.mirra.now
@@ -676,28 +676,31 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: 436|🇷🇺RU_91
+- name: 436|🇷🇺RU_83
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
   sni: kfm-bn0.pages.dev
   type: trojan
-- name: 436|🇷🇺RU_93
+- name: 436|🇷🇺RU_85
   password: IQ68037294
   port: 443
   server: square-anchovy.rooster465.autos
   type: trojan
-- name: 438,475,480,580|🇷🇺RU_3|3.0MB/s 01
-  obfs: salamander
-  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
-  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
-  port: 9443
-  server: 80.66.81.78
+- name: '438,508,509|俄罗斯 051 #1'
+  network: tcp
+  port: 8080
+  server: 95.182.90.211
   skip-cert-verify: false
-  sni: tunel1.washing.help
-  tls: false
-  type: hysteria2
+  tfo: false
+  tls: true
+  type: vless
   udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: play.google.com
+    path: '%2F'
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1544,6 +1547,17 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   up: ''
+- name: 502,548|🇷🇺 俄罗斯 starcorenode.com
+  network: ws
+  port: 58500
+  server: 176.124.221.208
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 3b2e0eab-f47f-45b0-87b2-71de9feef5c6
+  ws-opts:
+    path: /free
 - name: 507|RU TROJAN-212 | free-nodes
   network: ws
   password: p2QFnWdKPZt0evve7n-C52fTqRndJa5W
@@ -1554,6 +1568,25 @@ proxies:
   type: trojan
   ws-opts:
     path: /trojan-ws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507,580|🇱🇹LT_3|2.3MB/s|B007-260618 01
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: KEZ93Y9VgoirI18wIpcfS3z8I9GiaiFe-GKqGdEPMmg
+    short-id: e29c9c180c62
+  server: veesp-fj-vpn-2.concept7.ru
+  servername: deepl.com
+  tls: false
+  type: vless
+  uuid: 15e0833c-08ad-47f3-bf80-60c2a47a6774
+- name: 507|RU VLESS-236 | free-nodes
+  port: 443
+  server: api-1.de.orbit-escape.ru
+  tls: false
+  type: vless
+  uuid: 27c1d725-629c-4e65-9271-d6f5df82c7e9
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 507,580|🇳🇱NL_282|1.4MB/s|B007-260618 0...
@@ -1630,23 +1663,152 @@ proxies:
     headers:
       Host: 57be39cds394.csgfw.top
     path: ''
-- alterId: 0
-  cipher: auto
-  name: 508,509,636|🇷🇺 俄罗斯 003
+- client-fingerprint: chrome
+  encryption: none
+  name: 508,509,580|🇸🇪SE_1|2.6MB/s|S004-260618 01
+  network: xhttp
+  port: 443
+  server: zadefree-hyperlink.hyperfreelink.com
+  servername: zadefree-hyperlink.hyperfreelink.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3e725086-dabd-ae9d-ffa5-3bab782249e1
+  ws-opts:
+    path: /video
+  xhttp-opts:
+    path: /video
+  xudp: true
+- client-fingerprint: chrome
+  name: 508,509,580,636|🇷🇺 俄罗斯 002
+  network: tcp
+  password: NQ26071394
+  port: 443
+  server: 79.133.126.190
+  skip-cert-verify: false
+  sni: renewed-phoenix.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 508,509,580,636|🇷🇺 俄罗斯 003
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: cheerful-swan.rooster465.autos
+  skip-cert-verify: false
+  sni: cheerful-swan.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 508,509,580,636|🇷🇺 俄罗斯 004
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: next-ringtail.rooster465.autos
+  skip-cert-verify: false
+  sni: next-ringtail.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 508,509,580,636|🇷🇺 俄罗斯 005
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: moved-osprey.rooster465.autos
+  skip-cert-verify: false
+  sni: moved-osprey.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 508,509,580,636|🇷🇺 俄罗斯 006
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: brave-cattle.rooster465.autos
+  skip-cert-verify: false
+  sni: brave-cattle.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 508,509,580,636|🇷🇺 俄罗斯 007
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: open-eel.rooster465.autos
+  skip-cert-verify: false
+  sni: open-eel.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 508,509,580,636|🇷🇺 俄罗斯 008
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: sterling-fowl.rooster465.autos
+  skip-cert-verify: false
+  sni: sterling-fowl.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 508,509,580,636|🇷🇺 俄罗斯 010
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: sweeping-parakeet.rooster465.autos
+  skip-cert-verify: false
+  sni: sweeping-parakeet.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 508,509,580,636|🇷🇺 俄罗斯 011
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: major-duckling.rooster465.autos
+  skip-cert-verify: false
+  sni: major-duckling.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 508,509,636|🇷🇺 俄罗斯 012
+  network: tcp
+  password: FC60532879
+  port: 443
+  server: resolved-gelding.rooster465.autos
+  skip-cert-verify: false
+  sni: resolved-gelding.rooster465.autos
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 508,509,636|🇷🇺 俄罗斯 013
+  network: tcp
+  password: FC60532879
+  port: 443
+  server: faithful-panther.rooster465.autos
+  skip-cert-verify: false
+  sni: faithful-panther.rooster465.autos
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: '508,509,523,524|🇳🇱_荷兰_108 #1'
   network: ws
-  port: '2087'
-  server: speedtestgoogleyahoobingyandexgmailappleaol.andishehnegariran.ir
+  port: 443
+  server: 31.15.19.10
+  servername: cloudflare.vhub.pro
   skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: efdb11ca-8d37-40ab-9ec2-bdfd72ad4a5b
+  type: vless
+  udp: true
+  uuid: 0b0e9802-3a94-4cb0-83e3-293b94a1ee2e
   ws-opts:
     headers:
-      Host: speedtestgoogleyahoobingyandexgmailappleaol.andishehnegariran.ir
-    path: /mehdi
+      Host: cloudflare.vhub.pro
+    path: /websocket
 - alterId: 0
   cipher: auto
-  name: 508,509,574,636|🇷🇺 俄罗斯 004
+  name: 508,509,574,636|🇷🇺 俄罗斯 015
   network: tcp
   port: '22324'
   server: 5.188.190.252
@@ -1667,60 +1829,7 @@ proxies:
   tls: true
   type: vmess
   uuid: 433f1111-b780-4eae-b7e7-d7823b09e701
-- name: '508,509|俄罗斯 029 #1'
-  network: ws
-  port: 8880
-  server: 176.124.223.30
-  servername: vms.lifetime38.workers.dev
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime38.workers.dev
-- client-fingerprint: chrome
-  name: '508,509|俄罗斯 030 #1'
-  network: grpc
-  port: 443
-  server: 194.58.41.65
-  servername: www.microsoft.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: afc941a0-b6b4-42d1-b284-d59a42f083fd
-- name: '508,509|俄罗斯 031 #1'
-  network: ws
-  port: 8880
-  server: 193.9.49.30
-  servername: vms.lifetime44.workers.dev
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime44.workers.dev
-    path: /
-- client-fingerprint: qq
-  name: '508,509|俄罗斯 032 #1'
-  network: grpc
-  port: 443
-  server: 46.182.24.123
-  servername: ads.x5.ru
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 16e7af2f-4066-4fa9-ae41-3103a1250591
-- name: '508,509|俄罗斯 033 #1'
+- name: '508,509|俄罗斯 039 #1'
   network: tcp
   port: 4040
   server: 185.250.41.53
@@ -1730,24 +1839,8 @@ proxies:
   type: vless
   udp: true
   uuid: 0ece759b-356c-42b5-885f-8d9058962d22
-- client-fingerprint: chrome
-  name: '508,509|俄罗斯 034 #1'
-  network: ws
-  port: 443
-  server: 78.159.245.32
-  servername: furrycdn.net
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  ws-opts:
-    headers:
-      Host: furrycdn.net
-    path: /api/v1/video-stream
 - flow: ''
-  name: '508,509|俄罗斯 035 #1'
+  name: '508,509|俄罗斯 040 #1'
   network: ws
   port: 2087
   server: 176.124.223.16
@@ -1773,7 +1866,7 @@ proxies:
   udp: true
   uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
 - client-fingerprint: chrome
-  name: '508,509|俄罗斯 038 #1'
+  name: '508,509|俄罗斯 043 #1'
   network: ws
   port: 8443
   server: 92.243.74.4
@@ -1788,7 +1881,7 @@ proxies:
     headers:
       Host: vp29.cc.cd
     path: /
-- name: '508,509|俄罗斯 041 #1'
+- name: '508,509|俄罗斯 046 #1'
   network: tcp
   port: 80
   server: 31.15.18.102
@@ -1798,7 +1891,7 @@ proxies:
   type: vless
   udp: true
   uuid: 88888888-8888-8888-8888-888888888888
-- name: '508,509|俄罗斯 042 #1'
+- name: '508,509|俄罗斯 047 #1'
   network: tcp
   port: 14408
   server: 188.130.154.75
@@ -1808,7 +1901,33 @@ proxies:
   type: vless
   udp: true
   uuid: aca7d615-8a1e-4f6e-8cb6-72193a44bd3d
-- name: '508,509|俄罗斯 043 #1'
+- client-fingerprint: edge
+  flow: xtls-rprx-vision-udp443
+  name: '508,509,551|B - 🇺🇸 US 19 TG: @nodpai'
+  network: tcp
+  port: 22231
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- client-fingerprint: edge
+  flow: xtls-rprx-vision-udp443
+  name: '508,509,551|B - 🇺🇸 US 23 TG: @nodpai'
+  network: tcp
+  port: 443
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- name: '508,509|俄罗斯 050 #1'
   network: tcp
   port: 443
   server: 109.120.177.84
@@ -1819,49 +1938,8 @@ proxies:
   type: vless
   udp: true
   uuid: ba9ddd0d-5ffd-4d40-b76d-df32ecb092a1
-- name: '508,509|俄罗斯 044 #1'
-  network: ws
-  port: 8880
-  server: 194.76.18.2
-  servername: yellow-mouse-fcce.400-318.workers.dev
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: bb5f4b63-0b91-4f2c-8a02-66c3f99c1aaa
-  ws-opts:
-    headers:
-      Host: yellow-mouse-fcce.400-318.workers.dev
-    path: /pyip=Telegram🇨🇳+
 - client-fingerprint: chrome
-  name: '508,509|俄罗斯 045 #1'
-  network: tcp
-  port: 8888
-  server: 45.13.119.219
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
-- name: '508,509|俄罗斯 046 #1'
-  network: ws
-  port: 2096
-  server: 94.247.142.245
-  servername: juzibaipiao.5112233.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?edfp=chrome
-- client-fingerprint: chrome
-  name: '508,509|俄罗斯 047 #1'
+  name: '508,509|俄罗斯 052 #1'
   network: ws
   port: 2087
   server: 194.76.18.126
@@ -1904,6 +1982,27 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 519|🇷🇺_RU_俄罗斯
+  port: 443
+  reality-opts:
+    public-key: KgKu2yHqldNUFnYCY7suz-YTQKi6ZX2mLBduS2yy1xs
+  server: 188.225.46.217
+  servername: api-maps.yandex.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
+- name: 519|🇷🇺_RU_俄罗斯_1
+  port: 29311
+  server: 46.29.163.32
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: dee59997-f3f0-4dc5-bb26-ae24ae63ec5a
 - name: '523,524|🇷🇺_俄罗斯_416 #1'
   network: ws
   port: 4100
@@ -2027,6 +2126,17 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: X%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
+- name: '551|A - 🇷🇺 RU 01 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 45.67.215.30
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime48.workers.dev
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
