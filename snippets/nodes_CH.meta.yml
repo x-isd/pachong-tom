@@ -62,9 +62,84 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- client-fingerprint: chrome
+- alterId: 1
+  cipher: auto
+  name: 378,508,509,536,537,636|🇺🇸 美国 742
+  network: ws
+  port: '443'
+  server: 186.190.215.32
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.32
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 378,508,509,536,537,636|🇺🇸 美国 765
+  network: ws
+  port: '443'
+  server: 186.190.215.75
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.75
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 378,508,509,536,537,636|🇨🇭 瑞士 002
+  network: ws
+  port: '443'
+  server: 140.238.212.95
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /
+- name: '378,536,537|CH-152.67.71.149-3738 #1'
+  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
+  port: 18818
+  server: ch12.yukiss.eu.org
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-128-cfb
+  name: '378,537|🇨CH-156.146.62.160-5309 #1'
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.160
+  type: ss
+- name: '378,436,536,537|CH-86.106.84.195-6034 #1'
+  password: y3b03zx3tznhyo538p4c
+  port: 53261
+  server: 86.106.84.195
+  skip-cert-verify: false
+  type: trojan
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '438|🇨🇭CH_1|1.6MB/s | 福利姬: https://...'
+  name: 438,507,580|🇨🇭CH_5|1.2MB/s|S001-260618 01
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 45.131.212.11
+  servername: abuse.sellflow.org
+  tls: false
+  type: vless
+  uuid: 2a77a470-315c-493d-b690-59b814a804cb
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '438|🇨🇭CH_2|1.6MB/s | 更多节点: https:/...'
   network: tcp
   port: 443
   reality-opts:
@@ -130,21 +205,6 @@ proxies:
   type: vless
   udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
-- alterId: 0
-  cipher: auto
-  name: 508,509,536,537,636|🇨🇭 瑞士 002
-  network: ws
-  port: '443'
-  server: 140.238.212.95
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /
 - name: '508,509|瑞士 003 #1'
   network: tcp
   port: 12596
@@ -174,18 +234,6 @@ proxies:
   type: vless
   udp: true
   uuid: e6a037ff-3908-4bf9-b3e7-b1138da601f9
-- name: 536,537|CH-152.67.71.149-3738
-  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
-  port: 18818
-  server: ch12.yukiss.eu.org
-  skip-cert-verify: false
-  type: trojan
-- cipher: aes-128-cfb
-  name: 537|🇨CH-156.146.62.160-5309
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.160
-  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 580|🇨🇭CH_2|1.2MB/s|C002-260622 01
