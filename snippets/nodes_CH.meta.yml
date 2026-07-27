@@ -107,26 +107,41 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
-- name: '378,536,537|CH-152.67.71.149-3680 #1'
+- name: '378,536,537|CH-152.67.71.149-3677 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-5251 #1'
+  name: '378,537|🇨CH-156.146.62.160-5248 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
-- country: 🇴RO
-  name: '378,435,436,536,537|CH-86.106.84.195-5973 #1'
+- name: '378,436,536,537|CH-86.106.84.195-5963 #1'
   password: y3b03zx3tznhyo538p4c
   port: 53261
   server: 86.106.84.195
   skip-cert-verify: false
   type: trojan
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: '438,489,523,524|🇨🇭_瑞士_135 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  server: fl18.myxasecure.space
+  servername: fl18.myxasecure.space
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  xudp: true
 - client-fingerprint: chrome
   name: 438,580|🇨🇭CH_6|695KB/s|B007-260618 01
   network: xhttp
@@ -141,33 +156,6 @@ proxies:
   uuid: e912f8d6-f59a-48b1-b5ad-bbe548d7ebf3
   ws-opts:
     path: /
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 438,580|🇨🇭CH_2|1.8MB/s|A003-260618 01
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: oGgupP3uX0TNyFwuxNYaFj-IQ8EPhCuKfJdaOHiMnV0
-    short-id: c334408a1056aaf8
-  server: nl15.sodahub.online
-  servername: nl15.sodahub.online
-  tls: false
-  type: vless
-  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
-- client-fingerprint: chrome
-  name: '438|🇨🇭CH_3|1.5MB/s | 网盘搜宝: https:/...'
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: BjickB5Lt_-JIEj40uiaI1Sq4aDh1bzhWI1yBY9nbVc
-    short-id: '3000'
-  server: 45.59.125.228
-  servername: www.amd.com
-  tls: false
-  type: vless
-  uuid: 274e7cbc-887a-4502-8e1e-2302fb6e7bec
-  ws-opts:
-    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 465|16|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
@@ -223,22 +211,14 @@ proxies:
   type: vless
   udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 489,566|🇩🇪 德国 | DEU 21
-  network: tcp
+- client-fingerprint: chrome
+  name: '502,551|🇨🇭CH_1|2.4MB/s #1'
   port: 443
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  server: fl18.myxasecure.space
-  servername: fl18.myxasecure.space
+  server: 45.59.125.228
+  servername: www.amd.com
   tls: true
   type: vless
-  udp: true
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  xudp: true
+  uuid: 274e7cbc-887a-4502-8e1e-2302fb6e7bec
 - name: '508,509|瑞士 003 #1'
   network: tcp
   port: 12596
@@ -280,38 +260,18 @@ proxies:
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
 - client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: neurex
-  name: 566|🇨🇭 瑞士 | CHE
-  network: grpc
-  port: 16923
+  flow: xtls-rprx-vision
+  name: 580|🇨🇭CH_2|1.8MB/s|A003-260618 01
+  network: tcp
+  port: 443
   reality-opts:
-    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
-    short-id: 10ffb85da1c2d986
-  server: 152.233.31.68
-  servername: api-maps.yandex.ru
-  tls: true
+    public-key: oGgupP3uX0TNyFwuxNYaFj-IQ8EPhCuKfJdaOHiMnV0
+    short-id: c334408a1056aaf8
+  server: nl15.sodahub.online
+  servername: nl15.sodahub.online
+  tls: false
   type: vless
-  udp: true
-  uuid: 82e0af2f-65db-4423-a952-2c60972b78e1
-- grpc-opts:
-    grpc-service-name: BanV2ray-------BanV2ray------BanV2ray-------BanV2ray------BanV2ray-------BanV2ray------BanV2ray-------BanV2ray------BanV2ray-------BanV2ray------BanV2ray-------BanV2ray------BanV2ray-------BanV2ray------BanV2ray-------BanV2ray
-  name: 566|🇨🇭 瑞士 | CHE 2
-  network: grpc
-  password: Xpp4J8jfbWRwCFPbFQ0PaugqS8VZLKkm
-  port: 18936
-  server: 0101010101010101010101001010101010110010101010101010101010101.poki-pakipon.ir
-  skip-cert-verify: true
-  sni: rd.autos.yahoo.com:443
-  type: trojan
-- name: '568|🇨🇭 瑞士 | CHE #1'
-  password: Xpp4J8jfbWRwCFPbFQ0PaugqS8VZLKkm
-  port: 18936
-  server: 0101010101010101010101001010101010110010101010101010101010101.poki-pakipon.ir
-  skip-cert-verify: true
-  sni: rd.autos.yahoo.com:443
-  type: trojan
+  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 580|🇨🇭CH_3|1.2MB/s|C002-260622 01
