@@ -27,7 +27,7 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,636|🇸🇪 瑞典 006
+  name: 378,508,509,536,537,559,636|🇸🇪 瑞典 006
   network: ws
   port: '31002'
   server: 37.120.209.126
@@ -139,18 +139,50 @@ proxies:
   server: 121.127.46.147
   type: ss
 - client-fingerprint: chrome
+  name: 438,523,524,559,566|🇸🇪 瑞典 | SWE
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0
+  server: 170.168.99.3
+  servername: cdn.steamstatic.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e51796bb-3305-ac88-f39d-22fd9dd63b4f
+  ws-opts:
+    path: '%2F'
+  xhttp-opts:
+    host: cdn.steamstatic.com
+    mode: auto
+    path: /
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438|🇸🇪SE_2|2.1MB/s | 更多节点: https:/...'
+  name: 438,580|未知 VLESS-733 | free-nodes
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: Xx3r5KsSKa1I8O3avmwMbgXOWj_-MqiqzTO_7BzBxyU
+    short-id: 58c5b3ee013bdc8f
+  server: 62.60.231.42
+  servername: www.nvidia.com
+  tls: false
+  type: vless
+  uuid: f7e0e597-636e-4550-9f54-6ab1c0e8cf49
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇸🇪SE_4|1.5MB/s | 更多节点: https:/...'
   network: tcp
   port: 443
   reality-opts:
-    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
-    short-id: '5678'
-  server: 82.29.43.27
-  servername: auto.malina24.xyz
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: bbc68cec8bb8d2e3
+  server: node.mxvpn.dev
+  servername: node.mxvpn.dev
   tls: false
   type: vless
-  uuid: da7685a7-15ef-41e4-a0d9-009bb4be7220
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
 - name: '455,457,458|🇸🇪_SE_瑞典 #2'
   network: ws
   port: 443
@@ -223,6 +255,19 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /
+- down: ''
+  fingerprint: ''
+  name: '489,502,559|保加利亚+V2CROSS.COM #1'
+  obfs: ''
+  obfs-password: ''
+  password: 71cada65-d23e-418c-88e4-a06188d14689
+  port: 443
+  server: swe-one.quiet-rogue.site
+  skip-cert-verify: false
+  sni: swe-one.quiet-rogue.site
+  tls: false
+  type: hysteria2
+  up: ''
 - name: '508,509|瑞典 017 #1'
   network: ws
   port: 80
@@ -253,23 +298,34 @@ proxies:
     headers:
       Host: lc17.lebasnoo.ir.
     path: /servernett
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '519|🇸🇪_SE_瑞典 #3'
-  port: 443
-  reality-opts:
-    public-key: XZa7f7bABj7lY4HuLopVCBBBYTu-RB7QyIZ96njvYwo
-    short-id: 7bcfc0bc
-  server: 87.120.196.68
-  servername: yahoo.com
-  skip-cert-verify: true
+- name: '508,509|瑞典 019 #1'
+  network: tcp
+  port: 2044
+  server: 185.246.131.170
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 5bb7df8d-ad02-41fa-a8e6-8a8a4650d2c4
+  uuid: f75566a5-4744-4806-ac2e-ccaefe1b1080
+- client-fingerprint: chrome
+  name: '523,524,559,580|DE德国(mibei77.com 米贝节点分享) #4'
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: wcOBPSgoOKptWa9ZHpFpmbrPfLqobBNpCgLH88Ptjhk
+  server: 157.22.19.5
+  servername: download.nvidia.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c97b2158-64c9-1f55-8167-72970d347288
+  ws-opts:
+    path: '%2F'
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '523,524|🇸🇪_瑞典_150 #1'
+  name: '523,524,559|🇸🇪_瑞典_131 #2'
   port: 443
   reality-opts:
     public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
@@ -277,10 +333,13 @@ proxies:
   server: swe06.myxasecure.space
   servername: swe06.myxasecure.space
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vless
   udp: true
   uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  ws-opts:
+    headers:
+      Host: swe06.myxasecure.space
 - client-fingerprint: chrome
   name: '523,524|🇸🇪_瑞典_216 #1'
   network: ws
@@ -296,6 +355,190 @@ proxies:
     headers:
       Host: ov186.ochmaybrooooo.online
     path: /
+- client-fingerprint: chrome
+  name: '523,524|🇸🇪_瑞典_256 #1'
+  network: ws
+  port: 25060
+  server: swdh1.redemshenvpn.site
+  servername: swdh1.redemshenvpn.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: deb9c015-1ffe-4e41-9d21-310eb0422a4c
+  ws-opts:
+    headers:
+      Host: swdh1.redemshenvpn.site
+    path: /xray
+- name: 559|🇸🇪 瑞典-B96D1741
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 8443
+  server: 172.64.148.165
+  sni: tjsp.hhxaf.cc.cd
+  type: trojan
+- name: 559|🇸🇪 瑞典-BC8D3E62
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 8443
+  server: 172.64.148.248
+  sni: tjsp.hhxaf.cc.cd
+  type: trojan
+- name: 559|🇸🇪 瑞典-7A0E327B
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: I_h51HYy1GxghdjFod51Wv4xIAeRh1ezYN-7vubv5zQ
+    short-id: a1ab5a56bc11c2
+  server: 195.47.238.85
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 17550015-678f-43ad-b0d2-65c0a829bedb
+- name: 559|🇸🇪 瑞典-99B8C09F
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 9l18ryEYpf9E-qaQD2HkPfi1n5qfMRDkncpYLcZrdQc
+    short-id: b378
+  server: 89.22.228.57
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
+- client-fingerprint: chrome
+  name: '559|🇸🇪_瑞典_216 #2'
+  network: ws
+  port: 443
+  server: 206.168.213.106
+  servername: ov186.ochmaybrooooo.online
+  tls: true
+  type: vless
+  uuid: 218b4b35-e826-49d4-b5dc-558fc7eb9923
+  ws-opts:
+    headers:
+      Host: ov186.ochmaybrooooo.online
+    path: '%2F'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '559|🇸🇪_SE_瑞典 #3'
+  port: 443
+  reality-opts:
+    public-key: XZa7f7bABj7lY4HuLopVCBBBYTu-RB7QyIZ96njvYwo
+    short-id: 7bcfc0bc
+  server: 87.120.196.68
+  servername: yahoo.com
+  tls: true
+  type: vless
+  uuid: 5bb7df8d-ad02-41fa-a8e6-8a8a4650d2c4
+- name: 559|🇸🇪 Sweden, Gothenburg | [BL]
+  network: ws
+  port: 443
+  server: 194.154.30.29
+  servername: crm.lotussec.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: crm.lotussec.com
+    path: '%2F%40JavidnamanIran%2FJavid-SHAH-KingRezaPahlavi%2F'
+- name: '559|🇸🇪 Sweden, Gothenburg | [BL] #1'
+  network: ws
+  port: 443
+  server: 217.177.44.252
+  servername: crm.lotussec.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: crm.lotussec.com
+    path: '%2F%40JavidnamanIran%2FJavid-SHAH-KingRezaPahlavi%2F'
+- name: '559|🇸🇪 Sweden, Gothenburg | [BL] #2'
+  network: ws
+  port: 443
+  server: 44.32.235.10
+  servername: crm.lotussec.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: crm.lotussec.com
+    path: '%2F%40JavidnamanIran%2FJavid-SHAH-KingRezaPahlavi%2F'
+- name: '559|🇸🇪 Sweden, Gothenburg | [BL] #3'
+  network: ws
+  port: 443
+  server: 44.32.235.11
+  servername: crm.lotussec.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: crm.lotussec.com
+    path: '%2F%40JavidnamanIran%2FJavid-SHAH-KingRezaPahlavi%2F'
+- name: '559|🇸🇪 Sweden, Gothenburg | [BL] #4'
+  network: ws
+  port: 443
+  server: 44.32.235.13
+  servername: crm.lotussec.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: crm.lotussec.com
+    path: '%2F%40JavidnamanIran%2FJavid-SHAH-KingRezaPahlavi%2F'
+- name: '559|🇸🇪 Sweden, Gothenburg | [BL] #5'
+  network: ws
+  port: 443
+  server: 44.32.235.21
+  servername: crm.lotussec.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: crm.lotussec.com
+    path: '%2F%40JavidnamanIran%2FJavid-SHAH-KingRezaPahlavi%2F'
+- client-fingerprint: chrome
+  name: '559|🇸🇪_瑞典_256 #2'
+  network: ws
+  port: 25060
+  server: swdh1.redemshenvpn.site
+  servername: swdh1.redemshenvpn.site
+  tls: true
+  type: vless
+  uuid: deb9c015-1ffe-4e41-9d21-310eb0422a4c
+  ws-opts:
+    headers:
+      Host: swdh1.redemshenvpn.site
+    path: '%2Fxray'
+- client-fingerprint: firefox
+  name: 566|🇸🇪 瑞典 | SWE 2
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+  server: pro-se.emrata.top
+  servername: pro-se.emrata.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 72b9b9bd-8cb9-49ed-bfd4-20fab16829ba
+- cipher: aes-256-cfb
+  name: 566,585|SE_speednode_0138
+  password: amazonskr05
+  port: 443
+  server: 13.53.198.63
+  type: ss
+  udp: true
 - name: '580|SE瑞典丨yoyapai.com #2'
   network: ws
   port: 80
