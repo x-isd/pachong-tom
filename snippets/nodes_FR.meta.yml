@@ -1403,18 +1403,22 @@ proxies:
   skip-cert-verify: false
   sni: ukt1.sshocean.net
   type: trojan
-- name: '378,436,537|🇷FR-15.237.112.48-6006 #1'
+- country: 🇯🇵JP
+  name: '378,435,436,537|🇷FR-15.237.112.48-6006 #1'
   password: CF68213490
   port: 443
   server: smiling-fowl.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,537|🇷FR-15.237.100.62-6014 #1'
+  udp: true
+- country: 🇯🇵JP
+  name: '378,435,436,537|🇷FR-15.237.100.62-6014 #1'
   password: CF68213490
   port: 443
   server: star-moray.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 378,537,538|🇫🇷FR-54.36.174.181-0224 | 0.0M...
   password: cdBIDV42DCwnfIN
@@ -1742,28 +1746,23 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
-- name: 436,536|🇫🇷FR-35.181.65.111-5988
-  password: NQ26071394
-  port: 443
-  server: ready-kangaroo.rooster465.autos
-  type: trojan
-- name: 436,479,484,536|🇫🇷FR-15.237.250.154-5989
+- country: 🇷FR
+  name: 435,436,479,484,536|🇫🇷FR-15.237.250.154-5989
   password: NQ26071394
   port: 443
   server: chief-cricket.rooster465.autos
+  skip-cert-verify: true
   type: trojan
-- name: '438,494|Join+Telegram:@Farah_VPN #3524'
-  network: ws
-  password: humanity
+  udp: true
+- country: 🇷FR
+  name: 435,436,536|🇫🇷FR-35.181.65.111-5988
+  password: NQ26071394
   port: 443
-  server: 104.26.14.137
-  sni: www.ignitelimit.com
+  server: ready-kangaroo.rooster465.autos
+  skip-cert-verify: true
   type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_2|9.6MB/s | 福利姬: https://...'
+  udp: true
+- name: '438|🇫🇷FR_1|9.4MB/s | 更多节点: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1776,7 +1775,7 @@ proxies:
     path: '%2F%252Fassignment'
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '438,502,514,551,566,585,586|GB_speednode_0015 #3'
+  name: '438,502,514,551,585,586|GB_speednode_0015 #3'
   network: tcp
   port: 443
   reality-opts:
@@ -1789,6 +1788,21 @@ proxies:
   type: vless
   udp: true
   uuid: f055899d-026b-49b5-88ed-0227795082da
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '438,502,514,551,566,585,586|ZA_speednode_0230 #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA
+    short-id: 364994a6f61fc955
+  server: 45.192.2.51
+  servername: yandex.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 69080ad0-9074-4c38-b729-ace93fd4ac13
 - alpn:
   - http/1.1
   client-fingerprint: qq
@@ -1806,6 +1820,36 @@ proxies:
   type: vless
   udp: true
   uuid: 44a6901d-6675-41b1-9a80-ee3308699e1d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '438,502,514,551,585,586|ZA_speednode_0232 #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA
+    short-id: f34818a561dfd1fe
+  server: 45.192.2.51
+  servername: yandex.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fc58b0ab-2755-43bd-9388-b8edcf75d629
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '438,494,502,514,551,585,586|ZA_speednode_0233 #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA
+    short-id: 364994a6f61fc955
+  server: 45.192.2.51
+  servername: yandex.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 52f0f0ee-bc74-4757-8e1c-51e334233b4d
 - alpn:
   - http/1.1
   client-fingerprint: qq
@@ -1823,13 +1867,64 @@ proxies:
   type: vless
   udp: true
   uuid: e9346960-a429-4c1a-b661-512611450fea
-- name: '438,494|Join+Telegram:@Farah_VPN #4357'
+- name: 438,494,507|未知 VLESS-748 | free-nodes
   network: tcp
   port: 22222
   server: 15.224.27.66
   tls: false
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: '438,494|Join+Telegram:@Farah_VPN #1335'
+  network: tcp
+  port: 22223
+  server: 15.224.27.66
+  tls: false
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- client-fingerprint: chrome
+  name: 438,494,566|🇫🇷 法国 | FRA 2
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: 3DYkxUg9fBA6cONioJOPrsklcMQEImEsurR6air4swo
+  server: 104.245.242.7
+  servername: cdn.steamstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e3e876aa-589e-1dcb-e55f-6ff56d8d80f4
+  ws-opts:
+    path: /
+  xhttp-opts:
+    host: cdn.steamstatic.com
+    mode: auto
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,494,559|🏁 未知-9ABDA738
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.2
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: ''
+  flow: xtls-rprx-vision
+  name: '438,494|Join+Telegram:@Farah_VPN #931'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: bbc68cec8bb8d2e3
+  server: node14.mxvpn.dev
+  servername: node14.mxvpn.dev
+  tls: false
+  type: vless
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 438,494,559|🇩🇪 德国-86972D10
@@ -1847,48 +1942,39 @@ proxies:
   ws-opts:
     headers:
       Host: v2rayNplus--v2rayNplus--v2rayNplus
-- client-fingerprint: firefox
+- name: '438,494|Join+Telegram:@Farah_VPN #2598'
+  network: tcp
+  port: 22224
+  server: 15.224.27.66
+  tls: false
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,494,559|未知 VLESS-554 | free-nodes #1'
+  name: '438,494|Join+Telegram:@Farah_VPN #4160'
   network: tcp
   port: 443
   reality-opts:
-    public-key: wwH_L9FmhJ7AyOBKm9J8YGKdVo1G-QlDEuw5-s3eGEM
-    short-id: 9a4c7d2f8e1b6a3c
-  server: 51.91.158.180
-  servername: www.speedtest.net
-  skip-cert-verify: true
+    public-key: 1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA
+    short-id: f34818a561dfd1fe
+  server: 45.192.2.115
+  servername: yandex.net
   tls: false
   type: vless
-  uuid: 7b4b7d4e-7a53-4c0c-bd8e-9f3b1b2c7f21
-  ws-opts:
-    headers:
-      Host: v2rayNplus--v2rayNplus--v2rayNplus
+  uuid: 0b8dfc50-9e2d-4b3c-85cd-870b478312a0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #2481'
+  name: '438,494|Join+Telegram:@Farah_VPN #270'
   network: tcp
   port: 443
   reality-opts:
-    public-key: DHsthrDRMCGcOyJd4xTce_4CCSAJZGwxCdfNrkB_Pgs
-    short-id: 479826bdfc3eb86e
-  server: 54.37.75.187
-  servername: www.speedtest.net
-  skip-cert-verify: true
+    public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0
+    short-id: a91045bc
+  server: 163.5.153.153
+  servername: www.samsung.com
   tls: false
   type: vless
-  uuid: a0b067ac-162d-4237-956d-10b8b471d3f5
-- client-fingerprint: chrome
-  name: 438,494,508,509,559|🏁 未知-8A12728D
-  network: tcp
-  port: 8888
-  server: 45.13.119.219
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
+  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -2056,7 +2142,7 @@ proxies:
       Host: lax1.ibgfw.top
     path: /xrenvws
 - client-fingerprint: chrome
-  name: '475,476,480,481,494|Join+Telegram:@Farah_VPN #3077'
+  name: '475,476,480,481,494|Join+Telegram:@Farah_VPN #2554'
   network: ws
   port: 443
   server: cloudflare-ip.mofashi.ltd
@@ -2071,7 +2157,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
     path: /
 - client-fingerprint: chrome
-  name: '475,476,480,481,494|Join+Telegram:@Farah_VPN #4061'
+  name: '475,476,480,481,494|Join+Telegram:@Farah_VPN #3530'
   network: ws
   port: 443
   server: yx.cloudflare.182682.xyz
@@ -2116,7 +2202,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
     path: /
 - client-fingerprint: chrome
-  name: '475,476,480,481,494|Join+Telegram:@Farah_VPN #2362'
+  name: '475,476,480,481,494|Join+Telegram:@Farah_VPN #2398'
   network: ws
   port: 443
   server: store.ubi.com
@@ -2932,7 +3018,7 @@ proxies:
       Host: BankMelat.glObal.ssl.faStly.nEt
     path: /?Telegram-WangCai2🇨🇳
 - client-fingerprint: chrome
-  name: '476,481,494|Join+Telegram:@Farah_VPN #262'
+  name: '476,481,494|Join+Telegram:@Farah_VPN #1612'
   network: ws
   port: 443
   server: mfa.gov.ua
@@ -4602,10 +4688,26 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
     path: '%2F'
 - alpn:
+  - h2
+  client-fingerprint: chrome
+  name: 566|🇫🇷 法国 | FRA 3
+  network: ws
+  port: 443
+  server: 172.66.174.41
+  servername: pinalo.zenvorix.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 245bb424-b186-4738-8f42-bdbde719d4c9
+  ws-opts:
+    headers:
+      Host: pinalo.zenvorix.ir
+    path: /nova-geo-psiphon-fr
+- alpn:
   - http/1.1
   client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 566|🇫🇷 法国 | FRA
+  name: 566|🇫🇷 法国 | FRA 5
   network: tcp
   port: 443
   reality-opts:
@@ -4617,6 +4719,14 @@ proxies:
   type: vless
   udp: true
   uuid: c9b764b5-49cf-4400-9540-f56f7c09a87a
+- multiplexing: MULTIPLEXING_LOW
+  name: 566|🇫🇷 法国 | FRA 6
+  password: 905fb8ba-7e07-4f00-b7f9-1210c6158901
+  port: 60782
+  server: tv0mi5si3fn6ip4wa1yd9ak7li8ol7fk0mg1gf5ks5gi4ih7ee7tr2if7kh2ju7.niumayun.space
+  transport: TCP
+  type: mieru
+  username: 905fb8ba-7e07-4f00-b7f9-1210c6158901
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
