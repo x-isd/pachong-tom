@@ -84,12 +84,16 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- name: '340,438,495,496,502,514,551,559|8,9|️73@oneclickvpnkeys #1'
-  password: d1a0857bc1eb833a9edf96be4c1f999e
-  port: 55443
-  server: host-vds2-fr.kvncococ.org
-  skip-cert-verify: true
-  sni: host-vds2-fr.kvncococ.org
+- alpn:
+  - h3
+  fingerprint: chrome
+  name: 340,496,502,514,551,559|芬兰_081304016
+  obfs: salamander
+  obfs-password: p61ckuavkc1s2hfl
+  password: 3ff7b2e75ce84d05ae16572b60a9b707
+  port: 52031
+  server: assets.gateway-stream.com
+  sni: assets.gateway-stream.com
   tls: false
   type: hysteria2
 - cipher: aes-256-cfb
@@ -478,7 +482,7 @@ proxies:
   ws-opts:
     path: /
 - client-fingerprint: chrome
-  name: 378,494,508,509,536,537,538,559,636|🇺🇸 美国 023
+  name: 378,438,494,508,509,536,537,538,559,636|🇺🇸 美国 023
   network: tcp
   password: ND91608427
   port: 443
@@ -1892,12 +1896,22 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 436|🇫🇷FR_16
+- name: 436|🇫🇷FR_22
+  password: XG59623478
+  port: 443
+  server: new-antelope.rooster465.autos
+  type: trojan
+- name: '436,494|Join+Telegram:@Farah_VPN #1307'
+  password: ND91608427
+  port: 443
+  server: fancy-skink.rooster465.autos
+  type: trojan
+- name: 436|🇫🇷FR_24
   password: ND91608427
   port: 443
   server: star-kiwi.rooster465.autos
   type: trojan
-- name: '438|🇫🇷FR_1|2.5MB/s | 网盘搜宝: https:/...'
+- name: '438|🇫🇷FR_1|2.6MB/s | 更多节点: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1908,55 +1922,49 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
+- name: '438|🇫🇷FR_5|1.3MB/s | 网盘搜宝: https:/...'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.71.213
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 438,489,494,559|🇫🇮_芬兰_170
+  name: '438,494|Join+Telegram:@Farah_VPN #4090'
   network: tcp
   port: 443
-  reality-opts:
-    public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0
-    short-id: a91045bc
-  server: 163.5.153.153
-  servername: www.samsung.com
+  server: fr76.mechvpn.online
+  servername: fr76.mechvpn.online
   tls: true
   type: vless
-  udp: true
-  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
-  xudp: true
-- name: '438,494,508,509|俄罗斯 045 #1'
-  network: tcp
+  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+- client-fingerprint: chrome
+  name: '438,494|Join+Telegram:@Farah_VPN #4158'
+  network: xhttp
   port: 443
-  server: 89.208.113.16
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: adce7c2a-3191-49ae-b61c-9b8258ea1b0e
-- client-fingerprint: ''
-  flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #3617'
-  network: tcp
-  port: 23576
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  servername: fuck.rkn
+    public-key: VHidBoU58xA5kEh8pmXf0gQYzvz-KVH9-XAuM4TrMUs
+    short-id: 49bcf0de6392f0
+  server: 31.220.86.213
+  servername: status.play.google.com
   tls: false
   type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: chrome
+  uuid: 74ed8b25-5ff1-40bf-bcd7-3db03be19f53
+  ws-opts:
+    headers:
+      Host: status.play.google.com
+    path: /
+- alpn:
+  - h2
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #3271'
+  name: '438,494|Join+Telegram:@Farah_VPN #3415'
   network: tcp
   port: 443
-  server: 162.19.10.99
+  server: nasnet-162191099-direct.mbghalibaf.com
   servername: nasnet-162191099-direct.mbghalibaf.com
   skip-cert-verify: false
   tls: true
@@ -1972,6 +1980,19 @@ proxies:
     short-id: '01'
   server: 62.210.91.2
   servername: ''
+  tls: false
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: ''
+  flow: xtls-rprx-vision
+  name: '438,494|Join+Telegram:@Farah_VPN #2972'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: fuck.rkn
   tls: false
   type: vless
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
@@ -2174,7 +2195,7 @@ proxies:
   udp: true
   uuid: f3ac6161-3592-43ed-82f2-daf9c97806aa
 - client-fingerprint: chrome
-  name: '475,480,494|Join+Telegram:@Farah_VPN #632'
+  name: '475,480,494|Join+Telegram:@Farah_VPN #3676'
   network: ws
   port: 443
   server: yx.cloudflare.182682.xyz
@@ -2204,7 +2225,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
     path: /
 - client-fingerprint: chrome
-  name: '475,480,494|Join+Telegram:@Farah_VPN #2934'
+  name: '475,480,494|Join+Telegram:@Farah_VPN #4445'
   network: ws
   port: 443
   server: cloudflare-ip.mofashi.ltd
@@ -2264,7 +2285,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
     path: /
 - client-fingerprint: chrome
-  name: '475,480,494|Join+Telegram:@Farah_VPN #1262'
+  name: '475,480,494|Join+Telegram:@Farah_VPN #4762'
   network: ws
   port: 443
   server: store.ubi.com
@@ -2306,7 +2327,7 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: 476,481,494,559,566|🇫🇷 法国 | FRA 23
+- name: 476,481,559,566|🇫🇷 法国 | FRA 23
   network: ws
   password: humanity
   port: 443
@@ -2346,7 +2367,7 @@ proxies:
       Host: www.ignitelimit.com
     path: /assignment
 - flow: xtls-rprx-vision
-  name: '478,483,522,581|🇫🇷_FR_法国 #2'
+  name: '478,483,522,548,581|🇫🇷_FR_法国 #4'
   port: 443
   server: fr.noooo.win
   skip-cert-verify: true
@@ -2380,9 +2401,9 @@ proxies:
   sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
   tls: true
   type: http
-- client-fingerprint: chrome
+- client-fingerprint: ios
   encryption: none
-  name: '489,494|Join+Telegram:@Farah_VPN #3765'
+  name: '489,494|Join+Telegram:@Farah_VPN #2137'
   network: tcp
   port: 443
   reality-opts:
@@ -2433,6 +2454,7 @@ proxies:
         Gecko) Chrome/51.0.2704.106 Safari/537.36
     path: /assignment
 - client-fingerprint: ios
+  flow: ''
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: vless-grpc-reality
@@ -2475,59 +2497,14 @@ proxies:
   port: 1080
   server: 109.123.251.109
   type: socks5
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '502,551|🇫🇷FR_1|1.4MB/s #1'
-  port: 50443
-  server: 89.208.113.54
-  servername: www.icloud.com
-  tls: true
-  type: vless
-  uuid: 000f16e8-cc68-4951-b336-acd81996efde
-- name: '502,551|🇫🇷FR_2|2.6MB/s #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: 165.215.250.14
+- name: '502,551,559|8|国 #5'
+  password: 5bc8aea0-04a6-4fcf-9a04-1a51518396a8
+  port: 35000
+  server: 129.151.250.154
   skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: /assignment
-- name: '502,551|🇫🇷FR_4|2.1MB/s #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.210
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: /assignment
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '502,551|🇫🇷FR_5|3.2MB/s #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.67.221.242
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: /assignment
-- name: '502,551|🇫🇷FR_6|3.1MB/s #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.111.1
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: /assignment
+  sni: www.lamer.com.hk
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -2654,13 +2631,6 @@ proxies:
   server: star-kiwi.rooster465.autos
   sni: star-kiwi.rooster465.autos
   type: trojan
-- name: 559|法国_081304016
-  password: QV31589740
-  port: 443
-  server: 51.44.160.58
-  skip-cert-verify: false
-  sni: great-krill.rooster465.autos
-  type: trojan
 - name: 559|🇫🇷FR_38
   password: XG59623478
   port: 443
@@ -2745,7 +2715,7 @@ proxies:
   uuid: 356ccb34-22cc-4446-a137-072bc60d65ca
 - client-fingerprint: chrome
   flow: xtls-rprx-vision-udp443
-  name: 559|🇫🇷FR_5|1.5MB/s
+  name: '559|🇫🇷FR_5|1.5MB/s #2'
   port: 443
   server: 91.239.208.15
   servername: fr15.mechvpn.online
@@ -3042,6 +3012,13 @@ proxies:
   password: humanity
   port: 443
   server: 104.18.152.179
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: '568|🇫🇷 法国 | FRA #15'
+  password: humanity
+  port: 443
+  server: 104.19.229.21
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
