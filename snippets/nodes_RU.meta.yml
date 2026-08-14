@@ -358,7 +358,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: /
-  name: '378,508,509,537|🇺RU-5.42.80.252-1098 #1'
+  name: '378,537|🇺RU-5.42.80.252-1098 #1'
   network: grpc
   port: 32740
   server: 5.42.80.252
@@ -366,7 +366,6 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vmess
-  udp: true
   uuid: 433f1111-b780-4eae-b7e7-d7823b09e701
 - alterId: 64
   cipher: auto
@@ -689,7 +688,7 @@ proxies:
   server: 146.185.198.44
   type: ss
 - country: 🇷🇺RU
-  name: 435,436|🇷🇺RU_77
+  name: 435,436|🇷🇺RU_95
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
@@ -1473,19 +1472,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: chrome
-  name: '472,473,474|俄罗斯+V2CROSS.COM #2'
-  network: ws
-  port: 2096
-  server: 91.193.58.45
-  servername: free-server.techsonic.dev
-  tls: true
-  type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  ws-opts:
-    headers:
-      Host: free-server.techsonic.dev
-    path: /free-server.techsonic.dev
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '475,480|🇺俄罗斯丨yoyapai.com_1 #1'
@@ -1638,18 +1624,30 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
-- name: 519|🇷🇺_RU_俄罗斯
-  network: ws
-  port: 4100
-  server: 194.26.229.222
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 519,559|🇷🇺_俄罗斯_198
+  port: 443
+  reality-opts:
+    public-key: ckPCrgbrSdQaz1j3vP0-f0P8F4E8ZucQTeQGtxBKagU
+    short-id: 3882f019072c5dcd
+  server: vruaz.mostserv.xyz
+  servername: vruaz.mostserv.xyz
   skip-cert-verify: true
   tls: false
   type: vless
   udp: true
-  uuid: b3d66abd-ea82-4616-92f0-1dec8d1e4cfc
+  uuid: 463a26c2-eba8-0031-89c4-ee5c1373ccbe
+- name: 519|🇷🇺_RU_俄罗斯_1
+  network: ws
+  port: 4100
+  server: 168.222.140.236
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
   ws-opts:
-    headers:
-      Host: live.ok.ru
     path: /v1
 - client-fingerprint: qq
   flow: xtls-rprx-vision
@@ -1809,7 +1807,7 @@ proxies:
   uuid: b3764969-ffeb-4436-8f83-ca9f1774edb9
   ws-opts:
     path: /v1
-- name: 523,524,566|🇷🇺 俄罗斯 | RUS
+- name: '523,524|俄罗斯_🇷🇺_308 #1'
   network: ws
   port: 4100
   server: 104.171.136.172
@@ -1994,12 +1992,6 @@ proxies:
   server: 162.159.60.167
   sni: hhcm.hhxaf.cc.cd
   type: trojan
-- name: 559|🇷🇺RU_131
-  password: tunnel-ljlcf
-  port: 8441
-  server: tr-1.stunnel.cc
-  sni: tr-1.stunnel.cc
-  type: trojan
 - name: 559|🇷🇺 俄罗斯-4B548E8C
   network: tcp
   port: 443
@@ -2024,18 +2016,6 @@ proxies:
   tls: false
   type: vless
   uuid: 15e0833c-08ad-47f3-bf80-60c2a47a6774
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 559|🇷🇺_俄罗斯_198
-  port: 443
-  reality-opts:
-    public-key: ckPCrgbrSdQaz1j3vP0-f0P8F4E8ZucQTeQGtxBKagU
-    short-id: 3882f019072c5dcd
-  server: vruaz.mostserv.xyz
-  servername: vruaz.mostserv.xyz
-  tls: false
-  type: vless
-  uuid: 463a26c2-eba8-0031-89c4-ee5c1373ccbe
 - client-fingerprint: safari
   flow: xtls-rprx-vision
   name: 559|🇷🇺_俄罗斯_144
