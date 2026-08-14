@@ -312,13 +312,11 @@ proxies:
 - cipher: aes-256-gcm
   country: 🇨🇿CZ
   delay: 675
-  name: '378,519,528,537|🇺RU-195.133.23.200-0437 #1'
+  name: '378,528,537|🇺RU-195.133.23.200-0437 #1'
   password: 81a20429165df87e
   port: 30331
   server: 195.133.23.200
-  skip-cert-verify: true
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 378,508,509,536,537,636|🇩🇪 德国 008
@@ -674,8 +672,32 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- country: RU
+  name: 435,436|🇷🇺RU_137
+  password: WG39087154
+  port: 443
+  server: pet-albacore.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - country: 🇺RU
-  name: 435,436|🇷🇺RU_80
+  name: 435,436|🇷🇺RU_138
+  password: IQ68037294
+  port: 443
+  server: still-mastodon.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺RU
+  name: 435,436|🇷🇺RU_140
+  password: IQ68037294
+  port: 443
+  server: square-anchovy.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇷🇺RU
+  name: '435,436|🇷🇺RU_141 #1'
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
@@ -1582,6 +1604,19 @@ proxies:
   port: 1080
   server: 153.80.240.37
   type: http
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,559,717|节点日期：2026-08-14 #1'
+  network: tcp
+  port: 2027
+  reality-opts:
+    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
+    short-id: dc8109baf0f607ea
+  server: 78.159.247.253
+  servername: storage.yandex.net
+  tls: false
+  type: vless
+  uuid: 851ed0d8-a37b-452d-8ef2-5b6c2d28a060
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -1595,6 +1630,16 @@ proxies:
   tls: true
   type: vmess
   uuid: 433f1111-b780-4eae-b7e7-d7823b09e701
+- name: '508,509|俄罗斯 033 #1'
+  network: tcp
+  port: 245
+  server: 31.184.244.100
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 02570ac6-55a3-4776-8665-3e716d087892
 - name: 508,509,559|🇺🇸%
   network: tcp
   port: 443
@@ -1762,6 +1807,19 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
+- name: 519|🇷🇺_RU_俄罗斯
+  network: ws
+  port: 4100
+  server: 194.26.229.222
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: b3d66abd-ea82-4616-92f0-1dec8d1e4cfc
+  ws-opts:
+    headers:
+      Host: live.ok.ru
+    path: /v1
 - client-fingerprint: random
   flow: xtls-rprx-vision
   name: '523,524,559|🇷🇺_俄罗斯_131 #2'
@@ -1886,6 +1944,16 @@ proxies:
   type: vless
   udp: true
   uuid: ff1b0b50-70dc-4bae-866e-55cff86f4d6d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '523,524,559|🇷🇺_俄罗斯_160 #2'
+  port: 443
+  server: ru211.mechvpn.online
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1c6824de-312c-4876-aa3f-5a30e3df2de7
 - client-fingerprint: edge
   flow: xtls-rprx-vision
   name: '523,524,559|🇷🇺_俄罗斯_198 #2'
@@ -2065,15 +2133,7 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 559|俄罗斯联邦_081318658
-  password: 7836b28e-8451-4596-ad3e-e3601b2335ba
-  port: 8443
-  server: 78.159.240.69
-  skip-cert-verify: false
-  sni: quic.tyr-agentstvo.tech
-  tls: false
-  type: hysteria2
-- name: 559|俄罗斯联邦_081318666
+- name: 559|俄罗斯联邦_081404653
   password: gf1:gfhysteria2024
   port: 443
   server: 5.129.235.85
@@ -2081,19 +2141,19 @@ proxies:
   sni: www.linux.com
   tls: false
   type: hysteria2
-- name: 559|🇷🇺RU_97
+- name: 559|🇷🇺RU_133
   password: IQ68037294
   port: 443
   server: still-mastodon.rooster465.autos
   sni: still-mastodon.rooster465.autos
   type: trojan
-- name: 559|🇷🇺RU_95
+- name: 559|🇷🇺RU_130
   password: WG39087154
   port: 443
   server: pet-albacore.rooster465.autos
   sni: pet-albacore.rooster465.autos
   type: trojan
-- name: 559|🇷🇺RU_96
+- name: 559|🇷🇺RU_132
   password: XG59623478
   port: 443
   server: classic-duckling.rooster465.autos
@@ -2104,6 +2164,12 @@ proxies:
   port: 443
   server: 162.159.60.167
   sni: hhcm.hhxaf.cc.cd
+  type: trojan
+- name: 559|🇷🇺RU_131
+  password: tunnel-ljlcf
+  port: 8441
+  server: tr-1.stunnel.cc
+  sni: tr-1.stunnel.cc
   type: trojan
 - name: 559|🇷🇺 俄罗斯-4B548E8C
   network: tcp
@@ -2118,7 +2184,7 @@ proxies:
   uuid: 12a49340-fd9c-4a70-8ebc-d2cf0dd36b2a
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 559|RU VLESS-347 | free-nodes
+  name: 559|RU VLESS-339 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -2129,20 +2195,6 @@ proxies:
   tls: false
   type: vless
   uuid: 15e0833c-08ad-47f3-bf80-60c2a47a6774
-- client-fingerprint: chrome
-  name: 559,566|🇸🇬 新加坡 | SGP 5
-  network: ws
-  port: 2096
-  server: 91.193.58.250
-  servername: free-server.techsonic.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  ws-opts:
-    headers:
-      Host: free-server.techsonic.dev
-    path: /free-server.techsonic.dev
 - client-fingerprint: chrome
   name: 559|@FreeStrongVpn - 🇷🇺
   network: tcp
