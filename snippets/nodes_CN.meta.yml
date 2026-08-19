@@ -1,18 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  delay: 660
-  name: '306,378,489,528,537|🇨🇳CN-211.91.158.24-1803 #1'
+  name: '306,378,489,537|🇨🇳CN-211.91.158.27-1807 #1'
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21114
-  server: 211.91.158.24
+  port: 21107
+  server: 211.91.158.27
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  delay: 454
-  name: '306,378,528,537|🇨🇳CN-211.91.158.27-1808 #1'
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21119
-  server: 211.91.158.27
+- cipher: aes-256-cfb
+  name: 306,566|🇰🇷 韩国 | KOR
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.235
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -584,6 +582,14 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  delay: 660
+  name: '378,489,528,537|🇨🇳CN-211.91.158.24-1803 #1'
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21114
+  server: 211.91.158.24
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: '378,537|🇨🇳CN-211.91.158.24-1804 #1'
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21107
@@ -603,9 +609,10 @@ proxies:
   server: 211.91.158.27
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,489,537|🇨🇳CN-211.91.158.27-1807 #1'
+  delay: 454
+  name: '378,528,537|🇨🇳CN-211.91.158.27-1808 #1'
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21107
+  port: 21119
   server: 211.91.158.27
   type: ss
   udp: true
@@ -1238,25 +1245,6 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- flow: ''
-  name: '472,473,474,502,519,523,524,717|CN【机场推荐：https://a9a.xyz】21 #1'
-  network: tcp
-  port: 58011
-  server: us22.sofast.live
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-- name: '472,473,474,502,523,524,580,717|CN【机场推荐：https://a9a.xyz】22 #1'
-  network: tcp
-  port: 52683
-  server: jp.sofast.live
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
 - http-opts:
     headers: {}
     path:
@@ -1273,6 +1261,16 @@ proxies:
   port: 8080
   server: 112.64.135.45
   type: http
+- flow: ''
+  name: 502,519,523,524,717|CN【机场推荐：https://a9a.xyz】2
+  network: tcp
+  port: 58011
+  server: us22.sofast.live
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
 - cipher: aes-256-cfb
   name: '513,517,578|1|_CN_ #2'
   password: hGkQ6915tD
@@ -2058,25 +2056,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 580|未知 VLESS-864 | free-nodes
-  network: tcp
-  port: 13131
-  server: 103.118.252.45
-  tls: false
-  type: vless
-  uuid: bc155a59-a4db-45e7-addf-db634b79757b
-- name: 580|🇨🇳CN_2|223KB/s|A004-260618 01
-  password: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
-  port: 9080
-  server: 139.28.168.54
-  sni: grape-honk.yyuyy.com
-  tls: false
-  type: hysteria2
-- name: 580|🇨🇳CN_3|141KB/s|A004-260618 01
-  password: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
-  port: 9080
-  server: 139.28.168.55
-  skip-cert-verify: true
-  sni: grape-honk.yyuyy.com
-  tls: false
-  type: hysteria2
