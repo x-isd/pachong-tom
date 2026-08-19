@@ -107,7 +107,8 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: aes-128-gcm
-  name: 356,378,537,538|🇨🇦CA-149.22.95.183-0056 | 68.5...
+  country: 🇺US
+  name: 356,378,435,537,538|🇨🇦CA-149.22.95.183-0056 | 68.5...
   password: shadowsocks
   port: 443
   server: 149.22.95.183
@@ -168,7 +169,8 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇨🇦CA-108.181.118.10-0053 | 135...
+  country: 🇨🇦CA
+  name: 378,435,537,538|🇨🇦CA-108.181.118.10-0053 | 135...
   password: G5p6ww4o67HB
   port: 8388
   server: 108.181.118.10
@@ -199,9 +201,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 002
+  name: '378,536,537|🇦CA-134.195.198.92-0501 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 134.195.198.92
   servername: ''
   skip-cert-verify: false
@@ -214,9 +216,9 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 027
+  name: '378,494,536,537|🇨🇦CA-23.162.200.227-0528 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 23.162.200.227
   servername: ''
   skip-cert-verify: false
@@ -227,20 +229,18 @@ proxies:
     headers:
       Host: 23.162.200.227
     path: /linkvws
-- name: 378,508,509,536,537,636|🇨🇦 加拿大 001
-  network: tcp
+- name: '378,536,537|🇨🇦CA-52.60.59.39-0529 #1'
   password: telegram-id-directvpn
   port: 22222
   server: 52.60.59.39
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 042
+  name: '378,536,537|🇨🇦CA-158.51.121.63-0563 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 158.51.121.63
   servername: ''
   skip-cert-verify: false
@@ -1178,22 +1178,39 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- client-fingerprint: chrome
+- encryption: mlkem768x25519plus.random.0rtt.swY_aKEuuHUHKO0BHVV2uot-UFbtrXpLWr7g8uZk0xk
+  http-opts:
+    headers:
+      Host:
+      - mangaarabics.com
+    method: GET
+    path:
+    - /
+  name: 438,502,551,566|🇨🇦 加拿大 | CAN
+  network: http
+  port: 42538
+  server: 38.128.251.24
+  tls: false
+  type: vless
+  udp: true
+  uuid: 5d07b438-63c1-43fa-aa45-b6810de6d030
+  ws-opts:
+    headers:
+      Host: mangaarabics.com
+    path: '%2F'
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #4272'
+  name: '438,502,551|🇨🇦CA_2|1.4MB/s #1'
   network: tcp
   port: 443
   reality-opts:
-    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
-    short-id: 3d3c1e645f763ee3
-  server: 158.69.112.254
-  servername: www.speedtest.net
-  tls: false
+    public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
+    short-id: b91a73752053b039
+  server: 184.107.141.174
+  servername: ca.servers.gracevpnbuy.com
+  tls: true
   type: vless
-  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
-  ws-opts:
-    headers:
-      Host: /?JOIN_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI
+  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
 - name: 460|加拿大_多伦多
   network: ws
   port: 443
@@ -4802,7 +4819,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #549'
+  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #122'
   network: ws
   port: 2086
   server: 104.19.47.36
@@ -5558,6 +5575,18 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+- client-fingerprint: chrome
+  name: '472,473,474,494|Join+Telegram:@Farah_VPN #4671'
+  network: tcp
+  port: 8080
+  reality-opts:
+    public-key: -VtnfXlmc08__zvH-U0G5iiiJaJJOCXsBToMqfL2Pzg
+    short-id: ff06f965f5
+  server: sb.btwanten.com
+  servername: hdprogressive.3dvisionlive.com
+  tls: false
+  type: vless
+  uuid: 485e6932-2913-42c9-a605-7ccf03836d55
 - name: '475,480|CA加丨yoyapai.com #1'
   network: ws
   port: 8880
@@ -5597,7 +5626,7 @@ proxies:
       Host: calm-haze-d105.21-7cd.workers.dev
     path: /pyip=ProxyIP.SG.CMLiussss.net
 - alterId: 0
-  name: 475,480,494,523,524,536,544,568,574|🇵JP日本2
+  name: 475,480,494,523,524,536,574|🇵JP日本2
   password: humanity
   port: 443
   server: 104.18.152.225
@@ -5609,7 +5638,7 @@ proxies:
   ws-opts:
     path: /assignment
 - alterId: 0
-  name: 475,480,494,523,524,544,574|🇯🇵JP日本4
+  name: 475,480,494,523,524,574|🇯🇵JP日本4
   password: humanity
   port: 443
   server: 104.18.152.219
@@ -5801,15 +5830,6 @@ proxies:
   port: 50118
   server: 166.88.130.218
   type: ss
-- name: '502,536,717|CA【机场推荐：https://a9a.xyz】11 #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.177.143
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
 - name: '502,717|CA【机场推荐：https://a9a.xyz】12 #1'
   network: ws
   password: humanity
@@ -5842,25 +5862,6 @@ proxies:
   password: humanity
   port: 443
   server: 104.18.152.204
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '502,717|CA【机场推荐：https://a9a.xyz】22 #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.113
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '502,536,717|CA【机场推荐：https://a9a.xyz】26 #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.20.6.134
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -5876,12 +5877,20 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
+- name: '502,717|CA【机场推荐：https://a9a.xyz】28 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.207
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - name: '502,717|CA【机场推荐：https://a9a.xyz】29 #1'
   network: ws
   password: humanity
   port: 443
   server: 104.16.174.6
-  skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -5909,7 +5918,6 @@ proxies:
   password: humanity
   port: 443
   server: 104.16.174.117
-  skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -5928,7 +5936,6 @@ proxies:
   password: humanity
   port: 443
   server: 104.18.152.77
-  skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -5953,14 +5960,6 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: 502|加拿大+V2CROSS.COM
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 47.129.241.226
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 513|15|🇨🇦 加拿大|@ripaojiedian
@@ -5983,22 +5982,20 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- encryption: mlkem768x25519plus.random.0rtt.swY_aKEuuHUHKO0BHVV2uot-UFbtrXpLWr7g8uZk0xk
-  http-opts:
-    headers:
-      Host:
-      - mangaarabics.com
-    method: GET
-    path:
-    - /
-  name: 566|🇨🇦 加拿大 | CAN
-  network: http
-  port: 42538
-  server: 38.128.251.24
-  tls: false
+- client-fingerprint: chrome
+  name: 566|🇨🇦 加拿大 | CAN 2
+  network: ws
+  port: 8443
+  server: speedtest.org
+  servername: ssl.miloi8dmz.top
+  tls: true
   type: vless
   udp: true
-  uuid: 5d07b438-63c1-43fa-aa45-b6810de6d030
+  uuid: 7a1e59f5-ec16-4a5e-9bfb-bb6c0706c09b
+  ws-opts:
+    headers:
+      Host: worker-015.miloi8dmz.top
+    path: /cdn/7ae87fc47c544a50
 - alterId: 0
   cipher: auto
   h2-opts: {}

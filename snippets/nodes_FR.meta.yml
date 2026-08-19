@@ -44,6 +44,19 @@ proxies:
   type: vmess
   udp: true
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
+- client-fingerprint: chrome
+  name: 127|FR_1|2.1MB/s|GPT⁺|0%
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+    short-id: b8aa
+  server: 194.226.169.36
+  servername: yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
 - alterId: 0
   cipher: auto
   name: '128,430|法国1 #2'
@@ -84,7 +97,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- name: '340,438,495,502,514,551|法国 #1 #1'
+- name: '340,495,502,514,551|法国 #1 #1'
   password: Krab9Hyst2_Rk7pQ2xL
   port: 36723
   server: fr.vpn.legendaah.xyz
@@ -450,6 +463,24 @@ proxies:
   uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: '378,489,494,502,536,537,717|DE【机场推荐：https://a9a.xyz】3 #1'
+  network: ws
+  packet-encoding: xudp
+  port: '16632'
+  server: planb.mojcn.com.linuxlh.xin
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  ws-opts:
+    headers:
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+    path: /
+  xudp: true
 - name: '378,536,537|🇷FR-176.31.83.90-0688 #1'
   password: origin
   port: 443
@@ -503,21 +534,6 @@ proxies:
   type: vmess
   uuid: d159c5be-8291-45c4-bd21-51d024658a6d
   ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '378,494,502,536,537,551|🇭🇰HK_3|3.8MB/s #1'
-  network: ws
-  port: '16632'
-  server: planb.mojcn.com.linuxlh.xin
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0c657913-e593-4893-9555-f88478c33a4b
-  ws-opts:
-    headers:
-      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
     path: /
 - name: '378,536,537|🇷FR-141.95.61.209-2365 #1'
   password: 4f2c305b-9a03-4493-b3e4-2dff2f1af8c9
@@ -684,14 +700,16 @@ proxies:
     headers:
       Host: planb.mojcn.com.linuxlh.xin
     path: /
-- name: '378,536,537|🇷FR-15.237.137.197-4844 #1'
+- name: '378,438,494,536,537|🇷FR-15.237.137.197-4844 #1'
+  network: tcp
   password: ND91608427
   port: 443
   server: fancy-skink.rooster465.autos
   skip-cert-verify: false
   sni: fancy-skink.rooster465.autos
   type: trojan
-- name: '378,537|🇫🇷FR-13.38.35.46-4845 #1'
+- name: '378,438,537|🇫🇷FR-13.38.35.46-4845 #1'
+  network: tcp
   password: PQ05174892
   port: 443
   server: lucky-marmot.rooster465.autos
@@ -1015,35 +1033,63 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: '438,489,494|Join+Telegram:@Farah_VPN #3594'
+  name: '438,502,551|🇫🇷FR_7|2.0MB/s #1'
   network: tcp
-  port: 443
+  port: 39399
   reality-opts:
-    public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0
-    short-id: a91045bc
-  server: 163.5.153.153
-  servername: www.samsung.com
-  tls: false
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: bc8e3658db7d1323
+  server: 155.117.199.13
+  servername: cdnjs.cloudflare.com
+  tls: true
   type: vless
-  udp: true
-  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
-  xudp: true
-- name: '438,494|Join+Telegram:@Farah_VPN #4190'
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+- name: '438,494|Join+Telegram:@Farah_VPN #4382'
   network: tcp
   port: 24144
   server: 164.68.127.108
   tls: false
   type: vless
   uuid: 7e85ed3f-3829-45b1-8b1c-6a2e45ebc967
+- name: '438,494|Join+Telegram:@Farah_VPN #4712'
+  network: tcp
+  port: 443
+  server: 89.208.113.16
+  servername: /?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI
+  tls: false
+  type: vless
+  uuid: adce7c2a-3191-49ae-b61c-9b8258ea1b0e
+  ws-opts:
+    headers:
+      Host: '---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR---@SPIDDY_IR'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #3917'
+  name: '438,494|Join+Telegram:@Farah_VPN #2607'
+  network: tcp
+  port: 443
+  server: nasnet-162191099-direct.mbghalibaf.com
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,494|Join+Telegram:@Farah_VPN #3767'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.2
+  servername: fuck.rkn
+  tls: false
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,494|Join+Telegram:@Farah_VPN #4567'
   network: tcp
   port: 23576
   reality-opts:
@@ -1057,21 +1103,8 @@ proxies:
   ws-opts:
     headers:
       Host: v2rayNplus--v2rayNplus--v2rayNplus
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #2875'
-  network: tcp
-  port: 443
-  server: 162.19.10.99
-  servername: nasnet-162191099-direct.mbghalibaf.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
 - client-fingerprint: chrome
-  name: '438,494|Join+Telegram:@Farah_VPN #1372'
+  name: '438,494|Join+Telegram:@Farah_VPN #1058'
   network: xhttp
   port: 32202
   reality-opts:
@@ -1084,30 +1117,6 @@ proxies:
   uuid: 28148be2-61a7-4f36-8adb-030cc9f82bd0
   ws-opts:
     path: /G3EEoH63
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #2184'
-  network: tcp
-  port: 443
-  server: nasnet-162191099-direct.mbghalibaf.com
-  servername: nasnet-162191099-direct.mbghalibaf.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-- client-fingerprint: ''
-  flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #4889'
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.2
-  servername: fuck.rkn
-  tls: false
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1320,7 +1329,7 @@ proxies:
   udp: true
   uuid: f3ac6161-3592-43ed-82f2-daf9c97806aa
 - client-fingerprint: chrome
-  name: '475,480,494|Join+Telegram:@Farah_VPN #4174'
+  name: '475,480,494|Join+Telegram:@Farah_VPN #2328'
   network: ws
   port: 443
   server: yx.cloudflare.182682.xyz
@@ -1350,7 +1359,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
     path: /
 - client-fingerprint: chrome
-  name: '475,480,494|Join+Telegram:@Farah_VPN #4171'
+  name: '475,480,494|Join+Telegram:@Farah_VPN #3583'
   network: ws
   port: 443
   server: cloudflare-ip.mofashi.ltd
@@ -1410,7 +1419,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
     path: /
 - client-fingerprint: chrome
-  name: '475,480,494|Join+Telegram:@Farah_VPN #4202'
+  name: '475,480,494|Join+Telegram:@Farah_VPN #683'
   network: ws
   port: 443
   server: store.ubi.com
@@ -1492,7 +1501,7 @@ proxies:
       Host: www.ignitelimit.com
     path: /assignment
 - flow: xtls-rprx-vision
-  name: 478,483,522,581|🇫🇷_FR_法国
+  name: '478,483,522,548,581|🇫🇷_FR_法国 #2'
   port: 443
   server: fr.noooo.win
   skip-cert-verify: true
@@ -1500,15 +1509,6 @@ proxies:
   type: vless
   udp: true
   uuid: 7b241232-208d-4d36-857e-913f91b044f4
-- client-fingerprint: chrome
-  name: 489|🟠🇫🇷[🎬🤖📺🎭]_github.com/Ruk1ng001...
-  network: tcp
-  password: fg20mtCFHy
-  port: 5577
-  server: 172.232.42.44
-  skip-cert-verify: true
-  sni: gtyxz.southbyte.xyz
-  type: trojan
 - name: 489|🔴🇫🇷[🎬🤖📺🎭]_github.com/Ruk1ng001...
   port: 443
   server: 103.82.101.44
@@ -1564,29 +1564,30 @@ proxies:
   server: ch-zur.pvdata.host
   type: socks5
   username: N9cyF6jvgy3ZEmCNKe04zBIR
-- name: '523,524|🇫🇷_法国_66 #1'
+- client-fingerprint: edge
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  name: 502,551,566|🇫🇷 法国 | FRA
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: 3f2qE54FhkEMnNUTVwxtSWWPJG9ZrQoxF-dyq3IQpQk
+    short-id: 558d5f07
+  server: 81.90.31.221
+  servername: ea.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+- name: '523,524|🇫🇷_法国_29 #1'
   port: 8880
-  server: 163.172.185.55
+  server: 212.47.231.138
   skip-cert-verify: true
   tls: false
   type: vless
   udp: true
   uuid: 16bc33b0-49c9-4e61-931e-ec2baf36cefe
-- client-fingerprint: chrome
-  name: '523,524|🇫🇷_法国_315 #1'
-  network: ws
-  port: 443
-  server: 158.178.215.52
-  servername: yellow-base-c45b.rafiyaislam4000.workers.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8dd3770c-034e-4396-84aa-b2eed0d6f2ce
-  ws-opts:
-    headers:
-      Host: yellow-base-c45b.rafiyaislam4000.workers.dev
-    path: /
 - alterId: 0
   cipher: auto
   name: 536|🇫🇷FR-162.19.192.89-0869
@@ -1628,69 +1629,33 @@ proxies:
   port: 443
   server: 54.36.174.140
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 543|CLOUDFRONT-3.162.103.97-03
+  network: ws
+  port: 80
+  server: www.true.th
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a150d554-e962-4632-829f-ee583ada3f95
+  ws-headers:
+    Host: d7pu5mzr9c4b0.cloudfront.net
+  ws-path: /htun
 - name: '545,546|法国[01] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 566|🇫🇷 法国 | FRA 3
+- alpn:
+  - h2
+  - http/1.1
+  name: 566|🇫🇷 法国 | FRA 5
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.14
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: 566|🇫🇷 法国 | FRA 4
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.20.6.134
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: 566|🇫🇷 法国 | FRA 5
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.22
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /%2Fassignment
-- name: 566|🇫🇷 法国 | FRA 7
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.6
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: 566|🇫🇷 法国 | FRA 8
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.117
+  server: 162.159.136.234
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
@@ -1701,13 +1666,11 @@ proxies:
     path: /assignment
 - alpn:
   - http/1.1
-  - h2
-  - h3
-  name: 566|🇫🇷 法国 | FRA 9
+  name: 566|🇫🇷 法国 | FRA 8
   network: ws
   password: humanity
   port: 443
-  server: 198.41.223.96
+  server: 104.18.23.63
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
@@ -1716,11 +1679,17 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
+- cipher: aes-256-cfb
+  name: 566|🇫🇷 法国 | FRA 9
+  password: amazonskr05
+  port: 443
+  server: 15.237.216.173
+  type: ss
 - name: 566|🇫🇷 法国 | FRA 10
   network: ws
   password: humanity
   port: 443
-  server: 104.17.177.143
+  server: 104.18.152.155
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
@@ -1729,11 +1698,15 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: 566|🇫🇷 法国 | FRA 13
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 566|🇫🇷 法国 | FRA 14
   network: ws
   password: humanity
-  port: 40443
-  server: 2.144.21.112
+  port: 443
+  server: join-telegram-channel.tirexnet.kdns.fr
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
@@ -1742,6 +1715,43 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 566|🇫🇷 法国 | FRA 15
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.21.46.3
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- name: 566|🇫🇷 法国 | FRA 18
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.143
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- name: '568|🇫🇷 法国 | FRA #4'
+  password: humanity
+  port: 443
+  server: 162.159.136.234
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
