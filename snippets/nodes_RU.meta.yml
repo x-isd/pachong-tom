@@ -550,15 +550,19 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- country: 🇺RU
-  name: 435,436|🇷🇺RU_56
-  password: '!!str 1234567890'
-  port: 443
-  server: 194.87.77.91
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,494|Join+Telegram:@Farah_VPN #4166'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: C819rM4M_c473A8glp-eBFh8Fm9O1cmEeXmivDhM1Fc
+  server: 188.225.33.206
+  servername: max.ru
   skip-cert-verify: true
-  sni: kfm-bn0.pages.dev
-  type: trojan
-  udp: true
+  tls: false
+  type: vless
+  uuid: c124a209-d949-4951-8234-e2d918b3e6c0
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1327,24 +1331,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '472,473,474,502,523,524,580,717|CZ【机场推荐：https://a9a.xyz】5 #1'
-  network: tcp
-  port: 2027
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: dc8109baf0f607ea
-  server: 78.159.247.253
-  servername: storage.yandex.net
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 851ed0d8-a37b-452d-8ef2-5b6c2d28a060
-  ws-opts:
-    headers:
-      Host: storage.yandex.net
 - cipher: aes-256-gcm
   name: '475,480|🇷 RU俄斯丨yoyapai.com #1'
   password: 7e1dd4c55bf85da5
@@ -1478,10 +1464,10 @@ proxies:
   uuid: 31c2a8e8-0ab2-4f3f-8767-11f3a35d4228
   ws-opts:
     path: /v1
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: '489,494|Join+Telegram:@Farah_VPN #3563'
+  name: '489,494|Join+Telegram:@Farah_VPN #4829'
   network: tcp
   port: 18443
   server: 185.141.227.150
@@ -1516,26 +1502,24 @@ proxies:
   skip-cert-verify: true
   type: socks5
   username: ''
-- client-fingerprint: ios
-  name: 502,580|🇦🇪AE_46|155KB/s|A004-260618 01
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do
-    short-id: a48d397391861a3c
-  server: 95.163.232.54
-  servername: max.ru
-  tls: false
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,551|🇷🇺RU_1|1.9MB/s #1'
+  port: 443
+  server: 5.129.253.177
+  servername: yt.chick-team.ru
+  tls: true
   type: vless
-  uuid: 93fab704-cea7-4ca4-a9ac-5bb46aef263c
-- name: 502,580|🇷🇺RU_22|340KB/s|C002-260622 01
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  port: 2056
-  server: els1.mangshe.xyz
-  skip-cert-verify: true
-  sni: 127.0.0.1
-  tls: false
-  type: hysteria2
+  uuid: fe0138b5-ca60-4a67-91aa-b5a49266eeb5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,551|🇷🇺RU_2|2.9MB/s #1'
+  port: 443
+  server: 212.67.17.204
+  servername: yt.chick-team.ru
+  tls: true
+  type: vless
+  uuid: fe0138b5-ca60-4a67-91aa-b5a49266eeb5
 - encryption: none
   name: '508,509|俄罗斯 006 #1'
   network: ws
@@ -2238,20 +2222,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alpn:
-  - h3
-  client-fingerprint: chrome
-  name: 580|🇷🇺RU_8|412KB/s|B007-260618 01
-  network: xhttp
-  port: 443
-  server: 104.18.32.47
-  servername: rus.aba-hum.store
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: a5a544bf-e4b3-4651-9ff4-de3461910d87
-  ws-opts:
-    path: '%2F'
 - client-fingerprint: chrome
   name: 580|🇷🇺俄羅斯丨yoyapai.com
   network: ws
@@ -2435,6 +2405,14 @@ proxies:
   tls: true
   type: vless
   uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+- name: 580|🇷🇺RU_22|340KB/s|C002-260622 01
+  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
+  port: 2056
+  server: els1.mangshe.xyz
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 580|🇷🇺RU_46|546KB/s|C002-260622 01
