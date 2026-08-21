@@ -1,11 +1,4 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 306|China_None_ss_1142
-  password: b160be88-28c2-31bb-a153-8b050228f0c3
-  port: '484'
-  server: f.d.o.2.3.i.9.9.6.jp02-ae5.entry.v51124-3a.qpon
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '362,363|297,393|0|🌀7-CN |  6.0MB/s |  ... #1'
@@ -125,9 +118,9 @@ proxies:
     method: GET
     path:
     - /
-  name: '378,508,509,536,537|🇨CN-124.221.131.176-1495 #1'
+  name: 378,508,509,536,537,636|🇨🇳 中国 053
   network: http
-  port: 50797
+  port: '50797'
   server: 124.221.131.176
   servername: ''
   skip-cert-verify: false
@@ -136,9 +129,9 @@ proxies:
   uuid: fa4b6f8f-1264-45ec-9651-6160c12cabc5
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇳CN-220.175.96.165-1521 #1'
+  name: 378,508,509,536,537,636|🇨🇳 中国 061
   network: ws
-  port: 43815
+  port: '43815'
   server: blog.voewl.com
   servername: ''
   skip-cert-verify: false
@@ -151,9 +144,9 @@ proxies:
     path: /abc
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇨🇳CN-42.186.175.8-1604 #1'
+  name: 378,508,509,536,537,636|🇨🇳 中国 071
   network: ws
-  port: 443
+  port: '443'
   server: 42.186.175.8
   servername: ''
   skip-cert-verify: false
@@ -171,7 +164,7 @@ proxies:
   server: 120.232.250.161
   type: ss
   udp: true
-- name: '378,536,537|🇨CN-120.236.197.205-2158 #1'
+- name: '378,536,537,559|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #3'
   password: ba4fedf8c217c146
   port: 3389
   server: 120.236.197.205
@@ -1194,7 +1187,7 @@ proxies:
     path: /path/153428133302
 - alterId: 0
   cipher: auto
-  name: 465,494,508,509,513,517,525,578|16,28|github.com/freefq - 广东省移...
+  name: '465,494,508,509,513,517,525,559,578,636|其他 074 #2'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -1207,12 +1200,22 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- flow: ''
+  name: '472,473,474,494,523,524|🇨🇳_中国_9 #1'
+  network: tcp
+  port: 52683
+  server: jp.sofast.live
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
 - alterId: 64
   cipher: auto
   delay: 175
-  name: '489,494,508,509|中国 001 #1'
+  name: 489,494,508,509,559,636|🇨🇳 中国 001
   network: tcp
-  port: 50002
+  port: '50002'
   server: 112.132.215.108
   servername: ''
   skip-cert-verify: true
@@ -1243,6 +1246,16 @@ proxies:
   server: 112.64.135.45
   type: http
   username: null
+- name: '502,551,559,580|🇨🇳CN_2|133KB/s|A004-260618 01 #1'
+  obfs: ''
+  obfs-password: ''
+  password: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
+  port: 9080
+  server: 139.28.168.54
+  skip-cert-verify: false
+  sni: grape-honk.yyuyy.com
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   name: '508,509|中国 004 #1'
   network: ws
@@ -1261,15 +1274,16 @@ proxies:
     path: /
 - encryption: none
   headerType: none
-  name: '508,509|中国 008 #1'
+  name: 508,509,559|🇨🇳 中国-0DD4911B
   network: tcp
   port: 10000
   security: none
   server: 211.76.176.127
+  tls: false
   type: vless
   uuid: d26598cf-2cdf-4219-80d0-94646dff160d
 - encryption: none
-  name: '508,509|中国 009 #1'
+  name: 508,509,559|🏁 未知-9240B3CA
   network: tcp
   packet-encoding: xudp
   port: 10000
@@ -1281,11 +1295,12 @@ proxies:
   uuid: d26598cf-2cdf-4219-80d0-94646dff160d
 - encryption: none
   headerType: none
-  name: '508,509|中国 010 #1'
+  name: 508,509,559|🇨🇳 中国-FB2C44A7
   network: tcp
   port: 10000
   security: none
   server: 61.221.84.90
+  tls: false
   type: vless
   uuid: d26598cf-2cdf-4219-80d0-94646dff160d
 - client-fingerprint: chrome
@@ -1399,7 +1414,7 @@ proxies:
   ws-opts:
     headers:
       Host: De15.SiMaNsAnAt.Ir.
-- name: 508,509,580|🇫🇷FR_581|301KB/s|C002-260622 0...
+- name: '508,509,559,580|🇫🇷FR_581|301KB/s|C002-260622 0... #1'
   network: ws
   port: 8880
   server: 154.197.64.30
@@ -1458,38 +1473,42 @@ proxies:
     path: /-Arfilter-TEL--
 - alterId: 0
   cipher: auto
-  name: '508,509|中国 090 #1'
+  name: 508,509,636|🇨🇳 中国 090
   network: tcp
-  port: 45343
+  port: '45343'
   server: 154.90.39.63
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 08aa8499-d616-4ff1-d6ab-ce0c522824aa
 - alterId: 0
   cipher: auto
-  name: '508,509|中国 091 #1'
+  name: 508,509,636|🇨🇳 中国 091
   network: tcp
-  port: 56002
+  port: '56002'
   server: 39.103.165.178
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '508,509|中国 092 #1'
+  name: 508,509,636|🇨🇳 中国 092
   network: tcp
-  port: 10001
+  port: '10001'
   server: 45.121.48.196
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
 - alterId: 0
   cipher: auto
-  name: '508,509|中国 093 #1'
+  name: 508,509,636|🇨🇳 中国 093
   network: tcp
-  port: 10001
+  port: '10001'
   server: 45.121.48.172
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: dba51a2e-a788-43b7-9ac4-9f7cc1255f15
 - cipher: aes-256-cfb
@@ -1507,17 +1526,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  delay: 1033
-  h2-opts: {}
-  http-opts: {}
-  name: 528|中国 - Taipei - 1
-  port: 794
-  server: 2.27.174.110
-  type: vmess
+- name: '523,524|🇨🇳_中国_8 #1'
+  port: 52683
+  server: jp.sofast.live
+  skip-cert-verify: true
+  tls: false
+  type: vless
   udp: true
-  uuid: fd2c3c77-1984-4f7c-befe-efba034e1f3c
+  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
 - name: 535|🇨🇳CN-183.56.247.206-000
   password: f441a2b0-31ef-490d-bd91-9b1cd960f4ce
   port: 29482
@@ -2165,6 +2181,39 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+- name: '559,580|🇨🇳CN_3|141KB/s|A004-260618 01 #1'
+  password: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
+  port: 9080
+  server: 139.28.168.55
+  skip-cert-verify: true
+  sni: grape-honk.yyuyy.com
+  tls: false
+  type: hysteria2
+- name: 559|🇨🇳 中国-3AF2D0FE
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: Ubibgn_MlW_zHo9LwjNH_b6SLNWwTJFwq7wW2ggLtUs
+    short-id: 88ce6b586fcaf681
+  server: node-fi.dostup-est.info
+  servername: ''
+  tls: false
+  type: vless
+  uuid: c931f737-cafe-4e4f-998a-a65517941256
+- alterId: 0
+  cipher: auto
+  name: 559|中国4
+  network: ws
+  port: '46034'
+  server: mf34fx.micloud.buzz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bc230344-14d9-4922-9fb7-2e6513c5593e
+  ws-opts:
+    headers:
+      Host: mf34fx.micloud.buzz
+    path: /zh-cn
 - alterId: 0
   cipher: auto
   name: 578|11,21|_中国
@@ -2246,21 +2295,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 580|🇨🇳CN_2|133KB/s|A004-260618 01
-  password: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
-  port: 9080
-  server: 139.28.168.54
-  sni: grape-honk.yyuyy.com
-  tls: false
-  type: hysteria2
-- name: 580|🇨🇳CN_3|141KB/s|A004-260618 01
-  password: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
-  port: 9080
-  server: 139.28.168.55
-  skip-cert-verify: true
-  sni: grape-honk.yyuyy.com
-  tls: false
-  type: hysteria2
 - cipher: aes-256-cfb
   name: 585|CN_speednode_0001
   password: 7eadc6dbe2ae
