@@ -1,11 +1,4 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 306,489,566|🇯🇵 日本 | JPN
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.136
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '362,363|423|🇨🇳  20X-1B |  16.5MB/s #1'
   password: cac56de5-40e5-4cd1-b23a-5e7e1dde311f
@@ -124,14 +117,14 @@ proxies:
   server: 120.233.24.238
   type: ss
 - cipher: aes-256-cfb
-  name: 378,489,519,537,566|🇨🇳 CN_14
+  name: 378,489,519,537,566|🇰🇷 韩国 | KOR
   password: 7eadc6dbe2ae
   port: 65443
   server: 121.46.230.138
   skip-cert-verify: true
   type: ss
   udp: true
-- name: '378,536,537|🇨CN-120.236.197.205-1238 #1'
+- name: '378,536,537,559|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #3'
   password: ba4fedf8c217c146
   port: 3389
   server: 120.236.197.205
@@ -1177,7 +1170,7 @@ proxies:
     path: /path/153428133302
 - alterId: 0
   cipher: auto
-  name: '465,494,508,509,513,517,525,578,636|其他 045 #2'
+  name: '465,494,508,509,513,517,525,559,578,636|其他 045 #2'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -1274,6 +1267,16 @@ proxies:
   server: 183.240.235.162
   tls: false
   type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '523,524|🇨🇳_中国_68 #1'
+  port: 50002
+  server: 112.132.215.108
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 535|🇨🇳CN-183.56.247.206-000
   password: f441a2b0-31ef-490d-bd91-9b1cd960f4ce
@@ -1922,6 +1925,20 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: 559|中国4
+  network: ws
+  port: '46034'
+  server: mf34fx.micloud.buzz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bc230344-14d9-4922-9fb7-2e6513c5593e
+  ws-opts:
+    headers:
+      Host: mf34fx.micloud.buzz
+    path: /zh-cn
 - alterId: 0
   cipher: auto
   name: 578|11,21|_中国
