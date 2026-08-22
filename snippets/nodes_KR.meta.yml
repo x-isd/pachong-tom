@@ -1170,19 +1170,6 @@ proxies:
   port: 2003
   server: 125.141.26.5
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,580|🇰🇷KR_10|338KB/s|K001-260618 01
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 989gq45ogQSZLDoUTcLNSYW5v_3ER7W_6Oi_8swZzXo
-    short-id: cb55f541
-  server: 178.83.31.93
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 4a97788b-5d8a-410c-875c-ba36930e185e
 - name: 460|韩国_首尔特别市
   network: ws
   port: 8443
@@ -1746,6 +1733,14 @@ proxies:
     headers:
       Host: rubifen.adaspoloandco.com
     path: '%2FGOrbEh'
+- client-fingerprint: chrome
+  name: '502,551|🇰🇷KR_3|1.3MB/s #1'
+  port: 8686
+  server: 15.164.212.137
+  servername: www.apple.com
+  tls: true
+  type: vless
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 513|15|🇰🇷 韩国特殊|@ripaojiedian
@@ -1762,7 +1757,7 @@ proxies:
   server: 43.203.229.162
   tfo: false
   type: ss
-- name: 522,548|🇰🇷_KR_韩国
+- name: 522|_KR_国
   network: ws
   port: 38241
   server: 59.4.161.71
@@ -1775,7 +1770,7 @@ proxies:
     headers:
       Host: sni.111000.v6.army
     path: /?ed=2560
-- name: '522,548|🇰🇷_KR_韩国_1 #1'
+- name: 522|🇰🇷_KR_韩国_1
   network: ws
   port: 10333
   server: 121.175.77.73
@@ -1788,14 +1783,6 @@ proxies:
     headers:
       Host: sni.111000.v6.army
     path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  delay: 467
-  name: 528|韩国 - Gangseo-gu - 1
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21107
-  server: 211.91.158.26
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 427
   name: 528|韩国 - Gangseo-gu - 2
@@ -2478,21 +2465,6 @@ proxies:
   server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
   skip-cert-verify: false
   type: trojan
-- client-fingerprint: chrome
-  name: '548|🇰🇷_KR_韩国 #1'
-  network: ws
-  port: 443
-  server: 211.49.57.175
-  servername: s5.868001.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 23cb9aa7-9756-459f-aa84-3a27bdf6ad64
-  ws-opts:
-    headers:
-      Host: s5.868001.xyz
-    path: /proxyipfp=chrome
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2538,6 +2510,28 @@ proxies:
   server: 3.34.192.249
   tfo: false
   type: ss
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 566|🇰🇷 韩国 | KOR
+  network: tcp
+  port: 10038
+  reality-opts:
+    public-key: JddbQk5RNLhnZOTiod0E7JGcCTRNO69nrP1b8VtKS2c
+    short-id: 2a92
+  server: family.bucket.8.kfc-520.com
+  servername: www.adobe.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7aecb4a5-f0a4-32a0-aabe-c9d5241e313f
+- name: 566|🇰🇷 韩国 | KOR 3
+  password: 5040a6b0-92be-42bc-a8ab-7f8c1d02866c
+  port: 62375
+  server: yzany01.downapptwo.cc
+  skip-cert-verify: true
+  sni: kr09.lunartrace.io
+  type: anytls
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 578|26|🇰🇷 韩国特殊|@ripaojiedian
@@ -4492,3 +4486,67 @@ proxies:
   server: 43.201.103.8
   sni: intimate-moray.rooster465.autos
   type: trojan
+- name: 728|🇰🇷 韩国1🔒
+  password: ZIXQa-7pg0vPahuyi8bABhob
+  port: 443
+  server: starlink-kr1.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: hysteria2
+  udp: true
+- name: 728|🇰🇷 韩国2🔒
+  password: ZIXQa-7pg0vPahuyi8bABhob
+  port: 443
+  server: starlink-kr2.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: hysteria2
+  udp: true
+- name: 728|🇰🇷 韩国3🔒
+  password: ZIXQa-7pg0vPahuyi8bABhob
+  port: 443
+  server: starlink-kr3.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: hysteria2
+  udp: true
+- name: 728|🇰🇷 韩国4🔒
+  password: ZIXQa-7pg0vPahuyi8bABhob
+  port: 443
+  server: starlink-kr4.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: hysteria2
+  udp: true
+- name: 728|🇰🇷 韩国5🔒
+  password: 升级订阅解锁全部节点
+  port: 443
+  server: starlink-kr1.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 728|🇰🇷 韩国6🔒
+  password: 升级订阅解锁全部节点
+  port: 443
+  server: starlink-kr2.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 728|🇰🇷 韩国7🔒
+  password: 升级订阅解锁全部节点
+  port: 443
+  server: starlink-kr3.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 728|🇰🇷 韩国8🔒
+  password: 升级订阅解锁全部节点
+  port: 443
+  server: starlink-kr4.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true

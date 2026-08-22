@@ -4669,6 +4669,48 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- cipher: chacha20-ietf-poly1305
+  delay: 575
+  name: 519,528|德国 - Frankfurt am Main - 4
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21118
+  server: 211.91.158.44
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  delay: 609
+  name: 519,528|以色列 - Rosh Ha‘Ayin - 1
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21116
+  server: 211.91.158.44
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 519,523,524,580|🇩🇪DE_139|287KB/s 01
+  network: tcp
+  port: 2027
+  reality-opts:
+    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
+    short-id: dc8109baf0f607ea
+  server: 78.159.247.253
+  servername: storage.yandex.net
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 851ed0d8-a37b-452d-8ef2-5b6c2d28a060
+- cipher: chacha20-ietf-poly1305
+  delay: 257
+  name: 519,528|新加坡 - Singapore - 2
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21121
+  server: 211.91.158.44
+  skip-cert-verify: true
+  type: ss
+  udp: true
 - alterId: 2
   cipher: auto
   name: '519,523,524|🇨🇳_中国_77 #1'
@@ -4679,7 +4721,43 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 522,548|🇳🇱_NL_荷兰->🇺🇸_US_美国
+- cipher: chacha20-ietf-poly1305
+  delay: 1566
+  name: 519,528|意大利 - Milan - 1
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21113
+  server: 211.91.158.26
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  delay: 511
+  name: 519,528|英国 - London - 2
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21104
+  server: 211.91.158.44
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  delay: 513
+  name: 519,528|法国 - Aubervilliers - 3
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21126
+  server: 211.91.158.44
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  delay: 360
+  name: 519,528|印度 - Mumbai - 1
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21125
+  server: 211.91.158.26
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- name: 522|_NL_->_US_
   network: ws
   port: 2096
   server: 188.42.88.238
@@ -4693,7 +4771,7 @@ proxies:
       Host: sni.jpmj.dev
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 522,548|🇯🇵_JP_日本->🇹🇼_TW_中国台湾
+  name: 522|_JP_->_TW_国
   port: 55309
   reality-opts:
     public-key: 7BS-JUFgYVaWrwwyDSiVq_YDoG36w8cRd4U8HvEg-F0
@@ -4706,7 +4784,7 @@ proxies:
   uuid: 9c5d1bf0-d58b-4001-9e7c-0c1fa314068c
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 522,548|🇯🇵_JP_日本->🇸🇬_SG_新加坡
+  name: 522|🇯🇵_JP_日本->🇬_SG_
   port: 55313
   reality-opts:
     public-key: 7BS-JUFgYVaWrwwyDSiVq_YDoG36w8cRd4U8HvEg-F0
@@ -4717,49 +4795,6 @@ proxies:
   type: vless
   udp: true
   uuid: 9c5d1bf0-d58b-4001-9e7c-0c1fa314068c
-- name: 548|🇵🇱_PL_波兰->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 185.158.133.30
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime58.workers.dev
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '548|🇭🇰_HK_中国香港->🇸🇬_SG_新加坡 #3'
-  port: 55567
-  reality-opts:
-    public-key: 0soGDTguByd3I9e2nLuzkw5BOHELZ_AHHDkA0Zx3JRA
-    short-id: f3f70ca767
-  server: 1.sdwan.realm-sync.com
-  servername: www.discoverasr.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: da4f61d1-8ca2-4bbf-a79a-1dfff04073e6
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.OB4yhTV2iFBBbdkBvMkVFLCcTlAdXKnTdm6NGlvt_wA
-  name: 548|🇺🇸_US_美国->🇩🇪_DE_德国
-  network: ws
-  port: 2083
-  server: 192.0.63.61
-  servername: twotwoirvz.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: twotwoirvz.dpdns.org
-    path: /
 - alterId: 2
   cipher: auto
   name: 558|_CN_->_US_国

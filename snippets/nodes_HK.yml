@@ -197,6 +197,12 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- cipher: aes-256-gcm
+  name: '127,426|🇭🇰 HK_1|7.6MB/s|YT-HK|NF #1'
+  password: feng3d@ss2025
+  port: 8388
+  server: li.feng3d.com
+  type: ss
 - alterId: 0
   cipher: auto
   name: '128,430|香港NO.2 #1'
@@ -751,7 +757,7 @@ proxies:
     path: /stream?ed=2048
 - alterId: 2
   cipher: auto
-  name: '306,478,483,515,516,519,523,524,556|🇭🇰 香港|@ripaojiedian #3'
+  name: '306,478,483,515,516,523,524,556|🇭🇰 香港|@ripaojiedian #3'
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -850,7 +856,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '306,340,454,459,494,502,514,515,516,544,551,557,580,581|🇭🇰_HK_中国香港 #15'
+  name: '306,340,454,459,494,502,514,515,516,544,551,557,580,581|🇭🇰_HK_中国香港 #13'
   network: tcp
   port: 30807
   server: v10.hdacd.com
@@ -2965,12 +2971,6 @@ proxies:
     headers:
       Host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
-- cipher: aes-256-gcm
-  name: 426|🇭🇰 HK_1|7.6MB/s|YT-HK|NF
-  password: feng3d@ss2025
-  port: 8388
-  server: li.feng3d.com
-  type: ss
 - name: 453|🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -3441,13 +3441,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 566|🇭🇰 香港 | HKG 4
-  password: ljqdalu13..
-  port: 8319
-  server: 95.40.120.162
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: '574|HK #4'
@@ -3514,16 +3507,6 @@ proxies:
     headers:
       host: n1761296892.4u9ma.icu
     path: /
-- alterId: 0
-  name: '574|HK #5'
-  password: BxceQaOe
-  port: 1103
-  server: 16.163.147.33
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 574|HK10
@@ -3746,6 +3729,22 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  - h2
+  - h3
+  name: '580|HK香港(mibei77.com 米贝节点分享) #13'
+  network: ws
+  password: humanity
+  port: 443
+  server: 198.41.223.96
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
 - name: '580|HK香港(mibei77.com 米贝节点分享) #19'
   network: ws
   password: humanity
@@ -3780,13 +3779,6 @@ proxies:
   server: upright-hamster.rooster465.autos
   sni: upright-hamster.rooster465.autos
   type: trojan
-- name: 580|香港 24
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: smiling-ray.rooster465.autos
-  sni: smiling-ray.rooster465.autos
-  type: trojan
 - name: 580|香港 64
   network: tcp
   password: AE62539071
@@ -3816,13 +3808,6 @@ proxies:
   server: modest-foal.rooster465.autos
   skip-cert-verify: true
   sni: modest-foal.rooster465.autos
-  type: trojan
-- name: 580|香港 29
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: strong-haddock.rooster465.autos
-  sni: strong-haddock.rooster465.autos
   type: trojan
 - name: 580|香港 31
   network: tcp
@@ -4046,3 +4031,43 @@ proxies:
   skip-cert-verify: true
   sni: hk12.bilibili.com
   type: trojan
+- name: 728|🇭🇰 香港7 IPLC🔒
+  password: 升级订阅解锁全部节点
+  port: 21521
+  server: z-hk1.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 728|🇭🇰 香港8 IPLC🔒
+  password: 升级订阅解锁全部节点
+  port: 21522
+  server: z-hk2.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 728|🇭🇰 香港11 家宽🔒
+  password: 升级订阅解锁全部节点
+  port: 21520
+  server: starlink-hkt1.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 728|🇭🇰 香港12 家宽🔒
+  password: 升级订阅解锁全部节点
+  port: 21520
+  server: starlink-hkt2.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 728|🇭🇰 TCP🔒
+  password: 升级订阅解锁全部节点
+  port: 21520
+  server: z-hk1.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true

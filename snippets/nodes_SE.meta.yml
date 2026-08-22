@@ -131,21 +131,6 @@ proxies:
   server: 121.127.46.147
   type: ss
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,475,480,494,580|未知 VLESS-566 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-    short-id: 00bca5982f82d083
-  server: 144.31.171.143
-  servername: eu-central.cendora.ru
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-- client-fingerprint: chrome
   name: 438,494,580|🇸🇪SE_4|323KB/s|B007-260618 01
   network: xhttp
   port: 8443
@@ -153,18 +138,6 @@ proxies:
     public-key: p9ISfhV0uZpKSgrK_8R6Mm4A01tWdzpKMlFR2TIj81s
   server: 95.85.227.142
   servername: wikihow.com
-  tls: false
-  type: vless
-  uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 438,580|🇸🇪SE_3|252KB/s|A004-260618 01
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U
-  server: 95.85.227.142
-  servername: www.wikihow.com
   tls: false
   type: vless
   uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
@@ -299,16 +272,6 @@ proxies:
       Host: forfreeuse.rtqa.ru
     path: /
 - client-fingerprint: chrome
-  name: '548|🇸🇪_SE_瑞典 #3'
-  port: 8443
-  server: 79.127.249.221
-  servername: ams1.fromblancwithlove.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- client-fingerprint: chrome
   name: 580|🇸🇪瑞典丨yoyapai.com
   network: ws
   port: 8443
@@ -339,6 +302,18 @@ proxies:
     headers:
       Host: eu-central.cendora.ru
     path: '%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 580|🇸🇪SE_1|176KB/s|B007-260618 01
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U
+  server: meow-warsaw.nethcloud.top
+  servername: www.wikihow.com
+  tls: false
+  type: vless
+  uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
 - client-fingerprint: firefox
   name: 580|🇸🇪SE_2|207KB/s|M002-260618 01
   network: xhttp
@@ -347,6 +322,18 @@ proxies:
     public-key: p9ISfhV0uZpKSgrK_8R6Mm4A01tWdzpKMlFR2TIj81s
   server: meow-warsaw.nethcloud.top
   servername: wikihow.com
+  tls: false
+  type: vless
+  uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 580|🇸🇪SE_3|252KB/s|A004-260618 01
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U
+  server: 95.85.227.142
+  servername: www.wikihow.com
   tls: false
   type: vless
   uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
@@ -378,3 +365,19 @@ proxies:
   sni: gate-v1.not-a-projects.xyz
   tls: false
   type: hysteria2
+- name: 728|🇸🇪 瑞典1🔒
+  password: 升级订阅解锁全部节点
+  port: 443
+  server: starlink-se.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: hysteria2
+  udp: true
+- name: 728|🇸🇪 瑞典2🔒
+  password: 升级订阅解锁全部节点
+  port: 443
+  server: starlink-se.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
