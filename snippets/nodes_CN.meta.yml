@@ -54,10 +54,11 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 306,378,489,537,538|🇨🇳CN-121.46.230.136-0385 | 0.3...
+  name: '306,378,489,519,537|🇨🇳CN-121.46.230.138-0424 #2'
   password: 7eadc6dbe2ae
   port: 65443
-  server: 121.46.230.136
+  server: 121.46.230.138
+  skip-cert-verify: true
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -162,6 +163,13 @@ proxies:
     headers:
       Host: YouTube-aweikeji
     path: /hls/cctv5phd.m3u8
+- cipher: aes-256-cfb
+  name: 378,489,537,538|🇨🇳CN-121.46.230.136-0385 | 0.3...
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.136
+  type: ss
+  udp: true
 - name: 378,494,536,537,538|🇨🇳CN-183.236.51.7-4648 | 0.0MB
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10821
@@ -277,14 +285,6 @@ proxies:
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21122
   server: 211.91.158.44
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '378,489,519,537|🇨🇳CN-121.46.230.138-0424 #2'
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.138
   skip-cert-verify: true
   type: ss
   udp: true
@@ -1502,6 +1502,16 @@ proxies:
   type: vless
   udp: true
   uuid: 322bd3ff-dcbc-4cd8-b636-5e0a77d6f68f
+- name: '508,509|中国 013 #1'
+  network: tcp
+  port: 8580
+  server: 62.60.212.111
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 82c91f31-470c-4ea7-8602-27e3d916d62b
 - flow: xtls-rprx-vision
   name: '508,509|中国 014 #1'
   network: tcp
@@ -1514,16 +1524,6 @@ proxies:
   type: vless
   udp: true
   uuid: 9647129d-57ff-4fe2-bbd8-4a49d622612a
-- name: '508,509|中国 017 #1'
-  network: tcp
-  port: 45647
-  server: 182.16.61.2
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
 - client-fingerprint: chrome
   name: '508,509|中国 022 #1'
   network: ws
