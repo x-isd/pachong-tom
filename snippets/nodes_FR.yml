@@ -346,7 +346,7 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: aes-256-cfb
   delay: 1318
-  name: '378,519,528,537,538,548|🇫🇷_FR_法国 #2'
+  name: 378,519,528,537,538|🇫🇷FR-95.170.13.47-0132 | 1.498...
   password: 7eadc6dbe2ae
   port: 65443
   server: 95.170.13.47
@@ -355,9 +355,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,538,636|🇺🇸 美国 009
+  name: 378,494,508,509,536,537,538|🇫🇷FR-162.19.192.89-0219 | 0.0M...
   network: ws
-  port: '16632'
+  port: 16632
   server: planb.mojcn.com.linuxlh.xin
   servername: ''
   skip-cert-verify: false
@@ -370,7 +370,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,536,537,538|🇫🇷FR-162.19.192.89-0225 | 0.0M...
+  name: 378,494,536,537,538|🇫🇷FR-162.19.192.89-0225 | 0.0M...
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
@@ -421,9 +421,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇺🇸 美国 032
+  name: '378,494,508,509,536,537|🇷FR-51.159.155.52-0503 #1'
   network: http
-  port: '3389'
+  port: 3389
   server: 51.159.155.52
   servername: ''
   skip-cert-verify: false
@@ -432,9 +432,9 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 302
+  name: '378,508,509,536,537|🇷FR-162.19.224.175-0852 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 162.19.224.175
   servername: ''
   skip-cert-verify: false
@@ -447,9 +447,9 @@ proxies:
     path: /vmess
 - alterId: 4
   cipher: auto
-  name: 378,508,509,536,537,636|🇪🇺 欧洲 001
+  name: '378,508,509,536,537|FR-104.166.135.10-1007 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 104.166.135.10
   servername: ''
   skip-cert-verify: false
@@ -461,12 +461,12 @@ proxies:
       Host: ahdaeph8.com
     path: /ws
 - alterId: 0
-  cipher: auto
+  cipher: chacha20-poly1305
   grpc-opts:
     grpc-service-name: /
-  name: 378,537,636|🇬🇧 英国 007
+  name: '378,537|🇫🇷FR-146.70.158.111-7796 #1'
   network: grpc
-  port: '443'
+  port: 443
   server: 146.70.158.111
   servername: ''
   skip-cert-verify: false
@@ -475,10 +475,11 @@ proxies:
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
 - alterId: 0
   cipher: auto
-  name: 378,508,509,537,636|🇫🇷 法国 002
+  name: '378,494,508,509,537|🇷FR-62.210.127.120-1060 #1'
   network: ws
-  port: '23388'
+  port: 23388
   server: 62.210.127.120
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1169,12 +1170,12 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: '477,482|🇺🇸 美国(yudou789.top 玉豆免费节点) 106 #1'
+- name: '477,482,494|Join+Telegram:@Farah_VPN #180'
   network: ws
   password: humanity
   port: 443
   server: 104.18.152.161
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
@@ -1209,7 +1210,7 @@ proxies:
       Host: www.ignitelimit.com
     path: /assignment
 - client-fingerprint: chrome
-  name: 489|C🟠🇫🇷_dokng.com_2457ab68
+  name: '489,494|Join+Telegram:@Farah_VPN #3097'
   network: ws
   password: humanity
   port: 443
@@ -1219,9 +1220,6 @@ proxies:
   type: trojan
   udp: true
   ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
     path: /assignment
 - client-fingerprint: android
   name: 489|D🔴🇫🇷[🎬📺🎭🎪]_dokng.com_c7c62b38
@@ -1238,16 +1236,20 @@ proxies:
       User-Agent: Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36
         (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36
     path: /assignment
-- alterId: 0
-  cipher: auto
-  name: 508,509,574,636|🇫🇷 法国 003
-  network: tcp
-  port: '26126'
-  server: 188.165.61.68
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b09b111e-f41c-4145-83c9-029027a5a745
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 514|🇫🇷FR_2|1.2MB/s
+  network: ws
+  password: humanity
+  port: 443
+  server: join-telegram-channel.tirexnet.kdns.fr
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: /assignment
 - name: 536|🇫🇷FR-146.70.158.111-7407
   network: ws
   password: 11ae0edd-2f63-4495-8683-037abbda9986
