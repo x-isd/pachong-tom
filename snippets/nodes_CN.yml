@@ -41,33 +41,6 @@ proxies:
   port: 30001
   server: 36.33.35.105
   type: ss
-- cipher: aes-256-cfb
-  delay: 514
-  name: 306,378,489,519,528,537,538,548,566|🇯🇵 日本 | JPN 2
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.137
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 306,378,435,489,519,537,538,548|🇨🇳_CN_中国->🇺🇸_US_美国_2
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.232
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇨CN
-  name: 306,378,435,537,538,548|🇨🇳_CN_中国->🇰🇷_KR_韩国
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.138
-  skip-cert-verify: true
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '362,363|423|🇨🇳  20X-1B |  16.5MB/s #1'
   password: cac56de5-40e5-4cd1-b23a-5e7e1dde311f
@@ -130,7 +103,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|CN-120.240.55.137-0004 #1'
+  name: '378,536,537|CN-120.240.55.137-0004 #1'
   network: ws
   port: 38201
   server: 120.240.55.137
@@ -143,7 +116,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 64
   cipher: auto
-  name: '378,494,536,537|🇳CN-42.186.175.8-0013 #1'
+  name: '378,536,537|🇳CN-42.186.175.8-0013 #1'
   network: ws
   port: 443
   server: 42.186.175.8
@@ -158,7 +131,7 @@ proxies:
     path: /path/323127100515
 - alterId: 64
   cipher: auto
-  name: '378,494,536,537|🇨🇳CN-119.36.161.40-0057 #1'
+  name: '378,536,537|🇨🇳CN-119.36.161.40-0057 #2'
   network: ws
   port: 443
   server: 119.36.161.40
@@ -173,7 +146,7 @@ proxies:
     path: /path/323127100515
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇨🇳CN-120.240.55.137-0061 #2'
+  name: '378,536,537|🇨🇳CN-120.240.55.137-0061 #2'
   network: ws
   port: 38201
   server: 120.240.55.137
@@ -186,11 +159,35 @@ proxies:
     headers:
       Host: 120.240.55.137
     path: /hls/cctv5phd.m3u8
+- cipher: aes-256-cfb
+  delay: 514
+  name: '378,489,519,528,537,538,548|🇨🇳_CN_中国->🇯🇵_JP_日本 #1'
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.137
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 378,489,519,537,538,548,566|🇨🇳 CN_12
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.232
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 378,489,537,538|🇨🇳CN-121.46.230.233-0197 | 0.7...
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.233
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 378,494,508,509,536,537,538|🇨🇳CN-120.240.55.137-0221 | 0.0...
+  name: 378,508,509,536,537,538,636|🇨🇳 中国 001
   network: ws
-  port: 38201
+  port: '38201'
   server: 120.240.55.137
   servername: ''
   skip-cert-verify: false
@@ -201,12 +198,21 @@ proxies:
     headers:
       Host: 120.240.55.137
     path: /
+- cipher: aes-256-cfb
+  name: 378,537,538,548|🇨🇳_CN_中国->🇰🇷_KR_韩国
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.138
+  skip-cert-verify: true
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 378,537,538|🇨🇳CN-120.240.55.137-0043 | 0.0...
+  name: 378,536,537,538|🇨🇳CN-120.240.55.137-0043 | 0.0...
   network: ws
   port: 38201
   server: 120.240.55.137
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -215,9 +221,9 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 378,494,508,509,536,537,538|🇨🇳CN-42.186.175.8-0207 | 0.0MB
+  name: 378,508,509,536,537,538,636|🇨🇳 中国 003
   network: ws
-  port: 443
+  port: '443'
   server: 42.186.175.8
   servername: ''
   skip-cert-verify: false
@@ -230,9 +236,9 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 378,494,536,537,538|🇨🇳CN-119.36.161.40-0178 | 0.0M...
+  name: 378,508,509,536,537,538,636|🇨🇳 中国 004
   network: ws
-  port: 443
+  port: '443'
   server: 119.36.161.40
   servername: ''
   skip-cert-verify: false
@@ -243,17 +249,9 @@ proxies:
     headers:
       Host: www.79759381.xyz
     path: /
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 378,435,489,537,538,566|🇺🇸 美国 | USA 2
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.233
-  type: ss
-  udp: true
 - alterId: 64
   cipher: auto
-  name: 378,494,508,509,536,537,538|🇨🇳CN-119.36.161.40-0173 | 0.0M...
+  name: 378,536,537,538|🇨🇳CN-119.36.161.40-0173 | 0.0M...
   network: ws
   port: 443
   server: 119.36.161.40
@@ -284,9 +282,9 @@ proxies:
     method: GET
     path:
     - /
-  name: '378,508,509,536,537|🇨CN-124.221.131.176-0919 #1'
+  name: 378,508,509,536,537,636|🇨🇳 中国 027
   network: http
-  port: 50797
+  port: '50797'
   server: 124.221.131.176
   servername: ''
   skip-cert-verify: false
@@ -295,9 +293,9 @@ proxies:
   uuid: fa4b6f8f-1264-45ec-9651-6160c12cabc5
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇨🇳CN-206.109.71.89-0935 #1'
+  name: 378,508,509,536,537,636|🇰🇷 韩国 006
   network: ws
-  port: 12889
+  port: '12889'
   server: gtm1.ktmwan.net
   servername: ''
   skip-cert-verify: false
@@ -310,9 +308,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇳CN-220.175.97.55-0959 #1'
+  name: 378,508,509,536,537,636|🇨🇳 中国 036
   network: ws
-  port: 43815
+  port: '43815'
   server: blog.voewl.com
   servername: ''
   skip-cert-verify: false
@@ -323,7 +321,22 @@ proxies:
     headers:
       Host: blog.voewl.com
     path: /abc
-- name: '378,536,537|🇨CN-120.236.197.205-1326 #1'
+- alterId: 0
+  cipher: auto
+  name: 378,508,509,536,537,636|🇨🇳 中国 064
+  network: ws
+  port: '443'
+  server: 113.142.205.92
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 2fb8c800-89c1-44dd-a425-b37bc0bb2a0a
+  ws-opts:
+    headers:
+      Host: zxdz1962cc.czsx1624.tk
+    path: /f65a148681c42/
+- name: '378,536,537|🇨CN-120.236.197.205-1339 #1'
   password: ba4fedf8c217c146
   port: 3389
   server: 120.236.197.205
@@ -331,7 +344,7 @@ proxies:
   sni: n2.gladns.com
   type: trojan
 - cipher: rc4-md5
-  name: '378,537|🇨CN-42.157.196.103-1392 #1'
+  name: '378,537|🇨CN-42.157.196.103-1405 #1'
   obfs: http_post
   obfs-param: ajax.microsoft.com
   password: Yk4UdrOyQg
@@ -341,7 +354,7 @@ proxies:
   server: 42.157.196.103
   type: ssr
 - cipher: aes-256-cfb
-  name: '378,537|🇨🇳CN-42.157.196.104-1393 #1'
+  name: '378,537|🇨🇳CN-42.157.196.104-1406 #1'
   obfs: tls1.2_ticket_auth
   obfs-param: ajax.microsoft.com
   password: vCmp8ALih6
@@ -351,7 +364,7 @@ proxies:
   server: 42.157.196.104
   type: ssr
 - cipher: aes-256-cfb
-  name: '378,537|🇨🇳CN-42.157.196.104-1394 #1'
+  name: '378,537|🇨🇳CN-42.157.196.104-1407 #1'
   obfs: http_post
   obfs-param: ajax.microsoft.com
   password: CWSZscLkjf
@@ -360,20 +373,20 @@ proxies:
   protocol-param: ''
   server: 42.157.196.104
   type: ssr
-- name: '378,536,537|🇨CN-120.226.39.25-1585 #1'
+- name: '378,536,537|🇨CN-120.226.39.25-1598 #1'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19215
   server: 120.226.39.25
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇳CN-120.226.39.25-1587 #1'
+- name: '378,536,537|🇳CN-120.226.39.25-1600 #1'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19243
   server: 120.226.39.25
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf
-  name: '378,537|🇳CN-120.198.71.184-1622 #1'
+  name: '378,537|🇳CN-120.198.71.184-1635 #1'
   obfs: plain
   obfs-param: t.me/vpnhat
   password: mblank1port
@@ -382,13 +395,13 @@ proxies:
   protocol-param: 63068:ajhjei123456
   server: 120.198.71.184
   type: ssr
-- name: '378,536,537|🇨🇳CN-120.226.39.25-1630 #1'
+- name: '378,536,537|🇨🇳CN-120.226.39.25-1643 #2'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19201
   server: 120.226.39.25
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇳CN-120.226.39.25-1632 #1'
+- name: '378,536,537|🇳CN-120.226.39.25-1645 #1'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19240
   server: 120.226.39.25
@@ -396,7 +409,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇨🇳CN-153.101.64.221-1650 #1'
+  name: '378,536,537|🇨🇳CN-153.101.64.221-1663 #2'
   network: ws
   port: 40013
   server: 153.101.64.221
@@ -407,43 +420,43 @@ proxies:
   uuid: 5716c1b4-c2d3-4a9d-a9a8-5d9919d0ed8f
   ws-opts:
     path: /qwe123321ewq
-- name: '378,536,537|🇨🇳CN-120.226.39.25-1665 #1'
+- name: '378,536,537|🇨🇳CN-120.226.39.25-1678 #2'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19241
   server: 120.226.39.25
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-120.226.39.25-1666 #1'
+- name: '378,536,537|🇨🇳CN-120.226.39.25-1679 #2'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19232
   server: 120.226.39.25
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-120.226.39.25-1667 #1'
+- name: '378,536,537|🇨🇳CN-120.226.39.25-1680 #2'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19233
   server: 120.226.39.25
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-120.226.39.25-1668 #1'
+- name: '378,536,537|🇨🇳CN-120.226.39.25-1681 #2'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19239
   server: 120.226.39.25
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-120.226.39.25-1669 #1'
+- name: '378,536,537|🇨🇳CN-120.226.39.25-1682 #2'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19248
   server: 120.226.39.25
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-120.226.39.25-1670 #1'
+- name: '378,536,537|🇨🇳CN-120.226.39.25-1683 #2'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19245
   server: 120.226.39.25
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇳CN-120.226.39.25-1672 #1'
+- name: '378,536,537|🇳CN-120.226.39.25-1685 #1'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19225
   server: 120.226.39.25
@@ -451,7 +464,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇨🇳CN-223.111.202.139-1780 #1'
+  name: '378,536,537|🇨🇳CN-223.111.202.139-1793 #2'
   network: ws
   port: 63088
   server: 223.111.202.139
@@ -464,7 +477,7 @@ proxies:
     path: /mugua
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇳CN-223.111.202.139-1803 #1'
+  name: '378,536,537|🇳CN-223.111.202.139-1816 #1'
   network: ws
   port: 63086
   server: 223.111.202.139
@@ -476,140 +489,140 @@ proxies:
   ws-opts:
     path: /mugua
 - cipher: aes-128-cfb
-  name: '378,537|🇳CN-14.29.124.168-1939 #1'
+  name: '378,537|🇳CN-14.29.124.168-1952 #1'
   password: QazEdcTgb159@$*
   port: 25226
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨CN-14.29.124.168-1940 #1'
+  name: '378,537|🇨CN-14.29.124.168-1953 #1'
   password: QazEdcTgb159@$*
   port: 25261
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1941 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-1954 #2'
   password: QazEdcTgb159@$*
   port: 25267
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1942 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-1955 #2'
   password: QazEdcTgb159@$*
   port: 25233
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1943 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-1956 #2'
   password: QazEdcTgb159@$*
   port: 25238
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1944 #2'
+  name: '378,537|🇨🇳CN-14.29.124.168-1957 #2'
   password: QazEdcTgb159@$*
   port: 25235
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1945 #2'
+  name: '378,537|🇨🇳CN-14.29.124.168-1958 #2'
   password: QazEdcTgb159@$*
   port: 25219
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1954 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-1967 #2'
   password: QazEdcTgb159@$*
   port: 25266
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1955 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-1968 #2'
   password: QazEdcTgb159@$*
   port: 25245
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1956 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-1969 #2'
   password: QazEdcTgb159@$*
   port: 25231
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1957 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-1970 #2'
   password: QazEdcTgb159@$*
   port: 25220
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1958 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-1971 #2'
   password: QazEdcTgb159@$*
   port: 25296
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1959 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-1972 #2'
   password: QazEdcTgb159@$*
   port: 25287
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1969 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-1982 #2'
   password: QazEdcTgb159@$*
   port: 25270
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1970 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-1983 #2'
   password: QazEdcTgb159@$*
   port: 25247
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1971 #2'
+  name: '378,537|🇨🇳CN-14.29.124.168-1984 #2'
   password: QazEdcTgb159@$*
   port: 25218
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1972 #2'
+  name: '378,537|🇨🇳CN-14.29.124.168-1985 #2'
   password: QazEdcTgb159@$*
   port: 25222
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1973 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-1986 #2'
   password: QazEdcTgb159@$*
   port: 25254
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇳CN-14.29.124.168-1975 #1'
+  name: '378,537|🇳CN-14.29.124.168-1988 #1'
   password: QazEdcTgb159@$*
   port: 25286
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇳CN-14.29.124.168-1978 #1'
+  name: '378,537|🇳CN-14.29.124.168-1991 #1'
   password: QazEdcTgb159@$*
   port: 25217
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1996 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-2009 #2'
   password: QazEdcTgb159@$*
   port: 25294
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇳CN-14.29.124.168-1997 #1'
+  name: '378,537|🇳CN-14.29.124.168-2010 #1'
   password: QazEdcTgb159@$*
   port: 25210
   server: 14.29.124.168
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇨🇳CN-106.55.187.139-1998 #1'
+  name: '378,536,537|🇨🇳CN-106.55.187.139-2011 #2'
   network: ws
   port: 8448
   server: 106.55.187.139
@@ -621,37 +634,37 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-1999 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-2012 #2'
   password: QazEdcTgb159@$*
   port: 25256
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-2001 #2'
+  name: '378,537|🇨🇳CN-14.29.124.168-2014 #2'
   password: QazEdcTgb159@$*
   port: 25284
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-2005 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-2018 #2'
   password: QazEdcTgb159@$*
   port: 25272
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-2023 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-2036 #2'
   password: QazEdcTgb159@$*
   port: 24003
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇳CN-14.29.124.168-2026 #1'
+  name: '378,537|🇳CN-14.29.124.168-2039 #1'
   password: QazEdcTgb159@$*
   port: 24007
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,536,537|🇨🇳CN-14.29.124.168-2028 #2'
+  name: '378,536,537|🇨🇳CN-14.29.124.168-2041 #1'
   obfs: plain
   obfs-param: ''
   password: QazEdcTgb159@$*
@@ -661,49 +674,49 @@ proxies:
   server: 14.29.124.168
   type: ssr
 - cipher: aes-128-cfb
-  name: '378,537|🇳CN-14.29.124.168-2033 #1'
+  name: '378,537|🇳CN-14.29.124.168-2046 #1'
   password: QazEdcTgb159@$*
   port: 25289
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇳CN-14.29.124.168-2040 #1'
+  name: '378,537|🇳CN-14.29.124.168-2053 #1'
   password: QazEdcTgb159@$*
   port: 25259
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇳CN-14.29.124.168-2041 #1'
+  name: '378,537|🇳CN-14.29.124.168-2054 #1'
   password: QazEdcTgb159@$*
   port: 25241
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-2043 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-2056 #2'
   password: QazEdcTgb159@$*
   port: 25268
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-2044 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-2057 #2'
   password: QazEdcTgb159@$*
   port: 25279
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-2052 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-2065 #2'
   password: QazEdcTgb159@$*
   port: 25295
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-2053 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-2066 #2'
   password: QazEdcTgb159@$*
   port: 25230
   server: 14.29.124.168
   type: ss
 - cipher: chacha20-ietf
-  name: '378,537|🇨🇳CN-36.156.222.25-2061 #1'
+  name: '378,537|🇨🇳CN-36.156.222.25-2074 #1'
   obfs: http_simple
   obfs-param: e5ab06181.microsoft.com
   password: zztw9jk7gu
@@ -714,7 +727,7 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇳CN-124.222.189.225-2066 #1'
+  name: '378,536,537|🇳CN-124.222.189.225-2079 #1'
   network: ws
   port: 80
   server: 124.222.189.225
@@ -726,49 +739,49 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-2091 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-2104 #2'
   password: QazEdcTgb159@$*
   port: 25207
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇳CN-14.29.124.174-2173 #1'
+  name: '378,537|🇳CN-14.29.124.174-2181 #1'
   password: QazEdcTgb159@$*
   port: 11048
   server: 14.29.124.174
   type: ss
-- name: '378,536,537|🇨🇳CN-36.151.195.48-2216 #1'
+- name: '378,536,537|🇨🇳CN-36.151.195.48-2224 #2'
   password: TNDSJfNv
   port: 4603
   server: 36.151.195.48
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-36.151.195.48-2239 #1'
+- name: '378,536,537|🇨🇳CN-36.151.195.48-2247 #2'
   password: TNDSJfNv
   port: 4787
   server: 36.151.195.48
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇳CN-14.29.124.168-2414 #1'
+  name: '378,537|🇳CN-14.29.124.168-2422 #1'
   password: QazEdcTgb159@$*
   port: 25251
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇳CN-14.29.124.168-2430 #1'
+  name: '378,537|🇳CN-14.29.124.168-2438 #1'
   password: QazEdcTgb159@$*
   port: 25252
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨CN-14.29.124.168-4542 #1'
+  name: '378,537|🇨CN-14.29.124.168-4550 #1'
   password: QazEdcTgb159@$*
   port: 24009
   server: 14.29.124.168
   type: ss
 - cipher: chacha20-ietf
-  name: '378,536,537|🇨CN-120.232.206.251-4546 #1'
+  name: '378,536,537|🇨CN-120.232.206.251-4554 #1'
   obfs: plain
   obfs-param: ''
   password: mblank1port
@@ -777,212 +790,212 @@ proxies:
   protocol-param: 55956:111111
   server: eduall.buzzline.org
   type: ssr
-- name: '378,536,537|🇨CN-183.236.51.2-4748 #1'
+- name: '378,536,537|🇨CN-183.236.51.2-4756 #1'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10819
   server: 183.236.51.2
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇳CN-183.236.51.8-4749 #1'
+- name: '378,536,537|🇳CN-183.236.51.8-4757 #1'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10821
   server: 183.236.51.8
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.7-4750 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.7-4758 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10823
   server: 183.236.51.7
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.6-4751 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.6-4759 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10820
   server: 183.236.51.6
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.7-4752 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.7-4760 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10822
   server: 183.236.51.7
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.8-4753 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.8-4761 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10825
   server: 183.236.51.8
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.6-4754 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.6-4762 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10824
   server: 183.236.51.6
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.9-4755 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.9-4763 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10822
   server: 183.236.51.9
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.9-4756 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.9-4764 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10820
   server: 183.236.51.9
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.9-4757 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.9-4765 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10824
   server: 183.236.51.9
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.9-4758 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.9-4766 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10825
   server: 183.236.51.9
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.3-4759 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.3-4767 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10819
   server: 183.236.51.3
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.7-4760 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.7-4768 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10826
   server: 183.236.51.7
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.6-4761 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.6-4769 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10822
   server: 183.236.51.6
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.8-4762 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.8-4770 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10823
   server: 183.236.51.8
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.4-4763 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.4-4771 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10825
   server: 183.236.51.4
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.2-4764 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.2-4772 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10820
   server: 183.236.51.2
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.8-4765 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.8-4773 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10824
   server: 183.236.51.8
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.2-4766 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.2-4774 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10826
   server: 183.236.51.2
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.5-4767 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.5-4775 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10826
   server: 183.236.51.5
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.9-4768 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.9-4776 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10819
   server: 183.236.51.9
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.7-4769 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.7-4777 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10821
   server: 183.236.51.7
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.7-4770 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.7-4778 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10819
   server: 183.236.51.7
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.4-4771 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.4-4779 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10826
   server: 183.236.51.4
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.6-4772 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.6-4780 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10823
   server: 183.236.51.6
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.5-4773 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.5-4781 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10823
   server: 183.236.51.5
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.5-4774 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.5-4782 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10822
   server: 183.236.51.5
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.8-4775 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.8-4783 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10819
   server: 183.236.51.8
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.9-4776 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.9-4784 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10826
   server: 183.236.51.9
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.2-4777 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.2-4785 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10823
   server: 183.236.51.2
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.3-4778 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.3-4786 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10823
   server: 183.236.51.3
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.4-4779 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.4-4787 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10824
   server: 183.236.51.4
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇨🇳CN-183.236.51.2-4780 #1'
+- name: '378,536,537|🇨🇳CN-183.236.51.2-4788 #2'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10824
   server: 183.236.51.2
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇳CN-180.101.193.226-6826 #1'
+  name: '378,537|🇳CN-180.101.193.226-6834 #1'
   password: RsDk3peCSuo76B68
   port: 10068
   server: 180.101.193.226
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-111.6.86.119-6827 #1'
+  name: '378,537|🇨🇳CN-111.6.86.119-6835 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -992,13 +1005,13 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-6828 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-6836 #2'
   password: QazEdcTgb159@$*
   port: 24006
   server: 14.29.124.168
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-111.6.86.80-6829 #1'
+  name: '378,537|🇨🇳CN-111.6.86.80-6837 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1008,7 +1021,7 @@ proxies:
   server: 111.6.86.80
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-111.6.86.119-6830 #2'
+  name: '378,537|🇨🇳CN-111.6.86.119-6838 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1018,7 +1031,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-111.6.86.119-6831 #2'
+  name: '378,537|🇨🇳CN-111.6.86.119-6839 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1028,7 +1041,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-111.6.86.119-6832 #2'
+  name: '378,537|🇨🇳CN-111.6.86.119-6840 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1038,7 +1051,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-111.6.86.80-6833 #1'
+  name: '378,537|🇨🇳CN-111.6.86.80-6841 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1048,7 +1061,7 @@ proxies:
   server: 111.6.86.80
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.155-6834 #1'
+  name: '378,537|🇨🇳CN-120.195.181.155-6842 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1058,7 +1071,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.82-6835 #1'
+  name: '378,537|🇨🇳CN-120.195.181.82-6843 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1068,7 +1081,7 @@ proxies:
   server: 120.195.181.82
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.155-6836 #1'
+  name: '378,537|🇨🇳CN-120.195.181.155-6844 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1078,7 +1091,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.82-6837 #1'
+  name: '378,537|🇨🇳CN-120.195.181.82-6845 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1088,7 +1101,7 @@ proxies:
   server: 120.195.181.82
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.111-6838 #1'
+  name: '378,537|🇨🇳CN-120.195.181.111-6846 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1098,7 +1111,7 @@ proxies:
   server: 120.195.181.111
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.155-6839 #1'
+  name: '378,537|🇨🇳CN-120.195.181.155-6847 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1108,7 +1121,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.170-6840 #1'
+  name: '378,537|🇨🇳CN-120.195.181.170-6848 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1118,7 +1131,7 @@ proxies:
   server: 120.195.181.170
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-111.6.86.80-6841 #1'
+  name: '378,537|🇨🇳CN-111.6.86.80-6849 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1128,7 +1141,7 @@ proxies:
   server: 111.6.86.80
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-111.6.86.119-6842 #1'
+  name: '378,537|🇨🇳CN-111.6.86.119-6850 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1138,7 +1151,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.82-6843 #1'
+  name: '378,537|🇨🇳CN-120.195.181.82-6851 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1148,7 +1161,7 @@ proxies:
   server: 120.195.181.82
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.155-6844 #1'
+  name: '378,537|🇨🇳CN-120.195.181.155-6852 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1158,7 +1171,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.111-6845 #1'
+  name: '378,537|🇨🇳CN-120.195.181.111-6853 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1168,7 +1181,7 @@ proxies:
   server: 120.195.181.111
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.82-6846 #1'
+  name: '378,537|🇨🇳CN-120.195.181.82-6854 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1178,7 +1191,7 @@ proxies:
   server: 120.195.181.82
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.155-6847 #1'
+  name: '378,537|🇨🇳CN-120.195.181.155-6855 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1188,7 +1201,7 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.155-6848 #1'
+  name: '378,537|🇨🇳CN-120.195.181.155-6856 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1198,19 +1211,19 @@ proxies:
   server: 120.195.181.155
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-6849 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-6857 #2'
   password: QazEdcTgb159@$*
   port: 24008
   server: 14.29.124.168
   type: ss
 - cipher: aes-128-cfb
-  name: '378,537|🇨🇳CN-14.29.124.168-6850 #1'
+  name: '378,537|🇨🇳CN-14.29.124.168-6858 #2'
   password: QazEdcTgb159@$*
   port: 24002
   server: 14.29.124.168
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.170-6851 #1'
+  name: '378,537|🇨🇳CN-120.195.181.170-6859 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1220,7 +1233,7 @@ proxies:
   server: 120.195.181.170
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.170-6852 #1'
+  name: '378,537|🇨🇳CN-120.195.181.170-6860 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1230,7 +1243,7 @@ proxies:
   server: 120.195.181.170
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-120.195.181.170-6854 #1'
+  name: '378,537|🇨🇳CN-120.195.181.170-6862 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1240,7 +1253,7 @@ proxies:
   server: 120.195.181.170
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-111.6.86.119-6855 #1'
+  name: '378,537|🇨🇳CN-111.6.86.119-6863 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1250,7 +1263,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-111.6.86.119-6856 #1'
+  name: '378,537|🇨🇳CN-111.6.86.119-6864 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1260,7 +1273,7 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: rc4-md5
-  name: '378,537|🇨🇳CN-111.6.86.119-6857 #1'
+  name: '378,537|🇨🇳CN-111.6.86.119-6865 #2'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1270,11 +1283,20 @@ proxies:
   server: 111.6.86.119
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|CN-183.240.222.15-7553 #1'
+  name: '378,537|CN-183.240.222.15-7561 #1'
   password: a5a0a8d9-ab2c-407f-89a4-bf027d216184
   port: 870
   server: 183.240.222.15
   type: ss
+- alterId: 2
+  cipher: auto
+  name: 437|🇨🇳CN_37
+  network: tcp
+  port: 30835
+  server: v35.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 456|🇨🇳 中国 阿里云
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -1333,7 +1355,7 @@ proxies:
     path: /path/153428133302
 - alterId: 0
   cipher: auto
-  name: 465,494,513,517,525|github.com/freefq - 广东省移动 7
+  name: 465,513,517,525|github.com/freefq - 广东省移动 7
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -1351,17 +1373,37 @@ proxies:
   delay: 162
   h2-opts: {}
   http-opts: {}
-  name: '489,494,508,509,528,574,580,581|🇨🇳_CN_中国 #4'
+  name: 489,508,509,528,574,581,636|🇨🇳 中国 006
   network: tcp
-  port: 50002
+  port: '50002'
   server: 112.132.215.108
-  servername: ''
+  servername: 112.132.215.108
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   xudp: true
+- alterId: 0
+  cipher: auto
+  name: 508,509,636|🇨🇳 中国 067
+  network: tcp
+  port: '54321'
+  server: 156.226.183.181
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+- alterId: 0
+  cipher: auto
+  name: 508,509,636|🇨🇳 中国 068
+  network: tcp
+  port: '59121'
+  server: 129.226.157.220
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d9865d63-d95c-454b-ba07-8e88b838a801
 - cipher: aes-256-cfb
   name: '513,517|1|_CN_ #1'
   password: hGkQ6915tD
@@ -1761,20 +1803,6 @@ proxies:
   server: scloud50.jafiyun.ltd
   sni: scloud50.jafiyun.ltd
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 536|🇨🇳CN-113.142.205.92-0006
-  network: ws
-  port: 443
-  server: 113.142.205.92
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 2fb8c800-89c1-44dd-a425-b37bc0bb2a0a
-  ws-opts:
-    headers:
-      Host: zxdz1962cc.czsx1624.tk
-    path: /f65a148681c42/
 - alterId: 0
   cipher: auto
   name: 558|2|🇸24 |  4.8MB/s
