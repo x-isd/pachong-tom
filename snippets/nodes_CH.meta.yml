@@ -106,19 +106,6 @@ proxies:
   port: 443
   server: 156.146.62.160
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438|🇨🇭CH_1|1.8MB/s | 福利姬: https://...'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: B0S7A-ceRt0c3aRqbeQG69FVSkK-si6NWLBEM_QuC3U
-    short-id: '16'
-  server: 138.124.67.80
-  servername: tradingview.com
-  tls: false
-  type: vless
-  uuid: 51231507-67c3-4141-ab08-a69eb121c716
 - alterId: 0
   cipher: auto
   name: 465|16|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
@@ -131,7 +118,8 @@ proxies:
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '475,480|CH丨yoyapai.com #1'
+  name: 475,480,580|🇨🇭CH瑞士丨yoyapai.com
+  network: tcp
   port: 8443
   reality-opts:
     public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
@@ -139,13 +127,14 @@ proxies:
   server: 45.195.137.219
   servername: storage.yandex.net
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '475,480|🇨🇭CH瑞士丨yoyapai.com_1 #1'
+  name: '475,480,580|🇨🇭CH瑞士丨yoyapai.com #1'
+  network: tcp
   port: 8443
   reality-opts:
     public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
@@ -153,13 +142,14 @@ proxies:
   server: 45.195.137.119
   servername: storage.yandex.net
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '475,480|🇨🇭CH瑞士丨yoyapai.com_2 #1'
+  name: '475,480,580|🇨🇭CH瑞士丨yoyapai.com #2'
+  network: tcp
   port: 8443
   reality-opts:
     public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
@@ -167,13 +157,13 @@ proxies:
   server: 45.195.137.109
   servername: storage.yandex.net
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 478,483,522,548|🇨🇭_CH_瑞士
+  name: '478,483,522,548,580|🇨🇭_CH_瑞士 #1'
   port: 443
   reality-opts:
     public-key: q_lfutznS1iTS7bGphTIGMYVeht-8clcf_IfzIf4mBQ
@@ -187,7 +177,7 @@ proxies:
   uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '478,483,522,548|🇨🇭_CH_瑞士_1 #3'
+  name: '478,483,522,548,580|🇨🇭_CH_瑞士 #2'
   port: 443
   reality-opts:
     public-key: q_lfutznS1iTS7bGphTIGMYVeht-8clcf_IfzIf4mBQ
@@ -245,42 +235,9 @@ proxies:
   type: vless
   udp: true
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-- alterId: 0
-  cipher: auto
-  name: 508,509,636|🇨🇭 瑞士 003
-  network: tcp
-  port: '38998'
-  server: 178.83.45.29
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
-- name: '508,509|瑞士 004 #1'
-  network: tcp
-  port: 2086
-  server: 138.124.123.127
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 188c0927-b022-4478-86f7-be53449e2d8b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '508,509|瑞士 005 #1'
-  network: tcp
-  port: 8443
-  server: 138.124.244.77
-  servername: fi1.hys.braidx.tech
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8787dd0a-095a-414e-804f-a7d16a1ae166
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '523,524,548,581|🇨🇭_CH_瑞士->🇫🇮_FI_芬兰 #1'
+  name: '523,524,548,580,581|🇨🇭_CH_瑞士->🇫🇮_FI_芬兰 #2'
   network: tcp
   port: 5001
   reality-opts:
@@ -294,6 +251,28 @@ proxies:
   type: vless
   udp: true
   uuid: 5a92a9d2-3067-49cd-bfc5-989bbdfc5d52
+- client-fingerprint: firefox
+  name: 580|🇨🇭CH_6|2.3MB/s|S001-260618 01
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: f79448a30d
+  server: ch-xh01.tcp-reset-club.net
+  servername: s3.netavex.com
+  tls: false
+  type: vless
+  uuid: 8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3
+  ws-opts:
+    path: /assets/v2/pkg
+- name: 580|🇨🇭CH_8|2.4MB/s|C002-260622 01
+  password: a4130dea-9e33-4032-805d-0392fdf26cbd
+  port: 443
+  server: samurai.h4ck.me
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  tls: false
+  type: hysteria2
 - name: 728|🇨🇭 瑞士1🔒
   password: 升级订阅解锁全部节点
   port: 443
