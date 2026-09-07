@@ -41,6 +41,14 @@ proxies:
   port: 30001
   server: 36.33.35.105
   type: ss
+- cipher: aes-256-cfb
+  name: 306,378,489,537,538,548|🇨🇳_CN_中国->🇺🇸_US_美国_2
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.232
+  skip-cert-verify: true
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '362,363|297,393|0|🌀7-CN |  6.0MB/s |  ... #1'
@@ -172,9 +180,8 @@ proxies:
       Host: 120.240.55.137
     path: /hls/cctv5phd.m3u8
 - cipher: aes-256-cfb
-  country: 🇨CN
   delay: 514
-  name: '378,435,489,519,528,537,538,548|🇨🇳_CN_中国->🇯🇵_JP_日本 #1'
+  name: 378,489,528,537,538,548|🇨🇳_CN_中国->🇯🇵_JP_日本
   password: 7eadc6dbe2ae
   port: 65443
   server: 121.46.230.137
@@ -182,27 +189,18 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇨CN
-  name: 378,435,489,519,537,538,548,566|🇨🇳 CN_12
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.232
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 378,435,489,537,538|🇨🇳CN-121.46.230.233-0197 | 0.7...
+  name: 378,489,519,537,538|🇨🇳CN-121.46.230.233-0197 | 0.7...
   password: 7eadc6dbe2ae
   port: 65443
   server: 121.46.230.233
+  skip-cert-verify: true
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,538|🇨🇳CN-120.240.55.137-0221 | 0.0...
+  name: 378,508,509,536,537,538,636|🇨🇳 中国 001
   network: ws
-  port: 38201
+  port: '38201'
   server: 120.240.55.137
   servername: ''
   skip-cert-verify: false
@@ -214,8 +212,7 @@ proxies:
       Host: 120.240.55.137
     path: /
 - cipher: aes-256-cfb
-  country: 🇨CN
-  name: 378,435,537,538,548|🇨🇳_CN_中国->🇰🇷_KR_韩国
+  name: 378,537,538,548,566|🇰🇷 韩国 | KOR
   password: 7eadc6dbe2ae
   port: 65443
   server: 121.46.230.138
@@ -237,9 +234,9 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,538|🇨🇳CN-42.186.175.8-0207 | 0.0MB
+  name: 378,508,509,536,537,538,636|🇨🇳 中国 003
   network: ws
-  port: 443
+  port: '443'
   server: 42.186.175.8
   servername: ''
   skip-cert-verify: false
@@ -252,9 +249,9 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,538|🇨🇳CN-119.36.161.40-0178 | 0.0M...
+  name: 378,508,509,536,537,538,636|🇨🇳 中国 004
   network: ws
-  port: 443
+  port: '443'
   server: 119.36.161.40
   servername: ''
   skip-cert-verify: false
@@ -298,9 +295,9 @@ proxies:
     method: GET
     path:
     - /
-  name: '378,508,509,536,537|🇨CN-124.221.131.176-0908 #1'
+  name: 378,508,509,536,537,636|🇨🇳 中国 027
   network: http
-  port: 50797
+  port: '50797'
   server: 124.221.131.176
   servername: ''
   skip-cert-verify: false
@@ -309,9 +306,9 @@ proxies:
   uuid: fa4b6f8f-1264-45ec-9651-6160c12cabc5
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇨🇳CN-206.109.71.89-0924 #2'
+  name: 378,508,509,536,537,636|🇰🇷 韩国 006
   network: ws
-  port: 12889
+  port: '12889'
   server: gtm1.ktmwan.net
   servername: ''
   skip-cert-verify: false
@@ -324,9 +321,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇳CN-220.175.97.55-0948 #1'
+  name: 378,508,509,536,537,636|🇨🇳 中国 036
   network: ws
-  port: 43815
+  port: '43815'
   server: blog.voewl.com
   servername: ''
   skip-cert-verify: false
@@ -339,9 +336,9 @@ proxies:
     path: /abc
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇳CN-113.142.205.92-1076 #1'
+  name: 378,508,509,536,537,636|🇨🇳 中国 064
   network: ws
-  port: 443
+  port: '443'
   server: 113.142.205.92
   servername: ''
   skip-cert-verify: false
@@ -1319,32 +1316,13 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  country: 🇨CN
-  h2-opts: {}
-  http-opts: {}
-  name: '435,437|🇨🇳CN_36 #1'
+  name: 437|🇨🇳CN_30
   network: tcp
   port: 30835
   server: v35.hdacd.com
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: '435,437,568|🇭🇰 香港 | HKG #3'
-  network: tcp
-  port: '30833'
-  server: v33.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
 - name: 456|🇨🇳 中国 阿里云
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -1431,9 +1409,9 @@ proxies:
   delay: 162
   h2-opts: {}
   http-opts: {}
-  name: '489,508,509,528,580,581|🇨🇳_CN_中国 #5'
+  name: 489,508,509,528,580,581,636|🇨🇳 中国 006
   network: tcp
-  port: 50002
+  port: '50002'
   server: 112.132.215.108
   servername: ''
   skip-cert-verify: true
@@ -1442,22 +1420,45 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   xudp: true
+- name: '502,523,524,548,580,581,717|CN【机场推荐：https://a9a.xyz】20 #1'
+  network: tcp
+  port: 52683
+  server: jp.sofast.live
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+- client-fingerprint: chrome
+  name: '502,508,509,519,523,524,548,580,581,717|CN【机场推荐：https://a9a.xyz】24 #1'
+  network: tcp
+  port: 58011
+  server: us22.sofast.live
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
 - alterId: 0
   cipher: auto
-  name: '508,509|中国 067 #1'
+  name: 508,509,636|🇨🇳 中国 067
   network: tcp
-  port: 54321
+  port: '54321'
   server: 156.226.183.181
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
 - alterId: 0
   cipher: auto
-  name: '508,509|中国 068 #1'
+  name: 508,509,636|🇨🇳 中国 068
   network: tcp
-  port: 59121
+  port: '59121'
   server: 129.226.157.220
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: d9865d63-d95c-454b-ba07-8e88b838a801
 - client-fingerprint: chrome
@@ -1581,6 +1582,14 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '523,524|🇨🇳_中国_54 #1'
+  port: 52683
+  server: jp.sofast.live
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
 - name: 535|🇨🇳CN-183.56.247.206-000
   password: f441a2b0-31ef-490d-bd91-9b1cd960f4ce
   port: 29482
