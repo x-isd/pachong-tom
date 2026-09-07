@@ -24,15 +24,15 @@ proxies:
   server: 103.236.66.4
   type: ss
 - cipher: aes-256-gcm
-  name: 306,378,537,556|🇺🇸 美国2|@ripaojiedian
-  password: Butterfly123@qwe9527
-  port: 50003
-  server: 103.236.66.4
-  type: ss
-- cipher: aes-256-gcm
   name: 306,378,537,556|🇺🇸 美国|@ripaojiedian
   password: Butterfly123@qwe9527
   port: 50001
+  server: 103.236.66.4
+  type: ss
+- cipher: aes-256-gcm
+  name: 306,378,537,556|🇺🇸 美国2|@ripaojiedian
+  password: Butterfly123@qwe9527
+  port: 50003
   server: 103.236.66.4
   type: ss
 - cipher: aes-256-gcm
@@ -41,14 +41,6 @@ proxies:
   port: 30001
   server: 36.33.35.105
   type: ss
-- cipher: aes-256-cfb
-  name: 306,378,489,537,548|🇨🇳_CN_中国->🇺🇸_US_美国_2
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.232
-  skip-cert-verify: true
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '362,363|297,393|0|🌀7-CN |  6.0MB/s |  ... #1'
@@ -465,7 +457,7 @@ proxies:
   server: 183.245.146.20
   type: ss
 - cipher: aes-256-cfb
-  name: 378,537,538,548,566|🇰🇷 韩国 | KOR 2
+  name: '378,519,537,538,548|🇨🇳_CN_中国->🇰🇷_KR_韩国 #1'
   password: 7eadc6dbe2ae
   port: 65443
   server: 121.46.230.138
@@ -475,7 +467,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇨CN
   delay: 514
-  name: 378,435,489,528,537,538,548|🇨🇳_CN_中国->🇯🇵_JP_日本
+  name: '378,435,489,519,528,537,538,548|🇨🇳_CN_中国->🇯🇵_JP_日本 #1'
   password: 7eadc6dbe2ae
   port: 65443
   server: 121.46.230.137
@@ -488,6 +480,14 @@ proxies:
   password: 7eadc6dbe2ae
   port: 65443
   server: 121.46.230.233
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '378,489,519,537,548|🇨🇳_CN_中国->🇺🇸_US_美国_2 #1'
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.232
   skip-cert-verify: true
   type: ss
   udp: true
@@ -1680,11 +1680,11 @@ proxies:
   delay: 162
   h2-opts: {}
   http-opts: {}
-  name: 489,508,509,528,581,636|🇨🇳 中国 006
+  name: 489,508,509,528,574,580,581,636|🇨🇳 中国 006
   network: tcp
   port: '50002'
   server: 112.132.215.108
-  servername: 112.132.215.108
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -1692,18 +1692,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   xudp: true
 - client-fingerprint: chrome
-  name: '502,523,524,548,581,717|CN【机场推荐：https://a9a.xyz】20 #1'
-  network: tcp
-  port: 52683
-  server: jp.sofast.live
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
-- client-fingerprint: chrome
-  name: '502,508,509,519,548,581,717|CN【机场推荐：https://a9a.xyz】24 #1'
+  name: '502,508,509,519,548,580,581,717|CN【机场推荐：https://a9a.xyz】24 #1'
   network: tcp
   port: 58011
   server: us22.sofast.live
@@ -1854,6 +1843,16 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 519|🇨🇳_CN_中国_1
+  port: 2648
+  server: 150.242.244.116
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aeff933f-0ae6-4465-85bf-12f1394f35af
 - name: 535|🇨🇳CN-183.56.247.206-000
   password: f441a2b0-31ef-490d-bd91-9b1cd960f4ce
   port: 29482
@@ -2501,6 +2500,13 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+- name: 580|🇨🇳CN_1|217KB/s|A004-260618 01
+  password: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
+  port: 9080
+  server: 139.28.168.57
+  sni: grape-honk.yyuyy.com
+  tls: false
+  type: hysteria2
 - cipher: aes-256-cfb
   name: 585|CN_speednode_0001
   password: 7eadc6dbe2ae
