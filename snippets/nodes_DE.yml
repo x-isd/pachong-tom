@@ -53,6 +53,20 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 306|Germany_None_vmess_1131
+  network: tcp
+  port: '5941'
+  server: Forde.arosakforosh.ir
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 26f3dc79-c1a5-40aa-b9dd-6436b5e4188e
+  xudp: true
 - cipher: chacha20-ietf-poly1305
   name: 356|🇩🇪1 |  1.6MB/s
   password: oXGp1+ihlfKg826H
@@ -468,18 +482,20 @@ proxies:
   server: 145.239.1.100
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇩🇪DE-209.46.102.22-0133 | 19.3...
+  country: 🇺US
+  name: 378,435,537,538|🇩🇪DE-209.46.102.22-0133 | 19.3...
   password: 1hhrqrokj3ag
   port: 8388
   server: 209.46.102.22
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇩🇪DE-8.209.74.72-0143 | 9.262M...
+  country: 🇬SG
+  name: 378,435,537,538|🇩🇪DE-8.209.74.72-0143 | 9.262M...
   password: PWpjPo3tqhPN4yRZ
   port: 20001
   server: 8.209.74.72
   type: ss
-- name: 378,494,536,537,538|🇩🇪DE-45.149.4.199-0229 | 0.0MB
+- name: 378,536,537,538|🇩🇪DE-45.149.4.199-0229 | 0.0MB
   password: UhCF2JxsDxStDp5NTQ
   port: 443
   server: ty1-3.crabyakiniku.com
@@ -694,7 +710,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 378,494,508,509,536,537,636|🇧🇪 比利时 002
+  name: 378,508,509,536,537,636|🇧🇪 比利时 002
   network: ws
   port: '443'
   server: 57.129.25.22
@@ -709,7 +725,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 378,494,508,509,536,537,636|🇧🇪 比利时 003
+  name: 378,508,509,536,537,636|🇧🇪 比利时 003
   network: ws
   port: '443'
   server: 57.129.28.63
@@ -724,7 +740,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 378,494,508,509,536,537,636|🇧🇪 比利时 004
+  name: 378,508,509,536,537,636|🇧🇪 比利时 004
   network: ws
   port: '443'
   server: 57.129.28.64
@@ -739,7 +755,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 378,494,508,509,536,537,636|🇧🇪 比利时 005
+  name: 378,508,509,536,537,636|🇧🇪 比利时 005
   network: ws
   port: '443'
   server: 57.129.64.238
@@ -1126,18 +1142,22 @@ proxies:
   uuid: 826b8d0a-e0d3-407a-927d-19953c170779
   ws-opts:
     path: /cctv13/hd.m3u8
-- name: '378,436,536,537|🇪DE-18.192.67.47-5243 #1'
+- country: 🇵JP
+  name: '378,435,436,536,537|🇪DE-18.192.67.47-5243 #1'
   password: NQ26071394
   port: 443
   server: direct-hawk.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇪DE-3.67.79.54-5248 #1'
+  udp: true
+- country: 🇯🇵JP
+  name: '378,435,436,536,537|🇪DE-3.67.79.54-5248 #1'
   password: CF68213490
   port: 443
   server: composed-sheep.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: '378,537|🇪DE-193.108.117.75-5466 #1'
   password: PCnnH6SQSnfoS27
@@ -1790,6 +1810,56 @@ proxies:
   uuid: beadd688-6285-4f0e-bb5e-d984570567a4
 - alterId: 0
   cipher: auto
+  name: 508,509,636|🇩🇪 德国 015
+  network: tcp
+  port: '2053'
+  server: 178.63.237.158
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2d4dd672-180f-415c-9035-e2fc461dd95a
+- alterId: 64
+  cipher: auto
+  name: 508,509,636|🇩🇪 德国 016
+  network: tcp
+  port: '31484'
+  server: 168.119.107.162
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 943961b8-4e27-4bdf-a048-c2f724f542fb
+- alterId: 0
+  cipher: auto
+  name: 508,509,574,636|🇩🇪 德国 017
+  network: tcp
+  port: '443'
+  server: 46.183.187.73
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 92a048ec-a160-497e-8069-c2e902626d7a
+- alterId: 0
+  cipher: auto
+  name: 508,509,636|🇩🇪 德国 018
+  network: tcp
+  port: '15307'
+  server: 5.75.192.206
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 18c1c45d-95bf-435b-ae4c-7eb96f793af4
+- alterId: 0
+  cipher: auto
+  name: 508,509,574,636|🇩🇪 德国 019
+  network: tcp
+  port: '80'
+  server: 128.140.109.232
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 05a178f9-e6ba-4006-93d7-3d980cdc3a76
+- alterId: 0
+  cipher: auto
   name: '513,517|2|🇩🇪_DE_德国 #1'
   network: ws
   port: 45103
@@ -1816,6 +1886,38 @@ proxies:
   udp: true
   ws-opts:
     path: /trojan-ws
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇩🇪_德国_345 #1'
+  network: ws
+  port: 443
+  server: 89.127.218.61
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇩🇪_德国_347 #1'
+  network: ws
+  port: 443
+  server: 111.88.74.167
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
 - name: '536|🇩🇪DE-185.137.157.254-2363 #1'
   password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
   port: 443
@@ -1850,9 +1952,9 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 88.198.82.150
+  server: 88.99.189.60
   skip-cert-verify: true
-  sni: www.ignitelimit.com
+  sni: www.calmlunch.com
   tls: true
   type: trojan
   udp: true
