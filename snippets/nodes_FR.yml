@@ -66,6 +66,18 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alpn:
+  - http/1.1
+  name: 340|🇫🇷FR_1|1.4MB/s
+  network: ws
+  password: humanity
+  port: 443
+  server: 216.24.57.7
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: /assignment
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-7079 #1'
   password: f8f7aCzcPKbsF8p3
@@ -350,15 +362,6 @@ proxies:
   port: 811
   server: 51.38.118.42
   type: ss
-- cipher: aes-256-cfb
-  delay: 2461
-  name: '378,519,528,537,538,548|🇫🇷_FR_法国 #2'
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 95.170.13.47
-  skip-cert-verify: true
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: '378,537|🇷FR-195.154.200.150-0325 #1'
   password: faBAoD54k87UJG7
@@ -914,17 +917,6 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '438|🇫🇷FR_1|2.1MB/s | 网盘搜宝: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: 212.183.88.136
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
 - alterId: 0
   cipher: auto
   name: 461|法国_马赛
@@ -1070,7 +1062,7 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
-- name: '475,480,523,524,536,568|🇫🇷 法国 | FRA #7'
+- name: 475,480,523,524,536|🏁RELAY-104.18.152.133-0885
   password: humanity
   port: 443
   server: 104.18.152.133
@@ -1090,7 +1082,7 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
-- name: '475,480,523,524|🏳️_未知_161 #1'
+- name: '475,480,523,524,568|🇫🇷 法国 | FRA #8'
   password: humanity
   port: 443
   server: 104.18.152.152
@@ -1115,7 +1107,7 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: '477,482|🇷 法国(yudou789.top 玉豆免费节点) 16 #1'
+- name: '477,482,519,566|🇫🇷 法国 | FRA 7 #1'
   network: ws
   password: humanity
   port: 443
@@ -1141,12 +1133,12 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: '477,482,502|美国+CloudFlare节点 #41'
+- name: '477,482,519,566|🇺🇸 美国 | USA 17 #1'
   network: ws
   password: humanity
   port: 443
   server: 104.18.152.161
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
   udp: true
@@ -1222,6 +1214,52 @@ proxies:
       User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
         (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
     path: /assignment
+- alpn:
+  - h2
+  - http/1.1
+  name: '519,566|🇫🇷 法国 | FRA 5 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 162.159.136.234
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '519,566|🇫🇷 法国 | FRA 10 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.21.8.107
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- name: '519,566|🇫🇷 法国 | FRA 11 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 45.130.125.158
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
 - name: 536|🇫🇷FR-146.70.158.111-7616
   network: ws
   password: 11ae0edd-2f63-4495-8683-037abbda9986
@@ -1248,6 +1286,20 @@ proxies:
   port: 443
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
+  type: trojan
+- name: '568|🇫🇷 法国 | FRA #5'
+  password: humanity
+  port: 443
+  server: 162.159.136.234
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: '568|🇫🇷 法国 | FRA #10'
+  password: humanity
+  port: 443
+  server: 104.21.8.107
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
   type: trojan
 - alterId: 0
   cipher: auto

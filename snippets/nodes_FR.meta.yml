@@ -122,6 +122,18 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
+- alpn:
+  - http/1.1
+  name: 340|🇫🇷FR_1|1.4MB/s
+  network: ws
+  password: humanity
+  port: 443
+  server: 216.24.57.7
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: /assignment
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-7079 #1'
   password: f8f7aCzcPKbsF8p3
@@ -434,15 +446,6 @@ proxies:
   port: 811
   server: 51.38.118.42
   type: ss
-- cipher: aes-256-cfb
-  delay: 2461
-  name: '378,519,528,537,538,548|🇫🇷_FR_法国 #2'
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 95.170.13.47
-  skip-cert-verify: true
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: '378,537|🇷FR-195.154.200.150-0325 #1'
   password: faBAoD54k87UJG7
@@ -462,13 +465,13 @@ proxies:
   uuid: 5f6e42bb-2fd1-478b-8f0f-e52b2d6f7652
   ws-opts:
     path: /vmess
-- name: '378,489,519,537|🇷FR-141.94.16.4-0514 #1'
+- name: '378,489,537|🇷FR-141.94.16.4-0514 #1'
   port: 443
   server: 141.94.16.4
   skip-cert-verify: false
   tls: true
   type: http
-- name: '378,489,519,537|🇫🇷FR-62.210.27.111-0520 #1'
+- name: '378,489,537|🇫🇷FR-62.210.27.111-0520 #1'
   port: 443
   server: fan.132031.xyz
   skip-cert-verify: false
@@ -1011,33 +1014,21 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '438|🇫🇷FR_1|2.1MB/s | 网盘搜宝: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: 212.183.88.136
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_3|2.1MB/s | 更多节点: https:/...'
-  network: tcp
-  port: 22222
-  server: 13.37.73.8
-  tls: false
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: '438|🇫🇷FR_4|1.3MB/s | 福利姬: https://...'
-  network: tcp
-  port: 22222
-  server: 13.36.253.48
-  tls: false
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - client-fingerprint: chrome
-  name: '438|🇫🇷FR_5|1.9MB/s | 网盘搜宝: https:/...'
+  flow: xtls-rprx-vision
+  name: '438|🇫🇷FR_2|1.7MB/s | 更多节点: https:/...'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: fuck.rkn
+  tls: false
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  name: '438|🇫🇷FR_3|2.0MB/s | 福利姬: https://...'
   network: xhttp
   port: 443
   reality-opts:
@@ -1052,39 +1043,7 @@ proxies:
     path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438|🇫🇷FR_6|1.8MB/s | 福利姬: https://...'
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  servername: fuck.rkn
-  tls: false
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- name: '438|🇫🇷FR_7|1.9MB/s | 网盘搜宝: https:/...'
-  network: tcp
-  port: 22224
-  server: 13.37.73.8
-  tls: false
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438|🇫🇷FR_8|1.7MB/s | 福利姬: https://...'
-  network: tcp
-  port: 443
-  server: 162.19.10.99
-  servername: nasnet-162191099-direct.mbghalibaf.com
-  tls: true
-  type: vless
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438|🇫🇷FR_9|1.6MB/s | 福利姬: https://...'
+  name: '438|🇫🇷FR_4|1.6MB/s | 网盘搜宝: https:/...'
   network: tcp
   port: 23576
   reality-opts:
@@ -1095,6 +1054,30 @@ proxies:
   tls: false
   type: vless
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇫🇷FR_5|2.0MB/s | 福利姬: https://...'
+  network: tcp
+  port: 443
+  server: nasnet-162191099-direct.mbghalibaf.com
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  tls: true
+  type: vless
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+- client-fingerprint: chrome
+  name: '438|🇫🇷FR_6|1.9MB/s | 更多节点: https:/...'
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk
+    short-id: a88550765b9956ee
+  server: 185.255.112.206
+  servername: play.google.com
+  tls: false
+  type: vless
+  uuid: 1577b744-8004-4eef-862c-8cae0cd27ab9
+  ws-opts:
+    path: '%2F'
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1325,7 +1308,7 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
-- name: '475,480,523,524,536,568|🇫🇷 法国 | FRA #7'
+- name: 475,480,523,524,536|🏁RELAY-104.18.152.133-0885
   password: humanity
   port: 443
   server: 104.18.152.133
@@ -1345,7 +1328,7 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
-- name: '475,480,523,524|🏳️_未知_161 #1'
+- name: '475,480,523,524,568|🇫🇷 法国 | FRA #8'
   password: humanity
   port: 443
   server: 104.18.152.152
@@ -1507,7 +1490,7 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: '477,482|🇷 法国(yudou789.top 玉豆免费节点) 16 #1'
+- name: '477,482,519,566|🇫🇷 法国 | FRA 7 #1'
   network: ws
   password: humanity
   port: 443
@@ -1533,12 +1516,12 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: '477,482,502|美国+CloudFlare节点 #41'
+- name: '477,482,519,566|🇺🇸 美国 | USA 17 #1'
   network: ws
   password: humanity
   port: 443
   server: 104.18.152.161
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
   udp: true
@@ -1561,7 +1544,7 @@ proxies:
     path: /assignment
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '478,483,522,548|🇫🇷_FR_法国 #1'
+  name: 478,483,522,548|🇫🇷_FR_法国
   port: 43248
   reality-opts:
     public-key: LPLKpq5_G1WB6BqJhrCKQp1oQly3akbsVjvYPZrbGgg
@@ -1573,7 +1556,7 @@ proxies:
   type: vless
   udp: true
   uuid: f9d8ca28-2fff-45de-9b25-3bf29186018e
-- name: 489|D🔴🇫🇷[🎬🤖📺🎭]_dokng.com_e3642aa7
+- name: 489,519|🇫🇷FR_1|3.3MB/s
   port: 443
   server: 103.82.101.44
   skip-cert-verify: true
@@ -1668,7 +1651,14 @@ proxies:
   port: 1080
   server: 109.123.251.109
   type: socks5
-- name: '502,514,548,551|🇫🇷FR_1|1.6MB/s #2'
+- name: '502,717|FR【机场推荐：https://a9a.xyz】15 #1'
+  network: tcp
+  port: 22223
+  server: 13.36.253.48
+  tls: false
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 502,548|🇬🇧 英国_A165E7
   network: tcp
   port: 34770
   server: technolife.topdigit.ir
@@ -1678,6 +1668,60 @@ proxies:
   type: vless
   udp: true
   uuid: ef04fed2-399b-4533-b423-f92c8cb66234
+- auth: github.com/Alvin9999-newpac/fanqiang
+  name: '519,566|🇫🇷 法国 | FRA 4 #1'
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 60111
+  server: 62.210.7.139
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+- alpn:
+  - h2
+  - http/1.1
+  name: '519,566|🇫🇷 法国 | FRA 5 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 162.159.136.234
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '519,566|🇫🇷 法国 | FRA 10 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.21.8.107
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- name: '519,566|🇫🇷 法国 | FRA 11 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 45.130.125.158
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
 - name: 536|🇫🇷FR-146.70.158.111-7616
   network: ws
   password: 11ae0edd-2f63-4495-8683-037abbda9986
@@ -1704,6 +1748,20 @@ proxies:
   port: 443
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
+  type: trojan
+- name: '568|🇫🇷 法国 | FRA #5'
+  password: humanity
+  port: 443
+  server: 162.159.136.234
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: '568|🇫🇷 法国 | FRA #10'
+  password: humanity
+  port: 443
+  server: 104.21.8.107
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
   type: trojan
 - alterId: 0
   cipher: auto

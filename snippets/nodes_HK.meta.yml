@@ -828,7 +828,6 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '306,340,378,502,514,519,536,537,551,556,557|香港4|@ripaojiedian #5'
   network: tcp
@@ -849,14 +848,16 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '306,340,378,489,502,514,519,537,551|🇭🇰HK_1|4.1MB/s #2'
+- client-fingerprint: chrome
+  name: '306,340,378,489,502,537|🇰HK-58.152.211.48-0536 #1'
   network: tcp
   password: d742752c-4231-4695-801e-f06d77f0f277
   port: 52224
   server: hk04.qianmoip.win
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: taobao.com
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 356|🇭🇰1 |  3.5MB/s
   password: WfmxKX2FBJRU0Ie9VLIYDL
@@ -2525,7 +2526,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇭🇰HK-47.244.120.197-4901 #1'
+  name: '378,437,536,537|🇭🇰HK-47.244.120.197-4901 #1'
   network: ws
   port: 44867
   server: 47.244.120.197
@@ -3140,6 +3141,34 @@ proxies:
     headers:
       Host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
+- alterId: 2
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '435,437,459|美国(yudou789.top 玉豆免费节点) #54'
+  network: tcp
+  port: '30804'
+  server: v4.hdacd.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇰HK_81
+  network: ws
+  port: 44867
+  server: 47.244.120.197
+  skip-cert-verify: true
+  type: vmess
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  ws-path: /arki
 - alpn:
   - h2
   - http/1.1
@@ -3157,43 +3186,15 @@ proxies:
   tls: true
   type: vless
   uuid: d742752c-4231-4695-801e-f06d77f0f277
-- alpn:
-  - networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438|🇭🇰HK_2|1.9MB/s | 网盘搜宝: https:/...'
-  network: tcp
-  port: 40443
-  reality-opts:
-    public-key: oc9uweln_cqyaJnlRMnhhhKrGNP7RrYOsuYtaIOIQDE
-    short-id: 2bc0
-  server: private.netraidly.ru
-  servername: deepl.com
-  tls: false
-  type: vless
-  uuid: 5e3f974b-06fc-4555-907a-6681391b7c17
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438|🇭🇰HK_3|1.8MB/s | 福利姬: https://...'
+  name: '438|🇭🇰HK_3|1.9MB/s | 福利姬: https://...'
   network: tcp
   port: 443
   reality-opts:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
     short-id: 14156e3ac23212cc
   server: 162.128.157.164
-  servername: www.bing.com
-  tls: false
-  type: vless
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438|🇭🇰HK_4|1.9MB/s | 福利姬: https://...'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  server: vj37-1936vtw.fincore.top
   servername: www.bing.com
   tls: false
   type: vless
@@ -3919,7 +3920,7 @@ proxies:
       - sjskendn.dingtalk.com
     path:
     - /x
-  name: '478,483,522,548|🇭🇰_HK_中国香港 #4'
+  name: '478,483,522,548|🇭🇰_HK_中国香港 #3'
   network: http
   port: 800
   server: 47.86.167.194
@@ -4118,6 +4119,90 @@ proxies:
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '519,566|🇭🇰 香港 | HKG #1'
+  network: tcp
+  port: 10032
+  reality-opts:
+    public-key: yXxDl06l9pXXT4_1kqpdgOyfAhORcsfPgLTxHu50zQM
+    short-id: f9275dbb5a
+  server: 123.253.227.238
+  servername: www.hp.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: fad78708-a2a3-37a9-8ce7-6bc83526af0d
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '519,566|🇭🇰 香港 | HKG 2 #1'
+  network: tcp
+  port: 10038
+  reality-opts:
+    public-key: JddbQk5RNLhnZOTiod0E7JGcCTRNO69nrP1b8VtKS2c
+    short-id: 2a92
+  server: 123.253.227.238
+  servername: www.adobe.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: fad78708-a2a3-37a9-8ce7-6bc83526af0d
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '519,566|🇭🇰 香港 | HKG 3 #1'
+  network: tcp
+  port: 10031
+  reality-opts:
+    public-key: XD4QDqCtwoTo5TsoU8Kl2Mj7F-hQNzlyK5z0cg8VZ20
+    short-id: d83b1991a19fb038
+  server: 123.253.227.238
+  servername: www.hp.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: fad78708-a2a3-37a9-8ce7-6bc83526af0d
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '519,566|🇭🇰 香港 | HKG 4 #1'
+  network: tcp
+  port: 10017
+  reality-opts:
+    public-key: XV85nYU2U8OlC9HYGBH9gXLUvkLELGbHAeI8bGD0SSY
+    short-id: 68f899acc3729e
+  server: 123.253.227.238
+  servername: www.sap.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: fad78708-a2a3-37a9-8ce7-6bc83526af0d
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '519,566|🇭🇰 香港 | HKG 5 #1'
+  network: tcp
+  port: 10005
+  reality-opts:
+    public-key: ryX4yUguNp9iQ6j_BPlEMyCK62474if28u_ouXSPciQ
+    short-id: 1974efea3b2148
+  server: 123.253.227.238
+  servername: www.asus.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: fad78708-a2a3-37a9-8ce7-6bc83526af0d
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '519,566|🇭🇰 香港 | HKG 6 #1'
+  network: tcp
+  port: 10016
+  reality-opts:
+    public-key: RFG8d5sxG4ysTNqNnjeSVk7gftcPMpUBSbPu0HKZrAQ
+    short-id: ca2593defe
+  server: 123.253.227.238
+  servername: www.sap.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: fad78708-a2a3-37a9-8ce7-6bc83526af0d
 - name: 533|HK香港(mibei77.com 米贝节点分享)
   network: ws
   port: 18622
@@ -4489,177 +4574,9 @@ proxies:
   type: hysteria
   udp: true
   up: 1000 Mbps
-- name: 566|🇭🇰 香港 | HKG
-  network: xhttp
-  port: 443
-  server: us3.d6e5a7d2-3e26-c0f5-1bc0-e481d73fd66c.47253001.the-best-airport.com
-  servername: update.microsoft.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8375f628-5d93-4ef1-bf52-3612e68abbcd
-  xhttp-opts:
-    host: us3.d6e5a7d2-3e26-c0f5-1bc0-e481d73fd66c.47253001.the-best-airport.com
-    mode: stream-up
-    path: /path
-- name: 566|🇭🇰 香港 | HKG 2
-  network: xhttp
-  port: 443
-  server: us1.d6e5a7d2-3e26-c0f5-1bc0-e481d73fd66c.36a8c922.the-best-airport.com
-  servername: update.microsoft.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8375f628-5d93-4ef1-bf52-3612e68abbcd
-  xhttp-opts:
-    host: us1.d6e5a7d2-3e26-c0f5-1bc0-e481d73fd66c.36a8c922.the-best-airport.com
-    mode: stream-up
-    path: /path
 - alterId: 0
   cipher: auto
   name: 574|HK
-  network: ws
-  port: 443
-  server: 47.83.207.148
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    path: /ws-vmess
-- alterId: 0
-  cipher: chacha20-poly1305
-  name: 574|HK2
-  network: tcp
-  port: 9527
-  server: 43.132.192.16
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-- alterId: 0
-  cipher: auto
-  name: 574|HK3 47.8KB/s
-  network: tcp
-  port: 55314
-  server: 103.240.197.112
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: bdb68629-1c6a-4eed-8083-7d4379a2dd52
-- alterId: 0
-  cipher: auto
-  name: 574|HK5
-  network: ws
-  port: 443
-  server: nycqg19zkwacpm1b.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      host: NYcQg19zkwaCPM1B.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 574|HK6 10.6KB/s
-  network: ws
-  port: 443
-  server: i2psm3knof5qjjix.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 574|HK7
-  network: tcp
-  port: 9039
-  server: select-sg.ddnskunlun.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4fa65799-694e-316b-b2d3-30c793777cbf
-- alterId: 0
-  cipher: auto
-  name: 574|HK8
-  network: ws
-  port: 26925
-  server: 38.207.164.31
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 574|HK9
-  network: ws
-  port: 443
-  server: 47.83.19.148
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 574|HK10
-  network: tcp
-  port: 20143
-  server: 91.149.236.46
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6785594d-31c8-48ff-c7ad-9f99c9483bf0
-- alterId: 0
-  cipher: auto
-  name: 574|HK11
-  network: ws
-  port: 13080
-  server: 182.160.14.145
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
-  ws-opts:
-    headers:
-      host: 01.appleid.bf
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 574|HK12
-  network: ws
-  port: 44867
-  server: 47.244.120.197
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  ws-opts:
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 574|HK13
-  network: ws
-  port: 54809
-  server: 8.210.140.23
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
-  ws-opts:
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 574|HK14
   network: ws
   port: 443
   server: n1761296892.4u9ma.icu
@@ -4673,7 +4590,67 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 574|HK15
+  name: 574|HK2 1.9KB/s
+  network: ws
+  port: 443
+  server: 8.218.184.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: NYcQg19zkwaCPM1B.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: 574|HK3
+  network: tcp
+  port: 9527
+  server: 43.132.192.16
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+- alterId: 0
+  cipher: auto
+  name: 574|HK4
+  network: ws
+  port: 54809
+  server: 8.210.140.23
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
+  ws-opts:
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 574|HK5
+  network: ws
+  port: 26925
+  server: 38.207.164.31
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 574|HK6
+  network: grpc
+  port: 443
+  server: hk01.653ebeeb-5f60-4be5-958d-7bf4839cdccd.ef6616fd-5b06-482f-9d64-183745659cbf.byteprivatelink.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f018361c-3d66-4635-80c9-22be36b70ac4
+- alterId: 0
+  cipher: auto
+  name: 574|HK7
   network: ws
   port: 8443
   server: 20.2.218.142
@@ -4687,14 +4664,100 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 574|HK16
-  network: grpc
-  port: 443
-  server: hk01.653ebeeb-5f60-4be5-958d-7bf4839cdccd.ef6616fd-5b06-482f-9d64-183745659cbf.byteprivatelink.com
+  name: 574|HK8
+  network: ws
+  port: 44867
+  server: 47.244.120.197
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: f018361c-3d66-4635-80c9-22be36b70ac4
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  ws-opts:
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 574|HK10
+  network: ws
+  port: 443
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: vah4urdzl3jdx5r2.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 574|HK11
+  network: tcp
+  port: 52080
+  server: 154.37.223.56
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f1ac5c82-00a4-400b-bb20-530c91b7c5bb
+- alterId: 0
+  cipher: auto
+  name: 574|HK12
+  network: ws
+  port: 23026
+  server: 47.244.120.197
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  ws-opts:
+    path: /arki
+- alterId: 0
+  cipher: auto
+  name: 574|HK13 18.5KB/s
+  network: ws
+  port: 443
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: qTKDR8jXE3wEFxJM.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 574|HK14 392.9KB/s
+  network: tcp
+  port: 9039
+  server: select-sg.ddnskunlun.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4fa65799-694e-316b-b2d3-30c793777cbf
+- alterId: 0
+  cipher: auto
+  name: 574|HK15
+  network: ws
+  port: 443
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      host: NYcQg19zkwaCPM1B.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 574|HK16
+  network: tcp
+  port: 16115
+  server: zfd-hkv2.kunlun01dns.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
 - alterId: 0
   cipher: auto
   name: 577|澳门NO.2
