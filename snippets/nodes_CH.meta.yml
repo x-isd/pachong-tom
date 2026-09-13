@@ -31,24 +31,6 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 340|🇨🇭CH_1|1.3MB/s
-  port: 46280
-  server: 132.243.162.30
-  servername: amp-api-edge.apps.apple.com
-  tls: true
-  type: vless
-  uuid: 12af43c3-84b4-4248-878b-b75f35835487
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 340|🇨🇭CH_3|2.7MB/s
-  port: 443
-  server: fi.srv.safes-infrastructure.com
-  servername: fi.srv.safes-infrastructure.com
-  tls: true
-  type: vless
-  uuid: 482aed33-c5ae-4e1d-bff4-8b0bdb72fb81
 - cipher: aes-128-gcm
   name: '356,357|4 #4'
   password: shadowsocks
@@ -142,8 +124,7 @@ proxies:
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 475,480,580|🇨🇭CH瑞士丨yoyapai.com
-  network: tcp
+  name: '475,480|CH丨yoyapai.com #1'
   port: 8443
   reality-opts:
     public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
@@ -151,14 +132,13 @@ proxies:
   server: 45.195.137.219
   servername: storage.yandex.net
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
   udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '475,480,580|🇨🇭CH瑞士丨yoyapai.com #1'
-  network: tcp
+  name: '475,480|🇨🇭CH瑞士丨yoyapai.com_1 #1'
   port: 8443
   reality-opts:
     public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
@@ -166,14 +146,13 @@ proxies:
   server: 45.195.137.119
   servername: storage.yandex.net
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
   udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '475,480,580|🇨🇭CH瑞士丨yoyapai.com #2'
-  network: tcp
+  name: '475,480|🇨🇭CH瑞士丨yoyapai.com_2 #1'
   port: 8443
   reality-opts:
     public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
@@ -181,7 +160,7 @@ proxies:
   server: 45.195.137.109
   servername: storage.yandex.net
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
   udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
@@ -227,57 +206,3 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: firefox
-  name: 580|🇨🇭CH_3|2.8MB/s|S001-260618 01
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-    short-id: f79448a30d
-  server: ch-xh01.tcp-reset-club.net
-  servername: s3.netavex.com
-  tls: false
-  type: vless
-  uuid: 8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3
-  ws-opts:
-    path: /assets/v2/pkg
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 580|🇨🇭CH_5|633KB/s|A004-260618 01
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  server: 45.90.59.15
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
-- name: 580|🇨🇭CH_6|909KB/s|V005-260618 01
-  network: tcp
-  port: 56539
-  server: 178.83.226.142
-  tls: false
-  type: vless
-  uuid: 0c063d7d-099d-4f52-810b-d08cf1751a0d
-  ws-opts:
-    headers:
-      Host: amp-api-edge.apps.apple.com
-    path: /
-- name: 728|🇨🇭 瑞士1🔒
-  password: ZIXQa-7pg0vPahuyi8bABhob
-  port: 443
-  server: starlink-ch.251313.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: hysteria2
-  udp: true
-- name: 728|🇨🇭 瑞士2🔒
-  password: 升级订阅解锁全部节点
-  port: 443
-  server: starlink-ch.251313.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
