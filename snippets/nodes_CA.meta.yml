@@ -97,8 +97,7 @@ proxies:
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - cipher: aes-128-gcm
-  country: 🇺US
-  name: 356,378,435,537,538|🇨🇦CA-149.22.95.183-0126 | 129....
+  name: 356,378,537,538|🇨🇦CA-149.22.95.183-0126 | 129....
   password: shadowsocks
   port: 443
   server: 149.22.95.183
@@ -207,8 +206,7 @@ proxies:
   server: 196.247.59.156
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇦CA
-  name: 378,435,537,538|🇨🇦CA-108.181.118.10-0125 | 124...
+  name: 378,537,538|🇨🇦CA-108.181.118.10-0125 | 124...
   password: G5p6ww4o67HB
   port: 8388
   server: 108.181.118.10
@@ -239,9 +237,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,537,538|🇨🇦CA-158.51.121.63-0180 | 0.0M...
+  name: 378,508,509,537,538,636|🇺🇸 美国 011
   network: ws
-  port: 443
+  port: '443'
   server: 158.51.121.63
   skip-cert-verify: false
   tls: true
@@ -299,7 +297,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇺🇸 美国 022
+  name: 378,508,509,536,537,636|🇺🇸 美国 027
   network: http
   port: '3389'
   server: 134.122.41.160
@@ -1198,7 +1196,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438|🇨🇦CA_3|2.2MB/s | 网盘搜宝: https:/...'
+  name: '438|🇨🇦CA_3|2.5MB/s | 更多节点: https:/...'
   network: tcp
   port: 443
   reality-opts:
@@ -1211,7 +1209,7 @@ proxies:
   uuid: 661f395d-b153-4199-a04b-693f5fe7f261
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438|🇨🇦CA_4|2.0MB/s | 福利姬: https://...'
+  name: '438|🇨🇦CA_4|2.8MB/s | 更多节点: https:/...'
   network: tcp
   port: 41373
   reality-opts:
@@ -5586,7 +5584,7 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- name: '475,476,480,481,523,524,568|🇫🇷 法国 | FRA #7'
+- name: '475,476,480,481,523,524|🏳️_未知_225 #1'
   password: humanity
   port: 443
   server: 104.18.152.219
@@ -5618,7 +5616,7 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: '475,476,480,481,523,524,568|🇺🇸 美国 | USA #6'
+- name: '475,476,480,481,523,524|🏳️_未知_351 #1'
   password: humanity
   port: 443
   server: 104.16.73.213
@@ -5813,7 +5811,7 @@ proxies:
     path: /assignment
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 476,481,522,581|🇹🇼_TW_中国台湾->🇫🇮_FI_芬兰
+  name: '476,481,522,548,581|🇹🇼_TW_中国台湾->🇫🇮_FI_芬兰 #2'
   port: 443
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
@@ -5989,6 +5987,24 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
+- name: '502,717|CA【机场推荐：https://a9a.xyz】32 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.21.46.3
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '502,717|CA【机场推荐：https://a9a.xyz】33 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 198.41.223.96
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - name: '502,717|CA【机场推荐：https://a9a.xyz】34 #1'
   network: ws
   password: humanity
@@ -6056,6 +6072,17 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
+- name: '502,717|CA【机场推荐：https://a9a.xyz】41 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.21.8.107
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
 - name: '502,717|CA【机场推荐：https://a9a.xyz】43 #1'
   network: ws
   password: humanity
@@ -6097,6 +6124,17 @@ proxies:
   port: 36441
   server: free.2weradf.xyz
   type: ss
+  udp: true
+- alpn:
+  - h2
+  - http/1.1
+  name: 566|🇨🇦 加拿大 | CAN
+  password: cf1f63ed-1e9a-42c7-9230-280c1bce392e
+  port: 5537
+  server: 111.2025windows.vip
+  skip-cert-verify: true
+  sni: admin.blob.core.windows.net
+  type: anytls
   udp: true
 - alterId: 0
   cipher: auto
