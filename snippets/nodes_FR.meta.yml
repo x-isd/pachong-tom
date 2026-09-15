@@ -46,7 +46,7 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 128|法国1
+  name: '128,430|法国1 #2'
   port: 45072
   server: hxa.dashuai.help
   skip-cert-verify: true
@@ -56,7 +56,7 @@ proxies:
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
 - alterId: 0
   cipher: auto
-  name: 128|法国2
+  name: '128,430|法国2 #2'
   port: 45071
   server: hxb.dashuai.help
   skip-cert-verify: true
@@ -64,7 +64,27 @@ proxies:
   type: vmess
   udp: true
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
-- name: '340,495,502,514,519|法国 #3'
+- alterId: 0
+  cipher: auto
+  name: '129,431|法国1 #3'
+  port: 45072
+  server: hxa.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: '129,431|法国2 #3'
+  port: 45071
+  server: hxb.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- name: '340,495,502,514,519,551|法国 #4'
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 35.181.169.140
@@ -76,7 +96,7 @@ proxies:
   - h3
   client-fingerprint: chrome
   fingerprint: chrome
-  name: '340,496,502,514,519|🇫🇷3@JKVPN #4'
+  name: '340,496,502,514,519,551|🇫🇷3@JKVPN #5'
   obfs: salamander
   obfs-password: fuw2k1ddrouwxr3u
   password: s6gt5e4mof43sfg8
@@ -85,7 +105,7 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: '340,496,502,514,519|🇫🇷@AZARBAYJAB1 #4'
+- name: '340,496,502,514,519,551|🇫🇷@AZARBAYJAB1 #5'
   obfs: salamander
   obfs-password: fuw2k1ddrouwxr3u
   password: vz86jgszv4zszchv
@@ -95,66 +115,6 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: '340,494,508,509|美国 458 #1'
-  network: tcp
-  port: 22222
-  server: 13.37.25.107
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 340|🇫🇷FR_2|1.3MB/s
-  network: ws
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: /assignment
-- name: 340|🇫🇷FR_3|2.8MB/s
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.71
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: /assignment
-- name: 340|🇫🇷FR_4|2.8MB/s
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.46
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: /assignment
-- name: 340|🇫🇷FR_5|2.6MB/s
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.149
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: /assignment
-- name: 340|🇫🇷FR_6|2.8MB/s
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.230
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: /assignment
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-7005 #1'
   password: f8f7aCzcPKbsF8p3
@@ -1046,26 +1006,37 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '431|法国1 #1'
-  port: 45072
-  server: hxa.dashuai.help
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,494|Join+Telegram:@Farah_VPN #3418'
+  network: tcp
+  port: 443
+  server: nasnet-162191099-direct.mbghalibaf.com
+  servername: nasnet-162191099-direct.mbghalibaf.com
   skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+- client-fingerprint: ''
+  flow: xtls-rprx-vision
+  name: '438,494|Join+Telegram:@Farah_VPN #5625'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: fuck.rkn
   tls: false
-  type: vmess
-  udp: true
-  uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- alterId: 0
-  cipher: auto
-  name: '431|法国2 #1'
-  port: 45071
-  server: hxb.dashuai.help
-  skip-cert-verify: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: '438,494|Join+Telegram:@Farah_VPN #5368'
+  network: tcp
+  port: 22222
+  server: 13.39.134.201
   tls: false
-  type: vmess
-  udp: true
-  uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1179,6 +1150,14 @@ proxies:
     headers:
       Host: irvideo.cfd
     path: /linkws
+- name: 463|法国_鲁贝
+  network: tcp
+  port: 57254
+  server: 137.74.66.90
+  servername: speedtest.net
+  tls: false
+  type: vless
+  uuid: 097ab42d-c4dd-4a69-9b4b-92f0da96299e
 - alterId: 0
   cipher: auto
   name: 468|法国_021805021 M64
@@ -1264,7 +1243,7 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: '475,476,480,481,523,524|🏳️_未知_335 #1'
+- name: '475,476,480,481,523,524,568|🇫🇷 法国 | FRA #4'
   password: humanity
   port: 443
   server: 104.18.152.207
@@ -1284,7 +1263,7 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
-- name: '475,476,480,481,523,524|🏳️_未知_282 #1'
+- name: '475,476,480,481,523,524,568|🇫🇷 法国 | FRA #13'
   password: humanity
   port: 443
   server: 104.18.152.152
@@ -1320,7 +1299,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
     path: /
 - client-fingerprint: chrome
-  name: '475,480,494|Join+Telegram:@Farah_VPN #1496'
+  name: '475,480,494|Join+Telegram:@Farah_VPN #1475'
   network: ws
   port: 443
   server: cloudflare-ip.mofashi.ltd
@@ -1335,7 +1314,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
     path: /
 - client-fingerprint: chrome
-  name: '475,480,494|Join+Telegram:@Farah_VPN #3329'
+  name: '475,480,494|Join+Telegram:@Farah_VPN #2092'
   network: ws
   port: 443
   server: yx.cloudflare.182682.xyz
@@ -1395,7 +1374,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
     path: /
 - client-fingerprint: chrome
-  name: '475,480,494|Join+Telegram:@Farah_VPN #3938'
+  name: '475,480,494|Join+Telegram:@Farah_VPN #3159'
   network: ws
   port: 443
   server: store.ubi.com
@@ -1498,7 +1477,7 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
-- name: '476,481,523,524|🏳️_未知_187 #1'
+- name: '476,481,523,524,568|🇫🇷 法国 | FRA #19'
   password: humanity
   port: 443
   server: 104.18.152.161
@@ -1966,9 +1945,16 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
+- name: '568|🇫🇷 法国 | FRA #9'
+  password: humanity
+  port: 443
+  server: 104.18.15.230
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '577|法国1 #2'
+  name: '577|法国1 #4'
   network: tcp
   port: '45072'
   server: haa.dashuai.cyou
@@ -1977,7 +1963,7 @@ proxies:
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
 - alterId: 0
   cipher: auto
-  name: '577|法国2 #2'
+  name: '577|法国2 #4'
   network: tcp
   port: '45071'
   server: xdd.dashuai.cyou
