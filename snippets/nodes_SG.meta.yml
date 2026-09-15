@@ -194,7 +194,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '128,430|新加坡NO.2 #2'
+  name: 128|新加坡NO.2
   port: 45055
   server: hxb.dashuai.help
   skip-cert-verify: true
@@ -204,7 +204,7 @@ proxies:
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
 - alterId: 0
   cipher: auto
-  name: '128,430|新加坡NO.1 #2'
+  name: 128|新加坡NO.1
   port: 45054
   server: hxa.dashuai.help
   skip-cert-verify: true
@@ -212,26 +212,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
-- alterId: 0
-  cipher: auto
-  name: '129,431|新加坡NO.1 #3'
-  port: 45054
-  server: hxa.dashuai.help
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- alterId: 0
-  cipher: auto
-  name: '129,431|新加坡NO.2 #3'
-  port: 45055
-  server: hxb.dashuai.help
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - alterId: 0
   cipher: auto
   name: '131,434|SG | 新加坡 LB-1A #1'
@@ -834,7 +814,7 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: '306,340,378,502,514,519,536,537,551,556,557,559|香港5|@ripaojiedian #7'
+- name: '306,340,378,502,514,519,536,537,556,557|香港5|@ripaojiedian #4'
   network: tcp
   password: BxceQaOe
   port: 51391
@@ -842,7 +822,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '306,340,378,502,514,519,536,537,551,556,557,559|新加坡3|@ripaojiedian #7'
+- name: '306,340,378,502,514,519,536,537,556,557|新加坡3|@ripaojiedian #4'
   network: tcp
   password: BxceQaOe
   port: 41142
@@ -934,7 +914,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,438,495,502,514,519,551,559|新加坡 #5'
+- name: '340,495,502,514,519|新加坡 #3'
   password: 19f72087-4591-4d72-930b-2697078ec2be
   port: 1933
   server: sg1.xiaoliyu.cyou
@@ -1775,9 +1755,15 @@ proxies:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: '378,537|🇬SG-217.197.161.138-0166 #1'
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 217.197.161.138
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-139.99.61.53-0316 #1'
+  name: '378,536,537|🇸🇬SG-139.99.61.53-0316 #2'
   network: ws
   port: 80
   server: 139.99.61.53
@@ -1790,7 +1776,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-15.235.147.186-0402 #1'
+  name: '378,536,537|🇸🇬SG-15.235.147.186-0402 #2'
   network: ws
   port: 80
   server: 15.235.147.186
@@ -1831,11 +1817,24 @@ proxies:
     headers:
       Host: m.zoom.us
     path: /Dialog Zoom
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|SG-174.138.25.187-1098 #1'
+  network: ws
+  port: 8880
+  server: 174.138.25.187
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a5c804aa-8a4d-4fd2-97a1-4f0cc1384953
+  ws-opts:
+    path: /hkaa0
 - alterId: 1
   cipher: auto
-  name: '378,536,537,559|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #30'
+  name: '378,536,537|🇬SG-104.248.148.147-1168 #1'
   network: ws
-  port: '21888'
+  port: 21888
   server: 104.248.148.147
   servername: ''
   skip-cert-verify: false
@@ -1848,9 +1847,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537,559|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #78'
+  name: '378,536,537|🇸🇬SG-139.99.61.53-1212 #1'
   network: ws
-  port: '80'
+  port: 80
+  server: 139.99.61.53
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ce3868a4-e2ca-4a6f-8731-e7e88d098886
+  ws-opts:
+    headers:
+      Host: 139.99.61.53
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇸🇬SG-139.99.61.154-1259 #1'
+  network: ws
+  port: 80
   server: 139.99.61.154
   servername: ''
   skip-cert-verify: false
@@ -1863,7 +1877,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇸🇬SG-15.235.202.196-1072 #2'
+  name: '378,536,537|🇸🇬SG-15.235.202.196-1287 #1'
   network: ws
   port: 80
   server: 15.235.202.196
@@ -1876,28 +1890,102 @@ proxies:
     headers:
       Host: 15.235.202.196
     path: /
+- alterId: 64
+  cipher: auto
+  name: '378,536,537|🇬SG-202.79.172.53-1355 #1'
+  network: ws
+  port: 443
+  server: 202.79.172.53
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 30216206-14b7-40e7-995d-61c1219ba584
+  ws-opts:
+    path: /path/220128071100
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇸🇬SG-13.212.126.213-1096 #2'
+  name: '378,536,537|🇸🇬SG-143.198.219.182-1371 #1'
   network: ws
-  port: 5100
-  server: st-2.dnspro.icu
+  port: 80
+  server: 143.198.219.182
   servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
+  uuid: e9c4ce52-9a78-4381-b6f8-23350bc4d606
   ws-opts:
-    headers:
-      Host: st-2.dnspro.icu
-    path: /iso
+    path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇸🇬SG-146.190.82.241-1408 #1'
+  network: ws
+  port: 80
+  server: 146.190.82.241
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-54.179.221.54-1433 #1'
+  password: amazonskr05
+  port: 443
+  server: 54.179.221.54
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇸🇬SG-18.143.123.35-1444 #1'
+  network: ws
+  port: 80
+  server: 18.143.123.35
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 68df4838-46d0-4b5b-c3f0-a40ec7063245
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-13.215.191.190-1471 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.215.191.190
+  type: ss
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-13.215.177.216-1621 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.215.177.216
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇸🇬SG-178.128.61.149-1638 #1'
+  network: ws
+  port: 50328
+  server: 178.128.61.149
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d1860587-aa33-4b76-85cd-c191edecb338
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-13.215.49.89-1766 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.215.49.89
+  type: ss
 - alterId: 0
   cipher: auto
   http-opts:
     method: GET
     path:
     - /
-  name: '378,536,537|🇬SG-138.2.83.217-1115 #1'
+  name: '378,536,537|🇬SG-138.2.83.217-1768 #1'
   network: http
   port: 43863
   server: 138.2.83.217
@@ -1908,11 +1996,43 @@ proxies:
   uuid: ca984457-b017-46e5-d973-42a3c3fdc292
 - alterId: 0
   cipher: auto
+  name: '378,536,537|🇸🇬SG-146.190.82.241-1821 #1'
+  network: ws
+  port: 443
+  server: 146.190.82.241
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-13.214.212.124-2058 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.214.212.124
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇬SG-129.150.44.64-2432 #1'
+  network: ws
+  port: 46075
+  server: 129.150.44.64
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: da257e73-f02b-45ab-9916-7baf154c47a3
+  ws-opts:
+    path: /jhndsmlanj11223
+- alterId: 0
+  cipher: auto
   http-opts:
     method: GET
     path:
     - /
-  name: '378,536,537|🇬SG-152.69.211.235-1153 #1'
+  name: '378,536,537|🇬SG-152.69.211.235-2087 #1'
   network: http
   port: 80
   server: 152.69.211.235
@@ -1921,13 +2041,207 @@ proxies:
   tls: false
   type: vmess
   uuid: d345916f-1673-4a98-f37d-49357c84ce03
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇬SG-15.235.184.36-2142 #1'
+  network: ws
+  port: 80
+  server: 15.235.184.36
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7ce525f5-3a9b-4627-ae0e-3ca0b57519e3
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇸🇬SG-139.99.61.154-2147 #1'
+  network: ws
+  port: 80
+  server: 139.99.61.154
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6a620223-84f8-40f4-b6ba-ed6abfe4e4f2
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇸🇬SG-109.123.237.41-2174 #1'
+  network: ws
+  port: 80
+  server: 109.123.237.41
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03a77360-808d-11ed-b736-205c6d5f5d78
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-13.215.173.2-2218 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.215.173.2
+  type: ss
+- name: '378,536,537|🇬SG-103.172.116.196-2246 #1'
+  password: 0c6a3341e8d5ab17
+  port: 3389
+  server: 103.172.116.196
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇬SG-109.123.237.41-2336 #1'
+  network: ws
+  port: 80
+  server: 109.123.237.41
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03a77360-808d-11ed-b736-205c6d5f5d78
+  ws-opts:
+    path: /fastssh
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-13.215.163.54-2349 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.215.163.54
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇬SG-15.235.192.196-2428 #1'
+  network: ws
+  port: 80
+  server: 15.235.192.196
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3701ded3-09ba-4154-970d-a9f4a090a382
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇬SG-157.230.36.235-2429 #1'
+  network: ws
+  port: 80
+  server: 157.230.36.235
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b484d576-b3e3-4ac5-b108-88a300dfe7e3
+  ws-opts:
+    path: /graphql
+- name: '378,536,537|🇸🇬SG-168.138.189.17-2450 #1'
+  password: 750a29bf-0a40-437f-b120-38de74ae7eaf
+  port: 28443
+  server: 168.138.189.17
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-13.229.105.31-2476 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.229.105.31
+  type: ss
+- cipher: aes-256-cfb
+  name: '378,537|🇸🇬SG-3.0.148.195-2523 #1'
+  password: amazonskr05
+  port: 443
+  server: 3.0.148.195
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: '378,536,537|🇬SG-202.79.171.157-2597 #1'
+  network: ws
+  port: 443
+  server: 202.79.171.157
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: fb3583a3-7717-4fe5-9146-3301861f9f41
+  ws-opts:
+    path: /path/243535322906
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-54.254.199.122-2667 #1'
+  password: amazonskr05
+  port: 443
+  server: 54.254.199.122
+  type: ss
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-13.215.174.243-2962 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.215.174.243
+  type: ss
+- name: '378,536,537|🇸🇬SG-139.162.45.139-3002 #1'
+  password: FLpONjB2Lb
+  port: 443
+  server: 139.162.45.139
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-13.250.46.178-3691 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.250.46.178
+  type: ss
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-13.213.2.160-3895 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.213.2.160
+  type: ss
+- cipher: aes-256-cfb
+  name: '378,537|🇸🇬SG-18.141.183.204-3755 #1'
+  password: amazonskr05
+  port: 443
+  server: 18.141.183.204
+  type: ss
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-13.250.54.18-3790 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.250.54.18
+  type: ss
+- cipher: aes-256-cfb
+  name: '378,537|🇸🇬SG-13.215.200.86-3814 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.215.200.86
+  type: ss
+- cipher: aes-256-cfb
+  name: '378,537|🇬SG-18.142.183.235-3834 #1'
+  password: amazonskr05
+  port: 443
+  server: 18.142.183.235
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇸🇬SG-8.219.58.58-4158 #1'
+  network: ws
+  port: 443
+  server: 8.219.58.58
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    path: /ray
 - alterId: 4
   cipher: auto
-  name: '378,536,537|🇬SG-103.253.26.134-1218 #1'
+  name: '378,536,537|🇬SG-103.253.26.134-4405 #1'
   network: ws
   port: 443
   server: 103.253.26.134
-  servername: ''
+  servername: eeh7iewe.com
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1938,11 +2252,11 @@ proxies:
     path: /ws
 - alterId: 4
   cipher: auto
-  name: '378,536,537|🇸🇬SG-103.253.26.20-1222 #2'
+  name: '378,536,537|🇬SG-103.253.26.20-4441 #1'
   network: ws
   port: 443
   server: 103.253.26.20
-  servername: ''
+  servername: zecjk.com
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -1951,9 +2265,22 @@ proxies:
     headers:
       Host: zecjk.com
     path: /ws
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇸🇬SG-8.214.33.158-4452 #1'
+  network: ws
+  port: 80
+  server: 8.214.33.158
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef
+  ws-opts:
+    path: /
 - alterId: 4
   cipher: auto
-  name: '378,536,537|🇸🇬SG-202.61.141.130-1230 #2'
+  name: '378,536,537|🇸🇬SG-202.61.141.130-4474 #1'
   network: ws
   port: 443
   server: 202.61.141.130
@@ -1968,7 +2295,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇸🇬SG-180.215.130.123-1231 #2'
+  name: '378,536,537|🇬SG-180.215.130.123-4482 #1'
+  network: ws
+  port: 46452
+  server: 180.215.130.123
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c5414fe0-018b-473a-aa3b-f210f2ba42f5
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇬SG-180.215.130.123-4486 #1'
   network: ws
   port: 11584
   server: 180.215.130.123
@@ -1983,376 +2323,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇸🇬SG-174.138.25.187-1491 #2'
-  network: ws
-  port: 8880
-  server: 174.138.25.187
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: a5c804aa-8a4d-4fd2-97a1-4f0cc1384953
-  ws-opts:
-    path: /hkaa0
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇸🇬SG-139.99.61.53-1605 #2'
-  network: ws
-  port: 80
-  server: 139.99.61.53
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ce3868a4-e2ca-4a6f-8731-e7e88d098886
-  ws-opts:
-    headers:
-      Host: 139.99.61.53
-    path: /
-- alterId: 64
-  cipher: auto
-  name: '378,536,537|🇬SG-202.79.172.53-1748 #1'
-  network: ws
-  port: 443
-  server: 202.79.172.53
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 30216206-14b7-40e7-995d-61c1219ba584
-  ws-opts:
-    path: /path/220128071100
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇬SG-143.198.219.182-1764 #1'
-  network: ws
-  port: 80
-  server: 143.198.219.182
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e9c4ce52-9a78-4381-b6f8-23350bc4d606
-  ws-opts:
-    path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇬SG-146.190.82.241-1801 #1'
-  network: ws
-  port: 80
-  server: 146.190.82.241
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: '378,537|🇬SG-54.179.221.54-1826 #1'
-  password: amazonskr05
-  port: 443
-  server: 54.179.221.54
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇸🇬SG-18.143.123.35-1837 #2'
-  network: ws
-  port: 80
-  server: 18.143.123.35
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 68df4838-46d0-4b5b-c3f0-a40ec7063245
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.215.191.190-1864 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.215.191.190
-  type: ss
-- cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.215.177.216-2014 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.215.177.216
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇬SG-178.128.61.149-2031 #1'
-  network: ws
-  port: 50328
-  server: 178.128.61.149
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d1860587-aa33-4b76-85cd-c191edecb338
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.215.49.89-2159 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.215.49.89
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇸🇬SG-146.190.82.241-2214 #2'
-  network: ws
-  port: 443
-  server: 146.190.82.241
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.214.212.124-2456 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.214.212.124
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇬SG-129.150.44.64-2830 #1'
-  network: ws
-  port: 46075
-  server: 129.150.44.64
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: da257e73-f02b-45ab-9916-7baf154c47a3
-  ws-opts:
-    path: /jhndsmlanj11223
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇬SG-15.235.184.36-2540 #1'
-  network: ws
-  port: 80
-  server: 15.235.184.36
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7ce525f5-3a9b-4627-ae0e-3ca0b57519e3
-  ws-opts:
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇬SG-139.99.61.154-2545 #1'
-  network: ws
-  port: 80
-  server: 139.99.61.154
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 6a620223-84f8-40f4-b6ba-ed6abfe4e4f2
-  ws-opts:
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇬SG-109.123.237.41-2572 #1'
-  network: ws
-  port: 80
-  server: 109.123.237.41
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 03a77360-808d-11ed-b736-205c6d5f5d78
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.215.173.2-2616 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.215.173.2
-  type: ss
-- name: '378,536,537|🇬SG-103.172.116.196-2644 #1'
-  password: 0c6a3341e8d5ab17
-  port: 3389
-  server: 103.172.116.196
-  skip-cert-verify: false
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇬SG-109.123.237.41-2734 #1'
-  network: ws
-  port: 80
-  server: 109.123.237.41
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 03a77360-808d-11ed-b736-205c6d5f5d78
-  ws-opts:
-    path: /fastssh
-- cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-13.215.163.54-2747 #2'
-  password: amazonskr05
-  port: 443
-  server: 13.215.163.54
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇬SG-15.235.192.196-2826 #1'
-  network: ws
-  port: 80
-  server: 15.235.192.196
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3701ded3-09ba-4154-970d-a9f4a090a382
-  ws-opts:
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇬SG-157.230.36.235-2827 #1'
-  network: ws
-  port: 80
-  server: 157.230.36.235
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b484d576-b3e3-4ac5-b108-88a300dfe7e3
-  ws-opts:
-    path: /graphql
-- name: '378,536,537|🇸🇬SG-168.138.189.17-2848 #2'
-  password: 750a29bf-0a40-437f-b120-38de74ae7eaf
-  port: 28443
-  server: 168.138.189.17
-  skip-cert-verify: false
-  type: trojan
-- cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.229.105.31-2874 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.229.105.31
-  type: ss
-- cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-3.0.148.195-2921 #2'
-  password: amazonskr05
-  port: 443
-  server: 3.0.148.195
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: '378,536,537|🇬SG-202.79.171.157-2995 #1'
-  network: ws
-  port: 443
-  server: 202.79.171.157
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: fb3583a3-7717-4fe5-9146-3301861f9f41
-  ws-opts:
-    path: /path/243535322906
-- cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-54.254.199.122-3065 #2'
-  password: amazonskr05
-  port: 443
-  server: 54.254.199.122
-  type: ss
-- cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.215.174.243-3360 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.215.174.243
-  type: ss
-- name: '378,536,537|🇸🇬SG-139.162.45.139-3400 #2'
-  password: FLpONjB2Lb
-  port: 443
-  server: 139.162.45.139
-  skip-cert-verify: false
-  type: trojan
-- cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.250.46.178-4089 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.250.46.178
-  type: ss
-- cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.213.2.160-4293 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.213.2.160
-  type: ss
-- cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-18.141.183.204-4153 #2'
-  password: amazonskr05
-  port: 443
-  server: 18.141.183.204
-  type: ss
-- cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.250.54.18-4188 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.250.54.18
-  type: ss
-- cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-13.215.200.86-4212 #2'
-  password: amazonskr05
-  port: 443
-  server: 13.215.200.86
-  type: ss
-- cipher: aes-256-cfb
-  name: '378,537|🇬SG-18.142.183.235-4232 #1'
-  password: amazonskr05
-  port: 443
-  server: 18.142.183.235
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇸🇬SG-8.219.58.58-4556 #2'
-  network: ws
-  port: 443
-  server: 8.219.58.58
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  ws-opts:
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇸🇬SG-8.214.33.158-4850 #2'
-  network: ws
-  port: 80
-  server: 8.214.33.158
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇬SG-180.215.130.123-4880 #1'
-  network: ws
-  port: 46452
-  server: 180.215.130.123
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c5414fe0-018b-473a-aa3b-f210f2ba42f5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇬SG-139.99.61.53-4892 #1'
+  name: '378,536,537|🇬SG-139.99.61.53-4494 #1'
   network: ws
   port: 80
   server: 139.99.61.53
@@ -2365,7 +2336,7 @@ proxies:
     path: /
 - alterId: 4
   cipher: auto
-  name: '378,536,537|🇬SG-159.223.32.230-5076 #1'
+  name: '378,536,537|🇸🇬SG-159.223.32.230-4678 #1'
   network: ws
   port: 8080
   server: 159.223.32.230
@@ -2377,20 +2348,20 @@ proxies:
   ws-opts:
     path: /cctv13/hd.m3u8
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-13.213.46.196-5103 #2'
+  name: '378,537|🇬SG-13.213.46.196-4705 #1'
   password: amazonskr05
   port: 443
   server: 13.213.46.196
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-54.251.168.143-5105 #1'
+  name: '378,537|🇬SG-54.251.168.143-4707 #1'
   password: amazonskr05
   port: 443
   server: 54.251.168.143
   type: ss
 - alterId: 64
   cipher: auto
-  name: '378,494,536,537|🇬SG-159.223.94.156-5109 #1'
+  name: '378,494,536,537|🇬SG-159.223.94.156-4711 #1'
   network: ws
   port: 80
   server: 159.223.94.156
@@ -2401,231 +2372,235 @@ proxies:
   uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
   ws-opts:
     path: /anti13.zingfast.vn
-- name: '378,436,536,537|🇬SG-54.169.137.148-5232 #1'
+- country: 🇦🇺AU
+  name: '378,435,436,536,537|🇸🇬SG-54.169.137.148-4834 #1'
   password: NQ26071394
   port: 443
   server: capable-jay.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇬SG-43.160.197.160-5235 #1'
+  udp: true
+- country: 🇦🇺AU
+  name: '378,435,436,536,537|🇬SG-43.160.197.160-4837 #1'
   password: 38f169d6-d202-4b1b-8db8-e6eb1648f5cf
   port: 443
   server: 43.160.197.160
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-47.130.132.222-5236 #2'
+  udp: true
+- name: '378,536,537|🇸🇬SG-47.130.132.222-4838 #1'
   password: NQ26071394
   port: 443
   server: calm-muskrat.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-54.254.196.251-5246 #1'
+- name: '378,536,537|🇬SG-54.254.196.251-4848 #1'
   password: NQ26071394
   port: 443
   server: thorough-foxhound.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-13.250.60.171-5250 #1'
+- name: '378,536,537|🇬SG-13.250.60.171-4852 #1'
   password: CF68213490
   port: 443
   server: united-molly.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-54.255.212.245-5259 #1'
+- name: '378,536,537|🇬SG-54.255.212.245-4861 #1'
   password: XG59623478
   port: 443
   server: new-antelope.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-13.212.187.247-5272 #1'
+- name: '378,536,537|🇬SG-13.212.187.247-4874 #1'
   password: XG59623478
   port: 443
   server: included-hedgehog.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇸🇬SG-54.169.248.16-5281 #2'
+- name: '378,536,537|🇸🇬SG-54.169.248.16-4883 #1'
   password: ND91608427
   port: 443
   server: nearby-egret.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇬SG-47.128.80.222-5282 #1'
+- name: '378,536,537|🇬SG-47.128.80.222-4884 #1'
   password: ND91608427
   port: 443
   server: better-molly.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇬SG-52.76.21.64-5284 #1'
+- name: '378,536,537|🇬SG-52.76.21.64-4886 #1'
   password: PD07395842
   port: 443
   server: pumped-sailfish.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇬SG-13.229.132.55-5286 #1'
+- name: '378,536,537|🇬SG-13.229.132.55-4888 #1'
   password: CF68213490
   port: 443
   server: wealthy-gobbler.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇸🇬SG-47.129.182.89-5287 #2'
+- name: '378,536,537|🇸🇬SG-47.129.182.89-4889 #1'
   password: CF68213490
   port: 443
   server: alert-redfish.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇬SG-54.254.126.11-5288 #1'
+- name: '378,536,537|🇬SG-54.254.126.11-4890 #1'
   password: CF68213490
   port: 443
   server: steady-prawn.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇸🇬SG-54.179.50.205-5290 #2'
+- name: '378,536,537|🇸🇬SG-54.179.50.205-4892 #1'
   password: HW85960347
   port: 443
   server: outgoing-eagle.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇬SG-54.255.136.178-5292 #1'
+- name: '378,536,537|🇬SG-54.255.136.178-4894 #1'
   password: CF68213490
   port: 443
   server: sacred-shepherd.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇸🇬SG-54.151.130.78-5302 #2'
+- name: '378,536,537|🇸🇬SG-54.151.130.78-4904 #1'
   password: NQ26071394
   port: 443
   server: flexible-gannet.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇸🇬SG-13.212.9.75-5305 #2'
+- name: '378,536,537|🇸🇬SG-13.212.9.75-4907 #1'
   password: NQ26071394
   port: 443
   server: grateful-crawdad.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇬SG-54.179.157.88-5306 #1'
+- name: '378,536,537|🇬SG-54.179.157.88-4908 #1'
   password: NQ26071394
   port: 443
   server: innocent-mullet.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-52.221.252.205-5327 #1'
+- name: '378,536,537|🇬SG-52.221.252.205-4929 #1'
   password: EQ30679154
   port: 443
   server: definite-gazelle.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇬SG-52.74.203.3-5328 #1'
+- name: '378,536,537|🇸🇬SG-52.74.203.3-4930 #1'
   password: NQ26071394
   port: 443
   server: sure-husky.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇸🇬SG-13.212.77.193-5330 #2'
+- name: '378,536,537|🇸🇬SG-13.212.77.193-4932 #1'
   password: CF68213490
   port: 443
   server: informed-stud.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-52.221.222.185-5333 #2'
+- name: '378,536,537|🇸🇬SG-52.221.222.185-4935 #1'
   password: NQ26071394
   port: 443
   server: joint-ewe.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-13.212.181.141-5334 #2'
+- name: '378,536,537|🇸🇬SG-13.212.181.141-4936 #1'
   password: NQ26071394
   port: 443
   server: stunning-mastodon.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇸🇬SG-47.128.146.47-5340 #2'
+- name: '378,536,537|🇸🇬SG-47.128.146.47-4942 #1'
   password: CF68213490
   port: 443
   server: pure-ram.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-52.220.181.28-5345 #2'
+- name: '378,536,537|🇸🇬SG-52.220.181.28-4947 #1'
   password: NQ26071394
   port: 443
   server: mighty-lemming.rooster465.autos
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-gcm
-  name: '378,537|🇬SG-139.99.68.21-5752 #1'
+  name: '378,537|🇬SG-139.99.68.21-5354 #1'
   password: zDNVedRFPQexG9v
   port: 6379
   server: 139.99.68.21
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇬SG-81.90.189.41-5753 #1'
+  name: '378,537|🇬SG-81.90.189.41-5355 #1'
   password: G!yBwPWH3Vao
   port: 801
   server: 81.90.189.41
   type: ss
-- name: '378,536,537|🇬SG-172.104.51.247-5756 #1'
+- name: '378,536,537|🇬SG-172.104.51.247-5358 #1'
   password: affae2e0-e84b-11ec-b09f-1239d0255272
   port: 443
   server: trojan1.udpgw.com
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-18.141.8.87-5757 #1'
+- name: '378,536,537|🇸🇬SG-18.141.8.87-5359 #1'
   password: iyinglong
   port: 443
   server: 18.141.8.87
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-128.199.185.211-5758 #2'
+- name: '378,536,537|🇸🇬SG-128.199.185.211-5360 #1'
   password: 973ef350-f6a5-11ec-9274-1239d0255272
   port: 443
   server: trojan2.udpgw.com
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-18.140.67.76-5759 #2'
+- name: '378,536,537|🇸🇬SG-18.140.67.76-5361 #1'
   password: iyinglong
   port: 443
   server: 18.140.67.76
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-103.253.24.212-5761 #2'
+- name: '378,536,537|🇸🇬SG-103.253.24.212-5363 #1'
   password: 71086710-33eb-11ed-adce-1239d0255272
   port: 443
   server: sg1-trojan.bonds.id
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-172.104.177.105-5763 #2'
+- name: '378,536,537|🇸🇬SG-172.104.177.105-5365 #1'
   password: 08964210-e7b8-11ec-95aa-1239d0255272
   port: 443
   server: w12.udpgw.com
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-13.213.69.245-5852 #2'
+- name: '378,536,537|🇸🇬SG-13.213.69.245-5454 #1'
   password: iyinglong
   port: 443
   server: 13.213.69.245
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-5.44.249.43-5880 #1'
+- name: '378,536,537|🇸🇬SG-5.44.249.43-5482 #1'
   password: cd39f62aed7b90f6
   port: 3389
   server: 5.44.249.43
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-5.44.249.43-5882 #1'
+- name: '378,536,537|🇬SG-5.44.249.43-5484 #1'
   password: 6f0a9d0fa39d65fa
   port: 3389
   server: 5.44.249.43
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-165.232.169.142-7004 #1'
+  name: '378,537|🇬SG-165.232.169.142-6606 #1'
   password: 1e5111699c45496da84112f35db665c4
   port: 29332
   server: 165.232.169.142
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-8.219.120.168-7081 #1'
+  name: '378,536,537|🇬SG-8.219.120.168-6683 #1'
   network: ws
   port: 443
   server: 8.219.120.168
@@ -2638,7 +2613,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-8.219.214.221-7082 #1'
+  name: '378,536,537|🇬SG-8.219.214.221-6684 #1'
   network: ws
   port: 443
   server: 8.219.214.221
@@ -2651,7 +2626,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇸🇬SG-8.219.211.222-7085 #2'
+  name: '378,536,537|🇸🇬SG-8.219.211.222-6687 #1'
   network: ws
   port: 443
   server: 8.219.211.222
@@ -2663,68 +2638,68 @@ proxies:
   ws-opts:
     path: /vmess
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-103.172.116.6-7108 #1'
+  name: '378,537|🇬SG-103.172.116.6-6710 #1'
   password: UWZQeLRWnkqgkseq
   port: 9032
   server: 103.172.116.6
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.5-7109 #2'
+  name: '378,537|🇸🇬SG-103.172.116.5-6711 #1'
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.5-7110 #2'
+  name: '378,537|🇸🇬SG-103.172.116.5-6712 #1'
   password: y9VURyNzJWNRYEGQ
   port: 9008
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.6-7111 #2'
+  name: '378,537|🇸🇬SG-103.172.116.6-6713 #1'
   password: HSZuyJQcWe8dxNdF
   port: 9043
   server: 103.172.116.6
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.6-7112 #2'
+  name: '378,537|🇸🇬SG-103.172.116.6-6714 #1'
   password: 9XwYyZsK8SNzQDtY
   port: 9059
   server: 103.172.116.6
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-103.172.116.6-7113 #1'
+  name: '378,537|🇬SG-103.172.116.6-6715 #1'
   password: KnJGad3FqTvjqbaX
   port: 9014
   server: 103.172.116.6
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.5-7114 #2'
+  name: '378,537|🇸🇬SG-103.172.116.5-6716 #1'
   password: c3NtHJ5ujV2tGDfj
   port: 9084
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.5-7115 #2'
+  name: '378,537|🇸🇬SG-103.172.116.5-6717 #1'
   password: UWZQeLRWnkqgkseq
   port: 9032
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.5-7116 #2'
+  name: '378,537|🇸🇬SG-103.172.116.5-6718 #1'
   password: QWDDvVE9npNurQfA
   port: 9026
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.6-7117 #2'
+  name: '378,537|🇸🇬SG-103.172.116.6-6719 #1'
   password: M3t2ZEQcMGRWBjRa
   port: 9011
   server: 103.172.116.6
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-8.222.222.64-7351 #1'
+  name: '378,536,537|🇬SG-8.222.222.64-6953 #1'
   network: ws
   port: 80
   server: 8.222.222.64
@@ -2737,7 +2712,7 @@ proxies:
     path: /2TokGE9A/
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-8.222.138.164-7352 #1'
+  name: '378,536,537|🇬SG-8.222.138.164-6954 #1'
   network: ws
   port: 80
   server: 8.222.138.164
@@ -2750,7 +2725,7 @@ proxies:
     path: /2TokGE9A/
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇸🇬SG-8.219.150.28-7353 #2'
+  name: '378,536,537|🇸🇬SG-8.219.150.28-6955 #1'
   network: ws
   port: 443
   server: 8.219.150.28
@@ -2763,7 +2738,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇸🇬SG-8.219.123.35-7354 #2'
+  name: '378,536,537|🇸🇬SG-8.219.123.35-6956 #1'
   network: ws
   port: 80
   server: 8.219.123.35
@@ -2775,109 +2750,103 @@ proxies:
   ws-opts:
     path: /2TokGE9A/
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-54.254.129.246-7377 #2'
+  name: '378,537|🇸🇬SG-54.254.129.246-6979 #1'
   password: amazonskr05
   port: 443
   server: 54.254.129.246
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇬SG-51.79.161.232-7393 #1'
+  name: '378,537|🇬SG-51.79.161.232-6995 #1'
   password: 4Hub2f9JyhECyAq2Opm0NS
   port: 443
   server: 51.79.161.232
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸SG-217.197.161.138-7602 #1'
+  name: '378,537|🇸SG-217.197.161.138-7204 #1'
   password: G!yBwPWH3Vao
   port: 805
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇬SG-217.197.161.138-7603 #1'
+  name: '378,537|🇬SG-217.197.161.138-7205 #1'
   password: G!yBwPWH3Vao
   port: 811
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.138-7604 #2'
+  name: '378,537|🇸🇬SG-217.197.161.138-7206 #1'
   password: G!yBwPWH3Vao
   port: 807
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.138-7605 #2'
+  name: '378,537|🇸🇬SG-217.197.161.138-7207 #1'
   password: G!yBwPWH3Vao
   port: 802
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.138-7606 #2'
+  name: '378,537|🇸🇬SG-217.197.161.138-7208 #1'
   password: G!yBwPWH3Vao
   port: 800
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇸🇬SG-217.197.161.138-7607 | 0....
-  password: G!yBwPWH3Vao
-  port: 804
-  server: 217.197.161.138
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '378,537|🇬SG-217.197.161.136-7608 #1'
+  name: '378,537|🇬SG-217.197.161.136-7210 #1'
   password: G!yBwPWH3Vao
   port: 810
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7609 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7211 #1'
   password: G!yBwPWH3Vao
   port: 803
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7610 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7212 #1'
   password: G!yBwPWH3Vao
   port: 806
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7611 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7213 #1'
   password: G!yBwPWH3Vao
   port: 808
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7612 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7214 #1'
   password: G!yBwPWH3Vao
   port: 805
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7613 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7215 #1'
   password: G!yBwPWH3Vao
   port: 809
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7614 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7216 #1'
   password: G!yBwPWH3Vao
   port: 801
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7615 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7217 #1'
   password: G!yBwPWH3Vao
   port: 807
   server: 217.197.161.136
   type: ss
-- name: '378,536,537|SG-15.235.197.4-7986 #1'
+- name: '378,536,537|SG-15.235.197.4-7588 #1'
   password: 16bcc187-a1a0-4b8a-8b69-627f38b7cc0d
   port: 80
   server: 15.235.197.4
   skip-cert-verify: false
   sni: 15.235.197.4
   type: trojan
-- name: '378,536,537|🇸🇬SG-15.235.197.4-7988 #2'
+- name: '378,536,537|🇸🇬SG-15.235.197.4-7590 #1'
   password: 16bcc187-a1a0-4b8a-8b69-627f38b7cc0d
   port: 80
   server: 15.235.197.4
@@ -2885,20 +2854,20 @@ proxies:
   sni: getandroid.com
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.213.44.183-8080 #1'
+  name: '378,537|🇬SG-13.213.44.183-7682 #1'
   password: amazonskr05
   port: 443
   server: 13.213.44.183
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-13.212.199.120-8081 #2'
+  name: '378,537|🇸🇬SG-13.212.199.120-7683 #1'
   password: amazonskr05
   port: 443
   server: 13.212.199.120
   type: ss
 - alterId: 64
   cipher: auto
-  name: '378,536,537|🇬SG-118.107.46.173-8086 #1'
+  name: '378,536,537|🇬SG-118.107.46.173-7688 #1'
   network: ws
   port: 443
   server: 118.107.46.173
@@ -2910,34 +2879,39 @@ proxies:
   ws-opts:
     path: /path/080712342310
 - cipher: aes-256-cfb
-  name: '378,537|SG-103.172.116.79-8295 #1'
+  name: '378,537|SG-103.172.116.79-7897 #1'
   password: KBGjZYcy4SyRShmA
   port: 9044
   server: 103.172.116.79
   type: ss
-- name: 436|🇸🇬SG_160
-  password: ND91608427
-  port: 443
-  server: tidy-gelding.rooster465.autos
-  type: trojan
-- name: 436|🇸🇬SG_161
+- alterId: 0
+  cipher: auto
+  name: '431|新加坡NO.1 #1'
+  port: 45054
+  server: hxa.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: '431|新加坡NO.2 #1'
+  port: 45055
+  server: hxb.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- country: 🇬SG
+  name: 435,436|🇸🇬SG_67
   password: FH72359861
   port: 443
   server: fond-chipmunk.rooster465.autos
+  skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,494,559|🇸🇬SG_41|536KB/s|B007-260618 01
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  server: 144.31.50.236
-  servername: yandex.ru
-  tls: false
-  type: vless
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  udp: true
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -4193,10 +4167,9 @@ proxies:
     headers:
       Host: vms.lifetime39.workers.dev
     path: /
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 475,480,559|🇸🇨SC_4|276KB/s|A004-260618 01
-  network: tcp
+  name: '475,480|🇸🇬SG新加坡丨yoyapai.com_2 #1'
   port: 443
   reality-opts:
     public-key: eaRNeC8fccrx0nBNvBpAXZgK4m4FxfnQ-t0W7NOM7mU
@@ -4204,7 +4177,7 @@ proxies:
   server: 154.196.139.50
   servername: asia.cendora.ru
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
   udp: true
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
@@ -4323,36 +4296,6 @@ proxies:
   tls: true
   type: http
   username: testuser1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '502,514,519,551,566|🇸🇬 新加坡 | SGP 3 #1'
-  network: tcp
-  port: 20270
-  reality-opts:
-    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
-    short-id: fc13d6208ebbae16
-  server: sg-1.gsafevpnapi.com
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '502,514,519,523,524,551|🇸🇬SG_2|4.5MB/s #3'
-  network: tcp
-  port: 20270
-  reality-opts:
-    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
-    short-id: fc13d6208ebbae16
-  server: sg-1.gsafevpnapi.com
-  servername: www.yahoo.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
-  xudp: true
 - cipher: aes-256-cfb
   name: '513,517|1|_SG_ #1'
   password: amazonskr05
@@ -4431,6 +4374,36 @@ proxies:
   server: 52.196.181.68
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '519,566|🇸🇬 新加坡 | SGP 3 #1'
+  network: tcp
+  port: 20270
+  reality-opts:
+    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
+    short-id: fc13d6208ebbae16
+  server: sg-1.gsafevpnapi.com
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '519,523,524|🇸🇬_新加坡_19 #1'
+  network: tcp
+  port: 20270
+  reality-opts:
+    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
+    short-id: fc13d6208ebbae16
+  server: sg-1.gsafevpnapi.com
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  xudp: true
 - client-fingerprint: chrome
   encryption: none
   name: 519|🇸🇬SG_3|5.1MB/s
@@ -4582,7 +4555,7 @@ proxies:
   type: vless
   udp: true
   uuid: c3b4f19d-0d47-42a7-8547-667f63671dc2
-- name: '523,524,566,568|🇸🇬 新加坡 | SGP #4'
+- name: 523,524,566|🇸🇬 新加坡 | SGP 8
   password: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
   port: 44370
   server: sg-3.gsafevpnapi.com
@@ -5356,2203 +5329,6 @@ proxies:
   server: gg21.hangfengjiasu.com
   tfo: false
   type: ss
-- name: 559|🇸🇬SG_43|298KB/s|A004-260618 01
-  password: 1427eb10-7529-4d38-a6a2-01b337868b37
-  port: 4466
-  server: 140.99.130.34
-  skip-cert-verify: true
-  sni: sg3.xiaoliyu.cyou
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_38|358KB/s|A004-260618 01
-  password: 1427eb10-7529-4d38-a6a2-01b337868b37
-  port: 1935
-  server: sg1.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: sg1.xiaoliyu.cyou
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_69|449KB/s|R002-260618 01
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  port: 20562
-  server: msjp1.mangshe.xyz
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_34|188KB/s|A004-260618 01
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  port: 4466
-  server: 140.99.130.34
-  skip-cert-verify: true
-  sni: sg3.xiaoliyu.cyou
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_318|286KB/s|A004-260618 0...
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  port: 4466
-  server: 194.87.10.191
-  skip-cert-verify: true
-  sni: sg3.xiaoliyu.cyou
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_114|290KB/s|M003-260806 0...
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  port: 4466
-  server: sg3.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: sg3.xiaoliyu.cyou
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_5|402KB/s|C002-260622 01
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 47.129.3.178
-  skip-cert-verify: true
-  sni: https://t.me/WangCai2🇨🇳
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_1|370KB/s 01
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 54.179.153.191
-  skip-cert-verify: true
-  sni: https://t.me/WangCai2🇨🇳
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_273|271KB/s|A004-260618 0...
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  port: 443
-  server: vpn-sg-002.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-sg-002.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_134|385KB/s|S001-260618 0...
-  password: b07baf8fca580933cc39e6e5a6671a5d
-  port: 50160
-  server: 138-2-67-146.liao.kdns.fr
-  skip-cert-verify: true
-  sni: 138-2-67-146.liao.kdns.fr
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_265|289KB/s|A004-260618 0...
-  password: ca0e6830aee0eb1c775734c4ab91b573
-  port: 50160
-  server: 213-35-102-40.liao.kdns.fr
-  sni: 213-35-102-40.liao.kdns.fr
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_121|299KB/s|A004-260618 0...
-  password: ce24c43947331f36746c1f692c3812e0
-  port: 50160
-  server: 129-150-54-169.liao.kdns.fr
-  sni: 129-150-54-169.liao.kdns.fr
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_60|1005KB/s|M003-260806 0...
-  obfs: salamander
-  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
-  password: d042d150716709bb778cc73889cddb02
-  port: 443
-  server: 138.2.89.249
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_320|183KB/s|A004-260618 0...
-  password: df1a0967-5b79-41ec-8d12-915e9056c6e2
-  port: 8443
-  server: sg01.459292.xyz
-  skip-cert-verify: true
-  sni: localhost
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_321|402KB/s|A004-260618 0...
-  password: df1a0967-5b79-41ec-8d12-915e9056c6e2
-  port: 8443
-  server: sg04.459292.xyz
-  skip-cert-verify: true
-  sni: localhost
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_315|301KB/s|A004-260618 0...
-  password: df1a0967-5b79-41ec-8d12-915e9056c6e2
-  port: 8443
-  server: sg05.459292.xyz
-  skip-cert-verify: true
-  sni: localhost
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_323|377KB/s|A004-260618 0...
-  password: df1a0967-5b79-41ec-8d12-915e9056c6e2
-  port: 8080
-  server: sg07.459292.xyz
-  skip-cert-verify: true
-  sni: localhost
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_314|437KB/s|A004-260618 0...
-  password: df1a0967-5b79-41ec-8d12-915e9056c6e2
-  port: 8443
-  server: sg08.459292.xyz
-  skip-cert-verify: true
-  sni: localhost
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_317|337KB/s|A004-260618 0...
-  password: df1a0967-5b79-41ec-8d12-915e9056c6e2
-  port: 8443
-  server: sg10.459292.xyz
-  skip-cert-verify: true
-  sni: localhost
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_319|276KB/s|A004-260618 0...
-  password: df1a0967-5b79-41ec-8d12-915e9056c6e2
-  port: 8080
-  server: sg21.459921.xyz
-  skip-cert-verify: true
-  sni: sg21.459921.xyz
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_81|237KB/s|A004-260618 01
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 13.212.193.153
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_287|328KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 13.212.32.171
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_284|243KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 13.212.52.5
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_239|357KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 13.212.75.123
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_282|339KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 13.212.83.43
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_289|259KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 13.228.168.117
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_288|228KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 13.229.54.166
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_246|230KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 13.229.82.184
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_291|280KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 13.250.120.9
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_249|257KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 18.141.233.65
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_82|282KB/s|A004-260618 01
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 18.143.149.2
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_290|301KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 18.143.170.35
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_85|303KB/s|A004-260618 01
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 47.129.155.42
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_14|540KB/s|A004-260618 01
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 47.129.189.148
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_286|411KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 47.129.98.169
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_86|294KB/s|A004-260618 01
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 52.221.225.195
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_242|234KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 52.221.227.91
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_241|294KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 54.254.190.23
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬SG_285|299KB/s|A004-260618 0...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 54.254.241.184
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|🇸🇬 新加坡-BB3336EA
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 188.253.12.15
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-143ED047
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45553
-  server: 188.253.12.15
-  sni: ch.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-9E37F03D
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 188.253.12.15
-  sni: fr.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-570C42CD
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 188.253.12.15
-  sni: gh.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-A415F95A
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 188.253.12.90
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-A02C232F
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 46424
-  server: 188.253.12.90
-  sni: de.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-26B0A930
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 47909
-  server: 188.253.12.90
-  sni: is.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-9113A2E8
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 188.253.12.90
-  sni: gh.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-2D784D20
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 188.253.12.91
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-8E18F404
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 188.253.12.91
-  sni: fr.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-C8BCC382
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 47909
-  server: 188.253.12.91
-  sni: is.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-B130084A
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 188.253.12.92
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-5AC17E8B
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 188.253.12.92
-  sni: fr.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-C8E5A8A6
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 188.253.12.93
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-1D13B0CF
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45553
-  server: 188.253.12.93
-  sni: ch.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-67F6A401
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 188.253.12.93
-  sni: fr.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-E7A37C0A
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 188.253.12.93
-  sni: gh.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-280C2006
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 188.253.12.94
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-2BB88D69
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45553
-  server: 188.253.12.94
-  sni: ch.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-4EA6B6C8
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 47909
-  server: 188.253.12.94
-  sni: is.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-C5EB5B87
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 188.253.12.94
-  sni: gh.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-48C48F6E
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 188.253.12.95
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-A1DC06AA
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 46424
-  server: 188.253.12.95
-  sni: de.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-B04C0879
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 188.253.12.95
-  sni: gh.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-E5887E55
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 188.253.12.96
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-A36641D9
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 46424
-  server: 188.253.12.96
-  sni: de.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-5CD92DA7
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 188.253.12.96
-  sni: gh.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-76A8268F
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 188.253.12.97
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-53964ADD
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45553
-  server: 188.253.12.97
-  sni: ch.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-6C6C3EC8
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 46424
-  server: 188.253.12.97
-  sni: de.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-B1239234
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 188.253.12.97
-  sni: gh.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-8988E411
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 188.253.12.98
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-C8DFD377
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 188.253.12.98
-  sni: fr.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-659992C3
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 47909
-  server: 188.253.12.98
-  sni: is.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-B3600669
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 188.253.12.99
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-783D74A8
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45553
-  server: 188.253.12.99
-  sni: ch.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-7F6C3137
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 188.253.12.99
-  sni: fr.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-77F882FD
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 46424
-  server: 188.253.12.99
-  sni: de.01.naiun.bilibili.com
-  type: trojan
-- name: 559|🇸🇬SG_93|183KB/s|M003-260806 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: 13.212.173.162
-  skip-cert-verify: true
-  sni: integral-quetzal.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_78|175KB/s|A004-260618 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: 13.212.35.252
-  sni: adapted-whippet.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_87|91KB/s|A004-260618 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: 13.212.44.180
-  skip-cert-verify: true
-  sni: smooth-hornet.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_80|315KB/s|A004-260618 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: 13.229.94.200
-  sni: massive-terrapin.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_88|432KB/s|A004-260618 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: 13.250.126.30
-  skip-cert-verify: true
-  sni: adapted-martin.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_89|73KB/s|A004-260618 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: 47.128.147.181
-  skip-cert-verify: true
-  sni: rich-mule.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_75|167KB/s|A004-260618 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: 47.128.150.245
-  sni: stirred-buck.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_92|171KB/s|A004-260618 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: 47.129.157.81
-  sni: noted-bass.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_90|291KB/s|A004-260618 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: 47.131.229.80
-  skip-cert-verify: true
-  sni: elegant-marten.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_91|161KB/s|A004-260618 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: 54.169.117.161
-  skip-cert-verify: true
-  sni: simple-rodent.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_79|233KB/s|A004-260618 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: 54.169.117.191
-  sni: excited-sole.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_62|229KB/s|C002-260622 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: absolute-hare.rooster465.autos
-  sni: absolute-hare.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_59|330KB/s|C002-260622 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: adapted-martin.rooster465.autos
-  sni: adapted-martin.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_60|121KB/s|C002-260622 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: adapted-whippet.rooster465.autos
-  sni: adapted-whippet.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_67|192KB/s|C002-260622 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: elegant-marten.rooster465.autos
-  sni: elegant-marten.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_68|123KB/s|A004-260618 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: excited-sole.rooster465.autos
-  sni: excited-sole.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_94|190KB/s|B007-260618 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: integral-quetzal.rooster465.autos
-  sni: integral-quetzal.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_66|411KB/s|C002-260622 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: massive-terrapin.rooster465.autos
-  sni: massive-terrapin.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_71|229KB/s|A004-260618 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: noted-bass.rooster465.autos
-  sni: noted-bass.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_63|250KB/s|C002-260622 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: rested-osprey.rooster465.autos
-  sni: rested-osprey.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_64|104KB/s|C002-260622 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: rich-mule.rooster465.autos
-  sni: rich-mule.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_72|98KB/s|C002-260622 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: sacred-anemone.rooster465.autos
-  sni: sacred-anemone.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_73|290KB/s|C002-260622 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: simple-rodent.rooster465.autos
-  sni: simple-rodent.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_65|186KB/s|C002-260622 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: smooth-hornet.rooster465.autos
-  sni: smooth-hornet.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_46|187KB/s 01
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: stirred-buck.rooster465.autos
-  sni: stirred-buck.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_123|302KB/s|A004-260618 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: 13.212.173.162
-  sni: integral-quetzal.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_129|221KB/s|A004-260618 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: 13.212.204.216
-  sni: funny-hawk.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_127|97KB/s|A004-260618 01
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: 13.212.59.213
-  sni: guided-ferret.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_122|221KB/s|A004-260618 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: 13.229.109.201
-  sni: relative-labrador.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_133|265KB/s|M003-260806 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: 13.229.56.205
-  sni: exciting-turtle.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_304|226KB/s|M003-260806 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: 18.143.132.167
-  sni: worthy-perch.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_124|170KB/s|A004-260618 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: 47.129.157.81
-  sni: noted-bass.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_128|176KB/s|A004-260618 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: 47.129.7.255
-  sni: stable-racer.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_137|211KB/s|A004-260618 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: 54.179.23.28
-  sni: boss-sailfish.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_126|142KB/s|A001-260618 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: 54.254.235.88
-  sni: charming-ox.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_109|181KB/s|C002-260622 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: boss-sailfish.rooster465.autos
-  sni: boss-sailfish.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_111|232KB/s|C002-260622 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: casual-basilisk.rooster465.autos
-  sni: casual-basilisk.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_106|209KB/s|C002-260622 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: charming-ox.rooster465.autos
-  sni: charming-ox.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_110|296KB/s|C002-260622 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: exciting-turtle.rooster465.autos
-  sni: exciting-turtle.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_107|299KB/s|C002-260622 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: funny-hawk.rooster465.autos
-  sni: funny-hawk.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_104|228KB/s 01
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: guided-ferret.rooster465.autos
-  sni: guided-ferret.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_119|220KB/s|C002-260622 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: integral-quetzal.rooster465.autos
-  sni: integral-quetzal.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_118|197KB/s|C002-260622 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: massive-terrapin.rooster465.autos
-  sni: massive-terrapin.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_112|180KB/s|C002-260622 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: noted-bass.rooster465.autos
-  sni: noted-bass.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_125|301KB/s|C002-260622 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: probable-weasel.rooster465.autos
-  sni: probable-weasel.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_117|197KB/s|C002-260622 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: relative-labrador.rooster465.autos
-  sni: relative-labrador.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_100|231KB/s 01
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: stable-racer.rooster465.autos
-  sni: stable-racer.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_132|238KB/s|F003-260618 0...
-  network: tcp
-  password: FH72359861
-  port: 443
-  server: worthy-perch.rooster465.autos
-  sni: worthy-perch.rooster465.autos
-  type: trojan
-- name: 559|新加坡  | 线路定制：@QS00008
-  network: tcp
-  password: IQ68037294
-  port: 443
-  server: apt-midge.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-- name: 559|🇸🇬SG_185
-  password: NQ26071394
-  port: 443
-  server: emerging-baboon.rooster465.autos
-  sni: emerging-baboon.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_187
-  password: NQ26071394
-  port: 443
-  server: promoted-rattler.rooster465.autos
-  sni: promoted-rattler.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_184
-  password: NQ26071394
-  port: 443
-  server: square-gnat.rooster465.autos
-  sni: square-gnat.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_186
-  password: PD07395842
-  port: 443
-  server: national-dingo.rooster465.autos
-  sni: national-dingo.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_268|190KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.212.116.190
-  sni: musical-terrier.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_229|135KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.212.117.165
-  sni: in-mongrel.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_260|95KB/s|P002-260618 01
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.212.174.21
-  sni: fleet-pony.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_255|207KB/s|M003-260806 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.212.186.116
-  sni: eminent-panther.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_228|216KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.212.196.153
-  sni: adapted-worm.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_248|159KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.212.200.61
-  sni: elegant-arachnid.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_300|219KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.212.33.67
-  sni: intense-monarch.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_276|127KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.212.44.180
-  sni: smooth-hornet.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_269|242KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.212.77.186
-  sni: promoted-rattler.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_256|127KB/s|M003-260806 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.212.87.164
-  sni: sharp-feline.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_293|134KB/s|M003-260806 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.212.91.165
-  sni: composed-sheep.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_240|75KB/s|A004-260618 01
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.214.213.158
-  sni: apparent-wasp.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_299|191KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.229.204.224
-  sni: intense-sole.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_227|67KB/s|A004-260618 01
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.229.47.93
-  sni: happy-gibbon.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_277|175KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.250.126.30
-  sni: adapted-martin.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_222|161KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.250.65.224
-  sni: cunning-midge.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_316|206KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 18.142.242.87
-  sni: stable-python.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_244|294KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 18.143.170.114
-  skip-cert-verify: true
-  sni: lenient-grubworm.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_225|287KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 3.1.61.129
-  sni: pro-mako.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_305|260KB/s|M003-260806 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 47.128.147.181
-  sni: rich-mule.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_224|95KB/s|A004-260618 01
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 47.128.15.18
-  sni: bold-eagle.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_250|240KB/s|B007-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 47.128.224.11
-  sni: vast-werewolf.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_226|151KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 47.129.0.251
-  sni: sharing-filly.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_280|254KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 47.129.119.44
-  sni: right-mastiff.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_264|159KB/s|A001-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 47.129.183.20
-  sni: welcome-monitor.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_306|118KB/s|M003-260806 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 47.131.225.150
-  sni: sacred-anemone.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_295|140KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 47.131.249.13
-  skip-cert-verify: true
-  sni: exotic-turtle.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_257|251KB/s|M003-260806 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 52.220.197.180
-  sni: immense-eagle.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_235|266KB/s|A001-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 52.220.98.46
-  sni: pleased-albacore.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_267|212KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 52.74.232.63
-  sni: casual-emu.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_258|191KB/s|M003-260806 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 52.77.218.157
-  sni: simple-sunbeam.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_279|379KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 54.151.247.141
-  sni: sweeping-dog.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_322|67KB/s|A004-260618 01
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 54.169.117.161
-  sni: simple-rodent.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_262|153KB/s|A001-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 54.169.228.116
-  sni: amusing-grub.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_298|207KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 54.169.254.65
-  skip-cert-verify: true
-  sni: next-jaybird.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_271|172KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 54.169.255.178
-  sni: tops-owl.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_270|341KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 54.254.197.1
-  sni: allowing-ram.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_266|278KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 54.254.213.145
-  sni: pleased-raptor.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_272|110KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 56.10.68.131
-  sni: excited-alien.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_185|193KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: adapted-martin.rooster465.autos
-  sni: adapted-martin.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_200|179KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: adapted-worm.rooster465.autos
-  sni: adapted-worm.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_212|117KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: allowing-ram.rooster465.autos
-  sni: allowing-ram.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_236|232KB/s|A001-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: amusing-grub.rooster465.autos
-  sni: amusing-grub.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_178|411KB/s 01
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: apparent-wasp.rooster465.autos
-  sni: apparent-wasp.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_181|236KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: bold-eagle.rooster465.autos
-  sni: bold-eagle.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_211|228KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: casual-emu.rooster465.autos
-  sni: casual-emu.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_206|130KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: closing-moose.rooster465.autos
-  sni: closing-moose.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_180|210KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: composed-sheep.rooster465.autos
-  sni: composed-sheep.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_160|179KB/s 01
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: cunning-midge.rooster465.autos
-  sni: cunning-midge.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_165|216KB/s 01
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: elegant-arachnid.rooster465.autos
-  sni: elegant-arachnid.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_193|187KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: eminent-panther.rooster465.autos
-  sni: eminent-panther.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_194|224KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: excited-alien.rooster465.autos
-  sni: excited-alien.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_188|117KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: exotic-turtle.rooster465.autos
-  sni: exotic-turtle.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_254|114KB/s|F003-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: fleet-pony.rooster465.autos
-  sni: fleet-pony.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_187|100KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: immense-eagle.rooster465.autos
-  sni: immense-eagle.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_186|255KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: in-mongrel.rooster465.autos
-  sni: in-mongrel.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_219|290KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: infinite-anteater.rooster465.autos
-  sni: infinite-anteater.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_247|267KB/s|A004-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: intense-monarch.rooster465.autos
-  sni: intense-monarch.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_302|125KB/s|F003-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: intense-sole.rooster465.autos
-  sni: intense-sole.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_210|193KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: lenient-grubworm.rooster465.autos
-  sni: lenient-grubworm.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_192|253KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: musical-terrier.rooster465.autos
-  sni: musical-terrier.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_197|146KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: next-jaybird.rooster465.autos
-  sni: next-jaybird.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_190|217KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: on-airedale.rooster465.autos
-  sni: on-airedale.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_238|146KB/s|A001-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: pleased-albacore.rooster465.autos
-  sni: pleased-albacore.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_253|106KB/s|F003-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: pleased-raptor.rooster465.autos
-  sni: pleased-raptor.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_179|178KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: pro-mako.rooster465.autos
-  sni: pro-mako.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_203|77KB/s|C002-260622 01
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: promoted-rattler.rooster465.autos
-  sni: promoted-rattler.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_204|469KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: rich-mule.rooster465.autos
-  sni: rich-mule.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_196|218KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: right-mastiff.rooster465.autos
-  sni: right-mastiff.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_184|245KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: sacred-anemone.rooster465.autos
-  sni: sacred-anemone.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_205|211KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: sharing-filly.rooster465.autos
-  sni: sharing-filly.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_170|80KB/s 01
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: sharp-feline.rooster465.autos
-  sni: sharp-feline.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_199|129KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: simple-rodent.rooster465.autos
-  sni: simple-rodent.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_189|212KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: simple-sunbeam.rooster465.autos
-  sni: simple-sunbeam.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_182|150KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: smooth-hornet.rooster465.autos
-  sni: smooth-hornet.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_252|225KB/s|F003-260618 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: stable-python.rooster465.autos
-  sni: stable-python.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_169|136KB/s 01
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: sweeping-dog.rooster465.autos
-  sni: sweeping-dog.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_191|156KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: tops-owl.rooster465.autos
-  sni: tops-owl.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬SG_202|140KB/s|C002-260622 0...
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: welcome-monitor.rooster465.autos
-  sni: welcome-monitor.rooster465.autos
-  type: trojan
-- name: 559|🇸🇬 新加坡-89311364
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 103.25.202.114
-  sni: tjsp.hhxaf.cc.cd
-  type: trojan
-- name: 559|🇸🇬 新加坡-68345543
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 45.127.35.143
-  sni: tjsp.hhxaf.cc.cd
-  type: trojan
-- name: 559|🇸🇬SG_329|184KB/s|S004-260618 0...
-  network: tcp
-  password: fVZMat1g9H
-  port: 52
-  server: 172.236.133.188
-  sni: 172.236.133.188
-  type: trojan
-- name: 559|🇸🇬SG_15|300KB/s|A004-260618 01
-  network: tcp
-  password: pvZE3UfT0ziK1omVLlsjINBqeqqwab1M
-  port: 50573
-  server: 139.59.238.97
-  skip-cert-verify: true
-  sni: 139.59.238.97
-  type: trojan
-- name: 559|🇸🇬SG_115|272KB/s|A004-260618 0...
-  network: tcp
-  password: sshs8_6481354771
-  port: 2087
-  server: 86.38.247.109
-  sni: ul-singapore1.09vpn.com
-  type: trojan
-- name: 559|🇸🇬 新加坡-13881621
-  network: ws
-  port: 39738
-  server: 101.33.75.233
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 03d73bc8-01a9-46a7-90b9-3d27065ed328
-  ws-opts:
-    headers:
-      Host: c.eoa.ccwu.cc
-    path: '%2F'
-- name: 559|🇸🇬 新加坡-522D86B8
-  network: ws
-  port: 7788
-  server: 43.153.208.246
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 03d73bc8-01a9-46a7-90b9-3d27065ed328
-  ws-opts:
-    headers:
-      Host: c.eoa.ccwu.cc
-    path: '%2F'
-- name: 559|🇸🇬 新加坡-AB8DDB20
-  network: ws
-  port: 443
-  server: 43.156.2.91
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 03d73bc8-01a9-46a7-90b9-3d27065ed328
-  ws-opts:
-    headers:
-      Host: c.eoa.ccwu.cc
-    path: '%2F'
-- name: 559|🇸🇬 新加坡-61D40A3C
-  network: ws
-  port: 9999
-  server: 43.160.247.113
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 03d73bc8-01a9-46a7-90b9-3d27065ed328
-  ws-opts:
-    headers:
-      Host: c.eoa.ccwu.cc
-    path: '%2F'
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_27|322KB/s|M002-260618 01
-  network: ws
-  port: 2000
-  server: 13.212.82.58
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  tls: true
-  type: vless
-  uuid: 0dd51e1e-aa95-493b-bb3a-c98cb3c7cb5e
-  ws-opts:
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_24|73KB/s|A003-260618 01
-  network: ws
-  port: 443
-  server: 16.176.42.97
-  servername: zero.csmaster.ggff.net
-  tls: true
-  type: vless
-  uuid: 1bc380b1-cff7-446f-b13f-5c0ad29fc75a
-  ws-opts:
-    headers:
-      Host: zero.csmaster.ggff.net
-    path: /
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_47|213KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 172.67.118.45
-  servername: zero.csmaster.ggff.net
-  tls: true
-  type: vless
-  uuid: 1bc380b1-cff7-446f-b13f-5c0ad29fc75a
-  ws-opts:
-    headers:
-      Host: zero.csmaster.ggff.net
-    path: /
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_33|287KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 172.67.69.106
-  servername: zero.csmaster.ggff.net
-  tls: true
-  type: vless
-  uuid: 1bc380b1-cff7-446f-b13f-5c0ad29fc75a
-  ws-opts:
-    headers:
-      Host: zero.csmaster.ggff.net
-    path: /
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_31|238KB/s|F003-260618 01
-  network: ws
-  port: 443
-  server: 64.176.36.17
-  servername: zero.csmaster.ggff.net
-  tls: true
-  type: vless
-  uuid: 1bc380b1-cff7-446f-b13f-5c0ad29fc75a
-  ws-opts:
-    headers:
-      Host: zero.csmaster.ggff.net
-    path: /
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_23|148KB/s|C002-260622 01
-  network: ws
-  port: 443
-  server: zero.csmaster.ggff.net
-  servername: zero.csmaster.ggff.net
-  tls: true
-  type: vless
-  uuid: 1bc380b1-cff7-446f-b13f-5c0ad29fc75a
-  ws-opts:
-    path: /
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_42|599KB/s|K001-260618 01
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  server: prep.wwwinternetvideo.click
-  servername: yandex.ru
-  tls: false
-  type: vless
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_30|165KB/s|M003-260806 01
-  network: ws
-  port: 443
-  server: 116.251.217.65
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  tls: true
-  type: vless
-  uuid: 2388e166-3890-33ae-f77e-efac00000002
-  ws-opts:
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-- name: 559|🇸🇬SG_64|206KB/s|T001-260618 01
-  network: ws
-  port: 8080
-  server: 188.114.97.6
-  tls: false
-  type: vless
-  uuid: 2388e166-3890-33ae-f77e-efac00000002
-  ws-opts:
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-- name: 559|🇸🇬SG_139|129KB/s|A004-260618 0...
-  network: ws
-  port: 80
-  server: support.zoom.us
-  tls: false
-  type: vless
-  uuid: 2475d0bd-bcb1-4121-9b1c-5e30841630b9
-  ws-opts:
-    headers:
-      Host: sahanwickramasinghevip.shop
-    path: /
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_77|714KB/s|A004-260618 01
-  network: ws
-  port: 8443
-  server: 141.193.213.20
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_67|236KB/s|M002-260618 01
-  network: ws
-  port: 8441
-  server: 45.77.241.190
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  tls: true
-  type: vless
-  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
-  ws-opts:
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_21|364KB/s|T001-260618 01
-  network: ws
-  port: 2096
-  server: 104.17.70.206
-  servername: shalana.xyz
-  tls: true
-  type: vless
-  uuid: 395d040e-a04a-43d7-a1e9-8635f545879a
-  ws-opts:
-    headers:
-      Host: shalana.xyz
-    path: /shalana
-- client-fingerprint: unsafe
-  name: 559|🇸🇬SG_49|471KB/s|T001-260618 01
-  network: ws
-  port: 2096
-  server: 188.114.97.6
-  servername: shalana.xyz
-  tls: true
-  type: vless
-  uuid: 395d040e-a04a-43d7-a1e9-8635f545879a
-  ws-opts:
-    headers:
-      Host: shalana.xyz
-    path: /shalana
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_75|760KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 43.160.203.174
-  servername: mia0.pages.dev
-  tls: true
-  type: vless
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  ws-opts:
-    headers:
-      Host: mia0.pages.dev
-    path: /TG:@MiaChatChannel
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_78|715KB/s|M003-260806 01
-  network: ws
-  port: 443
-  server: 43.160.241.174
-  servername: mia11.pages.dev
-  tls: true
-  type: vless
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  ws-opts:
-    headers:
-      Host: mia11.pages.dev
-    path: /TG:@MiaChatChannel
-- client-fingerprint: chrome
-  name: '559|新加坡  | 线路定制：@QS00008 #1'
-  network: tcp
-  port: 443
-  server: 120.55.183.176
-  tls: false
-  type: vless
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-- client-fingerprint: ios
-  name: 559|🇸🇬SG_57|275KB/s|B007-260618 01
-  network: ws
-  port: 443
-  server: 45.130.125.73
-  servername: web-app-aug8yr.app-f1qsy1.workers.dev
-  tls: true
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-cea58e4acf49
-  ws-opts:
-    headers:
-      Host: web-app-aug8yr.app-f1qsy1.workers.dev
-    path: /api/ws
-- client-fingerprint: randomized
-  name: 559|🇸🇬SG_62|590KB/s|X001-260618 01
-  network: ws
-  port: 443
-  server: novantunnel.tech
-  servername: novantunnel.tech
-  tls: true
-  type: vless
-  uuid: 519b24bd-1826-44f1-9515-6f785956c2cb
-  ws-opts:
-    headers:
-      Host: novantunnel.tech
-    path: /Novan-AE21
-- client-fingerprint: firefox
-  name: 559|🇸🇬SG_77|216KB/s|A004-260618 01
-  network: tcp
-  port: 443
-  server: 194.233.75.66
-  servername: sahanwickramasinghevip.shop
-  tls: true
-  type: vless
-  uuid: 55d61055-1a7f-4bc5-aca2-4ee78c738b60
-- name: 559|🇸🇬SG_74|102KB/s|M003-260806 01
-  network: ws
-  port: 443
-  server: 52.74.176.20
-  tls: false
-  type: vless
-  uuid: 5ad0bed3-68ac-495e-b778-8b2d0e1dc176
-  ws-opts:
-    path: //
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_176|284KB/s|B007-260618 0...
-  network: xhttp
-  port: 26312
-  reality-opts:
-    public-key: ffaEq5deljYd0HZbfiUUUqo93f4JgDoKytEd64LdCjU
-    short-id: '72266413'
-  server: hayabusa.proxy.rlwy.net
-  servername: Image.samsung.com
-  tls: false
-  type: vless
-  uuid: 633f5193-ef8b-4e1e-8f86-cb4c5d7bd548
-  ws-opts:
-    path: /
-- client-fingerprint: edge
-  name: 559|🇸🇬_新加坡_336
-  network: ws
-  port: 443
-  server: 168.138.165.174
-  servername: tl.520783.xyz
-  tls: true
-  type: vless
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  ws-opts:
-    headers:
-      Host: tl.520783.xyz
-    path: '%2Fassets%2Fdist%2Fapp-update-payload.dat'
-- client-fingerprint: edge
-  name: 559|🇸🇬_新加坡_333
-  network: ws
-  port: 443
-  server: 43.169.19.179
-  servername: tl.520783.xyz
-  tls: true
-  type: vless
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  ws-opts:
-    headers:
-      Host: tl.520783.xyz
-    path: '%2Fassets%2Fdist%2Fapp-update-payload.dat'
-- client-fingerprint: edge
-  name: 559|🇸🇬SG_76|446KB/s|A004-260618 01
-  network: ws
-  port: 2053
-  server: cf.kele.ge
-  servername: singapore.36109178.xyz
-  tls: true
-  type: vless
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  ws-opts:
-    headers:
-      Host: singapore.36109178.xyz
-    path: /static/media/video-chunk.f4v
-- name: 559|🇸🇬SG_41|239KB/s|A004-260618 01
-  network: ws
-  port: 80
-  server: 170.114.45.6
-  tls: false
-  type: vless
-  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
-  ws-opts:
-    headers:
-      Host: shalana.xyz
-    path: /shalana
-- name: 559|🇸🇬SG_51|504KB/s|M003-260806 01
-  network: ws
-  port: 80
-  server: 170.114.46.6
-  tls: false
-  type: vless
-  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
-  ws-opts:
-    headers:
-      Host: shalana.xyz
-    path: /shalana
-- name: 559|🇸🇬SG_42|369KB/s|C002-260622 01
-  network: ws
-  port: 80
-  server: support.zoom.us
-  tls: false
-  type: vless
-  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
-  ws-opts:
-    headers:
-      Host: shalana.xyz
-    path: /shalana
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_19|278KB/s|A004-260618 01
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: T4CMxxAJiCcrGk2r87kMkDcvmfNs3nL-gKleaE1wTHQ
-    short-id: fb7ebc9996caf9ac
-  server: 217.217.254.126
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 6b408e62-c5d5-45e1-ae3a-4c9833d46d82
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: update
-  name: 559|🇸🇬_SG_新加坡
-  network: grpc
-  port: 10036
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  server: sg1-r.link-t7.com
-  servername: s0.awsstatic.com
-  tls: true
-  type: vless
-  uuid: 7134DB35-F254-4468-BA00-D9C099CF5AF7
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_35|216KB/s|X001-260618 01
-  network: tcp
-  port: 19261
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 103.106.229.190
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_3|327KB/s 01
-  network: tcp
-  port: 10574
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_13|410KB/s|A004-260618 01
-  network: raw
-  port: 12972
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_4|235KB/s|C002-260622 01
-  network: tcp
-  port: 17623
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: update
-  name: 559|🇸🇬SG_261|349KB/s|S001-260618 0...
-  network: grpc
-  port: 10036
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  server: sg1-r.link-t7.com
-  servername: s0.awsstatic.com
-  tls: false
-  type: vless
-  uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: update
-  name: 559|🇸🇬SG_309|312KB/s|R002-260618 0...
-  network: grpc
-  port: 10039
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  server: sg4-r.link-t7.com
-  servername: d1.awsstatic.com
-  tls: false
-  type: vless
-  uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_53|348KB/s|M003-260806 01
-  network: ws
-  port: 51262
-  server: 175.41.179.37
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  tls: true
-  type: vless
-  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
-  ws-opts:
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_303|309KB/s|F003-260618 0...
-  network: tcp
-  port: 13779
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  server: 111.119.235.145
-  servername: tesla.com
-  tls: false
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_1|4.6MB/s
-  port: 8443
-  server: 1sg001.344211.cc
-  servername: www.python.org
-  tls: true
-  type: vless
-  uuid: 9b5ebb1c-5221-4381-850e-0b5eaac603e2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_6|257KB/s|C002-260622 01
-  network: tcp
-  port: 10000
-  reality-opts:
-    public-key: xELgry1aUBwZLDAAvyiBkLTXsIi1M-mKhuqvwiP6FxU
-    short-id: 3b0b73e5
-  server: 140.245.50.174
-  servername: gateway.icloud.com
-  tls: false
-  type: vless
-  uuid: af6904c1-4349-4448-8e99-0024824a0c33
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_9|229KB/s|C002-260622 01
-  network: tcp
-  port: 10000
-  reality-opts:
-    public-key: xELgry1aUBwZLDAAvyiBkLTXsIi1M-mKhuqvwiP6FxU
-    short-id: 3b0b73e5
-  server: sgxi.959555.xyz
-  servername: gateway.icloud.com
-  tls: false
-  type: vless
-  uuid: af6904c1-4349-4448-8e99-0024824a0c33
-- client-fingerprint: chrome
-  name: 559|🇸🇬SG_55|215KB/s|M003-260806 01
-  network: ws
-  port: 8441
-  server: 45.77.241.190
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  tls: true
-  type: vless
-  uuid: b3ddac6f-b2b7-43a6-bd69-413013f30040
-  ws-opts:
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_20|232KB/s|M002-260618 01
-  network: tcp
-  port: 4321
-  reality-opts:
-    public-key: iFKNWOLqlwrSmvR8wkxap1u85leVrr6YqEBy3Vn8WX0
-    short-id: 950e9d42106bedae
-  server: 152.42.217.27
-  servername: www.yahoo.com
-  tls: false
-  type: vless
-  uuid: b8f3a337-ad39-4064-95f1-33a725a65877
-- client-fingerprint: firefox
-  name: 559|🇸🇬SG_74|541KB/s|A004-260618 01
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  server: 217.217.254.126
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_27|69KB/s|A004-260618 01
-  network: raw
-  port: 26017
-  reality-opts:
-    public-key: cy4ePzAdSz4pqRmAXXchMIgSoSKo8qjq2qLk5805LRA
-    short-id: af1c2e33b0c7dad7
-  server: 54.251.224.5
-  servername: www.amd.com
-  tls: false
-  type: vless
-  uuid: d318cdac-0033-4b6e-98bf-35116e79c93f
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_138|350KB/s|A004-260618 0...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UOLfRKeEoVxkp-APTF2OlvFkKSoiR2mWzUuhSWxcVmQ
-    short-id: 133a3f10a1581047
-  server: 206.206.78.36
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: e3f0c894-0f76-4683-a751-6a93da8fd14d
-- client-fingerprint: firefox
-  name: 559|🇸🇬SG_29|71KB/s|B007-260618 01
-  network: ws
-  port: 6768
-  server: 54.254.145.25
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  tls: true
-  type: vless
-  uuid: edd5f4a0-19dd-4017-8d67-03482fd6472a
-  ws-opts:
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-    path: /@Marisa_kristi
-- name: 559|🇸🇬 新加坡-C317A8BD
-  network: ws
-  port: 8443
-  server: 207.148.119.176
-  servername: ''
-  tls: true
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-    path: '%2F'
-- name: 559|🇸🇬 新加坡-12A7C99B
-  network: ws
-  port: 8443
-  server: 207.148.125.245
-  servername: ''
-  tls: true
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-    path: '%2F'
-- flow: none
-  name: 559|🇸🇬SG_301|117KB/s|B007-260618 0...
-  network: ws
-  port: 48140
-  server: 188.166.244.136
-  tls: false
-  type: vless
-  uuid: efbaec86-ee09-4150-9024-fa5f5d0429e4
-  ws-opts:
-    headers:
-      Host: m.zoom.us
-    path: /Free By Tharuwa (0767597317)
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_105|122KB/s|A004-260618 0...
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
-    short-id: 5a42dbd7e26a0415
-  server: 178.128.52.52
-  servername: zoom.us
-  tls: false
-  type: vless
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|🇸🇬SG_278|239KB/s|A004-260618 0...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ZMYQqRPgpITMElFSEMesSocBj7jvhhw3JGGzWEfyrBk
-    short-id: 693f679d3294f967
-  server: 163.128.99.246
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: f3ed1945-dc1e-478a-b067-12b71badbea9
 - name: '566|🇸🇬 新加坡 | SGP #1'
   network: ws
   port: 8880
@@ -7579,7 +5355,7 @@ proxies:
   type: vless
   udp: true
   uuid: 5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55
-- name: '566,568|🇸🇬 新加坡 | SGP #2'
+- name: 566|🇸🇬 新加坡 | SGP 5
   password: e016d072-ed97-40d4-a83f-04c00f8df2a5
   port: 44370
   server: sg-3.gsafevpnapi.com
@@ -7600,7 +5376,7 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
     path: /?ed=2560security=tls
-- name: '566,568|🇸🇬 新加坡 | SGP #3'
+- name: 566|🇸🇬 新加坡 | SGP 7
   password: 5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55
   port: 44370
   server: sg-3.gsafevpnapi.com
@@ -7610,7 +5386,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '577|新加坡NO.1 #4'
+  name: '577|新加坡NO.1 #2'
   network: tcp
   port: '45054'
   server: haa.dashuai.cyou
@@ -7619,7 +5395,7 @@ proxies:
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
 - alterId: 0
   cipher: auto
-  name: '577|新加坡NO.2 #4'
+  name: '577|新加坡NO.2 #2'
   network: tcp
   port: '45055'
   server: xdd.dashuai.cyou
