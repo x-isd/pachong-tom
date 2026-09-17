@@ -118,7 +118,7 @@ proxies:
 - alpn:
   - h3
   auth: iy0lxplkci7qzk73
-  name: '340,502,514,551,566|🇫🇷 法国 | FRA 4 #1'
+  name: '340,502,566|🇫🇷 法国 | FRA 4 #1'
   obfs: salamander
   obfs-password: jogbnkm2l0c5v0cw
   password: iy0lxplkci7qzk73
@@ -504,7 +504,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇫🇷FR
   delay: 1159
-  name: 378,435,519,528,537,538|🇫🇷FR-15.237.137.134-0460 | 32....
+  name: 378,519,528,537,538|🇫🇷FR-15.237.137.134-0460 | 32....
   password: amazonskr05
   port: 443
   server: 15.237.137.134
@@ -1047,16 +1047,24 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '438|🇫🇷FR_2|1.5MB/s | 更多节点: https:/...'
-  obfs: salamander
-  obfs-password: jogbnkm2l0c5v0cw
-  password: iy0lxplkci7qzk73
-  port: 29300
-  server: 3x.lbruh.xyz
-  skip-cert-verify: true
-  sni: 3x.lbruh.xyz
+- name: '438|🇫🇷FR_4|1.6MB/s | 更多节点: https:/...'
+  network: ws
+  password: humanity
+  port: 443
+  server: 162.159.36.20
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: 438,717|UN【机场推荐：https://a9a.xyz】95
+  network: tcp
+  port: 22223
+  server: 13.37.81.71
   tls: false
-  type: hysteria2
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 438,580|❓Other_94|81KB/s|S004-260618 0...
@@ -1070,6 +1078,20 @@ proxies:
   tls: false
   type: vless
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: '438|🇫🇷FR_9|1.6MB/s | 网盘搜宝: https:/...'
+  network: tcp
+  port: 22224
+  server: 15.224.171.138
+  tls: false
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 438,717|FR【机场推荐：https://a9a.xyz】18
+  network: tcp
+  port: 22222
+  server: 13.37.81.71
+  tls: false
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 438,580|❓Other_7|353KB/s|T001-260618 0...
@@ -1083,18 +1105,6 @@ proxies:
   tls: false
   type: vless
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438|🇫🇷FR_8|2.8MB/s | 网盘搜宝: https:/...'
-  network: tcp
-  port: 443
-  server: nasnet-162191099-direct.mbghalibaf.com
-  servername: nasnet-162191099-direct.mbghalibaf.com
-  tls: true
-  type: vless
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1610,9 +1620,8 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   grpc-opts:
-    grpc-mode: gun
     grpc-service-name: vless-grpc-reality
-  name: 489,519|🇫🇷 法国 | FRA 2
+  name: '489,514,519,551|❓Other_1|2.0MB/s #1'
   network: grpc
   port: 443
   reality-opts:
@@ -2231,7 +2240,7 @@ proxies:
     headers:
       Host: silent-pine-a674.jfadwkglaugul.workers.dev
     path: '%2Fsync'
-- name: '580|CA加拿大(mibei77.com 米贝节点分享) #8'
+- name: '580,717|CA【机场推荐：https://a9a.xyz】41 #1'
   network: ws
   password: humanity
   port: 443
@@ -2241,7 +2250,7 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #196'
+- name: '580,717|UN【机场推荐：https://a9a.xyz】59 #1'
   network: ws
   password: humanity
   port: 443
@@ -4022,6 +4031,12 @@ proxies:
   network: tcp
   port: 22224
   server: 13.36.35.121
+  tls: false
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 717|FR【机场推荐：https://a9a.xyz】19
+  port: 22222
+  server: 15.224.171.138
   tls: false
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
