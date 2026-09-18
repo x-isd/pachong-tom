@@ -125,6 +125,35 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- cipher: chacha20-ietf-poly1305
+  name: 306|Taiwan_Taichung_ss_1026
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 817aa69.default.nintendo.com:112719
+    mode: tls
+  port: 2377
+  server: 60.249.39.170
+  type: ss
+  udp: true
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: 306,519,551,574|TW 304.2KB/s
+  network: ws
+  port: 443
+  server: 7dba81fc3a0b.oylfmxz.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  ws-opts:
+    headers:
+      host: 7dba81fc3a0b.oylfmxz.cn
+    path: /
+  xudp: true
 - cipher: aes-256-cfb
   name: 356|🇹🇼1 |  2.1MB/s
   password: qwerREWQ@@
@@ -374,9 +403,9 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,538,636|🇨🇳 中国 004
+  name: 378,508,509,536,537,538|🇨🇳TW-152.32.229.149-0087 | 0.0...
   network: ws
-  port: '443'
+  port: 443
   server: 152.32.229.149
   servername: ''
   skip-cert-verify: false
@@ -395,9 +424,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,538,636|🇨🇳 中国 003
+  name: 378,508,509,536,537,538|🇨🇳TW-60.249.92.67-0216 | 0.0MB
   network: ws
-  port: '443'
+  port: 443
   server: 60.249.92.67
   servername: ''
   skip-cert-verify: false
@@ -416,9 +445,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 183
+  name: '378,508,509,536,537|TW-104.29.64.2-0948 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 104.29.64.2
   servername: ''
   skip-cert-verify: false
@@ -435,9 +464,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 010
+  name: '378,508,509,536,537|🇹🇼TW-45.121.51.103-1013 #1'
   network: http
-  port: '20715'
+  port: 20715
   server: 45.121.51.103
   servername: ''
   skip-cert-verify: false
@@ -446,9 +475,9 @@ proxies:
   uuid: f6406b6d-5487-46da-f793-46611269a306
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇦 加拿大 013
+  name: '378,508,509,536,537|🇹🇼TW-165.154.246.71-1092 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 165.154.246.71
   servername: ''
   skip-cert-verify: false
@@ -461,9 +490,9 @@ proxies:
     path: ?ed=2048
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 036
+  name: '378,508,509,536,537|TW-211.72.35.110-1209 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 211.72.35.110
   servername: ''
   skip-cert-verify: false
@@ -476,9 +505,9 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 037
+  name: '378,508,509,536,537|🇹🇼TW-220.130.80.179-1215 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 220.130.80.179
   servername: ''
   skip-cert-verify: false
@@ -491,9 +520,9 @@ proxies:
     path: /howdy
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇦 加拿大 014
+  name: '378,508,509,536,537|🇼TW-165.154.253.35-1218 #1'
   network: ws
-  port: '443'
+  port: 443
   server: tw-1.qwqjsq.top
   servername: ''
   skip-cert-verify: false
@@ -506,9 +535,9 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 038
+  name: '378,508,509,536,537|🇹🇼TW-61.216.85.68-1219 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 61.216.85.68
   servername: ''
   skip-cert-verify: false
@@ -521,9 +550,9 @@ proxies:
     path: /path/243535322906
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇦 加拿大 015
+  name: '378,508,509,536,537|🇹🇼TW-165.154.246.107-1222 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 165.154.246.107
   servername: ''
   skip-cert-verify: false
@@ -536,9 +565,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 349
+  name: '378,508,509,536,537|🇹🇼TW-104.29.64.30-1223 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 104.29.64.30
   servername: ''
   skip-cert-verify: false
@@ -551,9 +580,9 @@ proxies:
     path: /kuainiao/de1
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 350
+  name: '378,508,509,536,537|🇹🇼TW-104.29.64.36-1224 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 104.29.64.36
   servername: ''
   skip-cert-verify: false
@@ -566,9 +595,9 @@ proxies:
     path: /kuainiao/de1
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 039
+  name: '378,508,509,536,537|🇹🇼TW-61.231.17.150-1227 #1'
   network: ws
-  port: '11463'
+  port: 11463
   server: tw4.594888.xyz
   servername: ''
   skip-cert-verify: false
@@ -581,9 +610,9 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 040
+  name: '378,508,509,536,537|🇹🇼TW-114.42.210.25-1228 #1'
   network: ws
-  port: '25551'
+  port: 25551
   server: tw3.594888.xyz
   servername: ''
   skip-cert-verify: false
@@ -596,9 +625,9 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 353
+  name: '378,508,509,536,537|🇹🇼TW-104.29.64.25-1229 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 104.29.64.25
   servername: ''
   skip-cert-verify: false
@@ -611,9 +640,9 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 354
+  name: '378,508,509,536,537|🇼TW-104.29.64.5-1230 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 104.29.64.5
   servername: ''
   skip-cert-verify: false
@@ -919,7 +948,7 @@ proxies:
     headers:
       Host: ru.tzccifq.ga
     path: /
-- name: '378,436,536,537|TW-220.128.128.151-5184 #1'
+- name: '378,536,537|TW-220.128.128.151-5184 #1'
   password: 736cd94d-7b94-3e44-8106-3419f64eaf09
   port: 3462
   server: a12.taipeicitygovernment.org.ua
@@ -931,7 +960,7 @@ proxies:
   port: 50099
   server: r3mrcg00129437x.cybervena.com
   type: ss
-- name: '378,436,536,537|🇼TW-125.228.236.138-5295 #1'
+- name: '378,536,537|🇼TW-125.228.236.138-5295 #1'
   password: 5a2c16f9
   port: 443
   server: 125.228.236.138
@@ -968,28 +997,20 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- cipher: chacha20-ietf-poly1305
-  name: 489|A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_ecde7e...
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-  port: 2377
-  server: 60.249.39.170
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 489|A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_b343cb...
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-  port: 2377
-  server: 60.249.39.204
-  type: ss
-  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 489|A🟢🇹🇼res[🤖📺🎭🎪]_dokng.com_c9b850...
+  network: ws
+  port: 443
+  server: 7dba81fc3a0b.oylfmxz.cn
+  servername: 7dba81fc3a0b.oylfmxz.cn
+  tls: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  ws-opts:
+    headers:
+      Host: 7dba81fc3a0b.oylfmxz.cn
+    path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: '513,517|15|🇹🇼 台湾|@ripaojiedian #1'
@@ -1117,20 +1138,6 @@ proxies:
     headers:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: 574|TW 304.2KB/s
-  network: ws
-  port: 443
-  server: 7dba81fc3a0b.oylfmxz.cn
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  ws-opts:
-    headers:
-      host: 7dba81fc3a0b.oylfmxz.cn
-    path: /
 - alterId: 0
   cipher: auto
   name: 577|台湾1(GPT等流媒体1.5倍）
