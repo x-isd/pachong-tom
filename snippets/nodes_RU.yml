@@ -410,6 +410,14 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- country: 🇺RU
+  name: 435,436|🇷🇺RU_157
+  password: AE62539071
+  port: 443
+  server: magical-kodiak.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: '461|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -801,37 +809,20 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '475,480,523,524|🇷🇺_俄罗斯_523 #1'
+  name: 475,480,494,523,524,580|未知 VMESS-1453 | free-nodes
   network: ws
-  port: 443
+  port: '443'
   server: renderer-stream-2-62.mirra.now
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
   uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   ws-opts:
+    headers:
+      Host: ''
     path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 508,509,636|🇷🇺 俄罗斯 001
-  network: tcp
-  port: '22324'
-  server: 5.188.190.252
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 508,509,636|🇷🇺 俄罗斯 002
-  network: tcp
-  port: '23957'
-  server: 91.228.227.211
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
 - alterId: 0
   cipher: auto
   name: '513,517|2|🇷🇺_RU_俄罗斯联邦 #2'
@@ -860,66 +851,6 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '523,524|🇷🇺_俄罗斯_520 #1'
-  network: ws
-  port: 443
-  server: 5.188.26.85
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: '523,524|🇷🇺_俄罗斯_524 #1'
-  network: ws
-  port: 443
-  server: 195.19.20.80
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: '523,524|🇷🇺_俄罗斯_529 #1'
-  network: ws
-  port: 443
-  server: 194.226.142.120
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: '523,524|🇷🇺_俄罗斯_561 #1'
-  network: ws
-  port: 443
-  server: 2.27.54.132
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
