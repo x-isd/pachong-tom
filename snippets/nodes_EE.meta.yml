@@ -1,17 +1,19 @@
 proxies:
 - client-fingerprint: chrome
-  name: '340,438,502,514,551|🇪🇪EE_1|2.6MB/s #3'
+  name: '340,502,508,509,514,519,551|🇪🇪EE_1|1.3MB/s #3'
   network: xhttp
   port: 9443
   server: 31.76.226.100
   servername: hub-ee-01.hanvpn.cc
   tls: true
   type: vless
+  udp: true
   uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  ws-opts:
-    headers:
-      Host: hub-ee-01.hanvpn.cc
-    path: '%2Fee01-xhttp-8e47a%2F'
+  xhttp-opts:
+    host: hub-ee-01.hanvpn.cc
+    mode: auto
+    path: /ee01-xhttp-8e47a/
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 372|🇪🇪 Estonia 1 TG:@nodpai
@@ -338,76 +340,7 @@ proxies:
   udp: true
   uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
 - client-fingerprint: chrome
-  ech-opts:
-    enable: true
-    query-server-name: cloudflare-ech.com
-  name: 489,519|🇪🇪 爱沙尼亚 | EST 2
-  network: ws
-  port: 2053
-  server: 5.101.114.44
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /collection/directory?ed=2560
-- client-fingerprint: chrome
-  ech-opts:
-    enable: true
-    query-server-name: cloudflare-ech.com
-  name: 489,519|🇪🇪EE_1|2.7MB/s
-  network: ws
-  port: 8443
-  server: 5.101.115.117
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /magnet/thread?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: grpc
-  name: '489,494|Join+Telegram:@Farah_VPN #2804'
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
-    short-id: 5c766813929a1fdd
-  server: 91.215.40.6
-  servername: id.dframe.app
-  tls: false
-  type: vless
-  udp: true
-  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  xudp: true
-- alpn:
-  - h3
-  name: 519|🇪🇪_EE_爱沙尼亚
-  password: 319ed24b1c7203aa
-  port: 8443
-  server: tishina-axe.dedyn.io
-  skip-cert-verify: true
-  sni: tishina-axe.dedyn.io
-  type: hysteria2
-  udp: true
-- auth: 319ed24b1c7203aa
-  name: 519|🇪🇪 爱沙尼亚 | EST
-  password: 319ed24b1c7203aa
-  port: 8443
-  server: tishina-axe.dedyn.io
-  skip-cert-verify: true
-  sni: tishina-axe.dedyn.io
-  type: hysteria2
-- client-fingerprint: chrome
-  name: '523,524|🇪🇪_爱沙尼亚_220 #1'
+  name: '489,523,524|🇪🇪_爱沙尼亚_220 #1'
   network: ws
   port: 443
   server: 109.206.241.16
@@ -421,6 +354,21 @@ proxies:
     headers:
       Host: shuma.ccwu.cc
     path: /
+  xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 566|🇪🇪 爱沙尼亚 | EST 2
+  network: tcp
+  port: 20443
+  reality-opts:
+    public-key: -AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4
+    short-id: 08
+  server: 89.106.88.6
+  servername: dest1.cdn-update.rutube.info
+  tls: true
+  type: vless
+  udp: true
+  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
 - name: 728|🇪🇪 爱沙尼亚1🔒
   password: 升级订阅解锁全部节点
   port: 10035
