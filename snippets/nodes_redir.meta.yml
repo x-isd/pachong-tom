@@ -4390,7 +4390,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: '478,483|🇭🇰_HK_中国香港->_FR_国 #1'
+  name: 478,483,489,519|🇭🇰_HK_中国香港->🇫🇷_FR_法国
   port: 30835
   server: v35.hdacd.com
   skip-cert-verify: true
@@ -4398,6 +4398,7 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
 - cipher: aes-256-cfb
   name: '478,483|🇨🇳_CN_中国->🇸_US_美国 #1'
   password: 7eadc6dbe2ae
@@ -4407,7 +4408,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 478,483,502|北京市+百度电信节点
+  name: '478,483|🇳_CN_中国->🇺🇸_US_美国_1 #1'
   port: 52683
   server: jp.sofast.live
   skip-cert-verify: true
@@ -4416,8 +4417,8 @@ proxies:
   udp: true
   uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
 - alterId: 2
-  cipher: auto
-  name: '478,483|🇭🇰_HK_中国香港->🇸_US_美国 #1'
+  cipher: none
+  name: 478,483,489,519|🇭🇰_HK_中国香港->🇺🇸_US_美国
   port: 30804
   server: v4.hdacd.com
   skip-cert-verify: true
@@ -4425,6 +4426,7 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
 - cipher: aes-256-cfb
   name: '478,483|🇨🇳_CN_中国->🇺🇸_US_美国_2 #1'
   password: 7eadc6dbe2ae
@@ -4456,7 +4458,7 @@ proxies:
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
 - alterId: 2
   cipher: auto
-  name: 478,483,519|🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  name: 478,483,519,566|🇩🇪 德国 | DEU 2
   port: 30833
   server: v33.hdacd.com
   skip-cert-verify: true
@@ -4466,7 +4468,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 478,483,519|🇭🇰_HK_中国香港->🇬🇧_GB_英国
+  name: 478,483,489,519|🇭🇰_HK_中国香港->🇬🇧_GB_英国
   port: 30836
   server: v36.hdacd.com
   skip-cert-verify: true
@@ -4474,6 +4476,7 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
 - client-fingerprint: chrome
   name: '478,483|🇺🇸_US_美国->🇯🇵_JP_日本 #1'
   port: 443
@@ -4488,7 +4491,7 @@ proxies:
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
 - alterId: 2
   cipher: auto
-  name: '478,483|🇭🇰_HK_中国香港->🇵_JP_日本 #1'
+  name: 478,483,519|🇭🇰_HK_中国香港->🇯🇵_JP_日本
   port: 30806
   server: v6.hdacd.com
   skip-cert-verify: true
@@ -4751,23 +4754,22 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-  name: 519|🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-  network: grpc
-  port: 9873
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
-  server: 176.109.104.195
-  servername: dl.google.com
+- client-fingerprint: chrome
+  name: '519,523,524|🇭🇰_香港_156 #1'
+  network: ws
+  port: 443
+  server: 103.143.81.178
+  servername: shuma.ccwu.cc
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- name: '522|🇭🇰_HK_中国香港->🇩🇪_DE_德国 #1'
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
+- name: '522,548|🇭🇰_HK_中国香港->🇩🇪_DE_德国 #3'
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20041
   server: hkdcrtc-e.catcat321.com
@@ -4776,7 +4778,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 522|🇪_AE_阿拉伯联合酋长国->🇩🇪_DE_德国_1
+- name: '522,548|🇦🇪_AE_阿拉伯联合酋长国->🇩🇪_DE_德国_1 #1'
   port: 443
   server: ddc-akn.astralweb.tech
   skip-cert-verify: true
@@ -4786,7 +4788,7 @@ proxies:
   uuid: 04b9e828-43ed-4faf-8952-41069ec08355
 - alterId: 2
   cipher: auto
-  name: 522|_CN_中国->🇰_HK_中国香港
+  name: '522,548|🇨🇳_CN_中国->🇭🇰_HK_中国香港 #1'
   port: 30809
   server: v9.hdacd.com
   skip-cert-verify: true
@@ -5078,7 +5080,7 @@ proxies:
     path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '581|🇭🇰_HK_中国香港->🇸🇬_SG_新加坡 #3'
+  name: '581|🇭🇰_HK_中国香港->🇸🇬_SG_新加坡 #4'
   port: 55567
   reality-opts:
     public-key: 0soGDTguByd3I9e2nLuzkw5BOHELZ_AHHDkA0Zx3JRA
