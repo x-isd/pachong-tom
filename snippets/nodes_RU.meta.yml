@@ -532,6 +532,22 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- client-fingerprint: chrome
+  name: '438|🇷🇺RU_4|1.8MB/s | 网盘搜宝: https:/...'
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE
+    short-id: 8ba6e72ee60667f6
+  server: 161.104.38.98
+  servername: donatov.net
+  tls: false
+  type: vless
+  uuid: 553d8193-d897-0032-bb46-f075b670f22a
+  ws-opts:
+    headers:
+      Host: 161.104.38.98
+    path: '%2Fassets'
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1300,6 +1316,27 @@ proxies:
     headers:
       Host: ''
     path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 472,473,474,489|D🔴🇩🇪hos[📺]_dokng.com_997d809f
+  network: ws
+  port: 14443
+  server: 95.163.232.171
+  servername: media-se.compressor.work
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.112 Safari/537.36
+    path: /ws
+  xudp: true
 - client-fingerprint: firefox
   http-opts:
     path:
@@ -1570,7 +1607,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '489,502,717|PL【机场推荐：https://a9a.xyz】15 #1'
+  name: 489,502|PL【机场推荐：https://a9a.xyz】15
   network: ws
   port: 443
   server: fbsv6.guardora.pro
@@ -1585,26 +1622,6 @@ proxies:
       Host: fbsv6.guardora.pro
     path: /ws
   xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 489|A🟢🇷🇺res[🤖📺🎪️]_dokng.com_762e98...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: GW-DWwk3vtXtXBEqQxY_Cf83JIisyyk34rUrtkMZ90g
-    short-id: ''
-  server: 130.49.188.4
-  servername: lk.s.dn.iki-servers.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 85261643-2fd5-4889-8da9-43abc3c08405
-  xudp: true
 - name: 489|A🟢🇷🇺res[🎞️🔍]_dokng.com_965e2a1...
   port: 4080
   server: 185.21.156.73
@@ -1613,21 +1630,6 @@ proxies:
   port: 8095
   server: 193.187.107.120
   type: http
-- name: 502|俄罗斯+V2CROSS.COM
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  port: 22443
-  server: 91.240.86.70
-  sni: hy.quattro-tech.ru
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  name: '502,551|🇷🇺RU_1|1.2MB/s #1'
-  port: 443
-  server: 161.104.38.98
-  servername: donatov.net
-  tls: true
-  type: vless
-  uuid: 553d8193-d897-0032-bb46-f075b670f22a
 - client-fingerprint: firefox
   name: '508,509,519,523,524|🇷🇺_俄罗斯_396 #1'
   network: ws
