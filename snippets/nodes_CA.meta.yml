@@ -46,23 +46,19 @@ proxies:
   server: yyz-ca-01.blncvpn4u.cc
   type: ss
 - cipher: aes-256-gcm
-  name: 306,378,519,537,538|🇨🇦CA-185.156.47.97-0062 | 122....
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  port: 9443
-  server: 185.156.47.97
-  type: ss
-- cipher: aes-256-gcm
   name: 306,378,519,537,538|🇨🇦CA-51.222.141.125-0164 | 2.3...
   password: zDNVedRFPQexG9v
   port: 445
   server: 51.222.141.125
   type: ss
 - cipher: aes-256-gcm
-  name: 306,378,519,537,538|🇨🇦CA-51.79.85.185-0189 | 6.477...
+  name: 306,378,519,537,538,548|🇨🇦_CA_加拿大_1
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 51.79.85.185
+  skip-cert-verify: true
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 306,378,519,537,538|🇨🇦CA-51.222.200.165-0150 | 2.2...
   password: Y6R9pAtvxxzmGC
@@ -105,17 +101,18 @@ proxies:
   port: 445
   server: 51.222.12.127
   type: ss
-- client-fingerprint: chrome
-  name: '340|🇨🇦 加拿大 | CAN #1'
-  port: 443
-  server: 34.118.160.133
-  servername: www.cloudflare.com
-  tls: true
+- encryption: none
+  name: '340,502,508,509,514,519,523,524,551|🇨🇦[www.v2nodes.com] vless-CA-1... #4'
+  network: tcp
+  port: 8080
+  server: milo.rubinaz.xyz
+  skip-cert-verify: true
+  tls: false
   type: vless
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
+  udp: true
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
 - cipher: aes-128-gcm
-  country: 🇺US
-  name: 356,378,435,537,538|🇨🇦CA-149.22.95.183-0185 | 245....
+  name: 356,378,537,538|🇨🇦CA-149.22.95.183-0185 | 245....
   password: shadowsocks
   port: 443
   server: 149.22.95.183
@@ -175,6 +172,12 @@ proxies:
   type: vmess
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
+- cipher: aes-256-gcm
+  name: 378,537,538|🇨🇦CA-185.156.47.97-0062 | 122....
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  port: 9443
+  server: 185.156.47.97
+  type: ss
 - cipher: rc4-md5
   name: 378,537,538|🇨🇦CA-137.184.174.93-0065 | 47....
   password: 14fFPrbezE3HDZzsMOr6
@@ -182,15 +185,14 @@ proxies:
   server: 137.184.174.93
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇦CA
-  name: 378,435,537,538|🇨🇦CA-108.181.118.10-0138 | 121...
+  name: 378,537,538|🇨🇦CA-108.181.118.10-0138 | 121...
   password: G5p6ww4o67HB
   port: 8388
   server: 108.181.118.10
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,538,636|🇺🇸 美国 059
+  name: 378,508,509,536,537,538,636|🇺🇸 美国 075
   network: ws
   port: '443'
   server: 134.195.198.147
@@ -223,7 +225,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,538,636|🇺🇸 美国 064
+  name: 378,508,509,536,537,538,636|🇺🇸 美国 077
   network: ws
   port: '443'
   server: 158.51.121.123
@@ -256,7 +258,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,538,636|🇺🇸 美国 061
+  name: 378,508,509,536,537,538,636|🇺🇸 美国 072
   network: ws
   port: '443'
   server: 23.162.200.227
@@ -271,7 +273,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 072
+  name: 378,508,509,536,537,636|🇺🇸 美国 122
   network: ws
   port: '443'
   server: 158.51.121.63
@@ -290,7 +292,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇺🇸 美国 091
+  name: 378,508,509,536,537,636|🇺🇸 美国 093
   network: http
   port: '3389'
   server: 134.122.41.160
@@ -301,7 +303,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇦 加拿大 002
+  name: 378,508,509,536,537,636|🇨🇦 加拿大 003
   network: ws
   port: '80'
   server: 51.79.102.253
@@ -316,7 +318,7 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 218
+  name: 378,508,509,536,537,636|🇺🇸 美国 232
   network: ws
   port: '443'
   server: 15.235.13.69
@@ -331,7 +333,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 219
+  name: 378,508,509,536,537,636|🇺🇸 美国 233
   network: ws
   port: '443'
   server: 15.235.50.172
@@ -346,7 +348,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 220
+  name: 378,508,509,536,537,636|🇺🇸 美国 234
   network: ws
   port: '443'
   server: 15.235.83.227
@@ -361,7 +363,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 221
+  name: 378,508,509,536,537,636|🇺🇸 美国 235
   network: ws
   port: '443'
   server: 15.235.83.228
@@ -6027,17 +6029,23 @@ proxies:
     headers:
       Host: avengers5.yang-1989.xyz
     path: '%2Fo42w'
-- name: '502,514,523,524,551|🇨🇦[www.v2nodes.com] vless-CA-1... #2'
-  port: 8080
-  server: milo.rubinaz.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇨🇦 加拿大 003
+  name: 508,509,538,636|🇨🇦 加拿大 001
+  network: ws
+  port: '443'
+  server: 167.17.68.89
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: vspeedfast.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 508,509,636|🇨🇦 加拿大 004
   network: tcp
   port: '22324'
   server: 198.57.27.190
@@ -6047,7 +6055,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇨🇦 加拿大 004
+  name: 508,509,636|🇨🇦 加拿大 005
   network: tcp
   port: '22324'
   server: 167.17.68.89
@@ -6098,6 +6106,17 @@ proxies:
   udp: true
   uuid: 26becb32-3d57-4b59-9252-3b046768b1ea
 - name: '508,509|加拿大 025 #1'
+  network: xhttp
+  port: 443
+  server: 151.101.215.120
+  servername: accounts.fastly.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3b0637f3-916e-470c-aa32-2e2b2b0de1b9
+- name: '508,509|加拿大 026 #1'
   network: tcp
   port: 443
   server: 184.107.106.68
@@ -6109,7 +6128,7 @@ proxies:
   udp: true
   uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
 - client-fingerprint: chrome
-  name: '508,509|加拿大 026 #1'
+  name: '508,509|加拿大 027 #1'
   network: ws
   port: 443
   server: 172.93.167.45
@@ -6145,6 +6164,39 @@ proxies:
   uuid: 8344360f-0349-4784-a19f-33fd92e89389
   ws-opts:
     path: /v2
+- cipher: aes-256-cfb
+  name: 548|🇨🇦_CA_加拿大
+  password: amazonskr05
+  port: 443
+  server: 35.182.118.89
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 548|🇨🇦_CA_加拿大_2
+  password: amazonskr05
+  port: 443
+  server: 15.156.204.87
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: gw.v2.RelayService
+  name: 548|🇧🇬 保加利亚_6CAT8N
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw
+    short-id: 1a3102bb8e51399e
+  server: 45.9.156.42
+  servername: bg5.univesalsrv.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
