@@ -55,37 +55,47 @@ proxies:
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - client-fingerprint: chrome
-  name: '340,502,514,551|🇬🇧[www.v2nodes.com] vless-GB-1... #22'
+  name: '340,438,502,514,551|🇬🇧[www.v2nodes.com] vless-GB-1... #28'
+  network: tcp
   port: 2053
+  reality-opts:
+    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
+    short-id: d051f678212f9d54
   server: 51.89.194.151
   servername: www.apple.com
   tls: true
   type: vless
   uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+- name: '340,502,514,519,551|🇬🇧[www.v2nodes.com] vless-GB-1... #29'
+  port: 443
+  server: 199.232.78.159
+  tls: false
+  type: vless
+  uuid: 8453bdb7-dd58-419d-b002-9456dd2e73d7
+  ws-opts:
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇬🇧[www.v2nodes.com] vless-GB-1... #23'
+  name: '340,502,514,551|🇬🇧[www.v2nodes.com] vless-GB-1... #30'
   port: 443
   server: 23.81.34.204
   servername: speed.cloudflare.com
   tls: true
   type: vless
   uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
-- encryption: none
-  grpc-opts:
+- grpc-opts:
     grpc-service-name: vless
-  name: '340,502,508,509,514,519,551|🇬🇧[www.v2nodes.com] vless-GB-1... #24'
+  name: '340,502,514,519,551|🇬🇧[www.v2nodes.com] vless-GB-1... #31'
   network: grpc
   port: 2083
-  server: 66.90.104.43
+  server: 66.90.104.42
   tls: false
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- client-fingerprint: ''
-  encryption: none
+- encryption: none
   grpc-opts:
     grpc-service-name: vless
-  name: '340,502,508,509,514,519,551|🇬🇧[www.v2nodes.com] vless-GB-1... #25'
+  name: '340,502,508,509,514,519,551|🇬🇧[www.v2nodes.com] vless-GB-1... #32'
   network: grpc
   port: 2083
   server: 66.90.105.211
@@ -94,17 +104,28 @@ proxies:
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇬🇧[www.v2nodes.com] vless-GB-1... #26'
+  name: '340,502,514,551|🇬🇧[www.v2nodes.com] vless-GB-1... #33'
   port: 51847
   server: 3.9.135.156
   servername: www.tesla.com
   tls: true
   type: vless
   uuid: 391a01e9-b664-407b-9158-610fab3f5920
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '340,502,514,551|🇬🇧[www.v2nodes.com] vless-GB-1... #34'
+  port: 443
+  server: 83.147.18.3
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '340,502,514,519,551|🇬🇧[www.v2nodes.com] vless-GB-1... #27'
+  encryption: none
+  name: '340,502,514,519,551|🇬🇧[www.v2nodes.com] vless-GB-1... #35'
+  network: tcp
   port: 443
   server: 186.190.211.188
   servername: 186.190.211.188
@@ -114,18 +135,15 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,514,523,524,566|🇬🇧 英国 | GBR #5'
-  network: tcp
+  name: '340,502,514,551|🇬🇧 英国 | GBR #1 #3'
   port: 10829
   server: 193.142.59.180
   servername: u695098u3b5ab61cs124.gogocs.xyz
-  skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
   uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
 - auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  name: '340,514,566,568|🇬🇧 英国 | GBR #6'
+  name: '340,438,472,473,474,502,514,519,551|🇬🇧 英国 | GBR #2 #4'
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   port: 2060
   server: yg.mangshe.xyz
@@ -445,7 +463,7 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
+  country: 🇧GB
   name: 378,435,537,538|🇬🇧GB-82.38.31.208-0096 | 47.81...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
@@ -473,7 +491,7 @@ proxies:
   server: 82.38.31.214
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇧GB
+  country: 🇬🇧GB
   name: 378,435,537,538|🇬🇧GB-82.38.31.181-0102 | 53.03...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
@@ -542,7 +560,7 @@ proxies:
   server: 82.38.31.179
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇧GB
+  country: 🇬🇧GB
   name: 378,435,537,538|🇬🇧GB-82.38.31.212-0095 | 52.42...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
@@ -577,14 +595,14 @@ proxies:
   server: 82.38.31.186
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇧GB
+  country: 🇬🇧GB
   name: 378,435,537,538|🇬🇧GB-82.38.31.187-0183 | 40.26...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.187
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇧GB
+  country: 🇬🇧GB
   name: 378,435,537,538|🇬🇧GB-82.38.31.216-0150 | 38.11...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
@@ -598,7 +616,7 @@ proxies:
   server: 82.38.31.217
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇧GB
+  country: 🇬🇧GB
   name: 378,435,537,538|🇬🇧GB-82.38.31.189-0156 | 53.93...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
@@ -654,14 +672,15 @@ proxies:
   server: 82.38.31.61
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
+  country: 🇧GB
   name: 378,435,537,538|🇬🇧GB-82.38.31.47-0161 | 14.982...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.47
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,476,481,537,538|🇬🇧GB-82.38.31.35-0170 | 14.469...
+  country: 🇬🇧GB
+  name: 378,435,476,481,537,538|🇬🇧GB-82.38.31.35-0170 | 14.469...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.35
@@ -761,7 +780,7 @@ proxies:
   server: 82.38.31.202
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
+  country: 🇧GB
   name: 378,435,537,538|🇬🇧GB-82.38.31.219-0181 | 0.697...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
@@ -789,7 +808,7 @@ proxies:
   server: 82.38.31.218
   type: ss
 - cipher: aes-256-gcm
-  country: BG
+  country: 🇬BG
   name: 378,435,537,538|🇬🇧GB-94.156.250.148-0230 | 3.9...
   password: RexnBgU7EV5ADxG
   port: 7001
@@ -847,13 +866,14 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: http
-- name: '378,519,537|🇬🇧GB-212.102.63.1-0550 #1'
+- name: '378,489,537|🇬🇧GB-212.102.63.1-0550 #1'
   password: None
   port: 443
   server: 212.102.63.1
   skip-cert-verify: false
   tls: true
   type: http
+  username: null
 - alterId: 64
   cipher: auto
   name: '378,536,537|🇧GB-83.142.225.59-0740 #1'
@@ -1797,20 +1817,17 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '438|🇬🇧GB_6|2.3MB/s | 福利姬: https://...'
-  network: ws
-  port: '443'
-  server: 186.190.211.67
-  servername: pahobac.org
+- client-fingerprint: chrome
+  name: '438|🇬🇧GB_5|1.7MB/s | 更多节点: https:/...'
+  network: xhttp
+  port: 443
+  server: 46.33.11.36
+  servername: edge2.sickok.com
   tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  type: vless
+  uuid: f65b49ed-d3e6-46b3-9f92-1cab485e4a0e
   ws-opts:
-    headers:
-      Host: pahobac.org
-    path: /linkvws
+    path: '%2Fapi%2Fv1%2Fingest%2FKczWgyXedh'
 - name: '455,457,458|🇬🇧_GB_英国 #2'
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
@@ -2551,8 +2568,7 @@ proxies:
     headers:
       Host: rubifen.adaspoloandco.com
     path: /GOrbEh
-- client-fingerprint: chrome
-  name: '475,480,548|🇩🇪_DE_德国 #1'
+- name: '475,480|🇧GB英国丨yoyapai.com_2 #1'
   network: ws
   port: 2087
   server: 188.220.67.245
@@ -2563,7 +2579,7 @@ proxies:
   uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
   ws-opts:
     path: /8f2690e2d016
-- name: '476,481,523,524|🇺🇸_美国_238 #1'
+- name: '476,481,523,524|🇺🇸_美国_112 #1'
   network: ws
   port: 8880
   server: 80.93.202.40
@@ -2576,22 +2592,82 @@ proxies:
     headers:
       Host: vms.lifetime02.workers.dev
     path: /
-- client-fingerprint: firefox
-  name: '502,519,551|🇬🇧 英国 | GBR #2 #3'
-  network: xhttp
+- name: 489|C🟠🇬🇧hos[🎬🤖📺🎭]_dokng.com_7e03a1...
+  port: 9333
+  server: 176.58.117.154
+  type: http
+- name: 489|D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_b218a6...
   port: 443
-  reality-opts:
-    public-key: FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk
-  server: 45.88.13.6
-  servername: download.nvidia.com
+  server: 37.120.233.34
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: http
+- name: 489|C🟠🇬🇧hos[🎬🤖📺🎭]_dokng.com_b7ad89...
+  password: 0720c874-35e8-11ef-aa88-f23c913c8d2b
+  port: 443
+  server: 81878291-tk59c0-tll9n7-1l0qa.uk.oshuawei.com
+  sni: 81878291-tk59c0-tll9n7-1l0qa.uk.oshuawei.com
+  tls: true
+  type: http
+  username: 0720c874-35e8-11ef-aa88-f23c913c8d2b
+- name: 489|C🟠🇬🇧hos[🎬🤖📺🎭]_dokng.com_4edc09...
+  password: 0fcf5a7a-e1b7-11ec-a352-f23c91cfbbc9
+  port: 443
+  server: 1e32fec0-t9zts0-tq9o8d-1d3bw.uk.oshuawei.com
+  sni: 1e32fec0-t9zts0-tq9o8d-1d3bw.uk.oshuawei.com
+  tls: true
+  type: http
+  username: 0fcf5a7a-e1b7-11ec-a352-f23c91cfbbc9
+- name: 489,519|🇬🇧GB_3|2.6MB/s
+  password: None
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 489|D🔴🇬🇧hos[🤖📺🎭🎪]_dokng.com_26bd59...
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 489|D🔴🇬🇧hos[🤖📺🎭🎪]_dokng.com_5f056d...
+  port: 9443
+  server: 84.233.178.33
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 489|C🟠🇬🇧hos[🎬🤖📺🎭]_dokng.com_9827b0...
+  port: 443
+  server: 84.17.50.193
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 489|D🔴🇬🇧hos_dokng.com_76bcad96
+  port: 11111
+  server: 157.180.24.140
+  type: socks5
+- name: 489|A🟢🇬🇧res[🎬🤖📺🎭]_dokng.com_5e30aa...
+  port: 8443
+  server: 198.105.124.180
+  skip-cert-verify: true
+  tls: true
+  type: http
+- alpn:
+  - ''
+  alterId: 2
+  cipher: auto
+  name: '489,519,523,524|🇭🇰_香港_49 #1'
+  port: 30836
+  server: v36.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-  uuid: f8a9654f-252e-bc36-1ba0-d7b6691bff7d
-  xhttp-opts:
-    host: download.nvidia.com
-    path: /
-- name: '502,508,509,519,551|🇬🇧 英国 | GBR #1 #3'
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- name: '508,509|英国 001 #1'
   network: ws
   port: 8880
   server: 185.162.229.30
@@ -2602,35 +2678,6 @@ proxies:
   ws-opts:
     headers:
       Host: vms.lifetime61.workers.dev
-    path: /
-- encryption: mlkem768x25519plus.native.0rtt.ZdJDuC0NAeRdPHNVOGwd5G25eEDVSzhJLAnKdAecfzg
-  name: '502,508,509,519,551|🇬🇧 英国 | GBR #3 #1'
-  network: tcp
-  port: 32210
-  server: germanycwecrwb345c345c43b5v43.soft355.ir
-  tls: false
-  type: vless
-  udp: true
-  uuid: 14203978-7699-4404-bc06-b245ad7132a5
-  ws-opts:
-    headers:
-      Host: germanycwecrwb345c345c43b5v43.soft355.ir
-    path: /
-- client-fingerprint: chrome
-  name: '502,519,551|🇬🇧 英国 | GBR #4 #1'
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk
-  server: 45.88.13.6
-  servername: download.nvidia.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0fa8cefb-573d-3c23-c1c3-c1f945eebe36
-  xhttp-opts:
-    host: download.nvidia.com
-    mode: auto
     path: /
 - alterId: 64
   cipher: auto
@@ -2823,22 +2870,6 @@ proxies:
     headers:
       Host: 82.24.203.20
     path: /fd5ba98a3970
-- flow: ''
-  name: '508,509|英国 024 #1'
-  network: ws
-  port: 8880
-  server: 45.85.118.50
-  servername: vms.lifetime55.workers.dev
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime55.workers.dev
-    path: /
 - name: '508,509|英国 025 #1'
   network: tcp
   port: 9443
@@ -3314,74 +3345,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
-- encryption: none
-  name: '519|🇬🇧[www.v2nodes.com] vless-GB-1... #18'
-  network: ws
-  port: 443
-  server: 199.232.78.159
-  servername: ssl.fastly.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 8453bdb7-dd58-419d-b002-9456dd2e73d7
-  ws-opts:
-    headers:
-      Host: pan2e.global.ssl.fastly.net
-    path: /
-- encryption: mlkem768x25519plus.native.0rtt.lmTuJzP_UcH5ThrWl5pCFPVsehutrNnyTRDVbSUP7mo
-  name: 519|🇬🇧GB_1|1.1MB/s
-  network: ws
-  port: 5456
-  server: 188.213.198.25
-  type: vless
-  udp: true
-  uuid: 6b5d6852-0b29-4fb7-afa3-8904638bc1b5
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /
-  xudp: true
-- name: 519|🇬🇧GB_4|2.3MB/s
-  password: None
-  port: 443
-  server: 212.102.63.61
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 519|🇬🇧GB_5|1.6MB/s
-  port: 443
-  server: 84.17.50.193
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '523,524|🇬🇧_英国_83 #1'
-  port: 37574
-  reality-opts:
-    public-key: Pu-3VzlM8PPRnOTVZOC8HVGr4WwG5yOYiIrbVJYU5RI
-  server: 45.152.65.68
-  servername: www.amazon.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e2353f83-9a40-4b46-82e1-666b1652d479
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '523,524|🇬🇧_英国_84 #1'
-  port: 2581
-  reality-opts:
-    public-key: sJMVQ27QqDnyTPtHC02hVfJK1Ot42YsyLm47eHnLgV8
-  server: 45.152.66.160
-  servername: www.amazon.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 600d0970-77e5-4b57-8a88-a5b623c5a3d7
 - flow: xtls-rprx-vision
   name: 553|🇬🇧英国_cd7d9
   port: 443

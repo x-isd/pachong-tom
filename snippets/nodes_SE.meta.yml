@@ -18,7 +18,7 @@ proxies:
   tls: true
   type: vless
   uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '340,502,514,551|🇸🇪[www.v2nodes.com] vless-SE-1... #26'
   port: 443
@@ -35,7 +35,7 @@ proxies:
   tls: true
   type: vless
   uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '340,502,514,551|🇸🇪[www.v2nodes.com] vless-SE-1... #28'
   port: 443
@@ -92,7 +92,7 @@ proxies:
 - client-fingerprint: random
   grpc-opts:
     grpc-service-name: moktana.net.v1.StreamService
-  name: '340,502,514,551|🇸🇪[www.v2nodes.com] vless-SE-9... #4'
+  name: '340,502,514,551|🇸🇪[www.v2nodes.com] vless-SE-9... #3'
   network: grpc
   port: 443
   server: 185.207.66.8
@@ -123,7 +123,7 @@ proxies:
   port: 443
   server: 51.20.86.152
   type: ss
-- name: '378,537|SE-217.210.129.243-0526 #1'
+- name: '378,489,537|SE-217.210.129.243-0526 #1'
   port: 443
   server: 217.210.129.243
   skip-cert-verify: false
@@ -268,21 +268,51 @@ proxies:
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
   type: trojan
-- client-fingerprint: firefox
-  name: '502,519,551|🇸🇪 瑞典 | SWE #1 #1'
-  network: xhttp
+- name: 489|D🔴🇸🇪hos[🎬🤖📺🎭]_dokng.com_6c7ec5...
+  port: 443
+  server: 146.70.242.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 489|D🔴🇸🇪hos[🎬🤖📺🎭]_dokng.com_d28f08...
+  port: 8443
+  server: 77.221.136.60
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 489|D🔴🇸🇪hos[🎬🤖📺🎪]_dokng.com_7dcb6a...
+  port: 443
+  server: 79.142.77.63
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 489|C🟠🇸🇪hos[🤖📺🎪✨]_dokng.com_ff887d...
+  password: None
+  port: 443
+  server: 79.142.77.63
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 489|D🔴🇸🇪hos[📺🎭🎪]_dokng.com_5533c29...
+  port: 1080
+  server: 171.25.158.95
+  type: socks5
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: '502,523,524,717|SE【机场推荐：https://a9a.xyz】35 #1'
+  network: tcp
   port: 443
   reality-opts:
-    public-key: tl7xSwczBM--oN16cxdLnAD8GMf8tA0f-FXE9ilCCjA
-  server: 104.245.240.5
-  servername: download.intel.com
-  tls: true
+    public-key: qmfrMwVYth3lsYuv7qfr22YlTIlNtVjMl0v4Z5pX7hM
+    short-id: 87cc0414902bee2d
+  server: 150.241.80.113
+  servername: nl.skfv-mirror.ru
+  skip-cert-verify: true
+  tls: false
   type: vless
   udp: true
-  uuid: 35f9c540-85cf-a4da-aca5-833daaa0bfc8
-  xhttp-opts:
-    host: download.intel.com
-    path: /
+  uuid: 86037609-3790-4901-bd2f-c698092fb1fc
 - name: '508,509|瑞典 001 #1'
   network: ws
   port: 80
@@ -388,44 +418,19 @@ proxies:
     headers:
       Host: 3.V.v.V.v.V.v.V-_-_-V2ray-_-_-V.v.V.v.arV2ray.Host.
     path: /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048
-- name: '519|🇸🇪[www.v2nodes.com] vless-SE-9... #3'
-  network: ws
-  port: 2083
-  server: 103.177.249.40
-  servername: qcswhj2.edge-cache.danfeng4.xyz
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: qcswhj2.edge-cache.danfeng4.xyz
-    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve?ed=2560fp=chrome
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '523,524|🇸🇪_瑞典_25 #1'
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: content.v1.Feed
+  name: 566|🇸🇪 瑞典 | SWE
+  network: grpc
   port: 443
-  reality-opts:
-    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
-  server: 143.246.199.124
-  servername: www.blocket.se
-  skip-cert-verify: true
+  server: 163.245.43.50
+  servername: se-twitch.global-cdn.org
   tls: true
   type: vless
   udp: true
-  uuid: 79ccb156-bfc6-11f1-9811-525400d1d4f7
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '548|🇸🇪_SE_瑞典 #3'
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 141.227.160.23
-  servername: se.sellflow.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
+  uuid: 203d434a-2a92-45df-8973-ca80434ecf73
 - name: 728|🇸🇪 瑞典1🔒
   password: 升级订阅解锁全部节点
   port: 443

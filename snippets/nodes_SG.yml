@@ -683,8 +683,28 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: '306,340,378,502,514,519,536,537,538,551|🇸🇬[www.v2nodes.com] trojan-SG-...
-    #20'
+- cipher: chacha20-ietf-poly1305
+  name: '306,519|🇸🇬[www.v2nodes.com] ss-SG-1589... #3'
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 8443
+  server: 13.212.109.205
+  type: ss
+- cipher: aes-256-gcm
+  name: '306,378,519,537|🇸🇬SG-139.180.220.175-0091 #1'
+  password: qpSevKaUXYQKvSjp
+  port: 8388
+  server: 139.180.220.175
+  type: ss
+- name: '306,340,378,502,514,519,537,551|🇸🇬[www.v2nodes.com] trojan-SG-... #20'
+  password: UX82473651
+  port: 443
+  server: holy-lamb.rooster465.autos
+  skip-cert-verify: false
+  sni: holy-lamb.rooster465.autos
+  type: trojan
+- name: '306,340,378,438,502,514,519,536,537,538,551|🇸🇬[www.v2nodes.com] trojan-SG-...
+    #21'
+  network: tcp
   password: UX82473651
   port: 443
   server: pet-antelope.rooster465.autos
@@ -692,16 +712,15 @@ proxies:
   sni: pet-antelope.rooster465.autos
   type: trojan
 - name: '306,340,378,502,514,519,536,537,538,551|🇸🇬[www.v2nodes.com] trojan-SG-...
-    #21'
+    #22'
   password: UX82473651
   port: 443
   server: desired-boxer.rooster465.autos
   skip-cert-verify: false
   sni: desired-boxer.rooster465.autos
   type: trojan
-- name: '306,340,378,438,502,514,519,536,537,538,551|🇸🇬[www.v2nodes.com] trojan-SG-...
-    #22'
-  network: tcp
+- name: '306,340,378,502,514,519,536,537,538,551|🇸🇬[www.v2nodes.com] trojan-SG-...
+    #23'
   password: UX82473651
   port: 443
   server: real-cardinal.rooster465.autos
@@ -709,7 +728,7 @@ proxies:
   sni: real-cardinal.rooster465.autos
   type: trojan
 - name: '306,340,378,502,514,519,536,537,538,551|🇸🇬[www.v2nodes.com] trojan-SG-...
-    #23'
+    #24'
   password: UX82473651
   port: 443
   server: glowing-marmoset.rooster465.autos
@@ -791,21 +810,6 @@ proxies:
     headers:
       Host: bJ1Aa2ZyJxYamYuK.v.3dns.vip
     path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 306|Singapore_None_vmess_10135
-  network: ws
-  port: 55002
-  server: 45.127.32.220
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b25731af-0428-4274-be5d-31a273a8d632
-  ws-opts:
-    headers:
-      Host: www.bing.com
-    path: /b25731af-0428-4274-be5d-31a273a8d632-vm
 - name: '321,322,323|tg群组: https://t.me/tjiajc1 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -842,13 +846,6 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,378,502,514,537,551|🇸🇬[www.v2nodes.com] trojan-SG-... #19'
-  password: UX82473651
-  port: 443
-  server: holy-lamb.rooster465.autos
-  skip-cert-verify: false
-  sni: holy-lamb.rooster465.autos
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '340,502,514,551,556|🇸🇬 新加坡|@ripaojiedian #5'
@@ -1590,12 +1587,6 @@ proxies:
     headers:
       Host: a.189.cn
     path: /
-- cipher: aes-256-gcm
-  name: '378,537|🇸🇬SG-139.180.220.175-0091 #1'
-  password: qpSevKaUXYQKvSjp
-  port: 8388
-  server: 139.180.220.175
-  type: ss
 - alterId: 0
   cipher: auto
   name: '378,537|🇬SG-43.159.109.162-0248 #1'
@@ -1642,8 +1633,7 @@ proxies:
   uuid: 6fea1649-425b-4092-bf53-29792152c925
   ws-opts:
     path: /sshkit/Ertusg86/635014638c264/
-- name: '378,502,536,537,538,717|SG【机场推荐：https://a9a.xyz】9 #1'
-  network: tcp
+- name: 378,536,537,538|🇸🇬SG-56.10.9.77-0404 | 15.596M...
   password: UX82473651
   port: 443
   server: inviting-ferret.rooster465.autos
@@ -2280,12 +2270,14 @@ proxies:
   uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
   ws-opts:
     path: /anti13.zingfast.vn
-- name: '378,536,537|🇬SG-47.130.132.222-5358 #1'
+- country: 🇦🇺AU
+  name: '378,435,436,536,537|🇬SG-47.130.132.222-5358 #1'
   password: NQ26071394
   port: 443
   server: calm-muskrat.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - country: 🇦🇺AU
   name: '378,435,436,536,537|🇬SG-54.169.137.148-5363 #1'
   password: NQ26071394
@@ -2302,18 +2294,22 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- name: '378,536,537|🇸🇬SG-13.250.60.171-5371 #1'
+- country: 🇦🇺AU
+  name: '378,435,436,536,537|🇸🇬SG-13.250.60.171-5371 #1'
   password: CF68213490
   port: 443
   server: united-molly.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-54.254.196.251-5372 #1'
+  udp: true
+- country: 🇦🇺AU
+  name: '378,435,436,536,537|🇸🇬SG-54.254.196.251-5372 #1'
   password: NQ26071394
   port: 443
   server: thorough-foxhound.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - country: 🇷FR
   name: '378,435,436,536,537|🇬SG-54.255.212.245-5390 #1'
   password: XG59623478
@@ -2330,24 +2326,30 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- name: '378,536,537|🇬SG-52.221.222.185-5462 #1'
+- country: 🇯🇵JP
+  name: '378,435,436,536,537|🇬SG-52.221.222.185-5462 #1'
   password: NQ26071394
   port: 443
   server: joint-ewe.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-13.212.181.141-5466 #1'
+  udp: true
+- country: 🇵JP
+  name: '378,435,436,536,537|🇬SG-13.212.181.141-5466 #1'
   password: NQ26071394
   port: 443
   server: stunning-mastodon.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-52.221.252.205-5486 #1'
+  udp: true
+- country: 🇯🇵JP
+  name: '378,435,436,536,537|🇬SG-52.221.252.205-5486 #1'
   password: EQ30679154
   port: 443
   server: definite-gazelle.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - country: 🇷KR
   name: '378,435,436,536,537|🇬SG-47.128.146.47-5496 #1'
   password: CF68213490
@@ -2356,12 +2358,14 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- name: '378,536,537|🇬SG-52.220.181.28-5499 #1'
+- country: 🇷KR
+  name: '378,435,436,536,537|🇬SG-52.220.181.28-5499 #1'
   password: NQ26071394
   port: 443
   server: mighty-lemming.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '378,537|SG-81.90.189.41-5980 #1'
   password: G!yBwPWH3Vao
@@ -2721,28 +2725,13 @@ proxies:
   server: 103.172.116.79
   type: ss
 - country: 🇬SG
-  name: 435,436|🇸🇬SG_196
-  password: FH72359861
+  name: 435,436|🇸🇬SG_180
+  password: NQ26071394
   port: 443
-  server: fond-chipmunk.rooster465.autos
+  server: promoted-rattler.rooster465.autos
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇬SG
-  name: 435,436|🇸🇬SG_197
-  password: ND91608427
-  port: 443
-  server: tidy-gelding.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: '438|🇸🇬SG_5|1.0MB/s | 更多节点: https:/...'
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: 18.143.92.167
-  sni: glowing-marmoset.rooster465.autos
-  type: trojan
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -3077,6 +3066,12 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 489|D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_477dd6...
+  password: 4c8fced0-8987-4504-b8cf-15aca9cbb82e
+  port: 35601
+  server: gw.lydwan.com
+  type: ss
 - alterId: 0
   cipher: auto
   name: 508,509,636|🇸🇬 新加坡 002
@@ -3165,13 +3160,6 @@ proxies:
   server: 52.196.181.68
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 519|🇸🇬 新加坡 | SGP 2
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  port: 8443
-  server: 13.212.109.205
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 536|🇸🇬SG-51.79.223.202-0239
@@ -3211,6 +3199,11 @@ proxies:
   port: 28443
   server: 104.43.19.63
   sni: glc.hruqoaw.cn
+  type: trojan
+- name: 536|🇸🇬SG-54.255.136.178-5427
+  password: CF68213490
+  port: 443
+  server: sacred-shepherd.rooster465.autos
   type: trojan
 - name: '545,546|新加坡[02] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
