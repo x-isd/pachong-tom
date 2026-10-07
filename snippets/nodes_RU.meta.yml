@@ -22,7 +22,7 @@ proxies:
   type: ss
 - alpn:
   - http/1.1
-  name: '306,340,502,514,519,551|🇳🇱[www.v2nodes.com] trojan-NL-... #9'
+  name: '306,340,502,514,519,551|🇳🇱[www.v2nodes.com] trojan-NL-... #6'
   network: ws
   password: humanity
   port: 443
@@ -34,20 +34,6 @@ proxies:
     headers:
       Host: www.volumeroot.com
     path: /assignment
-- cipher: aes-256-gcm
-  name: 306,378,519,537,538|🇷🇺RU-194.87.196.13-2721 | 1.39...
-  password: 4938e975724d0ed1
-  port: 10771
-  server: 194.87.196.13
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 306,378,519,537,538|🇷🇺RU-46.17.41.166-2722 | 1.029...
-  password: 895b4b796a357570
-  port: 10771
-  server: 46.17.41.166
-  type: ss
-  udp: true
 - name: '340,496,502,514,519,551|Telegram 🆔@cnetvpn 🇷🇺 #4'
   obfs: salamander
   obfs-password: 09p333uviv2qal0y
@@ -70,7 +56,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #20'
+  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #19'
   port: 443
   server: 2.26.80.235
   servername: dl.google.com
@@ -79,7 +65,7 @@ proxies:
   uuid: cb0ccf90-0e8f-4621-b042-4e35c797de2b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #21'
+  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #20'
   port: 443
   server: 45.131.212.231
   servername: sellflow.org
@@ -88,7 +74,7 @@ proxies:
   uuid: 19513b1b-d29a-4f3e-ba9a-888261e4e048
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #22'
+  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #21'
   port: 443
   server: 31.76.34.216
   servername: ru-c-1.minzt.su
@@ -98,7 +84,7 @@ proxies:
 - client-fingerprint: random
   grpc-opts:
     grpc-service-name: moktana.net.v1.StreamService
-  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #23'
+  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #22'
   network: grpc
   port: 443
   server: 45.93.201.119
@@ -108,7 +94,7 @@ proxies:
   uuid: 10394279-283c-4ab8-8529-f1e0a4c61bc8
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #24'
+  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #23'
   port: 443
   server: 45.152.113.206
   servername: 1.ru.oncloudnineservicestreang.com
@@ -119,7 +105,7 @@ proxies:
   encryption: none
   grpc-opts:
     grpc-service-name: grpc-ru
-  name: '340,502,514,519,551|🇷🇺[www.v2nodes.com] vless-RU-1... #25'
+  name: '340,502,514,519,551|🇷🇺[www.v2nodes.com] vless-RU-1... #24'
   network: grpc
   port: 443
   server: xsru1.ddnsfree.com
@@ -349,6 +335,20 @@ proxies:
   uuid: a867b90f-0ed1-401a-9088-bf852f6636db
   ws-opts:
     path: /
+- cipher: aes-256-gcm
+  name: 378,519,537,538|🇷🇺RU-194.87.196.13-2721 | 1.39...
+  password: 4938e975724d0ed1
+  port: 10771
+  server: 194.87.196.13
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 378,519,537,538|🇷🇺RU-46.17.41.166-2722 | 1.029...
+  password: 895b4b796a357570
+  port: 10771
+  server: 46.17.41.166
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: '378,537|🇺RU-213.183.53.222-0384 #1'
   password: KnJGad3FqTvjqbaX
@@ -1773,25 +1773,17 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
+- client-fingerprint: safari
   grpc-opts:
-    grpc-service-name: ''
-  name: 502|俄罗斯+V2CROSS.COM
-  network: tcp
-  port: 443
-  server: s299.kukuss.top
-  servername: u695098u54d73951s298.kukuss.top
+    grpc-service-name: astracat
+  name: '502,551|🇷🇺RU_3|2.6MB/s #1'
+  network: grpc
+  port: 2088
+  server: 31.59.210.26
+  servername: www.yandex.ru
   tls: true
   type: vless
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  ws-opts:
-    headers:
-      Host: 54d73951s298.kukuss.top
-    path: ''
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
 - client-fingerprint: chrome
   name: '508,509|俄罗斯 001 #1'
   network: ws
@@ -1902,7 +1894,7 @@ proxies:
   type: ss
 - client-fingerprint: random
   encryption: none
-  name: '519|🇷🇺[www.v2nodes.com] vless-RU-1... #19'
+  name: '519|🇷🇺[www.v2nodes.com] vless-RU-1... #18'
   network: ws
   port: 8443
   server: 194.87.143.165
