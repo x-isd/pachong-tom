@@ -77,7 +77,7 @@ proxies:
   server: 183.236.51.3
   skip-cert-verify: false
   type: trojan
-- name: '378,519,537|CN-36.155.23.163-0535 #1'
+- name: '378,537|CN-36.155.23.163-0535 #1'
   port: 10808
   server: 36.155.23.163
   skip-cert-verify: false
@@ -1147,9 +1147,17 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- name: '475,480|🇨CN國丨yoyapai.com #1'
+  port: 52683
+  server: jp.sofast.live
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
 - alterId: 64
   cipher: auto
-  name: '489,574,581|🇨🇳_CN_中国 #2'
+  name: '489,574,580,581|🇨🇳_CN_中国 #3'
   network: tcp
   port: '50002'
   server: 112.132.215.108
@@ -1162,23 +1170,26 @@ proxies:
   xudp: true
 - alterId: 0
   cipher: auto
-  name: 489,574|未知10
+  name: 489,519,574|未知10
   network: ws
   port: 10086
   server: 39.108.113.127
   skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 2b910c43-51e3-4b15-9be8-b658106ba35e
-- name: '502,717|CN【机场推荐：https://a9a.xyz】6 #1'
+- name: '502,519,717|CN【机场推荐：https://a9a.xyz】6 #1'
   network: tcp
   port: 52683
   server: jp.sofast.live
+  skip-cert-verify: true
   tls: false
   type: vless
+  udp: true
   uuid: 399b6b23-cc40-4831-a494-61948e2df133
 - client-fingerprint: chrome
-  name: '508,509,519|🇭🇰[www.v2nodes.com] vless-HK-1... #18'
+  name: '508,509,519|🇭🇰[www.v2nodes.com] vless-HK-1... #23'
   network: ws
   port: 8443
   server: 103.148.73.173
@@ -1248,7 +1259,8 @@ proxies:
     headers:
       Host: ty986gfazs.cainiaohub.xyz
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-- name: '508,509|中国 020 #1'
+- client-fingerprint: chrome
+  name: 508,509,580|🇫🇷FR_2489|299KB/s|T001-260618 ...
   network: ws
   port: 2083
   server: 154.218.15.250
@@ -1286,14 +1298,14 @@ proxies:
   type: vless
   udp: true
   uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
-- name: '508,509|中国 023 #1'
+- name: 508,509,580|🇫🇷FR_1701|286KB/s|C002-260622 ...
   network: ws
   port: 8880
   server: 154.197.64.30
   servername: vms.lifetime36.workers.dev
   skip-cert-verify: false
   tfo: false
-  tls: true
+  tls: false
   type: vless
   udp: true
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
@@ -1301,20 +1313,6 @@ proxies:
     headers:
       Host: vms.lifetime36.workers.dev
     path: /
-- name: '508,509|中国 024 #1'
-  network: ws
-  port: 8880
-  server: 154.197.75.40
-  servername: vms.lifetime37.workers.dev
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime37.workers.dev
 - client-fingerprint: chrome
   name: '508,509|中国 025 #1'
   network: ws
