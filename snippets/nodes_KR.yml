@@ -164,12 +164,12 @@ proxies:
   - ''
   alterId: 0
   cipher: auto
-  name: 306,340,378,502,508,509,514,519,536,537,551,566,568,636|🇯🇵 日本 026
+  name: 306,340,378,494,502,508,509,514,519,536,537,551,559,636|🇯🇵 日本 026
   network: ws
   port: '443'
   server: seoul02.zgjok.com
   servername: seoul02.zgjok.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
@@ -180,7 +180,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '340,502,514,551,556|🇰🇷 韩国|@ripaojiedian #5'
+  name: '340,502,514,551,556,559|🇰🇷 韩国|@ripaojiedian #6'
   network: ws
   port: 443
   server: 8nTzyR5KNivfabaT.v.3dns.vip
@@ -480,53 +480,60 @@ proxies:
   skip-cert-verify: true
   sni: appsvs.shop
   type: trojan
-- name: 378,536,537,538|🇰🇷KR-3.34.192.47-0158 | 5.69MB
+- name: 378,494,536,537,538,559|🇰🇷KR_46|408KB/s|P002-260618 01
+  network: tcp
   password: UX82473651
   port: 443
   server: central-jawfish.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: central-jawfish.rooster465.autos
   type: trojan
-- name: 378,536,537,538|🇰🇷KR-3.35.207.188-0175 | 5.153...
+- name: 378,494,536,537,538,559|🇰🇷KR_25|117KB/s|C001-260618 01
+  network: tcp
   password: UX82473651
   port: 443
   server: main-fawn.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: main-fawn.rooster465.autos
   type: trojan
-- name: 378,536,537,538|🇰🇷KR-43.201.100.203-0176 | 2.0...
+- name: 378,494,536,537,538,559|🇰🇷KR_31|69KB/s|A001-260618 01
+  network: tcp
   password: UX82473651
   port: 443
   server: optimum-snapper.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: optimum-snapper.rooster465.autos
   type: trojan
-- name: 378,536,537,538|🇰🇷KR-3.34.131.153-0177 | 1.752...
+- name: 378,494,536,537,538,559|🇰🇷KR_39|102KB/s|M003-260806 01
+  network: tcp
   password: UX82473651
   port: 443
   server: 3.34.131.153
   skip-cert-verify: false
   sni: pretty-rat.rooster465.autos
   type: trojan
-- name: 378,536,537,538|🇰🇷KR-3.35.168.225-0178 | 0.544...
+- name: 378,494,536,537,538,559|🇰🇷KR_30|79KB/s|A004-260618 01
+  network: tcp
   password: UX82473651
   port: 443
   server: noted-cougar.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: noted-cougar.rooster465.autos
   type: trojan
-- name: 378,536,537,538|🇰🇷KR-3.36.50.213-0179 | 2.361M...
+- name: 378,494,536,537,538,559|🇰🇷KR_54|113KB/s|A004-260618 01
+  network: tcp
   password: UX82473651
   port: 443
   server: pure-kodiak.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: pure-kodiak.rooster465.autos
   type: trojan
-- name: 378,536,537,538|🇰🇷KR-3.34.131.153-0182 | 1.124...
+- name: 378,494,536,537,538,559|🇰🇷KR_26|240KB/s|C001-260618 01
+  network: tcp
   password: UX82473651
   port: 443
   server: pretty-rat.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: pretty-rat.rooster465.autos
   type: trojan
 - cipher: aes-256-cfb
@@ -536,7 +543,8 @@ proxies:
   server: p141.panda001.net
   type: ss
 - cipher: aes-256-cfb
-  name: 378,537,538|🇰🇷KR-211.178.105.134-0186 | 1....
+  country: 🇷KR
+  name: 378,435,537,538|🇰🇷KR-211.178.105.134-0186 | 1....
   password: qwerREWQ@@
   port: 6123
   server: 211.178.105.134
@@ -629,7 +637,7 @@ proxies:
     path: /ray
 - alterId: 1
   cipher: auto
-  name: 378,508,509,536,537,636|🇰🇷 韩国 002
+  name: 378,508,509,536,537,559,636|🇰🇷 韩国 002
   network: ws
   port: '8888'
   server: 54.180.96.67
@@ -929,7 +937,8 @@ proxies:
   server: 141.164.45.187
   type: ss
 - cipher: aes-256-gcm
-  name: '378,537|🇰🇷KR-141.164.45.187-5430 #2'
+  country: 🇵JP
+  name: '378,435,537|🇰🇷KR-141.164.45.187-5430 #2'
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 141.164.45.187
@@ -1284,6 +1293,55 @@ proxies:
   server: 3.34.192.249
   tfo: false
   type: ss
+- name: 559|🇰🇷KR_57|151KB/s|A004-260618 01
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 3.34.192.47
+  skip-cert-verify: true
+  sni: central-jawfish.rooster465.autos
+  type: trojan
+- name: 559|🇰🇷KR_59|80KB/s|M002-260618 01
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 3.35.168.225
+  skip-cert-verify: true
+  sni: noted-cougar.rooster465.autos
+  type: trojan
+- name: 559|🇰🇷KR_41|94KB/s|M003-260806 01
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 3.35.207.188
+  sni: main-fawn.rooster465.autos
+  type: trojan
+- name: 559|🇰🇷KR_60|137KB/s|A004-260618 01
+  network: tcp
+  password: UX82473651
+  port: 443
+  server: 3.36.50.213
+  skip-cert-verify: true
+  sni: pure-kodiak.rooster465.autos
+  type: trojan
+- name: 559|🇰🇷KR_24|491KB/s|A004-260618 01
+  network: tcp
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  port: 56127
+  server: 154.90.62.70
+  skip-cert-verify: true
+  sni: 154.90.62.70
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 559|🇰🇷 韩国-01958B5F
+  network: none
+  port: 443
+  server: 140.238.2.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
 - name: 728|🇰🇷 韩国5🔒
   password: 升级订阅解锁全部节点
   port: 443
