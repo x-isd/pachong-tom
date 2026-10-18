@@ -1,7 +1,7 @@
 proxies:
 - alterId: 2
   cipher: auto
-  name: 306,459,494,559|🇺🇸US_1|4.1MB/s
+  name: '306,459,494,502,514,519,551|🇺🇸US_2|2.6MB/s #3'
   network: tcp
   port: 30829
   server: v29.hdacd.com
@@ -103,8 +103,7 @@ proxies:
       Host: cn-ar.dnspro.icu
     path: /iso
 - cipher: chacha20-ietf-poly1305
-  country: 🇬SG
-  name: 378,435,537,538|🇨🇳CN-8.209.74.72-0126 | 24.595...
+  name: 378,537,538|🇨🇳CN-8.209.74.72-0126 | 24.595...
   password: PWpjPo3tqhPN4yRZ
   port: 20001
   server: 8.209.74.72
@@ -276,35 +275,36 @@ proxies:
   - ''
   alterId: 0
   cipher: auto
-  name: '378,494,519,536,537|🇨🇳CN-47.244.120.197-0514 #1'
+  name: '378,437,494,519,536,537,566,568|🇭🇰 香港 | HKG #9'
   network: ws
-  port: 44867
+  port: '44867'
   server: 47.244.120.197
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   ws-opts:
+    headers:
+      Host: ''
     path: /arki
 - alterId: 0
   cipher: auto
-  name: 378,494,519,537,559|香港_101721011 L0
+  name: '378,494,537|🇨🇳CN-47.243.65.243-0518 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 47.243.65.243
   servername: lcv8v9l7oyamxxfz.v.3dns.vip
   skip-cert-verify: false
   tls: true
   type: vmess
-  udp: true
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
       Host: lcv8v9l7oyamxxfz.v.3dns.vip
     path: /ws-vmess
-- name: '378,536,537,559|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #3'
+- name: '378,536,537|🇨CN-120.236.197.205-1213 #1'
   password: ba4fedf8c217c146
   port: 3389
   server: 120.236.197.205
@@ -1314,7 +1314,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇨🇳CN-43.100.32.4-4699 #1'
+  name: 378,494,536,537,580|未知 VMESS-1435 | free-nodes
   network: ws
   port: 443
   server: n1747624260.4u9ma.icu
@@ -1329,9 +1329,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,494,536,537,559|HK9 42.6KB/s
+  name: '378,494,536,537|🇳CN-47.244.120.197-4998 #1'
   network: ws
-  port: '36703'
+  port: 36703
   server: 47.244.120.197
   servername: ''
   skip-cert-verify: false
@@ -1339,8 +1339,6 @@ proxies:
   type: vmess
   uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
   ws-opts:
-    headers:
-      Host: ''
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
@@ -2303,7 +2301,7 @@ proxies:
     path: /path/153428133302
 - alterId: 0
   cipher: auto
-  name: '465,494,508,509,513,517,525,559,636|其他 045 #2'
+  name: '465,494,508,509,513,517,525,636|其他 045 #2'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -2392,10 +2390,20 @@ proxies:
   port: 15082
   server: 59.56.77.178
   type: ss
-- alterId: 64
+- alterId: 2
+  cipher: auto
+  name: 519|🇨🇳_CN_中国
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
   cipher: auto
   delay: 157
-  name: '519,522,528,548|🇨🇳_CN_中国 #2'
+  name: 519,522,528|中国 - 合肥 - 1
   port: 50002
   server: 112.132.215.108
   skip-cert-verify: true
@@ -3064,20 +3072,6 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- alterId: 0
-  cipher: auto
-  name: 559|中国4
-  network: ws
-  port: '46034'
-  server: mf34fx.micloud.buzz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bc230344-14d9-4922-9fb7-2e6513c5593e
-  ws-opts:
-    headers:
-      Host: mf34fx.micloud.buzz
-    path: /zh-cn
 - cipher: aes-256-cfb
   name: 585|CN_speednode_0001
   password: 7eadc6dbe2ae
