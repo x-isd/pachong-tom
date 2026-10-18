@@ -1,4 +1,10 @@
 proxies:
+- cipher: aes-256-gcm
+  name: 306,378,519,537,538|SE-70.34.212.124-0130 | 0.0MB
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
 - name: '340,496,502,514,519,551|Telegram 🆔@cnetvpn 🇸🇪 #4'
   obfs: salamander
   obfs-password: fuw2k1ddrouwxr3u
@@ -11,14 +17,14 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇸🇪[www.v2nodes.com] vless-SE-1... #16'
+  name: '340,502,514,551|🇸🇪[www.v2nodes.com] vless-SE-1... #17'
   port: 25119
   server: se3.h1cloud.net
   servername: www.samsung.com
   tls: true
   type: vless
   uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-- name: '340,519|🇸🇪[www.v2nodes.com] vless-SE-1... #14'
+- name: '340|🇸🇪[www.v2nodes.com] vless-SE-1... #1'
   network: ws
   port: 14430
   server: 193.188.21.253
@@ -32,8 +38,7 @@ proxies:
     path: /vless
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,438,475,480,494,502,514,551|🇸🇪[www.v2nodes.com] vless-SE-1... #19'
-  network: tcp
+  name: '340,475,480,502,514,551|🇸🇪[www.v2nodes.com] vless-SE-1... #20'
   port: 443
   reality-opts:
     public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
@@ -47,9 +52,8 @@ proxies:
   uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
 - client-fingerprint: firefox
   grpc-opts:
-    grpc-mode: gun
     grpc-service-name: swedenfeed
-  name: '340,489,519|🇸🇪 瑞典 | SWE 2 #1'
+  name: 340,489|D🔴🇸🇪hos[🎬🤖📺🎭]_dokng.com_21551e...
   network: grpc
   port: 443
   server: 45.12.63.219
@@ -61,31 +65,29 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: swedenfeed
-  name: '340,494,502,514,519,551|🇸🇪[www.v2nodes.com] vless-SE-1... #20'
+  name: 340|🇸🇪 瑞典 | SWE
   network: grpc
   port: 443
   server: edge-lab-b.10media.top
   servername: edge-lab-b.10media.top
-  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ''
-  name: '340,494,519|🇸🇪 瑞典 | SWE #1 #1'
+  name: '340,502,514,519,551|🏳[www.v2nodes.com] vless- #41 #3'
   network: grpc
   port: 443
   server: edge-lab-b.10media.top
   servername: edge-lab-b.10media.top
-  tls: true
+  tls: false
   type: vless
   uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: ''
-  name: '340,519|🇸🇪 瑞典 | SWE #2 #1'
+  name: '340|🇸🇪 瑞典 | SWE #2'
   network: grpc
   port: 443
   server: 45.12.63.219
@@ -110,13 +112,7 @@ proxies:
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: aes-256-gcm
-  name: 378,537,538|SE-70.34.212.124-0130 | 0.0MB
-  password: AxIYWtskJWIIaefW
-  port: 8388
-  server: 70.34.212.124
-  type: ss
-- name: '378,489,519,537|SE-146.70.242.130-0561 #1'
+- name: '378,489,537|SE-146.70.242.130-0561 #1'
   password: None
   port: 443
   server: 146.70.242.130
@@ -124,7 +120,7 @@ proxies:
   tls: true
   type: http
   username: null
-- name: '378,489,519,537|🇸🇪SE-217.210.129.243-0587 #1'
+- name: '378,489,537|🇸🇪SE-217.210.129.243-0587 #1'
   port: 443
   server: 217.210.129.243
   skip-cert-verify: false
@@ -282,7 +278,7 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 489|C🟠🇸🇪hos[🎬🤖📺🎭]_dokng.com_7dcb6a...
+- name: 489,519|🇸🇪SE_1|1.8MB/s
   port: 443
   server: 79.142.77.63
   skip-cert-verify: true
@@ -308,17 +304,31 @@ proxies:
   tls: true
   type: http
   username: null
-- client-fingerprint: qq
+- alpn:
+  - h2
+  client-fingerprint: chrome
   grpc-opts:
-    grpc-service-name: awarecricketer
-  name: '502,514,551|🇸🇪SE_4|3.3MB/s #2'
+    grpc-service-name: hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts
+  name: '502,514,519,551|🇸🇪[www.v2nodes.com] vless-SE-1... #16'
   network: grpc
-  port: 23688
-  server: ru6.my-cdn.org
-  servername: apple.com
+  port: 443
+  server: 87.242.117.59
+  servername: se1.my-cdn.org
   tls: true
   type: vless
   uuid: c19ecc7f-8312-4d9d-90c9-1a997d82d3c5
+- name: '502,514,519,551|🇸🇪[www.v2nodes.com] vless-SE-1... #18'
+  network: ws
+  port: 14430
+  server: 5.178.109.174
+  servername: 5.178.109.174
+  tls: false
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  ws-opts:
+    headers:
+      Host: 5.178.109.174
+    path: /vless
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '508,509|瑞典 006 #1'
@@ -331,21 +341,19 @@ proxies:
   type: vless
   udp: true
   uuid: 601ad357-c8cf-491f-98e6-62175e130658
-- client-fingerprint: chrome
-  name: '519,523,524|🇷🇺_俄罗斯_173 #1'
+- encryption: none
+  name: '519|🇸🇪[www.v2nodes.com] vless-SE-1... #15'
   network: ws
   port: 443
-  server: 121.127.37.211
-  servername: snip.edgeoneai.cc.cd
-  skip-cert-verify: true
+  server: sub.merky.top
+  servername: sub.merky.top
   tls: true
   type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   ws-opts:
     headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /
+      Host: sub.merky.top
+    path: /merky-connect/de6/
 - client-fingerprint: random
   name: '523,524|🇸🇪_瑞典_93 #1'
   network: ws
