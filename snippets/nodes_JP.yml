@@ -1001,16 +1001,6 @@ proxies:
   type: trojan
   ws-opts:
     path: /
-- client-fingerprint: chrome
-  name: 306,340,378,494,502,508,509,514,519,536,537,551,559,636|🇯🇵 日本 003
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: true
-  sni: 45.32.52.173
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 306,378,508,509,519,536,537,636|🇯🇵 日本 004
@@ -1077,6 +1067,16 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: 340,378,489,494,508,509,536,537,559,636|🇯🇵 日本 003
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  sni: 45.32.52.173
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '340,502,514,551,556,559|🇯🇵 日本|@ripaojiedian #6'
@@ -1141,19 +1141,22 @@ proxies:
   server: 57.180.246.231
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538|🇯🇵JP-149.22.87.240-0131 | 22.0...
+  country: 🇺🇸US
+  name: 356,357,378,435,537,538|🇯🇵JP-149.22.87.240-0131 | 22.0...
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538|🇯🇵JP-149.22.87.241-0137 | 24.1...
+  country: 🇺🇸US
+  name: 356,357,378,435,537,538|🇯🇵JP-149.22.87.241-0137 | 24.1...
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538|🇯🇵JP-149.22.87.204-0199 | 23.4...
+  country: 🇺🇸US
+  name: 356,357,378,435,537,538|🇯🇵JP-149.22.87.204-0199 | 23.4...
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2001,13 +2004,15 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-gcm
-  name: 378,537,538|🇯🇵JP-84.247.155.196-0259 | 2.0...
+  country: ' NO'
+  name: 378,435,537,538|🇯🇵JP-84.247.155.196-0259 | 2.0...
   password: 3eOFeNssde7PYYMv
   port: 80
   server: 84.247.155.196
   type: ss
 - cipher: aes-256-gcm
-  name: 378,537,538|🇯🇵JP-84.247.155.196-0177 | 4.1...
+  country: 🇳🇴 NO
+  name: 378,435,537,538|🇯🇵JP-84.247.155.196-0177 | 4.1...
   password: 3eOFeNssde7PYYMv
   port: 443
   server: 84.247.155.196
@@ -2707,72 +2712,94 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
-- name: '378,436,537|🇵JP-94.177.131.205-5318 #1'
+- country: 🇭🇺HU
+  name: '378,435,436,537|🇵JP-94.177.131.205-5318 #1'
   password: IL37892054
   port: 443
   server: outgoing-ladybird.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇵JP-139.162.100.58-5322 #1'
+  udp: true
+- country: 🇯🇵JP
+  name: '378,435,436,536,537|🇵JP-139.162.100.58-5322 #1'
   password: a196faa4-403e-4a8b-987a-d1789f379685
   port: 49755
   server: 139.162.100.58
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇯🇵JP-52.195.11.84-5323 #1'
+  udp: true
+- country: 🇯🇵JP
+  name: '378,435,436,536,537|🇯🇵JP-52.195.11.84-5323 #1'
   password: JA96378052
   port: 443
   server: 52.195.11.84
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇵JP-18.179.31.199-5324 #1'
+  udp: true
+- country: 🇯🇵JP
+  name: '378,435,436,536,537|🇵JP-18.179.31.199-5324 #1'
   password: ND91608427
   port: 443
   server: 18.179.31.199
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇵JP-3.112.1.122-5325 #1'
+  udp: true
+- country: 🇯🇵JP
+  name: '378,435,436,536,537|🇵JP-3.112.1.122-5325 #1'
   password: JA96378052
   port: 443
   server: 3.112.1.122
   skip-cert-verify: false
   type: trojan
-- name: '378,436,537|🇯🇵JP-95.85.94.214-5326 #1'
+  udp: true
+- country: 🇵JP
+  name: '378,435,436,537|🇯🇵JP-95.85.94.214-5326 #1'
   password: ND91608427
   port: 443
   server: adjusted-labrador.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,537|🇯🇵JP-31.223.184.187-5329 #1'
+  udp: true
+- country: 🇷KR
+  name: '378,435,436,537|🇯🇵JP-31.223.184.187-5329 #1'
   password: ZY07256934
   port: 443
   server: glowing-deer.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,537|🇯🇵JP-94.177.131.233-5341 #1'
+  udp: true
+- country: 🇴RO
+  name: '378,435,436,537|🇯🇵JP-94.177.131.233-5341 #1'
   password: IL37892054
   port: 443
   server: growing-tuna.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,537|🇵JP-85.234.83.36-5349 #1'
+  udp: true
+- country: 🇬SG
+  name: '378,435,436,537|🇵JP-85.234.83.36-5349 #1'
   password: IQ68037294
   port: 443
   server: fun-salmon.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,537|🇵JP-85.234.83.230-5379 #1'
+  udp: true
+- country: 🇸US
+  name: '378,435,436,537|🇵JP-85.234.83.230-5379 #1'
   password: ND91608427
   port: 443
   server: learning-leopard.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,537|🇯🇵JP-64.176.36.61-5380 #1'
+  udp: true
+- country: 🇸US
+  name: '378,435,537|🇯🇵JP-64.176.36.61-5380 #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 443
   server: 64.176.36.61
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf
   name: '378,536,537|🇵JP-54.248.140.33-5426 #1'
   obfs: plain
@@ -2906,6 +2933,34 @@ proxies:
   port: 989
   server: 103.75.118.27
   type: ss
+- country: 🇵 JP
+  name: 435,436|🇯🇵 JP_72
+  password: UX82473651
+  port: 443
+  server: 54.65.177.190
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇵JP
+  name: '435,436|🇯🇵JP_78 #1'
+  password: ND91608427
+  port: 443
+  server: moral-buzzard.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 438,494,559|🇯🇵JP_39|303KB/s|C002-260622 [0...
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  servername: jp01.a0a.xyz
+  tls: false
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    path: /cctv13.m3u8
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -3301,11 +3356,30 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: trojan
+- name: 536|🇯🇵JP-108.61.186.37-5399
+  password: Trojan@82164024
+  port: 443
+  server: jp.tronsg.com
+  type: trojan
 - name: 536|🇯🇵JP-43.207.4.213-5404
   password: d050aca3-9df2-4461-90ec-92373c1d7636
   port: 44184
   server: v2jp.k1.ssnss.live
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 536,559|🏁 未知-B40CAC94
+  network: ws
+  port: 80
+  server: 172.111.146.64
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess/
 - alterId: 0
   cipher: auto
   name: '548|🇯🇵_JP_日本 #7'
@@ -3603,14 +3677,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 22d4ef9c-b269-4f82-9f59-6c2c0d8ce16d
-- name: '566,568|🇳🇬 尼日利亚 | NGA #1'
-  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
-  port: 59014
-  server: fj3x.waimaosass.icu
-  skip-cert-verify: true
-  sni: iosapps.itunes.apple.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'

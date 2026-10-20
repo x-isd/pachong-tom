@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,494,502,514,551,559|🇪🇪[www.v2nodes.com] vless-EE-1... #8'
+  name: '340,494,502,514,551,559|🇪🇪[www.v2nodes.com] vless-EE-1... #5'
   network: tcp
   port: 443
   reality-opts:
@@ -14,7 +14,7 @@ proxies:
   type: vless
   uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
 - client-fingerprint: chrome
-  name: '340,476,481,494,502,514,551,559|🇪🇪[www.v2nodes.com] vless-EE-1... #9'
+  name: '340,476,481,494,559|🇪🇪[www.v2nodes.com] vless-EE-1... #6'
   network: tcp
   port: 25895
   reality-opts:
@@ -41,7 +41,7 @@ proxies:
   tls: true
   type: vless
   uuid: 8da3432a-d4da-4f43-801f-342cda5eae9f
-- name: '378,489,519,537|🇪EE-95.153.31.66-0489 #1'
+- name: '378,489,537|🇪EE-95.153.31.66-0489 #1'
   port: 9443
   server: 95.153.31.66
   skip-cert-verify: false
@@ -85,8 +85,11 @@ proxies:
   port: 989
   server: 37.252.5.234
   type: ss
-- client-fingerprint: chrome
-  name: '438,494|Join+Telegram:@Farah_VPN #1083'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 438,494,559|🇪🇪EE_18|2.4MB/s|S004-260618 [3...
   network: xhttp
   port: 34451
   server: ee-2e06d85dc0.shamanapp.online
@@ -98,7 +101,7 @@ proxies:
   ws-opts:
     headers:
       Host: ee-2e06d85dc0.shamanapp.online
-    path: /ShamanXHTTP2026
+    path: '%2FShamanXHTTP2026'
 - name: 462|爱沙尼亚_塔林
   network: ws
   port: 2087
@@ -396,16 +399,6 @@ proxies:
   uuid: 8dd437e1-5f3f-446e-98fe-aa29b80057fb
   ws-opts:
     path: /vless-ws
-- name: 489|D🔴🇪🇪hos[🎬🤖📺🎭]_dokng.com_6da494...
-  password: ''
-  port: 9443
-  server: 95.153.32.2
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: ''
 - client-fingerprint: chrome
   name: '489,523,524|🇳🇱_荷兰_373 #1'
   network: ws
@@ -422,25 +415,18 @@ proxies:
       Host: snip.edgeoneai.cc.cd
     path: /
   xudp: true
-- client-fingerprint: chrome
-  name: 489|D🔴🇪🇪hos[🎬📺🎭🎪]_dokng.com_07dcbd...
-  network: ws
-  port: 8443
-  server: 109.120.133.26
-  servername: snip.edgeoneai.cc.cd
+- name: 489|C🟠🇪🇪hos[🎬🤖📺🎭]_dokng.com_e2fb21...
+  password: ''
+  port: 9443
+  server: 95.153.32.2
+  skip-cert-verify: true
+  sub_tag: K001-260618
   tls: true
-  type: vless
+  type: http
   udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.118 Safari/537.36
-    path: /fp=chrome
-  xudp: true
+  username: ''
 - client-fingerprint: chrome
-  name: 523,524,566|🇪🇪 爱沙尼亚 | EST
+  name: '519,523,524|🇪🇪_爱沙尼亚_233 #1'
   network: ws
   port: 8443
   server: 114.129.9.132
