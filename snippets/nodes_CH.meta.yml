@@ -1,4 +1,24 @@
 proxies:
+- name: 306,514|🇪🇸 西班牙 | ESP
+  network: ws
+  password: humanity
+  port: 443
+  server: 185.18.250.252
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: '306,514|🇪🇸 西班牙 | ESP #1 #1'
+  password: humanity
+  port: 443
+  server: 185.18.250.252
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
 - name: '340,496,502,514,519,551|🇨🇭192087 | ⚡️Telegram = t.me/v... #4'
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
@@ -19,8 +39,12 @@ proxies:
   type: vless
   uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
 - client-fingerprint: chrome
-  name: '340,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #7'
+  name: '340,494,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #7'
+  network: tcp
   port: 2053
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
   server: 208.69.78.217
   servername: www.apple.com
   tls: true
@@ -89,20 +113,22 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- cipher: aes-128-gcm
-  name: '378,537|🇨CH-86.106.84.194-0400 #1'
-  password: 2bf536a4bd6008511734a505d248de2c
-  port: 13261
-  server: 86.106.84.194
-  type: ss
-- name: '378,536,537|CH-152.67.71.149-2467 #1'
+- name: '378,489,519,537|CH-37.120.213.210-0488 #1'
+  password: None
+  port: 9443
+  server: 37.120.213.210
+  skip-cert-verify: false
+  tls: true
+  type: http
+  username: null
+- name: '378,536,537|CH-152.67.71.149-2538 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-4038 #1'
+  name: '378,537|🇨CH-156.146.62.160-4109 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
@@ -203,14 +229,6 @@ proxies:
   type: vless
   udp: true
   uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
-- name: 489,519|🇨🇭CH_1|4.1MB/s
-  password: None
-  port: 9443
-  server: 37.120.213.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
 - name: 489|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_a1a037...
   port: 9443
   server: 149.88.27.46
@@ -238,7 +256,7 @@ proxies:
   tls: true
   type: http
 - client-fingerprint: chrome
-  name: '523,524|🇨🇭_瑞士_244 #1'
+  name: '523,524|🇨🇭_瑞士_161 #1'
   network: ws
   port: 443
   server: 138.124.36.67
@@ -252,6 +270,21 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fp=chrome
+- client-fingerprint: chrome
+  name: '523,524|🇨🇭_瑞士_227 #1'
+  network: ws
+  port: 443
+  server: 138.124.36.67
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
 - name: 728|🇨🇭 瑞士1🔒
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
