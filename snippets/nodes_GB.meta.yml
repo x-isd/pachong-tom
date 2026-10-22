@@ -1,19 +1,18 @@
 proxies:
 - client-fingerprint: chrome
-  name: '127,426|🇬🇧 GB_1|2.6MB/s|GPT⁺|YT-GB|NF|... #1'
+  name: 127|GB_1|2.6MB/s|GPT⁺|YT-GB|NF|D+|...
   network: ws
   port: 443
   server: 208.103.161.12
   servername: afrcloud2.c01.kr
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
   ws-opts:
     headers:
       Host: afrcloud2.c01.kr
-    path: /2.56.206.114:8443
+    path: '%2F2.56.206.114%3A8443'
 - alterId: 0
   cipher: auto
   name: '128,430|英国2 #2'
@@ -54,52 +53,39 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- encryption: none
-  name: '340,494,502,514,519,551|🇬🇧[www.v2nodes.com] vless-GB-1... #21'
+- alpn:
+  - h3
+  name: '340,502,514,519,551|🇬🇧198213 | ⚡️Telegram = t.me/S... #4'
+  password: Un62Uyh8P2Scl8x-9DSxFnpNO4GBs4pw
+  port: 8090
+  server: 185.139.7.254
+  skip-cert-verify: true
+  sni: 185.139.7.254
+  tls: false
+  type: hysteria2
+- name: '340,482,494,502,514,519,551|🇬🇧[www.v2nodes.com] vless-GB-1... #12'
   network: tcp
   port: 10002
   server: connect.hondamotor.site
+  sub_tag: P002-260618
   tls: false
   type: vless
+  udp: true
   uuid: c6362720-0931-4b91-b187-d8ecf3149734
 - client-fingerprint: chrome
-  name: '340,494,502,514,519,551|🇬🇧[www.v2nodes.com] vless-GB-1... #22'
+  name: '340,482,494,502,514,519,551|🇬🇧[www.v2nodes.com] vless-GB-1... #13'
   network: tcp
-  port: 1222
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  server: 23.81.36.148
-  servername: play.google.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-- client-fingerprint: chrome
-  name: '340,494,502,514,519,551|🇬🇧[www.v2nodes.com] vless-GB-1... #23'
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
-    short-id: d051f678212f9d54
-  server: 51.89.194.151
-  servername: www.apple.com
-  tls: true
-  type: vless
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
-  ws-opts:
-    headers:
-      Host: /@Net2ray
-- client-fingerprint: chrome
-  encryption: none
-  name: '340,494,508,509,519|🇬🇧[www.v2nodes.com] vless-GB-1... #20'
-  network: tcp
+  packet-encoding: xudp
   port: 8443
   server: node-uk.connectsuite.org
+  servername: node-uk.connectsuite.org
   skip-cert-verify: false
+  sub_tag: C002-260622
   tls: true
   type: vless
+  udp: true
   uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 340,502,514,551,580|🇬🇧GB_67|4.1MB/s|M003-260806 01
@@ -113,16 +99,36 @@ proxies:
   tls: false
   type: vless
   uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
-- name: '340,494,508,509,519|🇬🇧 英国 | GBR #1 #1'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '340,438,494,502,514,519,551|🇬🇧 英国 | GBR #1 #3'
   network: tcp
-  port: 22224
-  server: 13.134.170.98
-  tls: false
+  port: 443
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  server: 195.58.134.26
+  servername: login.mskvibe.fyi
+  tls: true
   type: vless
   udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  ws-opts:
-    path: /
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: '340,489,502,514,551,585,586|GB_speednode_0013 #5'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE
+    short-id: fc70174007a393b4
+  server: netherlands02.azotvpn.xyz
+  servername: netherlands02.azotvpn.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: a500be68-4ff6-433b-9968-472be69fab14
 - cipher: aes-128-gcm
   name: 356,357|8
   password: shadowsocks
@@ -196,11 +202,13 @@ proxies:
   server: 145.239.6.202
   type: ss
 - cipher: rc4-md5
-  name: 356|🌀20-GB |  22.3MB/s
+  name: 356,482|🇪DE_22|6.7MB/s|A004-260618 [3e...
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 169.150.210.233
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: aes-128-gcm
   name: '356,357,378,537|🇧GB-212.102.53.81-5267 #1'
   password: shadowsocks
@@ -226,11 +234,13 @@ proxies:
   server: 212.102.53.193
   type: ss
 - cipher: rc4-md5
-  name: 356|🌀32-GB |  26.9MB/s
+  name: 356,482|🇧GB_10|5.8MB/s|A004-260618 [07...
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 146.70.61.18
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 356|🌀34-GB |  1.1MB/s
   password: KixLvKzwjekG00rm
@@ -436,25 +446,31 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.216-0045 | 59.17...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.216-0045 | 59.17...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.216
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.218-0122 | 9.348...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.218-0122 | 9.348...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.218
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.202-0044 | 54.43...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.202-0044 | 54.43...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.202
+  sub_tag: B007-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
   name: '378,435,537|🇬🇧GB-82.38.31.181-0107 #1'
@@ -464,64 +480,80 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.192-0065 | 57.48...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.192-0065 | 57.48...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.192
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.187-0050 | 50.75...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.187-0050 | 50.75...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.187
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.219-0135 | 4.762...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.219-0135 | 4.762...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.219
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇬🇧GB-82.38.31.214-0060 | 60.42...
+  country: 🇬🇧GB
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.214-0060 | 60.42...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.214
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇬🇧GB-82.38.31.212-0051 | 59.91...
+  country: 🇬🇧GB
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.212-0051 | 59.91...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.212
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: '378,435,537|🇬🇧GB-82.38.31.180-0118 #1'
+  name: '378,435,482,537|🇬🇧GB-82.38.31.180-0118 #1'
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.180
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.205-0068 | 59.32...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.205-0068 | 59.32...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.205
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: '378,435,537|🇬🇧GB-82.38.31.179-0121 #1'
+  name: '378,435,482,537|🇬🇧GB-82.38.31.179-0121 #1'
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.179
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇬🇧GB-82.38.31.190-0122 #1'
+  country: 🇬🇧GB
+  name: '378,435,482,537|🇬🇧GB-82.38.31.190-0122 #1'
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.190
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
   name: 378,435,537,538|🇬🇧GB-82.38.31.208-0067 | 59.17...
@@ -531,269 +563,364 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.210-0059 | 58.16...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.210-0059 | 58.16...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.210
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.186-0039 | 56.78...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.186-0039 | 56.78...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.186
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.217-0043 | 55.75...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.217-0043 | 55.75...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.217
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇬🇧GB-82.38.31.184-0047 | 55.32...
+  name: 378,482,537,538|🇬🇧GB-82.38.31.184-0047 | 55.32...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.184
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.206-0042 | 57.87...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.206-0042 | 57.87...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.206
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: '378,435,537|🇬🇧GB-82.38.31.189-0130 #1'
+  name: '378,435,482,537|🇬🇧GB-82.38.31.189-0130 #1'
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.189
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.203-0054 | 61.71...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.203-0054 | 61.71...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.203
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.193-0037 | 59.20...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.193-0037 | 59.20...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.193
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.191-0036 | 55.51...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.191-0036 | 55.51...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.191
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.194-0038 | 54.87...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.194-0038 | 54.87...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.194
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.207-0074 | 55.58...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.207-0074 | 55.58...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.207
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.42-0107 | 15.337...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.42-0107 | 15.337...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.42
+  sub_tag: B007-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.2-0112 | 15.162M...
+  country: 🇬🇧GB
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.2-0112 | 15.162M...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.2
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.34-0114 | 15.804...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.34-0114 | 15.804...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.34
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.10-0109 | 15.84M...
+  country: 🇧GB
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.10-0109 | 15.84M...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.10
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.66-0097 | 16.395...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.66-0097 | 16.395...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.66
+  sub_tag: B007-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.155-0091 | 14.86...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.155-0091 | 14.86...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.155
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.3-0095 | 15.44MB
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.3-0095 | 15.44MB
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.3
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.149-0085 | 15.87...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.149-0085 | 15.87...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.149
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.35-0106 | 16.431...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.35-0106 | 16.431...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.35
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.47-0102 | 15.523...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.47-0102 | 15.523...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.47
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.48-0090 | 15.494...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.48-0090 | 15.494...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.48
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.62-0092 | 15.596...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.62-0092 | 15.596...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.62
+  sub_tag: M001-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇬🇧GB-178.83.185.156-0108 | 17....
+  name: 378,482,537,538|🇬🇧GB-178.83.185.156-0108 | 17....
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 178.83.185.156
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.174-0105 | 15.68...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.174-0105 | 15.68...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 443
   server: 82.38.31.174
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.174-0098 | 15.61...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.174-0098 | 15.61...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.174
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.46-0084 | 15.629...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.46-0084 | 15.629...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.46
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇬🇧GB-82.38.31.159-0094 | 17.91...
+  name: 378,482,537,538|🇬🇧GB-82.38.31.159-0094 | 17.91...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 443
   server: 82.38.31.159
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.82-0111 | 15.591...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.82-0111 | 15.591...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.82
+  sub_tag: B007-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.61-0103 | 15.721...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.61-0103 | 15.721...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.61
+  sub_tag: M001-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.49-0086 | 15.872...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.49-0086 | 15.872...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.49
+  sub_tag: B007-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.162-0100 | 16.79...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.162-0100 | 16.79...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 443
   server: 82.38.31.162
+  sub_tag: B007-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.16-0099 | 16.469...
+  country: 🇧GB
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.16-0099 | 16.469...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.16
+  sub_tag: A003-260618
   type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 378,537,538|🇬🇧GB-149.102.132.184-0127 | 3....
+  name: 378,482,537,538|🇬🇧GB-149.102.132.184-0127 | 3....
   password: g5h5jleTRSyO3Rk4
   port: 443
   server: 149.102.132.184
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇬🇧GB-82.38.31.176-0053 | 0.223...
+  country: 🇬🇧GB
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.176-0053 | 0.223...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.176
+  sub_tag: A003-260618
   type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 378,482,537,538|🇬🇧GB-149.102.132.184-0136 | 2....
+  password: g5h5jleTRSyO3Rk4
+  port: 80
+  server: 149.102.132.184
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇧BG
+  name: 378,435,482,537,538|🇬🇧GB-94.156.250.148-0124 | 1.8...
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 94.156.250.148
+  sub_tag: A004-260618
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇬🇧GB-82.38.31.170-0104 | 15.65...
+  name: 378,482,537,538|🇬🇧GB-82.38.31.170-0104 | 15.65...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 443
   server: 82.38.31.170
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇬🇧GB-82.38.31.171-0113 | 15.30...
+  name: 378,482,537,538|🇬🇧GB-82.38.31.171-0113 | 15.30...
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.171
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: 378,435,537,538|🇬🇧GB-82.38.31.199-0143 | 4.451...
+  name: 378,435,482,537,538|🇬🇧GB-82.38.31.199-0143 | 4.451...
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.199
+  sub_tag: A004-260618
   type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 378,482,537,538|🇬🇧GB-158.173.24.73-0164 | 0.0M...
+  password: shadowsocks
+  port: 443
+  server: 158.173.24.73
+  sub_tag: A004-260618
+  type: ss
+  udp: true
 - cipher: rc4-md5
-  name: 378,537,538|🇬🇧GB-146.70.61.37-0169 | 0.0MB
+  name: 378,482,537,538|🇬🇧GB-146.70.61.37-0169 | 0.0MB
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 146.70.61.37
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '378,537|🇧GB-78.129.253.9-0308 #1'
   password: G!yBwPWH3Vao
@@ -825,13 +952,15 @@ proxies:
   uuid: 0f95cb36-4f7d-45be-b44d-d7a4f221ad49
   ws-opts:
     path: /vmess
-- name: '378,489,519,537|🇧GB-84.17.50.129-0554 #1'
+- name: '378,482,489,519,537|🇧GB-84.17.50.129-0554 #1'
   port: 9443
   server: 84.17.50.129
   skip-cert-verify: false
+  sub_tag: R002-260618
   tls: true
   type: http
-- name: '378,489,519,537|🇧GB-185.164.138.156-0584 #1'
+  udp: true
+- name: '378,489,537|🇧GB-185.164.138.156-0584 #1'
   password: None
   port: 443
   server: 185.164.138.156
@@ -839,21 +968,25 @@ proxies:
   tls: true
   type: http
   username: null
-- name: '378,489,519,537|🇧GB-37.120.233.18-0594 #1'
+- name: '378,482,537|🇧GB-37.120.233.18-0594 #1'
   port: 443
   server: 37.120.233.18
   skip-cert-verify: false
+  sub_tag: R002-260618
   tls: true
   type: http
-- name: '378,489,519,537|🇬🇧GB-37.120.233.50-0600 #1'
+  udp: true
+- name: '378,482,489,537|🇬🇧GB-37.120.233.50-0600 #1'
   password: None
   port: 443
   server: 37.120.233.50
   skip-cert-verify: false
+  sub_tag: P002-260618
   tls: true
   type: http
+  udp: true
   username: null
-- name: '378,489,519,537|🇬🇧GB-212.102.63.31-0613 #1'
+- name: '378,482,489,519,537|🇬🇧GB-212.102.63.31-0613 #1'
   password: None
   port: 443
   server: 212.102.63.31
@@ -862,30 +995,37 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: '378,489,519,537|🇬🇧GB-84.17.50.193-0617 #1'
+  username: null
+- name: '378,482,489,519,537|🇬🇧GB-84.17.50.193-0617 #1'
   port: 443
   server: 84.17.50.193
   skip-cert-verify: false
-  tls: true
-  type: http
-- name: '378,489,519,537,585,586|GB_speednode_0014 #1'
-  port: 8443
-  server: 198.105.124.180
-  skip-cert-verify: true
+  sub_tag: R002-260618
   tls: true
   type: http
   udp: true
-- name: '378,489,519,537|🇬🇧GB-84.233.178.33-0630 #1'
+- name: '378,482,519,537,585,586|GB_speednode_0014 #2'
+  port: 8443
+  server: 198.105.124.180
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '378,482,489,519,537|🇬🇧GB-84.233.178.33-0630 #1'
   port: 9443
   server: 84.233.178.33
   skip-cert-verify: false
+  sub_tag: R002-260618
   tls: true
   type: http
-- name: '378,519,537|🇬🇧GB-212.102.63.61-0646 #1'
+  udp: true
+- name: '378,482,537|🇬🇧GB-212.102.63.61-0646 #1'
   password: None
   port: 443
   server: 212.102.63.61
   skip-cert-verify: false
+  sub_tag: P002-260618
   tls: true
   type: http
   udp: true
@@ -904,7 +1044,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇦 加拿大 013
+  name: 378,508,509,536,537,636|🇨🇦 加拿大 014
   network: ws
   port: '443'
   server: 68.168.31.196
@@ -919,7 +1059,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 400
+  name: 378,508,509,536,537,636|🇺🇸 美国 398
   network: ws
   port: '33018'
   server: vtors43.net2vip.com
@@ -934,7 +1074,7 @@ proxies:
     path: /
 - alterId: 4
   cipher: auto
-  name: 378,508,509,536,537,636|🇬🇧 英国 014
+  name: 378,508,509,536,537,636|🇬🇧 英国 013
   network: ws
   port: '443'
   server: 146.70.46.68
@@ -964,7 +1104,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: 378,494,508,509,536,537,636|🇺🇸 美国 525
+  name: 378,494,508,509,536,537,636|🇺🇸 美国 492
   network: ws
   port: '443'
   server: 186.190.211.67
@@ -1798,8 +1938,23 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
+- client-fingerprint: chrome
+  name: 426|🇬🇧 GB_1|2.6MB/s|GPT⁺|YT-GB|NF|...
+  network: ws
+  port: 443
+  server: 208.103.161.12
+  servername: afrcloud2.c01.kr
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  ws-opts:
+    headers:
+      Host: afrcloud2.c01.kr
+    path: /2.56.206.114:8443
 - country: 🇧GB
-  name: '435,436|🇬🇧GB_55 #1'
+  name: '435,436|🇬🇧GB_56 #1'
   password: 11559103-9993-4d00-b599-d6bcd8db2197
   port: 443
   server: free-v7-09.elbrusway.online
@@ -1808,14 +1963,6 @@ proxies:
   type: trojan
   udp: true
 - country: 🇬🇧GB
-  name: 435,436|🇬🇧GB_56
-  password: LSS6HLnp7IeEEJUcox
-  port: 443
-  server: nl-1.tr202607.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇧GB
   name: 435,436|🇬🇧GB_57
   password: PD07395842
   port: 443
@@ -1823,41 +1970,29 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #3594'
+- name: '438,494|Join+Telegram:@Farah_VPN #1180'
   network: tcp
-  port: 43000
-  reality-opts:
-    public-key: lmT0SFJL1A8_ariRWL65dhShaqFbpitjGanv7EFnoR0
-    short-id: 725e6ea0
-  server: 144.48.11.97
-  servername: 144.48.11.97
+  port: 22222
+  server: 51.24.181.220
   tls: false
   type: vless
-  uuid: 4799abf0-d0d9-4a46-9c31-b1f76ae00e1e
-- name: '438,494|Join+Telegram:@Farah_VPN #2428'
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: '438,494,566|🇬🇧 英国 | GBR #2'
   network: tcp
-  port: 443
-  server: 18.175.117.127
+  port: 22223
+  server: 51.24.181.220
   tls: false
   type: vless
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  ws-opts:
-    headers:
-      Host: play.googleapis.com
-- alpn:
-  - http/1.1
-  name: '438|🇬🇧GB_6|1.3MB/s | 更多节点: https:/...'
-  network: ws
-  password: xwhfg0wu1wxv377f
-  port: 2087
-  server: 216.24.57.225
-  skip-cert-verify: true
-  sni: neo.xnetaro.ir
-  type: trojan
-  ws-opts:
-    path: '%2Fwss'
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 438,494,566|🇬🇧 英国 | GBR 2
+  network: tcp
+  port: 22224
+  server: 51.24.181.220
+  tls: false
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: '455,457,458|🇬🇧_GB_英国 #2'
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
@@ -1868,22 +2003,22 @@ proxies:
   type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 456,459,494,508,509,636|🇬🇧 英国 022
+  name: 456,459,494,508,509,636|🇬🇧 英国 021
   network: tcp
   port: '180'
   server: 82.198.246.37
-  servername: null
+  servername: fra5.chasem2026sud.com
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 459,494,508,509,636|🇬🇧 英国 020
+  name: 459,494,508,509,574,636|🇬🇧 英国 019
   network: tcp
   port: '180'
   server: 82.198.246.97
-  servername: support.zoom.us.tianjiu.pages.dev
+  servername: 82.198.246.97
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -2339,7 +2474,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #2048'
+  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #2670'
   network: ws
   port: '2086'
   server: 172.64.233.43
@@ -2381,7 +2516,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #2123'
+  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #3084'
   network: ws
   port: '2086'
   server: 172.64.233.17
@@ -2610,73 +2745,623 @@ proxies:
   uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
   ws-opts:
     path: /8f2690e2d016
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: '475,480|🇬🇧GB英国丨yoyapai.com_3 #1'
-  port: 443
-  reality-opts:
-    public-key: W7zjZJiEbAN6b-KkXWtk5dJ513BFDeKMSxgdiCUOWBo
-    short-id: a1ab5a56bcca
-  server: 217.179.221.82
-  servername: ve.cishosts.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee78dc0c-fcf8-4651-92a5-a7ae1476f2a4
-- client-fingerprint: chrome
-  name: 475,480,580|🇫🇷FR_1120|1.3MB/s|M003-260806 ...
+- name: '475,480|🇧GB英国丨yoyapai.com_3 #1'
   network: ws
-  port: 443
-  server: 162.159.152.4
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  port: 8880
+  server: 89.117.112.30
   skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  ws-opts:
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-    path: /
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.Y0-j5e-CpehUKzhEeat1dTYevroKyHV4g9HML3ujmlQ
-  name: '476,481,494|Join+Telegram:@Farah_VPN #2695'
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: IqFTx4k5VQydmffvavaOHDXBtdgDxX26A6NtsVvDfhw
-    short-id: d485c3d5248d6b51
-  server: 2.28.142.170
-  servername: germanytest.tulnaro.ir
-  skip-cert-verify: true
   tls: false
   type: vless
   udp: true
-  uuid: f774f037-6320-42e3-a97b-6d4a1f018dd5
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: germanytest.tulnaro.ir
+      Host: vms.lifetime11.workers.dev
     path: /
-  xhttp-opts:
-    host: germanytest.tulnaro.ir
-    mode: auto
-    path: /
-- alpn:
-  - h3
-  congestion-controller: bbr
-  disable-sni: false
-  fingerprint: 84c855b4a09bba0ff518c778c0540da87acb9871dd3ae6dc5e8f78423e7ede05
-  name: 489|C🟠🇬🇧hos[🎬🤖📺🎭]_dokng.com_388f4e...
-  password: bad7770a-ea0e-43cb-8aec-414c4e9b6f08
-  port: 52892
-  reduce-rtt: false
-  server: 85.159.93.148
+- client-fingerprint: chrome
+  encryption: none
+  name: 476,481,482,489,523,524,566|🇬🇧 英国 | GBR 3
+  network: ws
+  packet-encoding: xudp
+  port: 443
+  server: 104.194.140.26
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  sub_tag: F003-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fp=chrome
+  xudp: true
+- client-fingerprint: chrome
+  name: '476,481,523,524|🇬🇧_英国_240 #1'
+  network: ws
+  port: 52014
+  server: 57.129.130.34
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53367702-4b8d-431a-a193-34d7d057a065
+  ws-opts:
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+    path: /@Marisa_kristi
+- client-fingerprint: chrome
+  encryption: none
+  name: 482,580|🇬🇧GB_24|304KB/s 01
+  network: ws
+  packet-encoding: xudp
+  port: 52014
+  server: 57.129.130.200
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: b1ecd06b-a931-47a2-8f48-d1d133d2b4f3
+  ws-opts:
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- client-fingerprint: chrome
+  name: 482,580|🇬🇧GB_33|454KB/s|M003-260806 01
+  network: ws
+  port: 52014
+  server: 57.129.130.200
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 93c53b59-1523-4621-9528-77b016a28304
+  ws-opts:
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+    path: /@Marisa_kristi
+- client-fingerprint: unsafe
+  encryption: none
+  name: 482|🇧GB_20|755KB/s|S004-260618 [13...
+  network: ws
+  packet-encoding: xudp
+  port: 443
+  server: 143.110.171.182
+  servername: snip.edgeoneai.cc.cd
+  sub_tag: S004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX2 Build/HUAWEITRT-LX2; wv)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile
+        Safari/537.36
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+  xudp: true
+- name: 482,489|C🟠🇬🇧hos[🎬🤖📺🎭]_dokng.com_26bd59...
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 482|🇧GB_13|698KB/s|R002-260618 [2a...
+  port: 443
+  server: 185.164.138.156
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 482,580|🇬🇧GB_19|162KB/s|M003-260806 01
+  network: ws
+  packet-encoding: xudp
+  port: 52014
+  server: 57.129.130.57
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 201e0019-2e79-4147-8a09-e510d630abeb
+  ws-opts:
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 482,580|🇬🇧GB_39|420KB/s|M003-260806 01
+  network: ws
+  packet-encoding: xudp
+  port: 52014
+  server: 57.129.130.57
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 82fc8761-470b-4022-89da-ce5412e8bb0a
+  ws-opts:
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 482,580|🇬🇧GB_72|460KB/s|M003-260806 01
+  network: ws
+  packet-encoding: xudp
+  port: 52014
+  server: 57.129.130.10
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
+  ws-opts:
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 482,580|🇬🇧GB_81|491KB/s|M002-260618 01
+  network: ws
+  packet-encoding: xudp
+  port: 31867
+  server: 129.151.64.169
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  sub_tag: M002-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
+  ws-opts:
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- client-fingerprint: chrome
+  name: 482|🇬🇧GB_47|618KB/s|C002-260622 [a...
+  network: ws
+  packet-encoding: xudp
+  port: 443
+  server: uk1.connectsuite.org
+  servername: uk1.connectsuite.org
+  sub_tag: C002-260622
+  tls: true
+  type: vless
+  udp: true
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L03 Build/HUAWEICAM-L03) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /cdn-cgi/ws
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 482,580|🇬🇧GB_51|590KB/s|M003-260806 01
+  network: ws
+  packet-encoding: xudp
+  port: 31867
+  server: 129.151.64.169
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 112c9db0-af6f-48b0-a59f-7677bed8e2d7
+  ws-opts:
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- client-fingerprint: chrome
+  name: 482,580|🇬🇧GB_41|426KB/s|F003-260618 01
+  network: ws
+  packet-encoding: xudp
+  port: 52014
+  server: 57.129.130.57
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  sub_tag: F003-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 98286408-b683-4c0f-96c5-7e00da649d90
+  ws-opts:
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 482,580|🇬🇧GB_45|504KB/s|M003-260806 01
+  network: ws
+  packet-encoding: xudp
+  port: 52014
+  server: 57.129.130.57
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4c6609bf-8457-4260-b4fa-321379e57a4e
+  ws-opts:
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- encryption: none
+  name: '482,494,508,509|英国 047 #1'
+  network: tcp
+  packet-encoding: xudp
+  port: 22223
+  server: 18.134.224.162
   skip-cert-verify: false
-  sni: www.bing.com
-  type: tuic
-  udp-relay-mode: native
-  uuid: bad7770a-ea0e-43cb-8aec-414c4e9b6f08
+  sub_tag: B007-260618
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
+- client-fingerprint: chrome
+  name: 482|🇧GB_43|975KB/s|A004-260618 [65...
+  network: ws
+  packet-encoding: xudp
+  port: 52014
+  server: 57.129.130.57
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  sub_tag: A004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 04d2aebd-246f-4348-805f-a8e6840365fc
+  ws-opts:
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/49.0.2623.112 Safari/537.36
+    path: /@Marisa_kristi
+  xudp: true
+- cipher: rc4-md5
+  name: 482|🇧GB_53|6.4MB/s|A004-260618 [65...
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 98.98.207.163
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 482,580|🇬🇧GB_52|334KB/s|F003-260618 01
+  network: ws
+  packet-encoding: xudp
+  port: 31867
+  server: 129.151.64.169
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  sub_tag: F003-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0ff1bcdb-8dcc-4b05-93df-09f028330184
+  ws-opts:
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 482|🇧GB_37|1.0MB/s|V005-260618 [76...
+  network: ws
+  packet-encoding: xudp
+  port: 31867
+  server: 129.151.64.169
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  sub_tag: V005-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: d03af339-e245-4709-9bec-57a5e2d502ea
+  ws-opts:
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /@Marisa_kristi
+  xudp: true
+- name: 482|🇧GB_16|1.0MB/s|R002-260618 [78...
+  port: 9443
+  server: 84.17.50.214
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: 482|🇬🇧GB_42|747KB/s|A004-260618 [7...
+  network: ws
+  packet-encoding: xudp
+  port: 31867
+  server: 129.151.64.169
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  sub_tag: A004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 031581a4-401e-4562-92a0-d22c2fddc7b1
+  ws-opts:
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /@Marisa_kristi
+  xudp: true
+- cipher: rc4-md5
+  name: 482|🇧GB_54|1.3MB/s|A004-260618 [7e...
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 98.98.142.161
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 482|🇧GB_17|729KB/s|P002-260618 [85...
+  network: ws
+  port: 443
+  server: 159.65.51.189
+  servername: ccc.010304.xyz
+  sub_tag: P002-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+- cipher: rc4-md5
+  name: 482|🇬🇧GB_51|3.8MB/s|A004-260618 [8...
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.46.214
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 482,489,519|🇬🇧GB_7|1.5MB/s
+  password: None
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  username: null
+- client-fingerprint: chrome
+  name: 482,580|🇬🇧GB_37|291KB/s|F003-260618 01
+  network: ws
+  packet-encoding: xudp
+  port: 52014
+  server: 57.129.130.63
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  sub_tag: F003-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
+  ws-opts:
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- encryption: none
+  name: 482|🇬🇧GB_64|4.6MB/s|B007-260618 [a...
+  network: tcp
+  packet-encoding: xudp
+  port: 22224
+  server: 18.171.196.218
+  sub_tag: B007-260618
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
+- encryption: none
+  name: 482|🇬🇧GB_63|5.5MB/s|B007-260618 [a...
+  network: tcp
+  packet-encoding: xudp
+  port: 22222
+  server: 18.171.196.218
+  sub_tag: B007-260618
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
+- cipher: rc4-md5
+  name: 482|🇧GB_52|4.4MB/s|A004-260618 [b5...
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.46.199
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 482|🇧GB_65|1.7MB/s|K001-260618 [c1...
+  network: ws
+  packet-encoding: xudp
+  port: 8080
+  server: 23.81.36.148
+  sub_tag: K001-260618
+  type: vless
+  udp: true
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+    path: /
+  xudp: true
+- name: 482|🇬🇧GB_15|1.0MB/s|R002-260618 [c...
+  port: 443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 482,580|🇬🇧GB_54|466KB/s|V005-260618 01
+  network: ws
+  packet-encoding: xudp
+  port: 31867
+  server: 129.151.64.169
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  sub_tag: V005-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: bd01efed-f999-41a5-bbb1-3d2357647f11
+  ws-opts:
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- encryption: none
+  name: '482,494,508,509|英国 048 #1'
+  network: tcp
+  packet-encoding: xudp
+  port: 22224
+  server: 18.134.224.162
+  skip-cert-verify: false
+  sub_tag: B007-260618
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 482,580|🇬🇧GB_20|415KB/s|M003-260806 01
+  network: ws
+  packet-encoding: xudp
+  port: 52014
+  server: 57.129.130.57
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 091ea5fd-4e8d-4459-90af-e4d10179efff
+  ws-opts:
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- client-fingerprint: chrome
+  name: 482|🇧GB_45|882KB/s|A004-260618 [d9...
+  network: ws
+  packet-encoding: xudp
+  port: 31867
+  server: 129.151.64.169
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  sub_tag: A004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d85c2e3-cb03-4ec4-b068-bd6ad778c02f
+  ws-opts:
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
+        (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
+    path: /@Marisa_kristi
+  xudp: true
+- client-fingerprint: chrome
+  name: 482,580|🇬🇧GB_36|388KB/s|F003-260618 01
+  network: ws
+  packet-encoding: xudp
+  port: 486
+  server: 46.101.46.169
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  sub_tag: F003-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 16bf3359-e7d8-4de6-86a0-6d65cf793b56
+  ws-opts:
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- client-fingerprint: chrome
+  name: 482,580|🇬🇧GB_43|182KB/s|F003-260618 01
+  network: ws
+  packet-encoding: xudp
+  port: 52014
+  server: 57.129.130.10
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  sub_tag: F003-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 395bab7e-302a-42b4-bac7-8acb7d36fdf3
+  ws-opts:
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- encryption: none
+  name: '482,494,508,509|英国 046 #1'
+  network: tcp
+  packet-encoding: xudp
+  port: 22222
+  server: 18.134.224.162
+  skip-cert-verify: false
+  sub_tag: B007-260618
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  xudp: true
+- client-fingerprint: chrome
+  name: 482,580|🇬🇧GB_38|426KB/s|F003-260618 01
+  network: ws
+  packet-encoding: xudp
+  port: 7443
+  server: 178.83.110.32
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  sub_tag: F003-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9bb71136-2380-4b6a-97be-1d4ba11d5a55
+  ws-opts:
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+    path: /@Marisa_kristi
+  xudp: true
+- name: 489|D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_045fb9...
+  port: 9443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
 - name: 489|D🔴🇬🇧hos[🤖📺🎭🎪]_dokng.com_2b887a...
   password: None
   port: 443
@@ -2695,65 +3380,7 @@ proxies:
   tls: true
   type: http
   username: null
-- client-fingerprint: chrome
-  encryption: none
-  name: '489,519,523,524|🇬🇧_英国_223 #1'
-  network: ws
-  port: 443
-  server: 104.194.140.26
-  servername: snip.edgeoneai.cc.cd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fp=chrome
-  xudp: true
-- name: 489|C🟠🇬🇧hos[🤖📺🎭🎪]_dokng.com_f5da27...
-  port: 443
-  server: 185.164.138.156
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 489|D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_e81383...
-  password: ''
-  port: 443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 489|D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_485cc6...
-  port: 443
-  server: 212.102.63.31
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 489|D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_009f2d...
-  password: None
-  port: 443
-  server: 212.102.63.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 489|C🟠🇬🇧hos[🎬🤖📺🎭]_dokng.com_26bd59...
-  port: 443
-  server: 212.102.63.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 489,519|GB_speednode_0010
-  port: 443
-  server: 212.102.63.61
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 489|A🟢🇬🇧res[🎬🤖📺🎭]_dokng.com_85463d...
+- name: 489,519|🇬🇧GB_8|1.7MB/s
   password: None
   port: 9443
   server: 84.17.50.214
@@ -2761,43 +3388,35 @@ proxies:
   tls: true
   type: http
   username: null
-- client-fingerprint: chrome
-  name: '489,523,524|🇩🇪_德国_201 #1'
-  network: ws
-  port: 443
-  server: 72.56.106.210
-  servername: snip.edgeoneai.cc.cd
+- name: 489|A🟢🇬🇧res[🎬🤖📺🎭]_dokng.com_6e1909...
+  password: None
+  port: 8443
+  server: 198.105.124.180
   skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fp=chrome
-  xudp: true
-- name: '502,514,551|🇬🇧[www.v2nodes.com] vless-GB-1... #26'
+  type: http
+  username: null
+- name: 489|D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_485cc6...
   port: 443
-  server: 159.65.51.189
-  tls: false
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-- http-opts:
-    headers:
-      Host:
-      - play.googleapis.com
-    method: GET
-    path:
-    - /
-  name: '508,509|英国 004 #1'
-  network: http
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 489,519|🇬🇧GB_6|2.0MB/s
   port: 443
-  server: 51.49.134.60
-  tls: false
-  type: vless
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
   udp: true
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+- name: 489|C🟠🇬🇧hos[🎬🤖📺🎭]_dokng.com_60e0e1...
+  password: None
+  port: 9443
+  server: 84.17.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
 - alterId: 64
   cipher: auto
   h2-opts:
@@ -2826,7 +3445,7 @@ proxies:
   tls: true
   type: vmess
   uuid: 11ae0edd-2f63-4495-8683-037abbda9986
-- name: '508,509|英国 025 #1'
+- name: '508,509|英国 024 #1'
   network: grpc
   port: 2085
   server: 37.221.110.245
@@ -2836,46 +3455,48 @@ proxies:
   type: vless
   udp: true
   uuid: 02c05088-fcb4-4366-b8d3-98d68c7bdb98
+- client-fingerprint: chrome
+  name: '508,509|英国 028 #1'
+  network: ws
+  port: 20202
+  server: 188.166.148.14
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve
 - name: '508,509|英国 030 #1'
   network: tcp
-  port: 2125
-  server: 2.28.232.213
+  port: 443
+  server: 178.62.33.225
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 3430793e-837c-47f2-8c8c-a3520d4217c2
-- name: 508,509,580|🇫🇷FR_1751|467KB/s|C002-260622 ...
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+- client-fingerprint: chrome
+  name: '508,509|英国 036 #1'
   network: ws
-  port: 8880
-  server: 45.12.30.30
-  servername: vms.lifetime28.workers.dev
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime28.workers.dev
-    path: /
-- name: '508,509|英国 032 #1'
-  network: ws
-  port: 8880
-  server: 45.12.30.40
-  servername: vms.lifetime28.workers.dev
+  port: 443
+  server: 77.239.104.82
+  servername: vp58.cc.cd
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   ws-opts:
     headers:
-      Host: vms.lifetime28.workers.dev
-    path: /?ed
+      Host: vp58.cc.cd
+    path: /Telegram
 - client-fingerprint: chrome
   name: '508,509|英国 039 #1'
   network: ws
@@ -2892,57 +3513,28 @@ proxies:
     headers:
       Host: alfi.yas-nowin.ir
     path: /?ed=2048
-- name: '508,509|英国 056 #1'
-  network: tcp
-  port: 22222
-  server: 51.44.137.10
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: '508,509|英国 057 #1'
-  network: tcp
-  port: 22223
-  server: 51.44.146.230
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: '508,509|英国 060 #1'
+- name: '508,509|英国 049 #1'
   network: tcp
   port: 22224
-  server: 51.44.147.45
+  server: 18.135.18.254
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: '508,509|英国 063 #1'
+- name: '508,509|英国 053 #1'
   network: tcp
   port: 22224
-  server: 51.44.187.221
+  server: 3.11.145.4
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: '508,509|英国 064 #1'
-  network: tcp
-  port: 22222
-  server: 51.45.54.244
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: '508,509|英国 066 #1'
+- client-fingerprint: chrome
+  name: '508,509|英国 070 #1'
   network: ws
   port: 443
   server: 2.26.30.216
@@ -2956,7 +3548,35 @@ proxies:
   ws-opts:
     headers:
       Host: edgetunnel-4uw.pages.dev
-    path: /fp=chrome
+    path: /
+- client-fingerprint: chrome
+  name: '519|🇬🇧[www.v2nodes.com] vless-GB-1... #9'
+  network: ws
+  port: 443
+  server: 146.75.59.186
+  servername: firefox.com
+  tls: true
+  type: vless
+  uuid: 153900df-5824-4b55-98c4-418c5baea523
+  ws-opts:
+    headers:
+      Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.
+    path: /
+- client-fingerprint: chrome
+  name: '523,524|🇬🇧_英国_43 #1'
+  network: ws
+  port: 443
+  server: 45.152.65.100
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
 - client-fingerprint: chrome
   name: '523,524|🇬🇧_英国_221 #1'
   network: ws
@@ -2972,36 +3592,6 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /
-- client-fingerprint: chrome
-  name: '523,524|🇬🇧_英国_118 #1'
-  network: ws
-  port: 8443
-  server: 45.152.65.137
-  servername: snip.edgeoneai.cc.cd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fp=chrome
-- client-fingerprint: chrome
-  name: '523,524|🇬🇧_英国_240 #1'
-  network: ws
-  port: 52014
-  server: 57.129.130.34
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 53367702-4b8d-431a-a193-34d7d057a065
-  ws-opts:
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-    path: /@Marisa_kristi
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇧英国家宽 01 | 1x UK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3371,32 +3961,6 @@ proxies:
   tls: false
   type: vless
   uuid: 10000025-9365-7424-f000-93edfcf6a020
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_19|162KB/s|M003-260806 01
-  network: ws
-  port: 52014
-  server: 57.129.130.57
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  tls: true
-  type: vless
-  uuid: 201e0019-2e79-4147-8a09-e510d630abeb
-  ws-opts:
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_24|304KB/s 01
-  network: ws
-  port: 52014
-  server: 57.129.130.200
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  tls: true
-  type: vless
-  uuid: b1ecd06b-a931-47a2-8f48-d1d133d2b4f3
-  ws-opts:
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-    path: /@Marisa_kristi
 - name: 580|🇬🇧GB_32|3.6MB/s|A004-260618 01
   password: 3b8c82ed-fe66-472d-915e-034ccb57103f
   port: 443
@@ -3405,19 +3969,6 @@ proxies:
   sni: labs.frkn.org
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_33|454KB/s|M003-260806 01
-  network: ws
-  port: 52014
-  server: 57.129.130.200
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  tls: true
-  type: vless
-  uuid: 93c53b59-1523-4621-9528-77b016a28304
-  ws-opts:
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-    path: /@Marisa_kristi
 - client-fingerprint: chrome
   name: 580|🇬🇧GB_35|1.6MB/s|A001-260618 01
   network: ws
@@ -3432,71 +3983,6 @@ proxies:
       Host: vp58.cc.cd
     path: /Telegram🇨🇳 @VPNine1
 - client-fingerprint: chrome
-  name: 580|🇬🇧GB_36|388KB/s|F003-260618 01
-  network: ws
-  port: 486
-  server: 46.101.46.169
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  tls: true
-  type: vless
-  uuid: 16bf3359-e7d8-4de6-86a0-6d65cf793b56
-  ws-opts:
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_37|291KB/s|F003-260618 01
-  network: ws
-  port: 52014
-  server: 57.129.130.63
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  tls: true
-  type: vless
-  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
-  ws-opts:
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_38|426KB/s|F003-260618 01
-  network: ws
-  port: 7443
-  server: 178.83.110.32
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  tls: true
-  type: vless
-  uuid: 9bb71136-2380-4b6a-97be-1d4ba11d5a55
-  ws-opts:
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_39|420KB/s|M003-260806 01
-  network: ws
-  port: 52014
-  server: 57.129.130.57
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  tls: true
-  type: vless
-  uuid: 82fc8761-470b-4022-89da-ce5412e8bb0a
-  ws-opts:
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_41|426KB/s|F003-260618 01
-  network: ws
-  port: 52014
-  server: 57.129.130.57
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  tls: true
-  type: vless
-  uuid: 98286408-b683-4c0f-96c5-7e00da649d90
-  ws-opts:
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
   name: 580|🇬🇧GB_42|372KB/s|M003-260806 01
   network: ws
   port: 52014
@@ -3508,32 +3994,6 @@ proxies:
   ws-opts:
     headers:
       Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_43|182KB/s|F003-260618 01
-  network: ws
-  port: 52014
-  server: 57.129.130.10
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  type: vless
-  uuid: 395bab7e-302a-42b4-bac7-8acb7d36fdf3
-  ws-opts:
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_45|504KB/s|M003-260806 01
-  network: ws
-  port: 52014
-  server: 57.129.130.57
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  tls: true
-  type: vless
-  uuid: 4c6609bf-8457-4260-b4fa-321379e57a4e
-  ws-opts:
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
     path: /@Marisa_kristi
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -3581,45 +4041,6 @@ proxies:
   ws-opts:
     headers:
       Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_51|590KB/s|M003-260806 01
-  network: ws
-  port: 31867
-  server: 129.151.64.169
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  tls: true
-  type: vless
-  uuid: 112c9db0-af6f-48b0-a59f-7677bed8e2d7
-  ws-opts:
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_52|334KB/s|F003-260618 01
-  network: ws
-  port: 31867
-  server: 129.151.64.169
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  tls: true
-  type: vless
-  uuid: 0ff1bcdb-8dcc-4b05-93df-09f028330184
-  ws-opts:
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_54|466KB/s|V005-260618 01
-  network: ws
-  port: 31867
-  server: 129.151.64.169
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  tls: true
-  type: vless
-  uuid: bd01efed-f999-41a5-bbb1-3d2357647f11
-  ws-opts:
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
     path: /@Marisa_kristi
 - client-fingerprint: chrome
   name: 580|🇬🇧GB_55|269KB/s|M003-260806 01
@@ -3672,32 +4093,6 @@ proxies:
   ws-opts:
     headers:
       Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_72|460KB/s|M003-260806 01
-  network: ws
-  port: 52014
-  server: 57.129.130.10
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  tls: true
-  type: vless
-  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
-  ws-opts:
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇬🇧GB_81|491KB/s|M002-260618 01
-  network: ws
-  port: 31867
-  server: 129.151.64.169
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  tls: true
-  type: vless
-  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
-  ws-opts:
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
     path: /@Marisa_kristi
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
