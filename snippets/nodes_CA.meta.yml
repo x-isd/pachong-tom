@@ -93,33 +93,31 @@ proxies:
   port: 445
   server: 51.222.12.127
   type: ss
-- encryption: none
-  name: '340,502,508,509,514,519,551,559|🇨🇦[www.v2nodes.com] vless-CA-1... #8'
-  network: tcp
+- name: '340,502,514,519,551,559|🇨🇦[www.v2nodes.com] vless-CA-1... #8'
   port: 8080
   server: 212.74.39.214
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vless
-  udp: true
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,523,524,559|🇨🇦 加拿大 | CAN #1 #4'
+  name: '340,523,524,548,559|🇨🇦 加拿大 | CAN #1 #1'
+  network: tcp
   port: 2093
   reality-opts:
     public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
     short-id: 8a9725533854a7e8
   server: 213.152.165.203
   servername: www.apple.com
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   udp: true
   uuid: 0b418782-e023-447e-ba99-e66b84ff118d
 - cipher: aes-128-gcm
-  name: 356,378,537,538|🇨🇦CA-149.22.95.183-0107 | 43.1...
+  country: 🇺🇸US
+  name: 356,378,435,537,538|🇨🇦CA-149.22.95.183-0107 | 43.1...
   password: shadowsocks
   port: 443
   server: 149.22.95.183
@@ -287,7 +285,7 @@ proxies:
   port: 8008
   server: 85.208.108.61
   type: ss
-- name: '378,489,519,537|🇦CA-149.88.98.81-0551 #1'
+- name: '378,489,537|🇦CA-149.88.98.81-0551 #1'
   password: None
   port: 9443
   server: 149.88.98.81
@@ -295,34 +293,33 @@ proxies:
   tls: true
   type: http
   username: null
-- name: '378,489,519,537|🇨🇦CA-198.44.157.19-0555 #1'
+- name: '378,537|🇨🇦CA-198.44.157.19-0555 #1'
   port: 9443
   server: 198.44.157.19
   skip-cert-verify: false
   tls: true
   type: http
-- name: '378,489,519,537|🇨🇦CA-206.223.183.16-0574 #1'
+- name: '378,489,537|🇨🇦CA-206.223.183.16-0574 #1'
   port: 443
   server: 206.223.183.16
   skip-cert-verify: false
   tls: true
   type: http
-- name: '378,489,519,537|🇨🇦CA-35.183.131.26-0585 #1'
+- name: '378,537|🇨🇦CA-35.183.131.26-0585 #1'
   port: 443
   server: 35.183.131.26
   skip-cert-verify: false
   tls: true
   type: http
-  udp: true
 - alterId: 0
   cipher: auto
   http-opts:
     method: GET
     path:
     - /
-  name: '378,508,509,536,537|🇦CA-134.122.41.160-0752 #1'
+  name: 378,508,509,536,537,636|🇺🇸 美国 012
   network: http
-  port: 3389
+  port: '3389'
   server: 134.122.41.160
   servername: ''
   skip-cert-verify: false
@@ -331,9 +328,9 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇨🇦CA-51.79.102.253-0771 #1'
+  name: 378,508,509,536,537,636|🇨🇦 加拿大 002
   network: ws
-  port: 80
+  port: '80'
   server: 51.79.102.253
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: false
@@ -346,9 +343,9 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇦CA-134.195.198.147-0959 #1'
+  name: 378,508,509,536,537,636|🇺🇸 美国 120
   network: ws
-  port: 443
+  port: '443'
   server: 134.195.198.147
   servername: ''
   skip-cert-verify: false
@@ -361,9 +358,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇦CA-23.162.200.227-0960 #1'
+  name: 378,508,509,536,537,636|🇺🇸 美国 121
   network: ws
-  port: 443
+  port: '443'
   server: 23.162.200.227
   servername: ''
   skip-cert-verify: false
@@ -376,9 +373,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇨🇦CA-15.235.13.69-0961 #1'
+  name: 378,508,509,536,537,636|🇺🇸 美国 122
   network: ws
-  port: 443
+  port: '443'
   server: 15.235.13.69
   servername: ''
   skip-cert-verify: false
@@ -391,9 +388,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇨🇦CA-15.235.50.172-0962 #1'
+  name: 378,508,509,536,537,636|🇺🇸 美国 123
   network: ws
-  port: 443
+  port: '443'
   server: 15.235.50.172
   servername: ''
   skip-cert-verify: false
@@ -406,9 +403,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇨🇦CA-15.235.83.227-0963 #1'
+  name: 378,508,509,536,537,636|🇺🇸 美国 124
   network: ws
-  port: 443
+  port: '443'
   server: 15.235.83.227
   servername: ''
   skip-cert-verify: false
@@ -421,9 +418,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇨🇦CA-15.235.83.228-0964 #1'
+  name: 378,508,509,536,537,636|🇺🇸 美国 125
   network: ws
-  port: 443
+  port: '443'
   server: 15.235.83.228
   servername: ''
   skip-cert-verify: false
@@ -436,9 +433,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,508,509,536,537|🇨🇦CA-51.79.103.76-0965 #1'
+  name: 378,508,509,536,537,636|🇨🇦 加拿大 014
   network: ws
-  port: 80
+  port: '80'
   server: 51.79.103.76
   servername: ''
   skip-cert-verify: false
@@ -1350,11 +1347,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 438,508,509,559|🇨🇦CA_3|859KB/s|M002-260618 [7e...
-  network: tcp
+  name: 438,559|🇨🇦CA_22|1.2MB/s|C002-260622 [1...
+  network: raw
   port: 18000
-  server: 23.162.200.198
-  skip-cert-verify: true
+  server: 134.195.196.211
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
@@ -4258,10 +4254,11 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '461|加拿大_多伦多 #308'
+  name: '461,508,509,636|其他 047 #2'
   network: ws
-  port: 443
+  port: '443'
   server: linde06.indiavideo.sbs
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
@@ -5543,11 +5540,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 465|16|🔒 VM-TCP-NA 🇨🇦 CA-198.57.27...
+  name: 465,508,509,636|🇨🇦 加拿大 012
   network: tcp
   port: '22324'
   server: 198.57.27.212
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
@@ -5684,11 +5682,12 @@ proxies:
   uuid: 395ad210-92a1-4af6-ba5e-968116f851ae
 - alterId: 0
   cipher: auto
-  name: 468|加拿大_021805016 M50
+  name: 468,508,509,636|🇨🇦 加拿大 013
   network: tcp
   port: '14812'
   server: 38.111.114.153
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
@@ -6045,35 +6044,9 @@ proxies:
     headers:
       Host: server15.9966338.xyz
     path: /asivewritten
-- name: 489|D🔴🇨🇦hos[🎬🤖📺🎪]_dokng.com_94fa86...
+- name: 489|D🔴🇨🇦hos[🎬📺🎭🎪]_dokng.com_94fa86...
   port: 443
   server: 4.172.245.121
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 489|A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_bc54ea...
-  password: None
-  port: 443
-  server: 206.223.161.47
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 489|D🔴🇨🇦hos[🤖✨🎞️📦]_dokng.com_ceb41...
-  port: 40000
-  server: 38.49.210.79
-  type: socks5
-- name: 489|A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_dc4c5a...
-  password: None
-  port: 443
-  server: 206.223.183.13
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 489|C🟠🇨🇦hos[🎬🤖📺🎭]_dokng.com_e70669...
-  port: 443
-  server: 142.44.210.129
   skip-cert-verify: true
   tls: true
   type: http
@@ -6085,22 +6058,12 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 489|A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_93275a...
-  password: None
-  port: 443
-  server: 206.223.183.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 489|D🔴🇨🇦hos[🎬🤖📺🎭]_dokng.com_6b5847...
-  password: None
+- name: 489|D🔴🇨🇦hos[🎬🤖📺🎭]_dokng.com_ff0913...
   port: 9443
   server: 198.44.157.27
   skip-cert-verify: true
   tls: true
   type: http
-  username: null
 - name: '502,717|CA【机场推荐：https://a9a.xyz】14 #1'
   network: ws
   port: 443
@@ -6185,92 +6148,6 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn748359672.opengw.net%3A1458%3Fed%3D2560%23Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '502,514,519,523,524,551|🇨🇦 加拿大 | CAN #1 #3'
-  network: tcp
-  port: 2093
-  reality-opts:
-    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
-    short-id: 8a9725533854a7e8
-  server: 67.159.46.132
-  servername: www.apple.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '502,519,523,524,551|🇨🇦 加拿大 | CAN #2 #1'
-  network: tcp
-  port: 2093
-  reality-opts:
-    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
-    short-id: 8a9725533854a7e8
-  server: 50.7.245.205
-  servername: www.apple.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '502,519,551|🇨🇦 加拿大 | CAN #4 #1'
-  network: tcp
-  port: 2093
-  reality-opts:
-    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
-    short-id: 8a9725533854a7e8
-  server: 67.159.49.37
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
-- name: '508,509|加拿大 001 #1'
-  network: ws
-  port: 443
-  server: 104.234.239.139
-  servername: parsa-panel-u48we.wotic15356.workers.dev
-  tls: true
-  type: vless
-  uuid: 70756c73-0000-4000-8000-650000000000
-  ws-opts:
-    headers:
-      Host: parsa-panel-u48we.wotic15356.workers.dev
-    path: /pulsefp=chrome
-- alterId: 0
-  cipher: auto
-  name: '508,509|加拿大 020 #1'
-  network: tcp
-  port: 35034
-  server: 165.154.195.38
-  skip-cert-verify: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-- name: '508,509|加拿大 021 #1'
-  network: xhttp
-  port: 443
-  server: 104.234.135.88
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0aec6598-7fb5-44e6-bff7-a4d550117830
-- name: '508,509|加拿大 022 #1'
-  network: tcp
-  port: 443
-  server: 184.107.106.68
-  servername: lizca2.footballfantasyforum.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 513|15|🇨🇦 加拿大|@ripaojiedian
@@ -6279,20 +6156,6 @@ proxies:
   server: 95.217.158.231
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 519|🇨🇦 加拿大 | CAN 3
-  network: ws
-  port: 8443
-  server: 148.113.236.6
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fp=chrome
 - name: 536|🇨🇦CA-155.138.138.2-5305
   password: Trojan@82164024
   port: 443
@@ -6304,27 +6167,21 @@ proxies:
   server: 82164024@ca.tronsg.com
   skip-cert-verify: false
   type: trojan
-- name: 548,559|❓Other_54|1.2MB/s|M003-260806 ...
+- name: 548|🇨🇦 加拿大_7A8CFB
   network: ws
-  port: 80
-  server: 104.27.88.172
-  servername: web-app-nr6wpa.app-tp57xz.workers.dev
+  port: 8080
+  server: 172.64.150.43
+  servername: 'hhlfy.twiladaphne.ndjp.net '
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
   udp: true
-  uuid: 50414e45-4c5f-5a45-5553-52108a2d5224
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   ws-opts:
     headers:
-      Host: web-app-nr6wpa.app-tp57xz.workers.dev
-    path: /api/ws
-- name: 548|🇨🇦 加拿大_05D79D
-  port: 1081
-  server: 149.248.18.106
-  type: socks5
-  udp: true
-  username: Og==
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /sg-melbi
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -6744,6 +6601,14 @@ proxies:
   tls: false
   type: vless
   uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+- name: 559|🇨🇦CA_33|1.8MB/s|M002-260618 [8...
+  network: raw
+  port: 8080
+  server: milo.rubinaz.xyz
+  servername: milo.rubinaz.xyz
+  tls: false
+  type: vless
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
 - name: 559|🇨🇦 加拿大-D0A13F96
   network: xhttp
   port: 443
@@ -6763,6 +6628,13 @@ proxies:
   tls: false
   type: vless
   uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- name: 559|🏁 未知-82FCACB2
+  network: tcp
+  port: 443
+  server: 13.40.188.81
+  tls: false
+  type: vless
+  uuid: 7e6a38f4-7150-4eff-ae68-579852357ddb
 - name: 559|🏁 未知-BD25CCA2
   network: xhttp
   port: 443
@@ -7237,10 +7109,10 @@ proxies:
     path: '%2Fsync'
 - alterId: 0
   cipher: auto
-  name: 559|🇨🇦CA_22|1.2MB/s|C002-260622 [1...
-  network: raw
+  name: 559|🇨🇦CA_3|859KB/s|M002-260618 [7e...
+  network: tcp
   port: 18000
-  server: 134.195.196.211
+  server: 23.162.200.198
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
