@@ -95,7 +95,7 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,438,456,502,514,523,524,551|🇨🇦[www.v2nodes.com] vless-CA-1... #7'
+  name: '340,438,456,502,514,523,524,551|🇨🇦[www.v2nodes.com] vless-CA-1... #9'
   network: tcp
   port: 2093
   reality-opts:
@@ -110,7 +110,7 @@ proxies:
   uuid: 0b418782-e023-447e-ba99-e66b84ff118d
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,438,502,514,551|🇨🇦[www.v2nodes.com] vless-CA-1... #8'
+  name: '340,438,502,514,551|🇨🇦[www.v2nodes.com] vless-CA-1... #10'
   network: tcp
   port: 443
   reality-opts:
@@ -122,7 +122,8 @@ proxies:
   type: vless
   uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
 - cipher: aes-128-gcm
-  name: 356,378,537,538|🇨🇦CA-149.22.95.183-0094 | 115....
+  country: 🇸US
+  name: 356,378,435,537,538|🇨🇦CA-149.22.95.183-0094 | 115....
   password: shadowsocks
   port: 443
   server: 149.22.95.183
@@ -815,12 +816,14 @@ proxies:
   uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a
   ws-opts:
     path: /cctv13/hd.m3u8
-- name: '378,536,537|🇨CA-155.138.138.2-5171 #1'
+- country: 🇦CA
+  name: '378,435,536,537|🇨CA-155.138.138.2-5171 #1'
   password: Trojan@82164024
   port: 443
   server: ca.tronsg.com
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: '378,537|🇨🇦CA-134.195.196.149-5411 #1'
   password: PCnnH6SQSnfoS27
@@ -1273,6 +1276,11 @@ proxies:
   server: 3.96.217.9
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 436|🇨🇦CA_10
+  password: Trojan%4082164024
+  port: 443
+  server: ca.tronsg.com
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -6303,6 +6311,20 @@ proxies:
   server: 95.217.158.231
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '514,523,524|🇳🇱_荷兰_44 #1'
+  port: 2093
+  reality-opts:
+    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+    short-id: 8a9725533854a7e8
+  server: 213.152.165.203
+  servername: www.apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
 - name: 538|🇨🇦CA-155.138.138.2-4786 | 43.3...
   password: Trojan
   port: 443
