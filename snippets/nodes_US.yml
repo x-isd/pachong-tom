@@ -104,13 +104,11 @@ proxies:
   server: 185.164.175.81
   type: ss
 - cipher: aes-256-gcm
-  country: 🇸 US
   delay: 1613
-  name: 306,378,435,519,528,537,538|🇯🇵JP-154.36.158.197-0189 | 0.0...
+  name: 306,378,519,528,537,538|🇯🇵JP-154.36.158.197-0189 | 0.0...
   password: BeaUf9c0AEWH40Pu
   port: 8388
   server: 154.36.158.197
-  skip-cert-verify: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -118,6 +116,12 @@ proxies:
   password: 585f0e10-7b51-4f2e-a13d-479b045171bd
   port: 22078
   server: ruot.ayucloudservices.nl
+  type: ss
+- cipher: aes-256-gcm
+  name: '306,519|🇲🇽[www.v2nodes.com] ss-MX-1564... #2'
+  password: BWyPPTusFKhGgzKh
+  port: 8388
+  server: 64.177.90.30
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 306,378,519,537,538|RO-154.46.31.106-0179 | 0.0MB
@@ -145,7 +149,7 @@ proxies:
   port: 19999
   server: 193.151.160.18
   type: ss
-- name: '306,340,378,502,514,519,536,537,551|🇫🇷[www.v2nodes.com] trojan-FR-... #43'
+- name: '306,340,378,502,514,519,536,537,551|🇫🇷[www.v2nodes.com] trojan-FR-... #45'
   password: humanity
   port: 443
   server: 165.215.250.14
@@ -153,7 +157,7 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '306,340,502,514,519,551|🇫🇷[www.v2nodes.com] trojan-FR-... #45'
+- name: '306,340,502,514,519,551|🇫🇷[www.v2nodes.com] trojan-FR-... #47'
   network: ws
   password: humanity
   port: 443
@@ -167,7 +171,7 @@ proxies:
     path: '%2Fassignment'
 - alpn:
   - http/1.1
-  name: '306,340,502,514,551|🇳🇱[www.v2nodes.com] trojan-NL-... #39'
+  name: '306,340,502,514,519,551|🇳🇱[www.v2nodes.com] trojan-NL-... #37'
   network: ws
   password: humanity
   port: 443
@@ -179,7 +183,7 @@ proxies:
     headers:
       Host: www.trusteeforward.com
     path: '%2Fassignment'
-- name: '306,340,378,502,514,519,536,537,551|🇳🇱[www.v2nodes.com] trojan-NL-... #47'
+- name: '306,340,378,502,514,519,536,537,551|🇳🇱[www.v2nodes.com] trojan-NL-... #45'
   password: humanity
   port: 443
   server: 209.38.109.222
@@ -187,20 +191,17 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '306,340,378,502,514,519,536,537,551|🇺🇸[www.v2nodes.com] trojan-US-... #9'
+- name: '306,340,378,502,514,519,536,537,551|🇺🇸[www.v2nodes.com] trojan-US-... #8'
   password: 600421cf-11d7-429f-a65b-c30397f1bc03
   port: 443
   server: 23.106.44.14
   skip-cert-verify: false
   sni: sj6.freeguard.org
   type: trojan
-- name: 306,340,378,438,519,536,537,538|🇺🇸US-216.106.186.32-0089 | 107...
-  network: tcp
+- name: '306,502,514,519,551|🇺🇸[www.v2nodes.com] trojan-US-... #9'
   password: dba20dcb635e430fa4d3bfc303a149d2
   port: 443
   server: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: false
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
   type: trojan
 - cipher: aes-256-cfb
   name: 306,378,519,537,556|tg频道:@ripaojiedian
@@ -303,6 +304,20 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '306,489,502,514,519,551|🇳🇱NL_2|1.8MB/s #3'
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.66.40.99
+  skip-cert-verify: false
+  sni: www.trusteeforward.com
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /assignment
 - name: '321,322,323|美国03 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -325,6 +340,14 @@ proxies:
   sni: 444014.xyz
   type: trojan
   udp: true
+- name: 340,378,438,536,537,538|🇺🇸US-216.106.186.32-0089 | 107...
+  network: tcp
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  port: 443
+  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: false
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '340,502,514,551,556|🇺🇸 美国|@ripaojiedian #5'
@@ -2277,13 +2300,21 @@ proxies:
   skip-cert-verify: false
   sni: aewfhe5z1pokrkw8bi9g13.xingbayun.buzz
   type: trojan
+- cipher: aes-256-gcm
+  delay: 512
+  name: 378,528,537,538|🇺🇸US-185.215.132.9-0039 | 129....
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.215.132.9
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 378,537,538|🇺🇸US-198.98.53.130-0092 | 0.0M...
   password: eDfN7SODQceIOmIAbtJJtK
   port: 443
   server: 198.98.53.130
   type: ss
-- name: 378,519,536,537,538|🇺🇸US-216.106.186.33-0094 | 86....
+- name: 378,536,537,538|🇺🇸US-216.106.186.33-0094 | 86....
   password: f0eb8c92ce8946aaba856569cff1a16b
   port: 443
   server: resources.findlocaljobnetworkandbuildcommunityconnections.com
@@ -6011,8 +6042,7 @@ proxies:
   protocol-param: 11275:KWQHheqWo8
   server: 231103.level3.sdl-sz.com
   type: ssr
-- name: '378,456,536,537|🇸US-66.23.203.21-4880 #1'
-  network: tcp
+- name: '378,536,537|🇸US-66.23.203.21-4880 #1'
   password: ae7eb4dwyaz25pxwgq59
   port: 59689
   server: 66.23.203.21
@@ -11664,331 +11694,41 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     path: /path/243535322906
-- country: 🇸US
-  name: 435,436|🇺🇸US_33
+- name: 436|🇺🇸US_119
   password: f0eb8c92ce8946aaba856569cff1a16b
   port: 443
   server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: true
   type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '438|🇺🇸US_35|1.2MB/s | 网盘搜宝: https:...'
-  network: ws
-  port: '443'
-  server: 172.66.203.67
-  servername: vmess.lbw666.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws
-- name: '453,456,580|US美国(mibei77.com 米贝节点分享) #174'
-  network: ws
-  password: humanity
+- name: 436|🇺🇸US_120
+  password: ae7eb4dwyaz25pxwgq59
+  port: 59689
+  server: 66.23.203.21
+  type: trojan
+- name: 436|🇺🇸US_122
+  password: '!!str 1234567890'
   port: 443
-  server: www.ignitelimit.com
-  skip-cert-verify: false
+  server: 152.53.228.86
+  sni: kfm-bn0.pages.dev
   type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alterId: 0
-  cipher: auto
-  name: 453,456,475,480,580|未知 VMESS-1310 | free-nodes
-  network: ws
-  port: 36803
-  server: cindy52.ceoiii.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
-  ws-opts:
-    headers:
-      Host: ajax.microsoft.com
-    path: /hls/cctv5phd.m3u8
-- name: '453,456,580|美國丨yoyapai.com #8'
-  network: ws
-  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+- name: 436|🇺🇸US_123
+  password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
-  server: blackshadow.dpdns.org
-  skip-cert-verify: false
-  sni: blackshadow.dpdns.org
+  server: 64.176.36.61
   type: trojan
-  ws-opts:
-    headers:
-      Host: blackshadow.dpdns.org
-    path: '%2F195.123.218.174-443'
-- alpn:
-  - http/1.1
-  name: '453,456,580|FR法国(mibei77.com 米贝节点分享) #22'
-  network: ws
-  password: humanity
+- name: 436|🇺🇸US_124
+  password: '!!str 1234567890'
   port: 443
-  server: 216.24.57.7
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+  server: 152.53.138.238
+  sni: kfm-bn0.pages.dev
   type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alterId: 0
-  cipher: auto
-  name: '453|US美国(mibei77.com 米贝节点分享) #37'
-  network: tcp
-  port: '10001'
-  server: rb1211-5.vatilon.cc
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- alterId: 0
-  cipher: auto
-  name: '453|US美国(mibei77.com 米贝节点分享) #39'
-  network: tcp
-  port: '10001'
-  server: jp2.vatilon.cc
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- alterId: 0
-  cipher: auto
-  name: '453|US美国(mibei77.com 米贝节点分享) #40'
-  network: tcp
-  port: '10001'
-  server: jp2.australiacaregroup.site
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- name: '453|US美国(mibei77.com 米贝节点分享) #43'
-  network: ws
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 10003
-  server: my1.australiacaregroup.site
-  sni: my1.australiacaregroup.site
-  type: trojan
-  ws-opts:
-    headers:
-      Host: my1.australiacaregroup.site
-    path: '%2Ftrojan'
-- alterId: 0
-  cipher: auto
-  name: '453|US美国(mibei77.com 米贝节点分享) #44'
-  network: ws
-  port: '10001'
-  server: my1.australiacaregroup.site
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  ws-opts:
-    headers:
-      Host: my1.australiacaregroup.site
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '453|US美国(mibei77.com 米贝节点分享) #45'
-  network: tcp
-  port: '10001'
-  server: jp-x2.vatilon.cc
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- alterId: 0
-  cipher: auto
-  name: '453|US美国(mibei77.com 米贝节点分享) #54'
-  network: tcp
-  port: '10001'
-  server: us.australiacaregroup.site
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- name: '453|US美国(mibei77.com 米贝节点分享) #56'
-  network: tcp
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 10003
-  server: jp2.australiacaregroup.site
-  sni: jp2.australiacaregroup.site
-  type: trojan
-- name: '453|US美国(mibei77.com 米贝节点分享) #57'
-  network: tcp
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 10003
-  server: us.australiacaregroup.site
-  sni: us.australiacaregroup.site
-  type: trojan
-- name: '453|US美国(mibei77.com 米贝节点分享) #58'
-  network: tcp
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 10003
-  server: rb1211-5.vatilon.cc
-  sni: rb1211-5.vatilon.cc
-  type: trojan
-- name: '453|US美国(mibei77.com 米贝节点分享) #59'
-  network: tcp
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 10003
-  server: sg4.vatilon.cc
-  sni: sg4.vatilon.cc
-  type: trojan
-- name: '453|US美国(mibei77.com 米贝节点分享) #60'
-  network: tcp
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 10003
-  server: jp-x2.vatilon.cc
-  sni: jp-x2.vatilon.cc
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '453|US美国(mibei77.com 米贝节点分享) #63'
-  network: ws
-  port: '10001'
-  server: cn42.vatilon.cc
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  ws-opts:
-    headers:
-      Host: cn42.vatilon.cc
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '453|US美国(mibei77.com 米贝节点分享) #64'
-  network: tcp
-  port: '10001'
-  server: sg2.australiacaregroup.site
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- name: '453,456|US美国(mibei77.com 米贝节点分享) #124'
-  network: ws
-  password: humanity
+- name: 436|🇺🇸US_126
+  password: OnHLrkVqZVtZyulTwC4bHrIbW7GyUDttKVNGEYVR12Y%3D
   port: 443
-  server: 104.18.32.47
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
-- name: 453,456,580|未知 TROJAN-617 | free-nodes
-  network: tcp
-  password: M7v%w11Se*
-  port: 443
-  server: 34.94.125.227
-  sni: mxlo.wsone.icu
-  type: trojan
-- name: 453|🇺🇸US_451|439KB/s|S004-260618 0...
-  network: tcp
-  password: 8bdfa4e8dac99c57decdd8bf55d2da4c
-  port: 10443
-  server: 107.149.159.190
-  sni: cf.shiranyu.xyz
-  type: trojan
-- name: 453|🇺🇸US_387|493KB/s|A004-260618 0...
-  network: raw
-  password: UX82473651
-  port: 443
-  server: guided-ferret.rooster465.autos
-  skip-cert-verify: true
-  sni: guided-ferret.rooster465.autos
-  type: trojan
-- name: 453|🇺🇸US_429|77KB/s|P002-260618 01
-  network: ws
-  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  port: 443
-  server: us3-2.998998.best
-  skip-cert-verify: true
-  sni: nat3.xxai.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: nat3.xxai.dpdns.org
-    path: /anyway
-- name: 453|未知 TROJAN-147 | free-nodes
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: pro-mako.rooster465.autos
-  skip-cert-verify: true
-  sni: pro-mako.rooster465.autos
-  type: trojan
-- name: 453|未知 TROJAN-117 | free-nodes
-  network: tcp
-  password: UX82473651
-  port: 443
-  server: alert-titmouse.rooster465.autos
-  skip-cert-verify: true
-  sni: alert-titmouse.rooster465.autos
-  type: trojan
-- name: 453|🇺🇸US_450|238KB/s|F003-260618 0...
-  network: tcp
-  password: trj-qWC4DKUemeUYWSKA1xx7okumSKKw0QSX
-  port: 9443
-  server: 38.181.42.136
-  sni: www.jqyverse.com
+  server: 192.236.151.43
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '453,456|🇺🇸_US_美国 #3'
-  network: tcp
-  port: 443
-  server: 165.140.217.2
-  tls: false
-  type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-- alterId: 0
-  cipher: auto
-  name: '453,456|🇺🇸_US_美国 #5'
-  network: ws
-  port: 443
-  server: www.shopify.com
-  servername: guanwang.awsno.com
-  tls: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  ws-opts:
-    headers:
-      Host: guanwang.awsno.com
-    path: /hls/cctv5phd.m3u8
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_67|890KB/s|B007-260618 [0...
-  network: ws
-  port: 39495
-  server: 129.146.77.248
-  tls: false
-  type: vmess
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  ws-opts:
-    path: /cctv13.m3u8
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_445|129KB/s|M003-260806 [...
-  network: ws
-  port: 8443
-  server: 172.64.80.1
-  servername: v2ray1.dozapp.xyz
-  tls: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  ws-opts:
-    headers:
-      Host: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 456|🇺🇸US_10|1.8MB/s|C002-260622 [6...
+  name: 437|🇺🇸US_115
   network: tcp
   port: 18000
   server: 67.220.85.46
@@ -11996,155 +11736,8 @@ proxies:
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_438|1.1MB/s|S004-260618 [...
-  network: ws
-  port: 443
-  server: cf.090227.xyz
-  servername: vmess.lbw666.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_5|1.1MB/s|M002-260618 [06...
-  network: tcp
-  port: 18000
-  server: 84.17.41.2
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_2|1.0MB/s [0bae86d275ac]
-  network: tcp
-  port: 18000
-  server: 38.91.107.49
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_459|252KB/s|A004-260618 [...
-  network: ws
-  port: 8443
-  server: 104.21.91.53
-  servername: v2ray1.dozapp.xyz
-  tls: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  ws-opts:
-    headers:
-      Host: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_434|1.4MB/s|S004-260618 [...
-  network: ws
-  port: 443
-  server: cf.877771.xyz
-  servername: vmess.lbw666.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_488|446KB/s|A004-260618 [...
-  network: ws
-  port: 80
-  server: 172.67.187.145
-  tls: false
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws
-- alterId: 0
-  cipher: auto
-  name: '456|未知 VMESS-308 | free-nodes #1'
-  network: ws
-  port: '443'
-  server: 172.66.203.67
-  servername: vmess.lbw666.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_453|101KB/s|A004-260618 [...
-  network: ws
-  port: 8443
-  server: 172.67.161.144
-  servername: v2ray1.dozapp.xyz
-  tls: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  ws-opts:
-    headers:
-      Host: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_176|911KB/s|C002-260622 [...
-  network: raw
-  port: 18000
-  server: 169.197.142.22
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_460|593KB/s|B007-260618 [...
-  network: ws
-  port: 443
-  server: 172.64.229.21
-  servername: vmess.lbw666.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_3|1.0MB/s|C002-260622 [47...
-  network: raw
-  port: 18000
-  server: 38.91.107.49
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_441|187KB/s|M003-260806 [...
-  network: ws
-  port: 8443
-  server: 104.17.77.77
-  servername: v2ray1.dozapp.xyz
-  tls: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  ws-opts:
-    headers:
-      Host: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
-- alterId: 0
   cipher: aes-128-gcm
-  name: 456,574|未知75 2.9MB/s
+  name: 437,574|未知75 2.9MB/s
   network: tcp
   port: 18000
   server: 67.220.95.3
@@ -12154,16 +11747,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: 456|🇺🇸US_1|983KB/s|C002-260622 [67...
-  network: raw
-  port: 18000
-  server: 84.17.41.2
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_91|1.2MB/s|A004-260618 [7...
+  name: 437|🇺🇸US_117
   network: tcp
   port: 18000
   server: 38.110.1.246
@@ -12172,201 +11756,13 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: 456|🇺🇸US_470|130KB/s|M003-260806 [...
-  network: ws
-  port: 8443
-  server: chatgpt.com
-  servername: v2ray1.dozapp.xyz
-  tls: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  ws-opts:
-    headers:
-      Host: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_4|1.3MB/s|C002-260622 [82...
-  network: raw
-  port: 18000
-  server: 38.110.1.246
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 456|🇺🇸US_77|1.3MB/s|C002-260622 [8...
-  network: raw
-  port: 18000
-  server: 67.220.85.46
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: '456|未知 VMESS-293 | free-nodes #1'
-  network: ws
-  port: 80
-  server: 104.17.147.222
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 456|🇺🇸US_233|1.5MB/s|C002-260622 [...
-  network: raw
-  port: 18000
-  server: 67.220.95.3
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_467|571KB/s|S004-260618 [...
-  network: ws
-  port: 80
-  server: 172.67.187.145
-  tls: false
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_494|912KB/s|A004-260618 [...
+  name: 437|🇺🇸US_118
   network: tcp
-  port: 26421
-  server: 154.64.239.22
+  port: 10000
+  server: 47.250.135.244
   tls: false
   type: vmess
-  uuid: 9fa732d6-dcd6-47bb-c255-094bad71765d
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_436|580KB/s|S004-260618 [...
-  network: ws
-  port: 80
-  server: cf.0sm.com
-  tls: false
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_458|881KB/s|A004-260618 [...
-  network: ws
-  port: 80
-  server: cf.0sm.com
-  tls: false
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_463|1.4MB/s|M003-260806 [...
-  network: ws
-  port: 443
-  server: 104.17.136.198
-  servername: vmess.lbw666.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '456|未知 VMESS-391 | free-nodes #1'
-  network: ws
-  port: '443'
-  server: cf.0sm.com
-  servername: vmess.lbw666.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_82|1.0MB/s|A004-260618 [b...
-  network: tcp
-  port: 18000
-  server: 169.197.142.22
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_477|227KB/s|F003-260618 [...
-  network: ws
-  port: 8443
-  server: 172.67.167.78
-  servername: v2ray1.dozapp.xyz
-  tls: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  ws-opts:
-    headers:
-      Host: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_112|415KB/s|M002-260618 [...
-  network: ws
-  port: 39495
-  server: 129.146.77.248
-  tls: false
-  type: vmess
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  ws-opts:
-    headers:
-      Host: 129.146.77.248
-    path: /cctv13.m3u8
-- name: 456|🇺🇸US_419|1.7MB/s|B007-260618 [...
-  network: tcp
-  password: nwilryafgkyvuxauc8pz
-  port: 50875
-  server: 69.164.240.85
-  skip-cert-verify: true
-  sni: 69.164.240.85
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_464|588KB/s|M003-260806 [...
-  network: ws
-  port: 80
-  server: 104.21.7.133
-  tls: false
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 456|🇺🇸US_396|298KB/s|A004-260618 [...
-  network: tcp
-  port: 48111
-  server: 129.146.143.80
-  tls: false
-  type: vmess
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
 - name: 460|美国_洛杉矶
   network: ws
   password: NISHIKUITAN222
@@ -13867,14 +13263,14 @@ proxies:
       Host: lax2.ibgfw.top
     path: /dyajvws
 - cipher: chacha20-ietf-poly1305
-  name: '475,480|🇺🇸 US美國丨yoyapai.com #3'
+  name: '475,480|🇺🇸 US美國丨yoyapai.com #1'
   password: hbGrpfvNrJsUmKmPbR3iY2
   port: 443
   server: tinkered-pennies-puppies.freesocks.work
   skip-cert-verify: false
   type: ss
   udp: true
-- name: '475,480|美國丨yoyapai.com #7'
+- name: '475,480|美國丨yoyapai.com #1'
   password: humanity
   port: 443
   server: www.ignitelimit.com
@@ -13891,6 +13287,21 @@ proxies:
   skip-cert-verify: false
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '475,480|🇸 US美國 #1'
+  network: ws
+  port: 36803
+  server: cindy52.ceoiii.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  ws-opts:
+    headers:
+      Host: ajax.microsoft.com
+    path: /hls/cctv5phd.m3u8
 - name: '475,480|美國丨yoyapai.com_1 #1'
   password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   port: 443
@@ -13998,25 +13409,6 @@ proxies:
     headers:
       Host: ecc.vtcss.top
     path: /qwer01
-- alpn:
-  - http/1.1
-  name: '502|美国+CloudFlare节点 #23'
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.66.40.99
-  skip-cert-verify: false
-  sni: www.trusteeforward.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.trusteeforward.com
-    path: /assignment
-- name: '502,514,551|🇺🇸[www.v2nodes.com] trojan-US-... #10'
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  port: 443
-  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 508,509,636|🇺🇸 美国 078
@@ -14856,6 +14248,16 @@ proxies:
     path: /register
 - alterId: 0
   cipher: auto
+  name: 574|US
+  network: tcp
+  port: 22324
+  server: 167.17.68.89
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
   name: 574|US2
   network: ws
   port: 8443
@@ -14882,6 +14284,16 @@ proxies:
     headers:
       host: XSmlqR4AuuOPMsMN.v.3dns.vip
     path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 574|US4
+  network: tcp
+  port: 2053
+  server: 45.39.255.99
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d49a2534-7ac4-429f-879d-de48296d19b4
 - alterId: 0
   cipher: auto
   name: 574|US5
@@ -14984,6 +14396,16 @@ proxies:
     headers:
       host: superjinx108-production.up.railway.app
     path: /stream/6844f0bb-3ca0-4250-9339-0a7e5cf123d2?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 574|US13
+  network: tcp
+  port: 22324
+  server: 167.88.62.124
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
   name: 574|US14
@@ -15186,799 +14608,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- name: '580|US美国(mibei77.com 米贝节点分享) #226'
-  network: ws
-  password: humanity
-  port: 443
-  server: 162.159.136.234
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #161'
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.67.221.242
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: '580|US美国(mibei77.com 米贝节点分享) #155'
-  network: ws
-  password: humanity
-  port: 443
-  server: 216.24.57.7
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|FR法国(mibei77.com 米贝节点分享) #21'
-  network: ws
-  password: humanity
-  port: 443
-  server: 130.250.137.171
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '580|US美国(mibei77.com 米贝节点分享) #158'
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.67.221.242
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #159'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.177.143
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #162'
-  network: ws
-  password: humanity
-  port: 443
-  server: 130.250.137.171
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '580|US美国(mibei77.com 米贝节点分享) #163'
-  network: ws
-  password: humanity
-  port: 443
-  server: join-telegram-channel.tirexnet.kdns.fr
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #164'
-  network: ws
-  password: humanity
-  port: 443
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #214'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.149
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #166'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.73
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #167'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.140
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #168'
-  network: ws
-  password: humanity
-  port: 443
-  server: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|FR法国(mibei77.com 米贝节点分享) #11'
-  network: ws
-  password: humanity
-  port: 443
-  server: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #212'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.103
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #194'
-  network: ws
-  password: humanity
-  port: 443
-  server: ip.myip2.qzz.io
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: '580|FR法国(mibei77.com 米贝节点分享) #13'
-  network: ws
-  password: humanity
-  port: 443
-  server: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '580|US美国(mibei77.com 米贝节点分享) #177'
-  network: ws
-  password: humanity
-  port: 443
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '580|US美国(mibei77.com 米贝节点分享) #179'
-  network: ws
-  password: humanity
-  port: 443
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|FR法国(mibei77.com 米贝节点分享) #16'
-  network: ws
-  password: humanity
-  port: 443
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #181'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.207
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #182'
-  network: ws
-  password: humanity
-  port: 443
-  server: www.speedtest.org
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #183'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.246
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #185'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.21.8.107
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #186'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.246
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #187'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.230
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #188'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.143
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #189'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.6
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #190'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.230
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #191'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.210
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #192'
-  network: ws
-  password: humanity
-  port: 443
-  server: join-telegram-channel.tirexnet.kdns.fr
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #195'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.109
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #207'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.179
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #197'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.36
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|FR法国(mibei77.com 米贝节点分享) #12'
-  network: ws
-  password: humanity
-  port: 443
-  server: join-telegram-channel.tirexnet.kdns.fr
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #201'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.108
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #203'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.34
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #204'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.22
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2F%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #205'
-  network: ws
-  password: humanity
-  port: 443
-  server: 162.159.254.191
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|FR法国(mibei77.com 米贝节点分享) #15'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.161
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #208'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.111.1
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #263'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.21.8.107
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #210'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.208
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #211'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.161
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #274'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.177.143
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #215'
-  network: ws
-  password: MiTIVPN
-  port: 443
-  server: 167.82.76.7
-  sni: ssl.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
-    path: '%2F'
-- name: '580|US美国(mibei77.com 米贝节点分享) #216'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.103
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|FR法国(mibei77.com 米贝节点分享) #26'
-  network: ws
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #220'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.113
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #227'
-  network: ws
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #229'
-  network: ws
-  password: MiTIVPN
-  port: 443
-  server: 199.232.78.160
-  sni: ssl.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mitivpn---ss--s---mitivpn-44e.global.ssl.fastly.net
-    path: '%2F'
-- name: '580|US美国(mibei77.com 米贝节点分享) #246'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.111.8
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #248'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.111.3
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '580|US美国(mibei77.com 米贝节点分享) #249'
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.67.221.242
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|FR法国(mibei77.com 米贝节点分享) #8'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.23.63
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #253'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.185
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #254'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.23.63
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #255'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.97
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #256'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.34
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #267'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.50
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #258'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.244
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #259'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.109
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #260'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.185
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #261'
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.67.188.109
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #262'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.148
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #264'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.121
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|FR法国(mibei77.com 米贝节点分享) #14'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.97
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #268'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.46
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #270'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.7.70
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #271'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.244
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #272'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.22
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2F%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #273'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.111.4
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #276'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.133
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: 580|🇺🇸US_624|909KB/s|C002-260622 0...
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 100.42.228.109
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-- name: 580|未知 TROJAN-616 | free-nodes
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 100.42.228.109
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 580|🇺🇸US_735|946KB/s|A004-260618 0...
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 100.42.228.109
-  skip-cert-verify: true
-  sni: 100.42.228.109
-  type: trojan
-- name: 580|🇺🇸US_754|916KB/s|A004-260618 0...
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 100.42.228.109
-  skip-cert-verify: true
-  sni: t.me%2fripaojiedian
-  type: trojan
-- name: 580|🇺🇸US_770|893KB/s|A004-260618 0...
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 100.42.228.109
-  skip-cert-verify: true
-  sni: t.me%252fripaojiedian
-  type: trojan
-- name: '580|🇺🇸_US_美国 #7'
-  password: 78c6cf8f30399bad3f63f15a9600a8ef
-  port: 8443
-  server: 23.149.28.8.sslip.io
-  skip-cert-verify: true
-  sni: 23.149.28.8.sslip.io
-  type: trojan
 - alterId: 0
   cipher: none
   name: 584|🇸 hg-US-Google_LLC

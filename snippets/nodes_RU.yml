@@ -1,6 +1,21 @@
 proxies:
+- alpn:
+  - h2
+  - http/1.1
+  alterId: '0'
+  cipher: auto
+  name: '306,519|🇷🇺RU_2|2.8MB/s #2'
+  network: tcp
+  port: 24212
+  server: 158.160.180.165
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  xudp: true
 - cipher: aes-256-gcm
-  name: 306,378,537,538,566|🇷🇺 俄罗斯 | RUS
+  name: 306,378,519,537,538|🇷🇺RU-195.133.5.194-1982 | 0.09...
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   port: 18443
   server: 195.133.5.194
@@ -402,22 +417,6 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 453,456,475,480,580|未知 VMESS-1511 | free-nodes
-  network: ws
-  port: '443'
-  server: renderer-stream-2-62.mirra.now
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: ''
-    path: /api/v1/gpu-stream/socket
 - name: '461|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -809,7 +808,20 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '502,514,551|🇷🇺RU_2|2.8MB/s #2'
+  name: '475,480|🇺RU俄罗斯 #1'
+  network: ws
+  port: 443
+  server: renderer-stream-2-62.mirra.now
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: '502,514,551|🇷🇺RU_2|2.8MB/s #3'
   network: tcp
   port: 24212
   server: 158.160.180.165
