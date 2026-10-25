@@ -653,12 +653,23 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  country: 🇳🇴 NO
+  country: ' NO'
   name: 306,378,435,519,537,538|🇯🇵JP-84.247.155.196-0153 | 2.0...
   password: 3eOFeNssde7PYYMv
   port: 80
   server: 84.247.155.196
   type: ss
+- client-fingerprint: chrome
+  delay: 1643
+  name: '306,378,489,502,514,519,528,536,537,551,566,568|🇯🇵 日本 | JPN #6'
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  sni: 45.32.52.173
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 306,378,508,509,519,536,537,636|🇯🇵 日本 002
@@ -792,7 +803,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,456,523,524|🇸🇬_新加坡_22 #1'
+  name: '340,456,472,473,474,523,524|🇸🇬_新加坡_22 #1'
   network: tcp
   port: 35544
   reality-opts:
@@ -805,9 +816,12 @@ proxies:
   type: vless
   udp: true
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  ws-opts:
+    headers:
+      Host: /?Telegram---pirozi_ArGaP---pirozi_ArGaP---pirozi_ArGaP---pirozi_ArGaP
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇯🇵[www.v2nodes.com] vless-JP-1... #13'
+  name: '340,502,514,519,551|🇯🇵[www.v2nodes.com] vless-JP-1... #14'
   port: 443
   server: 142.91.108.25
   servername: jp3.nztvpn.com
@@ -816,14 +830,14 @@ proxies:
   uuid: ee18d188-14cc-417e-beb1-70e4add6d023
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇯🇵[www.v2nodes.com] vless-JP-1... #14'
+  name: '340,502,514,551|🇯🇵[www.v2nodes.com] vless-JP-1... #15'
   port: 26518
   server: 156.246.88.125
   servername: github.com
   tls: true
   type: vless
   uuid: e01fcb68-3112-49da-b85d-dffb799cfc9b
-- name: '340,502,514,519,551|🇯🇵[www.v2nodes.com] vless-JP-1... #15'
+- name: '340,502,514,519,551|🇯🇵[www.v2nodes.com] vless-JP-1... #16'
   port: 443
   server: 137.220.221.179
   tls: false
@@ -900,7 +914,7 @@ proxies:
   server: 149.22.87.240
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺🇸US
+  country: 🇸US
   name: 356,357,378,435,537,538|🇯🇵JP-149.22.87.241-0129 | 29.8...
   password: shadowsocks
   port: 443
@@ -1903,7 +1917,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  country: ' NO'
+  country: 🇳🇴 NO
   name: 378,435,537,538|🇯🇵JP-84.247.155.196-0141 | 3.9...
   password: 3eOFeNssde7PYYMv
   port: 443
@@ -1923,6 +1937,13 @@ proxies:
     headers:
       Host: or.521166.xyz
     path: /
+- cipher: aes-256-gcm
+  country: 🇧 BR
+  name: 378,435,537,538|🇯🇵JP-191.223.221.53-0161 | 0.0...
+  password: JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv
+  port: 8388
+  server: 191.223.221.53
+  type: ss
 - cipher: aes-256-cfb
   name: '378,537|🇵JP-172.104.123.158-0338 #1'
   password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
@@ -1959,17 +1980,6 @@ proxies:
     headers:
       Host: suzhihan.eu.org
     path: /roewesu
-- client-fingerprint: chrome
-  delay: 1643
-  name: '378,489,502,514,519,528,536,537,551|🇯🇵[www.v2nodes.com] trojan-JP-... #3'
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: false
-  sni: 45.32.52.173
-  type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: '378,537|🇯🇵JP-20.210.122.21-0550 #1'
   password: 233blog.com
@@ -2533,7 +2543,7 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
-- country: 🇦 AU
+- country: 🇦🇺 AU
   name: '378,435,436,536,537|🇯🇵JP-43.206.225.188-5164 #1'
   password: UX82473651
   port: 443
@@ -2596,7 +2606,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: 🇵JP
+- country: 🇯🇵JP
   name: '378,435,436,536,537|🇯🇵JP-95.85.94.195-5242 #1'
   password: FH72359861
   port: 443
@@ -2785,17 +2795,21 @@ proxies:
   port: 989
   server: 103.75.118.27
   type: ss
-- country: 🇵JP
-  name: '435,436|🇯🇵JP_86 #1'
-  password: d050aca3-9df2-4461-90ec-92373c1d7636
-  port: 44184
-  server: v2jp.k1.ssnss.live
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+- name: '438|🇯🇵JP_1|1.0MB/s | 网盘搜宝: https:/...'
+  network: ws
+  port: 11424
+  server: 38.47.96.220
+  servername: notls.lukongtou.eu.org
+  tls: true
+  type: vless
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  ws-opts:
+    headers:
+      Host: notls.lukongtou.eu.org
+    path: '%2FTelegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438|🇯🇵JP_2|1.1MB/s | 网盘搜宝: https:/...'
+  name: '438|🇯🇵JP_3|1.3MB/s | 更多节点: https:/...'
   network: tcp
   port: 2090
   reality-opts:
@@ -2807,17 +2821,18 @@ proxies:
   type: vless
   uuid: 3644635c-f8c4-449c-a665-fce1897a7bf3
 - client-fingerprint: chrome
-  name: '438|🇯🇵JP_3|1.1MB/s | 更多节点: https:/...'
+  flow: xtls-rprx-vision
+  name: '438|🇯🇵JP_4|1.6MB/s | 网盘搜宝: https:/...'
   network: tcp
-  port: 2053
+  port: 50159
   reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  server: 46.250.250.149
-  servername: www.apple.com
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  server: 154.31.114.248
+  servername: www.cloudflare.com
   tls: false
   type: vless
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
 - name: '453,456|🇯🇵JP日本丨yoyapai.com #11'
   network: ws
   port: 18122
@@ -2929,11 +2944,12 @@ proxies:
       Host: rubifen.adaspoloandco.com
     path: '%2FGOrbEh'
 - client-fingerprint: chrome
-  name: '453,456,475,480,502,717|UN【机场推荐：https://a9a.xyz】101 #1'
+  name: '453,456,475,480,502,548,717|UN【机场推荐：https://a9a.xyz】101 #1'
   network: tcp
   port: 58011
   server: us22.sofast.live
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vless
   udp: true
@@ -3203,7 +3219,7 @@ proxies:
       Host: snip.edgeoneai.cc.cd
     path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40public-vpn-200.opengw.net%3A443%3Fed%3D2560fp%3Dchromefp%3Dchrome'
 - client-fingerprint: chrome
-  name: '453,456,581|🇯🇵_JP_日本 #2'
+  name: '453,456,581|🇯🇵_JP_日本 #4'
   network: ws
   port: 443
   server: 35.72.179.15
@@ -3988,7 +4004,7 @@ proxies:
       Host: snip.edgeoneai.cc.cd
     path: /
 - client-fingerprint: chrome
-  name: 476,481,523,524,566|🇯🇵 日本 | JPN 4
+  name: '476,481,519,523,524|🇯🇵_日本_223 #1'
   network: ws
   port: 443
   server: 60.130.209.253
@@ -4034,7 +4050,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   encryption: none
-  name: 476,481,489,523,524,566|🇯🇵 日本 | JPN 3
+  name: '476,481,489,519,523,524|🇯🇵_日本_101 #1'
   network: ws
   port: 443
   server: 43.165.180.254
@@ -4125,7 +4141,7 @@ proxies:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chromefp=chrome
 - client-fingerprint: chrome
-  name: '478,483,522|🇵_JP_ #2'
+  name: '478,483,522,548|🇯🇵_JP_日本 #3'
   network: ws
   port: 443
   server: 35.72.179.15
@@ -4141,7 +4157,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   encryption: none
-  name: 489,566|🇯🇵 日本 | JPN 2
+  name: '489,519|🇯🇵 日本 | JPN #2'
   network: ws
   port: 443
   server: 13.231.172.130
@@ -4395,10 +4411,24 @@ proxies:
       Host: ccc.010304.xyz
     path: /fp=chrome
 - client-fingerprint: chrome
+  encryption: none
+  name: '519|🇯🇵[www.v2nodes.com] vless-JP-1... #12'
+  network: ws
+  port: 443
+  server: 104.16.10.185
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- client-fingerprint: chrome
   name: '519|🇯🇵 日本 | JPN #1'
   network: ws
   port: 443
-  server: 3.112.67.101
+  server: 45.8.173.253
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -4407,7 +4437,21 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560fp=chrome
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '519,566|🇯🇵 日本 | JPN 2 #1'
+  network: tcp
+  port: 2090
+  reality-opts:
+    public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk
+    short-id: bb472a184677af64
+  server: 66.90.115.130
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3644635c-f8c4-449c-a665-fce1897a7bf3
 - client-fingerprint: chrome
   name: '523,524|🇯🇵_日本_313 #1'
   network: ws
@@ -4975,20 +5019,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN
-  network: ws
-  port: 443
-  server: 45.8.173.253
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'
