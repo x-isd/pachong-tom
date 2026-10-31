@@ -1,15 +1,21 @@
 proxies:
 - cipher: aes-256-gcm
-  name: 306,378,519,537,538|🇷🇺RU-185.22.155.121-0470 | 12....
+  name: 306,378,519,537,538|🇷🇺RU-185.22.155.121-0470 | 0.1...
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   port: 18443
   server: 185.22.155.121
   type: ss
-- name: '306,502,508,509,514,519,551|🇭🇰 香港 | HKG #7'
+- cipher: chacha20-ietf-poly1305
+  name: '306,378,537|🇷🇺RU-90.156.203.62-3030 #1'
+  password: VVlAff77CnAU43Aoc5j15Y
+  port: 5112
+  server: 90.156.203.62
+  type: ss
+- name: '306,502,514,551,566|🇳🇱 荷兰 | NLD 30 #3'
   network: ws
   password: humanity
   port: 443
-  server: 95.182.95.144
+  server: 91.196.32.217
   skip-cert-verify: true
   sni: www.cordweave.com
   type: trojan
@@ -18,10 +24,10 @@ proxies:
     headers:
       Host: www.cordweave.com
     path: /assignment
-- name: 306,502,514,519,551,636|🇷🇺 俄罗斯 004
+- name: '306,378,502,514,537,551,568|🇳🇱 荷兰 | NLD #71'
   password: humanity
   port: 443
-  server: 95.182.95.144
+  server: 91.196.32.217
   skip-cert-verify: true
   sni: www.cordweave.com
   type: trojan
@@ -171,16 +177,16 @@ proxies:
   ws-opts:
     path: /fr-unlimitxxx
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇷🇺RU-159.194.251.76-0471 #2'
+  name: '378,519,537|🇺RU-159.194.251.76-0470 #1'
   password: MODziWLa9qMuW-4yPa0rfw
   port: 8388
-  server: 159.194.251.76
+  server: msk2.rvpn.app
   type: ss
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 035
+  name: '378,508,509,536,537|🇺RU-185.173.94.1-1573 #1'
   network: ws
-  port: '30002'
+  port: 30002
   server: 185.173.94.1
   servername: ''
   skip-cert-verify: false
@@ -193,7 +199,37 @@ proxies:
     path: /path/191019072927
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇺RU-45.136.244.181-1911 #1'
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: '378,508,509,536,537|🇺RU-194.87.248.27-1824 #1'
+  network: http
+  port: 26743
+  server: 194.87.248.27
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 59952a8e-b712-4190-d85e-f9aadd65faa0
+- alterId: 64
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: '378,508,509,536,537|🇺RU-176.119.159.245-1848 #1'
+  network: http
+  port: 37672
+  server: 176.119.159.245
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇺RU-45.136.244.181-2447 #1'
   network: ws
   port: 80
   server: 45.136.244.181
@@ -208,7 +244,7 @@ proxies:
     path: /fr-unlimitxxx
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇺RU-45.89.230.196-2060 #1'
+  name: '378,536,537|🇺RU-45.89.230.196-2596 #1'
   network: ws
   port: 80
   server: 45.89.230.196
@@ -221,7 +257,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇺RU-45.129.2.237-2356 #1'
+  name: '378,536,537|🇺RU-45.129.2.237-2892 #1'
   network: ws
   port: 10258
   server: 45.129.2.237
@@ -234,7 +270,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,513,517,536,537|🇺RU-45.136.245.240-2649 #1'
+  name: '378,513,517,536,537|🇺RU-45.136.245.240-3254 #1'
   network: ws
   port: 12910
   server: 45.136.245.240
@@ -247,22 +283,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 037
-  network: http
-  port: '26743'
-  server: 194.87.248.27
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 59952a8e-b712-4190-d85e-f9aadd65faa0
-- alterId: 0
-  cipher: auto
-  name: '378,536,537|🇺RU-91.193.181.192-3418 #1'
+  name: '378,536,537|🇺RU-91.193.181.192-4023 #1'
   network: ws
   port: 8090
   server: 91.193.181.192
@@ -273,106 +294,88 @@ proxies:
   uuid: 08bc30e1-be39-4eb4-e887-e6579be15a45
   ws-opts:
     path: /
-- name: '378,536,537|🇺RU-45.88.148.237-3080 #1'
+- name: '378,536,537|🇺RU-45.88.148.237-3685 #1'
   password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910
   port: 28443
   server: 45.88.148.237
   skip-cert-verify: false
   sni: sbank.ir
   type: trojan
-- name: '378,536,537|🇺RU-194.156.99.39-3165 #1'
+- name: '378,536,537|🇺RU-194.156.99.39-3770 #1'
   password: xxoo
   port: 443
   server: 194.156.99.39
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇺RU-45.88.148.234-3582 #1'
+- name: '378,536,537|🇺RU-45.88.148.234-4187 #1'
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 45.88.148.234
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇺RU-92.223.109.126-4647 #1'
+  name: '378,537|🇷🇺RU-92.223.109.126-5252 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 92.223.109.126
   type: ss
-- alterId: 64
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - apple.com
-    method: GET
-    path:
-    - /
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 038
-  network: http
-  port: '37672'
-  server: 176.119.159.245
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇺RU-91.207.183.63-7456 #1'
+  name: '378,537|🇺RU-91.207.183.63-8061 #1'
   password: mX1q8sv17wA5LGDHIHD6Jo
   port: 15720
   server: 91.207.183.63
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇷🇺RU-90.156.228.141-7459 #2'
+  name: '378,537|🇷🇺RU-90.156.228.141-8064 #1'
   password: MjU9yGcudqQlVH1y3KiA8f
   port: 46717
   server: 90.156.228.141
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇺RU-45.89.52.66-7560 #1'
+  name: '378,537|🇺RU-45.89.52.66-8165 #1'
   password: HSZuyJQcWe8dxNdF
   port: 9043
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇷🇺RU-45.89.52.66-7561 #2'
+  name: '378,537|🇷🇺RU-45.89.52.66-8166 #1'
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇺RU-45.89.52.66-7562 #1'
+  name: '378,537|🇺RU-45.89.52.66-8167 #1'
   password: U6qnYRhfyDmn8sgn
   port: 9041
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇺RU-45.89.52.66-7563 #1'
+  name: '378,537|🇺RU-45.89.52.66-8168 #1'
   password: p9z5BVADH2YFs3MN
   port: 9040
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇺RU-45.89.52.66-7564 #1'
+  name: '378,537|🇺RU-45.89.52.66-8169 #1'
   password: TN2YqghxeFDKZfLU
   port: 9037
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇺RU-45.89.52.66-7565 #1'
+  name: '378,537|🇺RU-45.89.52.66-8170 #1'
   password: BwcAUZk8hUFAkDGN
   port: 9031
   server: 45.89.52.66
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇺RU-31.172.67.43-7640 #1'
+  name: '378,537|🇺RU-31.172.67.43-8245 #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 31.172.67.43
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇺RU-185.59.218.177-7815 #1'
+  name: '378,536,537|🇺RU-185.59.218.177-8420 #1'
   network: ws
   port: 443
   server: 185.59.218.177
@@ -384,14 +387,14 @@ proxies:
   ws-opts:
     path: /72d6d25e-1b39-11ee-a5c8-8213fd3be4b9
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇺RU-185.221.153.52-7818 #1'
+  name: '378,537|🇺RU-185.221.153.52-8423 #1'
   password: slatpifOon
   port: 444
   server: 185.221.153.52
   type: ss
 - alterId: 64
   cipher: auto
-  name: '378,536,537|🇺RU-171.22.134.12-7974 #1'
+  name: '378,536,537|🇺RU-171.22.134.12-8579 #1'
   network: ws
   port: 443
   server: 171.22.134.12
@@ -404,7 +407,7 @@ proxies:
     path: /path/1689849487190
 - alterId: 64
   cipher: auto
-  name: '378,536,537|🇷🇺RU-171.22.134.12-7975 #2'
+  name: '378,536,537|🇷🇺RU-171.22.134.12-8580 #1'
   network: ws
   port: 443
   server: 171.22.134.12
@@ -416,7 +419,7 @@ proxies:
   ws-opts:
     path: /path/1689935243027
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇺RU-146.185.198.44-8119 #1'
+  name: '378,537|🇺RU-146.185.198.44-8724 #1'
   password: V7jmsA6PQsLn
   port: 444
   server: 146.185.198.44
@@ -778,6 +781,16 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: '472,473,474|俄罗斯+V2CROSS.COM #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 194.55.164.118
+  skip-cert-verify: true
+  sni: www.cordweave.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - cipher: aes-256-gcm
   name: '475,480|🇷 RU俄斯丨yoyapai.com #1'
   password: 7e1dd4c55bf85da5
@@ -812,47 +825,44 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '475,480|🇺RU俄罗斯 #1'
+  name: 475,480,494,580|未知 VMESS-1511 | free-nodes
   network: ws
-  port: 443
+  port: '443'
   server: renderer-stream-2-62.mirra.now
+  servername: ''
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
   uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   ws-opts:
+    headers:
+      Host: ''
     path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 508,509,636|🇷🇺 俄罗斯 011
-  network: tcp
-  port: '22324'
-  server: 5.188.190.252
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 508,509,636|🇷🇺 俄罗斯 014
-  network: tcp
-  port: '22324'
-  server: 89.223.95.77
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 508,509,636|🇷🇺 俄罗斯 015
-  network: tcp
-  port: '2083'
-  server: 31.184.244.134
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 62ff829a-d100-4c06-a324-90bfe2f47a52
+- cipher: aes-256-gcm
+  name: 482|🇺RU_6|470KB/s|K001-260618 [027...
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  port: 18443
+  server: 46.17.44.216
+  sub_tag: K001-260618
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 482|RU_8|767KB/s|K001-260618 [9d93...
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  port: 18443
+  server: 176.32.33.254
+  sub_tag: K001-260618
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 482|RU_7|1.9MB/s|K001-260618 [b8b1...
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  port: 18443
+  server: 176.32.34.253
+  sub_tag: K001-260618
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '513,517|2|🇷🇺_RU_俄罗斯联邦 #2'
@@ -941,13 +951,6 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 636|🇷🇺 俄罗斯 003
-  password: humanity
-  port: 2053
-  server: 185.114.72.31
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
 - name: 728|🇷🇺 俄罗斯1🔒
   password: 升级订阅解锁全部节点
   port: 10210
