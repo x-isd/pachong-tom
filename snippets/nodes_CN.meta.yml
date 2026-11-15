@@ -1,4 +1,18 @@
 proxies:
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: 306,340|🇯🇵JP_1|6.0MB/s
+  network: tcp
+  port: 443
+  server: 47.99.219.144
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 291b5d4a-19ee-4f22-91df-4dc43850b970
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '362,363|297,393|0|🌀7-CN |  6.0MB/s |  ... #1'
@@ -73,9 +87,9 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '378,536,537|CN-113.31.124.147-0354 #1'
+  name: 378,508,509,536,537,636|🇨🇳 中国 024
   network: ws
-  port: 443
+  port: '443'
   server: 113.31.124.147
   servername: ''
   skip-cert-verify: false
@@ -86,7 +100,7 @@ proxies:
     headers:
       Host: lg30.cfcdn3.xyz
     path: /
-- name: '378,489,519,537|🇨CN-118.184.140.90-0628 #1'
+- name: '378,489,537|🇨CN-118.184.140.90-0628 #1'
   port: 58764
   server: 118.184.140.90
   skip-cert-verify: false
@@ -94,9 +108,9 @@ proxies:
   type: http
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 021
+  name: '378,536,537|CN-113.31.124.147-1202 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 113.31.124.147
   servername: ''
   skip-cert-verify: false
@@ -113,7 +127,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 045
+  name: 378,508,509,536,537,636|🇨🇳 中国 048
   network: http
   port: '50797'
   server: 124.221.131.176
@@ -124,7 +138,7 @@ proxies:
   uuid: fa4b6f8f-1264-45ec-9651-6160c12cabc5
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇳 中国 053
+  name: 378,508,509,536,537,636|🇨🇳 中国 056
   network: ws
   port: '43815'
   server: blog.voewl.com
@@ -1108,14 +1122,6 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
-- country: 🇳CN
-  name: 435,436|🇨🇳CN_06
-  password: 736cd94d-7b94-3e44-8106-3419f64eaf09
-  port: 3462
-  server: a12.taipeicitygovernment.org.ua
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - name: '453,456,475,480|🇨🇳CN國丨yoyapai.com #1'
   network: tcp
   port: 52683
@@ -1127,7 +1133,7 @@ proxies:
   uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
 - alterId: 0
   cipher: auto
-  name: '453,456,478,483,548|🇨🇳_CN_中国_IPV4 (2) #2'
+  name: '453,456,478,483|_CN_国_IPV4 #1'
   network: ws
   port: 10086
   server: 39.108.113.127
@@ -1203,7 +1209,7 @@ proxies:
 - ip: 172.16.0.2/32
   ipv6: 2606:4700:110:8e4e:939b:b987:39aa:c46c/128
   mtu: 1280
-  name: 489,519|❓Other_1|2.2MB/s
+  name: 489|🇨🇳CN_1|1.5MB/s [750f2cc72bcf]
   port: 8742
   private-key: OEysS/3kryZt7O/RobQFlmPatDWuUl9bwef0IoMX/Uo=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
@@ -1326,7 +1332,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '508,509|中国 016 #1'
+- alterId: 0
+  cipher: auto
+  name: 508,509,636|🇨🇳 中国 016
+  network: ws
+  port: '23026'
+  server: 47.244.120.197
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  ws-opts:
+    headers:
+      Host: 47.244.120.197
+    path: /arki
+- name: '508,509|中国 017 #1'
   network: tcp
   port: 10000
   server: 180.178.60.253
@@ -1351,7 +1371,7 @@ proxies:
     headers:
       Host: vms.lifetime36.workers.dev
     path: /
-- name: '508,509|中国 018 #1'
+- name: '508,509|中国 019 #1'
   network: ws
   port: 8880
   server: 154.197.75.40
@@ -1365,7 +1385,7 @@ proxies:
   ws-opts:
     headers:
       Host: vms.lifetime37.workers.dev
-- name: '508,509|中国 019 #1'
+- name: '508,509|中国 020 #1'
   network: tcp
   port: 35940
   server: 46.8.100.46
@@ -1375,7 +1395,23 @@ proxies:
   type: vless
   udp: true
   uuid: aad84fb9-a089-4818-be9f-30c3dd9e1c6b
-- name: '508,509|中国 020 #1'
+- client-fingerprint: chrome
+  name: '508,509|中国 021 #1'
+  network: ws
+  port: 443
+  server: 59.125.69.22
+  servername: tse1.mm.bing.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  ws-opts:
+    headers:
+      Host: tse1.mm.bing.net
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+- name: '508,509|中国 022 #1'
   network: tcp
   port: 9090
   server: 62.60.223.109
@@ -1387,7 +1423,7 @@ proxies:
   uuid: d9f4bcb7-d0cf-49e9-9009-f275852df5ee
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇨🇳 中国 080
+  name: 508,509,636|🇨🇳 中国 090
   network: tcp
   port: '123'
   server: 43.108.103.167
@@ -1397,7 +1433,7 @@ proxies:
   uuid: 35aa0fda-175a-4aec-c468-0231dee1a121
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇨🇳 中国 081
+  name: 508,509,636|🇨🇳 中国 091
   network: tcp
   port: '45343'
   server: 154.90.39.63
@@ -1407,7 +1443,7 @@ proxies:
   uuid: 08aa8499-d616-4ff1-d6ab-ce0c522824aa
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇨🇳 中国 082
+  name: 508,509,636|🇨🇳 中国 092
   network: tcp
   port: '56002'
   server: 39.103.165.178
@@ -1417,7 +1453,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇨🇳 中国 083
+  name: 508,509,636|🇨🇳 中国 093
   network: tcp
   port: '10001'
   server: 45.121.48.196
@@ -1427,7 +1463,7 @@ proxies:
   uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇨🇳 中国 084
+  name: 508,509,636|🇨🇳 中国 094
   network: tcp
   port: '10001'
   server: 45.121.48.172
@@ -1450,45 +1486,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- ip: 172.16.0.2/32
-  keepalive: '5'
-  mtu: 1280
-  name: 519|🇨🇳CN_1|1.2MB/s
-  persistent-keepalive: '5'
-  port: 500
-  private-key: 6MOHNyxgcVe2ohk/L50VCvNoAD1dKsVQ+DO/r0GLgk8=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  reserved:
-  - 228
-  - 192
-  - 229
-  server: 162.159.192.4
-  type: wireguard
-  udp: true
-  wnoise: quic
-  wnoisecount: '5'
-  wnoisedelay: '5'
-  wpayloadsize: 40-90
-- ip: 172.16.0.2/32
-  keepalive: '5'
-  mtu: 1280
-  name: 519|🇨🇳CN_2|1.3MB/s
-  persistent-keepalive: '5'
-  port: 987
-  presharedkey: ''
-  private-key: GJTd46xB/fjfi6vyJmpxUiNrNdjZTW0Qhi7b0PkER1Y=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  reserved:
-  - 175
-  - 93
-  - 41
-  server: 188.114.97.6
-  type: wireguard
-  udp: true
-  wnoise: quic
-  wnoisecount: '15'
-  wnoisedelay: 1-2
-  wpayloadsize: 5-10
 - alterId: 64
   cipher: auto
   name: 522|🇳_CN_中国
@@ -2013,21 +2010,6 @@ proxies:
   server: scloud50.jafiyun.ltd
   sni: scloud50.jafiyun.ltd
   type: trojan
-- ip: 172.16.0.2/32
-  mtu: 1380
-  name: '548|🇨🇳_CN_中国_IPV4 #1'
-  password: CBMxaub4dG7Q9W91x4+lUCqtF9eV1BN+4osBfWZNXHs=
-  port: 2371
-  private-key: CBMxaub4dG7Q9W91x4+lUCqtF9eV1BN+4osBfWZNXHs=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  reserved:
-  - 225
-  - 17
-  - 205
-  server: 162.159.195.4
-  skip-cert-verify: false
-  tls: false
-  type: wireguard
 - alterId: 0
   cipher: auto
   name: 558|2|🇸24 |  4.8MB/s
