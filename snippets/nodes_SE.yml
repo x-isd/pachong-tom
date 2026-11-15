@@ -1,24 +1,22 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 306,378,477,482,519,537,538|SE-138.199.55.243-0148 | 34.16...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 138.199.55.243
-  sub_tag: M003-260806
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: '306,378,519,537|🇪SE-70.34.212.124-0197 #1'
-  password: AxIYWtskJWIIaefW
-  port: 8388
-  server: 70.34.212.124
-  type: ss
-- name: '306,340,378,502,514,519,536,537,551|🇸🇪[www.v2nodes.com] trojan-SE-... #8'
+- name: '340,378,502,514,519,536,537,551|🇸🇪[www.v2nodes.com] trojan-SE-... #7'
   password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
   port: 443
   server: 95.143.196.97
   skip-cert-verify: false
   type: trojan
+- name: '340,378,453,502,519,537,551|🇸🇪[www.v2nodes.com] trojan-SE-... #8'
+  network: ws
+  password: f426d3c9-fb43-43c0-868b-898dfa451a74
+  port: 443
+  server: 121.127.33.130
+  skip-cert-verify: false
+  sni: likejennie.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: likejennie.pages.dev
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: '362,363|🇸🇪 SE 057 |  20.8MB/s #1'
@@ -36,6 +34,26 @@ proxies:
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
+- cipher: aes-256-gcm
+  name: 378,477,482,519,537,538|SE-138.199.55.243-0148 | 34.16...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 138.199.55.243
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '378,519,537|🇪SE-70.34.212.124-0197 #1'
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '378,519,537|🇪SE-62.182.193.228-0274 #1'
+  password: 2e555e46dbc421452416834962fd014f
+  port: 8388
+  server: 62.182.193.228
+  type: ss
 - alterId: 64
   cipher: auto
   name: 378,508,509,536,537,636|🇸🇪 瑞典 016
@@ -152,7 +170,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 453,456,477,482,494,508,509,636|🇪🇺 欧洲 003
+  name: 453,477,482,508,509,636|🇪🇺 欧洲 003
   network: tcp
   packet-encoding: xudp
   port: '1270'
@@ -168,7 +186,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 453,456,477,482,494,508,509,636|🇪🇸 西班牙 002
+  name: 453,477,482,508,509,636|🇪🇸 西班牙 002
   network: tcp
   packet-encoding: xudp
   port: '1270'
@@ -185,24 +203,13 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '453,456,477,482,494|🔥Join+Telegram:@Farah_VPN🟣 #9877'
+  name: '453,477,482|🇸🇪SE_18|805KB/s|M003-260806 [1... #1'
   network: tcp
   password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
   port: 443
   server: 95.143.196.97
   skip-cert-verify: false
   sni: connect-se.mimowhat.online
-  sub_tag: M003-260806
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: '456,477,482|🇸SE_8|3.1MB/s|M003-260806 [433... #1'
-  network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 70.34.207.14
-  skip-cert-verify: false
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   sub_tag: M003-260806
   type: trojan
   udp: true
@@ -221,6 +228,17 @@ proxies:
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
   type: trojan
+- client-fingerprint: chrome
+  name: '477,482|🇸SE_8|3.1MB/s|M003-260806 [433... #1'
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 70.34.207.14
+  skip-cert-verify: false
+  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  sub_tag: M003-260806
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '523,524|🇸🇪_瑞典 #1'
