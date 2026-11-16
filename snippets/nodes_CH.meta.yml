@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-gcm
-  name: 306,378,477,482,519,537,538|CH-23.166.88.127-0255 | 43.101...
+  name: 306,378,477,482,519,537,538|CH-23.166.88.127-0210 | 60.76M...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 23.166.88.127
@@ -9,7 +9,7 @@ proxies:
   udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #9'
+  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #10'
   network: tcp
   port: 443
   reality-opts:
@@ -26,7 +26,7 @@ proxies:
       Host: perevodchiki.su
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #10'
+  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #11'
   network: tcp
   port: 443
   reality-opts:
@@ -38,7 +38,7 @@ proxies:
   type: vless
   uuid: 3950b45e-740d-4dca-ac95-505ec8534592
 - client-fingerprint: firefox
-  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #11'
+  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #12'
   network: tcp
   port: 2053
   reality-opts:
@@ -112,14 +112,22 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- name: '378,536,537|CH-152.67.71.149-3520 #1'
+- name: '378,519,537|🇨CH-149.88.27.46-0600 #1'
+  port: 9443
+  server: 149.88.27.46
+  skip-cert-verify: false
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: '378,536,537|CH-152.67.71.149-3489 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-5091 #1'
+  name: '378,537|🇨CH-156.146.62.160-5060 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
@@ -747,22 +755,20 @@ proxies:
   type: http
   udp: true
   username: ''
-- name: 489,519|🇨🇭CH_1|2.8MB/s
-  password: ''
-  port: 9443
-  server: 149.88.27.46
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: 489|🇨🇭CH_1|1.3MB/s [7fa190c2668d85...
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '502,519,551|🇨🇭 瑞士 | CHE #1 #1'
+  network: tcp
   port: 443
-  server: 31.7.62.50
-  skip-cert-verify: true
+  reality-opts:
+    public-key: 3fcmILwQG2sbwo58XW9Z1lziNQXmAFwUglFuXQFePRI
+    short-id: 95da6299f1
+  server: 91.214.190.127
+  servername: ch1.gofizzin.com
   tls: true
-  type: http
+  type: vless
+  udp: true
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
 - encryption: none
   http-opts:
     path:
@@ -848,24 +854,10 @@ proxies:
   type: vless
   udp: true
   uuid: b6606cb0-e15d-4813-94af-985028c4b9f3
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '519,566|🇨🇭 瑞士 | CHE #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 3fcmILwQG2sbwo58XW9Z1lziNQXmAFwUglFuXQFePRI
-    short-id: 95da6299f1
-  server: 91.214.190.127
-  servername: ch1.gofizzin.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
 - alpn:
   - http
   client-fingerprint: chrome
-  name: '519,566|🇨🇭 瑞士 | CHE 2 #1'
+  name: 519|🇨🇭 瑞士 | CHE 2
   network: ws
   port: 443
   server: 193.233.219.98
@@ -878,6 +870,32 @@ proxies:
     headers:
       Host: vpn-rating.space
     path: /api/vless
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇨🇭_瑞士 #1'
+  port: 42831
+  server: 179.43.140.24
+  servername: down-cdn.dingtalk.com
+  skip-cert-verify: false
+  sni: down-cdn.dingtalk.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a925a98c-ad7a-40c6-9fdf-130a1de69416
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '566|🇨🇭 瑞士 | CHE #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: oI8uBtOZSUZ6paMGUrKhdMOuvQ08EyPfWpCfnveBjV8
+    short-id: b93d8d2f
+  server: 179.43.170.66
+  servername: spire.northgleam.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
 - client-fingerprint: chrome
   name: 580|🇨🇭CH_2|654KB/s|B007-260618 01
   network: ws
