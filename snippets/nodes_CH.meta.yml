@@ -1,15 +1,35 @@
 proxies:
 - cipher: aes-256-gcm
-  name: 306,378,477,482,519,537,538|CH-23.166.88.127-0210 | 60.76M...
+  name: 306,378,477,482,519,537,538|CH-23.166.88.127-0210 | 38.0MB
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 23.166.88.127
   sub_tag: M003-260806
   type: ss
   udp: true
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    method: GET
+    path:
+    - /3x
+  name: '306,340,378,502,519,537,551,566,568|🇨🇭 瑞士 | CHE #9'
+  network: http
+  port: '42831'
+  server: 179.43.140.24
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a925a98c-ad7a-40c6-9fdf-130a1de69416
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #12'
+  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #11'
   network: tcp
   port: 2083
   reality-opts:
@@ -22,7 +42,7 @@ proxies:
   uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #13'
+  name: '340,453,456,502,551|🇨🇭[www.v2nodes.com] vless-CH-1... #12'
   network: tcp
   port: 443
   reality-opts:
@@ -39,7 +59,7 @@ proxies:
       Host: perevodchiki.su
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #14'
+  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #13'
   network: tcp
   port: 443
   reality-opts:
@@ -51,7 +71,7 @@ proxies:
   type: vless
   uuid: 3950b45e-740d-4dca-ac95-505ec8534592
 - client-fingerprint: firefox
-  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #15'
+  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #14'
   network: tcp
   port: 2053
   reality-opts:
@@ -62,6 +82,70 @@ proxies:
   tls: true
   type: vless
   uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc
+  name: '340,502,551|🇨🇭 瑞士 | CHE #7'
+  network: grpc
+  port: 443
+  server: 179.43.170.67
+  servername: crag.quaystone.top
+  tls: true
+  type: vless
+  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc
+  name: '340,502,551|🇨🇭 瑞士 | CHE 3 #2'
+  network: grpc
+  port: 443
+  server: 179.43.170.72
+  servername: dell.pinewharf.top
+  tls: true
+  type: vless
+  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
+- client-fingerprint: firefox
+  name: '340,502,507,514,519,551|🇨🇭 瑞士 | CHE #4 #2'
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: oI8uBtOZSUZ6paMGUrKhdMOuvQ08EyPfWpCfnveBjV8
+    short-id: 80e81a0a
+  server: 179.43.170.73
+  servername: forge.lakemont.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
+  ws-opts:
+    headers:
+      Host: forge.lakemont.top
+    path: '%2F'
+  xhttp-opts:
+    host: forge.lakemont.top
+    path: /
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '340,502,551|🇨🇭 瑞士 | CHE #1 #3'
+  network: grpc
+  port: 443
+  server: 179.43.170.67
+  servername: crag.quaystone.top
+  tls: true
+  type: vless
+  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '340,502,551|🇨🇭 瑞士 | CHE #3 #2'
+  network: grpc
+  port: 443
+  server: 179.43.170.72
+  servername: dell.pinewharf.top
+  tls: true
+  type: vless
+  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
 - cipher: aes-128-gcm
   name: '356,357|4 #4'
   password: shadowsocks
@@ -125,20 +209,14 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- name: '378,537|🇨CH-149.88.27.46-0600 #1'
-  port: 9443
-  server: 149.88.27.46
-  skip-cert-verify: false
-  tls: true
-  type: http
-- name: '378,536,537|CH-152.67.71.149-3489 #1'
+- name: '378,536,537|CH-152.67.71.149-3430 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-5060 #1'
+  name: '378,537|🇨CH-156.146.62.160-5001 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
@@ -333,14 +411,16 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: '453,456,477,482|🇨🇭CH_51|293KB/s|C002-260622 [d... #1'
+  name: '453,456,477,482,523,524|🇨🇭_瑞士 (5) #1'
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 208.69.78.222
-  skip-cert-verify: false
+  servername: yourultimateprofessionalcareerhub.com
+  skip-cert-verify: true
   sni: yourultimateprofessionalcareerhub.com
   sub_tag: C002-260622
+  tls: true
   type: trojan
   udp: true
 - name: 453,456|🇨🇭CH_9|381KB/s|B007-260618 [56...
@@ -364,14 +444,16 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: '453,456,477,482|CH_45|447KB/s|S004-260618 [fb5... #1'
+  name: '453,456,477,482,523,524|🇨🇭_瑞士 (3) #1'
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 208.69.78.19
-  skip-cert-verify: false
+  servername: www.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: true
   sni: www.yourultimateprofessionalcareerhub.com
   sub_tag: S004-260618
+  tls: true
   type: trojan
   udp: true
 - client-fingerprint: chrome
@@ -408,14 +490,16 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: '453,456,477,482|🇨🇭CH_47|302KB/s|M003-260806 [b... #1'
+  name: '453,456,477,482,523,524|🇨🇭_瑞士 #1'
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 208.69.78.158
-  skip-cert-verify: false
+  servername: api.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: true
   sni: api.yourultimateprofessionalcareerhub.com
   sub_tag: M003-260806
+  tls: true
   type: trojan
   udp: true
 - name: 453,456|🇨🇭CH_24|350KB/s|B007-260618 [9...
@@ -556,14 +640,16 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: '456,477,482|🇨🇭CH_48|227KB/s|M003-260806 [9... #1'
+  name: '456,477,482,523,524|🇨🇭_瑞士 (4) #1'
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 208.69.78.29
+  servername: learn.yourultimateprofessionalcareerhub.com
   skip-cert-verify: true
   sni: learn.yourultimateprofessionalcareerhub.com
   sub_tag: M003-260806
+  tls: true
   type: trojan
   udp: true
 - name: 456|🇨🇭CH_27|175KB/s|B007-260618 [2...
@@ -796,20 +882,6 @@ proxies:
   type: http
   udp: true
   username: ''
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '502,519,551|🇨🇭 瑞士 | CHE #1 #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: oI8uBtOZSUZ6paMGUrKhdMOuvQ08EyPfWpCfnveBjV8
-    short-id: b93d8d2f
-  server: 179.43.170.66
-  servername: spire.northgleam.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
 - encryption: none
   http-opts:
     path:
@@ -841,7 +913,7 @@ proxies:
     path: /proxyip=3cfb8e26.tp30304.ip.090227.xyz
 - alterId: 0
   cipher: auto
-  name: 508,509,580,636|🇨🇭 瑞士 008
+  name: 508,509,580|未知 VMESS-1141 | free-nodes
   network: tcp
   port: '38998'
   server: 178.83.45.29
@@ -885,103 +957,13 @@ proxies:
   type: vless
   udp: true
   uuid: b6606cb0-e15d-4813-94af-985028c4b9f3
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  name: '514,566|🇨🇭 瑞士 | CHE #6'
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: oI8uBtOZSUZ6paMGUrKhdMOuvQ08EyPfWpCfnveBjV8
-    short-id: a16cb62c
-  server: 179.43.170.67
-  servername: crag.quaystone.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    method: GET
-    path:
-    - /3x
-  name: '514,566,568|🇨🇭 瑞士 | CHE #7'
-  network: http
-  port: '42831'
-  server: 179.43.140.24
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a925a98c-ad7a-40c6-9fdf-130a1de69416
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  name: '514,566|🇨🇭 瑞士 | CHE 3 #1'
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: oI8uBtOZSUZ6paMGUrKhdMOuvQ08EyPfWpCfnveBjV8
-    short-id: 1a56811c
-  server: 179.43.170.72
-  servername: dell.pinewharf.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
-- client-fingerprint: firefox
-  name: 514,566|🇨🇭 瑞士 | CHE 4
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: oI8uBtOZSUZ6paMGUrKhdMOuvQ08EyPfWpCfnveBjV8
-    short-id: 80e81a0a
-  server: 179.43.170.73
-  servername: forge.lakemont.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
-  xhttp-opts:
-    host: forge.lakemont.top
-    path: /
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: ''
-  name: '514|🇨🇭 瑞士 | CHE #1 #1'
-  network: grpc
-  port: 443
-  server: 179.43.170.67
-  servername: crag.quaystone.top
-  tls: true
-  type: vless
-  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: ''
-  name: '514|🇨🇭 瑞士 | CHE #3'
-  network: grpc
-  port: 443
-  server: 179.43.170.72
-  servername: dell.pinewharf.top
-  tls: true
-  type: vless
-  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
 - alterId: 0
   cipher: auto
-  name: '523,524|🇨🇭_瑞士 #1'
+  name: '523,524|🇨🇭_瑞士 (6) #1'
   port: 42831
   server: 179.43.140.24
   servername: down-cdn.dingtalk.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: down-cdn.dingtalk.com
   tls: false
   type: vmess
@@ -1055,13 +1037,6 @@ proxies:
     headers:
       Host: shuma.ccwu.cc
     path: /
-- name: 636|🇨🇭 瑞士 005
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 64.110.70.64
-  skip-cert-verify: false
-  sni: tjsp.hhxaf.cc.cd
-  type: trojan
 - name: 727|🇨🇭 瑞士1
   password: LCXzMd9rngX_38o4mcgwZ6SF
   port: 443
