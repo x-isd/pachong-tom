@@ -145,7 +145,7 @@ proxies:
   udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 340,456,494,502,514,551,580|🇨🇦CA_21|715KB/s|A004-260618 01
+  name: '340,453,456,502,514,551|🇨🇦[www.v2nodes.com] vless-CA-1... #4'
   network: raw
   port: 443
   reality-opts:
@@ -153,9 +153,21 @@ proxies:
     short-id: f98843107912e782
   server: 209.200.246.148
   servername: www.cloudflare.com
-  tls: false
+  tls: true
   type: vless
   uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
+- name: '340,502,508,509,514,519,551|🇨🇦[www.v2nodes.com] vless-CA #4'
+  network: ws
+  port: 8080
+  server: www.gov.se
+  servername: www.gov.se
+  tls: false
+  type: vless
+  uuid: 989d58b8-d2ea-4d28-b5ff-0f3cd078f2cf
+  ws-opts:
+    headers:
+      Host: sdf23g-billowing-moon-348e.mzm468gc.workers.dev
+    path: /
 - cipher: aes-128-gcm
   country: 🇺🇸US
   name: 356,378,435,523,524,537,538|🇨🇦CA-149.22.95.183-0132 | 31.5...
@@ -276,8 +288,7 @@ proxies:
   server: 134.195.196.231
   type: ss
 - cipher: rc4-md5
-  country: 🇺🇸US
-  name: 378,435,477,482,537,538|🇨🇦CA-137.184.174.93-0130 | 67....
+  name: 378,477,482,537,538|🇨🇦CA-137.184.174.93-0130 | 67....
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 137.184.174.93
@@ -302,7 +313,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,494,508,509,536,537,636|🇺🇸 美国 012
+  name: 378,508,509,536,537,636|🇺🇸 美国 038
   network: http
   port: '3389'
   server: 134.122.41.160
@@ -328,7 +339,7 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 032
+  name: 378,508,509,536,537,636|🇺🇸 美国 058
   network: ws
   port: '443'
   server: 134.195.198.92
@@ -343,7 +354,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 055
+  name: 378,508,509,536,537,636|🇺🇸 美国 081
   network: ws
   port: '443'
   server: 23.162.200.227
@@ -367,7 +378,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 726
+  name: 378,508,509,536,537,636|🇺🇸 美国 871
   network: ws
   port: '443'
   server: 148.113.153.109
@@ -382,7 +393,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 727
+  name: 378,508,509,536,537,636|🇺🇸 美国 872
   network: ws
   port: '443'
   server: 148.113.153.112
@@ -397,7 +408,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 728
+  name: 378,508,509,536,537,636|🇺🇸 美国 873
   network: ws
   port: '443'
   server: 148.113.153.113
@@ -412,7 +423,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 735
+  name: 378,508,509,536,537,636|🇺🇸 美国 877
   network: ws
   port: '443'
   server: 15.235.85.147
@@ -427,7 +438,7 @@ proxies:
     path: linkvws
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇦 加拿大 021
+  name: 378,508,509,536,537,636|🇨🇦 加拿大 022
   network: ws
   port: '443'
   server: 71.19.248.160
@@ -1101,28 +1112,23 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '438,494,523,524|🇨🇦_加拿大 (12) #1'
-  network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 216.152.147.74
-  servername: api.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: false
-  sni: api.connectingpeoplewithgreatjobs.com
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: /?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI
 - alterId: 0
   cipher: auto
-  name: 453,456,477,482,494,508,509,636|🇺🇸 美国 262
+  name: 438,453,456,508,509,636|🇺🇸 美国 296
+  network: tcp
+  port: '18000'
+  server: 134.195.196.211
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: 453,456,477,482,508,509,636|🇺🇸 美国 288
   network: tcp
   packet-encoding: xudp
   port: '18000'
   server: 23.162.200.198
-  servername: ''
   skip-cert-verify: false
   sub_tag: M002-260618
   tls: false
@@ -1131,7 +1137,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   xudp: true
 - client-fingerprint: chrome
-  name: '453,456,477,482,494,523,524|🇨🇦_加拿大 (15) #1'
+  name: '453,456,477,482,523,524|🇨🇦_加拿大 (15) #1'
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -1143,7 +1149,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '456,580|🇨🇦加拿大丨yoyapai.com #5'
+- name: '453,456|🇨🇦加拿大丨yoyapai.com #1'
   network: httpupgrade
   port: 2052
   server: 104.21.88.174
@@ -1155,7 +1161,7 @@ proxies:
       Host: nexo.xelviro.ir
     path: '%2Fwss'
 - client-fingerprint: chrome
-  name: '456,580|CA加拿大丨yoyapai.com #4'
+  name: '453,456|CA加拿大丨yoyapai.com #1'
   network: ws
   port: 8443
   server: ad-013.pixel9xdmq.info
@@ -1168,7 +1174,7 @@ proxies:
     headers:
       Host: ad-013.pixel9xdmq.info
     path: '%2F'
-- name: '456,580|US美国(mibei77.com 米贝节点分享) #138'
+- name: '453,456|🇨🇦CA加拿大丨yoyapai.com #3'
   network: ws
   password: humanity
   port: 443
@@ -1178,7 +1184,7 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '456|🇨🇦CA加拿大丨yoyapai.com #1'
+- name: '453,456|🇨🇦CA加拿大丨yoyapai.com #4'
   network: ws
   password: humanity
   port: 443
@@ -1190,11 +1196,11 @@ proxies:
     path: '%2Fassignment'
 - alterId: 0
   cipher: auto
-  name: '456,475,480,494|🔥Join+Telegram:@Farah_VPN🟣 #1768'
+  name: '453,456,475,480|🇦CA加拿大 #1'
   network: ws
   port: 443
   server: hk2.998998.best
-  servername: ''
+  servername: server15.9966338.xyz
   skip-cert-verify: false
   sni: server15.9966338.xyz
   tls: true
@@ -1205,7 +1211,7 @@ proxies:
     headers:
       Host: server15.9966338.xyz
     path: /asivewritten
-- name: '456|🇨🇦CA加拿大丨yoyapai.com #2'
+- name: '453,456|🇨🇦CA加拿大丨yoyapai.com #5'
   network: ws
   port: 8080
   server: 104.21.70.21
@@ -1218,7 +1224,7 @@ proxies:
       Host: xstack.mahanfixe.workers.dev
     path: '%2Fxiron'
 - client-fingerprint: unsafe
-  name: '456|CA加拿大(mibei77.com 米贝节点分享) #1'
+  name: '453,456|CA加拿大(mibei77.com 米贝节点分享) #5'
   network: ws
   port: 443
   server: 172.64.149.88
@@ -1233,7 +1239,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: chrome
-  name: 456|❓Other_96|253KB/s|M003-260806 ...
+  name: 453,456|❓Other_96|253KB/s|M003-260806 ...
   network: ws
   port: 443
   server: 104.17.147.208
@@ -1246,7 +1252,7 @@ proxies:
       Host: b.rack.sxsc.dpdns.org
     path: '%2F%3Fed%3D2048'
 - client-fingerprint: unsafe
-  name: '456|CA加拿大(mibei77.com 米贝节点分享) #3'
+  name: '453,456|CA加拿大(mibei77.com 米贝节点分享) #7'
   network: ws
   port: 443
   server: 172.64.152.19
@@ -1258,13 +1264,78 @@ proxies:
     headers:
       Host: jp3.yohototo.top
     path: '%2Ftyxyws'
+- name: '453,456,523,524|🇨🇦_加拿大 (14) #1'
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.152
+  servername: learn.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: false
+  sni: learn.connectingpeoplewithgreatjobs.com
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '456,494|🔥Join+Telegram:@Farah_VPN🟣 #2121'
+  name: '453,456|🇨🇦CA_19|1.4MB/s|K001-260618 [1... #1'
+  network: tcp
+  port: 1270
+  server: 134.195.196.154
+  servername: xmfhlpy.com
+  tls: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+- name: '453,456,523,524|🇨🇦_加拿大 (12) #1'
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.74
+  servername: api.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: false
+  sni: api.connectingpeoplewithgreatjobs.com
+  tls: true
+  type: trojan
+  udp: true
+- name: '453,456,523,524|🇨🇦_加拿大 (20) #1'
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.201
+  servername: resources.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: false
+  sni: resources.connectingpeoplewithgreatjobs.com
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '453,456|🇨🇦CA_55|1.0MB/s|M003-260806 [a... #1'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: FZvOenkKu_0DspnZA7Nc7xgWhR0_Z0MvqhntPqPchV4
+    short-id: 40a4615253b8f75d
+  server: 184.107.179.150
+  servername: www.kpn.com
+  tls: false
+  type: vless
+  uuid: e45b8261-88c9-4181-aab4-72093dfae6b9
+- alterId: 0
+  cipher: auto
+  name: '453,456|🇨🇦CA_31|1.5MB/s|B007-260618 [a... #1'
+  network: tcp
+  port: 1270
+  server: 158.51.121.246
+  servername: xmfhlpy.com
+  tls: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+- alterId: 0
+  cipher: auto
+  name: '453,456|🇨🇦CA_44|1.4MB/s|C002-260622 [f... #1'
   network: raw
-  port: '18000'
+  port: 18000
   server: 23.162.200.198
-  servername: ''
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
@@ -2920,7 +2991,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #4752'
+  name: '461|加拿大_多伦多 #208'
   network: ws
   port: 2086
   server: 162.159.140.19
@@ -3202,7 +3273,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #7884'
+  name: '461|加拿大_多伦多 #236'
   network: ws
   port: 2086
   server: russia.com
@@ -3316,7 +3387,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #2871'
+  name: '461|加拿大_多伦多 #242'
   network: ws
   port: 2086
   server: 104.26.13.31
@@ -3381,11 +3452,10 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #1405'
+  name: '461|加拿大_多伦多 #248'
   network: ws
-  port: '443'
+  port: 443
   server: capellare.com
-  servername: capellare.com
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3643,9 +3713,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #6407'
+  name: '461|加拿大_多伦多 #275'
   network: ws
-  port: '2086'
+  port: 2086
   server: 104.20.17.186
   tls: false
   type: vmess
@@ -3708,11 +3778,10 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #7563'
+  name: '461|加拿大_多伦多 #281'
   network: ws
-  port: '443'
+  port: 443
   server: sareikela.com
-  servername: sareikela.com
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3995,7 +4064,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #6278'
+  name: '461|加拿大_多伦多 #303'
   network: ws
   port: 443
   server: 172.67.170.13
@@ -4008,11 +4077,10 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #7271'
+  name: '461|加拿大_多伦多 #304'
   network: ws
-  port: '443'
+  port: 443
   server: 172.67.170.11
-  servername: linde06.indiavideo.sbs
   tls: true
   type: vmess
   uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
@@ -4152,11 +4220,10 @@ proxies:
     path: /link
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #2879'
+  name: '461|加拿大_多伦多 #315'
   network: ws
-  port: '443'
+  port: 443
   server: cdnjs.com
-  servername: hdfy1c3.iraniancpi.uk
   tls: true
   type: vmess
   uuid: 6b880b07-e952-4c0b-b4a3-6c9ac4cf9d3f
@@ -4205,11 +4272,10 @@ proxies:
     path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #1670'
+  name: '461|加拿大_多伦多 #319'
   network: ws
-  port: '443'
+  port: 443
   server: 173.245.59.8
-  servername: 77h2quiet-dream-5c34.foratay741.workers.dev
   tls: true
   type: vmess
   uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
@@ -4323,11 +4389,10 @@ proxies:
     path: /LINKWS
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #10166'
+  name: '461|加拿大_多伦多 #328'
   network: ws
-  port: '443'
+  port: 443
   server: hms19.best-tizi.top
-  servername: hms19.best-tizi.top
   tls: true
   type: vmess
   uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
@@ -4337,11 +4402,10 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #5591'
+  name: '461|加拿大_多伦多 #329'
   network: ws
-  port: '443'
+  port: 443
   server: a.baradiha.com
-  servername: a.baradiha.com
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -4416,11 +4480,10 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #8615'
+  name: '461|加拿大_多伦多 #335'
   network: ws
-  port: '443'
+  port: 443
   server: 104.21.83.208
-  servername: afrhms16v.bestxray.buzz
   tls: true
   type: vmess
   uuid: f584de15-2034-4170-a723-f48c2bae5e0f
@@ -4444,9 +4507,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '461,494|🔥Join+Telegram:@Farah_VPN🟣 #5868'
+  name: '461|加拿大_多伦多 #337'
   network: ws
-  port: '2086'
+  port: 2086
   server: 104.18.57.111
   tls: false
   type: vmess
@@ -4570,9 +4633,9 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '462,494|🔥Join+Telegram:@Farah_VPN🟣 #5381'
+  name: '462|加拿大_多伦多 #346'
   network: ws
-  port: 2086
+  port: '2086'
   server: 104.19.38.62
   servername: ''
   tls: false
@@ -4687,9 +4750,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #8357'
+  name: '463|加拿大_渥太華 #12'
   network: ws
-  port: '2086'
+  port: 2086
   server: 23.227.38.6
   tls: false
   type: vmess
@@ -4700,9 +4763,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #9792'
+  name: '463|加拿大_多伦多 #360'
   network: ws
-  port: '2086'
+  port: 2086
   server: 104.19.46.233
   tls: false
   type: vmess
@@ -4739,9 +4802,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #8151'
+  name: '463|加拿大_多伦多 #365'
   network: ws
-  port: '2086'
+  port: 2086
   server: 104.19.45.13
   tls: false
   type: vmess
@@ -4752,7 +4815,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #8994'
+  name: '463|加拿大_多伦多 #367'
   network: ws
   port: 2086
   server: 104.19.47.36
@@ -4765,9 +4828,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #2679'
+  name: '463|加拿大_多伦多 #368'
   network: ws
-  port: '2086'
+  port: 2086
   server: 104.19.47.77
   tls: false
   type: vmess
@@ -4804,9 +4867,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #5517'
+  name: '463|加拿大_多伦多 #373'
   network: ws
-  port: '2086'
+  port: 2086
   server: 104.19.47.77
   tls: false
   type: vmess
@@ -4856,9 +4919,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #5586'
+  name: '463|加拿大_多伦多 #377'
   network: ws
-  port: '2086'
+  port: 2086
   server: 104.19.32.216
   tls: false
   type: vmess
@@ -4921,9 +4984,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #3098'
+  name: '463|加拿大_多伦多 #386'
   network: ws
-  port: '2086'
+  port: 2086
   server: 104.19.59.89
   tls: false
   type: vmess
@@ -4973,9 +5036,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #6171'
+  name: '463|加拿大_多伦多 #394'
   network: ws
-  port: '2052'
+  port: 2052
   server: 104.19.57.24
   tls: false
   type: vmess
@@ -5051,9 +5114,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #5503'
+  name: '463|加拿大_多伦多 #401'
   network: ws
-  port: '2052'
+  port: 2052
   server: 104.19.47.75
   tls: false
   type: vmess
@@ -5064,9 +5127,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #8310'
+  name: '463|加拿大_多伦多 #402'
   network: ws
-  port: '2052'
+  port: 2052
   server: 104.19.32.226
   tls: false
   type: vmess
@@ -5077,9 +5140,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #1075'
+  name: '463|加拿大_多伦多 #403'
   network: ws
-  port: '2052'
+  port: 2052
   server: 104.26.7.152
   tls: false
   type: vmess
@@ -5258,9 +5321,9 @@ proxies:
     path: /vless
 - alterId: 0
   cipher: auto
-  name: '463,494|🔥Join+Telegram:@Farah_VPN🟣 #7403'
+  name: '463|加拿大_多伦多 #423'
   network: ws
-  port: '2095'
+  port: 2095
   server: 104.19.45.194
   tls: false
   type: vmess
@@ -5295,7 +5358,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '465,494|🔥Join+Telegram:@Farah_VPN🟣 #8691'
+  name: 465|14,16|加拿大 003
   network: ws
   port: 8080
   server: www.velvetmountain.shop
@@ -5309,7 +5372,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 465,508,509,636|🇨🇦 加拿大 017
+  name: 465,508,509,636|🇨🇦 加拿大 027
   network: tcp
   port: '22324'
   server: 198.57.27.212
@@ -5498,7 +5561,7 @@ proxies:
     headers:
       Host: xstack.mahanfixe.workers.dev
     path: /xiron
-- name: '475,480|🇨🇦加拿大丨yoyapai.com #2'
+- name: '475,480|🇨🇦加拿大丨yoyapai.com #3'
   network: ws
   port: 2052
   server: 104.21.88.174
@@ -5513,7 +5576,7 @@ proxies:
     path: /wss
     v2ray-http-upgrade: true
 - client-fingerprint: chrome
-  name: '475,480|CA加拿大丨yoyapai.com #2'
+  name: '475,480|CA加拿大丨yoyapai.com #3'
   network: ws
   port: 8443
   server: ad-013.pixel9xdmq.info
@@ -5529,7 +5592,7 @@ proxies:
       Host: ad-013.pixel9xdmq.info
     path: /
 - client-fingerprint: chrome
-  name: 475,480,536,580|🇫🇷FR_106|745KB/s|B007-260618 0...
+  name: 475,480,536|🏁RELAY-104.18.152.208-1060
   network: ws
   password: humanity
   port: 443
@@ -5543,7 +5606,7 @@ proxies:
   ws-opts:
     path: /assignment
 - client-fingerprint: chrome
-  name: 475,480,536,580|🇫🇷FR_385|1.1MB/s|B007-260618 0...
+  name: '475,480,536|🏁RELAY-104.18.152.133-0918 #1'
   network: ws
   password: humanity
   port: 443
@@ -5672,6 +5735,16 @@ proxies:
   type: http
   udp: true
   x-toolall-mihomo: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: ''
+  name: 508,509,636|🇨🇦 加拿大 006
+  network: tcp
+  port: '35034'
+  server: 165.154.195.38
+  tls: false
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 - name: '508,509|加拿大 007 #1'
   network: ws
   packet-encoding: xudp
@@ -5687,35 +5760,53 @@ proxies:
     headers:
       Host: hhvl.hhapp.kdns.fr
     path: /l9vgjc
-- client-fingerprint: chrome
-  name: '508,509|加拿大 018 #1'
+- alterId: 0
+  cipher: auto
+  name: 508,509,636|🇨🇦 加拿大 008
   network: tcp
+  port: '47081'
+  server: 165.154.184.71
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cb756bd5-8cc5-4ace-b69d-c1e004c8de47
+- name: '508,509|加拿大 009 #1'
+  network: xhttp
   port: 443
-  server: 142.132.161.197
-  servername: followme.amin-1.ir
+  server: 104.234.135.88
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 2f5e1739-8007-4f66-9ea6-577f0e574976
+  uuid: 0aec6598-7fb5-44e6-bff7-a4d550117830
 - client-fingerprint: chrome
-  flow: ''
-  name: '508,509|加拿大 019 #1'
+  name: '508,509|加拿大 010 #1'
   network: ws
-  port: 15801
-  server: 142.171.156.182
-  servername: kejiland.freewarp.eu.org
+  port: 443
+  server: 167.17.183.99
+  servername: denot-8up7.edge-mil-jgpthc.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  uuid: 69279e79-7938-4e75-8560-705f3d056ade
   ws-opts:
     headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
+      Host: denot-8up7.edge-mil-jgpthc.workers.dev
+    path: /stream/DEVCOP/705f3d056ade/loc-0?ed=2048
+- name: '508,509|加拿大 011 #1'
+  network: tcp
+  port: 443
+  server: 184.107.106.68
+  servername: lizca2.footballfantasyforum.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 513|15|🇨🇦 加拿大|@ripaojiedian
@@ -5724,29 +5815,6 @@ proxies:
   server: 95.217.158.231
   tfo: false
   type: ss
-- name: '519|🇨🇦[www.v2nodes.com] vless-CA-1... #3'
-  network: ws
-  port: 2052
-  server: 104.18.109.147
-  tls: false
-  type: vless
-  uuid: c29d39bd-92a4-45db-bb61-56013998617c
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
-    path: /Telegram-XV2ry2?ed=2048
-- name: '519|🇨🇦[www.v2nodes.com] vless-CA-1... #4'
-  network: ws
-  port: 443
-  server: cf.008500.xyz
-  servername: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-  tls: true
-  type: vless
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  ws-opts:
-    headers:
-      Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-    path: /?ed=2560fp=chrome
 - alterId: 0
   cipher: auto
   name: '523,524|🇨🇦_加拿大 (13) #1'
@@ -5810,6 +5878,35 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 575|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
+  network: ws
+  port: 80
+  server: 15.235.41.200
+  skip-cert-verify: true
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '575|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP... #1'
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
   name: '577|加拿大1 #4'
   network: tcp
   port: '45064'
@@ -5826,312 +5923,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- name: '580|US美国(mibei77.com 米贝节点分享) #190'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.44
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|🇨🇦CA加拿大丨yoyapai.com #4'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.225
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|🇨🇦CA加拿大丨yoyapai.com #5'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.140
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|🇨🇦CA加拿大丨yoyapai.com #6'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.117
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #199'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.219
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|US美国(mibei77.com 米贝节点分享) #90'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.187
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|🇨🇦CA加拿大丨yoyapai.com #9'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.37
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|🇨🇦CA加拿大丨yoyapai.com #10'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.77
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- client-fingerprint: chrome
-  name: '580|CA加拿大丨yoyapai.com #3'
-  network: ws
-  port: 443
-  server: 162.159.8.42
-  servername: t1s1.rittbo.kdns.fr
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-    path: '%2F'
-- client-fingerprint: chrome
-  name: '580|🇨🇦CA加拿大丨yoyapai.com #11'
-  network: ws
-  port: 443
-  server: 104.26.2.173
-  servername: support.zoom.us.yxls.eu.cc
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  ws-opts:
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-    path: '%2Fsg-melbi'
-- name: '580|🇨🇦加拿大丨yoyapai.com #3'
-  network: httpupgrade
-  port: 8080
-  server: www.speedtest.net
-  tls: false
-  type: vless
-  uuid: 443779ba-7694-44ce-95c1-2f10682de4fa
-  ws-opts:
-    headers:
-      Host: konkortur.sanjeshvipspeed.ir
-    path: '%2F'
-- name: '580|🇨🇦加拿大丨yoyapai.com #4'
-  network: httpupgrade
-  port: 8880
-  server: 104.17.121.110
-  tls: false
-  type: vless
-  uuid: f3d6c244-772a-428f-b8fe-e2d632cd76e4
-  ws-opts:
-    headers:
-      Host: svn-panel-team.lorqino.ir
-    path: '%2Fmmd'
-- name: '580|🇨🇦加拿大丨yoyapai.com #6'
-  network: httpupgrade
-  port: 8880
-  server: 104.17.121.110
-  tls: false
-  type: vless
-  uuid: c0a7e427-1034-485a-b5c7-4449bd04b28d
-  ws-opts:
-    headers:
-      Host: svn-panel-team.lorqino.ir
-    path: '%2Fmmd'
-- name: '580|🇨🇦CA加拿大丨yoyapai.com #12'
-  network: ws
-  port: 8880
-  server: 155.46.167.30
-  tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime50.workers.dev
-- name: '580|🇨🇦CA加拿大丨yoyapai.com #13'
-  network: ws
-  port: 8880
-  server: 104.21.23.72
-  tls: false
-  type: vless
-  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
-  ws-opts:
-    headers:
-      Host: calm-haze-d105.21-7cd.workers.dev
-    path: '%2Fpyip%3DProxyIP.SG.CMLiussss.net'
-- name: '580|🇨🇦CA加拿大丨yoyapai.com #14'
-  network: ws
-  port: 8880
-  server: 104.21.23.72
-  tls: false
-  type: vless
-  uuid: 30a88c40-581e-4952-aa4c-8af95686ede0
-  ws-opts:
-    headers:
-      Host: rapid-lab-95ef.173-74c.workers.dev
-    path: '%2F'
-- name: '580|CA加拿大(mibei77.com 米贝节点分享) #5'
-  network: ws
-  password: humanity
-  port: 443
-  server: www.speedtest.net
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '580|CA加拿大(mibei77.com 米贝节点分享) #6'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.111.8
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|CA加拿大(mibei77.com 米贝节点分享) #9'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.71
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|🇨🇦CA_9|1.4MB/s|M002-260618 01
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
-    short-id: 3d3c1e645f763ee3
-  server: 158.69.112.254
-  servername: www.speedtest.net
-  tls: false
-  type: vless
-  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|🇨🇦CA_14|575KB/s|A004-260618 01
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss
-    short-id: b9f8d3f8
-  server: 216.152.147.28
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: d9e4721d-cdac-44c7-bc91-117367eac194
-- name: 580|🇨🇦CA_27|1.2MB/s|A004-260618 01
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-ca-001.fastervpn.world
-  skip-cert-verify: true
-  sni: 127.0.0.1
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|🇨🇦CA_28|1.3MB/s|A004-260618 01
-  network: raw
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  servername: google.com
-  tls: false
-  type: vless
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-- name: 580|🇨🇦CA_29|1.2MB/s|A004-260618 01
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 15.223.122.197
-  skip-cert-verify: true
-  sni: 15.223.122.197
-  tls: false
-  type: hysteria2
-- name: 580|🇨🇦CA_26|1.2MB/s|A004-260618 01
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 15.223.122.197
-  skip-cert-verify: true
-  sni: t.me
-  tls: false
-  type: hysteria2
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|🇨🇦CA_33|1.1MB/s|A004-260618 01
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
-    short-id: af7e79b5
-  server: 66.70.179.124
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|🇨🇦CA_34|802KB/s|A004-260618 01
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
-    short-id: af7e79b5
-  server: 66.70.179.124
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
 - name: 636|🇨🇦 加拿大 004
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
