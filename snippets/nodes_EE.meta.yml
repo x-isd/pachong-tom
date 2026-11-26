@@ -1,4 +1,27 @@
 proxies:
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: '340,494,502,519,551|🇪🇪 爱沙尼亚 | EST #1 #3'
+  network: tcp
+  port: 8443
+  server: 165.231.157.126
+  servername: api-6b04608f.adhil.uk
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0173d52e-8e1b-4681-831e-11529677b72f
+  ws-opts:
+    headers:
+      Host: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+- client-fingerprint: firefox
+  name: '340|🇪🇪 爱沙尼亚 | EST #1'
+  port: 443
+  server: 13.141.36.163
+  servername: 079b6et.ee5.h1clayd.shop
+  tls: true
+  type: vless
+  uuid: 73ebb72a-e2a8-44c8-a0e3-938740a4f578
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 372|🇪🇪 Estonia 1 TG:@nodpai
@@ -53,28 +76,6 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,456,494,508,509|俄罗斯 053 #1'
-  network: tcp
-  port: 2053
-  server: 94.159.98.82
-  servername: 94.159.98.82
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
-- name: '453,477,482,494|🔥Join+Telegram:@Farah_VPN🟣 #974'
-  network: tcp
-  port: 16443
-  server: 45.86.60.174
-  sub_tag: P002-260618
-  tls: false
-  type: vless
-  udp: true
-  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: '453,456|🇪🇪EE爱沙尼亚丨yoyapai.com #3'
   network: tcp
   port: 443
@@ -86,71 +87,9 @@ proxies:
   tls: false
   type: vless
   uuid: 2acc3742-c568-11f1-9902-a337233c6cda
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 453|🇪🇪EE_4|213KB/s|M003-260806 [1d...
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  server: 8a2e72t.nl11.h1clayd.click
-  servername: 8a2e72t.nl11.h1clayd.click
-  tls: false
-  type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 453|🇪🇪EE_3|206KB/s|M003-260806 [36...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  server: 195.206.235.215
-  servername: 8a2e72t.nl11.h1clayd.click
-  tls: false
-  type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 453|🇪🇪EE_8|78KB/s|M003-260806 [6dc...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  server: 195.206.235.119
-  servername: 8a2e72t.nl11.h1clayd.click
-  tls: false
-  type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: '453,494|🔥Join+Telegram:@Farah_VPN🟣 #3545'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  server: 48.103.231.2
-  servername: ee1-r.bankai.party
-  tls: false
-  type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 453|🇪🇪EE_9|1.2MB/s|M002-260618 [a6...
-  network: tcp
-  port: 443
-  server: 217.60.100.222
-  servername: 217.60.100.222
-  tls: true
-  type: vless
-  uuid: a6142d9d-3f9f-47b7-b7e9-1245dd6a15d6
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 456|🇪🇪EE_5|934KB/s|M003-260806 [82...
+  name: '453,456|🇪🇪EE_5|934KB/s|M003-260806 [82... #1'
   network: tcp
   port: 443
   reality-opts:
@@ -161,6 +100,19 @@ proxies:
   tls: false
   type: vless
   uuid: 7d31a423-4bb6-4c16-91b8-c08901a37780
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '456,580|🇪🇪 EE丨yoyapai.com爱沙尼亚丨yoyapai.... #1'
+  network: tcp
+  port: 443
+  server: 138.124.100.128
+  servername: ee4.fast-connect-service.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
 - name: 462|爱沙尼亚_塔林
   network: ws
   port: 2087
@@ -416,6 +368,15 @@ proxies:
   type: vless
   udp: true
   uuid: 2acc3742-c568-11f1-9902-a337233c6cda
+- name: '477,482,494|🔥Join+Telegram:@Farah_VPN🟣 #979'
+  network: tcp
+  port: 16443
+  server: 45.86.60.174
+  sub_tag: P002-260618
+  tls: false
+  type: vless
+  udp: true
+  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
 - name: '477,482|EE_1|368KB/s|R002-260618 [988e... #1'
   port: 9443
   server: 95.153.31.66
@@ -424,27 +385,6 @@ proxies:
   tls: true
   type: http
   udp: true
-- client-fingerprint: firefox
-  name: '502,551|🇪🇪EE_1|1019KB/s #1'
-  port: 443
-  server: 13.141.36.127
-  servername: 079b6et.ee5.h1clayd.shop
-  tls: true
-  type: vless
-  uuid: 73ebb72a-e2a8-44c8-a0e3-938740a4f578
-- client-fingerprint: firefox
-  name: '502,514,519,551|🇪🇪 爱沙尼亚 | EST #1 #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: NMS-P97L7IrYGl7mQv1j2K_EBX6G57fu6DvREZYl01U
-    short-id: 35a329a23bb50d2b
-  server: 13.141.36.163
-  servername: 079b6et.ee5.h1clayd.shop
-  tls: true
-  type: vless
-  udp: true
-  uuid: 73ebb72a-e2a8-44c8-a0e3-938740a4f578
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '523,524|🇪🇪_爱沙尼亚 #1'
@@ -460,19 +400,13 @@ proxies:
   type: vless
   udp: true
   uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 580|🇪🇪 EE丨yoyapai.com爱沙尼亚丨yoyapai....
-  network: tcp
-  port: 443
-  server: 138.124.100.128
-  servername: ee4.fast-connect-service.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
+- cipher: aes-128-gcm
+  name: '566|🇪🇪 爱沙尼亚 | EST #2'
+  password: d98d7ec5-24d7-4ed8-8329-728b2c7ad1c5
+  port: 35194
+  server: 038b7750485a79a0.lebufflonfermegroup.us
+  type: ss
+  udp: true
 - name: 580|🇪🇪EE_8|1.2MB/s|C002-260622 01
   network: tcp
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
